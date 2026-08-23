@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <title>About SMA Physics — Transforming NEET & JEE Physics Learning</title>
+  <meta name="description" content="Learn about SMA Physics, founded by Syed Mazhar Ali. Dedicated to providing free daily conceptual capsules, CBT testing simulators, and printable worksheets for NEET & JEE aspirants." />
+  <meta name="keywords" content="About SMA Physics, Syed Mazhar Ali, JEE Physics Mentor, NEET Physics Trainer, Daily Physics DPP" />
+  <meta name="author" content="Syed Mazhar Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://smaphysics.com/about" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SMA Physics" />
+  <meta property="og:title" content="About SMA Physics — Free Daily DPPs & Conceptual Mastery" />
+  <meta property="og:description" content="Empowering competitive examination aspirants with structured problem-solving frameworks and daily practice routines." />
+  <meta property="og:url" content="https://smaphysics.com/about" />
+  <meta property="og:image" content="https://smaphysics.com/assets/og-banner.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+
+  <!-- Prevent Theme Flash -->
+  <script>
+    if (localStorage.getItem('sma-theme') === 'dark' || (!('sma-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col overflow-x-hidden transition-colors duration-200">
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3 group min-w-0 shrink-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-black text-base sm:text-lg tracking-wider shadow-md group-hover:bg-indigo-700 transition">
+          SMA
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span class="font-extrabold text-lg sm:text-xl tracking-tight leading-none text-zinc-900 dark:text-white truncate">
+            SMA <span class="text-indigo-600 dark:text-indigo-400">Physics</span>
+          </span>
+          <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 hidden xs:inline truncate mt-0.5">NEET • JEE Main & Adv</span>
+        </div>
+      </a>
+
+      <!-- Navigation & Dark Mode Toggle -->
+      <div class="flex items-center gap-3 sm:gap-6">
+        <nav class="flex items-center gap-3 sm:gap-5 text-sm sm:text-base shrink-0 font-semibold">
+          <a href="/" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">Home</a>
+          <a href="/#archive" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition hidden sm:inline">Worksheets</a>
+          <a href="/practice" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">Solve DPP</a>
+          <a href="/about" class="text-indigo-600 dark:text-indigo-400 font-bold underline decoration-2 underline-offset-4">About</a>
+        </nav>
+
+        <!-- Dark Mode Toggle Button -->
+        <button onclick="toggleDarkMode()" aria-label="Toggle Theme" class="p-2.5 sm:p-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition cursor-pointer shrink-0">
+          <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN ABOUT CONTENT ================= -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-16 space-y-12 md:space-y-16 flex-1 w-full min-w-0">
+
+    <!-- Hero Title -->
+    <div class="space-y-4 text-center sm:text-left">
+      <div class="inline-flex items-center gap-2 px-3 py-1 text-xs sm:text-sm font-bold bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 rounded-full">
+        <span>⚡</span>
+        <span>Empowering Aspirants Across India</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-zinc-950 dark:text-white leading-tight">
+        Master Physics Through <br class="hidden sm:inline" />
+        <span class="text-indigo-600 dark:text-indigo-400">Conceptual Clarity</span> & Daily Drills.
+      </h1>
+      <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
+        SMA Physics is a dedicated platform created to deconstruct complex competitive physics into intuitive daily capsules, rigorous exam-standard problems, and interactive CBT simulators.
+      </p>
+    </div>
+
+    <!-- Core Pillars Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div class="bg-white dark:bg-zinc-900 p-6 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-lg border border-amber-200 dark:border-amber-800">
+          💡
+        </div>
+        <h3 class="font-bold text-lg text-zinc-900 dark:text-white">Concept Capsules</h3>
+        <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          High-yield 3-minute theory summaries highlighting governing equations and frequent exam traps.
+        </p>
+      </div>
+
+      <div class="bg-white dark:bg-zinc-900 p-6 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold text-lg border border-indigo-200 dark:border-indigo-800">
+          ⏱️
+        </div>
+        <h3 class="font-bold text-lg text-zinc-900 dark:text-white">CBT Test Simulator</h3>
+        <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          Real exam room testing environment with dynamic timer, question matrix, and randomized options.
+        </p>
+      </div>
+
+      <div class="bg-white dark:bg-zinc-900 p-6 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-lg border border-emerald-200 dark:border-emerald-800">
+          📄
+        </div>
+        <h3 class="font-bold text-lg text-zinc-900 dark:text-white">Printable Worksheets</h3>
+        <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          Two-column high-density PDF worksheets designed for offline coaching drills and home practice.
+        </p>
+      </div>
+    </div>
+
+    <!-- About the Educator / Founder Section -->
+    <div class="bg-white dark:bg-zinc-900 rounded-3xl border border-zinc-200 dark:border-zinc-800 p-6 sm:p-10 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-zinc-100 dark:border-zinc-800">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-wider text-indigo-600 dark:text-indigo-400">Founder & Educator</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-white mt-1">Syed Mazhar Ali</h2>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Physics Trainer & Software Developer</p>
+        </div>
+        <a href="https://instagram.com/mazharin" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs sm:text-sm font-semibold transition border border-zinc-200 dark:border-zinc-700">
+          <span>Instagram @mazharin</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div class="space-y-4 text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed">
+        <p>
+          With years of experience training aspirants for <strong>JEE Advanced, JEE Main, and NEET</strong>, Syed Mazhar Ali established <strong>SMA Physics</strong> to bridge the gap between abstract mathematical derivations and structured problem-solving intuition.
+        </p>
+        <p>
+          Every Daily Practice Problem (DPP) is carefully calibrated to eliminate standard misconceptions, sharpen mathematical shortcuts, and train students to manage test-taking pressure effectively.
+        </p>
+      </div>
+
+      <!-- Quick Stats Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+        <div class="bg-zinc-50 dark:bg-zinc-800/50 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700/80 text-center">
+          <p class="text-2xl font-black text-indigo-600 dark:text-indigo-400">100%</p>
+          <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Free Access</p>
+        </div>
+        <div class="bg-zinc-50 dark:bg-zinc-800/50 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700/80 text-center">
+          <p class="text-2xl font-black text-indigo-600 dark:text-indigo-400">Daily</p>
+          <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Curated Drops</p>
+        </div>
+        <div class="bg-zinc-50 dark:bg-zinc-800/50 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700/80 text-center">
+          <p class="text-2xl font-black text-indigo-600 dark:text-indigo-400">NEET</p>
+          <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Focused Drills</p>
+        </div>
+        <div class="bg-zinc-50 dark:bg-zinc-800/50 p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-700/80 text-center">
+          <p class="text-2xl font-black text-indigo-600 dark:text-indigo-400">JEE</p>
+          <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Main & Advanced</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-gradient-to-r from-indigo-900 to-zinc-900 text-white p-8 sm:p-10 rounded-3xl text-center space-y-5 shadow-lg">
+      <h3 class="text-2xl sm:text-3xl font-extrabold">Ready to Boost Your Physics Score?</h3>
+      <p class="text-sm sm:text-base text-zinc-300 max-w-xl mx-auto">
+        Start practicing today’s question capsule or explore the full worksheet vault sorted by exam tracks.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 pt-2">
+        <a href="/practice" class="px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm sm:text-base transition shadow-md">
+          Solve Today's DPP →
+        </a>
+        <a href="/#archive" class="px-6 py-3 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-semibold text-sm sm:text-base transition border border-zinc-700">
+          Browse Worksheet Vault
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-12 py-8 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+        <p>© 2026 <strong>SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
+        <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
+        <p class="text-zinc-400">Free Open Access for JEE & NEET Aspirants</p>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
+        <a href="/about" class="font-semibold text-indigo-600 dark:text-indigo-400">About</a>
+        <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= THEME CONTROLLER ================= -->
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('sma-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('sma-theme', 'dark');
+      }
+    }
+  </script>
+
+</body>
+</html>
