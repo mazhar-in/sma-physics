@@ -4,5 +4,6 @@
       "source": "/practice/:slug",
       "destination": "/practice.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 }

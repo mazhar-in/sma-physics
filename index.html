@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Primary Static Meta Defaults -->
+  <!-- Primary Dynamic SEO Meta Defaults -->
   <title id="seo-title">SMA Physics — Free Daily DPP & Concepts for NEET & JEE</title>
   <meta name="description" id="seo-description" content="Master NEET and JEE Physics with free daily concept capsules, interactive CBT practice questions, and downloadable 2-column DPP worksheets." />
   <meta name="keywords" id="seo-keywords" content="JEE Physics, NEET Physics, Physics DPP, JEE Advanced Physics, Daily Practice Sheet Physics, SMA Physics" />
@@ -12,7 +12,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" id="seo-canonical" href="https://smaphysics.com/" />
 
-  <!-- Open Graph / Facebook / Telegram / WhatsApp -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SMA Physics" />
   <meta property="og:title" id="og-title" content="SMA Physics — Free Daily DPP & Concepts for NEET & JEE" />
@@ -26,7 +26,7 @@
   <meta name="twitter:description" id="twitter-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
   <meta name="twitter:image" id="twitter-image" content="https://smaphysics.com/assets/og-banner.png" />
 
-  <!-- JSON-LD Structured Data for Google (Rich Snippets) -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" id="schema-structured-data">
   {
     "@context": "https://schema.org",
@@ -52,11 +52,12 @@
 </head>
 <body class="bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col">
 
-  <!-- ================= HEADER ================= -->
+  <!-- ================= HEADER / NAVBAR ================= -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-zinc-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       
-      <a href="index.html" class="flex items-center gap-2.5 group">
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-2.5 group">
         <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-sm tracking-wider shadow-sm group-hover:bg-indigo-700 transition">
           SMA
         </div>
@@ -68,17 +69,19 @@
         </div>
       </a>
 
+      <!-- Navigation Links -->
       <nav class="flex items-center gap-5 sm:gap-6">
         <a href="#concept" class="text-sm font-medium text-zinc-600 hover:text-zinc-950 transition">Daily Concept</a>
-        <a id="nav-today-dpp" href="practice.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition">Solve DPP</a>
+        <a id="nav-today-dpp" href="/practice" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition">Solve DPP</a>
         <a href="#archive" class="text-sm font-medium text-zinc-600 hover:text-zinc-950 transition">Archive</a>
       </nav>
     </div>
   </header>
 
-  <!-- ================= MAIN CONTENT ================= -->
+  <!-- ================= MAIN DASHBOARD ================= -->
   <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-12 flex-1 w-full">
 
+    <!-- Header Strip -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-zinc-200">
       <div>
         <p id="hero-dpp-badge" class="text-xs uppercase font-bold tracking-wider text-indigo-600">Daily Drop</p>
@@ -86,9 +89,10 @@
       </div>
     </div>
 
+    <!-- 2-Column Section: Concept Capsule (Left) + DPP Card (Right) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
       
-      <!-- Concept Capsule -->
+      <!-- Left Column: Daily Concept Capsule (7 cols) -->
       <section id="concept" class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-sm space-y-5">
         <div class="flex items-center gap-2">
           <span class="px-2.5 py-0.5 text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 rounded-md">
@@ -111,7 +115,7 @@
         </div>
       </section>
 
-      <!-- Today's DPP Card -->
+      <!-- Right Column: Today's DPP Action Card (5 cols) -->
       <section id="dpp" class="lg:col-span-5 flex flex-col justify-between bg-zinc-900 text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-6">
         <div class="space-y-3">
           <div class="flex items-center justify-between">
@@ -127,8 +131,9 @@
           </p>
         </div>
 
+        <!-- Action Buttons -->
         <div class="space-y-3 pt-4 border-t border-zinc-800">
-          <a id="solve-online-btn" href="practice.html" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-xl transition shadow-sm">
+          <a id="solve-online-btn" href="/practice" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-xl transition shadow-sm">
             <span>Solve Online (CBT Simulator)</span>
             <span>→</span>
           </a>
@@ -141,7 +146,7 @@
 
     </div>
 
-    <!-- Archive Section -->
+    <!-- ================= PAST DPPs ARCHIVE SECTION ================= -->
     <section id="archive" class="space-y-4 pt-6">
       <div class="flex items-center justify-between">
         <h3 class="text-lg font-bold text-zinc-950">Recent SMA Practice Sheets</h3>
@@ -162,24 +167,34 @@
     </div>
   </footer>
 
-  <!-- ================= SEO INJECTION & DATA CONTROLLER ================= -->
+  <!-- ================= CONTROLLER SCRIPT ================= -->
   <script>
+    // Converts titles into clean URL-safe slugs
+    function slugify(text) {
+      return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/[\s_-]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
     document.addEventListener("DOMContentLoaded", async () => {
       try {
-        const manifestRes = await fetch('./daily-dpps.json');
+        const manifestRes = await fetch('/daily-dpps.json');
         const dppList = await manifestRes.json();
         if (!dppList || dppList.length === 0) return;
 
         const latestDpp = dppList[0];
         const jsonFilePath = latestDpp.jsonFile || latestDpp.file;
 
-        const todayRes = await fetch(jsonFilePath);
+        const todayRes = await fetch(`/${jsonFilePath}`);
         const todayData = await todayRes.json();
 
-        // 1. DYNAMIC SEO UPDATE
+        // 1. Dynamic SEO updates
         if (todayData.seo) {
           document.title = todayData.seo.title || document.title;
-          
           document.getElementById("seo-description").setAttribute("content", todayData.seo.description);
           document.getElementById("seo-keywords").setAttribute("content", todayData.seo.keywords);
           
@@ -198,7 +213,6 @@
             document.getElementById("twitter-image").setAttribute("content", todayData.seo.ogImage);
           }
 
-          // Dynamic JSON-LD Structured Data update for Google Search
           const schemaScript = document.getElementById("schema-structured-data");
           const schema = {
             "@context": "https://schema.org",
@@ -220,7 +234,7 @@
           schemaScript.textContent = JSON.stringify(schema);
         }
 
-        // 2. Render Hero & Daily Concept
+        // 2. Render Hero & Concept Capsule
         document.getElementById("hero-dpp-badge").innerText = `Daily Drop • ${latestDpp.date}`;
         document.getElementById("hero-main-title").innerText = todayData.meta.title;
 
@@ -232,32 +246,34 @@
           document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
         }
 
-        // 3. Render Today's DPP Card
+        // 3. Generate Clean Topic URL from Title
+        const todaySlug = slugify(latestDpp.title);
+        const practiceUrl = `/practice/${todaySlug}`;
+
         document.getElementById("dpp-card-badge").innerText = latestDpp.id.toUpperCase();
         document.getElementById("dpp-card-meta").innerText = `${latestDpp.questionCount} Questions • ${latestDpp.exam}`;
         document.getElementById("dpp-card-title").innerText = latestDpp.title;
         
-        const practiceUrl = `practice.html?file=${jsonFilePath}`;
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
         const pdfBtn = document.getElementById("download-pdf-btn");
         if (latestDpp.pdfFile) {
-          pdfBtn.href = latestDpp.pdfFile;
+          pdfBtn.href = `/${latestDpp.pdfFile}`;
           pdfBtn.setAttribute("download", `SMA_${latestDpp.id.toUpperCase()}.pdf`);
           pdfBtn.classList.remove("hidden");
         } else {
           pdfBtn.classList.add("hidden");
         }
 
-        // 4. Render Archive Grid
+        // 4. Render Archive Grid with Topic Slugs
         const archiveGrid = document.getElementById("archive-grid");
         archiveGrid.innerHTML = "";
 
         dppList.slice(1).forEach((item) => {
-          const itemJsonPath = item.jsonFile || item.file;
+          const itemSlug = slugify(item.title);
           const pdfLinkHtml = item.pdfFile 
-            ? `<a href="${item.pdfFile}" target="_blank" download class="text-zinc-500 hover:text-zinc-900 font-medium">PDF</a> • `
+            ? `<a href="/${item.pdfFile}" target="_blank" download class="text-zinc-500 hover:text-zinc-900 font-medium">PDF</a> • `
             : '';
 
           archiveGrid.innerHTML += `
@@ -274,7 +290,7 @@
                 <span class="text-zinc-600 font-medium">${item.questionCount} Questions</span>
                 <div>
                   ${pdfLinkHtml}
-                  <a href="practice.html?file=${itemJsonPath}" class="text-indigo-600 font-semibold hover:underline">Solve Online →</a>
+                  <a href="/practice/${itemSlug}" class="text-indigo-600 font-semibold hover:underline">Solve Online →</a>
                 </div>
               </div>
             </div>

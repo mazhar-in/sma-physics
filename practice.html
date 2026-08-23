@@ -27,7 +27,7 @@
   <header class="bg-white border-b border-zinc-200 sticky top-0 z-40 shadow-sm">
     <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
       
-      <a href="index.html" class="flex items-center gap-2 group">
+      <a href="/" class="flex items-center gap-2 group">
         <div class="w-7 h-7 rounded bg-indigo-600 flex items-center justify-center text-white font-black text-xs group-hover:bg-indigo-700 transition">
           SMA
         </div>
@@ -70,13 +70,13 @@
         </div>
       </div>
 
-      <!-- Question Statement + Dynamic Diagram Image -->
+      <!-- Statement + Dynamic Image -->
       <div class="text-zinc-900 text-base md:text-lg leading-relaxed font-normal" id="question-statement"></div>
 
-      <!-- Options -->
+      <!-- Multiple Choice Options -->
       <div class="space-y-3" id="options-container"></div>
 
-      <!-- Solution Drawer -->
+      <!-- Expandable Derivation Solution Drawer -->
       <div id="solution-drawer" class="hidden bg-zinc-50 border-t border-dashed border-zinc-200 rounded-xl p-5 space-y-3">
         <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-100 rounded">
           <span>✓</span>
@@ -85,7 +85,7 @@
         <div class="text-sm text-zinc-700 leading-relaxed space-y-2" id="solution-text"></div>
       </div>
 
-      <!-- Action Navigation Controls -->
+      <!-- Navigation Toolbar -->
       <div class="flex items-center justify-between pt-4 border-t border-zinc-100">
         <button id="prev-btn" onclick="navigateQuestion(-1)" class="px-4 py-2 text-xs font-semibold text-zinc-600 hover:bg-zinc-100 rounded-xl border border-zinc-200 disabled:opacity-40 disabled:pointer-events-none transition cursor-pointer">
           ← Previous
@@ -131,8 +131,18 @@
 
   </main>
 
-  <!-- ================= LOGIC & SEO SCRIPT ================= -->
+  <!-- ================= STATE & TOPIC MATCHING SCRIPT ================= -->
   <script>
+    function slugify(text) {
+      return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/[\s_-]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
     let questions = [];
     let currentIdx = 0;
     let userSelections = [];
@@ -142,36 +152,49 @@
     document.addEventListener("DOMContentLoaded", async () => {
       initTimer();
 
-      const urlParams = new URLSearchParams(window.location.search);
-      let targetFile = urlParams.get('file');
-
-      if (!targetFile) {
-        try {
-          const manifestRes = await fetch('./daily-dpps.json');
-          const dppList = await manifestRes.json();
-          if (dppList && dppList.length > 0) {
-            targetFile = dppList[0].jsonFile || dppList[0].file;
-          }
-        } catch (e) {
-          targetFile = 'dpps/dpp-42/dpp-42.json';
-        }
-      }
-
       try {
-        const response = await fetch(targetFile);
-        const data = await response.json();
+        // 1. Fetch manifest
+        const manifestRes = await fetch('/daily-dpps.json');
+        const dppList = await manifestRes.json();
+        if (!dppList || dppList.length === 0) throw new Error("Manifest empty");
+
+        // 2. Extract slug from URL path (e.g., /practice/rotational-dynamics-pure-rolling-moment-of-inertia)
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        const practiceIdx = pathParts.indexOf("practice");
         
+        let urlSlug = "";
+        if (practiceIdx !== -1 && pathParts[practiceIdx + 1]) {
+          urlSlug = pathParts[practiceIdx + 1];
+        } else if (window.location.hash) {
+          urlSlug = window.location.hash.replace("#", "").trim();
+        }
+
+        // 3. Match against slugified titles in manifest
+        let matchedDpp = null;
+        if (urlSlug) {
+          matchedDpp = dppList.find(item => slugify(item.title) === urlSlug || item.id === urlSlug);
+        }
+
+        // Fallback to latest drop if not matched or accessing /practice directly
+        if (!matchedDpp) {
+          matchedDpp = dppList[0];
+        }
+
+        // 4. Fetch the target DPP JSON
+        const jsonPath = matchedDpp.jsonFile || matchedDpp.file;
+        const response = await fetch(`/${jsonPath}`);
+        const data = await response.json();
+
         questions = data.questions;
         if (data.meta && data.meta.title) {
           document.getElementById("dpp-meta-title").innerText = data.meta.title;
         }
 
-        // Apply SEO tags dynamically to practice room
         if (data.seo) {
           document.title = data.seo.title;
-          document.getElementById("practice-seo-desc").setAttribute("content", data.seo.description);
-          document.getElementById("og-practice-title").setAttribute("content", data.seo.title);
-          document.getElementById("og-practice-desc").setAttribute("content", data.seo.description);
+          document.getElementById("practice-seo-desc")?.setAttribute("content", data.seo.description);
+          document.getElementById("og-practice-title")?.setAttribute("content", data.seo.title);
+          document.getElementById("og-practice-desc")?.setAttribute("content", data.seo.description);
         }
 
         userSelections = Array(questions.length).fill(null);
@@ -179,9 +202,10 @@
 
         initPalette();
         renderQuestion();
+
       } catch (err) {
-        console.error("Error loading DPP JSON:", err);
-        document.getElementById("question-statement").innerText = "Failed to load practice questions. Please verify your data files.";
+        console.error("Error matching topic DPP:", err);
+        document.getElementById("question-statement").innerText = "Could not load the practice test for this topic. Please verify the URL or manifest.";
       }
     });
 
@@ -221,7 +245,7 @@
       if (q.image && q.image.trim() !== "") {
         statementHTML += `
           <div class="my-4 flex justify-center">
-            <img src="${q.image}" alt="Physics Question Diagram" class="max-h-60 max-w-full rounded-lg border border-zinc-200 bg-white p-2 shadow-xs object-contain" />
+            <img src="/${q.image}" alt="Physics Question Diagram" class="max-h-60 max-w-full rounded-lg border border-zinc-200 bg-white p-2 shadow-xs object-contain" />
           </div>
         `;
       }

@@ -1,24 +1,24 @@
 {
   "meta": {
     "dppId": "SMA-DPP-042",
-    "title": "SMA DPP #42 — Rotational Dynamics & Pure Rolling",
+    "title": "Rotational Dynamics: Pure Rolling & Moment of Inertia",
     "publishDate": "2026-08-23",
     "unit": "Mechanics",
-    "chapter": "Rotational Motion"
+    "chapter": "Rotational Dynamics"
   },
   "seo": {
-    "title": "NEET & JEE Physics Practice Sheet #42: Pure Rolling & Torque | SMA Physics",
+    "title": "Rotational Dynamics: Pure Rolling & Torque Practice Sheet | SMA Physics",
     "description": "Daily physics practice problem set on pure rolling and moment of inertia for JEE Main, JEE Advanced, and NEET. Includes interactive CBT practice, formula capsules, and printable PDF.",
     "keywords": "JEE Main Physics, NEET Physics, Rotational Dynamics DPP, Pure Rolling Friction, Physics Daily Practice Problems, SMA Physics",
-    "canonicalUrl": "https://smaphysics.com/practice.html?file=dpps/dpp-42/dpp-42.json",
-    "ogImage": "https://smaphysics.com/assets/og-dpp-42.png"
+    "canonicalUrl": "https://smaphysics.com/practice/rotational-dynamics-pure-rolling-moment-of-inertia",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
   },
   "conceptCapsule": {
     "title": "Linear Acceleration in Pure Rolling on an Incline",
     "tag": "Class 11 Mechanics",
-    "summary": "When a symmetric body rolls down an incline of angle $\\theta$ without slipping, static friction prevents slipping at the contact point ($v_{\\text{contact}} = 0$) without dissipating mechanical energy.",
+    "summary": "When a symmetric body of mass $M$ and radius $R$ rolls down an incline of angle $\\theta$ without slipping, static friction prevents slipping at the contact point ($v_{\\text{contact}} = 0$) without dissipating mechanical energy.",
     "keyFormula": "$$a_{\\text{cm}} = \\frac{g \\sin\\theta}{1 + \\frac{I_{\\text{cm}}}{M R^2}}$$",
-    "examTrap": "The acceleration $a_{\\text{cm}}$ is independent of total mass $M$ and radius $R$."
+    "examTrap": "The acceleration $a_{\\text{cm}}$ is independent of total mass $M$ and radius $R$. It is dictated entirely by the geometric shape factor $k = \\frac{I_{\\text{cm}}}{MR^2}$."
   },
   "questions": [
     {
@@ -34,7 +34,37 @@
         { "key": "D", "text": "$Mg \\sin\\theta$" }
       ],
       "correct": "A",
-      "solution": "1. Linear acceleration: $$a = \\frac{g \\sin\\theta}{1 + I/MR^2} = \\frac{2}{3}g \\sin\\theta$$<br>2. Torque about center of mass: $$f R = I \\alpha = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right)$$<br>3. Yields friction force: $$f = \\frac{1}{3}Mg \\sin\\theta$$"
+      "solution": "1. The linear acceleration is given by: $$a = \\frac{g \\sin\\theta}{1 + I/MR^2} = \\frac{2}{3}g \\sin\\theta$$<br>2. Writing torque equation about center of mass: $$f R = I \\alpha = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right)$$<br>3. This gives friction force: $$f = \\frac{1}{2}Ma = \\frac{1}{2}M\\left(\\frac{2}{3}g \\sin\\theta\\right) = \\frac{1}{3}Mg \\sin\\theta$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "NEET",
+      "difficulty": "Level 1",
+      "statement": "What is the moment of inertia of a uniform thin ring of mass $M$ and radius $R$ about its diameter axis?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$MR^2$" },
+        { "key": "B", "text": "$\\frac{1}{2} MR^2$" },
+        { "key": "C", "text": "$\\frac{1}{4} MR^2$" },
+        { "key": "D", "text": "$\\frac{2}{3} MR^2$" }
+      ],
+      "correct": "B",
+      "solution": "According to the <strong>Perpendicular Axis Theorem</strong> for planar bodies:<br>$$I_z = I_x + I_y$$ Since the ring is symmetric, $I_x = I_y = I_{\\text{dia}}$.<br>$$MR^2 = 2I_{\\text{dia}} \\implies I_{\\text{dia}} = \\frac{1}{2}MR^2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Advanced",
+      "difficulty": "Level 3",
+      "statement": "A particle performs uniform circular motion inside a smooth hemispherical bowl of radius $R$ at a height $h$ from the bottom. The angular velocity $\\omega$ of the particle is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\frac{g}{R}}$" },
+        { "key": "B", "text": "$\\sqrt{\\frac{g}{h}}$" },
+        { "key": "C", "text": "$\\sqrt{\\frac{g}{R-h}}$" },
+        { "key": "D", "text": "$\\sqrt{\\frac{gh}{R^2}}$" }
+      ],
+      "correct": "C",
+      "solution": "Let the normal force make an angle $\\theta$ with the vertical axis.<br>1. Equilibrium along vertical: $$N \\cos\\theta = mg$$<br>2. Centripetal acceleration along horizontal: $$N \\sin\\theta = m \\omega^2 r$$<br>3. From geometry, circular radius is $r = R \\sin\\theta$, and vertical distance from center of sphere is $R - h = R \\cos\\theta$.<br>Dividing equations: $$\\tan\\theta = \\frac{\\omega^2 r}{g} \\implies \\frac{r}{R-h} = \\frac{\\omega^2 r}{g} \\implies \\omega = \\sqrt{\\frac{g}{R-h}}$$<br>Therefore, Option <strong>C</strong> is correct."
     }
   ]
 }
