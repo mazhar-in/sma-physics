@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
-  <!-- Primary Dynamic SEO Meta Defaults -->
   <title id="seo-title">SMA Physics — Free Daily DPP & Concepts for NEET & JEE</title>
   <meta name="description" id="seo-description" content="Master NEET and JEE Physics with free daily concept capsules, interactive CBT practice questions, and downloadable 2-column DPP worksheets." />
   <meta name="keywords" id="seo-keywords" content="JEE Physics, NEET Physics, Physics DPP, JEE Advanced Physics, Daily Practice Sheet Physics, SMA Physics" />
@@ -26,23 +25,7 @@
   <meta name="twitter:description" id="twitter-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
   <meta name="twitter:image" id="twitter-image" content="https://smaphysics.com/assets/og-banner.png" />
 
-  <!-- JSON-LD Structured Data Base -->
-  <script type="application/ld+json" id="schema-structured-data">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "SMA Physics",
-    "url": "https://smaphysics.com",
-    "description": "Daily physics concept capsules, CBT simulators, and practice sheets for NEET and JEE aspirants.",
-    "founder": {
-      "@type": "Person",
-      "name": "Syed Mazhar Ali",
-      "sameAs": "https://instagram.com/mazharin"
-    }
-  }
-  </script>
-
-  <!-- Tailwind CSS CDN with dark mode class configuration -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -172,7 +155,7 @@
           </p>
         </div>
 
-        <!-- Big Touch Action Buttons with Topic Renamer -->
+        <!-- Action Buttons -->
         <div class="space-y-3.5 pt-4 border-t border-zinc-800 min-w-0">
           <a id="solve-online-btn" href="/practice" class="w-full min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 px-6 rounded-2xl transition shadow-lg text-base sm:text-lg cursor-pointer">
             <span>Solve Online (CBT Simulator)</span>
@@ -188,30 +171,35 @@
 
     </div>
 
-    <!-- ================= SEGREGATED WORKSHEET ARCHIVE SECTION ================= -->
-    <section id="archive" class="space-y-6 pt-4 min-w-0">
+    <!-- ================= CHAPTER-CLASSIFIED WORKSHEET VAULT ================= -->
+    <section id="archive" class="space-y-5 pt-4 min-w-0">
       
-      <!-- Section Header & Exam Filter Tabs -->
+      <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
         <div>
           <h3 class="text-xl sm:text-2xl font-black text-zinc-950 dark:text-white tracking-tight">Physics Worksheet Vault</h3>
-          <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by competitive exam target track</p>
+          <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by Competitive Exam & Physics Chapter</p>
         </div>
 
-        <!-- Segregation Filter Bar -->
+        <!-- Exam Filter Tabs -->
         <div class="flex items-center gap-1.5 p-1.5 rounded-2xl bg-zinc-200/70 dark:bg-zinc-800/80 border border-zinc-300/60 dark:border-zinc-700/60 overflow-x-auto min-w-0">
           <button onclick="setExamFilter('all')" id="tab-all" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer">
-            All Worksheets
-          </button>
-          <button onclick="setExamFilter('neet')" id="tab-neet" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
-            🩺 NEET
+            All Tracks
           </button>
           <button onclick="setExamFilter('jee-main')" id="tab-jee-main" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
             🎯 JEE Main
           </button>
-          <button onclick="setExamFilter('jee-adv')" id="tab-jee-adv" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
-            ⚡ JEE Adv
+          <button onclick="setExamFilter('neet')" id="tab-neet" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
+            🩺 NEET
           </button>
+        </div>
+      </div>
+
+      <!-- Auto-Generated Chapter Filter Bar -->
+      <div class="space-y-2">
+        <p class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Chapters</p>
+        <div id="chapter-filter-container" class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+          <!-- Populated dynamically from JSON manifest -->
         </div>
       </div>
 
@@ -225,15 +213,15 @@
       
       <!-- Empty State -->
       <div id="empty-state" class="hidden text-center py-12 px-4 rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-800">
-        <p class="text-base font-bold text-zinc-700 dark:text-zinc-300">No worksheets found for this exam filter.</p>
-        <p class="text-xs text-zinc-500 mt-1">Check back soon as new daily modules drop.</p>
+        <p class="text-base font-bold text-zinc-700 dark:text-zinc-300">No worksheets found for this chapter selection.</p>
+        <p class="text-xs text-zinc-500 mt-1">Select "All Chapters" to view available DPPs.</p>
       </div>
 
     </section>
 
   </main>
 
-<!-- ================= FOOTER ================= -->
+  <!-- ================= FOOTER ================= -->
   <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-12 py-8 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 transition-colors">
     <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
@@ -249,7 +237,7 @@
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & FILTER ENGINE ================= -->
+  <!-- ================= CONTROLLER & AUTO CLASSIFIER ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -289,7 +277,8 @@
     let activePdfData = { url: '', filename: 'SMA_Physics_Worksheet.pdf' };
     let masterReleasedList = [];
     let activeDppId = '';
-    let currentFilter = 'all';
+    let currentExamFilter = 'all';
+    let currentChapterFilter = 'all';
 
     async function triggerTopicDownload() {
       if (!activePdfData.url) return;
@@ -319,12 +308,10 @@
       }
     }
 
-    // Exam Segregation Filter
-    function setExamFilter(filterType, updateUrl = true) {
-      currentFilter = filterType;
+    function setExamFilter(filterType) {
+      currentExamFilter = filterType;
 
-      // Update Tab Styles
-      const tabs = ['all', 'neet', 'jee-main', 'jee-adv'];
+      const tabs = ['all', 'jee-main', 'neet'];
       tabs.forEach(t => {
         const el = document.getElementById(`tab-${t}`);
         if (!el) return;
@@ -335,14 +322,49 @@
         }
       });
 
-      if (updateUrl && history.pushState) {
-        const newUrl = filterType === 'all' 
-          ? window.location.pathname 
-          : `${window.location.pathname}?exam=${filterType}`;
-        window.history.replaceState({ path: newUrl }, '', newUrl);
-      }
-
+      renderChapterFilterPills();
       renderArchiveGrid();
+    }
+
+    function setChapterFilter(chapterName) {
+      currentChapterFilter = chapterName;
+      renderChapterFilterPills();
+      renderArchiveGrid();
+    }
+
+    // Automatically extracts unique chapters from the manifest and generates UI pills
+    function renderChapterFilterPills() {
+      const container = document.getElementById("chapter-filter-container");
+      container.innerHTML = "";
+
+      // Get list of chapters currently available
+      const chapterMap = {};
+      masterReleasedList.forEach(item => {
+        const ch = (item.chapter || "General Physics").trim();
+        chapterMap[ch] = (chapterMap[ch] || 0) + 1;
+      });
+
+      // "All Chapters" Pill
+      const isAllActive = currentChapterFilter === 'all';
+      const allBtn = document.createElement("button");
+      allBtn.className = isAllActive 
+        ? "px-3.5 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 shadow-xs cursor-pointer"
+        : "px-3.5 py-1.5 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 shrink-0 cursor-pointer";
+      allBtn.innerText = `All Chapters (${masterReleasedList.length})`;
+      allBtn.onclick = () => setChapterFilter('all');
+      container.appendChild(allBtn);
+
+      // Chapter Pills
+      Object.keys(chapterMap).sort().forEach(ch => {
+        const isActive = currentChapterFilter === ch;
+        const btn = document.createElement("button");
+        btn.className = isActive 
+          ? "px-3.5 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 shadow-xs cursor-pointer"
+          : "px-3.5 py-1.5 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 shrink-0 cursor-pointer";
+        btn.innerText = `${ch} (${chapterMap[ch]})`;
+        btn.onclick = () => setChapterFilter(ch);
+        container.appendChild(btn);
+      });
     }
 
     function renderArchiveGrid() {
@@ -351,24 +373,23 @@
       const statusText = document.getElementById("filter-status-text");
       archiveGrid.innerHTML = "";
 
-      // Match items by exam tag
       const filteredList = masterReleasedList.filter(item => {
+        // Exam Filter
         const examStr = (item.exam || "").toLowerCase();
-        if (currentFilter === 'all') return true;
-        if (currentFilter === 'neet') return examStr.includes('neet');
-        if (currentFilter === 'jee-main') return examStr.includes('jee main') || examStr.includes('jee-main') || examStr.includes('jee');
-        if (currentFilter === 'jee-adv') return examStr.includes('adv') || examStr.includes('advanced');
-        return true;
+        let matchesExam = true;
+        if (currentExamFilter === 'neet') matchesExam = examStr.includes('neet');
+        else if (currentExamFilter === 'jee-main') matchesExam = examStr.includes('jee');
+
+        // Chapter Filter
+        let matchesChapter = true;
+        if (currentChapterFilter !== 'all') {
+          matchesChapter = (item.chapter || "").trim() === currentChapterFilter;
+        }
+
+        return matchesExam && matchesChapter;
       });
 
-      // Update Filter Status Counter
-      const filterNames = {
-        'all': 'all physics worksheets',
-        'neet': 'NEET Target worksheets',
-        'jee-main': 'JEE Main Target worksheets',
-        'jee-adv': 'JEE Advanced Target worksheets'
-      };
-      statusText.innerText = `Showing ${filteredList.length} ${filterNames[currentFilter] || 'worksheets'}`;
+      statusText.innerText = `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'}`;
 
       if (filteredList.length === 0) {
         emptyState.classList.remove("hidden");
@@ -383,7 +404,6 @@
           ? 'border-indigo-600 dark:border-indigo-500 ring-2 ring-indigo-600/20' 
           : 'border-zinc-200 dark:border-zinc-800';
 
-        // Exam badge badge color
         const examLower = (item.exam || "").toLowerCase();
         let examBadgeColor = "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700";
         if (examLower.includes("neet")) {
@@ -407,7 +427,9 @@
                   ${item.title}
                 </h4>
               </a>
-              <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 truncate">${item.chapter}</p>
+              <button onclick="setChapterFilter('${item.chapter}')" class="text-xs sm:text-sm text-indigo-600 dark:text-indigo-400 hover:underline mt-1 font-medium truncate block text-left">
+                📂 ${item.chapter}
+              </button>
             </div>
 
             <div class="mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-2 min-w-0">
@@ -507,14 +529,9 @@
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
-        // Check for URL query param (e.g. ?exam=neet or ?exam=jee-main)
-        const urlParams = new URLSearchParams(window.location.search);
-        const examParam = urlParams.get('exam');
-        if (examParam && ['neet', 'jee-main', 'jee-adv'].includes(examParam)) {
-          setExamFilter(examParam, false);
-        } else {
-          renderArchiveGrid();
-        }
+        // Render Chapter Filter Pills & Archive Cards
+        renderChapterFilterPills();
+        renderArchiveGrid();
 
       } catch (err) {
         console.error("Failed to load topic page:", err);
