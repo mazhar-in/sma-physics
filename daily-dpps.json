@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-011",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-011/dpp-011.json",
+    "pdfFile": "/dpps/dpp-011/SMA_DPP_011.pdf",
+    "title": "Position-Time Graphs: Slopes, Curvature & Motion Interpretation",
+    "chapter": "Motion in a Straight Line",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-010",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-010/dpp-010.json",
