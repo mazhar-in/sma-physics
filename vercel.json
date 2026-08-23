@@ -6,6 +6,10 @@
       "dest": "/about.html"
     },
     {
+      "src": "/chapter/.*",
+      "dest": "/index.html"
+    },
+    {
       "src": "/dpp/.*",
       "dest": "/index.html"
     },

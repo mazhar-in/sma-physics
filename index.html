@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
+  <!-- Primary Dynamic SEO Meta Defaults -->
   <title id="seo-title">SMA Physics — Free Daily DPP & Concepts for NEET & JEE</title>
   <meta name="description" id="seo-description" content="Master NEET and JEE Physics with free daily concept capsules, interactive CBT practice questions, and downloadable 2-column DPP worksheets." />
   <meta name="keywords" id="seo-keywords" content="JEE Physics, NEET Physics, Physics DPP, JEE Advanced Physics, Daily Practice Sheet Physics, SMA Physics" />
@@ -82,9 +83,10 @@
       <!-- Navigation & Dark Mode Toggle -->
       <div class="flex items-center gap-3 sm:gap-6">
         <nav class="flex items-center gap-3 sm:gap-5 text-sm sm:text-base shrink-0 font-semibold">
-          <a href="#concept" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition hidden sm:inline">Concept</a>
+          <a href="/#concept" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition hidden sm:inline">Concept</a>
           <a id="nav-today-dpp" href="/practice" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">Solve DPP</a>
-          <a href="#archive" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">Worksheets</a>
+          <a href="/#archive" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">Worksheets</a>
+          <a href="/about" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">About</a>
         </nav>
 
         <!-- Dark Mode Toggle Button -->
@@ -104,15 +106,17 @@
     <div class="pb-4 border-b border-zinc-200 dark:border-zinc-800 min-w-0">
       <div class="flex items-center gap-2">
         <p id="hero-dpp-badge" class="text-xs sm:text-sm uppercase font-bold tracking-wider text-indigo-600 dark:text-indigo-400">Daily Drop</p>
-        <span id="page-mode-badge" class="hidden px-2 py-0.5 text-[10px] font-bold rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Dedicated Topic Page</span>
+        <span id="page-mode-badge" class="hidden px-2 py-0.5 text-[10px] font-bold rounded bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+          Chapter Overview
+        </span>
       </div>
       <h1 id="hero-main-title" class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-zinc-950 dark:text-white mt-1 break-words">
-        Loading Physics Capsule...
+        Loading Physics Content...
       </h1>
     </div>
 
     <!-- 2-Column Section: Concept Capsule (Left) + DPP Card (Right) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start min-w-0">
+    <div id="hero-feature-section" class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start min-w-0">
       
       <!-- Left Column: Daily Concept Capsule -->
       <section id="concept" class="lg:col-span-7 bg-white dark:bg-zinc-900 p-6 sm:p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm space-y-5 min-w-0 transition-colors">
@@ -177,8 +181,8 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
         <div>
-          <h3 class="text-xl sm:text-2xl font-black text-zinc-950 dark:text-white tracking-tight">Physics Worksheet Vault</h3>
-          <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by Competitive Exam & Physics Chapter</p>
+          <h3 id="vault-title" class="text-xl sm:text-2xl font-black text-zinc-950 dark:text-white tracking-tight">Physics Worksheet Vault</h3>
+          <p id="vault-subtitle" class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by Competitive Exam & Physics Chapter</p>
         </div>
 
         <!-- Exam Filter Tabs -->
@@ -221,23 +225,42 @@
 
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-12 py-8 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 transition-colors">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-        <p>© 2026 <strong>SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
-        <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
-        <p class="text-zinc-400">Free Open Access for JEE & NEET Aspirants</p>
+  <!-- ================= COMPREHENSIVE FOOTER WITH CHAPTER DIRECTORY ================= -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-16 pt-12 pb-8 text-zinc-600 dark:text-zinc-400 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
+      
+      <!-- Chapter Directory Grid -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3">
+          <h4 class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-zinc-900 dark:text-zinc-200">
+            Physics Chapter Archive
+          </h4>
+          <span class="text-xs text-zinc-400 dark:text-zinc-500">Click any chapter to view all its DPPs</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5" id="footer-chapter-grid">
+          <!-- Populated dynamically with direct /chapter/:slug links -->
+        </div>
       </div>
-      <div class="flex items-center gap-5">
-        <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
-        <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition">About</a>
-        <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
+
+      <!-- Bottom Credits & Links -->
+      <div class="pt-6 border-t border-zinc-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+          <p>© 2026 <strong class="text-zinc-900 dark:text-zinc-200">SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
+          <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
+          <p class="text-zinc-500">Free Open Access for JEE & NEET Aspirants</p>
+        </div>
+        <div class="flex items-center gap-5 font-semibold">
+          <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
+          <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition">About</a>
+          <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
+        </div>
       </div>
+
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & AUTO CLASSIFIER ================= -->
+  <!-- ================= CONTROLLER & ROUTING SCRIPT ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -326,18 +349,24 @@
       renderArchiveGrid();
     }
 
-    function setChapterFilter(chapterName) {
+    function setChapterFilter(chapterName, updateUrl = true) {
       currentChapterFilter = chapterName;
+      
+      if (updateUrl && history.pushState) {
+        const newUrl = chapterName === 'all' 
+          ? '/' 
+          : `/chapter/${slugify(chapterName)}`;
+        window.history.pushState({ path: newUrl }, '', newUrl);
+      }
+
       renderChapterFilterPills();
       renderArchiveGrid();
     }
 
-    // Automatically extracts unique chapters from the manifest and generates UI pills
     function renderChapterFilterPills() {
       const container = document.getElementById("chapter-filter-container");
       container.innerHTML = "";
 
-      // Get list of chapters currently available
       const chapterMap = {};
       masterReleasedList.forEach(item => {
         const ch = (item.chapter || "General Physics").trim();
@@ -354,7 +383,6 @@
       allBtn.onclick = () => setChapterFilter('all');
       container.appendChild(allBtn);
 
-      // Chapter Pills
       Object.keys(chapterMap).sort().forEach(ch => {
         const isActive = currentChapterFilter === ch;
         const btn = document.createElement("button");
@@ -367,6 +395,32 @@
       });
     }
 
+    function renderFooterChapterDirectory() {
+      const footerGrid = document.getElementById("footer-chapter-grid");
+      footerGrid.innerHTML = "";
+
+      const chapterMap = {};
+      masterReleasedList.forEach(item => {
+        const ch = (item.chapter || "General Physics").trim();
+        chapterMap[ch] = (chapterMap[ch] || 0) + 1;
+      });
+
+      Object.keys(chapterMap).sort().forEach(ch => {
+        const chSlug = slugify(ch);
+        const count = chapterMap[ch];
+        footerGrid.innerHTML += `
+          <a href="/chapter/${chSlug}" class="flex items-center justify-between p-2.5 rounded-xl border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-800/30 hover:border-indigo-200 dark:hover:border-indigo-800 hover:bg-indigo-50/30 dark:hover:bg-indigo-950/20 transition group">
+            <span class="text-xs sm:text-sm font-semibold text-zinc-700 dark:text-zinc-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">
+              ${ch}
+            </span>
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/60 text-zinc-600 dark:text-zinc-300 shrink-0 ml-2">
+              ${count} DPP${count > 1 ? 's' : ''}
+            </span>
+          </a>
+        `;
+      });
+    }
+
     function renderArchiveGrid() {
       const archiveGrid = document.getElementById("archive-grid");
       const emptyState = document.getElementById("empty-state");
@@ -374,13 +428,11 @@
       archiveGrid.innerHTML = "";
 
       const filteredList = masterReleasedList.filter(item => {
-        // Exam Filter
         const examStr = (item.exam || "").toLowerCase();
         let matchesExam = true;
         if (currentExamFilter === 'neet') matchesExam = examStr.includes('neet');
         else if (currentExamFilter === 'jee-main') matchesExam = examStr.includes('jee');
 
-        // Chapter Filter
         let matchesChapter = true;
         if (currentChapterFilter !== 'all') {
           matchesChapter = (item.chapter || "").trim() === currentChapterFilter;
@@ -389,7 +441,9 @@
         return matchesExam && matchesChapter;
       });
 
-      statusText.innerText = `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'}`;
+      statusText.innerText = currentChapterFilter === 'all'
+        ? `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'}`
+        : `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'} in "${currentChapterFilter}"`;
 
       if (filteredList.length === 0) {
         emptyState.classList.remove("hidden");
@@ -427,7 +481,7 @@
                   ${item.title}
                 </h4>
               </a>
-              <button onclick="setChapterFilter('${item.chapter}')" class="text-xs sm:text-sm text-indigo-600 dark:text-indigo-400 hover:underline mt-1 font-medium truncate block text-left">
+              <button onclick="setChapterFilter('${item.chapter}')" class="text-xs sm:text-sm text-indigo-600 dark:text-indigo-400 hover:underline mt-1 font-medium truncate block text-left cursor-pointer">
                 📂 ${item.chapter}
               </button>
             </div>
@@ -451,28 +505,56 @@
         const rawList = await manifestRes.json();
         if (!rawList || rawList.length === 0) return;
 
-        const pathParts = window.location.pathname.split("/").filter(Boolean);
-        const dppIndex = pathParts.indexOf("dpp");
-        let requestedSlug = "";
-        if (dppIndex !== -1 && pathParts[dppIndex + 1]) {
-          requestedSlug = decodeURIComponent(pathParts[dppIndex + 1]).trim();
-        }
-
         const todayIST = getTodayIST();
         masterReleasedList = rawList.filter(item => item.date <= todayIST);
         masterReleasedList.sort((a, b) => (a.date < b.date ? 1 : -1));
 
+        // 1. Detect Routes: /chapter/:slug or /dpp/:slug
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        const chapterIndex = pathParts.indexOf("chapter");
+        const dppIndex = pathParts.indexOf("dpp");
+
+        let requestedChapterSlug = "";
+        let requestedDppSlug = "";
+
+        if (chapterIndex !== -1 && pathParts[chapterIndex + 1]) {
+          requestedChapterSlug = decodeURIComponent(pathParts[chapterIndex + 1]).trim();
+        } else if (dppIndex !== -1 && pathParts[dppIndex + 1]) {
+          requestedDppSlug = decodeURIComponent(pathParts[dppIndex + 1]).trim();
+        }
+
+        // 2. Handle /chapter/:slug View
+        if (requestedChapterSlug) {
+          // Match chapter name
+          const matchedItem = masterReleasedList.find(item => slugify(item.chapter) === requestedChapterSlug);
+          if (matchedItem) {
+            currentChapterFilter = matchedItem.chapter;
+            document.getElementById("page-mode-badge").classList.remove("hidden");
+            document.getElementById("page-mode-badge").innerText = `Chapter Collection`;
+            document.getElementById("hero-main-title").innerText = `${matchedItem.chapter} — All DPPs`;
+            document.getElementById("hero-dpp-badge").innerText = "Chapter Vault";
+            document.title = `${matchedItem.chapter} Physics DPPs & Tests | SMA Physics`;
+          }
+        }
+
+        // 3. Select Active DPP for Hero Feature Card
         let activeDpp = null;
-        if (requestedSlug) {
-          activeDpp = rawList.find(item => slugify(item.title) === requestedSlug || item.id === requestedSlug);
+        if (requestedDppSlug) {
+          activeDpp = rawList.find(item => slugify(item.title) === requestedDppSlug || item.id === requestedDppSlug);
           if (activeDpp) {
             document.getElementById("page-mode-badge").classList.remove("hidden");
+            document.getElementById("page-mode-badge").innerText = "Dedicated Topic Page";
           }
         }
 
         if (!activeDpp) {
-          activeDpp = masterReleasedList[0] || rawList[0];
+          if (currentChapterFilter !== 'all') {
+            activeDpp = masterReleasedList.find(item => item.chapter === currentChapterFilter) || masterReleasedList[0];
+          } else {
+            activeDpp = masterReleasedList[0] || rawList[0];
+          }
         }
+
         activeDppId = activeDpp.id;
 
         let rawJsonPath = activeDpp.jsonFile || activeDpp.file;
@@ -482,7 +564,7 @@
         if (!todayRes.ok) throw new Error(`Could not load DPP dataset from ${jsonFilePath}`);
         const todayData = await todayRes.json();
 
-        // Topic-Named PDF Download Info
+        // 4. Topic-Named PDF Download Info
         if (activeDpp.pdfFile) {
           const rawPdf = activeDpp.pdfFile.startsWith('/') ? activeDpp.pdfFile : `/${activeDpp.pdfFile}`;
           activePdfData.url = rawPdf;
@@ -492,9 +574,9 @@
           document.getElementById("download-pdf-btn").classList.add("hidden");
         }
 
-        // SEO Updates
-        const topicCanonical = `https://smaphysics.com/dpp/${slugify(activeDpp.title)}`;
-        if (todayData.seo) {
+        // 5. SEO Updates
+        if (!requestedChapterSlug && todayData.seo) {
+          const topicCanonical = `https://smaphysics.com/dpp/${slugify(activeDpp.title)}`;
           document.title = todayData.seo.title || activeDpp.title;
           document.getElementById("seo-description")?.setAttribute("content", todayData.seo.description);
           document.getElementById("seo-keywords")?.setAttribute("content", todayData.seo.keywords);
@@ -506,9 +588,11 @@
           document.getElementById("twitter-description")?.setAttribute("content", todayData.seo.description);
         }
 
-        // Render Hero & Concept Capsule
-        document.getElementById("hero-dpp-badge").innerText = `${activeDpp.id.toUpperCase()} • ${activeDpp.date}`;
-        document.getElementById("hero-main-title").innerText = todayData.meta?.title || activeDpp.title;
+        // 6. Render Concept Capsule
+        if (!requestedChapterSlug) {
+          document.getElementById("hero-dpp-badge").innerText = `${activeDpp.id.toUpperCase()} • ${activeDpp.date}`;
+          document.getElementById("hero-main-title").innerText = todayData.meta?.title || activeDpp.title;
+        }
 
         if (todayData.conceptCapsule) {
           document.getElementById("concept-tag").innerText = `• ${todayData.conceptCapsule.tag || todayData.meta?.chapter || activeDpp.chapter}`;
@@ -518,7 +602,7 @@
           document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
         }
 
-        // Practice Buttons
+        // 7. Practice Action Buttons
         const topicSlug = slugify(activeDpp.title);
         const practiceUrl = `/practice/${topicSlug}`;
 
@@ -529,12 +613,13 @@
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
-        // Render Chapter Filter Pills & Archive Cards
+        // 8. Render All Components
         renderChapterFilterPills();
+        renderFooterChapterDirectory();
         renderArchiveGrid();
 
       } catch (err) {
-        console.error("Failed to load topic page:", err);
+        console.error("Failed to load topic/chapter page:", err);
         document.getElementById("hero-main-title").innerText = "Welcome to SMA Physics";
       } finally {
         if (window.renderMathInElement) {
