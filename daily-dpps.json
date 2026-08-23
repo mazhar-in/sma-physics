@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-010",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-010/dpp-010.json",
+    "pdfFile": "/dpps/dpp-010/SMA_DPP_010.pdf",
+    "title": "Third Equation of Motion: Work-Kinematics & Advanced Motion Problems",
+    "chapter": "Motion in a Straight Line",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-009",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-009/dpp-009.json",
