@@ -2,6 +2,10 @@
   "version": 2,
   "routes": [
     {
+      "src": "/dpp/.*",
+      "dest": "/index.html"
+    },
+    {
       "src": "/practice/.*",
       "dest": "/practice.html"
     },

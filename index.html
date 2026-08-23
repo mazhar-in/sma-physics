@@ -119,9 +119,12 @@
 
     <!-- Header Strip -->
     <div class="pb-4 border-b border-zinc-200 dark:border-zinc-800 min-w-0">
-      <p id="hero-dpp-badge" class="text-xs sm:text-sm uppercase font-bold tracking-wider text-indigo-600 dark:text-indigo-400">Daily Drop</p>
+      <div class="flex items-center gap-2">
+        <p id="hero-dpp-badge" class="text-xs sm:text-sm uppercase font-bold tracking-wider text-indigo-600 dark:text-indigo-400">Daily Drop</p>
+        <span id="page-mode-badge" class="hidden px-2 py-0.5 text-[10px] font-bold rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Dedicated Topic Page</span>
+      </div>
       <h1 id="hero-main-title" class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-zinc-950 dark:text-white mt-1 break-words">
-        Loading Daily Physics Content...
+        Loading Physics Capsule...
       </h1>
     </div>
 
@@ -165,20 +168,21 @@
 
           <h3 id="dpp-card-title" class="text-xl sm:text-2xl font-bold text-zinc-100 break-words"></h3>
           <p class="text-sm sm:text-base text-zinc-400 leading-relaxed break-words">
-            Curated daily problem set containing formula drills, standard entrance problems, and multi-concept questions with step-by-step derivations.
+            Curated problem set containing formula drills, standard entrance problems, and multi-concept questions with step-by-step derivations.
           </p>
         </div>
 
-        <!-- Big Touch Action Buttons -->
+        <!-- Big Touch Action Buttons with Topic Renamer -->
         <div class="space-y-3.5 pt-4 border-t border-zinc-800 min-w-0">
-          <a id="solve-online-btn" href="/practice" class="w-full min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 px-6 rounded-2xl transition shadow-lg text-base sm:text-lg">
+          <a id="solve-online-btn" href="/practice" class="w-full min-h-[52px] sm:min-h-[56px] inline-flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 px-6 rounded-2xl transition shadow-lg text-base sm:text-lg cursor-pointer">
             <span>Solve Online (CBT Simulator)</span>
             <span class="text-xl">→</span>
           </a>
-          <a id="download-pdf-btn" href="#" target="_blank" class="w-full min-h-[48px] sm:min-h-[52px] inline-flex items-center justify-center gap-2.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-100 font-semibold py-3 px-5 rounded-2xl border border-zinc-700 transition text-sm sm:text-base">
+          
+          <button id="download-pdf-btn" onclick="triggerTopicDownload()" class="w-full min-h-[48px] sm:min-h-[52px] inline-flex items-center justify-center gap-2.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-100 font-semibold py-3 px-5 rounded-2xl border border-zinc-700 transition text-sm sm:text-base cursor-pointer">
             <svg class="w-5 h-5 text-zinc-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-            <span class="truncate">Download Printable 2-Col PDF</span>
-          </a>
+            <span id="download-pdf-label" class="truncate">Download Printable Worksheet PDF</span>
+          </button>
         </div>
       </section>
 
@@ -188,7 +192,7 @@
     <section id="archive" class="space-y-5 pt-4 min-w-0">
       <div class="flex items-center justify-between">
         <h3 class="text-lg sm:text-2xl font-bold text-zinc-950 dark:text-white">Recent SMA Practice Sheets</h3>
-        <span class="text-xs sm:text-sm font-semibold text-zinc-400 dark:text-zinc-500">Past Drops</span>
+        <span class="text-xs sm:text-sm font-semibold text-zinc-400 dark:text-zinc-500">All Modules</span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 min-w-0" id="archive-grid"></div>
     </section>
@@ -205,7 +209,7 @@
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & SCHEDULING SCRIPT ================= -->
+  <!-- ================= CONTROLLER & TOPIC ENGINE ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -227,12 +231,53 @@
         .replace(/^-+|-+$/g, '');
     }
 
-    // Helper: Calculates current date string in Indian Standard Time (UTC+5:30)
+    // Creates a clean, human-readable filename for downloaded PDFs
+    function formatPdfFilename(title) {
+      const cleanTitle = title
+        .replace(/[^a-zA-Z0-9\s]/g, '')
+        .trim()
+        .replace(/\s+/g, '_');
+      return `${cleanTitle}_SMA_Physics.pdf`;
+    }
+
     function getTodayIST() {
       const now = new Date();
       const istOffsetMs = 5.5 * 60 * 60 * 1000;
       const istDate = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + istOffsetMs);
       return istDate.toISOString().split('T')[0];
+    }
+
+    // Global variable to store active PDF download details
+    let activePdfData = { url: '', filename: 'SMA_Physics_Worksheet.pdf' };
+
+    // Strict topic-named file downloader
+    async function triggerTopicDownload() {
+      if (!activePdfData.url) return;
+      const btnLabel = document.getElementById("download-pdf-label");
+      const originalText = btnLabel.innerText;
+      btnLabel.innerText = "Downloading...";
+
+      try {
+        const res = await fetch(activePdfData.url);
+        const blob = await res.blob();
+        const blobUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = blobUrl;
+        link.download = activePdfData.filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(blobUrl);
+      } catch (e) {
+        // Fallback standard download
+        const link = document.createElement("a");
+        link.href = activePdfData.url;
+        link.download = activePdfData.filename;
+        link.target = "_blank";
+        link.click();
+      } finally {
+        btnLabel.innerText = originalText;
+      }
     }
 
     document.addEventListener("DOMContentLoaded", async () => {
@@ -242,128 +287,112 @@
         const rawList = await manifestRes.json();
         if (!rawList || rawList.length === 0) return;
 
-        // METHOD 1 DATE-GATING: Filter out future scheduled DPPs
-        const todayIST = getTodayIST();
-        const dppList = rawList.filter(item => item.date <= todayIST);
-
-        if (dppList.length === 0) {
-          document.getElementById("hero-main-title").innerText = "Next DPP Drop Coming Soon!";
-          document.getElementById("hero-dpp-badge").innerText = "Scheduled";
-          return;
+        // 1. Check if user is viewing a dedicated topic page (e.g. /dpp/rotational-motion...)
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        const dppIndex = pathParts.indexOf("dpp");
+        let requestedSlug = "";
+        if (dppIndex !== -1 && pathParts[dppIndex + 1]) {
+          requestedSlug = decodeURIComponent(pathParts[dppIndex + 1]).trim();
         }
 
-        // Sort descending by date to ensure the freshest released DPP is first
-        dppList.sort((a, b) => (a.date < b.date ? 1 : -1));
+        const todayIST = getTodayIST();
+        // Released DPPs
+        const releasedList = rawList.filter(item => item.date <= todayIST);
+        releasedList.sort((a, b) => (a.date < b.date ? 1 : -1));
 
-        const latestDpp = dppList[0];
-        let rawJsonPath = latestDpp.jsonFile || latestDpp.file;
+        let activeDpp = null;
+        if (requestedSlug) {
+          // Find matching specific topic DPP from manifest
+          activeDpp = rawList.find(item => slugify(item.title) === requestedSlug || item.id === requestedSlug);
+          if (activeDpp) {
+            document.getElementById("page-mode-badge").classList.remove("hidden");
+          }
+        }
+
+        // Default to latest released DPP if on homepage or slug not found
+        if (!activeDpp) {
+          activeDpp = releasedList[0] || rawList[0];
+        }
+
+        let rawJsonPath = activeDpp.jsonFile || activeDpp.file;
         const jsonFilePath = rawJsonPath.startsWith('/') ? rawJsonPath : `/${rawJsonPath}`;
 
         const todayRes = await fetch(jsonFilePath);
-        if (!todayRes.ok) throw new Error(`Could not load today's DPP from ${jsonFilePath}`);
+        if (!todayRes.ok) throw new Error(`Could not load DPP dataset from ${jsonFilePath}`);
         const todayData = await todayRes.json();
 
-        // 1. Dynamic SEO updates
+        // 2. Set Topic-Named PDF Download Info
+        if (activeDpp.pdfFile) {
+          const rawPdf = activeDpp.pdfFile.startsWith('/') ? activeDpp.pdfFile : `/${activeDpp.pdfFile}`;
+          activePdfData.url = rawPdf;
+          activePdfData.filename = formatPdfFilename(activeDpp.title);
+          document.getElementById("download-pdf-btn").classList.remove("hidden");
+        } else {
+          document.getElementById("download-pdf-btn").classList.add("hidden");
+        }
+
+        // 3. Dynamic SEO updates for dedicated concept page
+        const topicCanonical = `https://smaphysics.com/dpp/${slugify(activeDpp.title)}`;
         if (todayData.seo) {
-          document.title = todayData.seo.title || document.title;
+          document.title = todayData.seo.title || activeDpp.title;
           document.getElementById("seo-description")?.setAttribute("content", todayData.seo.description);
           document.getElementById("seo-keywords")?.setAttribute("content", todayData.seo.keywords);
-          
-          if (todayData.seo.canonicalUrl) {
-            document.getElementById("seo-canonical")?.setAttribute("href", todayData.seo.canonicalUrl);
-            document.getElementById("og-url")?.setAttribute("content", todayData.seo.canonicalUrl);
-          }
-          
+          document.getElementById("seo-canonical")?.setAttribute("href", topicCanonical);
+          document.getElementById("og-url")?.setAttribute("content", topicCanonical);
           document.getElementById("og-title")?.setAttribute("content", todayData.seo.title);
           document.getElementById("og-description")?.setAttribute("content", todayData.seo.description);
           document.getElementById("twitter-title")?.setAttribute("content", todayData.seo.title);
           document.getElementById("twitter-description")?.setAttribute("content", todayData.seo.description);
-
-          if (todayData.seo.ogImage) {
-            document.getElementById("og-image")?.setAttribute("content", todayData.seo.ogImage);
-            document.getElementById("twitter-image")?.setAttribute("content", todayData.seo.ogImage);
-          }
-
-          const schemaScript = document.getElementById("schema-structured-data");
-          const schema = {
-            "@context": "https://schema.org",
-            "@type": "Quiz",
-            "name": todayData.seo.title,
-            "description": todayData.seo.description,
-            "educationalLevel": "Higher Secondary / Entrance Examination",
-            "about": {
-              "@type": "Thing",
-              "name": todayData.meta?.chapter || latestDpp.chapter
-            },
-            "provider": {
-              "@type": "EducationalOrganization",
-              "name": "SMA Physics",
-              "founder": "Syed Mazhar Ali",
-              "url": "https://smaphysics.com"
-            }
-          };
-          schemaScript.textContent = JSON.stringify(schema);
         }
 
-        // 2. Render Hero & Concept Capsule
-        document.getElementById("hero-dpp-badge").innerText = `Daily Drop • ${latestDpp.date}`;
-        document.getElementById("hero-main-title").innerText = todayData.meta?.title || latestDpp.title;
+        // 4. Render Hero & Concept Capsule
+        document.getElementById("hero-dpp-badge").innerText = `${activeDpp.id.toUpperCase()} • ${activeDpp.date}`;
+        document.getElementById("hero-main-title").innerText = todayData.meta?.title || activeDpp.title;
 
         if (todayData.conceptCapsule) {
-          document.getElementById("concept-tag").innerText = `• ${todayData.conceptCapsule.tag || todayData.meta?.chapter || latestDpp.chapter}`;
+          document.getElementById("concept-tag").innerText = `• ${todayData.conceptCapsule.tag || todayData.meta?.chapter || activeDpp.chapter}`;
           document.getElementById("concept-title").innerText = todayData.conceptCapsule.title;
           document.getElementById("concept-summary").innerHTML = todayData.conceptCapsule.summary;
           document.getElementById("concept-formula").innerHTML = todayData.conceptCapsule.keyFormula;
           document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
         }
 
-        // 3. Generate Clean Topic URL from Title
-        const todaySlug = slugify(latestDpp.title);
-        const practiceUrl = `/practice/${todaySlug}`;
+        // 5. Practice Buttons
+        const topicSlug = slugify(activeDpp.title);
+        const practiceUrl = `/practice/${topicSlug}`;
 
-        document.getElementById("dpp-card-badge").innerText = latestDpp.id.toUpperCase();
-        document.getElementById("dpp-card-meta").innerText = `${latestDpp.questionCount} Questions • ${latestDpp.exam}`;
-        document.getElementById("dpp-card-title").innerText = latestDpp.title;
+        document.getElementById("dpp-card-badge").innerText = activeDpp.id.toUpperCase();
+        document.getElementById("dpp-card-meta").innerText = `${activeDpp.questionCount} Questions • ${activeDpp.exam}`;
+        document.getElementById("dpp-card-title").innerText = activeDpp.title;
         
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
-        const pdfBtn = document.getElementById("download-pdf-btn");
-        if (latestDpp.pdfFile) {
-          const rawPdf = latestDpp.pdfFile.startsWith('/') ? latestDpp.pdfFile : `/${latestDpp.pdfFile}`;
-          pdfBtn.href = rawPdf;
-          pdfBtn.setAttribute("download", `SMA_${latestDpp.id.toUpperCase()}.pdf`);
-          pdfBtn.classList.remove("hidden");
-        } else {
-          pdfBtn.classList.add("hidden");
-        }
-
-        // 4. Render Released Archive Grid (Excludes future date-locked DPPs)
+        // 6. Render Archive Grid with Links to both dedicated /dpp/ concept pages and /practice/ test rooms
         const archiveGrid = document.getElementById("archive-grid");
         archiveGrid.innerHTML = "";
 
-        dppList.slice(1).forEach((item) => {
+        releasedList.forEach((item) => {
           const itemSlug = slugify(item.title);
-          const rawItemPdf = item.pdfFile ? (item.pdfFile.startsWith('/') ? item.pdfFile : `/${item.pdfFile}`) : '';
-          const pdfLinkHtml = rawItemPdf 
-            ? `<a href="${rawItemPdf}" target="_blank" download class="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-700 transition">PDF</a>` 
-            : '';
+          const isCurrentActive = item.id === activeDpp.id;
+          const activeBorderClass = isCurrentActive ? 'border-indigo-600 dark:border-indigo-500 ring-2 ring-indigo-600/20' : 'border-zinc-200 dark:border-zinc-800';
 
           archiveGrid.innerHTML += `
-            <div class="bg-white dark:bg-zinc-900 p-5 sm:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition flex flex-col justify-between min-w-0 shadow-sm">
+            <div class="bg-white dark:bg-zinc-900 p-5 sm:p-6 rounded-2xl border ${activeBorderClass} hover:border-zinc-300 dark:hover:border-zinc-700 transition flex flex-col justify-between min-w-0 shadow-sm">
               <div class="min-w-0">
                 <div class="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1.5">
                   <span class="font-bold text-indigo-600 dark:text-indigo-400">${item.id.toUpperCase()}</span>
                   <span>${item.date}</span>
                 </div>
-                <h4 class="font-bold text-zinc-900 dark:text-white text-base sm:text-lg break-words leading-snug">${item.title}</h4>
+                <a href="/dpp/${itemSlug}" class="block group">
+                  <h4 class="font-bold text-zinc-900 dark:text-white text-base sm:text-lg break-words leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">${item.title}</h4>
+                </a>
                 <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 truncate">${item.chapter} • ${item.exam}</p>
               </div>
               <div class="mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-2 min-w-0">
-                <span class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 font-medium">${item.questionCount} Qs</span>
+                <a href="/dpp/${itemSlug}" class="text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">📖 Read Concept</a>
                 <div class="flex items-center gap-2 shrink-0">
-                  ${pdfLinkHtml}
-                  <a href="/practice/${itemSlug}" class="px-3.5 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 font-bold text-xs sm:text-sm hover:bg-indigo-600 hover:text-white transition">Solve →</a>
+                  <a href="/practice/${itemSlug}" class="px-3.5 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 font-bold text-xs sm:text-sm hover:bg-indigo-600 hover:text-white transition">Solve Test →</a>
                 </div>
               </div>
             </div>
@@ -371,7 +400,7 @@
         });
 
       } catch (err) {
-        console.error("Failed to load daily content from JSON:", err);
+        console.error("Failed to load topic page:", err);
         document.getElementById("hero-main-title").innerText = "Welcome to SMA Physics";
       } finally {
         if (window.renderMathInElement) {
