@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-011",
+    "title": "Position-Time Graphs: Slopes, Curvature & Motion Interpretation",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Position-Time Graphs Interpretation JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering slope analysis, curvature (concavity) and acceleration, turning points, and physical realizability of x-t graphs with detailed solutions.",
+    "keywords": "JEE Main Physics, Kinematics Graphs DPP, Position Time Graph, Slope of x-t Graph, Concavity Acceleration, Turning Point, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/position-time-graphs-interpretation",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Mathematical & Physical Interpretation of Position-Time ($x$-$t$) Curves",
+    "tag": "Class 11 Mechanics",
+    "summary": "The instantaneous velocity is the first derivative / slope of the tangent to the $x$-$t$ graph ($v = \\frac{dx}{dt} = \\tan\\theta$). The acceleration is determined by the curvature / concavity (second derivative): an upward-opening curve ($\\frac{d^2x}{dt^2} > 0$) implies positive acceleration, while a downward-opening curve ($\\frac{d^2x}{dt^2} < 0$) implies negative acceleration.",
+    "keyFormula": "$$v = \\frac{dx}{dt} = \\text{Slope of } x\\text{-}t \\text{ graph}, \\quad a = \\frac{d^2x}{dt^2} = \\text{Concavity of } x\\text{-}t \\text{ graph}$$",
+    "examTrap": "The area under an $x$-$t$ graph has NO physical significance (units $\\text{m}\\cdot\\text{s}$). Also remember that a single vertical line on an $x$-$t$ graph represents infinite velocity and simultaneous existence at multiple points, which is physically impossible. Direction reversal occurs when the slope crosses zero ($\\frac{dx}{dt} = 0$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In an $x$-$t$ graph, the slope of the tangent at any given instant represents:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Instantaneous acceleration" },
+        { "key": "B", "text": "Instantaneous velocity" },
+        { "key": "C", "text": "Average velocity" },
+        { "key": "D", "text": "Rate of change of acceleration" }
+      ],
+      "correct": "B",
+      "solution": "By definition of differential calculus in kinematics: $$\\text{Slope} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta x}{\\Delta t} = \\frac{dx}{dt} = v_{\\text{inst}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An $x$-$t$ graph for a particle moving along a straight line is a parabola opening upwards ($x = kt^2$, $k > 0$). This motion corresponds to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Uniform motion with zero acceleration" },
+        { "key": "B", "text": "Motion with constant negative acceleration" },
+        { "key": "C", "text": "Motion with constant positive acceleration" },
+        { "key": "D", "text": "Non-uniformly accelerated motion with increasing acceleration" }
+      ],
+      "correct": "C",
+      "solution": "1. For $x(t) = kt^2$, $v(t) = \\frac{dx}{dt} = 2kt$.<br>2. Acceleration $a(t) = \\frac{dv}{dt} = 2k = \\text{constant} > 0$.<br>3. An upward opening parabola on an $x$-$t$ graph represents uniform positive acceleration.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The $x$-$t$ graphs of two particles $A$ and $B$ are straight lines making angles of $30^\\circ$ and $60^\\circ$ with the time axis respectively. The ratio of their velocities $v_A / v_B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{3} : 1$" },
+        { "key": "B", "text": "$1 : \\sqrt{3}$" },
+        { "key": "C", "text": "$3 : 1$" },
+        { "key": "D", "text": "$1 : 3$" }
+      ],
+      "correct": "D",
+      "solution": "1. $v_A = \\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$<br>2. $v_B = \\tan(60^\\circ) = \\sqrt{3}$<br>3. Ratio: $$\\frac{v_A}{v_B} = \\frac{1/\\sqrt{3}}{\\sqrt{3}} = \\frac{1}{3}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If an $x$-$t$ curve is concave downwards ($\\frac{d^2x}{dt^2} < 0$) in a given interval, the particle is experiencing:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Negative acceleration (retardation)" },
+        { "key": "B", "text": "Positive acceleration" },
+        { "key": "C", "text": "Zero acceleration" },
+        { "key": "D", "text": "Infinite acceleration" }
+      ],
+      "correct": "A",
+      "solution": "Curvature and concavity are dictated by the second derivative. Concave downward implies $\\frac{d^2x}{dt^2} < 0$. Since acceleration $a = \\frac{d^2x}{dt^2}$, it indicates negative acceleration.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following position-time ($x$-$t$) graphs is physically IMPOSSIBLE?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "An $x$-$t$ graph with negative slope" },
+        { "key": "B", "text": "An $x$-$t$ graph having a vertical tangent (infinite slope)" },
+        { "key": "C", "text": "An $x$-$t$ graph with a horizontal tangent" },
+        { "key": "D", "text": "An $x$-$t$ graph passing below the time axis" }
+      ],
+      "correct": "B",
+      "solution": "A vertical tangent on an $x$-$t$ graph indicates $\\frac{dx}{dt} \\to \\infty$, which would mean an infinite velocity. Furthermore, a vertical line implies that a body is present at multiple distinct positions simultaneously, which is unphysical.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The $x$-$t$ graph of a particle is given by $x = 8t - 2t^2\\text{ m}$. The particle reverses its direction of motion at time $t$ equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ s}$" },
+        { "key": "B", "text": "$1\\text{ s}$" },
+        { "key": "C", "text": "$2\\text{ s}$" },
+        { "key": "D", "text": "$0.5\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "Direction reversal occurs when instantaneous velocity is zero: $$v(t) = \\frac{dx}{dt} = 8 - 4t = 0 \\implies 4t = 8 \\implies t = 2\\text{ s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the $x$-$t$ graph of a moving particle is parallel to the time axis, the state of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Moving with constant positive velocity" },
+        { "key": "B", "text": "Moving with constant negative velocity" },
+        { "key": "C", "text": "Moving with constant acceleration" },
+        { "key": "D", "text": "At rest" }
+      ],
+      "correct": "D",
+      "solution": "A line parallel to the time axis means $x(t) = \\text{constant}$, hence $v = \\frac{dx}{dt} = 0$. The particle remains stationary at rest.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along the $x$-axis. Its $x$-$t$ graph consists of two straight line segments: from $(0\\text{ s}, 0\\text{ m})$ to $(2\\text{ s}, 10\\text{ m})$ and from $(2\\text{ s}, 10\\text{ m})$ to $(5\\text{ s}, 0\\text{ m})$. The average velocity in the interval $t = 0$ to $5\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ m/s}$" },
+        { "key": "B", "text": "$2\\text{ m/s}$" },
+        { "key": "C", "text": "$4\\text{ m/s}$" },
+        { "key": "D", "text": "$-3.33\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Net displacement $\\Delta x = x(5) - x(0) = 0 - 0 = 0\\text{ m}$.<br>$$v_{\\text{avg}} = \\frac{\\Delta x}{\\Delta t} = \\frac{0\\text{ m}}{5\\text{ s}} = 0\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the previous question, the average speed of the particle in the interval $t = 0$ to $5\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ m/s}$" },
+        { "key": "B", "text": "$4\\text{ m/s}$" },
+        { "key": "C", "text": "$0\\text{ m/s}$" },
+        { "key": "D", "text": "$5\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Distance from $0$ to $2\\text{ s}$: $|10 - 0| = 10\\text{ m}$<br>2. Distance from $2$ to $5\\text{ s}$: $|0 - 10| = 10\\text{ m}$<br>3. Total distance $= 20\\text{ m} \\implies \\text{Average Speed} = \\frac{20\\text{ m}}{5\\text{ s}} = 4\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The position of a particle is $x(t) = t^3 - 3t^2 + 2\\text{ m}$. The inflection point on the $x$-$t$ curve (where acceleration is zero) occurs at:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t = 0\\text{ s}$" },
+        { "key": "B", "text": "$t = 2\\text{ s}$" },
+        { "key": "C", "text": "$t = 1\\text{ s}$" },
+        { "key": "D", "text": "$t = 3\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Velocity $v(t) = \\frac{dx}{dt} = 3t^2 - 6t$<br>2. Acceleration $a(t) = \\frac{dv}{dt} = 6t - 6$<br>3. Point of inflection occurs when $a(t) = 0 \\implies 6t - 6 = 0 \\implies t = 1\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is thrown vertically upwards from the ground, reaches maximum height, and falls back to the thrower's hand. The correct $x$-$t$ graph (with upward direction taken as positive) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "A straight line with positive slope" },
+        { "key": "B", "text": "A straight line with negative slope" },
+        { "key": "C", "text": "A parabola opening upwards" },
+        { "key": "D", "text": "A parabola opening downwards" }
+      ],
+      "correct": "D",
+      "solution": "The equation of vertical projectile motion is $y(t) = u t - \\frac{1}{2}gt^2$. This is a quadratic equation with a negative second-degree coefficient ($-\\frac{1}{2}g < 0$), representing a parabola opening downwards.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles $1$ and $2$ start from the same point. Their $x$-$t$ equations are $x_1 = 2t$ and $x_2 = 4t - t^2$. The time at which they meet again after $t = 0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ s}$" },
+        { "key": "B", "text": "$4\\text{ s}$" },
+        { "key": "C", "text": "$1\\text{ s}$" },
+        { "key": "D", "text": "$3\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "Meeting condition $x_1(t) = x_2(t)$:<br>$$2t = 4t - t^2 \\implies t^2 - 2t = 0 \\implies t(t - 2) = 0 \\implies t = 2\\text{ s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the tangent to an $x$-$t$ curve makes an obtuse angle with the positive time axis, the instantaneous velocity is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Positive" },
+        { "key": "B", "text": "Negative" },
+        { "key": "C", "text": "Zero" },
+        { "key": "D", "text": "Increasing" }
+      ],
+      "correct": "B",
+      "solution": "Velocity is the slope $v = \\tan\\theta$. For an obtuse angle ($90^\\circ < \\theta < 180^\\circ$), $\\tan\\theta < 0$, signifying that velocity is negative.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In an $x$-$t$ graph, the area under the curve:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Represents total displacement" },
+        { "key": "B", "text": "Represents velocity" },
+        { "key": "C", "text": "Has no direct physical significance" },
+        { "key": "D", "text": "Represents work done" }
+      ],
+      "correct": "C",
+      "solution": "The integral $\\int x dt$ produces units of $\\text{metre}\\cdot\\text{second}$, which does not correspond to any standard physical quantity in mechanics.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "For a particle executing simple harmonic motion $x = A\\sin(\\omega t)$, the slope of the $x$-$t$ graph is maximum at:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x = +A$" },
+        { "key": "B", "text": "$x = -A$" },
+        { "key": "C", "text": "$x = \\pm A/\\sqrt{2}$" },
+        { "key": "D", "text": "The mean position ($x = 0$)" }
+      ],
+      "correct": "D",
+      "solution": "Slope $v = \\frac{dx}{dt} = A\\omega \\cos(\\omega t)$. The magnitude is maximum ($|v| = A\\omega$) when $\\cos(\\omega t) = \\pm 1 \\implies \\sin(\\omega t) = 0 \\implies x = 0$ (the mean position).<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The position-time graph of a body is shown as a complete circle of radius $R$. This graph is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Physically unrealizable because time cannot flow backwards and one time cannot have two positions" },
+        { "key": "B", "text": "Valid for uniform circular motion" },
+        { "key": "C", "text": "Valid for simple harmonic motion" },
+        { "key": "D", "text": "Valid for oscillatory motion" }
+      ],
+      "correct": "A",
+      "solution": "A circle in the $x$-$t$ plane violates two core physical tenets: (1) a single time instant would correspond to two different spatial positions, and (2) on the left half of the circle, time would be flowing backwards.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car travels on a straight line. Its $x$-$t$ curve has $\\frac{dx}{dt} > 0$ and $\\frac{d^2x}{dt^2} > 0$ throughout. The car is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Moving in positive direction with decreasing speed" },
+        { "key": "B", "text": "Moving in positive direction with increasing speed (speeding up)" },
+        { "key": "C", "text": "Moving in negative direction with increasing speed" },
+        { "key": "D", "text": "At rest" }
+      ],
+      "correct": "B",
+      "solution": "$\\frac{dx}{dt} > 0 \\implies$ velocity is positive (forward motion). $\\frac{d^2x}{dt^2} > 0 \\implies$ acceleration is positive. Since velocity and acceleration have the same sign, the particle is speeding up.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves according to $x(t) = 5\\sin(2\\pi t)\\text{ m}$. In one full period $T = 1\\text{ s}$, the number of times the slope of the $x$-$t$ graph becomes zero is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1$" },
+        { "key": "B", "text": "$4$" },
+        { "key": "C", "text": "$2$" },
+        { "key": "D", "text": "$3$" }
+      ],
+      "correct": "C",
+      "solution": "1. Slope is velocity: $v(t) = 10\\pi \\cos(2\\pi t)$<br>2. In interval $0 \\le t < 1\\text{ s}$, $\\cos(2\\pi t) = 0 \\implies 2\\pi t = \\frac{\\pi}{2}, \\frac{3\\pi}{2} \\implies t = 0.25\\text{ s}$ and $t = 0.75\\text{ s}$ (exactly 2 times).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The $x$-$t$ graph of a particle is given by $x(t) = a - b e^{-k t}$, where $a, b,$ and $k$ are positive constants. As $t \\to \\infty$, the velocity of the particle approaches:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$b k$" },
+        { "key": "B", "text": "$a k$" },
+        { "key": "C", "text": "$\\infty$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "D",
+      "solution": "Velocity $v(t) = \\frac{dx}{dt} = b k e^{-kt}$. As $t \\to \\infty$, $e^{-kt} \\to 0 \\implies v \\to 0$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An elevator descends from rest at the top floor to the ground floor. Its position $y(t)$ measured from the ground floor as a function of time is best described by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "An initial downward curved parabola, followed by a linear descent, and ending with an upward curved parabola to rest" },
+        { "key": "B", "text": "A single continuous straight line with negative slope" },
+        { "key": "C", "text": "A single parabola opening upwards" },
+        { "key": "D", "text": "A horizontal straight line" }
+      ],
+      "correct": "A",
+      "solution": "1. Acceleration phase: downward curved parabola ($y = H - \\frac{1}{2}at^2$).<br>2. Constant speed descent: linear graph with negative slope.<br>3. Braking to rest: upward curving parabola where positive upward acceleration brings velocity back to zero at $y = 0$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

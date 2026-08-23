@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-008",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-008/dpp-008.json",
+    "pdfFile": "/dpps/dpp-008/SMA_DPP_008.pdf",
+    "title": "Speed and Velocity: Average, Instantaneous, Uniform & Non-Uniform Motion",
+    "chapter": "Motion in a Straight Line",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-007",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-007/dpp-007.json",

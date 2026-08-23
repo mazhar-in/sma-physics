@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-012",
+    "title": "Velocity-Time Graphs: Area Integration, Slopes & Graphical Derivations",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Velocity-Time Graphs & Motion Derivations JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQs on velocity-time graphs, signed area calculations for displacement vs total distance, slope-acceleration analysis, and graphical derivations of kinematic equations.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Velocity-Time Graph, Area Under v-t Graph, Graphical Derivation of Equations of Motion, Displacement from v-t Graph, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/velocity-time-graphs-graphical-derivations",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Mathematical Foundations of Velocity-Time ($v$-$t$) Graphs",
+    "tag": "Class 11 Mechanics",
+    "summary": "The instantaneous acceleration is given by the slope of the $v$-$t$ graph ($a = \\frac{dv}{dt} = \\tan\\theta$). The net displacement is the signed area bounded between the $v$-$t$ curve and the time axis ($\\Delta x = \\int v dt = A_{\\text{above}} - A_{\\text{below}}$), while total distance is the total geometric area ($s = \\int |v| dt = A_{\\text{above}} + A_{\\text{below}}$).",
+    "keyFormula": "$$a = \\frac{dv}{dt} = \\text{Slope of } v\\text{-}t \\text{ graph}, \\quad \\Delta x = \\int v dt = \\text{Signed Area}, \\quad \\text{Distance} = \\int |v| dt$$",
+    "examTrap": "Never confuse displacement with distance when integrating a $v$-$t$ graph that crosses the time axis. Displacement requires algebraic subtraction of areas below the axis, whereas distance requires absolute summation. For graphical derivations, the area of the trapezium under uniform acceleration ($s = \\frac{u+v}{2}t$) combined with $t = \\frac{v-u}{a}$ directly derives the third equation of motion $v^2 = u^2 + 2as$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The slope of the tangent to a velocity-time ($v$-$t$) graph at any given instant gives:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Instantaneous velocity" },
+        { "key": "B", "text": "Instantaneous acceleration" },
+        { "key": "C", "text": "Total displacement" },
+        { "key": "D", "text": "Jerk" }
+      ],
+      "correct": "B",
+      "solution": "By definition, the derivative of velocity with respect to time represents instantaneous acceleration: $$\\text{Slope} = \\frac{dv}{dt} = a_{\\text{inst}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The area bounded by a velocity-time graph and the time axis between instants $t_1$ and $t_2$ represents:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Total distance only" },
+        { "key": "B", "text": "Instantaneous acceleration" },
+        { "key": "C", "text": "Net displacement" },
+        { "key": "D", "text": "Average velocity" }
+      ],
+      "correct": "C",
+      "solution": "The definite integral of velocity with respect to time represents net displacement: $$\\Delta x = \\int_{t_1}^{t_2} v(t) dt = \\text{Net Area under } v\\text{-}t \\text{ graph}$$ Areas below the time axis are subtracted algebraically.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a straight line. Its $v$-$t$ graph consists of a triangle above the time axis with base $0$ to $4\\text{ s}$ and height $6\\text{ m/s}$, and a triangle below the axis with base $4$ to $6\\text{ s}$ and depth $-4\\text{ m/s}$. The total distance travelled from $t = 0$ to $6\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ m}$" },
+        { "key": "B", "text": "$12\\text{ m}$" },
+        { "key": "C", "text": "$4\\text{ m}$" },
+        { "key": "D", "text": "$16\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Area above axis ($0$ to $4\\text{ s}$): $A_1 = \\frac{1}{2} \\times 4 \\times 6 = 12\\text{ m}$<br>2. Area below axis ($4$ to $6\\text{ s}$): $|A_2| = \\frac{1}{2} \\times 2 \\times |-4| = 4\\text{ m}$<br>3. Total distance $= A_1 + |A_2| = 12 + 4 = 16\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the previous question, the net displacement of the particle in the interval $t = 0$ to $6\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ m}$" },
+        { "key": "B", "text": "$16\\text{ m}$" },
+        { "key": "C", "text": "$12\\text{ m}$" },
+        { "key": "D", "text": "$4\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "Net displacement considers signed areas: $$\\Delta x = A_1 - |A_2| = 12 - 4 = 8\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the graphical derivation of $s = ut + \\frac{1}{2}at^2$, the $v$-$t$ graph is a straight line from $(0, u)$ to $(t, v)$. The total area under the graph is partitioned into:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Two equal rectangles" },
+        { "key": "B", "text": "A rectangle of area $ut$ and a triangle of area $\\frac{1}{2}(v-u)t$" },
+        { "key": "C", "text": "A triangle of area $ut$ and a square of area $\\frac{1}{2}at^2$" },
+        { "key": "D", "text": "A trapezium of area $(u+v)t$" }
+      ],
+      "correct": "B",
+      "solution": "The trapezium under the $v$-$t$ graph splits into a base rectangle of area $u \\times t = ut$ and an upper triangle of area $\\frac{1}{2} \\times t \\times (v - u) = \\frac{1}{2}at^2$, giving total area $s = ut + \\frac{1}{2}at^2$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car accelerates from rest at a constant rate $\\alpha$ for time $t_1$ and then retards at a constant rate $\\beta$ for time $t_2$ to come to rest. The ratio $\\dfrac{t_1}{t_2}$ in terms of $\\alpha$ and $\\beta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\alpha}{\\beta}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{\\beta}{\\alpha}}$" },
+        { "key": "C", "text": "$\\dfrac{\\beta}{\\alpha}$" },
+        { "key": "D", "text": "$\\dfrac{\\alpha^2}{\\beta^2}$" }
+      ],
+      "correct": "C",
+      "solution": "Peak velocity: $v_{\\max} = \\alpha t_1 = \\beta t_2 \\implies \\frac{t_1}{t_2} = \\frac{\\beta}{\\alpha}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest and its $v$-$t$ graph is a semicircle of radius $R = 4$ units on the upper half-plane with diameter lying along the time axis from $t = 0$ to $t = 8\\text{ s}$. The total displacement is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16\\pi\\text{ m}$" },
+        { "key": "B", "text": "$4\\pi\\text{ m}$" },
+        { "key": "C", "text": "$32\\pi\\text{ m}$" },
+        { "key": "D", "text": "$8\\pi\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "Displacement is the area of the semicircle of radius $R = 4$ units: $$\\text{Area} = \\frac{1}{2} \\pi R^2 = \\frac{1}{2} \\pi (4)^2 = 8\\pi\\text{ m}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The $v$-$t$ graph of an object moving on a line is a trapezium with parallel sides of lengths $T$ (total time) and $t_0$ (constant speed interval), and maximum height $v_0$. The total displacement is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}(T + t_0)v_0$" },
+        { "key": "B", "text": "$(T + t_0)v_0$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}(T - t_0)v_0$" },
+        { "key": "D", "text": "$\\dfrac{T t_0 v_0}{T + t_0}$" }
+      ],
+      "correct": "A",
+      "solution": "Displacement is the area of the trapezium: $$s = \\frac{1}{2}(\\text{sum of parallel sides}) \\times \\text{height} = \\frac{1}{2}(T + t_0)v_0$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following velocity-time graphs represents a ball thrown vertically upwards and caught upon returning? (Taking upward as positive):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "A horizontal line above the time axis" },
+        { "key": "B", "text": "A straight line with negative slope crossing the time axis" },
+        { "key": "C", "text": "A straight line with positive slope starting from origin" },
+        { "key": "D", "text": "A parabola opening downwards" }
+      ],
+      "correct": "B",
+      "solution": "Under constant downward acceleration $a = -g$, the velocity equation is $v(t) = u - gt$. This represents a straight line with a constant negative slope of $-g$ crossing $v = 0$ at the highest point.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The velocity-time relation of a body is represented by $v(t) = 3t^2 - 6t\\text{ m/s}$. The net displacement from $t = 0$ to $t = 3\\text{ s}$ obtained by integration (area under curve) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$9\\text{ m}$" },
+        { "key": "B", "text": "$4\\text{ m}$" },
+        { "key": "C", "text": "$0\\text{ m}$" },
+        { "key": "D", "text": "$-4\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "Displacement by definite integration: $$\\Delta x = \\int_0^3 (3t^2 - 6t) dt = \\left[ t^3 - 3t^2 \\right]_0^3 = 27 - 27 = 0\\text{ m}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the previous question, the total distance travelled by the particle from $t = 0$ to $t = 3\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ m}$" },
+        { "key": "B", "text": "$4\\text{ m}$" },
+        { "key": "C", "text": "$5\\text{ m}$" },
+        { "key": "D", "text": "$8\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Turning point: $v = 3t(t - 2) = 0 \\implies t = 2\\text{ s}$<br>2. Displacement in $[0, 2\\text{ s}]$: $[t^3 - 3t^2]_0^2 = 8 - 12 = -4\\text{ m}$<br>3. Displacement in $[2, 3\\text{ s}]$: $[t^3 - 3t^2]_2^3 = 0 - (-4) = +4\\text{ m}$<br>4. Total distance $= |-4| + |+4| = 8\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The $v$-$t$ graph of a particle is shown as an isosceles triangle with base along the time axis from $t = 0$ to $t = 10\\text{ s}$ and peak velocity $v_{\\max} = 20\\text{ m/s}$ at $t = 5\\text{ s}$. The average acceleration from $t = 0$ to $t = 5\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$+2\\text{ m/s}^2$" },
+        { "key": "C", "text": "$-4\\text{ m/s}^2$" },
+        { "key": "D", "text": "$0\\text{ m/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "Average acceleration is the secant slope: $$a_{\\text{avg}} = \\frac{v(5) - v(0)}{5 - 0} = \\frac{20 - 0}{5} = +4\\text{ m/s}^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For the same motion as in Q12, the average velocity of the particle over the entire $10\\text{ s}$ interval is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ m/s}$" },
+        { "key": "B", "text": "$10\\text{ m/s}$" },
+        { "key": "C", "text": "$5\\text{ m/s}$" },
+        { "key": "D", "text": "$15\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Displacement $=$ Area of triangle $= \\frac{1}{2} \\times 10 \\times 20 = 100\\text{ m}$<br>2. Average velocity $= \\frac{\\text{Displacement}}{\\text{Total Time}} = \\frac{100\\text{ m}}{10\\text{ s}} = 10\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body moves in a straight line such that its $v$-$t$ curve is given by $v = \\alpha \\sqrt{t}$. The distance travelled by the body in the first $4\\text{ seconds}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\alpha/3$" },
+        { "key": "B", "text": "$4\\alpha$" },
+        { "key": "C", "text": "$16\\alpha/3$" },
+        { "key": "D", "text": "$2\\alpha$" }
+      ],
+      "correct": "C",
+      "solution": "Integrating velocity to find area: $$s = \\int_0^4 \\alpha t^{1/2} dt = \\alpha \\left[ \\frac{2}{3} t^{3/2} \\right]_0^4 = \\frac{2}{3}\\alpha (8) = \\frac{16\\alpha}{3}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a $v$-$t$ graph, if the curve is convex downwards ($\\frac{d^2v}{dt^2} > 0$), it implies that:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Acceleration is constant" },
+        { "key": "B", "text": "Acceleration is decreasing with time" },
+        { "key": "C", "text": "Velocity is constant" },
+        { "key": "D", "text": "Acceleration is increasing with time" }
+      ],
+      "correct": "D",
+      "solution": "The rate of change of acceleration is $\\frac{da}{dt} = \\frac{d^2v}{dt^2}$. A positive second derivative ($\\frac{d^2v}{dt^2} > 0$) means that acceleration is increasing with time.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car and a truck start from rest at $t = 0$ from the same point. The car moves with constant acceleration $a_c = 4\\text{ m/s}^2$, and the truck moves with constant velocity $v_t = 16\\text{ m/s}$. From their $v$-$t$ graphs, the time when the car overtakes the truck is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ s}$" },
+        { "key": "B", "text": "$4\\text{ s}$" },
+        { "key": "C", "text": "$12\\text{ s}$" },
+        { "key": "D", "text": "$16\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "For overtake, the areas under both $v$-$t$ curves must be equal ($s_c = s_t$):<br>$$\\frac{1}{2}(4)t^2 = 16t \\implies 2t^2 = 16t \\implies t = 8\\text{ s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q16, the maximum separation between the truck and the car occurs at time $t$ equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ s}$" },
+        { "key": "B", "text": "$4\\text{ s}$" },
+        { "key": "C", "text": "$8\\text{ s}$" },
+        { "key": "D", "text": "$6\\text{ s}$" }
+      ],
+      "correct": "B",
+      "solution": "The separation is maximum when their instantaneous velocities are equal ($v_c = v_t$):<br>$$a_c t = v_t \\implies 4t = 16 \\implies t = 4\\text{ s}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the $v$-$t$ graph of a particle is a straight line parallel to the time axis at $v = v_0 \\ne 0$, the corresponding acceleration-time ($a$-$t$) graph is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "A straight line parallel to time axis at $a = v_0$" },
+        { "key": "B", "text": "A line with positive slope" },
+        { "key": "C", "text": "The time axis itself ($a = 0$)" },
+        { "key": "D", "text": "A vertical straight line" }
+      ],
+      "correct": "C",
+      "solution": "Constant velocity implies slope $\\frac{dv}{dt} = 0$, so the acceleration is zero at all times, matching the time-axis line $a = 0$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is dropped from height $H$ onto a floor and bounces back elastically to the same height. Assuming negligible contact time, the $v$-$t$ graph consists of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "A continuous sine wave" },
+        { "key": "B", "text": "Alternating horizontal steps" },
+        { "key": "C", "text": "Triangular spikes of same sign" },
+        { "key": "D", "text": "Repeated parallel line segments with negative slope $-g$ and vertical jumps at impacts" }
+      ],
+      "correct": "D",
+      "solution": "Between bounces, acceleration is constant ($a = -g$, giving parallel lines of slope $-g$). At each impact, velocity reverses direction abruptly from $-v_0$ to $+v_0$, creating vertical line jumps.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body moves with uniform acceleration. In a $v$-$t$ graph, the area of the trapezium between $t = 0$ and $t = t$ is $\\text{Area} = \\frac{1}{2}(u + v)t$. Substituting $t = \\dfrac{v - u}{a}$ directly derives which kinematic equation?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v^2 = u^2 + 2as$" },
+        { "key": "B", "text": "$s = ut + \\frac{1}{2}at^2$" },
+        { "key": "C", "text": "$v = u + at$" },
+        { "key": "D", "text": "$s_n = u + \\frac{a}{2}(2n - 1)$" }
+      ],
+      "correct": "A",
+      "solution": "$$s = \\left(\\frac{v+u}{2}\\right)\\left(\\frac{v-u}{a}\\right) = \\frac{v^2 - u^2}{2a} \\implies v^2 = u^2 + 2as$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

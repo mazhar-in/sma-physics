@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-013",
+    "title": "Motion Under Gravity: Free Fall, Vertical Projectiles & Multi-Body Collisions",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Motion Under Gravity JEE Main Physics Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering free fall, symmetrical ascent/descent, tower release, water drop intervals, and acoustic splash delay problems.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Motion Under Gravity, Free Fall, Vertical Projectile, Tower Problems, Water Drops Problem, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/motion-under-gravity-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematics of Vertical Motion Under Constant Acceleration Due to Gravity ($g$)",
+    "tag": "Class 11 Mechanics",
+    "summary": "Motion under gravity is a 1D uniformly accelerated motion with constant downward acceleration ($a = -g$). For a projectile launched vertically at speed $u$, maximum height is $H_{\\max} = \\frac{u^2}{2g}$, ascent time equals descent time ($t_{\\text{up}} = t_{\\text{down}} = \\frac{u}{g}$), and total flight time is $T = \\frac{2u}{g}$. If a stone passes height $h$ at $t_1$ and $t_2$, then $h = \\frac{1}{2}g t_1 t_2$ and initial velocity $u = \\frac{1}{2}g(t_1 + t_2)$.",
+    "keyFormula": "$$H_{\\max} = \\frac{u^2}{2g}, \\quad T = \\frac{2u}{g}, \\quad h = \\frac{1}{2}g t_1 t_2, \\quad u = \\frac{1}{2}g(t_1 + t_2), \\quad t_{\\text{drop}} = \\sqrt{t_1 t_2}$$",
+    "examTrap": "When a stone is thrown up with $u$ taking $t_1$ to hit the ground from a tower of height $H$, and another is thrown down with $u$ taking $t_2$, a freely dropped stone takes $t = \\sqrt{t_1 t_2}$ and the height of the tower is $H = \\frac{1}{2}g t_1 t_2$. For ascending balloons or rockets, remember that when a body is released, it inherits the instantaneous velocity of the vehicle at release, NOT its acceleration."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is thrown vertically upwards with velocity $u$. The total time of flight for the ball to return to the projection level is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{g}$" },
+        { "key": "B", "text": "$\\dfrac{2u}{g}$" },
+        { "key": "C", "text": "$\\dfrac{u^2}{2g}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{2}u}{g}$" }
+      ],
+      "correct": "B",
+      "solution": "Setting net vertical displacement $y(T) = 0$: $$u T - \\frac{1}{2}g T^2 = 0 \\implies T\\left(u - \\frac{1}{2}gT\\right) = 0 \\implies T = \\frac{2u}{g}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected vertically upwards. If $t_1$ and $t_2$ are the times taken by the particle to reach the same height $h$ on its ascent and descent respectively, the initial projection speed $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}g(t_2 - t_1)$" },
+        { "key": "B", "text": "$g(t_1 + t_2)$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}g(t_1 + t_2)$" },
+        { "key": "D", "text": "$\\sqrt{g t_1 t_2}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Quadratic equation for height $h$: $\\frac{1}{2}g t^2 - u t + h = 0$<br>2. Sum of roots: $t_1 + t_2 = \\frac{u}{\\frac{1}{2}g} = \\frac{2u}{g} \\implies u = \\frac{1}{2}g(t_1 + t_2)$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body dropped from the top of a tower of height $H$ traverses a distance of $\\dfrac{5H}{9}$ in the last second of its fall. The total height $H$ of the tower is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$80\\text{ m}$" },
+        { "key": "B", "text": "$125\\text{ m}$" },
+        { "key": "C", "text": "$20\\text{ m}$" },
+        { "key": "D", "text": "$45\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Distance in last second: $s_T = \\frac{g}{2}(2T - 1) = \\frac{5}{9}H = \\frac{5}{9}\\left(\\frac{1}{2}g T^2\\right)$<br>2. $9(2T - 1) = 5T^2 \\implies 5T^2 - 18T + 9 = 0 \\implies (5T - 3)(T - 3) = 0 \\implies T = 3\\text{ s}$<br>3. Height $H = \\frac{1}{2}g T^2 = \\frac{1}{2}(10)(3)^2 = 45\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is dropped into a well of depth $d = 20\\text{ m}$. The splash of sound is heard after $t$ seconds. If the speed of sound is $340\\text{ m/s}$ and $g = 10\\text{ m/s}^2$, the total time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.06\\text{ s}$" },
+        { "key": "B", "text": "$2.00\\text{ s}$" },
+        { "key": "C", "text": "$2.12\\text{ s}$" },
+        { "key": "D", "text": "$1.94\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Time for stone to fall: $t_1 = \\sqrt{\\frac{2d}{g}} = \\sqrt{\\frac{40}{10}} = 2.00\\text{ s}$<br>2. Time for sound to travel up: $t_2 = \\frac{d}{v_{\\text{sound}}} = \\frac{20}{340} = 0.0588\\text{ s} \\approx 0.06\\text{ s}$<br>3. Total time $t = 2.00 + 0.06 = 2.06\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Drops of water fall at regular intervals from the roof of a building of height $16\\text{ m}$. The first drop reaches the ground at the instant the fifth drop starts falling. The height of the third drop from the ground at that instant is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ m}$" },
+        { "key": "B", "text": "$12\\text{ m}$" },
+        { "key": "C", "text": "$9\\text{ m}$" },
+        { "key": "D", "text": "$7\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Total time for 1st drop to fall $16\\text{ m}$ is $T = \\sqrt{\\frac{2(16)}{g}}$.<br>2. There are 4 equal time intervals between 5 drops $\\implies \\Delta t = \\frac{T}{4}$.<br>3. When 5th drop starts, 3rd drop has fallen for $t = 2\\Delta t = \\frac{T}{2}$.<br>4. Distance fallen $= \\frac{1}{2}g(T/2)^2 = \\frac{1}{4}(16) = 4\\text{ m}$.<br>5. Height from ground $= 16 - 4 = 12\\text{ m}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A balloon is ascending vertically with a constant acceleration of $2\\text{ m/s}^2$. Two seconds after release from the ground, a stone is dropped from it. The maximum height reached by the stone above the ground is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4.0\\text{ m}$" },
+        { "key": "B", "text": "$4.4\\text{ m}$" },
+        { "key": "C", "text": "$4.8\\text{ m}$" },
+        { "key": "D", "text": "$5.2\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. At $t = 2\\text{ s}$: Height $h_0 = \\frac{1}{2}(2)(2)^2 = 4\\text{ m}$, upward velocity $v_0 = (2)(2) = 4\\text{ m/s}$.<br>2. Extra height reached under gravity: $h_1 = \\frac{v_0^2}{2g} = \\frac{16}{20} = 0.8\\text{ m}$.<br>3. Maximum height above ground $= 4 + 0.8 = 4.8\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is thrown vertically upwards with speed $u_1$ from the top of a tower of height $H$ and reaches the ground in time $t_1$. Another stone thrown vertically downwards with the same speed $u_1$ reaches the ground in time $t_2$. If a third stone is simply dropped from rest from the same height, the time it takes to reach the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{t_1 + t_2}{2}$" },
+        { "key": "B", "text": "$\\dfrac{t_1 - t_2}{2}$" },
+        { "key": "C", "text": "$\\dfrac{t_1 t_2}{t_1 + t_2}$" },
+        { "key": "D", "text": "$\\sqrt{t_1 t_2}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $H = -u_1 t_1 + \\frac{1}{2}g t_1^2 \\implies u_1 = \\frac{1}{2}g t_1 - \\frac{H}{t_1}$<br>2. $H = u_1 t_2 + \\frac{1}{2}g t_2^2 \\implies u_1 = \\frac{H}{t_2} - \\frac{1}{2}g t_2$<br>3. Equating yields $H = \\frac{1}{2}g t_1 t_2$.<br>4. For free fall from rest: $H = \\frac{1}{2}g t^2 \\implies t = \\sqrt{t_1 t_2}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the previous question, the height $H$ of the tower in terms of $t_1$ and $t_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}g t_1 t_2$" },
+        { "key": "B", "text": "$g t_1 t_2$" },
+        { "key": "C", "text": "$\\dfrac{1}{4}g t_1 t_2$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}g (t_1 + t_2)^2$" }
+      ],
+      "correct": "A",
+      "solution": "As established from the kinematic equations for upward and downward projection over height $H$: $$H = \\frac{1}{2}g t_1 t_2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is thrown vertically upwards. The ratio of the distance traversed in the $1\\text{st}$ second to that in the $2\\text{nd}$ second of its upward journey is $5 : 3$. The maximum height reached is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$40\\text{ m}$" },
+        { "key": "B", "text": "$45\\text{ m}$" },
+        { "key": "C", "text": "$50\\text{ m}$" },
+        { "key": "D", "text": "$80\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $s_1 = u - 5$, $s_2 = u - 15$<br>2. $\\frac{u - 5}{u - 15} = \\frac{5}{3} \\implies 3u - 15 = 5u - 75 \\implies 2u = 60 \\implies u = 30\\text{ m/s}$<br>3. Maximum height $H_{\\max} = \\frac{u^2}{2g} = \\frac{900}{20} = 45\\text{ m}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A rocket is fired vertically upwards with a net acceleration $a = 10\\text{ m/s}^2$. Its fuel is exhausted after $1\\text{ minute}$ ($60\\text{ s}$). The total time elapsed from blast-off until the rocket returns to the ground is: (Take $g = 10\\text{ m/s}^2$, $\\sqrt{2} \\approx 1.41$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$120\\text{ s}$" },
+        { "key": "B", "text": "$180\\text{ s}$" },
+        { "key": "C", "text": "$60(2 + \\sqrt{2})\\text{ s} \\approx 205\\text{ s}$" },
+        { "key": "D", "text": "$240\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Powered ascent ($t_1 = 60\\text{ s}$): $v_1 = 600\\text{ m/s}$, $h_1 = 18000\\text{ m}$.<br>2. Free ascent to peak ($t_2$): $t_2 = \\frac{600}{10} = 60\\text{ s}$, $h_2 = 18000\\text{ m}$. Total height $= 36000\\text{ m}$.<br>3. Free fall from peak ($t_3$): $t_3 = \\sqrt{\\frac{2(36000)}{10}} = 60\\sqrt{2}\\text{ s}$.<br>4. Total time $T = 60 + 60 + 60\\sqrt{2} = 60(2 + \\sqrt{2})\\text{ s} \\approx 205\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball $A$ is dropped from the top of a $100\\text{ m}$ tower and at the same time another ball $B$ is projected vertically upwards from the base of the tower with speed $50\\text{ m/s}$. The two balls will meet after a time of: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.0\\text{ s}$" },
+        { "key": "B", "text": "$3.0\\text{ s}$" },
+        { "key": "C", "text": "$4.0\\text{ s}$" },
+        { "key": "D", "text": "$2.0\\text{ s}$" }
+      ],
+      "correct": "D",
+      "solution": "Relative acceleration $a_{\\text{rel}} = (-g) - (-g) = 0$.<br>Relative velocity $u_{\\text{rel}} = 0 - (-50) = 50\\text{ m/s}$.<br>$$t = \\frac{S_{\\text{rel}}}{u_{\\text{rel}}} = \\frac{100\\text{ m}}{50\\text{ m/s}} = 2.0\\text{ s}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Q11, the height above the ground at which the two balls meet is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$80\\text{ m}$" },
+        { "key": "B", "text": "$20\\text{ m}$" },
+        { "key": "C", "text": "$60\\text{ m}$" },
+        { "key": "D", "text": "$75\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "For ball $B$ launched upwards: $$y_B(2) = ut - \\frac{1}{2}gt^2 = 50(2) - \\frac{1}{2}(10)(2)^2 = 100 - 20 = 80\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body is released from a great height $H$ and falls freely. The ratio of the times taken to fall through consecutive equal distances $h$ ($t_1 : t_2 : t_3 : \\dots$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 3 : 5 : 7 : \\dots$" },
+        { "key": "B", "text": "$1 : (\\sqrt{2}-1) : (\\sqrt{3}-\\sqrt{2}) : \\dots$" },
+        { "key": "C", "text": "$1 : \\sqrt{2} : \\sqrt{3} : \\dots$" },
+        { "key": "D", "text": "$1 : 2 : 3 : 4 : \\dots$" }
+      ],
+      "correct": "B",
+      "solution": "1. Time to fall through distance $n h$: $T_n = \\sqrt{\\frac{2nh}{g}} = \\sqrt{n}\\tau$<br>2. Interval times: $t_1 = \\tau$, $t_2 = (\\sqrt{2}-1)\\tau$, $t_3 = (\\sqrt{3}-\\sqrt{2})\\tau$<br>3. Ratio: $1 : (\\sqrt{2}-1) : (\\sqrt{3}-\\sqrt{2}) : \\dots$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A juggler maintains 5 balls in motion, tossing each ball to a vertical height of $20\\text{ m}$. The time interval between successive tosses must be: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.5\\text{ s}$" },
+        { "key": "B", "text": "$1.0\\text{ s}$" },
+        { "key": "C", "text": "$0.8\\text{ s}$" },
+        { "key": "D", "text": "$0.4\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Total air time for each ball: $T = 2\\sqrt{\\frac{2h}{g}} = 2\\sqrt{\\frac{40}{10}} = 4.0\\text{ s}$<br>2. Interval between 5 balls in circulation: $\\Delta t = \\frac{T}{5} = \\frac{4.0}{5} = 0.8\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is dropped from a height $h$. Simultaneously, another stone is thrown up from the ground with such a velocity that it can reach a maximum height of $4h$. The time after which the two stones pass each other is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{h}{2g}}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{2h}{g}}$" },
+        { "key": "C", "text": "$\\sqrt{\\dfrac{h}{4g}}$" },
+        { "key": "D", "text": "$\\sqrt{\\dfrac{h}{8g}}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Speed of 2nd stone: $\\frac{u^2}{2g} = 4h \\implies u = \\sqrt{8gh}$<br>2. Relative acceleration $= 0 \\implies t = \\frac{h}{u_{\\text{rel}}} = \\frac{h}{\\sqrt{8gh}} = \\sqrt{\\frac{h}{8g}}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected vertically upwards with speed $u$. The average speed of the particle in the time interval from $t = 0$ to $t = \\dfrac{2u}{g}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{2}$" },
+        { "key": "B", "text": "$u$" },
+        { "key": "C", "text": "$\\dfrac{u}{4}$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "A",
+      "solution": "1. Total path distance $= 2 H_{\\max} = 2\\left(\\frac{u^2}{2g}\\right) = \\frac{u^2}{g}$<br>2. Total time $T = \\frac{2u}{g}$<br>3. Average speed $= \\frac{u^2/g}{2u/g} = \\frac{u}{2}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body dropped from the top of a tower covers a distance $x$ in the first second and a distance $y$ in the second second. The value of $\\dfrac{y}{x}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$3$" },
+        { "key": "C", "text": "$4$" },
+        { "key": "D", "text": "$5$" }
+      ],
+      "correct": "B",
+      "solution": "By Galileo's odd-number ratio for equal successive intervals: $s_1 : s_2 = 1 : 3 \\implies \\frac{y}{x} = 3$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is released from rest from a height. The distance travelled by the particle in the $3\\text{rd}$ second of its motion is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$45\\text{ m}$" },
+        { "key": "B", "text": "$15\\text{ m}$" },
+        { "key": "C", "text": "$25\\text{ m}$" },
+        { "key": "D", "text": "$35\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "$$s_n = \\frac{g}{2}(2n - 1) \\implies s_3 = \\frac{10}{2}(2(3) - 1) = 5(5) = 25\\text{ m}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball is thrown vertically upwards with speed $u$. At what height above the projection point is the kinetic energy of the ball equal to three times its potential energy (taking ground as reference PE $= 0$)?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{2g}$" },
+        { "key": "B", "text": "$\\dfrac{u^2}{4g}$" },
+        { "key": "C", "text": "$\\dfrac{3u^2}{8g}$" },
+        { "key": "D", "text": "$\\dfrac{u^2}{8g}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Conservation of energy: $E = K + U = \\frac{1}{2}m u^2$<br>2. Given $K = 3U \\implies 4U = \\frac{1}{2}m u^2 \\implies 4(mgh) = \\frac{1}{2}m u^2 \\implies h = \\frac{u^2}{8g}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone dropped from the top of a vertical cliff traverses $44.1\\text{ m}$ in the last second before hitting the water below. The height of the cliff is: (Take $g = 9.8\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$122.5\\text{ m}$" },
+        { "key": "B", "text": "$100.0\\text{ m}$" },
+        { "key": "C", "text": "$144.0\\text{ m}$" },
+        { "key": "D", "text": "$78.4\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Distance in last second $T$: $s_T = \\frac{9.8}{2}(2T - 1) = 44.1 \\implies 2T - 1 = 9 \\implies T = 5\\text{ s}$<br>2. Height $H = \\frac{1}{2}(9.8)(5)^2 = 4.9 \\times 25 = 122.5\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
