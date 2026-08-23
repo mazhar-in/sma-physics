@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SMAPhysicsDPP",
+  "type": "object",
+  "required": ["meta", "conceptCapsule", "questions"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["dppId", "title", "publishDate", "chapter"],
+      "properties": {
+        "dppId": { "type": "string" },
+        "title": { "type": "string" },
+        "publishDate": { "type": "string", "format": "date" },
+        "unit": { "type": "string" },
+        "chapter": { "type": "string" },
+        "totalMarks": { "type": "number" },
+        "durationMinutes": { "type": "number" }
+      }
+    },
+    "conceptCapsule": {
+      "type": "object",
+      "required": ["title", "summary", "keyFormula"],
+      "properties": {
+        "title": { "type": "string" },
+        "readTime": { "type": "string" },
+        "summary": { "type": "string" },
+        "keyFormula": { "type": "string" },
+        "examTrap": { "type": "string" }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "exam", "statement", "options", "correct", "solution"],
+        "properties": {
+          "id": { "type": "string" },
+          "exam": { "type": "string", "enum": ["NEET", "JEE Main", "JEE Advanced"] },
+          "difficulty": { "type": "string" },
+          "statement": { "type": "string" },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": ["key", "text"],
+              "properties": {
+                "key": { "type": "string", "enum": ["A", "B", "C", "D"] },
+                "text": { "type": "string" }
+              }
+            }
+          },
+          "correct": { "type": "string", "enum": ["A", "B", "C", "D"] },
+          "solution": { "type": "string" }
+        }
+      }
+    }
+  }
+}

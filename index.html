@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Static Meta Defaults -->
+  <title id="seo-title">SMA Physics — Free Daily DPP & Concepts for NEET & JEE</title>
+  <meta name="description" id="seo-description" content="Master NEET and JEE Physics with free daily concept capsules, interactive CBT practice questions, and downloadable 2-column DPP worksheets." />
+  <meta name="keywords" id="seo-keywords" content="JEE Physics, NEET Physics, Physics DPP, JEE Advanced Physics, Daily Practice Sheet Physics, SMA Physics" />
+  <meta name="author" content="Syed Mazhar Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" id="seo-canonical" href="https://smaphysics.com/" />
+
+  <!-- Open Graph / Facebook / Telegram / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SMA Physics" />
+  <meta property="og:title" id="og-title" content="SMA Physics — Free Daily DPP & Concepts for NEET & JEE" />
+  <meta property="og:description" id="og-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
+  <meta property="og:url" id="og-url" content="https://smaphysics.com/" />
+  <meta property="og:image" id="og-image" content="https://smaphysics.com/assets/og-banner.png" />
+
+  <!-- Twitter Meta Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" id="twitter-title" content="SMA Physics — Free Daily DPP for NEET & JEE" />
+  <meta name="twitter:description" id="twitter-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
+  <meta name="twitter:image" id="twitter-image" content="https://smaphysics.com/assets/og-banner.png" />
+
+  <!-- JSON-LD Structured Data for Google (Rich Snippets) -->
+  <script type="application/ld+json" id="schema-structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "SMA Physics",
+    "url": "https://smaphysics.com",
+    "description": "Daily physics concept capsules, CBT simulators, and practice sheets for NEET and JEE aspirants.",
+    "founder": {
+      "@type": "Person",
+      "name": "Syed Mazhar Ali",
+      "sameAs": "https://instagram.com/mazharin"
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- KaTeX for Math Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col">
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-sm tracking-wider shadow-sm group-hover:bg-indigo-700 transition">
+          SMA
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-lg tracking-tight leading-none text-zinc-900">
+            SMA <span class="text-indigo-600">Physics</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">NEET • JEE Main & Adv</span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-5 sm:gap-6">
+        <a href="#concept" class="text-sm font-medium text-zinc-600 hover:text-zinc-950 transition">Daily Concept</a>
+        <a id="nav-today-dpp" href="practice.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition">Solve DPP</a>
+        <a href="#archive" class="text-sm font-medium text-zinc-600 hover:text-zinc-950 transition">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-12 flex-1 w-full">
+
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-zinc-200">
+      <div>
+        <p id="hero-dpp-badge" class="text-xs uppercase font-bold tracking-wider text-indigo-600">Daily Drop</p>
+        <h1 id="hero-main-title" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-950">Loading Daily Physics Content...</h1>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Concept Capsule -->
+      <section id="concept" class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-sm space-y-5">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 rounded-md">
+            Concept Capsule (3 Min Read)
+          </span>
+          <span id="concept-tag" class="text-xs text-zinc-400 font-medium">• Loading...</span>
+        </div>
+
+        <h2 id="concept-title" class="text-xl font-bold text-zinc-900 leading-snug"></h2>
+        <div id="concept-summary" class="text-zinc-700 text-sm leading-relaxed"></div>
+
+        <div class="bg-indigo-50/70 border border-indigo-100 rounded-xl p-4 text-center">
+          <p class="text-[11px] font-bold text-indigo-700 mb-1 uppercase tracking-wider">Governing Equation</p>
+          <div id="concept-formula" class="text-lg font-medium text-indigo-950"></div>
+        </div>
+
+        <div class="bg-zinc-50 border-l-4 border-amber-400 p-3.5 rounded-r-lg text-xs text-zinc-700 leading-relaxed">
+          <strong class="text-zinc-900 font-bold">SMA Insight & Trap:</strong> 
+          <span id="concept-trap"></span>
+        </div>
+      </section>
+
+      <!-- Today's DPP Card -->
+      <section id="dpp" class="lg:col-span-5 flex flex-col justify-between bg-zinc-900 text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-6">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span id="dpp-card-badge" class="px-2.5 py-1 text-xs font-semibold rounded-md bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+              SMA DPP
+            </span>
+            <span id="dpp-card-meta" class="text-xs text-zinc-400 font-medium">Practice Sheet</span>
+          </div>
+
+          <h3 id="dpp-card-title" class="text-xl font-bold text-zinc-100"></h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            Curated daily problem set containing formula drills, standard entrance problems, and multi-concept questions with complete solutions.
+          </p>
+        </div>
+
+        <div class="space-y-3 pt-4 border-t border-zinc-800">
+          <a id="solve-online-btn" href="practice.html" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-xl transition shadow-sm">
+            <span>Solve Online (CBT Simulator)</span>
+            <span>→</span>
+          </a>
+          <a id="download-pdf-btn" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-medium py-2.5 px-4 rounded-xl border border-zinc-700 transition text-sm">
+            <svg class="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download Printable PDF (2-Column)</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Archive Section -->
+    <section id="archive" class="space-y-4 pt-6">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-bold text-zinc-950">Recent SMA Practice Sheets</h3>
+        <span class="text-xs font-semibold text-zinc-400">Past Practice Drops</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="archive-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-zinc-200 bg-white mt-12 py-6 text-center text-xs text-zinc-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© 2026 <strong>SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
+      <div class="flex gap-4">
+        <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-800">@mazharin</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SEO INJECTION & DATA CONTROLLER ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const manifestRes = await fetch('./daily-dpps.json');
+        const dppList = await manifestRes.json();
+        if (!dppList || dppList.length === 0) return;
+
+        const latestDpp = dppList[0];
+        const jsonFilePath = latestDpp.jsonFile || latestDpp.file;
+
+        const todayRes = await fetch(jsonFilePath);
+        const todayData = await todayRes.json();
+
+        // 1. DYNAMIC SEO UPDATE
+        if (todayData.seo) {
+          document.title = todayData.seo.title || document.title;
+          
+          document.getElementById("seo-description").setAttribute("content", todayData.seo.description);
+          document.getElementById("seo-keywords").setAttribute("content", todayData.seo.keywords);
+          
+          if (todayData.seo.canonicalUrl) {
+            document.getElementById("seo-canonical").setAttribute("href", todayData.seo.canonicalUrl);
+            document.getElementById("og-url").setAttribute("content", todayData.seo.canonicalUrl);
+          }
+          
+          document.getElementById("og-title").setAttribute("content", todayData.seo.title);
+          document.getElementById("og-description").setAttribute("content", todayData.seo.description);
+          document.getElementById("twitter-title").setAttribute("content", todayData.seo.title);
+          document.getElementById("twitter-description").setAttribute("content", todayData.seo.description);
+
+          if (todayData.seo.ogImage) {
+            document.getElementById("og-image").setAttribute("content", todayData.seo.ogImage);
+            document.getElementById("twitter-image").setAttribute("content", todayData.seo.ogImage);
+          }
+
+          // Dynamic JSON-LD Structured Data update for Google Search
+          const schemaScript = document.getElementById("schema-structured-data");
+          const schema = {
+            "@context": "https://schema.org",
+            "@type": "Quiz",
+            "name": todayData.seo.title,
+            "description": todayData.seo.description,
+            "educationalLevel": "Higher Secondary / Entrance Examination",
+            "about": {
+              "@type": "Thing",
+              "name": todayData.meta.chapter
+            },
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "SMA Physics",
+              "founder": "Syed Mazhar Ali",
+              "url": "https://smaphysics.com"
+            }
+          };
+          schemaScript.textContent = JSON.stringify(schema);
+        }
+
+        // 2. Render Hero & Daily Concept
+        document.getElementById("hero-dpp-badge").innerText = `Daily Drop • ${latestDpp.date}`;
+        document.getElementById("hero-main-title").innerText = todayData.meta.title;
+
+        if (todayData.conceptCapsule) {
+          document.getElementById("concept-tag").innerText = `• ${todayData.conceptCapsule.tag || todayData.meta.chapter}`;
+          document.getElementById("concept-title").innerText = todayData.conceptCapsule.title;
+          document.getElementById("concept-summary").innerHTML = todayData.conceptCapsule.summary;
+          document.getElementById("concept-formula").innerHTML = todayData.conceptCapsule.keyFormula;
+          document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
+        }
+
+        // 3. Render Today's DPP Card
+        document.getElementById("dpp-card-badge").innerText = latestDpp.id.toUpperCase();
+        document.getElementById("dpp-card-meta").innerText = `${latestDpp.questionCount} Questions • ${latestDpp.exam}`;
+        document.getElementById("dpp-card-title").innerText = latestDpp.title;
+        
+        const practiceUrl = `practice.html?file=${jsonFilePath}`;
+        document.getElementById("solve-online-btn").href = practiceUrl;
+        document.getElementById("nav-today-dpp").href = practiceUrl;
+
+        const pdfBtn = document.getElementById("download-pdf-btn");
+        if (latestDpp.pdfFile) {
+          pdfBtn.href = latestDpp.pdfFile;
+          pdfBtn.setAttribute("download", `SMA_${latestDpp.id.toUpperCase()}.pdf`);
+          pdfBtn.classList.remove("hidden");
+        } else {
+          pdfBtn.classList.add("hidden");
+        }
+
+        // 4. Render Archive Grid
+        const archiveGrid = document.getElementById("archive-grid");
+        archiveGrid.innerHTML = "";
+
+        dppList.slice(1).forEach((item) => {
+          const itemJsonPath = item.jsonFile || item.file;
+          const pdfLinkHtml = item.pdfFile 
+            ? `<a href="${item.pdfFile}" target="_blank" download class="text-zinc-500 hover:text-zinc-900 font-medium">PDF</a> • `
+            : '';
+
+          archiveGrid.innerHTML += `
+            <div class="bg-white p-5 rounded-xl border border-zinc-200 hover:border-zinc-300 transition flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-zinc-500 mb-1">
+                  <span class="font-semibold text-indigo-600">${item.id.toUpperCase()}</span>
+                  <span>${item.date}</span>
+                </div>
+                <h4 class="font-semibold text-zinc-900 text-sm">${item.title}</h4>
+                <p class="text-xs text-zinc-500 mt-1">${item.chapter} • ${item.exam}</p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between text-xs">
+                <span class="text-zinc-600 font-medium">${item.questionCount} Questions</span>
+                <div>
+                  ${pdfLinkHtml}
+                  <a href="practice.html?file=${itemJsonPath}" class="text-indigo-600 font-semibold hover:underline">Solve Online →</a>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+      } catch (err) {
+        console.error("Failed to load daily content from JSON:", err);
+      } finally {
+        if (window.renderMathInElement) {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false }
+            ]
+          });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

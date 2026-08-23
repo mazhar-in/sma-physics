@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-042",
+    "title": "SMA DPP #42 — Rotational Dynamics & Pure Rolling",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Rotational Motion"
+  },
+  "seo": {
+    "title": "NEET & JEE Physics Practice Sheet #42: Pure Rolling & Torque | SMA Physics",
+    "description": "Daily physics practice problem set on pure rolling and moment of inertia for JEE Main, JEE Advanced, and NEET. Includes interactive CBT practice, formula capsules, and printable PDF.",
+    "keywords": "JEE Main Physics, NEET Physics, Rotational Dynamics DPP, Pure Rolling Friction, Physics Daily Practice Problems, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice.html?file=dpps/dpp-42/dpp-42.json",
+    "ogImage": "https://smaphysics.com/assets/og-dpp-42.png"
+  },
+  "conceptCapsule": {
+    "title": "Linear Acceleration in Pure Rolling on an Incline",
+    "tag": "Class 11 Mechanics",
+    "summary": "When a symmetric body rolls down an incline of angle $\\theta$ without slipping, static friction prevents slipping at the contact point ($v_{\\text{contact}} = 0$) without dissipating mechanical energy.",
+    "keyFormula": "$$a_{\\text{cm}} = \\frac{g \\sin\\theta}{1 + \\frac{I_{\\text{cm}}}{M R^2}}$$",
+    "examTrap": "The acceleration $a_{\\text{cm}}$ is independent of total mass $M$ and radius $R$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A solid cylinder of mass $M$ and radius $R$ rolls down an incline of angle $\\theta$ without slipping. Find the magnitude of the friction force acting on it.",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\frac{1}{3} Mg \\sin\\theta$" },
+        { "key": "B", "text": "$\\frac{1}{2} Mg \\sin\\theta$" },
+        { "key": "C", "text": "$\\frac{2}{3} Mg \\sin\\theta$" },
+        { "key": "D", "text": "$Mg \\sin\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "1. Linear acceleration: $$a = \\frac{g \\sin\\theta}{1 + I/MR^2} = \\frac{2}{3}g \\sin\\theta$$<br>2. Torque about center of mass: $$f R = I \\alpha = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right)$$<br>3. Yields friction force: $$f = \\frac{1}{3}Mg \\sin\\theta$$"
+    }
+  ]
+}
