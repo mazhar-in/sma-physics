@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
+  <!-- Primary Dynamic SEO Meta Defaults -->
   <title id="seo-title">SMA Physics — Free Daily DPP & Concepts for NEET & JEE</title>
   <meta name="description" id="seo-description" content="Master NEET and JEE Physics with free daily concept capsules, interactive CBT practice questions, and downloadable 2-column DPP worksheets." />
   <meta name="keywords" id="seo-keywords" content="JEE Physics, NEET Physics, Physics DPP, JEE Advanced Physics, Daily Practice Sheet Physics, SMA Physics" />
@@ -24,6 +25,22 @@
   <meta name="twitter:title" id="twitter-title" content="SMA Physics — Free Daily DPP for NEET & JEE" />
   <meta name="twitter:description" id="twitter-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
   <meta name="twitter:image" id="twitter-image" content="https://smaphysics.com/assets/og-banner.png" />
+
+  <!-- JSON-LD Structured Data Base -->
+  <script type="application/ld+json" id="schema-structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "SMA Physics",
+    "url": "https://smaphysics.com",
+    "description": "Daily physics concept capsules, CBT simulators, and practice sheets for NEET and JEE aspirants.",
+    "founder": {
+      "@type": "Person",
+      "name": "Syed Mazhar Ali",
+      "sameAs": "https://instagram.com/mazharin"
+    }
+  }
+  </script>
 
   <!-- Tailwind CSS CDN with dark mode class configuration -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -89,9 +106,7 @@
 
         <!-- Dark Mode Toggle Button -->
         <button onclick="toggleDarkMode()" aria-label="Toggle Theme" class="p-2.5 sm:p-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition cursor-pointer shrink-0">
-          <!-- Sun Icon (shown in dark mode) -->
           <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          <!-- Moon Icon (shown in light mode) -->
           <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
         </button>
       </div>
@@ -190,7 +205,7 @@
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & THEME SCRIPT ================= -->
+  <!-- ================= CONTROLLER & SCHEDULING SCRIPT ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -212,12 +227,33 @@
         .replace(/^-+|-+$/g, '');
     }
 
+    // Helper: Calculates current date string in Indian Standard Time (UTC+5:30)
+    function getTodayIST() {
+      const now = new Date();
+      const istOffsetMs = 5.5 * 60 * 60 * 1000;
+      const istDate = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + istOffsetMs);
+      return istDate.toISOString().split('T')[0];
+    }
+
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         const manifestRes = await fetch('/daily-dpps.json');
         if (!manifestRes.ok) throw new Error("Could not load /daily-dpps.json");
-        const dppList = await manifestRes.json();
-        if (!dppList || dppList.length === 0) return;
+        const rawList = await manifestRes.json();
+        if (!rawList || rawList.length === 0) return;
+
+        // METHOD 1 DATE-GATING: Filter out future scheduled DPPs
+        const todayIST = getTodayIST();
+        const dppList = rawList.filter(item => item.date <= todayIST);
+
+        if (dppList.length === 0) {
+          document.getElementById("hero-main-title").innerText = "Next DPP Drop Coming Soon!";
+          document.getElementById("hero-dpp-badge").innerText = "Scheduled";
+          return;
+        }
+
+        // Sort descending by date to ensure the freshest released DPP is first
+        dppList.sort((a, b) => (a.date < b.date ? 1 : -1));
 
         const latestDpp = dppList[0];
         let rawJsonPath = latestDpp.jsonFile || latestDpp.file;
@@ -242,6 +278,31 @@
           document.getElementById("og-description")?.setAttribute("content", todayData.seo.description);
           document.getElementById("twitter-title")?.setAttribute("content", todayData.seo.title);
           document.getElementById("twitter-description")?.setAttribute("content", todayData.seo.description);
+
+          if (todayData.seo.ogImage) {
+            document.getElementById("og-image")?.setAttribute("content", todayData.seo.ogImage);
+            document.getElementById("twitter-image")?.setAttribute("content", todayData.seo.ogImage);
+          }
+
+          const schemaScript = document.getElementById("schema-structured-data");
+          const schema = {
+            "@context": "https://schema.org",
+            "@type": "Quiz",
+            "name": todayData.seo.title,
+            "description": todayData.seo.description,
+            "educationalLevel": "Higher Secondary / Entrance Examination",
+            "about": {
+              "@type": "Thing",
+              "name": todayData.meta?.chapter || latestDpp.chapter
+            },
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "SMA Physics",
+              "founder": "Syed Mazhar Ali",
+              "url": "https://smaphysics.com"
+            }
+          };
+          schemaScript.textContent = JSON.stringify(schema);
         }
 
         // 2. Render Hero & Concept Capsule
@@ -277,7 +338,7 @@
           pdfBtn.classList.add("hidden");
         }
 
-        // 4. Render Archive Grid with Large Buttons
+        // 4. Render Released Archive Grid (Excludes future date-locked DPPs)
         const archiveGrid = document.getElementById("archive-grid");
         archiveGrid.innerHTML = "";
 
