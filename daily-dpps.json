@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-004",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-004/dpp-004.json",
+    "pdfFile": "/dpps/dpp-004/SMA_DPP_004.pdf",
+    "title": "Dimensions of Physical Quantities & Derived Dimensional Formulae",
+    "chapter": "Units, Dimensions & Errors",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-003",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-003/dpp-003.json",
