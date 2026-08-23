@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-016",
+    "title": "Relative Velocity in 2D: River-Boat & Rain-Man Problems",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Plane"
+  },
+  "seo": {
+    "title": "Relative Velocity in 2D River-Boat & Rain-Man Problems JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering 2D relative motion, shortest path (zero drift), minimum crossing time, rain-man umbrella tilt angle, and 2D collision vector conditions.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Relative Velocity in 2D, River Boat Problems, Rain Man Umbrella Angle, Minimum Drift, Shortest Path Crossing, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/relative-velocity-2d-river-boat-rain-man",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Vector Formulation of Two-Dimensional Relative Velocity",
+    "tag": "Class 11 Mechanics",
+    "summary": "For 2D relative kinematics: $\\vec{v}_{A/B} = \\vec{v}_A - \\vec{v}_B$. In river-boat problems, $\\vec{v}_{b} = \\vec{v}_{b/r} + \\vec{v}_r$. (1) For shortest time, steer normal to the flow ($\\theta = 0^\\circ$, $T_{\\min} = \\frac{d}{v}$, drift $x = \\frac{ud}{v}$). (2) For shortest path / zero drift ($v > u$), steer upstream at $\\sin\\theta = \\frac{u}{v}$ ($T = \\frac{d}{\\sqrt{v^2-u^2}}$). (3) If $u > v$, minimum drift is $x_{\\min} = d\\sqrt{\\frac{u^2}{v^2}-1}$ when $\\sin\\theta = \\frac{v}{u}$. In rain-man kinematics, umbrella must be held aligned with $\\vec{v}_{r/m} = \\vec{v}_r - \\vec{v}_m$.",
+    "keyFormula": "$$T_{\\min} = \\frac{d}{v}, \\quad T_{\\text{shortest path}} = \\frac{d}{\\sqrt{v^2-u^2}}, \\quad \\tan\\theta_{\\text{umbrella}} = \\frac{|(\\vec{v}_r - \\vec{v}_m)_x|}{|(\\vec{v}_r - \\vec{v}_m)_y|}, \\quad \\frac{\\vec{r}_1 - \\vec{r}_2}{|\\vec{r}_1 - \\vec{r}_2|} = \\frac{\\vec{v}_2 - \\vec{v}_1}{|\\vec{v}_2 - \\vec{v}_1|}$$",
+    "examTrap": "When drawing the umbrella angle, always determine the vector $\\vec{v}_{r/m} = \\vec{v}_r - \\vec{v}_m$. The rain appears to strike along $\\vec{v}_{r/m}$, so the umbrella must be held pointing in the opposite direction ($-\\vec{v}_{r/m}$). For two particles in 2D with positions $\\vec{r}_1, \\vec{r}_2$ and constant velocities $\\vec{v}_1, \\vec{v}_2$, the collision condition is that the relative position vector must be antiparallel to the relative velocity vector."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A river of width $d$ flows with speed $u$. A swimmer can swim with speed $v$ ($v > u$) in still water. The time taken to cross the river along the shortest path (zero drift) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{d}{v}$" },
+        { "key": "B", "text": "$\\dfrac{d}{\\sqrt{v^2 - u^2}}$" },
+        { "key": "C", "text": "$\\dfrac{d}{\\sqrt{v^2 + u^2}}$" },
+        { "key": "D", "text": "$\\dfrac{d}{v - u}$" }
+      ],
+      "correct": "B",
+      "solution": "1. For zero drift, the swimmer heads upstream at angle $\\theta$ to the normal such that $v\\sin\\theta = u \\implies \\sin\\theta = u/v$.<br>2. Net velocity across river: $v_y = v\\cos\\theta = \\sqrt{v^2 - u^2}$.<br>3. Time taken: $t = \\frac{d}{\\sqrt{v^2 - u^2}}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Rain is falling vertically downwards with speed $30\\text{ m/s}$. A man cycles due east at $10\\text{ m/s}$. The angle with the vertical at which he should hold his umbrella to protect himself from the rain is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}(3)\\text{ towards west}$" },
+        { "key": "B", "text": "$\\tan^{-1}(3)\\text{ towards east}$" },
+        { "key": "C", "text": "$\\tan^{-1}\\left(\\dfrac{1}{3}\\right)\\text{ towards east}$" },
+        { "key": "D", "text": "$\\tan^{-1}\\left(\\dfrac{1}{3}\\right)\\text{ towards west}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\vec{v}_r = -30\\hat{j}$, $\\vec{v}_m = 10\\hat{i}$.<br>2. $\\vec{v}_{r/m} = \\vec{v}_r - \\vec{v}_m = -10\\hat{i} - 30\\hat{j}$.<br>3. The umbrella must point along $+10\\hat{i} + 30\\hat{j}$ (tilted towards East).<br>4. $\\tan\\theta = \\frac{10}{30} = \\frac{1}{3} \\implies \\theta = \\tan^{-1}\\left(\\frac{1}{3}\\right)\\text{ towards east}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A boat crosses a river of width $1\\text{ km}$ flowing at $3\\text{ km/h}$. The boat is steered perpendicular to the flow with speed $4\\text{ km/h}$ relative to water. The net drift of the boat on reaching the opposite bank is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.00\\text{ km}$" },
+        { "key": "B", "text": "$0.50\\text{ km}$" },
+        { "key": "C", "text": "$1.25\\text{ km}$" },
+        { "key": "D", "text": "$0.75\\text{ km}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Crossing time: $t = \\frac{d}{v_{b/r}} = \\frac{1\\text{ km}}{4\\text{ km/h}} = 0.25\\text{ h}$.<br>2. Drift along river flow: $x = u \\times t = 3\\text{ km/h} \\times 0.25\\text{ h} = 0.75\\text{ km}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "To cross a river in the shortest possible time, a swimmer should steer:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Exactly perpendicular to the direction of river flow" },
+        { "key": "B", "text": "At an angle $\\sin^{-1}(u/v)$ upstream" },
+        { "key": "C", "text": "At an angle $\\sin^{-1}(u/v)$ downstream" },
+        { "key": "D", "text": "At $45^\\circ$ upstream" }
+      ],
+      "correct": "A",
+      "solution": "Crossing time is $t = \\frac{d}{v\\cos\\theta}$. To minimize $t$, $\\cos\\theta$ must be maximum ($\\cos\\theta = 1 \\implies \\theta = 0^\\circ$). The swimmer must head perpendicular to the river flow.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Rain appears to fall vertically to a man walking at $4\\text{ km/h}$. When he doubles his speed to $8\\text{ km/h}$ in the same direction, rain appears to fall at $45^\\circ$ to the vertical. The true velocity of rain has magnitude:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ km/h}$" },
+        { "key": "B", "text": "$4\\sqrt{2}\\text{ km/h}$" },
+        { "key": "C", "text": "$8\\text{ km/h}$" },
+        { "key": "D", "text": "$4\\sqrt{3}\\text{ km/h}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Let $\\vec{v}_r = v_x\\hat{i} - v_y\\hat{j}$.<br>2. At $v_m = 4$: $\\vec{v}_{r/m} = (v_x - 4)\\hat{i} - v_y\\hat{j}$. Vertical $\\implies v_x = 4\\text{ km/h}$.<br>3. At $v_m = 8$: $\\vec{v}_{r/m} = (4 - 8)\\hat{i} - v_y\\hat{j} = -4\\hat{i} - v_y\\hat{j}$.<br>4. $\\tan(45^\\circ) = \\frac{4}{v_y} = 1 \\implies v_y = 4\\text{ km/h}$.<br>5. True speed: $v_r = \\sqrt{v_x^2 + v_y^2} = \\sqrt{4^2 + 4^2} = 4\\sqrt{2}\\text{ km/h}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A river is flowing with velocity $v_r = 5\\text{ km/h}$. A boat has speed $v_{b/r} = 3\\text{ km/h}$ ($v_{b/r} < v_r$). The minimum drift possible for the boat while crossing the river of width $d = 400\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$400\\text{ m}$" },
+        { "key": "B", "text": "$600\\text{ m}$" },
+        { "key": "C", "text": "$533.3\\text{ m}$" },
+        { "key": "D", "text": "$300\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. When $v_{b/r} < v_r$, minimum drift angle satisfies $\\sin\\theta = \\frac{v_{b/r}}{v_r} = \\frac{3}{5}$.<br>2. $\\cos\\theta = 4/5$, $v_x = 5 - 3(3/5) = 16/5\\text{ km/h}$, $v_y = 3(4/5) = 12/5\\text{ km/h}$.<br>3. $x_{\\min} = d\\left(\\frac{v_x}{v_y}\\right) = 400 \\times \\frac{4}{3} \\approx 533.3\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A man standing on a road has to hold his umbrella at $30^\\circ$ with the vertical to keep rain away. He throws away the umbrella and starts running at $10\\text{ km/h}$ in the horizontal direction. He finds that rain drops now hit his head vertically. The actual speed of the rain drops with respect to ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ km/h}$" },
+        { "key": "B", "text": "$10\\sqrt{3}\\text{ km/h}$" },
+        { "key": "C", "text": "$\\dfrac{10}{\\sqrt{3}}\\text{ km/h}$" },
+        { "key": "D", "text": "$20\\text{ km/h}$" }
+      ],
+      "correct": "D",
+      "solution": "1. At rest: $\\tan(30^\\circ) = \\frac{v_x}{v_y} \\implies v_x = \\frac{v_y}{\\sqrt{3}}$.<br>2. Running at $10\\text{ km/h}$, relative horizontal velocity is zero $\\implies v_x = 10\\text{ km/h} \\implies v_y = 10\\sqrt{3}\\text{ km/h}$.<br>3. Actual speed: $v_r = \\sqrt{10^2 + (10\\sqrt{3})^2} = 20\\text{ km/h}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A swimmer wishes to reach a point directly opposite on the other bank of a river flowing at $2\\text{ m/s}$. His swimming speed in still water is $4\\text{ m/s}$. At what angle to the direction of river flow must he direct his strokes?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$120^\\circ$" },
+        { "key": "B", "text": "$150^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "A",
+      "solution": "1. Upstream angle with normal: $\\sin\\theta = \\frac{u}{v} = \\frac{2}{4} = \\frac{1}{2} \\implies \\theta = 30^\\circ$.<br>2. Angle with downstream river flow: $\\alpha = 90^\\circ + 30^\\circ = 120^\\circ$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A boat moves relative to water with velocity $v$ and river flow velocity is $u$. If the time taken by the boat to travel a distance $x$ downstream and back upstream is $T_1$, and the time taken to travel the same distance $x$ across the river and back along the shortest path is $T_2$, the ratio $T_1 / T_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{1 - \\dfrac{u^2}{v^2}}$" },
+        { "key": "B", "text": "$\\dfrac{1}{\\sqrt{1 - \\dfrac{u^2}{v^2}}}$" },
+        { "key": "C", "text": "$1 - \\dfrac{u^2}{v^2}$" },
+        { "key": "D", "text": "$\\dfrac{1}{1 - \\dfrac{u^2}{v^2}}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $T_1 = \\frac{x}{v+u} + \\frac{x}{v-u} = \\frac{2vx}{v^2 - u^2}$.<br>2. $T_2 = \\frac{2x}{\\sqrt{v^2 - u^2}}$.<br>3. Ratio: $\\frac{T_1}{T_2} = \\frac{v}{\\sqrt{v^2 - u^2}} = \\frac{1}{\\sqrt{1 - u^2/v^2}}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Rain is falling with a speed of $12\\sqrt{3}\\text{ m/s}$ at an angle of $30^\\circ$ with the vertical towards east. A cyclist rides towards east. If the rain appears to fall vertically to the cyclist, the speed of the cyclist is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\text{ m/s}$" },
+        { "key": "B", "text": "$18\\text{ m/s}$" },
+        { "key": "C", "text": "$6\\sqrt{3}\\text{ m/s}$" },
+        { "key": "D", "text": "$6\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\vec{v}_r = (12\\sqrt{3}\\sin 30^\\circ)\\hat{i} - (12\\sqrt{3}\\cos 30^\\circ)\\hat{j} = 6\\sqrt{3}\\hat{i} - 18\\hat{j}$.<br>2. For relative velocity to be vertical, horizontal component must be zero: $6\\sqrt{3} - v_c = 0 \\implies v_c = 6\\sqrt{3}\\text{ m/s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A swimmer crosses a river flowing with speed $u$. In crossing in minimum time $T_{\\min}$, he incurs a drift $x_1$. In crossing with minimum drift, the time taken is $T$. If $v > u$, the drift $x_1$ equals:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v d}{u}$" },
+        { "key": "B", "text": "$\\dfrac{u d}{\\sqrt{v^2 - u^2}}$" },
+        { "key": "C", "text": "$\\dfrac{u d}{v+u}$" },
+        { "key": "D", "text": "$\\dfrac{u d}{v}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Minimum time corresponds to heading directly across: $T_{\\min} = \\frac{d}{v}$.<br>2. Downstream drift $x_1 = u \\times T_{\\min} = \\frac{ud}{v}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A man moves due north at $3\\text{ km/h}$. Rain appears to fall vertically with speed $4\\text{ km/h}$. The actual speed and direction of the rain with respect to ground are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ km/h}, \\; \\tan^{-1}(3/4)\\text{ south of vertical}$" },
+        { "key": "B", "text": "$5\\text{ km/h}, \\; \\tan^{-1}(4/3)\\text{ north of vertical}$" },
+        { "key": "C", "text": "$5\\text{ km/h}, \\; \\tan^{-1}(3/4)\\text{ north of vertical}$" },
+        { "key": "D", "text": "$7\\text{ km/h}, \\; 45^\\circ\\text{ south of vertical}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\vec{v}_m = 3\\hat{j}$, $\\vec{v}_{r/m} = -4\\hat{k} \\implies \\vec{v}_r = 3\\hat{j} - 4\\hat{k}$.<br>2. Actual speed $= \\sqrt{3^2 + 4^2} = 5\\text{ km/h}$.<br>3. Angle with vertical $= \\tan^{-1}(3/4)$ south of vertical.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Ship $A$ is travelling due east at $10\\text{ km/h}$ and ship $B$ is travelling due north at $10\\text{ km/h}$. The velocity of ship $A$ relative to ship $B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\sqrt{2}\\text{ km/h (North-East)}$" },
+        { "key": "B", "text": "$10\\sqrt{2}\\text{ km/h (South-East)}$" },
+        { "key": "C", "text": "$10\\sqrt{2}\\text{ km/h (North-West)}$" },
+        { "key": "D", "text": "$10\\sqrt{2}\\text{ km/h (South-West)}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\vec{v}_A = 10\\hat{i}$, $\\vec{v}_B = 10\\hat{j}$.<br>2. $\\vec{v}_{A/B} = 10\\hat{i} - 10\\hat{j}$.<br>3. Magnitude $= 10\\sqrt{2}\\text{ km/h}$, directed towards South-East.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A boat which has a speed of $5\\text{ km/h}$ in still water crosses a river of width $1\\text{ km}$ along the shortest possible path in $15\\text{ minutes}$. The velocity of the river water is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1\\text{ km/h}$" },
+        { "key": "B", "text": "$2\\text{ km/h}$" },
+        { "key": "C", "text": "$3\\text{ km/h}$" },
+        { "key": "D", "text": "$4\\text{ km/h}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Shortest path $\\implies v_y = \\sqrt{v_b^2 - v_r^2}$.<br>2. $v_y = \\frac{1\\text{ km}}{0.25\\text{ h}} = 4\\text{ km/h}$.<br>3. $4 = \\sqrt{5^2 - v_r^2} \\implies 16 = 25 - v_r^2 \\implies v_r = 3\\text{ km/h}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For a person moving with velocity $\\vec{v}_m$ in rain of velocity $\\vec{v}_r$, the apparent velocity $\\vec{v}_{r/m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{v}_m - \\vec{v}_r$" },
+        { "key": "B", "text": "$\\vec{v}_r + \\vec{v}_m$" },
+        { "key": "C", "text": "$\\vec{v}_m \\times \\vec{v}_r$" },
+        { "key": "D", "text": "$\\vec{v}_r - \\vec{v}_m$" }
+      ],
+      "correct": "D",
+      "solution": "By the standard definition of relative velocity: $$\\vec{v}_{r/m} = \\vec{v}_r - \\vec{v}_m$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A person standing on an open truck moving horizontally with constant speed $v$ experiences rain falling at angle $\theta$ with the vertical. When the truck accelerates forward, the angle $\theta$ with the vertical will:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Increase" },
+        { "key": "B", "text": "Decrease" },
+        { "key": "C", "text": "Remain unchanged" },
+        { "key": "D", "text": "Become zero" }
+      ],
+      "correct": "A",
+      "solution": "$\\tan\\theta = \\frac{v_{\\text{truck}}}{v_{\\text{rain}}}$. As the truck accelerates, $v_{\\text{truck}}$ increases, hence $\\tan\\theta$ increases, meaning $\\theta$ increases.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles $A$ and $B$ move with constant velocities $\\vec{v}_1$ and $\vec{v}_2$. At initial moment $t = 0$, their position vectors are $\vec{r}_1$ and $\vec{r}_2$. The condition for collision of $A$ and $B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{r}_1 - \\vec{r}_2 = \\vec{v}_1 - \\vec{v}_2$" },
+        { "key": "B", "text": "$\\dfrac{\\vec{r}_1 - \\vec{r}_2}{|\\vec{r}_1 - \\vec{r}_2|} = \\dfrac{\\vec{v}_2 - \\vec{v}_1}{|\\vec{v}_2 - \\vec{v}_1|}$" },
+        { "key": "C", "text": "$(\\vec{r}_1 - \\vec{r}_2) \\cdot (\\vec{v}_1 - \\vec{v}_2) = 0$" },
+        { "key": "D", "text": "$(\\vec{r}_1 - \\vec{r}_2) \\times (\\vec{v}_1 - \\vec{v}_2) = 0$" }
+      ],
+      "correct": "B",
+      "solution": "Collision condition: $\\vec{r}_1 + \\vec{v}_1 t = \\vec{r}_2 + \\vec{v}_2 t \\implies \\vec{r}_1 - \\vec{r}_2 = (\\vec{v}_2 - \\vec{v}_1)t$. Since $t > 0$, the unit vectors must be strictly equal: $$\\frac{\\vec{r}_1 - \\vec{r}_2}{|\\vec{r}_1 - \\vec{r}_2|} = \\frac{\\vec{v}_2 - \\vec{v}_1}{|\\vec{v}_2 - \\vec{v}_1|}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Raindrops are falling vertically with a velocity $10\\text{ m/s}$. To a cyclist moving due north, rain appears to come at $45^\\circ$ to vertical. The velocity of the cyclist is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ m/s due south}$" },
+        { "key": "B", "text": "$10\\sqrt{2}\\text{ m/s due north}$" },
+        { "key": "C", "text": "$10\\text{ m/s due north}$" },
+        { "key": "D", "text": "$10\\text{ m/s due south}$" }
+      ],
+      "correct": "C",
+      "solution": "$\\tan(45^\\circ) = \\frac{v_c}{v_r} = 1 \\implies v_c = v_r = 10\\text{ m/s due north}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A boat can travel with speed $v_{b/r}$ in still water. If river flow is $v_r$ ($v_r > v_{b/r}$), to achieve minimum drift the angle $\theta$ of steering with the upstream direction must satisfy:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\cos\\theta = \\dfrac{v_{b/r}}{v_r}$" },
+        { "key": "B", "text": "$\\tan\\theta = \\dfrac{v_{b/r}}{v_r}$" },
+        { "key": "C", "text": "$\\sin\\theta = \\dfrac{v_r}{v_{b/r}}$" },
+        { "key": "D", "text": "$\\sin\\theta = \\dfrac{v_{b/r}}{v_r}$" }
+      ],
+      "correct": "D",
+      "solution": "Drift $x = \\frac{d}{v_{b/r}\\cos\\theta}(v_r - v_{b/r}\\sin\\theta)$. Setting $\\frac{dx}{d\\theta} = 0$ yields $\\sin\\theta = \\frac{v_{b/r}}{v_r}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A flag is mounted on a car moving due north with speed $9\\text{ m/s}$. Wind blows due east with speed $12\\text{ m/s}$. The direction in which the flag flutters is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}(3/4)\\text{ south of east (South-East quadrant)}$" },
+        { "key": "B", "text": "$\\tan^{-1}(4/3)\\text{ north of east}$" },
+        { "key": "C", "text": "$\\tan^{-1}(3/4)\\text{ north of west}$" },
+        { "key": "D", "text": "Directly South" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\vec{v}_{w/c} = \\vec{v}_w - \\vec{v}_c = 12\\hat{i} - 9\\hat{j}$.<br>2. Direction: $\\tan\\theta = \\frac{9}{12} = \\frac{3}{4}$ south of east.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

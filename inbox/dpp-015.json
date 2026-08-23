@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-015",
+    "title": "Vectors Recap: Addition, Subtraction, Resolution & Direction Cosines",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Plane / Mathematical Tools"
+  },
+  "seo": {
+    "title": "Vectors Addition, Subtraction and Resolution JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering parallelogram law, vector difference, rectangular components, direction cosines, equilibrium of coplanar forces, and unit vectors.",
+    "keywords": "JEE Main Physics, Vectors DPP, Vector Addition, Parallelogram Law, Resolution of Vectors, Direction Cosines, Equilibrium of Forces, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/vectors-addition-subtraction-resolution",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Vector Algebra: Addition, Subtraction, Direction Cosines & Equilibrium",
+    "tag": "Class 11 Mechanics / Math Tools",
+    "summary": "The resultant of two vectors $\\vec{A}$ and $\\vec{B}$ inclined at angle $\\theta$ has magnitude $R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}$ and direction $\\tan\\alpha = \\frac{B\\sin\\theta}{A + B\\cos\\theta}$. The magnitude of vector subtraction is $|\\vec{A} - \\vec{B}| = \\sqrt{A^2 + B^2 - 2AB\\cos\\theta}$. A 3D vector $\\vec{A} = A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}$ satisfies direction cosines $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$ and $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2$.",
+    "keyFormula": "$$R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}, \\quad |\\vec{A}-\\vec{B}| = \\sqrt{A^2 + B^2 - 2AB\\cos\\theta}, \\quad \\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$$",
+    "examTrap": "Remember that the minimum number of coplanar non-zero vectors with unequal magnitudes required to give zero resultant is 3 (triangle inequality $A + B \\ge C$), while for non-coplanar vectors the minimum is 4. If $|\\vec{A} + \\vec{B}| = |\\vec{A} - \\vec{B}|$, the vectors are strictly orthogonal ($\\theta = 90^\\circ$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two vectors $\\vec{A}$ and $\\vec{B}$ have equal magnitudes $|\\vec{A}| = |\\vec{B}| = F$. If the magnitude of their resultant is also equal to $F$, the angle $\\theta$ between the two vectors is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60^\\circ$" },
+        { "key": "B", "text": "$120^\\circ$" },
+        { "key": "C", "text": "$90^\\circ$" },
+        { "key": "D", "text": "$150^\\circ$" }
+      ],
+      "correct": "B",
+      "solution": "1. $R^2 = A^2 + B^2 + 2AB\\cos\\theta$<br>2. $F^2 = 2F^2(1 + \\cos\\theta) \\implies 1 + \\cos\\theta = \\frac{1}{2}$<br>3. $\\cos\\theta = -\\frac{1}{2} \\implies \\theta = 120^\\circ$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The magnitude of the sum of two vectors is equal to the magnitude of their difference, i.e., $|\\vec{A} + \\vec{B}| = |\\vec{A} - \\vec{B}|$. The angle between $\\vec{A}$ and $\\vec{B}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$90^\\circ$" },
+        { "key": "D", "text": "$180^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $|\\vec{A} + \\vec{B}|^2 = |\\vec{A} - \\vec{B}|^2$<br>2. $A^2 + B^2 + 2AB\\cos\\theta = A^2 + B^2 - 2AB\\cos\\theta$<br>3. $4AB\\cos\\theta = 0 \\implies \\cos\\theta = 0 \\implies \\theta = 90^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A unit vector in the direction of the resultant of vectors $\\vec{A} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{B} = \\hat{i} - \\hat{j} + 3\\hat{k}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3\\hat{i} + 2\\hat{j} + 2\\hat{k}}{13}$" },
+        { "key": "B", "text": "$\\dfrac{3\\hat{i} + 2\\hat{j} + 2\\hat{k}}{\\sqrt{13}}$" },
+        { "key": "C", "text": "$\\dfrac{3\\hat{i} - 2\\hat{j} + 2\\hat{k}}{\\sqrt{17}}$" },
+        { "key": "D", "text": "$\\dfrac{3\\hat{i} + 2\\hat{j} + 2\\hat{k}}{\\sqrt{17}}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $\\vec{R} = \\vec{A} + \\vec{B} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$<br>2. $|\\vec{R}| = \\sqrt{3^2 + 2^2 + 2^2} = \\sqrt{9 + 4 + 4} = \\sqrt{17}$<br>3. $\\hat{R} = \\frac{\\vec{R}}{|\\vec{R}|} = \\frac{3\\hat{i} + 2\\hat{j} + 2\\hat{k}}{\\sqrt{17}}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A vector $\\vec{A}$ makes angles $\\alpha, \\beta,$ and $\\gamma$ with the positive $x, y,$ and $z$ axes respectively. The value of $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$1$" },
+        { "key": "C", "text": "$3$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "A",
+      "solution": "1. Direction cosines identity: $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$<br>2. $\\sum \\sin^2\\alpha = \\sum (1 - \\cos^2\\alpha) = 3 - \\sum \\cos^2\\alpha = 3 - 1 = 2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The resultant of two forces $P$ and $Q$ is $R$. If force $Q$ is doubled, the new resultant is perpendicular to $P$. The magnitude of $R$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$P$" },
+        { "key": "B", "text": "$Q$" },
+        { "key": "C", "text": "$\\dfrac{P+Q}{2}$" },
+        { "key": "D", "text": "$\\sqrt{P^2 + Q^2}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Perpendicular condition: $\\tan(90^\\circ) \\implies P + 2Q\\cos\\theta = 0 \\implies \\cos\\theta = -\\frac{P}{2Q}$<br>2. $R^2 = P^2 + Q^2 + 2PQ\\left(-\\frac{P}{2Q}\\right) = P^2 + Q^2 - P^2 = Q^2 \\implies R = Q$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Six coplanar forces of equal magnitude $10\\text{ N}$ act on a particle. The angle between any two adjacent forces is $60^\\circ$. The magnitude of their resultant is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60\\text{ N}$" },
+        { "key": "B", "text": "$30\\text{ N}$" },
+        { "key": "C", "text": "$0\\text{ N}$" },
+        { "key": "D", "text": "$10\\sqrt{3}\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "The 6 forces form a closed symmetric regular hexagon (or 3 pairs of diametrically opposite forces cancelling each other in pairs), yielding a net vector resultant of $0\\text{ N}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "What is the minimum number of coplanar non-zero vectors of unequal magnitudes whose vector sum can be zero?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$4$" },
+        { "key": "C", "text": "$5$" },
+        { "key": "D", "text": "$3$" }
+      ],
+      "correct": "D",
+      "solution": "Two non-zero unequal vectors can never cancel ($|\\vec{A}| \\ne |\\vec{B}|$). Three coplanar vectors with unequal magnitudes can satisfy the triangle rule ($\vec{A} + \\vec{B} + \\vec{C} = 0$), so the minimum number is 3.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "What is the minimum number of non-coplanar non-zero vectors whose resultant can be zero?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4$" },
+        { "key": "B", "text": "$3$" },
+        { "key": "C", "text": "$2$" },
+        { "key": "D", "text": "$5$" }
+      ],
+      "correct": "A",
+      "solution": "The resultant of any 3 non-coplanar vectors cannot be zero because the resultant of two vectors lies in their plane, leaving the third vector with an uncancelled out-of-plane component. Hence, a minimum of 4 non-coplanar vectors are required.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A vector $\\vec{A} = 3\\hat{i} + 4\\hat{j}$ is rotated through an angle of $90^\\circ$ in the counter-clockwise direction in the $xy$-plane. The new vector $\\vec{A}'$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\hat{i} - 3\\hat{j}$" },
+        { "key": "B", "text": "$-4\\hat{i} + 3\\hat{j}$" },
+        { "key": "C", "text": "$-3\\hat{i} - 4\\hat{j}$" },
+        { "key": "D", "text": "$3\\hat{i} - 4\\hat{j}$" }
+      ],
+      "correct": "B",
+      "solution": "Counter-clockwise rotation of $(x, y)$ by $90^\\circ$ transforms to $(-y, x)$. For $\\vec{A} = 3\\hat{i} + 4\\hat{j}$, $\\vec{A}' = -4\\hat{i} + 3\\hat{j}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $\\vec{A} + \\vec{B} = \\vec{C}$ and $|\\vec{A}| + |\\vec{B}| = |\\vec{C}|$, the angle between $\\vec{A}$ and $\\vec{B}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$180^\\circ$" },
+        { "key": "B", "text": "$90^\\circ$" },
+        { "key": "C", "text": "$0^\\circ$" },
+        { "key": "D", "text": "$45^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\sqrt{A^2 + B^2 + 2AB\\cos\\theta} = A + B$<br>2. Squaring: $A^2 + B^2 + 2AB\\cos\\theta = A^2 + B^2 + 2AB \\implies \\cos\\theta = 1 \\implies \\theta = 0^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $\\vec{A} + \\vec{B} = \\vec{C}$ and $A^2 + B^2 = C^2$, the angle between $\\vec{A}$ and $\\vec{B}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$180^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "D",
+      "solution": "$C^2 = A^2 + B^2 + 2AB\\cos\\theta = A^2 + B^2 \\implies 2AB\\cos\\theta = 0 \\implies \\theta = 90^\\circ$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A displacement vector of magnitude $10\\text{ m}$ is inclined at $30^\\circ$ to the $x$-axis and $60^\\circ$ to the $y$-axis. Its rectangular components along the $x$ and $y$ axes are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\sqrt{3}\\text{ m}, \\; 5\\text{ m}$" },
+        { "key": "B", "text": "$5\\text{ m}, \\; 5\\sqrt{3}\\text{ m}$" },
+        { "key": "C", "text": "$10\\text{ m}, \\; 5\\text{ m}$" },
+        { "key": "D", "text": "$5\\sqrt{2}\\text{ m}, \\; 5\\sqrt{2}\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $A_x = 10\\cos(30^\\circ) = 10\\left(\\frac{\\sqrt{3}}{2}\\right) = 5\\sqrt{3}\\text{ m}$<br>2. $A_y = 10\\sin(30^\\circ) = 10\\left(\\frac{1}{2}\\right) = 5\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The maximum and minimum magnitudes of the resultant of two given vectors are $17\\text{ units}$ and $7\\text{ units}$ respectively. If these two vectors are placed at right angles to each other, the magnitude of their resultant is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\text{ units}$" },
+        { "key": "B", "text": "$13\\text{ units}$" },
+        { "key": "C", "text": "$15\\text{ units}$" },
+        { "key": "D", "text": "$\\sqrt{119}\\text{ units}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $A + B = 17$ and $A - B = 7 \\implies A = 12, B = 5$<br>2. At right angles: $R = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = 13\\text{ units}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Three vectors $\\vec{P}, \\vec{Q},$ and $\\vec{R}$ satisfy $\\vec{P} + \\vec{Q} + \\vec{R} = 0$. If $|\\vec{P}| = 12, |\\vec{Q}| = 5,$ and $|\\vec{R}| = 13$, the angle between $\\vec{P}$ and $\\vec{Q}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$90^\\circ$" },
+        { "key": "D", "text": "$180^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\vec{P} + \\vec{Q} = -\\vec{R} \\implies |\\vec{P} + \\vec{Q}|^2 = |\\vec{R}|^2$<br>2. $12^2 + 5^2 + 2(12)(5)\\cos\\theta = 13^2 \\implies 169 + 120\\cos\\theta = 169 \\implies \\cos\\theta = 0 \\implies \\theta = 90^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is displaced from position $\\vec{r}_1 = (2\\hat{i} + 3\\hat{j} - \\hat{k})\\text{ m}$ to $\\vec{r}_2 = (4\\hat{i} + 7\\hat{j} + 2\\hat{k})\\text{ m}$ under the action of a constant force. The magnitude of the displacement vector is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{20}\\text{ m}$" },
+        { "key": "B", "text": "$\\sqrt{24}\\text{ m}$" },
+        { "key": "C", "text": "$7\\text{ m}$" },
+        { "key": "D", "text": "$\\sqrt{29}\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $\\Delta \\vec{r} = \\vec{r}_2 - \\vec{r}_1 = 2\\hat{i} + 4\\hat{j} + 3\\hat{k}$<br>2. $|\\Delta \\vec{r}| = \\sqrt{2^2 + 4^2 + 3^2} = \\sqrt{4 + 16 + 9} = \\sqrt{29}\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Given two vectors $\\vec{A} = 2\\hat{i} + \\hat{j}$ and $\\vec{B} = \\hat{i} - \\hat{j}$. The component of vector $\\vec{A}$ along the direction of vector $\\vec{B}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{\\sqrt{2}}$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}$" },
+        { "key": "C", "text": "$\\sqrt{2}$" },
+        { "key": "D", "text": "$\\dfrac{3}{\\sqrt{2}}$" }
+      ],
+      "correct": "A",
+      "solution": "Component of $\\vec{A}$ along $\\vec{B}$ is $A_\\parallel = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{B}|} = \\frac{(2)(1) + (1)(-1)}{\\sqrt{1^2 + (-1)^2}} = \\frac{1}{\\sqrt{2}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following sets of forces acting simultaneously on a particle CANNOT produce equilibrium?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\text{ N}, 4\\text{ N}, 5\\text{ N}$" },
+        { "key": "B", "text": "$2\\text{ N}, 3\\text{ N}, 6\\text{ N}$" },
+        { "key": "C", "text": "$5\\text{ N}, 5\\text{ N}, 5\\text{ N}$" },
+        { "key": "D", "text": "$10\\text{ N}, 10\\text{ N}, 15\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "Triangle inequality requires that the sum of any two forces must be $\\ge$ the third force. For $(2, 3, 6)$, $2 + 3 = 5 < 6$, so equilibrium cannot be attained.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The angle $\\theta$ that the vector $\\vec{A} = \\hat{i} + \\hat{j} + \\sqrt{2}\\hat{k}$ makes with the positive $z$-axis is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$60^\\circ$" },
+        { "key": "C", "text": "$45^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $|\\vec{A}| = \\sqrt{1 + 1 + 2} = \\sqrt{4} = 2$<br>2. $\\cos\\gamma = \\frac{A_z}{|\\vec{A}|} = \\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}} \\implies \\gamma = 45^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two vectors $\\vec{A}$ and $\\vec{B}$ are inclined at an angle $\\theta$. If $|\\vec{A} + \\vec{B}| = \\sqrt{3} |\\vec{A} - \\vec{B}|$ and $|\\vec{A}| = |\\vec{B}|$, the angle $\\theta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$90^\\circ$" },
+        { "key": "D", "text": "$60^\\circ$" }
+      ],
+      "correct": "D",
+      "solution": "1. $2A^2(1 + \\cos\\theta) = 3(2A^2)(1 - \\cos\\theta)$<br>2. $1 + \\cos\\theta = 3 - 3\\cos\\theta \\implies 4\\cos\\theta = 2 \\implies \\cos\\theta = \\frac{1}{2} \\implies \\theta = 60^\\circ$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force of $10\\text{ N}$ is resolved into two mutually perpendicular components. If one of the components is $6\\text{ N}$, the other component is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ N}$" },
+        { "key": "B", "text": "$4\\text{ N}$" },
+        { "key": "C", "text": "$\\sqrt{136}\\text{ N}$" },
+        { "key": "D", "text": "$6\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "$$F_y = \\sqrt{F^2 - F_x^2} = \\sqrt{10^2 - 6^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

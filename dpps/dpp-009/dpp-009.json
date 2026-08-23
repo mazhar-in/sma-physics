@@ -103,10 +103,10 @@
       "statement": "The displacement of a particle moving with uniform acceleration is given by $s = 3t + 4t^2\\text{ m}$. The initial velocity $u$ and acceleration $a$ of the particle are:",
       "image": "",
       "options": [
-        { "key": "A", "text": "$u = 3\\text{ m/s}, \; a = 4\\text{ m/s}^2$" },
-        { "key": "B", "text": "$u = 6\\text{ m/s}, \; a = 8\\text{ m/s}^2$" },
-        { "key": "C", "text": "$u = 3\\text{ m/s}, \; a = 8\\text{ m/s}^2$" },
-        { "key": "D", "text": "$u = 4\\text{ m/s}, \; a = 3\\text{ m/s}^2$" }
+        { "key": "A", "text": "$u = 3\\text{ m/s}, \\; a = 4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$u = 6\\text{ m/s}, \\; a = 8\\text{ m/s}^2$" },
+        { "key": "C", "text": "$u = 3\\text{ m/s}, \\; a = 8\\text{ m/s}^2$" },
+        { "key": "D", "text": "$u = 4\\text{ m/s}, \\; a = 3\\text{ m/s}^2$" }
       ],
       "correct": "C",
       "solution": "Comparing $s = 3t + 4t^2$ with $s = ut + \\frac{1}{2}at^2$:<br>1. Coefficient of $t$: $u = 3\\text{ m/s}$<br>2. Coefficient of $t^2$: $\\frac{1}{2}a = 4 \\implies a = 8\\text{ m/s}^2$.<br>Therefore, Option <strong>C</strong> is correct."
@@ -268,10 +268,10 @@
       "statement": "The displacement $x$ of a particle moving with uniform acceleration is related to velocity $v$ as $v = \\sqrt{49 + 14x}$. The initial velocity and acceleration of the particle are:",
       "image": "",
       "options": [
-        { "key": "A", "text": "$7\\text{ m/s}, \; 14\\text{ m/s}^2$" },
-        { "key": "B", "text": "$7\\text{ m/s}, \; 7\\text{ m/s}^2$" },
-        { "key": "C", "text": "$49\\text{ m/s}, \; 7\\text{ m/s}^2$" },
-        { "key": "D", "text": "$0\\text{ m/s}, \; 14\\text{ m/s}^2$" }
+        { "key": "A", "text": "$7\\text{ m/s}, \\; 14\\text{ m/s}^2$" },
+        { "key": "B", "text": "$7\\text{ m/s}, \\; 7\\text{ m/s}^2$" },
+        { "key": "C", "text": "$49\\text{ m/s}, \\; 7\\text{ m/s}^2$" },
+        { "key": "D", "text": "$0\\text{ m/s}, \\; 14\\text{ m/s}^2$" }
       ],
       "correct": "B",
       "solution": "Squaring gives $v^2 = 49 + 14x$.<br>Comparing with $v^2 = u^2 + 2ax$: $u = \\sqrt{49} = 7\\text{ m/s}$ and $2a = 14 \\implies a = 7\\text{ m/s}^2$.<br>Therefore, Option <strong>B</strong> is correct."
