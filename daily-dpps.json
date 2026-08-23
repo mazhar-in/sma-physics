@@ -2,8 +2,8 @@
   {
     "id": "dpp-43",
     "date": "2026-08-24",
-    "jsonFile": "dpps/dpp-43/dpp-43.json",
-    "pdfFile": "dpps/dpp-43/SMA_DPP_43.pdf",
+    "jsonFile": "/dpps/dpp-43/dpp-43.json",
+    "pdfFile": "/dpps/dpp-43/SMA_DPP_43.pdf",
     "title": "Rotational Motion: Centre of Mass of a Two-Particle System",
     "chapter": "System of Particles & Rotational Motion",
     "exam": "JEE Main",
@@ -12,8 +12,8 @@
   {
     "id": "dpp-42",
     "date": "2026-08-23",
-    "jsonFile": "dpps/dpp-42/dpp-42.json",
-    "pdfFile": "dpps/dpp-42/SMA_DPP_42.pdf",
+    "jsonFile": "/dpps/dpp-42/dpp-42.json",
+    "pdfFile": "/dpps/dpp-42/SMA_DPP_42.pdf",
     "title": "Rotational Dynamics: Pure Rolling & Moment of Inertia",
     "chapter": "Rotational Dynamics",
     "exam": "JEE Main & NEET",

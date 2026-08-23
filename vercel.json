@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "rewrites": [
+  "routes": [
     {
-      "source": "/practice/(.*)",
-      "destination": "/practice.html"
+      "src": "/practice/.*",
+      "dest": "/practice.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
