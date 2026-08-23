@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
+  <!-- Dynamic SEO Meta Tags -->
   <title id="practice-seo-title">SMA Physics — CBT Practice Room</title>
   <meta name="description" id="practice-seo-desc" content="Solve timed NEET and JEE Main/Advanced physics practice questions with detailed LaTeX step-by-step solutions." />
   <meta name="author" content="Syed Mazhar Ali" />
@@ -107,7 +108,7 @@
         </div>
       </div>
 
-      <!-- Question Statement + Diagram (Enlarged Mobile Font) -->
+      <!-- Question Statement + Diagram -->
       <div class="text-zinc-900 dark:text-zinc-100 text-base sm:text-lg leading-relaxed font-normal break-words [overflow-wrap:anywhere]" id="question-statement">
         <div class="animate-pulse space-y-3 py-1">
           <div class="h-5 bg-zinc-200 dark:bg-zinc-800 rounded w-3/4"></div>
@@ -115,7 +116,7 @@
         </div>
       </div>
 
-      <!-- Multiple Choice Options (Enlarged Height and Touch Areas) -->
+      <!-- Multiple Choice Options -->
       <div class="space-y-3 min-w-0" id="options-container"></div>
 
       <!-- Expandable Derivation Solution Drawer -->
@@ -127,7 +128,7 @@
         <div class="text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-2.5 break-words [overflow-wrap:anywhere]" id="solution-text"></div>
       </div>
 
-      <!-- Navigation Toolbar with Bigger Touch Targets -->
+      <!-- Navigation Toolbar -->
       <div class="flex items-center justify-between pt-4 border-t border-zinc-100 dark:border-zinc-800 gap-3">
         <button id="prev-btn" onclick="navigateQuestion(-1)" class="min-h-[48px] sm:min-h-[52px] px-5 sm:px-6 py-2.5 text-sm font-bold text-zinc-700 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-2xl border border-zinc-200 dark:border-zinc-700 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer shrink-0">
           ← Prev
@@ -175,7 +176,7 @@
 
   </main>
 
-  <!-- ================= LOGIC & RESOLVER SCRIPT ================= -->
+  <!-- ================= RANDOMIZER & STATE LOGIC ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -195,6 +196,50 @@
         .replace(/[^a-z0-9\s-]/g, '')
         .replace(/[\s_-]+/g, '-')
         .replace(/^-+|-+$/g, '');
+    }
+
+    // Standard Fisher-Yates in-place shuffle
+    function shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // Shuffles both the questions list and options inside each question
+    function randomizeQuiz(rawQuestions) {
+      // 1. Shuffle question order
+      const questionsList = shuffleArray([...rawQuestions]);
+
+      // 2. Shuffle options inside each question and update the correct key
+      return questionsList.map((q) => {
+        // Identify the exact text of the correct answer before shuffling
+        const originalCorrectOpt = q.options.find(opt => opt.key === q.correct);
+        const correctText = originalCorrectOpt ? originalCorrectOpt.text : (q.options[0]?.text || "");
+
+        // Shuffle option texts
+        const optionTexts = q.options.map(opt => opt.text);
+        shuffleArray(optionTexts);
+
+        const keys = ["A", "B", "C", "D", "E", "F"];
+        let newCorrectKey = "A";
+
+        // Assign clean sequential keys (A, B, C, D) and remap correct answer
+        const remappedOptions = optionTexts.map((text, idx) => {
+          const key = keys[idx] || String.fromCharCode(65 + idx);
+          if (text === correctText) {
+            newCorrectKey = key;
+          }
+          return { key: key, text: text };
+        });
+
+        return {
+          ...q,
+          options: remappedOptions,
+          correct: newCorrectKey
+        };
+      });
     }
 
     let questions = [];
@@ -242,7 +287,9 @@
         if (!response.ok) throw new Error(`Could not load dataset at ${jsonPath}`);
         const data = await response.json();
 
-        questions = data.questions;
+        // RANDOMIZE: Shuffles questions and internal options on every reload
+        questions = randomizeQuiz(data.questions || []);
+
         if (data.meta && data.meta.title) {
           document.getElementById("dpp-meta-title").innerText = data.meta.title;
         }
