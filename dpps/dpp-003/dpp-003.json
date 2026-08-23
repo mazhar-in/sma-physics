@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-003",
+    "title": "Error Analysis & Error Propagation in Measurements",
+    "publishDate": "2026-08-23",
+    "unit": "General Physics & Measurement",
+    "chapter": "Units, Dimensions & Errors"
+  },
+  "seo": {
+    "title": "Error Analysis & Propagation of Errors JEE Main Practice Set | SMA Physics",
+    "description": "20 Challenging JEE Main MCQs covering systematic vs random errors, absolute/relative/percentage error, and error propagation in algebraic operations, lenses, pendulums, and electrical circuits.",
+    "keywords": "JEE Main Physics, Error Analysis DPP, Propagation of Errors, Systematic Errors, Random Error Gaussian Distribution, Relative Error, Percentage Error, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/error-analysis-propagation-measurements",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Propagation of Errors in Combined Operations",
+    "tag": "Class 11 General Physics",
+    "summary": "When combining experimental quantities, errors always accumulate to produce the worst-case maximum uncertainty. For addition/subtraction ($Z = A \\pm B$), absolute errors add directly: $\\Delta Z = \\Delta A + \\Delta B$. For powers and quotients ($Z = \\frac{A^a B^b}{C^c}$), relative fractional errors combine linearly weighted by exponents.",
+    "keyFormula": "$$\\frac{\\Delta Z}{Z} = a\\left(\\frac{\\Delta A}{A}\\right) + b\\left(\\frac{\\Delta B}{B}\\right) + c\\left(\\frac{\\Delta C}{C}\\right)$$",
+    "examTrap": "In parallel resistor combinations or the lens equation ($\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}$), do NOT simply add percentage errors of individual components directly. Always use the differentiated form: $\\frac{\\Delta R_p}{R_p^2} = \\frac{\\Delta R_1}{R_1^2} + \\frac{\\Delta R_2}{R_2^2}$ or $\\frac{\\Delta f}{f^2} = \\frac{\\Delta v}{v^2} + \\frac{\\Delta u}{u^2}$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A physical quantity $P$ is given by the relation $P = \\dfrac{A^3 B^{1/2}}{C D^2}$. The percentage errors in the measurement of $A, B, C,$ and $D$ are $1\\%$, $2\\%$, $3\\%$, and $2\\%$ respectively. The maximum permissible percentage error in $P$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$11\\%$" },
+        { "key": "B", "text": "$14\\%$" },
+        { "key": "C", "text": "$9\\%$" },
+        { "key": "D", "text": "$7\\%$" }
+      ],
+      "correct": "A",
+      "solution": "1. Maximum fractional error relation: $$\\frac{\\Delta P}{P} = 3\\frac{\\Delta A}{A} + \\frac{1}{2}\\frac{\\Delta B}{B} + \\frac{\\Delta C}{C} + 2\\frac{\\Delta D}{D}$$<br>2. Percentage error: $$\\frac{\\Delta P}{P}\\times 100 = 3(1\\%) + \\frac{1}{2}(2\\%) + 3\\% + 2(2\\%) = 3\\% + 1\\% + 3\\% + 4\\% = 11\\%$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In an experiment to determine the acceleration due to gravity $g$ using a simple pendulum, the length $L = 100.0\\text{ cm}$ is measured with a meter scale of least count $1\\text{ mm}$, and the time for $100$ oscillations is $t = 200.0\\text{ s}$ measured with a stopwatch of resolution $0.1\\text{ s}$. The maximum percentage error in the determination of $g$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.2\\%$" },
+        { "key": "B", "text": "$0.1\\%$" },
+        { "key": "C", "text": "$0.05\\%$" },
+        { "key": "D", "text": "$0.3\\%$" }
+      ],
+      "correct": "A",
+      "solution": "1. Time period $T = \\frac{t}{n} \\implies \\frac{\\Delta T}{T} = \\frac{\\Delta t}{t}$<br>2. Formula: $g = \\frac{4\\pi^2 L}{T^2} \\implies \\frac{\\Delta g}{g} = \\frac{\\Delta L}{L} + 2\\frac{\\Delta t}{t}$<br>3. Substituting values: $$\\frac{\\Delta g}{g} = \\frac{0.1\\text{ cm}}{100.0\\text{ cm}} + 2\\left(\\frac{0.1\\text{ s}}{200.0\\text{ s}}\\right) = 0.001 + 0.001 = 0.002 \\implies 0.2\\%$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The resistance $R = V/I$, where $V = (100 \\pm 5)\\text{ V}$ and $I = (10 \\pm 0.2)\\text{ A}$. The percentage error in the value of $R$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\%$" },
+        { "key": "B", "text": "$2\\%$" },
+        { "key": "C", "text": "$7\\%$" },
+        { "key": "D", "text": "$3\\%$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\frac{\\Delta R}{R} = \\frac{\\Delta V}{V} + \\frac{\\Delta I}{I}$<br>2. Percentage error: $$\\frac{\\Delta R}{R}\\times 100 = \\left(\\frac{5}{100} + \\frac{0.2}{10}\\right)\\times 100 = 5\\% + 2\\% = 7\\%$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following statements regarding systematic errors is INCORRECT?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "They tend to be in one direction, either positive or negative." },
+        { "key": "B", "text": "They can be minimized by taking the arithmetic mean of a large number of readings." },
+        { "key": "C", "text": "Instrumental errors and zero errors are examples of systematic errors." },
+        { "key": "D", "text": "They can be detected and eliminated by calibrating the measuring device." }
+      ],
+      "correct": "B",
+      "solution": "Systematic errors are reproducible inaccuracies that are consistent in magnitude and sign. Taking the arithmetic mean of repeated readings reduces <strong>random errors</strong>, but has no effect on systematic errors.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The density of a solid sphere is determined by measuring its mass $m$ and diameter $d$. If the percentage errors in measuring mass and diameter are $1.5\\%$ and $1\\%$ respectively, the maximum percentage error in the density is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.5\\%$" },
+        { "key": "B", "text": "$3.5\\%$" },
+        { "key": "C", "text": "$4.5\\%$" },
+        { "key": "D", "text": "$5.5\\%$" }
+      ],
+      "correct": "C",
+      "solution": "1. Density $\\rho = \\frac{m}{V} = \\frac{m}{\\frac{\\pi}{6}d^3} = \\frac{6m}{\\pi d^3}$<br>2. Fractional error: $$\\frac{\\Delta \\rho}{\\rho} = \\frac{\\Delta m}{m} + 3\\frac{\\Delta d}{d} = 1.5\\% + 3(1\\%) = 4.5\\%$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two resistors $R_1 = (100 \\pm 3)\\,\\Omega$ and $R_2 = (200 \\pm 4)\\,\\Omega$ are connected in series. The equivalent resistance with absolute error limit is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(300 \\pm 7)\\,\\Omega$" },
+        { "key": "B", "text": "$(300 \\pm 1)\\,\\Omega$" },
+        { "key": "C", "text": "$(300 \\pm 3.5)\\,\\Omega$" },
+        { "key": "D", "text": "$(300 \\pm 5)\\,\\Omega$" }
+      ],
+      "correct": "A",
+      "solution": "1. In series: $R_s = R_1 + R_2 = 100 + 200 = 300\\,\\Omega$<br>2. For addition, absolute errors add directly: $$\\Delta R_s = \\Delta R_1 + \\Delta R_2 = 3 + 4 = 7\\,\\Omega$$<br>3. Result: $(300 \\pm 7)\\,\\Omega$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two resistors $R_1 = (6.0 \\pm 0.2)\\,\\Omega$ and $R_2 = (3.0 \\pm 0.1)\\,\\Omega$ are connected in parallel. The equivalent resistance $R_p$ along with its absolute uncertainty is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(2.0 \\pm 0.3)\\,\\Omega$" },
+        { "key": "B", "text": "$(2.0 \\pm 0.07)\\,\\Omega$" },
+        { "key": "C", "text": "$(2.0 \\pm 0.1)\\,\\Omega$" },
+        { "key": "D", "text": "$(2.0 \\pm 0.05)\\,\\Omega$" }
+      ],
+      "correct": "B",
+      "solution": "1. $R_p = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{6.0 \\times 3.0}{6.0 + 3.0} = 2.0\\,\\Omega$<br>2. From $\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2}$, differentiating gives: $$\\frac{\\Delta R_p}{R_p^2} = \\frac{\\Delta R_1}{R_1^2} + \\frac{\\Delta R_2}{R_2^2}$$<br>3. $$\\Delta R_p = (2.0)^2 \\left(\\frac{0.2}{36} + \\frac{0.1}{9}\\right) = 4\\left(\\frac{0.2 + 0.4}{36}\\right) = 4\\left(\\frac{0.6}{36}\\right) = \\frac{2.4}{36} \\approx 0.067\\,\\Omega \\approx 0.07\\,\\Omega$$<br>Result: $(2.0 \\pm 0.07)\\,\\Omega$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The initial and final temperatures of a liquid are measured as $\\theta_1 = (20.4 \\pm 0.2)^\\circ\\text{C}$ and $\\theta_2 = (50.6 \\pm 0.3)^\\circ\\text{C}$. The rise in temperature is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(30.2 \\pm 0.1)^\\circ\\text{C}$" },
+        { "key": "B", "text": "$(30.2 \\pm 0.5)^\\circ\\text{C}$" },
+        { "key": "C", "text": "$(30.2 \\pm 0.25)^\\circ\\text{C}$" },
+        { "key": "D", "text": "$(30.2 \\pm 0.3)^\\circ\\text{C}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Rise in temperature: $\\Delta \\theta = \\theta_2 - \\theta_1 = 50.6 - 20.4 = 30.2^\\circ\\text{C}$<br>2. For difference of quantities, absolute errors always add: $$\\text{Error} = \\Delta \\theta_1 + \\Delta \\theta_2 = 0.2 + 0.3 = 0.5^\\circ\\text{C}$$<br>3. Result: $(30.2 \\pm 0.5)^\\circ\\text{C}$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If random errors in an experimental measurement follow a Gaussian normal distribution, increasing the number of observations by a factor of $16$ will reduce the random error by a factor of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16$" },
+        { "key": "B", "text": "$4$" },
+        { "key": "C", "text": "$2$" },
+        { "key": "D", "text": "$8$" }
+      ],
+      "correct": "B",
+      "solution": "According to the statistical theory of errors, the random error associated with the arithmetic mean of $n$ independent observations varies inversely with $\\sqrt{n}$:<br>$$\\sigma_{\\text{mean}} = \\frac{\\sigma}{\\sqrt{n}} \\implies \\frac{\\sigma'}{\\sigma} = \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The voltage across a wire is $V = (50 \\pm 2)\\text{ V}$ and the current passing through it is $I = (5 \\pm 0.1)\\text{ A}$. The electrical power dissipated $P = VI$ with error limits is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(250 \\pm 10)\\text{ W}$" },
+        { "key": "B", "text": "$(250 \\pm 15)\\text{ W}$" },
+        { "key": "C", "text": "$(250 \\pm 2.1)\\text{ W}$" },
+        { "key": "D", "text": "$(250 \\pm 5)\\text{ W}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Nominal power: $P = VI = 50 \\times 5 = 250\\text{ W}$<br>2. Fractional error: $$\\frac{\\Delta P}{P} = \\frac{\\Delta V}{V} + \\frac{\\Delta I}{I} = \\frac{2}{50} + \\frac{0.1}{5} = 0.04 + 0.02 = 0.06$$<br>3. Absolute error: $\\Delta P = 0.06 \\times 250 = 15\\text{ W}$<br>4. Result: $(250 \\pm 15)\\text{ W}$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Searle's method to determine Young's modulus $Y = \\dfrac{4 M g L}{\\pi d^2 l}$, which of the following quantities must be measured with the maximum precision to minimize the overall percentage error in $Y$?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Load mass $M$" },
+        { "key": "B", "text": "Length of wire $L$" },
+        { "key": "C", "text": "Diameter of wire $d$" },
+        { "key": "D", "text": "Elongation of wire $l$" }
+      ],
+      "correct": "C",
+      "solution": "In the fractional error expression $$\\frac{\\Delta Y}{Y} = \\frac{\\Delta M}{M} + \\frac{\\Delta L}{L} + 2\\left(\\frac{\\Delta d}{d}\\right) + \\frac{\\Delta l}{l}$$ The diameter $d$ is raised to the power of $2$, doubling its contribution to the relative error. Furthermore, $d$ is very small in magnitude ($\\sim 0.5\\text{ mm}$), so any uncertainty in $d$ contributes the highest percentage error.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A student performs an experiment to measure focal length $f$ of a convex lens using the lens formula $\\dfrac{1}{f} = \\dfrac{1}{v} - \\dfrac{1}{u}$. If the measured object distance is $u = -20\\text{ cm}$ and image distance is $v = +30\\text{ cm}$ with least count error $\\Delta u = \\Delta v = 0.1\\text{ cm}$, the maximum absolute error in focal length $\\Delta f$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.052\\text{ cm}$" },
+        { "key": "B", "text": "$0.065\\text{ cm}$" },
+        { "key": "C", "text": "$0.083\\text{ cm}$" },
+        { "key": "D", "text": "$0.020\\text{ cm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $f = \\frac{u v}{u - v} = \\frac{(-20)(30)}{-20 - 30} = \\frac{-600}{-50} = 12\\text{ cm}$<br>2. Differentiating $\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}$: $$\\frac{\\Delta f}{f^2} = \\frac{\\Delta v}{v^2} + \\frac{\\Delta u}{u^2}$$<br>3. $$\\Delta f = (12)^2 \\left(\\frac{0.1}{(30)^2} + \\frac{0.1}{(20)^2}\\right) = 144 \\left(\\frac{0.1}{900} + \\frac{0.1}{400}\\right) = 144(0.000111 + 0.000250) = 144(0.000361) \\approx 0.052\\text{ cm}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The heat generated in a resistor is given by $H = I^2 R t$. If the percentage errors in measuring current $I$, resistance $R$, and time $t$ are $2\\%$, $1\\%$, and $1\\%$ respectively, the maximum percentage error in measuring heat is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\%$" },
+        { "key": "B", "text": "$6\\%$" },
+        { "key": "C", "text": "$8\\%$" },
+        { "key": "D", "text": "$5\\%$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\frac{\\Delta H}{H} = 2\\frac{\\Delta I}{I} + \\frac{\\Delta R}{R} + \\frac{\\Delta t}{t}$<br>2. Percentage error: $$\\frac{\\Delta H}{H}\\times 100 = 2(2\\%) + 1\\% + 1\\% = 4\\% + 1\\% + 1\\% = 6\\%$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The length of a plate measured with a meter scale is $10.5\\text{ cm}$ and width is $4.0\\text{ cm}$. If least count of meter scale is $0.1\\text{ cm}$, the relative error in the area of the plate is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.035$" },
+        { "key": "B", "text": "$0.025$" },
+        { "key": "C", "text": "$0.010$" },
+        { "key": "D", "text": "$0.045$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{\\Delta A}{A} = \\frac{\\Delta l}{l} + \\frac{\\Delta b}{b} = \\frac{0.1}{10.5} + \\frac{0.1}{4.0} \\approx 0.00952 + 0.02500 = 0.03452 \\approx 0.035$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The time period of a simple pendulum is $T = 2\\pi\\sqrt{l/g}$. If the fractional error in length is $\\dfrac{\\Delta l}{l} = 0.02$ and that in time period is $\\dfrac{\\Delta T}{T} = 0.03$, the fractional error in the calculated value of $g$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.08$" },
+        { "key": "B", "text": "$0.05$" },
+        { "key": "C", "text": "$0.04$" },
+        { "key": "D", "text": "$0.01$" }
+      ],
+      "correct": "A",
+      "solution": "1. $g = \\frac{4\\pi^2 l}{T^2} \\implies \\frac{\\Delta g}{g} = \\frac{\\Delta l}{l} + 2\\frac{\\Delta T}{T}$<br>2. Substituting values: $$\\frac{\\Delta g}{g} = 0.02 + 2(0.03) = 0.02 + 0.06 = 0.08$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A student measures the refractive index of glass using a travelling microscope. The real depth is $d_1 = (4.00 \\pm 0.02)\\text{ cm}$ and apparent depth is $d_2 = (2.50 \\pm 0.02)\\text{ cm}$. The percentage error in refractive index $\\mu = d_1/d_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.8\\%$" },
+        { "key": "B", "text": "$1.3\\%$" },
+        { "key": "C", "text": "$1.5\\%$" },
+        { "key": "D", "text": "$0.5\\%$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\frac{\\Delta \\mu}{\\mu} = \\frac{\\Delta d_1}{d_1} + \\frac{\\Delta d_2}{d_2}$<br>2. Percentage error: $$\\frac{\\Delta \\mu}{\\mu}\\times 100 = \\left(\\frac{0.02}{4.00} + \\frac{0.02}{2.50}\\right)\\times 100 = (0.5\\% + 0.8\\%) = 1.3\\%$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The radius of a sphere is measured to be $(2.1 \\pm 0.1)\\text{ cm}$. The percentage error in the measurement of its surface area is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4.76\\%$" },
+        { "key": "B", "text": "$9.52\\%$" },
+        { "key": "C", "text": "$2.38\\%$" },
+        { "key": "D", "text": "$7.14\\%$" }
+      ],
+      "correct": "B",
+      "solution": "1. Surface area $S = 4\\pi r^2 \\implies \\frac{\\Delta S}{S} = 2\\frac{\\Delta r}{r}$<br>2. Percentage error: $$\\frac{\\Delta S}{S}\\times 100 = 2\\left(\\frac{0.1}{2.1}\\right)\\times 100 = 2 \\times 4.7619\\% = 9.52\\%$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A quantity $z$ is related to variables $x$ and $y$ by $z = x - y$. If $x = (10.0 \\pm 0.1)$ and $y = (8.0 \\pm 0.2)$, the percentage error in $z$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\%$" },
+        { "key": "B", "text": "$10\\%$" },
+        { "key": "C", "text": "$15\\%$" },
+        { "key": "D", "text": "$5\\%$" }
+      ],
+      "correct": "C",
+      "solution": "1. Mean value: $z = 10.0 - 8.0 = 2.0$<br>2. Absolute error: $\\Delta z = \\Delta x + \\Delta y = 0.1 + 0.2 = 0.3$<br>3. Percentage error: $$\\frac{\\Delta z}{z}\\times 100 = \\frac{0.3}{2.0}\\times 100 = 15\\%$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "In an experiment to determine the density of a liquid using a specific gravity bottle, mass of empty bottle is $m_1 = (20.0 \\pm 0.1)\\text{ g}$, mass with water is $m_2 = (40.0 \\pm 0.1)\\text{ g}$, and mass with liquid is $m_3 = (36.0 \\pm 0.1)\\text{ g}$. The relative density of liquid is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.80 \\pm 0.018$" },
+        { "key": "B", "text": "$0.80 \\pm 0.010$" },
+        { "key": "C", "text": "$0.80 \\pm 0.025$" },
+        { "key": "D", "text": "$0.80 \\pm 0.005$" }
+      ],
+      "correct": "A",
+      "solution": "1. Mass of liquid: $m_l = m_3 - m_1 = 36.0 - 20.0 = 16.0\\text{ g}$, with $\\Delta m_l = 0.1 + 0.1 = 0.2\\text{ g}$<br>2. Mass of water: $m_w = m_2 - m_1 = 40.0 - 20.0 = 20.0\\text{ g}$, with $\\Delta m_w = 0.1 + 0.1 = 0.2\\text{ g}$<br>3. $\\text{RD} = \\frac{m_l}{m_w} = \\frac{16.0}{20.0} = 0.80$<br>4. Fractional error: $$\\frac{\\Delta \\text{RD}}{\\text{RD}} = \\frac{\\Delta m_l}{m_l} + \\frac{\\Delta m_w}{m_w} = \\frac{0.2}{16.0} + \\frac{0.2}{20.0} = 0.0125 + 0.0100 = 0.0225$$<br>5. Absolute error: $\\Delta \\text{RD} = 0.0225 \\times 0.80 = 0.018$<br>Result: $0.80 \\pm 0.018$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The velocity of sound in a gas is given by $v = \\sqrt{\\dfrac{\\gamma P}{\\rho}}$. If the fractional error in pressure $P$ is $\\alpha$ and in density $\\rho$ is $\\beta$, the maximum fractional error in velocity $v$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\alpha + \\beta$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}(\\alpha + \\beta)$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}(\\alpha - \\beta)$" },
+        { "key": "D", "text": "$2(\\alpha + \\beta)$" }
+      ],
+      "correct": "B",
+      "solution": "1. $v = \\gamma^{1/2} P^{1/2} \\rho^{-1/2}$<br>2. Differentiating and maximizing errors: $$\\frac{\\Delta v}{v} = \\frac{1}{2}\\frac{\\Delta P}{P} + \\frac{1}{2}\\frac{\\Delta \\rho}{\\rho} = \\frac{1}{2}(\\alpha + \\beta)$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

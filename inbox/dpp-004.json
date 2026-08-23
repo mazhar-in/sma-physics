@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-004",
+    "title": "Dimensions of Physical Quantities & Derived Dimensional Formulae",
+    "publishDate": "2026-08-23",
+    "unit": "General Physics & Measurement",
+    "chapter": "Units, Dimensions & Errors"
+  },
+  "seo": {
+    "title": "Dimensions of Physical Quantities JEE Main Practice Set | SMA Physics",
+    "description": "20 Standard JEE Main MCQs covering dimensional reduction, dimensional formulae of mechanical, electrical, thermal, and magnetic constants with step-by-step solutions.",
+    "keywords": "JEE Main Physics, Dimensional Analysis DPP, Dimensional Formulae, Planck's Constant, Permittivity, Permeability, Principle of Homogeneity, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/dimensions-physical-quantities-derived-formulae",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Dimensional Analysis & Principle of Homogeneity",
+    "tag": "Class 11 General Physics",
+    "summary": "Every derived physical quantity can be expressed uniquely in terms of the fundamental base dimensions $[M^a L^b T^c A^d K^e \\text{mol}^f \\text{cd}^g]$. According to the Principle of Homogeneity, physical quantities added, subtracted, or equated in an equation must possess identical dimensions.",
+    "keyFormula": "$$[\\text{LHS}] = [\\text{RHS}] \\quad \\text{and} \\quad [A \\pm B] \\implies [A] = [B]$$",
+    "examTrap": "Quantities with the same dimensions do not necessarily represent the same physical concept (e.g., Torque and Work both have $[M^1 L^2 T^{-2}]$, but Torque is a vector cross-product while Work is a scalar dot-product). Also remember that exponential, logarithmic, and trigonometric arguments must be strictly dimensionless ($[M^0 L^0 T^0]$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula of Planck's constant ($h$) is identical to that of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum" },
+        { "key": "B", "text": "Angular momentum" },
+        { "key": "C", "text": "Rotational kinetic energy" },
+        { "key": "D", "text": "Work" }
+      ],
+      "correct": "B",
+      "solution": "1. From $E = h\\nu \\implies [h] = \\frac{[E]}{[\\nu]} = \\frac{[M^1 L^2 T^{-2}]}{[T^{-1}]} = [M^1 L^2 T^{-1}]$<br>2. Angular momentum $L = mvr \\implies [L] = [M][L T^{-1}][L] = [M^1 L^2 T^{-1}]$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $\\varepsilon_0$ denotes the permittivity of free space and $E$ is the electric field, the dimensional formula of $\\dfrac{1}{2}\\varepsilon_0 E^2$ (energy density) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^{-1} T^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-2}]$" },
+        { "key": "C", "text": "$[M^1 L^{-2} T^{-1}]$" },
+        { "key": "D", "text": "$[M^1 L^1 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "$\\frac{1}{2}\\varepsilon_0 E^2$ represents electrostatic energy stored per unit volume:<br>$$\\left[\\frac{\\text{Energy}}{\\text{Volume}}\\right] = \\frac{[M^1 L^2 T^{-2}]}{[L^3]} = [M^1 L^{-1} T^{-2}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following pairs of physical quantities does NOT have identical dimensional formulae?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Torque and Work" },
+        { "key": "B", "text": "Stress and Young's modulus" },
+        { "key": "C", "text": "Electric flux and Electric field" },
+        { "key": "D", "text": "Impulse and Linear momentum" }
+      ],
+      "correct": "C",
+      "solution": "Electric flux $\\Phi_E = E \\cdot A \\implies [\\Phi_E] = [E][L^2] \\ne [E]$.<br>All other pairs have matching dimensions:<br>• Torque & Work: $[M^1 L^2 T^{-2}]$<br>• Stress & Young's Modulus: $[M^1 L^{-1} T^{-2}]$<br>• Impulse & Momentum: $[M^1 L^1 T^{-1}]$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the formula $X = 3 Y Z^2$, $X$ and $Z$ have dimensions of capacitance and magnetic induction respectively. The dimensional formula of $Y$ in SI units is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^{-3} L^{-2} T^8 A^4]$" },
+        { "key": "B", "text": "$[M^{-1} L^{-2} T^4 A^2]$" },
+        { "key": "C", "text": "$[M^{-3} L^{-2} T^4 A^1]$" },
+        { "key": "D", "text": "$[M^{-2} L^{-3} T^8 A^4]$" }
+      ],
+      "correct": "A",
+      "solution": "1. Capacitance $[X] = [M^{-1} L^{-2} T^4 A^2]$<br>2. Magnetic induction $[Z] = [M^1 T^{-2} A^{-1}]$<br>3. From $X = 3 Y Z^2$: $$[Y] = \\frac{[X]}{[Z]^2} = \\frac{[M^{-1} L^{-2} T^4 A^2]}{[M^2 T^{-4} A^{-2}]} = [M^{-3} L^{-2} T^8 A^4]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula for the coefficient of dynamic viscosity ($\\eta$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^{-1} T^{-1}]$" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^{-2} T^{-2}]$" },
+        { "key": "D", "text": "$[M^1 L^{-1} T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "From Stokes' Law $F = 6\\pi \\eta r v$:<br>$$[\\eta] = \\frac{[F]}{[r][v]} = \\frac{[M^1 L^1 T^{-2}]}{[L][L T^{-1}]} = [M^1 L^{-1} T^{-1}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The magnetic permeability of free space ($\\mu_0$) has the dimensional formula:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^1 T^{-2} A^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-2} A^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^1 T^{-1} A^{-2}]$" },
+        { "key": "D", "text": "$[M^1 L^2 T^{-1} A^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "From $B = \\frac{\\mu_0 I}{2\\pi r} \\implies \\mu_0 = \\frac{2\\pi r B}{I}$.<br>Since $[B] = [M^1 T^{-2} A^{-1}]$: $$[\\mu_0] = \\frac{[L][M^1 T^{-2} A^{-1}]}{[A]} = [M^1 L^1 T^{-2} A^{-2}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $L, C,$ and $R$ represent inductance, capacitance, and resistance respectively, which of the following combinations has dimensions of frequency?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R}{L}$" },
+        { "key": "B", "text": "$\\dfrac{1}{RC}$" },
+        { "key": "C", "text": "$\\dfrac{1}{\\sqrt{LC}}$" },
+        { "key": "D", "text": "All of the above" }
+      ],
+      "correct": "D",
+      "solution": "1. $\\left[\\frac{R}{L}\\right] = \\frac{1}{[\\text{Inductive time constant}]} = [T^{-1}]$<br>2. $\\left[\\frac{1}{RC}\\right] = \\frac{1}{[\\text{Capacitive time constant}]} = [T^{-1}]$<br>3. $\\left[\\frac{1}{\\sqrt{LC}}\\right] = [\\omega_0] = [T^{-1}]$<br>All three quantities represent frequency ($[T^{-1}]$).<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The dimensional formula of self-inductance ($L$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^2 T^{-2} A^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-2} A^{-2}]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-1} A^{-2}]$" },
+        { "key": "D", "text": "$[M^1 L^2 T^{-2} A^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "From magnetic energy $U = \\frac{1}{2} L I^2 \\implies [L] = \\frac{[U]}{[I]^2} = \\frac{[M^1 L^2 T^{-2}]}{[A^2]} = [M^1 L^2 T^{-2} A^{-2}]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The dimensional formula of thermal conductivity ($K$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^1 T^{-3} K^{-1}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-3} K^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^1 T^{-2} K^{-1}]$" },
+        { "key": "D", "text": "$[M^1 L^{-1} T^{-3} K^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "From Fourier's law of heat conduction: $\\frac{dQ}{dt} = \\frac{K A \\Delta T}{x} \\implies K = \\frac{(dQ/dt) x}{A \\Delta T}$.<br>$$[K] = \\frac{[M^1 L^2 T^{-3}][L]}{[L^2][K]} = [M^1 L^1 T^{-3} K^{-1}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the gas equation $\\left(P + \\dfrac{a}{V^2}\\right)(V - b) = R T$, the dimensional formula of the constant $a$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^5 T^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^3 T^{-2}]$" },
+        { "key": "C", "text": "$[M^1 L^{-1} T^{-2}]$" },
+        { "key": "D", "text": "$[M^1 L^2 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "By the Principle of Homogeneity: $$[P] = \\left[\\frac{a}{V^2}\\right] \\implies [a] = [P][V]^2 = [M^1 L^{-1} T^{-2}][L^3]^2 = [M^1 L^5 T^{-2}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following groups of physical quantities consists exclusively of dimensionless parameters?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Strain, Poisson's ratio, Relative permeability" },
+        { "key": "B", "text": "Refractive index, Dielectric constant, Specific heat" },
+        { "key": "C", "text": "Angle, Solid angle, Gravitational potential" },
+        { "key": "D", "text": "Reynolds number, Mach number, Surface tension" }
+      ],
+      "correct": "A",
+      "solution": "Strain ($\\Delta L/L$), Poisson's ratio (lateral strain / longitudinal strain), and Relative Permeability ($\\mu_r = \\mu/\\mu_0$) are pure ratios of identical dimensions, making them dimensionless ($[M^0 L^0 T^0]$).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula of electric potential ($V$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^2 T^{-3} A^{-1}]$" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-3} A^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-2} A^{-1}]$" },
+        { "key": "D", "text": "$[M^1 L^2 T^{-3} A^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "$$V = \\frac{W}{q} = \\frac{\\text{Work}}{\\text{Current}\\times\\text{Time}} \\implies [V] = \\frac{[M^1 L^2 T^{-2}]}{[A^1 T^1]} = [M^1 L^2 T^{-3} A^{-1}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula of the universal gravitational constant ($G$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^{-1} L^3 T^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-2}]$" },
+        { "key": "C", "text": "$[M^{-1} L^2 T^{-1}]$" },
+        { "key": "D", "text": "$[M^1 L^3 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "From Newton's Gravitation Law $F = \\frac{G m_1 m_2}{r^2} \\implies G = \\frac{F r^2}{m^2}$.<br>$$[G] = \\frac{[M^1 L^1 T^{-2}][L^2]}{[M^2]} = [M^{-1} L^3 T^{-2}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If force $F$, length $L$, and time $T$ are taken as fundamental physical quantities, the dimensional formula of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[F^1 L^{-1} T^2]$" },
+        { "key": "B", "text": "$[F^1 L^1 T^{-2}]$" },
+        { "key": "C", "text": "$[F^1 L^{-1} T^{-1}]$" },
+        { "key": "D", "text": "$[F^1 L^2 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "Since Force $F = M a = M L T^{-2}$, rearranging for Mass gives:<br>$$[M] = [F L^{-1} T^2]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The dimensional formula for the Stefan-Boltzmann constant ($\\sigma$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^0 T^{-3} K^{-4}]$" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-3} K^{-4}]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-2} K^{-4}]$" },
+        { "key": "D", "text": "$[M^1 L^0 T^{-2} K^{-4}]$" }
+      ],
+      "correct": "A",
+      "solution": "From $E = \\sigma T^4$, where $E = \\frac{\\text{Power}}{\\text{Area}} = \\frac{[M^1 L^2 T^{-3}]}{[L^2]} = [M^1 T^{-3}]$.<br>$$[\\sigma] = \\frac{[E]}{[T^4]} = \\frac{[M^1 T^{-3}]}{[K^4]} = [M^1 L^0 T^{-3} K^{-4}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The quantity $\\dfrac{e^2}{4\\pi\\varepsilon_0 h c}$, where $e$ is electronic charge, $h$ is Planck's constant, and $c$ is speed of light, has the dimension of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^0 L^0 T^0]$ (Dimensionless)" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-2}]$" },
+        { "key": "D", "text": "$[M^0 L^1 T^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "This dimensionless combination represents the fine structure constant $\\alpha \\approx \\frac{1}{137}$:<br>$$\\left[\\frac{e^2}{4\\pi\\varepsilon_0}\\right] = [F r^2] = [M^1 L^3 T^{-2}], \\quad [h c] = [M^1 L^2 T^{-1}][L T^{-1}] = [M^1 L^3 T^{-2}]$$<br>Dividing the two yields $[M^0 L^0 T^0]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula of solar constant (energy received per unit area per second) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^0 T^{-3}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-2}]$" },
+        { "key": "C", "text": "$[M^1 L^1 T^{-2}]$" },
+        { "key": "D", "text": "$[M^1 L^0 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\text{Solar Constant } S = \\frac{\\text{Energy}}{\\text{Area}\\times\\text{Time}} \\implies [S] = \\frac{[M^1 L^2 T^{-2}]}{[L^2][T]} = [M^1 L^0 T^{-3}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The magnetic dipole moment ($M$) of a current loop has the dimensional formula:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^0 L^2 T^0 A^1]$" },
+        { "key": "B", "text": "$[M^0 L^1 T^0 A^1]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-1} A^1]$" },
+        { "key": "D", "text": "$[M^0 L^2 T^{-1} A^1]$" }
+      ],
+      "correct": "A",
+      "solution": "Magnetic moment $M = I \\times A$: $$[M] = [A][L^2] = [M^0 L^2 T^0 A^1]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the relation $v = a t + \\dfrac{b}{t + c}$, where $v$ is velocity and $t$ is time, the dimensional formulae of $a, b,$ and $c$ are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[L T^{-2}], [L], [T]$" },
+        { "key": "B", "text": "$[L T^{-1}], [L], [T]$" },
+        { "key": "C", "text": "$[L T^{-2}], [L T^{-1}], [T]$" },
+        { "key": "D", "text": "$[L^2 T^{-2}], [L], [T^2]$" }
+      ],
+      "correct": "A",
+      "solution": "By the Principle of Homogeneity:<br>1. $[c] = [t] = [T]$<br>2. $[a t] = [v] \\implies [a] = \\frac{[L T^{-1}]}{[T]} = [L T^{-2}]$<br>3. $\\left[\\frac{b}{t + c}\\right] = [v] \\implies [b] = [v][T] = [L T^{-1}][T] = [L]$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The dimensional formula of the universal gas constant ($R$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^2 T^{-2} K^{-1} \\text{mol}^{-1}]$" },
+        { "key": "B", "text": "$[M^1 L^1 T^{-2} K^{-1} \\text{mol}^{-1}]$" },
+        { "key": "C", "text": "$[M^1 L^2 T^{-3} K^{-1} \\text{mol}^{-1}]$" },
+        { "key": "D", "text": "$[M^1 L^2 T^{-2} K^1 \\text{mol}^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "From ideal gas law $P V = n R T \\implies R = \\frac{P V}{n T} = \\frac{\\text{Work}}{\\text{Moles}\\times\\text{Temperature}}$.<br>$$[R] = \\frac{[M^1 L^2 T^{-2}]}{[\\text{mol}][K]} = [M^1 L^2 T^{-2} K^{-1} \\text{mol}^{-1}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
