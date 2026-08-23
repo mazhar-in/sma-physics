@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-007",
+    "title": "Kinematics 1D: Frame of Reference, Distance, Displacement & Rectilinear Motion",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Motion in a Straight Line & Frame of Reference JEE Main Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering frames of reference, distance vs displacement, average velocity/speed, non-uniform acceleration calculus, and vertical motion under gravity.",
+    "keywords": "JEE Main Physics, Kinematics 1D DPP, Frame of Reference, Distance and Displacement, Average Velocity, Motion Under Gravity, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/kinematics-1d-frame-of-reference-rectilinear-motion",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematics in One Dimension: Calculus Formulation & Frame Transformations",
+    "tag": "Class 11 Mechanics",
+    "summary": "Motion is strictly relative to the chosen Frame of Reference. Distance ($s = \\int |v| dt$) represents total trajectory path length ($s \\ge 0$), whereas displacement ($\\Delta x = \\int v dt = x_f - x_i$) is a vector quantity ($|\\Delta x| \\le s$). For non-uniform acceleration, standard algebraic kinematic equations fail; one must integrate using $v = \\frac{dx}{dt}$ and $a = \\frac{dv}{dt} = v\\frac{dv}{dx}$.",
+    "keyFormula": "$$v_{\\text{avg}} = \\frac{\\text{Total Displacement}}{\\text{Total Time}}, \\quad \\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}, \\quad a = v\\frac{dv}{dx}$$",
+    "examTrap": "When finding total distance from position functions $x(t)$, always locate the points where instantaneous velocity becomes zero ($v(t) = 0$) and sum up path segments between turning points. For motion under gravity passing a height $h$ at two different times $t_1$ and $t_2$, $h = \\frac{1}{2}g t_1 t_2$ and initial velocity $u = \\frac{1}{2}g(t_1 + t_2)$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a circular path of radius $R$ from point $A$ to point $B$ subtending an angle of $120^\\circ$ at the centre. The ratio of distance travelled to the magnitude of displacement is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2\\pi}{3\\sqrt{3}}$" },
+        { "key": "B", "text": "$\\dfrac{\\pi}{\\sqrt{3}}$" },
+        { "key": "C", "text": "$\\dfrac{2\\pi}{3}$" },
+        { "key": "D", "text": "$\\dfrac{\\pi}{3\\sqrt{3}}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Distance along circular arc: $$s = R \\theta = R\\left(\\frac{2\\pi}{3}\\right) = \\frac{2\\pi R}{3}$$<br>2. Magnitude of displacement chord: $$|\\Delta \\vec{r}| = 2R \\sin\\left(\\frac{\\theta}{2}\\right) = 2R \\sin(60^\\circ) = \\sqrt{3}R$$<br>3. Ratio: $$\\frac{\\text{Distance}}{\\text{Displacement}} = \\frac{2\\pi R / 3}{\\sqrt{3}R} = \\frac{2\\pi}{3\\sqrt{3}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body starts moving from the origin along the $x$-axis according to $x(t) = 6t^2 - t^3$, where $x$ is in metres and $t$ is in seconds. The total distance travelled by the body before it momentarily comes to rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$32\\text{ m}$" },
+        { "key": "B", "text": "$64\\text{ m}$" },
+        { "key": "C", "text": "$16\\text{ m}$" },
+        { "key": "D", "text": "$48\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Velocity: $v(t) = \\frac{dx}{dt} = 12t - 3t^2$<br>2. For momentary rest, $v(t) = 0 \\implies 3t(4 - t) = 0 \\implies t = 4\\text{ s}$<br>3. Since $v(t) > 0$ for all $0 < t < 4\\text{ s}$, motion is unidirectional.<br>4. Distance $= x(4) = 6(4)^2 - (4)^3 = 96 - 64 = 32\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A person travelling along a straight road moves with speed $v_1$ for the first one-third of the total distance and with speed $v_2$ for the remaining two-thirds of the distance. The average speed of the person is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3v_1 v_2}{2v_1 + v_2}$" },
+        { "key": "B", "text": "$\\dfrac{3v_1 v_2}{v_1 + 2v_2}$" },
+        { "key": "C", "text": "$\\dfrac{v_1 + 2v_2}{3}$" },
+        { "key": "D", "text": "$\\dfrac{2v_1 v_2}{v_1 + v_2}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Let total distance be $s$.<br>2. Time taken: $t_1 = \\frac{s/3}{v_1} = \\frac{s}{3v_1}$, and $t_2 = \\frac{2s/3}{v_2} = \\frac{2s}{3v_2}$<br>3. Average speed: $$v_{\\text{avg}} = \\frac{s}{t_1 + t_2} = \\frac{s}{\\frac{s}{3}\\left(\\frac{1}{v_1} + \\frac{2}{v_2}\\right)} = \\frac{3}{\\frac{v_2 + 2v_1}{v_1 v_2}} = \\frac{3v_1 v_2}{2v_1 + v_2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car travels along a straight line. For the first half of the total time of journey it moves with speed $40\\text{ km/h}$ and for the second half time with speed $60\\text{ km/h}$. The average speed of the car is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$48\\text{ km/h}$" },
+        { "key": "B", "text": "$50\\text{ km/h}$" },
+        { "key": "C", "text": "$52\\text{ km/h}$" },
+        { "key": "D", "text": "$45\\text{ km/h}$" }
+      ],
+      "correct": "B",
+      "solution": "When time intervals are equal ($t_1 = t_2 = t_0$):<br>$$v_{\\text{avg}} = \\frac{s_1 + s_2}{2t_0} = \\frac{v_1 t_0 + v_2 t_0}{2t_0} = \\frac{v_1 + v_2}{2} = \\frac{40 + 60}{2} = 50\\text{ km/h}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The position $x$ of a particle moving along a straight line varies with time $t$ as $x = \\sqrt{a t^2 + 2b t + c}$. The acceleration of the particle is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x^{-3}$" },
+        { "key": "B", "text": "$x^{-2}$" },
+        { "key": "C", "text": "$x^3$" },
+        { "key": "D", "text": "$x^{-1}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $x^2 = a t^2 + 2b t + c$<br>2. Differentiating: $2x v = 2at + 2b \\implies x v = at + b$<br>3. Differentiating again: $x a_{\\text{acc}} + v^2 = a \\implies x a_{\\text{acc}} = a - v^2$<br>4. Substituting $v = \\frac{at+b}{x}$: $$x a_{\\text{acc}} = a - \\left(\\frac{at+b}{x}\\right)^2 = \\frac{a(at^2+2bt+c) - (at+b)^2}{x^2} = \\frac{ac - b^2}{x^2}$$<br>5. $a_{\\text{acc}} = \\frac{ac - b^2}{x^3} \\propto x^{-3}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following statements is ALWAYS TRUE for one-dimensional rectilinear motion?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Magnitude of displacement is equal to the total path length." },
+        { "key": "B", "text": "If speed is constant, acceleration must be zero." },
+        { "key": "C", "text": "If velocity is zero at an instant, acceleration must also be zero at that instant." },
+        { "key": "D", "text": "Average velocity is equal to the average of initial and final velocities." }
+      ],
+      "correct": "B",
+      "solution": "In purely 1D motion along a line, the particle cannot change direction without reducing its speed to zero. Thus, constant speed implies constant velocity vector ($v = \\text{const}$), which strictly means acceleration $a = \\frac{dv}{dt} = 0$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along the $x$-axis such that its position is given by $x(t) = t^3 - 6t^2 + 9t + 2\\text{ m}$. The total distance covered by the particle from $t = 0$ to $t = 5\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ m}$" },
+        { "key": "B", "text": "$28\\text{ m}$" },
+        { "key": "C", "text": "$24\\text{ m}$" },
+        { "key": "D", "text": "$32\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Velocity: $v(t) = 3t^2 - 12t + 9 = 3(t - 1)(t - 3)$. Reversal occurs at $t = 1\\text{ s}$ and $t = 3\\text{ s}$.<br>2. Positions: $x(0) = 2\\text{ m}$, $x(1) = 6\\text{ m}$, $x(3) = 2\\text{ m}$, $x(5) = 22\\text{ m}$<br>3. Total Distance: $$s = |x(1) - x(0)| + |x(3) - x(1)| + |x(5) - x(3)| = |6 - 2| + |2 - 6| + |22 - 2| = 4 + 4 + 20 = 28\\text{ m}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A passenger in a train moving at a constant velocity drops a coin. To the passenger, the trajectory of the coin appears as a vertical straight line. To an observer standing on the ground platform, the trajectory of the coin appears as a:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Vertical straight line" },
+        { "key": "B", "text": "Parabola" },
+        { "key": "C", "text": "Circle" },
+        { "key": "D", "text": "Hyperbola" }
+      ],
+      "correct": "B",
+      "solution": "In the ground observer's inertial frame of reference, the coin has initial horizontal velocity $u_x = v_{\\text{train}}$ and vertical downward acceleration $g$. The parametric path is $x = v t$ and $y = \\frac{1}{2}g t^2 \\implies y = \\frac{g}{2v^2}x^2$, which is a parabolic trajectory.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The displacement $x$ of a particle moving in one dimension under the action of a constant force is related to time $t$ by $t = \\sqrt{x} + 3$, where $x$ is in metres and $t$ is in seconds. The displacement of the particle when its velocity is zero is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ m}$" },
+        { "key": "B", "text": "$3\\text{ m}$" },
+        { "key": "C", "text": "$9\\text{ m}$" },
+        { "key": "D", "text": "$6\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\sqrt{x} = t - 3 \\implies x = (t - 3)^2$<br>2. Velocity $v = \\frac{dx}{dt} = 2(t - 3)$<br>3. Setting $v = 0 \\implies t = 3\\text{ s}$<br>4. At $t = 3\\text{ s}$, displacement is $x(3) = (3 - 3)^2 = 0\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in a straight line with constant deceleration. It covers $10\\text{ m}$ in the $1\\text{st}$ second and $6\\text{ m}$ in the $2\\text{nd}$ second. The particle comes to rest at time $t$ equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.0\\text{ s}$" },
+        { "key": "B", "text": "$3.5\\text{ s}$" },
+        { "key": "C", "text": "$4.0\\text{ s}$" },
+        { "key": "D", "text": "$4.5\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $s_n = u - \\frac{a}{2}(2n - 1)$<br>2. $s_1 = u - 0.5a = 10$, and $s_2 = u - 1.5a = 6$<br>3. Subtracting gives $a = 4\\text{ m/s}^2 \\implies u = 12\\text{ m/s}$<br>4. Time to stop: $t = \\frac{u}{a} = \\frac{12}{4} = 3.0\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball is thrown vertically upwards from the ground with speed $u$. It passes a point at height $h$ at time $t_1$ on its way up and at time $t_2$ on its way down. The height $h$ is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2} g t_1 t_2$" },
+        { "key": "B", "text": "$g t_1 t_2$" },
+        { "key": "C", "text": "$\\dfrac{1}{4} g t_1 t_2$" },
+        { "key": "D", "text": "$2 g t_1 t_2$" }
+      ],
+      "correct": "A",
+      "solution": "1. Motion equation: $h = u t - \\frac{1}{2}g t^2 \\implies \\frac{1}{2}g t^2 - u t + h = 0$<br>2. $t_1$ and $t_2$ are the roots of this quadratic equation in $t$.<br>3. Product of roots: $$t_1 t_2 = \\frac{h}{\\frac{1}{2}g} \\implies h = \\frac{1}{2} g t_1 t_2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A point moves along a straight line such that its velocity is $v = v_0(1 - t/T)$ for $0 \\le t \\le T$. The total distance travelled by the particle in time $T$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2} v_0 T$" },
+        { "key": "B", "text": "$v_0 T$" },
+        { "key": "C", "text": "$\\dfrac{1}{3} v_0 T$" },
+        { "key": "D", "text": "$\\dfrac{1}{4} v_0 T$" }
+      ],
+      "correct": "A",
+      "solution": "Since $v(t) \\ge 0$ over $0 \\le t \\le T$, distance equals displacement: $$s = \\int_0^T v_0\\left(1 - \\frac{t}{T}\\right)dt = v_0\\left[t - \\frac{t^2}{2T}\\right]_0^T = v_0\\left(T - \\frac{T}{2}\\right) = \\frac{1}{2}v_0 T$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An elevator is accelerating upwards with an acceleration $a = 2\\text{ m/s}^2$. A bolt falls from the ceiling of the elevator from a height of $2.4\\text{ m}$ above the floor. Taking $g = 10\\text{ m/s}^2$, the time taken by the bolt to reach the floor is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{0.4}\\text{ s} \\approx 0.63\\text{ s}$" },
+        { "key": "B", "text": "$0.4\\text{ s}$" },
+        { "key": "C", "text": "$\\sqrt{0.6}\\text{ s} \\approx 0.77\\text{ s}$" },
+        { "key": "D", "text": "$0.8\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. In elevator reference frame, effective downward acceleration is $g_{\\text{eff}} = g + a = 10 + 2 = 12\\text{ m/s}^2$<br>2. Using $h = \\frac{1}{2} g_{\\text{eff}} t^2 \\implies 2.4 = \\frac{1}{2}(12) t^2 = 6 t^2$<br>3. $t^2 = \\frac{2.4}{6} = 0.4 \\implies t = \\sqrt{0.4}\\text{ s} \\approx 0.63\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The acceleration $a$ of a particle moving along a straight line is given by $a = -k v^2$, where $k$ is a positive constant and $v$ is velocity. If initial velocity is $v_0$ at $t = 0$, the velocity at time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_0}{1 + k v_0 t}$" },
+        { "key": "B", "text": "$v_0 e^{-k t}$" },
+        { "key": "C", "text": "$\\dfrac{v_0}{1 - k v_0 t}$" },
+        { "key": "D", "text": "$v_0(1 - k v_0 t)$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\frac{dv}{dt} = -k v^2 \\implies -\\frac{dv}{v^2} = k dt$<br>2. Integrating: $\\left[\\frac{1}{v}\\right]_{v_0}^v = k t \\implies \\frac{1}{v} - \\frac{1}{v_0} = k t$<br>3. $\\frac{1}{v} = \\frac{1 + k v_0 t}{v_0} \\implies v = \\frac{v_0}{1 + k v_0 t}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a straight line such that its velocity depends on displacement $s$ as $v = \\alpha \\sqrt{s}$, where $\\alpha$ is a positive constant. The acceleration of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\alpha^2}{2}$" },
+        { "key": "B", "text": "$\\alpha^2$" },
+        { "key": "C", "text": "$\\dfrac{\\alpha}{2}$" },
+        { "key": "D", "text": "$\\dfrac{\\alpha^2}{\\sqrt{s}}$" }
+      ],
+      "correct": "A",
+      "solution": "$$a = v \\frac{dv}{ds} = (\\alpha s^{1/2}) \\frac{d}{ds}(\\alpha s^{1/2}) = (\\alpha s^{1/2})\\left(\\frac{1}{2}\\alpha s^{-1/2}\\right) = \\frac{\\alpha^2}{2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body dropped from a tower of height $H$ reaches the ground in $T$ seconds. The position of the body at time $t = T/3$ from the top of the tower is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{H}{9}\\text{ below the top}$" },
+        { "key": "B", "text": "$\\dfrac{8H}{9}\\text{ below the top}$" },
+        { "key": "C", "text": "$\\dfrac{H}{3}\\text{ below the top}$" },
+        { "key": "D", "text": "$\\dfrac{2H}{3}\\text{ below the top}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Total height: $H = \\frac{1}{2}g T^2$<br>2. Vertical distance fallen in $t = T/3$: $$y = \\frac{1}{2}g\\left(\\frac{T}{3}\\right)^2 = \\frac{1}{9}\\left(\\frac{1}{2}g T^2\\right) = \\frac{H}{9}\\text{ below the top}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For an object moving along a straight line, the ratio of magnitude of average velocity to average speed over any given time interval is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Always $= 1$" },
+        { "key": "B", "text": "Always $\\ge 1$" },
+        { "key": "C", "text": "Always $\\le 1$" },
+        { "key": "D", "text": "Can be greater or less than $1$" }
+      ],
+      "correct": "C",
+      "solution": "Because distance $\\ge |\\text{displacement}|$, we have: $$\\text{Average Speed} = \\frac{\\text{Distance}}{\\Delta t} \\ge \\frac{|\\text{Displacement}|}{\\Delta t} = |\\text{Average Velocity}| \\implies \\frac{|\\text{Average Velocity}|}{\\text{Average Speed}} \\le 1$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A train of length $200\\text{ m}$ travelling at $72\\text{ km/h}$ overtakes another train of length $300\\text{ m}$ travelling at $36\\text{ km/h}$ in the same direction on parallel tracks. The time taken to completely cross is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ s}$" },
+        { "key": "B", "text": "$25\\text{ s}$" },
+        { "key": "C", "text": "$100\\text{ s}$" },
+        { "key": "D", "text": "$75\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Relative speed: $v_{\\text{rel}} = 72 - 36 = 36\\text{ km/h} = 36 \\times \\frac{5}{18} = 10\\text{ m/s}$<br>2. Total distance to clear relative to each other: $L = 200 + 300 = 500\\text{ m}$<br>3. Time: $t = \\frac{L}{v_{\\text{rel}}} = \\frac{500}{10} = 50\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The velocity-time relation of a body is $v = 3t^2 - 12t + 9\\text{ m/s}$. The body changes its direction of motion at times:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t = 1\\text{ s}$ and $t = 3\\text{ s}$" },
+        { "key": "B", "text": "$t = 2\\text{ s}$ only" },
+        { "key": "C", "text": "$t = 3\\text{ s}$ only" },
+        { "key": "D", "text": "$t = 0\\text{ s}$ and $t = 4\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "$v(t) = 3(t^2 - 4t + 3) = 3(t - 1)(t - 3)$. The velocity changes sign as it passes through zero at $t = 1\\text{ s}$ and $t = 3\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bullet loses $\\dfrac{1}{20}\\text{th}$ of its velocity in passing through a wooden plank of thickness $d$. The minimum number of identical planks required to stop the bullet completely is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$11$" },
+        { "key": "B", "text": "$10$" },
+        { "key": "C", "text": "$20$" },
+        { "key": "D", "text": "$19$" }
+      ],
+      "correct": "A",
+      "solution": "1. Velocity after 1 plank: $v_1 = u - \\frac{u}{20} = \\frac{19}{20}u$<br>2. Work-energy / kinematics: $\\left(\\frac{19}{20}u\\right)^2 = u^2 - 2ad \\implies 2ad = u^2\\left(1 - \\frac{361}{400}\\right) = \\frac{39}{400}u^2$<br>3. For $n$ planks to stop bullet ($v = 0$): $0 = u^2 - 2a(nd) \\implies n(2ad) = u^2$<br>4. $n\\left(\\frac{39}{400}u^2\\right) = u^2 \\implies n = \\frac{400}{39} \\approx 10.25$<br>5. Therefore, a minimum of $11$ planks are required.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

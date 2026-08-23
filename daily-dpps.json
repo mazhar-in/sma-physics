@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-005",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-005/dpp-005.json",
+    "pdfFile": "/dpps/dpp-005/SMA_DPP_005.pdf",
+    "title": "Applications of Dimensional Analysis: Homogeneity & Derivations",
+    "chapter": "Units, Dimensions & Errors",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-004",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-004/dpp-004.json",

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-006",
+    "title": "Comprehensive Practice Module: Units, Errors & Dimensional Analysis",
+    "publishDate": "2026-08-23",
+    "unit": "General Physics & Measurement",
+    "chapter": "Units, Dimensions & Errors"
+  },
+  "seo": {
+    "title": "Units, Errors & Dimensional Analysis Practice Problems | SMA Physics",
+    "description": "20 Full-length JEE Main MCQ revision test covering unit conversions, vernier calipers, screw gauge zero errors, fractional error propagation, and custom base dimensional reductions.",
+    "keywords": "JEE Main Physics, Physics DPP, Units Dimensions Errors Mock Test, Least Count Problems, Screw Gauge Error, Error Propagation, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/problems-units-errors-dimensional-analysis",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Integrated Measurement, Error Calculation & Dimensional Homogeneity",
+    "tag": "Class 11 General Physics Review",
+    "summary": "This mastery module synthesizes the entire chapter: (1) Unit conversion using $n_1 u_1 = n_2 u_2$, (2) Reading vernier calipers and micrometer screw gauges with algebraic zero error compensation: $\\text{True Value} = \\text{Observed} - (\\pm \\text{Zero Error})$, (3) Calculating maximum fractional uncertainties through logarithmic differentiation, and (4) Formulating custom physical dimensions from fundamental force, energy, and velocity parameters.",
+    "keyFormula": "$$\\frac{\\Delta Q}{Q} = \\sum_{i} |n_i| \\left(\\frac{\\Delta x_i}{x_i}\\right) \\quad \\text{and} \\quad [\\text{LHS}] = [\\text{RHS}]$$",
+    "examTrap": "In electrical and thermal formulas (e.g., $P = I^2 R$ or $H = I^2 R t$), ensure you double the relative percentage error of the current term ($2\\frac{\\Delta I}{I}$). In meter bridge fractional error derivations, the relative error expands to $\\frac{\\Delta X}{X} = \\Delta l \\left(\\frac{1}{l} + \\frac{1}{100-l}\\right)$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If speed of light $c$, acceleration due to gravity $g$, and pressure $P$ are taken as fundamental physical quantities, the dimensional formula of gravitational constant $G$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[c^2 g^0 P^{-1}]$" },
+        { "key": "B", "text": "$[c^0 g^2 P^{-1}]$" },
+        { "key": "C", "text": "$[c^2 g^2 P^{-1}]$" },
+        { "key": "D", "text": "$[c^1 g^1 P^{-2}]$" }
+      ],
+      "correct": "B",
+      "solution": "1. $[c] = [L T^{-1}]$, $[g] = [L T^{-2}]$, $[P] = [M L^{-1} T^{-2}]$, and $[G] = [M^{-1} L^3 T^{-2}]$<br>2. Let $G = c^x g^y P^z \\implies [M^{-1} L^3 T^{-2}] = [L T^{-1}]^x [L T^{-2}]^y [M L^{-1} T^{-2}]^z$<br>3. $M: z = -1$; $L: x + y - z = 3 \\implies x + y = 2$; $T: -x - 2y - 2z = -2 \\implies x + 2y = 4$<br>4. Solving gives $y = 2, x = 0, z = -1 \\implies [G] = [c^0 g^2 P^{-1}]$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In an experiment to measure the density of a wire, a student records: mass $m = (0.3 \\pm 0.003)\\text{ g}$, radius $r = (0.5 \\pm 0.005)\\text{ mm}$, and length $l = (6.0 \\pm 0.06)\\text{ cm}$. The maximum percentage error in the calculated density is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\%$" },
+        { "key": "B", "text": "$3\\%$" },
+        { "key": "C", "text": "$2\\%$" },
+        { "key": "D", "text": "$1\\%$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\rho = \\frac{m}{\\pi r^2 l} \\implies \\frac{\\Delta \\rho}{\\rho} = \\frac{\\Delta m}{m} + 2\\frac{\\Delta r}{r} + \\frac{\\Delta l}{l}$<br>2. $\\frac{\\Delta m}{m} = \\frac{0.003}{0.3} = 1\\%$<br>3. $2\\frac{\\Delta r}{r} = 2\\left(\\frac{0.005}{0.5}\\right) = 2\\%$<br>4. $\\frac{\\Delta l}{l} = \\frac{0.06}{6.0} = 1\\%$<br>5. Maximum percentage error $= 1\\% + 2\\% + 1\\% = 4\\%$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The pitch of a screw gauge is $0.5\\text{ mm}$ and its circular scale has $50$ divisions. When measuring the diameter of a ball, the main scale reads $2.5\\text{ mm}$ and the $20\\text{th}$ circular division aligns with the reference line. If the zero error is $+0.04\\text{ mm}$, the corrected diameter is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.66\\text{ mm}$" },
+        { "key": "B", "text": "$2.70\\text{ mm}$" },
+        { "key": "C", "text": "$2.74\\text{ mm}$" },
+        { "key": "D", "text": "$2.64\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\text{LC} = \\frac{0.5\\text{ mm}}{50} = 0.01\\text{ mm}$<br>2. $\\text{Observed Reading} = 2.5 + (20 \\times 0.01) = 2.70\\text{ mm}$<br>3. $\\text{Correct Reading} = \\text{Observed} - (\\text{Zero Error}) = 2.70 - (+0.04) = 2.66\\text{ mm}$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following expressions does NOT have the dimensions of time?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$R C$" },
+        { "key": "B", "text": "$\\dfrac{L}{R}$" },
+        { "key": "C", "text": "$\\sqrt{L C}$" },
+        { "key": "D", "text": "$\\dfrac{R}{L}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $[R C] = [T]$ (Capacitive time constant)<br>2. $[L/R] = [T]$ (Inductive time constant)<br>3. $[\\sqrt{LC}] = [T]$ (Resonance period)<br>4. $[R/L] = [T^{-1}]$ (Represents frequency, not time).<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The position of a particle at time $t$ is given by $x(t) = \\left(\\dfrac{v_0}{\\alpha}\\right)(1 - e^{-\\alpha t})$, where $v_0$ is a constant velocity. The dimensional formula of $\\alpha$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^0 L^0 T^{-1}]$" },
+        { "key": "B", "text": "$[M^0 L^1 T^{-1}]$" },
+        { "key": "C", "text": "$[M^0 L^0 T^1]$" },
+        { "key": "D", "text": "$[M^0 L^{-1} T^0]$" }
+      ],
+      "correct": "A",
+      "solution": "The argument of an exponential function must be dimensionless:<br>$$[\\alpha t] = [M^0 L^0 T^0] \\implies [\\alpha] = \\frac{1}{[t]} = [T^{-1}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The value of resistance is $R = (10.0 \\pm 0.1)\\,\\Omega$ and current through it is $I = (2.00 \\pm 0.02)\\text{ A}$. The thermal power dissipated ($P = I^2 R$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(40.0 \\pm 1.2)\\text{ W}$" },
+        { "key": "B", "text": "$(40.0 \\pm 0.4)\\text{ W}$" },
+        { "key": "C", "text": "$(40.0 \\pm 0.8)\\text{ W}$" },
+        { "key": "D", "text": "$(40.0 \\pm 1.6)\\text{ W}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Nominal power: $P = (2.00)^2 \\times 10.0 = 40.0\\text{ W}$<br>2. Fractional error: $$\\frac{\\Delta P}{P} = 2\\frac{\\Delta I}{I} + \\frac{\\Delta R}{R} = 2\\left(\\frac{0.02}{2.00}\\right) + \\frac{0.1}{10.0} = 0.02 + 0.01 = 0.03$$<br>3. Absolute error: $\\Delta P = 0.03 \\times 40.0 = 1.2\\text{ W}$<br>4. Result: $(40.0 \\pm 1.2)\\text{ W}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $19$ divisions of the main scale of a vernier caliper coincide with $20$ divisions of the vernier scale, and $1\\text{ MSD} = 1\\text{ mm}$, then the least count of the caliper is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.05\\text{ mm}$" },
+        { "key": "B", "text": "$0.01\\text{ mm}$" },
+        { "key": "C", "text": "$0.1\\text{ mm}$" },
+        { "key": "D", "text": "$0.02\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $20\\text{ VSD} = 19\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{19}{20}\\text{ mm} = 0.95\\text{ mm}$<br>2. $\\text{LC} = 1\\text{ MSD} - 1\\text{ VSD} = 1\\text{ mm} - 0.95\\text{ mm} = 0.05\\text{ mm}$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the dimensional formula $[M^a L^b T^c A^d]$ of magnetic permeability $\\mu_0$, the values of $a, b,$ and $c$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = 1, b = 1, c = -2$" },
+        { "key": "B", "text": "$a = 1, b = 2, c = -2$" },
+        { "key": "C", "text": "$a = 1, b = 1, c = -1$" },
+        { "key": "D", "text": "$a = 1, b = 0, c = -2$" }
+      ],
+      "correct": "A",
+      "solution": "From magnetic force between current-carrying wires: $F/l = \\frac{\\mu_0 I^2}{2\\pi d} \\implies \\mu_0 = \\frac{2\\pi d F}{I^2 l}$.<br>$$[\\mu_0] = \\frac{[L][M L T^{-2}]}{[A^2][L]} = [M^1 L^1 T^{-2} A^{-2}] \\implies a = 1, b = 1, c = -2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In a meter bridge experiment, unknown resistance $X = \\dfrac{l}{100 - l} R$. If $R = 10.0\\,\\Omega$ is known exactly and $l = (40.0 \\pm 0.1)\\text{ cm}$ on a $100\\text{ cm}$ wire, the fractional error $\\Delta X / X$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{0.1}{24}$" },
+        { "key": "B", "text": "$\\dfrac{0.1}{40}$" },
+        { "key": "C", "text": "$\\dfrac{0.1}{60}$" },
+        { "key": "D", "text": "$\\dfrac{0.1}{100}$" }
+      ],
+      "correct": "A",
+      "solution": "Differentiating $\\ln X = \\ln l - \\ln(100 - l)$:<br>$$\\frac{\\Delta X}{X} = \\frac{\\Delta l}{l} + \\frac{\\Delta l}{100 - l} = 0.1\\left(\\frac{1}{40.0} + \\frac{1}{60.0}\\right) = 0.1\\left(\\frac{100}{2400}\\right) = \\frac{0.1}{24}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A dimensionless quantity:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Never has a unit" },
+        { "key": "B", "text": "Always has a unit" },
+        { "key": "C", "text": "May have a unit" },
+        { "key": "D", "text": "Does not exist in physics" }
+      ],
+      "correct": "C",
+      "solution": "A dimensionless quantity may have a unit. For instance, plane angle is dimensionless ($[M^0 L^0 T^0]$) but has the unit radian, and solid angle has the unit steradian.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The capacitance $C$ of a parallel plate capacitor is $C = \\dfrac{\\varepsilon_0 A}{d}$. If percentage errors in plate area $A$ and separation $d$ are $1\\%$ and $2\\%$ respectively, the percentage error in $C$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\%$" },
+        { "key": "B", "text": "$1\\%$" },
+        { "key": "C", "text": "$2\\%$" },
+        { "key": "D", "text": "$0.5\\%$" }
+      ],
+      "correct": "A",
+      "solution": "Relative errors add up in products and quotients:<br>$$\\frac{\\Delta C}{C} = \\frac{\\Delta A}{A} + \\frac{\\Delta d}{d} = 1\\% + 2\\% = 3\\%$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The velocity of sound in a medium depends on elasticity $E$ and density $\\rho$ as $v = k E^a \\rho^b$. The values of $a$ and $b$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = 1/2, b = -1/2$" },
+        { "key": "B", "text": "$a = 1/2, b = 1/2$" },
+        { "key": "C", "text": "$a = -1/2, b = 1/2$" },
+        { "key": "D", "text": "$a = 1, b = -1/2$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[L T^{-1}] = [M L^{-1} T^{-2}]^a [M L^{-3}]^b$<br>2. $M: a + b = 0 \\implies b = -a$<br>3. $T: -2a = -1 \\implies a = 1/2 \\implies b = -1/2$<br>4. Resulting Newton-Laplace equation: $v = \\sqrt{E/\\rho}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Perform the calculation $12.9\\text{ g} - 7.06\\text{ g}$ and express the answer to appropriate significant figures:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5.84\\text{ g}$" },
+        { "key": "B", "text": "$5.8\\text{ g}$" },
+        { "key": "C", "text": "$5.840\\text{ g}$" },
+        { "key": "D", "text": "$5.9\\text{ g}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Numerical difference: $12.9 - 7.06 = 5.84\\text{ g}$<br>2. In subtraction, the answer must match the least number of decimal places ($12.9$ has $1$ decimal place).<br>3. Rounding $5.84$ to $1$ decimal place gives $5.8\\text{ g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If force $F$, area $A$, and density $\\rho$ are chosen as fundamental quantities, the dimensional formula for velocity $v$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[F^{1/2} A^{-1/2} \\rho^{-1/2}]$" },
+        { "key": "B", "text": "$[F^{1/2} A^{1/2} \\rho^{-1/2}]$" },
+        { "key": "C", "text": "$[F^{1/2} A^{-1/4} \\rho^{-1/2}]$" },
+        { "key": "D", "text": "$[F^1 A^{-1} \\rho^{-1/2}]$" }
+      ],
+      "correct": "C",
+      "solution": "1. Let $v \\propto F^x A^y \\rho^z \\implies [L T^{-1}] = [M L T^{-2}]^x [L^2]^y [M L^{-3}]^z$<br>2. $M: x + z = 0 \\implies z = -x$<br>3. $T: -2x = -1 \\implies x = 1/2, z = -1/2$<br>4. $L: x + 2y - 3z = 1 \\implies 1/2 + 2y + 3/2 = 1 \\implies 2 + 2y = 1 \\implies y = -1/4$<br>5. Thus, $[v] = [F^{1/2} A^{-1/4} \\rho^{-1/2}]$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A physical quantity $y$ is given by $y = \\dfrac{a^2 b^3}{c \\sqrt{d}}$. If percentage errors in $a, b, c,$ and $d$ are $2\\%, 1\\%, 3\\%,$ and $4\\%$ respectively, the percentage error in $y$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\%$" },
+        { "key": "B", "text": "$10\\%$" },
+        { "key": "C", "text": "$8\\%$" },
+        { "key": "D", "text": "$14\\%$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{\\Delta y}{y} = 2\\left(\\frac{\\Delta a}{a}\\right) + 3\\left(\\frac{\\Delta b}{b}\\right) + \\frac{\\Delta c}{c} + \\frac{1}{2}\\left(\\frac{\\Delta d}{d}\\right) = 2(2\\%) + 3(1\\%) + 3\\% + \\frac{1}{2}(4\\%) = 4\\% + 3\\% + 3\\% + 2\\% = 12\\%$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A screw gauge has a pitch of $1\\text{ mm}$ and $100$ circular scale divisions. When used to measure the thickness of a plate, the main scale reads $3\\text{ mm}$ and the $35\\text{th}$ circular division coincides with the datum line. If it has a negative zero error of $0.05\\text{ mm}$, the thickness of the plate is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.40\\text{ mm}$" },
+        { "key": "B", "text": "$3.30\\text{ mm}$" },
+        { "key": "C", "text": "$3.35\\text{ mm}$" },
+        { "key": "D", "text": "$3.45\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\text{LC} = \\frac{1\\text{ mm}}{100} = 0.01\\text{ mm}$<br>2. $\\text{Observed} = 3\\text{ mm} + (35 \\times 0.01\\text{ mm}) = 3.35\\text{ mm}$<br>3. $\\text{Correct} = \\text{Observed} - (\\text{Zero Error}) = 3.35 - (-0.05) = 3.40\\text{ mm}$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The equation of a stationary wave is $y = 2A \\sin\\left(\\dfrac{2\\pi c t}{\\lambda}\\right) \\cos\\left(\\dfrac{2\\pi x}{\\lambda}\\right)$. Which of the following statements is INCORRECT?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The dimension of $c t$ is $[L]$." },
+        { "key": "B", "text": "The dimension of $x$ is $[L]$." },
+        { "key": "C", "text": "The dimension of $\\lambda$ is $[L]$." },
+        { "key": "D", "text": "The dimension of $c/\\lambda$ is $[L T^{-1}]$." }
+      ],
+      "correct": "D",
+      "solution": "Trigonometric arguments are dimensionless: $[c t / \\lambda] = 1 \\implies [c/\\lambda] = \\frac{1}{[t]} = [T^{-1}]$, which represents frequency, NOT speed ($[L T^{-1}]$). Statement (d) is therefore false.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The density of a material in CGS system is $8\\text{ g}\\cdot\\text{cm}^{-3}$. In a unit system where the unit of length is $5\\text{ cm}$ and the unit of mass is $20\\text{ g}$, the numerical value of density is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50$" },
+        { "key": "B", "text": "$40$" },
+        { "key": "C", "text": "$20$" },
+        { "key": "D", "text": "$100$" }
+      ],
+      "correct": "A",
+      "solution": "Dimensions of density: $[M^1 L^{-3}]$.<br>$$n_2 = n_1 \\left(\\frac{M_1}{M_2}\\right)^1 \\left(\\frac{L_1}{L_2}\\right)^{-3} = 8\\left(\\frac{1\\text{ g}}{20\\text{ g}}\\right)^1 \\left(\\frac{1\\text{ cm}}{5\\text{ cm}}\\right)^{-3} = \\frac{8}{20} \\times 125 = \\frac{2}{5} \\times 125 = 50$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The time period of a simple pendulum is $T = 2\\pi\\sqrt{L/g}$. If the measured length is $L = (20.0 \\pm 0.1)\\text{ cm}$ and time for $50$ oscillations is $t = (40 \\pm 1)\\text{ s}$, the percentage error in $g$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5.5\\%$" },
+        { "key": "B", "text": "$3.0\\%$" },
+        { "key": "C", "text": "$4.5\\%$" },
+        { "key": "D", "text": "$2.5\\%$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\frac{\\Delta L}{L} = \\frac{0.1}{20.0} = 0.5\\%$<br>2. $\\frac{\\Delta T}{T} = \\frac{\\Delta t}{t} = \\frac{1}{40} = 2.5\\%$<br>3. $$\\frac{\\Delta g}{g} = \\frac{\\Delta L}{L} + 2\\frac{\\Delta T}{T} = 0.5\\% + 2(2.5\\%) = 0.5\\% + 5.0\\% = 5.5\\%$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The inductive reactance $X_L = \\omega L$ and capacitive reactance $X_C = \\dfrac{1}{\\omega C}$ both have the dimensions of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Resistance" },
+        { "key": "B", "text": "Capacitance" },
+        { "key": "C", "text": "Inductance" },
+        { "key": "D", "text": "Electric potential" }
+      ],
+      "correct": "A",
+      "solution": "Reactances $X_L$ and $X_C$ quantify the effective opposition to alternating current flow and are measured in Ohms ($\\Omega$), sharing identical dimensions with electrical resistance ($[M^1 L^2 T^{-3} A^{-2}]$).<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

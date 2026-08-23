@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-005",
+    "title": "Applications of Dimensional Analysis: Homogeneity & Derivations",
+    "publishDate": "2026-08-23",
+    "unit": "General Physics & Measurement",
+    "chapter": "Units, Dimensions & Errors"
+  },
+  "seo": {
+    "title": "Applications of Dimensional Analysis JEE Main Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering Principle of Homogeneity, testing consistency of equations, and deriving relations with custom base variables.",
+    "keywords": "JEE Main Physics, Principle of Homogeneity, Dimensional Analysis DPP, Derivation of Physical Relations, Planck Units, Rayleigh Method, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/applications-dimensional-analysis-derivations",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Applications and Core Boundaries of Dimensional Analysis",
+    "tag": "Class 11 General Physics",
+    "summary": "Dimensional analysis is used to: (1) check the physical validity of equations via the Principle of Homogeneity ($[\\text{LHS}] = [\\text{RHS}]$), (2) convert numerical values between unit systems, and (3) deduce relationships between physical parameters by equating fundamental power exponents.",
+    "keyFormula": "$$Q = k \\cdot A^a B^b C^c \\implies [M^x L^y T^z] = [A]^a [B]^b [C]^c$$",
+    "examTrap": "Dimensional correctness is a necessary but insufficient condition for physical validity (an equation may be dimensionally sound yet missing a constant factor of $\\frac{1}{2}$ or $\\pi$). Furthermore, relations involving addition of multiple terms or transcendental functions ($\\sin, \\cos, \\exp, \\ln$) cannot be derived directly by equating single power-law products."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If velocity $v$, force $F$, and time $T$ are chosen as the fundamental base quantities, the dimensional formula of mass $m$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[F^1 v^{-1} T^1]$" },
+        { "key": "B", "text": "$[F^1 v^1 T^{-1}]$" },
+        { "key": "C", "text": "$[F^1 v^{-2} T^1]$" },
+        { "key": "D", "text": "$[F^1 v^{-1} T^2]$" }
+      ],
+      "correct": "A",
+      "solution": "1. Let $m \\propto F^a v^b T^c$<br>2. $[M^1 L^0 T^0] = [M L T^{-2}]^a [L T^{-1}]^b [T]^c$<br>3. Equating exponents: $a = 1$; $a + b = 0 \\implies b = -1$; $-2a - b + c = 0 \\implies -2(1) - (-1) + c = 0 \\implies c = 1$<br>4. Thus, $[m] = [F^1 v^{-1} T^1]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The period of oscillation $T$ of a gas bubble from an underwater explosion depends upon static pressure $P$, density of water $\\rho$, and total energy of explosion $E$ as $T \\propto P^a \\rho^b E^c$. The values of $a, b,$ and $c$ are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\dfrac{5}{6}, \\dfrac{1}{2}, \\dfrac{1}{3}$" },
+        { "key": "B", "text": "$-\\dfrac{5}{6}, \\dfrac{1}{3}, \\dfrac{1}{2}$" },
+        { "key": "C", "text": "$\\dfrac{5}{6}, -\\dfrac{1}{2}, \\dfrac{1}{3}$" },
+        { "key": "D", "text": "$-\\dfrac{1}{2}, \\dfrac{1}{3}, \\dfrac{5}{6}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[T^1] = [M L^{-1} T^{-2}]^a [M L^{-3}]^b [M L^2 T^{-2}]^c$<br>2. $M: a + b + c = 0$; $L: -a - 3b + 2c = 0$; $T: -2a - 2c = 1 \\implies a + c = -1/2$<br>3. From $M$: $b = -(a + c) = 1/2$<br>4. Solving $-a - 3(1/2) + 2c = 0$ with $a + c = -1/2$ yields $c = 1/3$ and $a = -5/6$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the equation $y = A \\sin(\\omega t - k x)$, the dimensional formula of $\\omega/k$ represents:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Velocity" },
+        { "key": "B", "text": "Acceleration" },
+        { "key": "C", "text": "Wavelength" },
+        { "key": "D", "text": "Time period" }
+      ],
+      "correct": "A",
+      "solution": "1. Trigonometric arguments are dimensionless: $[\\omega t] = 1 \\implies [\\omega] = [T^{-1}]$ and $[k x] = 1 \\implies [k] = [L^{-1}]$<br>2. $$\\left[\\frac{\\omega}{k}\\right] = \\frac{[T^{-1}]}{[L^{-1}]} = [L T^{-1}] = [\\text{Wave Velocity}]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If energy $E$, velocity $v$, and force $F$ are taken as fundamental quantities, the dimensional formula of surface tension $T$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[E^{-2} v^0 F^2]$" },
+        { "key": "B", "text": "$[E^{-1} v^0 F^2]$" },
+        { "key": "C", "text": "$[E^1 v^{-2} F^2]$" },
+        { "key": "D", "text": "$[E^{-2} v^2 F^1]$" }
+      ],
+      "correct": "B",
+      "solution": "1. Surface tension $[T] = [M^1 L^0 T^{-2}]$<br>2. Let $T = E^a v^b F^c \\implies [M L^0 T^{-2}] = [M L^2 T^{-2}]^a [L T^{-1}]^b [M L T^{-2}]^c$<br>3. $M: a + c = 1$; $L: 2a + b + c = 0$; $T: -2a - b - 2c = -2$<br>4. Solving gives $b = 0, a = -1, c = 2 \\implies [T] = [E^{-1} v^0 F^2]$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The velocity of water waves $v$ depends on their wavelength $\\lambda$, density of water $\\rho$, and acceleration due to gravity $g$ as $v \\propto \\lambda^a g^b \\rho^c$. Dimensional analysis confirms that:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = 1/2, b = 1/2, c = 0$" },
+        { "key": "B", "text": "$a = 1, b = 1/2, c = 0$" },
+        { "key": "C", "text": "$a = 1/2, b = 1, c = 1$" },
+        { "key": "D", "text": "$a = 1/2, b = -1/2, c = 0$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[L T^{-1}] = [L]^a [L T^{-2}]^b [M L^{-3}]^c$<br>2. $M: c = 0$; $T: -2b = -1 \\implies b = 1/2$; $L: a + b - 3c = 1 \\implies a + 1/2 = 1 \\implies a = 1/2$<br>3. Thus, $v \\propto \\sqrt{g \\lambda}$, independent of density.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following relationships is dimensionally INCONSISTENT?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v^2 = u^2 + 2as$" },
+        { "key": "B", "text": "$s_n = u + \\dfrac{a}{2}(2n - 1)$" },
+        { "key": "C", "text": "$T = 2\\pi\\sqrt{\\dfrac{m}{k}}$ (spring-mass system)" },
+        { "key": "D", "text": "$\\lambda = \\dfrac{h}{m v^2}$ (de-Broglie wavelength)" }
+      ],
+      "correct": "D",
+      "solution": "For de-Broglie wavelength: $[\\lambda] = [L]$, whereas $\\left[\\frac{h}{m v^2}\\right] = \\frac{[M L^2 T^{-1}]}{[M][L^2 T^{-2}]} = [T] \\ne [L]$. The correct physical relation is $\\lambda = \\frac{h}{mv}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The force of interaction between two atoms is modeled as $F = \\alpha \\beta \\exp\\left(-\\dfrac{x^2}{\\alpha k_B T}\\right)$, where $x$ is distance, $k_B$ is Boltzmann's constant, and $T$ is absolute temperature. The dimensional formula of $\\beta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^1 T^{-2}]$" },
+        { "key": "B", "text": "$[M^2 L^2 T^{-4}]$" },
+        { "key": "C", "text": "$[M^1 L^{-1} T^{-2}]$" },
+        { "key": "D", "text": "$[M^0 L^1 T^{-1}]$" }
+      ],
+      "correct": "C",
+      "solution": "1. The exponential argument is dimensionless: $[\\alpha] = \\frac{[x^2]}{[k_B T]} = \\frac{[L^2]}{[M L^2 T^{-2}]} = [M^{-1} T^2]$<br>2. From $[F] = [\\alpha][\\beta] \\implies [\\beta] = \\frac{[F]}{[\\alpha]} = \\frac{[M^1 L^1 T^{-2}]}{[M^{-1} L^2 T^0]} = [M^1 L^{-1} T^{-2}]$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If Planck's constant $h$, speed of light $c$, and gravitational constant $G$ are chosen as fundamental units, the dimension of length in this system is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[h^{1/2} G^{1/2} c^{-3/2}]$" },
+        { "key": "B", "text": "$[h^{1/2} G^{1/2} c^{3/2}]$" },
+        { "key": "C", "text": "$[h^{-1/2} G^{1/2} c^{3/2}]$" },
+        { "key": "D", "text": "$[h^{1/2} G^{-1/2} c^{-3/2}]$" }
+      ],
+      "correct": "A",
+      "solution": "1. Let $L \\propto h^a G^b c^c \\implies [L] = [M L^2 T^{-1}]^a [M^{-1} L^3 T^{-2}]^b [L T^{-1}]^c$<br>2. $M: a - b = 0 \\implies a = b$<br>3. $L: 2a + 3b + c = 1 \\implies 5a + c = 1$<br>4. $T: -a - 2b - c = 0 \\implies c = -3a$<br>5. $5a - 3a = 1 \\implies a = 1/2, b = 1/2, c = -3/2 \\implies [L] = [h^{1/2} G^{1/2} c^{-3/2}]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If momentum $p$, area $A$, and time $t$ are taken as fundamental units, the dimensional formula for energy is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[p^1 A^{1/2} t^{-1}]$" },
+        { "key": "B", "text": "$[p^1 A^1 t^{-1}]$" },
+        { "key": "C", "text": "$[p^2 A^{1/2} t^{-1}]$" },
+        { "key": "D", "text": "$[p^1 A^{-1/2} t^1]$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[M L^2 T^{-2}] = [M L T^{-1}]^a [L^2]^b [T]^c$<br>2. $M: a = 1$<br>3. $L: a + 2b = 2 \\implies 1 + 2b = 2 \\implies b = 1/2$<br>4. $T: -a + c = -2 \\implies -1 + c = -2 \\implies c = -1$<br>5. Thus, $[E] = [p^1 A^{1/2} t^{-1}]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The critical velocity $v_c$ of a viscous liquid flowing through a capillary tube of diameter $D$ depends on viscosity $\\eta$, density $\\rho$, and $D$. The dimensionally correct relation is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v_c = \\dfrac{R_e \\eta}{\\rho D}$" },
+        { "key": "B", "text": "$v_c = \\dfrac{R_e \\rho D}{\\eta}$" },
+        { "key": "C", "text": "$v_c = \\dfrac{R_e \\rho}{\\eta D}$" },
+        { "key": "D", "text": "$v_c = \\dfrac{R_e \\eta D}{\\rho}$" }
+      ],
+      "correct": "A",
+      "solution": "Testing dimensions of $\\frac{\\eta}{\\rho D}$:<br>$$\\left[\\frac{\\eta}{\\rho D}\\right] = \\frac{[M L^{-1} T^{-1}]}{[M L^{-3}][L]} = \\frac{[M L^{-1} T^{-1}]}{[M L^{-2}]} = [L T^{-1}]$$<br>This correctly yields the dimension of velocity. $R_e$ is the dimensionless Reynolds number.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the equation $\\left(P + \\dfrac{\\alpha}{V^2}\\right) = \\dfrac{b \\theta}{V} \\exp\\left(-\\dfrac{\\alpha V}{R \\theta}\\right)$, where $P$ is pressure, $V$ is volume, $\\theta$ is temperature, and $R$ is universal gas constant, the dimension of $\\alpha$ must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^1 L^5 T^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^2 T^{-2}]$" },
+        { "key": "C", "text": "$[M^0 L^{-3} T^0]$" },
+        { "key": "D", "text": "$[M^1 L^{-1} T^{-2}]$" }
+      ],
+      "correct": "C",
+      "solution": "1. The exponent must be dimensionless: $\\left[\\frac{\\alpha V}{R \\theta}\\right] = [M^0 L^0 T^0]$<br>2. Since $[R \\theta] = [\\text{Work}] = [M L^2 T^{-2}]$ and $[P][V] = [M L^2 T^{-2}]$, we have $[\\alpha][V] = 1 \\implies [\\alpha] = [L^{-3}] = [M^0 L^{-3} T^0]$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If Planck's constant $h$, speed of light $c$, and universal gravitational constant $G$ are chosen as fundamental units, the Planck mass $m_P$ scales as:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[h^{1/2} c^{1/2} G^{-1/2}]$" },
+        { "key": "B", "text": "$[h^{1/2} c^{-1/2} G^{1/2}]$" },
+        { "key": "C", "text": "$[h^{-1/2} c^{1/2} G^{1/2}]$" },
+        { "key": "D", "text": "$[h^1 c^1 G^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[M^1] = [M L^2 T^{-1}]^a [L T^{-1}]^b [M^{-1} L^3 T^{-2}]^c$<br>2. $M: a - c = 1$; $L: 2a + b + 3c = 0$; $T: a + b + 2c = 0$<br>3. Subtracting gives $a + c = 0 \\implies c = -a$<br>4. $a - (-a) = 1 \\implies a = 1/2, c = -1/2, b = 1/2 \\implies m_P = [h^{1/2} c^{1/2} G^{-1/2}]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A dimensionless combination formed by electron charge $e$, permittivity of free space $\\varepsilon_0$, Planck's constant $h$, and speed of light $c$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{e^2}{\\varepsilon_0 h c}$" },
+        { "key": "B", "text": "$\\dfrac{e^2 \\varepsilon_0}{h c}$" },
+        { "key": "C", "text": "$\\dfrac{e h}{\\varepsilon_0 c^2}$" },
+        { "key": "D", "text": "$\\dfrac{e^2 c}{\\varepsilon_0 h}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\left[\\frac{e^2}{\\varepsilon_0}\\right] = [F r^2] = [M L^3 T^{-2}]$<br>2. $[h c] = [M L^2 T^{-1}][L T^{-1}] = [M L^3 T^{-2}]$<br>3. Dividing the two gives $\\left[\\frac{e^2}{\\varepsilon_0 h c}\\right] = [M^0 L^0 T^0]$ (Fine structure constant).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The rate of flow of liquid $V/t$ ($Q$) through a pipe of radius $r$ under pressure gradient $P/l$ depends on coefficient of viscosity $\\eta$ as $Q \\propto \\eta^a r^b (P/l)^c$. Dimensional analysis yields:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = -1, b = 4, c = 1$" },
+        { "key": "B", "text": "$a = 1, b = 4, c = -1$" },
+        { "key": "C", "text": "$a = -1, b = 2, c = 1$" },
+        { "key": "D", "text": "$a = 1, b = 2, c = 1$" }
+      ],
+      "correct": "A",
+      "solution": "From Poiseuille's formula: $Q = \\frac{\\pi P r^4}{8 \\eta l} = \\frac{\\pi}{8} \\eta^{-1} r^4 \\left(\\frac{P}{l}\\right)^1 \\implies a = -1, b = 4, c = 1$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If force $F$, velocity $v$, and density $\rho$ are fundamental quantities, the dimensional formula for electrical resistance $R$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Dependent on electric charge/current unit $[A]$" },
+        { "key": "B", "text": "Undefinable using only $\\{F, v, \\rho\\}$ without an electromagnetic base dimension" },
+        { "key": "C", "text": "Both (a) and (b) are correct" },
+        { "key": "D", "text": "$[F^1 v^{-1} \\rho^0]$" }
+      ],
+      "correct": "C",
+      "solution": "Resistance $[R] = [M^1 L^2 T^{-3} A^{-2}]$ contains the fundamental electromagnetic dimension of current $[A]$. It is mathematically impossible to construct $[A]$ using purely mechanical quantities $\\{F, v, \\rho\\}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the relation $P = P_0 \\exp(-\\alpha t^2)$, where $P$ is pressure and $t$ is time, the dimensional formula of constant $\\alpha$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^0 L^0 T^{-2}]$" },
+        { "key": "B", "text": "$[M^1 L^{-1} T^{-2}]$" },
+        { "key": "C", "text": "$[M^0 L^0 T^2]$" },
+        { "key": "D", "text": "$[M^1 L^0 T^{-2}]$" }
+      ],
+      "correct": "A",
+      "solution": "Exponential functions take dimensionless arguments: $[\\alpha t^2] = 1 \\implies [\\alpha] = \\frac{1}{[t^2]} = [T^{-2}] = [M^0 L^0 T^{-2}]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The frequency of vibration $\\nu$ of a stretched string depends on length $L$, tension $F$, and linear mass density $\\mu$ (mass per unit length) as $\\nu \\propto L^a F^b \\mu^c$. The values of $a, b,$ and $c$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-1, 1/2, -1/2$" },
+        { "key": "B", "text": "$1, 1/2, 1/2$" },
+        { "key": "C", "text": "$-1, -1/2, 1/2$" },
+        { "key": "D", "text": "$-1/2, 1/2, -1$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[T^{-1}] = [L]^a [M L T^{-2}]^b [M L^{-1}]^c$<br>2. $M: b + c = 0 \\implies c = -b$<br>3. $T: -2b = -1 \\implies b = 1/2 \\implies c = -1/2$<br>4. $L: a + b - c = 0 \\implies a + 1/2 - (-1/2) = 0 \\implies a = -1$<br>5. Formula: $\\nu = \\frac{k}{L}\\sqrt{\\frac{F}{\\mu}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A physical relation is given as $x = \\dfrac{a}{\\sqrt{2}} \\sin\\left(\\dfrac{2\\pi v t}{b}\\right) \\cos\\left(\\dfrac{2\\pi x}{c}\\right)$, where $x$ is displacement, $v$ is speed, and $t$ is time. The dimensional formula of $(a b / c)$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$[M^0 L^1 T^0]$" },
+        { "key": "B", "text": "$[M^0 L^1 T^{-1}]$" },
+        { "key": "C", "text": "$[M^0 L^0 T^0]$" },
+        { "key": "D", "text": "$[M^0 L^2 T^{-1}]$" }
+      ],
+      "correct": "A",
+      "solution": "1. Amplitude $[a] = [x] = [L]$<br>2. Sine argument: $[b] = [v t] = [L T^{-1}][T] = [L]$<br>3. Cosine argument: $[c] = [x] = [L]$<br>4. Thus, $\\left[\\frac{a b}{c}\\right] = \\frac{[L][L]}{[L]} = [L] = [M^0 L^1 T^0]$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The centripetal force $F$ acting on a particle moving in a circle depends on mass $m$, velocity $v$, and radius $r$ as $F = k m^a v^b r^c$. The exponents are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = 1, b = 2, c = -1$" },
+        { "key": "B", "text": "$a = 1, b = 1, c = -2$" },
+        { "key": "C", "text": "$a = 2, b = 1, c = -1$" },
+        { "key": "D", "text": "$a = 1, b = 2, c = 1$" }
+      ],
+      "correct": "A",
+      "solution": "1. $[M L T^{-2}] = [M]^a [L T^{-1}]^b [L]^c$<br>2. $M: a = 1$; $T: -b = -2 \\implies b = 2$; $L: b + c = 1 \\implies 2 + c = 1 \\implies c = -1$<br>3. Result: $F = \\frac{m v^2}{r}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following is a major limitation of the method of dimensional analysis?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "It cannot determine dimensionless proportionality constants." },
+        { "key": "B", "text": "It cannot derive relations containing trigonometric, exponential, or logarithmic functions." },
+        { "key": "C", "text": "It fails when a physical quantity depends on more than three mechanical variables ($M, L, T$)." },
+        { "key": "D", "text": "All of the above." }
+      ],
+      "correct": "D",
+      "solution": "All of the listed points represent well-known fundamental theoretical limitations of dimensional analysis.<br>Therefore, Option <strong>D</strong> is correct."
+    }
+  ]
+}

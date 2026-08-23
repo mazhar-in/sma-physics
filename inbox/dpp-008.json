@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-008",
+    "title": "Speed and Velocity: Average, Instantaneous, Uniform & Non-Uniform Motion",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Speed and Velocity JEE Main Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering average and instantaneous speed/velocity, calculus of non-uniform motion, and velocity-displacement curves with full solutions.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Average Velocity, Instantaneous Speed, Uniform Motion, Non-uniform Acceleration, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/speed-velocity-average-instantaneous-motion",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Instantaneous vs Average Kinematic Rates in Non-Uniform Motion",
+    "tag": "Class 11 Mechanics",
+    "summary": "Instantaneous velocity is the derivative of position with respect to time ($\\vec{v} = \\frac{d\\vec{r}}{dt}$), while instantaneous speed is the magnitude of instantaneous velocity ($v = |\\vec{v}| = \\frac{ds}{dt}$). Average velocity is defined over a finite time interval as $\\vec{v}_{\\text{avg}} = \\frac{\\Delta \\vec{r}}{\\Delta t}$, whereas average speed is the total path length divided by total time: $v_{\\text{avg}} = \\frac{\\int |v| dt}{\\Delta t}$.",
+    "keyFormula": "$$v = \\frac{dx}{dt}, \\quad a = \\frac{dv}{dt} = v\\frac{dv}{dx}, \\quad v_{\\text{avg}} = \\frac{\\text{Total Distance}}{\\text{Total Time}}$$",
+    "examTrap": "When half the distance is covered at $v_1$ and the other half at $v_2$, the average speed is the harmonic mean: $\\frac{2v_1 v_2}{v_1 + v_2}$. However, when half the time is spent at $v_1$ and half at $v_2$, the average speed is the arithmetic mean: $\\frac{v_1 + v_2}{2}$. For non-uniform acceleration given as $a(v)$ or $a(x)$, always integrate $dt = \\frac{dv}{a(v)}$ or $v dv = a(x) dx$ rather than using constant acceleration equations."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a straight line such that its displacement $x$ at time $t$ is given by $x = 2t^3 - 9t^2 + 12t - 4\\text{ m}$. The instantaneous velocity of the particle is zero at times:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t = 1\\text{ s}$ and $t = 2\\text{ s}$" },
+        { "key": "B", "text": "$t = 2\\text{ s}$ and $t = 3\\text{ s}$" },
+        { "key": "C", "text": "$t = 1\\text{ s}$ and $t = 3\\text{ s}$" },
+        { "key": "D", "text": "$t = 0.5\\text{ s}$ and $t = 2\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Instantaneous velocity $v(t) = \\frac{dx}{dt} = 6t^2 - 18t + 12 = 6(t^2 - 3t + 2)$<br>2. Setting $v(t) = 0 \\implies 6(t - 1)(t - 2) = 0 \\implies t = 1\\text{ s}$ and $t = 2\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A bird flies due north with speed $20\\text{ m/s}$ for $15\\text{ s}$. It then rests for $5\\text{ s}$ and flies due south with speed $25\\text{ m/s}$ for $10\\text{ s}$. The average velocity and average speed of the bird over the $30\\text{ s}$ interval are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{5}{3}\\text{ m/s (North)}, \\; \\dfrac{55}{3}\\text{ m/s}$" },
+        { "key": "B", "text": "$5\\text{ m/s (North)}, \\; 22.5\\text{ m/s}$" },
+        { "key": "C", "text": "$\\dfrac{5}{3}\\text{ m/s (South)}, \\; \\dfrac{55}{3}\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}, \\; 20\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Displacements: $\\vec{s}_1 = +300\\text{ m}$ (North), $\\vec{s}_2 = 0$, $\\vec{s}_3 = -250\\text{ m}$ (South)<br>2. Net displacement $= +50\\text{ m}$ (North) $\\implies \\vec{v}_{\\text{avg}} = \\frac{50\\text{ m}}{30\\text{ s}} = \\frac{5}{3}\\text{ m/s}$ (North)<br>3. Total distance $= 300 + 0 + 250 = 550\\text{ m} \\implies v_{\\text{avg}} = \\frac{550\\text{ m}}{30\\text{ s}} = \\frac{55}{3}\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The velocity of a particle moving along the $x$-axis is given by $v(t) = v_0 e^{-\\lambda t}$, where $v_0$ and $\\lambda$ are positive constants. The total distance covered by the particle in the time interval $t = 0$ to $t \\to \\infty$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_0}{\\lambda}$" },
+        { "key": "B", "text": "$\\dfrac{v_0}{\\lambda^2}$" },
+        { "key": "C", "text": "$\\lambda v_0$" },
+        { "key": "D", "text": "$\\infty$" }
+      ],
+      "correct": "A",
+      "solution": "Since $v(t) > 0$ for all $t$, distance equals displacement: $$s = \\int_0^\\infty v(t) dt = v_0 \\int_0^\\infty e^{-\\lambda t} dt = v_0 \\left[ -\\frac{e^{-\\lambda t}}{\\lambda} \\right]_0^\\infty = \\frac{v_0}{\\lambda}(0 - (-1)) = \\frac{v_0}{\\lambda}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car travels along a straight road. It travels the first half of the total distance with speed $v_0$. The remaining half distance is covered with speed $v_1$ for half the time and with speed $v_2$ for the other half time. The mean speed of the car is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2v_0(v_1 + v_2)}{2v_0 + v_1 + v_2}$" },
+        { "key": "B", "text": "$\\dfrac{v_0(v_1 + v_2)}{v_0 + v_1 + v_2}$" },
+        { "key": "C", "text": "$\\dfrac{2v_0(v_1 + v_2)}{v_0 + 2(v_1 + v_2)}$" },
+        { "key": "D", "text": "$\\dfrac{v_0 + v_1 + v_2}{3}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Let total distance be $2s$. Time for first half: $t_1 = \\frac{s}{v_0}$.<br>2. For the second half distance $s$, let total time be $2t'$. Distance $s = v_1 t' + v_2 t' \\implies t' = \\frac{s}{v_1 + v_2}$. Total time for second half $= 2t' = \\frac{2s}{v_1 + v_2}$.<br>3. Mean speed: $$v_{\\text{avg}} = \\frac{2s}{t_1 + 2t'} = \\frac{2s}{\\frac{s}{v_0} + \\frac{2s}{v_1 + v_2}} = \\frac{2v_0(v_1 + v_2)}{2v_0 + v_1 + v_2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The displacement $x$ of a particle moving in one dimension varies with time as $t = \\alpha x^2 + \\beta x$, where $\\alpha$ and $\\beta$ are positive constants. The relation between instantaneous acceleration $a$ and velocity $v$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a = -2\\alpha v^3$" },
+        { "key": "B", "text": "$a = 2\\alpha v^3$" },
+        { "key": "C", "text": "$a = -2\\beta v^2$" },
+        { "key": "D", "text": "$a = -2\\alpha v^2$" }
+      ],
+      "correct": "A",
+      "solution": "1. Differentiating $t = \\alpha x^2 + \\beta x$ with respect to $t$: $$1 = (2\\alpha x + \\beta) \\frac{dx}{dt} \\implies v = (2\\alpha x + \\beta)^{-1}$$<br>2. Differentiating again: $$a = \\frac{dv}{dt} = -(2\\alpha x + \\beta)^{-2} \\left(2\\alpha \\frac{dx}{dt}\\right) = -v^2 (2\\alpha v) = -2\\alpha v^3$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a straight line such that its velocity is $v = 2\\sqrt{s}$ where $s$ is displacement. The acceleration of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Variable and depends on $\\sqrt{s}$" },
+        { "key": "B", "text": "Constant and equal to $2\\text{ m/s}^2$" },
+        { "key": "C", "text": "Constant and equal to $1\\text{ m/s}^2$" },
+        { "key": "D", "text": "Variable and depends on $t$" }
+      ],
+      "correct": "B",
+      "solution": "Acceleration $a = v \\frac{dv}{ds}$.<br>$$\\frac{dv}{ds} = 2\\left(\\frac{1}{2\\sqrt{s}}\\right) = \\frac{1}{\\sqrt{s}} \\implies a = (2\\sqrt{s})\\left(\\frac{1}{\\sqrt{s}}\\right) = 2\\text{ m/s}^2 \\text{ (Constant)}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An object moves along a path such that its position vector is $\\vec{r}(t) = (3t\\hat{i} + 4t^2\\hat{j})\\text{ m}$. The magnitude of instantaneous velocity and angle of velocity with the $x$-axis at $t = 1\\text{ s}$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{73}\\text{ m/s}, \\; \\tan^{-1}\\left(\\dfrac{8}{3}\\right)$" },
+        { "key": "B", "text": "$11\\text{ m/s}, \\; \\tan^{-1}\\left(\\dfrac{4}{3}\\right)$" },
+        { "key": "C", "text": "$5\\text{ m/s}, \\; \\tan^{-1}\\left(\\dfrac{3}{8}\\right)$" },
+        { "key": "D", "text": "$\\sqrt{73}\\text{ m/s}, \\; \\tan^{-1}\\left(\\dfrac{3}{8}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\vec{v}(t) = \\frac{d\\vec{r}}{dt} = 3\\hat{i} + 8t\\hat{j}$<br>2. At $t = 1\\text{ s}$, $\\vec{v} = 3\\hat{i} + 8\\hat{j}\\text{ m/s}$<br>3. Magnitude $|\\vec{v}| = \\sqrt{3^2 + 8^2} = \\sqrt{73}\\text{ m/s}$, and $\\theta = \\tan^{-1}(v_y/v_x) = \\tan^{-1}(8/3)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle starts from rest and moves along the $x$-axis with non-uniform acceleration $a = 6t - 2\\text{ m/s}^2$. If it starts from $x = 0$ at $t = 0$, its velocity and position at $t = 2\\text{ s}$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ m/s}, \\; 4\\text{ m}$" },
+        { "key": "B", "text": "$8\\text{ m/s}, \\; 8\\text{ m}$" },
+        { "key": "C", "text": "$12\\text{ m/s}, \\; 6\\text{ m}$" },
+        { "key": "D", "text": "$4\\text{ m/s}, \\; 4\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $v(t) = \\int (6t - 2) dt = 3t^2 - 2t$ (since $v(0) = 0$)<br>2. $v(2) = 3(4) - 2(2) = 8\\text{ m/s}$<br>3. $x(t) = \\int (3t^2 - 2t) dt = t^3 - t^2 \\implies x(2) = 8 - 4 = 4\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following conditions represents non-uniform motion with constant speed?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Motion of a car on a straight highway with cruise control" },
+        { "key": "B", "text": "Motion of a particle along a circular track with constant speed" },
+        { "key": "C", "text": "Freely falling body under gravity" },
+        { "key": "D", "text": "A ball rolling down a smooth inclined plane" }
+      ],
+      "correct": "B",
+      "solution": "In uniform circular motion, speed $|\\vec{v}|$ is constant, but velocity direction is continuously changing due to radial centripetal acceleration ($a_c = v^2/r$), making the velocity non-uniform.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The velocity $v$ of a particle moving along a straight line is related to its displacement $x$ by $v^2 = 108 - 9x^2$. The particle executes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Uniform motion" },
+        { "key": "B", "text": "Uniformly accelerated motion" },
+        { "key": "C", "text": "Simple harmonic motion with acceleration proportional to $-x$" },
+        { "key": "D", "text": "Motion with constant non-zero acceleration" }
+      ],
+      "correct": "C",
+      "solution": "Differentiating $v^2 = 108 - 9x^2$ with respect to $x$: $$2v\\frac{dv}{dx} = -18x \\implies a = v\\frac{dv}{dx} = -9x = -(3)^2 x$$ This is the standard equation of Simple Harmonic Motion ($a = -\\omega^2 x$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A train accelerates from rest at rate $\\alpha$ for time $t_1$, then moves with constant speed for time $t_2$, and finally decelerates to rest at rate $\\beta$ for time $t_3$. If the total distance travelled is $S$, the maximum velocity attained is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2S}{t_1 + 2t_2 + t_3}$" },
+        { "key": "B", "text": "$\\dfrac{S}{t_1 + t_2 + t_3}$" },
+        { "key": "C", "text": "$\\dfrac{2S}{t_1 + t_2 + t_3}$" },
+        { "key": "D", "text": "$\\dfrac{S}{2t_1 + t_2 + 2t_3}$" }
+      ],
+      "correct": "A",
+      "solution": "The velocity-time profile forms a trapezium of parallel bases $(t_1 + t_2 + t_3)$ and $t_2$ with height $v_{\\max}$.<br>$$\\text{Area } S = \\frac{1}{2} \\big[(t_1 + t_2 + t_3) + t_2\\big] v_{\\max} = \\frac{1}{2} (t_1 + 2t_2 + t_3) v_{\\max} \\implies v_{\\max} = \\frac{2S}{t_1 + 2t_2 + t_3}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body moves along a straight line such that its velocity varies with displacement as $v = v_0 - k x$, where $v_0$ and $k$ are positive constants. The time taken by the body to come to rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{k}$" },
+        { "key": "B", "text": "$\\dfrac{v_0}{k}$" },
+        { "key": "C", "text": "$\\infty$" },
+        { "key": "D", "text": "$\\dfrac{\\ln 2}{k}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\frac{dx}{dt} = v_0 - kx \\implies \\frac{dx}{v_0 - kx} = dt$<br>2. Integrating: $-\\frac{1}{k} \\ln\\left(\\frac{v_0 - kx}{v_0}\\right) = t \\implies v(t) = v_0 e^{-kt}$<br>3. As $v \\to 0$, $e^{-kt} \\to 0 \\implies t \\to \\infty$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The acceleration of a particle is given by $a = 4t - 30$, where $a$ is in $\\text{m/s}^2$ and $t$ in seconds. If velocity $v = 5\\text{ m/s}$ at $t = 0$, the velocity of the particle when acceleration is zero is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-107.5\\text{ m/s}$" },
+        { "key": "B", "text": "$-112.5\\text{ m/s}$" },
+        { "key": "C", "text": "$-117.5\\text{ m/s}$" },
+        { "key": "D", "text": "$-100.0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $a = 0 \\implies 4t - 30 = 0 \\implies t = 7.5\\text{ s}$<br>2. $v(t) = \\int (4t - 30) dt = 2t^2 - 30t + 5$<br>3. $v(7.5) = 2(7.5)^2 - 30(7.5) + 5 = 112.5 - 225 + 5 = -107.5\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along a straight line according to $x(t) = a \\cos(\\omega t)$. The average speed of the particle in the time interval $t = 0$ to $t = \\dfrac{\\pi}{\\omega}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2a\\omega}{\\pi}$" },
+        { "key": "B", "text": "$\\dfrac{a\\omega}{\\pi}$" },
+        { "key": "C", "text": "$0$" },
+        { "key": "D", "text": "$\\dfrac{4a\\omega}{\\pi}$" }
+      ],
+      "correct": "A",
+      "solution": "1. At $t = 0$, $x = a$. At $t = \\pi/\\omega$, $x = -a$. Motion is monotonic along one direction.<br>2. Total distance $= |(-a) - a| = 2a$<br>3. $\\text{Average Speed} = \\frac{2a}{\\pi/\\omega} = \\frac{2a\\omega}{\\pi}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The speed-time graph of a particle is a triangle of base $T$ (time axis) and peak height $v_{\\max}$. The ratio of average speed to maximum speed is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}$" },
+        { "key": "B", "text": "$\\dfrac{1}{3}$" },
+        { "key": "C", "text": "$\\dfrac{2}{3}$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Total distance $=$ Area under graph $= \\frac{1}{2} T v_{\\max}$<br>2. Average speed $= \\frac{\\text{Distance}}{T} = \\frac{1}{2}v_{\\max} \\implies \\frac{v_{\\text{avg}}}{v_{\\max}} = \\frac{1}{2}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along the $x$-axis with an acceleration $a = -bv$, where $v$ is velocity and $b$ is a constant. At $t = 0$, $v = v_0$ and $x = 0$. The maximum displacement of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_0}{b}$" },
+        { "key": "B", "text": "$\\dfrac{v_0^2}{2b}$" },
+        { "key": "C", "text": "$\\dfrac{v_0}{2b}$" },
+        { "key": "D", "text": "$\\dfrac{2v_0}{b}$" }
+      ],
+      "correct": "A",
+      "solution": "$$a = v \\frac{dv}{dx} = -b v \\implies dv = -b dx$$ Integrating from $v_0$ to $0$: $$\\int_{v_0}^0 dv = -b \\int_0^{x_{\\max}} dx \\implies -v_0 = -b x_{\\max} \\implies x_{\\max} = \\frac{v_0}{b}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If a particle moves such that its position is $x(t) = 4t - 2t^2\\text{ m}$, the average velocity and average speed in the interval $t = 0$ to $t = 2\\text{ s}$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ m/s}, \\; 2\\text{ m/s}$" },
+        { "key": "B", "text": "$0\\text{ m/s}, \\; 0\\text{ m/s}$" },
+        { "key": "C", "text": "$2\\text{ m/s}, \\; 2\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}, \\; 4\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $x(0) = 0\\text{ m}, x(2) = 0\\text{ m} \\implies \\Delta x = 0 \\implies v_{\\text{avg}} = 0\\text{ m/s}$<br>2. Velocity $v(t) = 4 - 4t = 0 \\implies t = 1\\text{ s}$. Turning point $x(1) = 2\\text{ m}$.<br>3. Total distance $= |2 - 0| + |0 - 2| = 4\\text{ m} \\implies \\text{Average Speed} = \\frac{4\\text{ m}}{2\\text{ s}} = 2\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in a straight line with deceleration proportional to displacement: $a = -\\kappa x$. The decrease in kinetic energy of the particle in moving from $x_1$ to $x_2$ is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x_2^2 - x_1^2$" },
+        { "key": "B", "text": "$x_2 - x_1$" },
+        { "key": "C", "text": "$x_2^3 - x_1^3$" },
+        { "key": "D", "text": "$\\sqrt{x_2} - \\sqrt{x_1}$" }
+      ],
+      "correct": "A",
+      "solution": "By Work-Energy Theorem: $$\\Delta K = W = \\int_{x_1}^{x_2} m a dx = -m \\kappa \\int_{x_1}^{x_2} x dx = -\\frac{1}{2} m \\kappa (x_2^2 - x_1^2) \\implies |\\Delta K| \\propto (x_2^2 - x_1^2)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A swimmer crosses a river of width $d$ flowing with velocity $v_r$. If the speed of the swimmer relative to still water is $v_s$ ($v_s > v_r$), the shortest possible time to cross the river is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{d}{v_s}$" },
+        { "key": "B", "text": "$\\dfrac{d}{\\sqrt{v_s^2 - v_r^2}}$" },
+        { "key": "C", "text": "$\\dfrac{d}{v_s + v_r}$" },
+        { "key": "D", "text": "$\\dfrac{d}{v_r}$" }
+      ],
+      "correct": "A",
+      "solution": "To minimize time $t = \\frac{d}{v_s \\sin\\theta}$, the swimmer must direct their stroke perpendicular to the flow ($\\theta = 90^\\circ \\implies \\sin\\theta = 1$), giving $t_{\\min} = \\frac{d}{v_s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car travels from point $A$ to point $B$ at speed $v_1$ and immediately returns from $B$ to $A$ at speed $v_2$. The magnitude of average velocity for the round trip is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0$" },
+        { "key": "B", "text": "$\\dfrac{2v_1 v_2}{v_1 + v_2}$" },
+        { "key": "C", "text": "$\\dfrac{v_1 + v_2}{2}$" },
+        { "key": "D", "text": "$\\sqrt{v_1 v_2}$" }
+      ],
+      "correct": "A",
+      "solution": "Because the car returns to its starting location, net displacement $\\Delta \\vec{x} = 0$. Hence, average velocity $\\vec{v}_{\\text{avg}} = \\frac{\\Delta \\vec{x}}{\\Delta t} = 0$. (Note: Average speed would be $\\frac{2v_1 v_2}{v_1 + v_2}$).<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
