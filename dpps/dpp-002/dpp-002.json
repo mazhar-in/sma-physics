@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-002",
+    "title": "Least Count of Measuring Instruments & Significant Figures",
+    "publishDate": "2026-08-23",
+    "unit": "Experimental Physics & Measurement",
+    "chapter": "Units, Dimensions & Errors"
+  },
+  "seo": {
+    "title": "Least Count & Significant Figures JEE Main Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering Vernier Calipers, Screw Gauge, Spherometer, zero error corrections, and rules of significant figures with detailed solutions.",
+    "keywords": "JEE Main Physics, Vernier Calipers, Screw Gauge, Zero Error, Least Count, Significant Figures, Physics Daily Practice Problems, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/least-count-instruments-significant-figures",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Least Count & Zero Error Rectification in Precision Instruments",
+    "tag": "Class 11 Experimental Physics",
+    "summary": "The Least Count (LC) represents the minimum value directly measurable by an instrument. For a Vernier scale: $\\text{LC} = 1\\text{ MSD} - 1\\text{ VSD} = \\frac{1}{N}\\text{MSD}$. For a Micrometer Screw Gauge: $\\text{LC} = \\frac{\\text{Pitch}}{\\text{Total Circular Divisions}}$. True reading is always obtained by algebraically subtracting the Zero Error from the observed reading: $\\text{True Reading} = \\text{Observed Reading} - (\\pm \\text{Zero Error})$.",
+    "keyFormula": "$$\\text{Correct Reading} = \\big[\\text{MSR} + (\\text{VSR/CSR} \\times \\text{LC})\\big] - (\\text{Zero Error})$$",
+    "examTrap": "For negative zero error on a screw gauge (where the circular scale zero is above the reference line), the error magnitude is $-(N - n) \\times \\text{LC}$, where $n$ is the coinciding mark and $N$ is total divisions. In significant figures, during addition/subtraction, precision is limited by the least decimal places, whereas in multiplication/division, it is limited by the least number of significant digits."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A vernier caliper has $1\\text{ mm}$ marks on the main scale. It has $20$ equal divisions on the vernier scale which match with $16$ main scale divisions. The least count of this caliper is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.02\\text{ mm}$" },
+        { "key": "B", "text": "$0.05\\text{ mm}$" },
+        { "key": "C", "text": "$0.2\\text{ mm}$" },
+        { "key": "D", "text": "$0.1\\text{ mm}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $1\\text{ MSD} = 1\\text{ mm}$<br>2. $20\\text{ VSD} = 16\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{16}{20}\\text{ MSD} = 0.8\\text{ mm}$<br>3. Least Count: $$\\text{LC} = 1\\text{ MSD} - 1\\text{ VSD} = 1\\text{ mm} - 0.8\\text{ mm} = 0.2\\text{ mm}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A screw gauge has a pitch of $0.5\\text{ mm}$ and a circular scale divided into $50$ divisions. When the two studs are in contact without any object, the $45\\text{th}$ division of the circular scale coincides with the reference line and the zero of the main scale is barely visible. The zero error of the instrument is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+0.05\\text{ mm}$" },
+        { "key": "B", "text": "$-0.05\\text{ mm}$" },
+        { "key": "C", "text": "$-0.45\\text{ mm}$" },
+        { "key": "D", "text": "$+0.45\\text{ mm}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\text{LC} = \\frac{\\text{Pitch}}{\\text{Total divisions}} = \\frac{0.5\\text{ mm}}{50} = 0.01\\text{ mm}$<br>2. Since the $45\\text{th}$ division coincides with the baseline, the zero of the circular scale has not yet reached the reference line (it lies below), indicating a <strong>negative zero error</strong>:<br>$$\\text{Zero Error} = -(50 - 45) \\times \\text{LC} = -5 \\times 0.01\\text{ mm} = -0.05\\text{ mm}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The number of significant figures in the numbers $0.003020$, $4.500\\times 10^3$, and $200.0$ are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4, 4, 4$" },
+        { "key": "B", "text": "$3, 2, 1$" },
+        { "key": "C", "text": "$4, 2, 4$" },
+        { "key": "D", "text": "$6, 4, 1$" }
+      ],
+      "correct": "A",
+      "solution": "1. In $0.003020$: Initial zeros are non-significant; zeroes between non-zero digits and trailing zero after decimal are significant $\\implies \\mathbf{4}$ significant digits ($3,0,2,0$).<br>2. In $4.500\\times 10^3$: Trailing zeros in coefficient are significant $\\implies \\mathbf{4}$ significant figures.<br>3. In $200.0$: Decimal makes trailing zeros significant $\\implies \\mathbf{4}$ significant figures.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a vernier caliper, $N$ divisions of the vernier scale coincide with $(N - 1)$ divisions of the main scale. If $1\\text{ MSD} = a\\text{ units}$, the least count of the vernier caliper is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{a}{N}$" },
+        { "key": "B", "text": "$\\dfrac{a}{N - 1}$" },
+        { "key": "C", "text": "$\\dfrac{a}{N + 1}$" },
+        { "key": "D", "text": "$\\dfrac{(N-1)a}{N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $N\\text{ VSD} = (N - 1)\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{N - 1}{N}\\text{ MSD}$<br>2. $$\\text{LC} = 1\\text{ MSD} - 1\\text{ VSD} = \\left(1 - \\frac{N - 1}{N}\\right)\\text{MSD} = \\frac{1}{N}\\text{MSD} = \\frac{a}{N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The pitch of a screw gauge is $1\\text{ mm}$ and there are $100$ divisions on its circular scale. When measured, the main scale reads $2\\text{ mm}$ and the $52\\text{nd}$ division of the circular scale coincides with the reference line. If the screw gauge has a negative zero error of $0.03\\text{ mm}$, the corrected diameter of the wire is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.49\\text{ mm}$" },
+        { "key": "B", "text": "$2.52\\text{ mm}$" },
+        { "key": "C", "text": "$2.55\\text{ mm}$" },
+        { "key": "D", "text": "$2.58\\text{ mm}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\text{LC} = \\frac{1\\text{ mm}}{100} = 0.01\\text{ mm}$<br>2. $\\text{Observed Reading} = \\text{MSR} + (\\text{CSR}\\times\\text{LC}) = 2\\text{ mm} + (52 \\times 0.01\\text{ mm}) = 2.52\\text{ mm}$<br>3. $$\\text{Correct Reading} = \\text{Observed Reading} - (\\text{Zero Error}) = 2.52 - (-0.03) = 2.55\\text{ mm}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Solve the following expression to appropriate significant figures: $$4.28 - 0.125 + 1.2$$",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5.355$" },
+        { "key": "B", "text": "$5.36$" },
+        { "key": "C", "text": "$5.4$" },
+        { "key": "D", "text": "$5.35$" }
+      ],
+      "correct": "C",
+      "solution": "1. Exact sum: $4.28 - 0.125 + 1.2 = 5.355$<br>2. In addition and subtraction, the answer cannot have more decimal places than the term with the fewest decimal places ($1.2$ has $1$ decimal place).<br>3. Rounding $5.355$ to $1$ decimal place gives $5.4$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The length and breadth of a thin rectangular metal plate are measured using a vernier caliper to be $l = 15.42\\text{ cm}$ and $b = 4.2\\text{ cm}$. The area of the plate reported up to correct significant figures is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$64.764\\text{ cm}^2$" },
+        { "key": "B", "text": "$64.76\\text{ cm}^2$" },
+        { "key": "C", "text": "$64.8\\text{ cm}^2$" },
+        { "key": "D", "text": "$65\\text{ cm}^2$" }
+      ],
+      "correct": "D",
+      "solution": "1. $\\text{Area} = 15.42\\text{ cm} \\times 4.2\\text{ cm} = 64.764\\text{ cm}^2$<br>2. In multiplication, the final result must retain as many significant figures as the least precise quantity ($b = 4.2$ has $2$ significant figures).<br>3. Rounding $64.764$ to $2$ significant figures yields $65\\text{ cm}^2$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A spherometer has a pitch of $0.5\\text{ mm}$ and a circular disc divided into $100$ divisions. The least count of the spherometer is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.005\\text{ mm}$" },
+        { "key": "B", "text": "$0.001\\text{ mm}$" },
+        { "key": "C", "text": "$0.05\\text{ mm}$" },
+        { "key": "D", "text": "$0.0005\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\text{Least Count} = \\frac{\\text{Pitch}}{\\text{Total Circular Scale Divisions}} = \\frac{0.5\\text{ mm}}{100} = 0.005\\text{ mm}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In a travelling microscope, the main scale has $0.5\\text{ mm}$ divisions. The vernier scale has $50$ divisions which coincide with $49$ main scale divisions. The least count of the travelling microscope is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.01\\text{ mm}$" },
+        { "key": "B", "text": "$0.001\\text{ mm}$" },
+        { "key": "C", "text": "$0.02\\text{ mm}$" },
+        { "key": "D", "text": "$0.005\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $1\\text{ MSD} = 0.5\\text{ mm}$<br>2. $50\\text{ VSD} = 49\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{49}{50}\\text{ MSD}$<br>3. $$\\text{LC} = 1\\text{ MSD} - 1\\text{ VSD} = \\frac{1}{50}\\text{ MSD} = \\frac{0.5\\text{ mm}}{50} = 0.01\\text{ mm}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A screw gauge gives the following reading when used to measure the thickness of a glass sheet: Main scale reading $= 3\\text{ mm}$, circular scale reading $= 68\\text{ divisions}$. Given that $1\\text{ mm}$ on the main scale corresponds to $100$ divisions of the circular scale and the instrument has a positive zero error of $+0.04\\text{ mm}$, the actual thickness of the sheet is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.64\\text{ mm}$" },
+        { "key": "B", "text": "$3.68\\text{ mm}$" },
+        { "key": "C", "text": "$3.72\\text{ mm}$" },
+        { "key": "D", "text": "$3.60\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\text{LC} = \\frac{1\\text{ mm}}{100} = 0.01\\text{ mm}$<br>2. $\\text{Observed} = 3\\text{ mm} + (68 \\times 0.01\\text{ mm}) = 3.68\\text{ mm}$<br>3. $\\text{Actual Thickness} = \\text{Observed} - (\\text{Zero Error}) = 3.68\\text{ mm} - (+0.04\\text{ mm}) = 3.64\\text{ mm}$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The side of a solid cube is measured as $x = (2.50 \\pm 0.01)\\text{ cm}$. The percentage error in the measurement of its volume is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.4\\%$" },
+        { "key": "B", "text": "$0.8\\%$" },
+        { "key": "C", "text": "$1.2\\%$" },
+        { "key": "D", "text": "$1.6\\%$" }
+      ],
+      "correct": "C",
+      "solution": "1. Volume $V = x^3 \\implies \\frac{\\Delta V}{V} = 3\\left(\\frac{\\Delta x}{x}\\right)$<br>2. $$\\frac{\\Delta V}{V}\\times 100 = 3\\left(\\frac{0.01}{2.50}\\right)\\times 100 = 3 \\times 0.4\\% = 1.2\\%$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In a specially designed vernier caliper, each $1\\text{ cm}$ on the main scale is divided into $10$ equal parts. $10$ divisions of the vernier scale coincide with $11$ divisions of the main scale. The least count of this instrument is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.1\\text{ mm}$" },
+        { "key": "B", "text": "$0.01\\text{ mm}$" },
+        { "key": "C", "text": "$0.11\\text{ mm}$" },
+        { "key": "D", "text": "$0.09\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $1\\text{ MSD} = \\frac{1\\text{ cm}}{10} = 1\\text{ mm}$<br>2. $10\\text{ VSD} = 11\\text{ MSD} \\implies 1\\text{ VSD} = 1.1\\text{ mm}$<br>3. For a retrograde vernier scale: $$\\text{LC} = |1\\text{ MSD} - 1\\text{ VSD}| = |1\\text{ mm} - 1.1\\text{ mm}| = 0.1\\text{ mm}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Round off the number $3.745$ and $3.735$ to three significant figures according to standard scientific rounding rules:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.75$ and $3.74$" },
+        { "key": "B", "text": "$3.74$ and $3.74$" },
+        { "key": "C", "text": "$3.75$ and $3.73$" },
+        { "key": "D", "text": "$3.74$ and $3.73$" }
+      ],
+      "correct": "B",
+      "solution": "Standard IEEE/NIST rounding rule for 5 followed by nothing non-zero:<br>1. In $3.745$, preceding digit $4$ is even $\\implies$ stays unchanged $\\implies 3.74$.<br>2. In $3.735$, preceding digit $3$ is odd $\\implies$ rounded up to make it even $\\implies 3.74$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The mass and volume of a body are measured as $m = 24.2\\text{ g}$ and $V = 4.7\\text{ cm}^3$. The density of the body reported to appropriate significant figures is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5.1489\\text{ g}\\cdot\\text{cm}^{-3}$" },
+        { "key": "B", "text": "$5.15\\text{ g}\\cdot\\text{cm}^{-3}$" },
+        { "key": "C", "text": "$5.1\\text{ g}\\cdot\\text{cm}^{-3}$" },
+        { "key": "D", "text": "$5.2\\text{ g}\\cdot\\text{cm}^{-3}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Density $\\rho = \\frac{m}{V} = \\frac{24.2\\text{ g}}{4.7\\text{ cm}^3} = 5.148936\\dots\\text{ g}\\cdot\\text{cm}^{-3}$<br>2. Since $V$ contains only $2$ significant figures, the density must be reported to $2$ significant figures $\\implies 5.1\\text{ g}\\cdot\\text{cm}^{-3}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "When measuring the internal diameter of a cylinder using a vernier caliper with least count $0.01\\text{ cm}$, the zero of the vernier scale lies between $3.2\\text{ cm}$ and $3.3\\text{ cm}$ of the main scale, and the $4\\text{th}$ vernier division coincides with a main scale division. If the caliper has a negative zero error of $-0.02\\text{ cm}$, the correct diameter is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.22\\text{ cm}$" },
+        { "key": "B", "text": "$3.24\\text{ cm}$" },
+        { "key": "C", "text": "$3.26\\text{ cm}$" },
+        { "key": "D", "text": "$3.28\\text{ cm}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\text{Observed} = 3.2\\text{ cm} + (4 \\times 0.01\\text{ cm}) = 3.24\\text{ cm}$<br>2. $\\text{Correct Reading} = 3.24\\text{ cm} - (-0.02\\text{ cm}) = 3.26\\text{ cm}$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If $1\\text{ MSD} = 0.5\\text{ mm}$ in a vernier caliper and $50$ vernier scale divisions are equal to $49$ main scale divisions, how many vernier divisions correspond to a measurement difference of $0.14\\text{ mm}$?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7$" },
+        { "key": "B", "text": "$14$" },
+        { "key": "C", "text": "$28$" },
+        { "key": "D", "text": "$35$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\text{LC} = \\frac{1}{50}\\text{ MSD} = \\frac{0.5\\text{ mm}}{50} = 0.01\\text{ mm}$<br>2. Number of vernier divisions $n = \\frac{\\Delta x}{\\text{LC}} = \\frac{0.14\\text{ mm}}{0.01\\text{ mm}} = 14$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The diameter of a cylinder is measured with a screw gauge having $50$ divisions on circular scale and pitch $0.5\\text{ mm}$. If the student takes $5$ complete rotations of the screw to move through the thickness of $2.5\\text{ mm}$, the least count and the pitch respectively are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.01\\text{ mm}, 0.5\\text{ mm}$" },
+        { "key": "B", "text": "$0.005\\text{ mm}, 0.5\\text{ mm}$" },
+        { "key": "C", "text": "$0.01\\text{ mm}, 1.0\\text{ mm}$" },
+        { "key": "D", "text": "$0.02\\text{ mm}, 0.5\\text{ mm}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\text{Pitch} = \\frac{2.5\\text{ mm}}{5} = 0.5\\text{ mm}$<br>2. $\\text{Least Count} = \\frac{0.5\\text{ mm}}{50} = 0.01\\text{ mm}$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "What is the sum of $3.0\\times 10^{-3}\\text{ kg}$ and $4.50\\times 10^{-2}\\text{ kg}$ expressed in proper significant figures?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4.80\\times 10^{-2}\\text{ kg}$" },
+        { "key": "B", "text": "$4.8\\times 10^{-2}\\text{ kg}$" },
+        { "key": "C", "text": "$48.0\\times 10^{-3}\\text{ kg}$" },
+        { "key": "D", "text": "$0.048\\text{ kg}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Convert to identical exponent: $0.30\\times 10^{-2}\\text{ kg} + 4.50\\times 10^{-2}\\text{ kg} = 4.80\\times 10^{-2}\\text{ kg}$<br>2. Both values have $2$ decimal places after aligning the powers of ten, so the sum retains $2$ decimal places $\\implies 4.80\\times 10^{-2}\\text{ kg}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The main scale of a vernier caliper reads in millimetres. 10 divisions of the vernier scale coincide with 9 divisions of the main scale. While measuring the thickness of a coin, the main scale reads $2\\text{ mm}$ and the $7\\text{th}$ vernier division coincides with a main scale mark. The thickness of the coin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.07\\text{ mm}$" },
+        { "key": "B", "text": "$2.70\\text{ mm}$" },
+        { "key": "C", "text": "$2.35\\text{ mm}$" },
+        { "key": "D", "text": "$2.14\\text{ mm}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\text{LC} = 1\\text{ MSD} - 0.9\\text{ MSD} = 0.1\\text{ mm}$<br>2. $\\text{Thickness} = \\text{MSR} + (\\text{VSR} \\times \\text{LC}) = 2\\text{ mm} + (7 \\times 0.1\\text{ mm}) = 2.70\\text{ mm}$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The radius of a uniform wire is measured as $r = 0.024\\text{ cm}$. The value of $\\pi$ taken in calculation is $3.1416$. The cross-sectional area $A = \\pi r^2$ of the wire to correct significant figures is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.8\\times 10^{-3}\\text{ cm}^2$" },
+        { "key": "B", "text": "$1.81\\times 10^{-3}\\text{ cm}^2$" },
+        { "key": "C", "text": "$1.809\\times 10^{-3}\\text{ cm}^2$" },
+        { "key": "D", "text": "$1.8096\\times 10^{-3}\\text{ cm}^2$" }
+      ],
+      "correct": "A",
+      "solution": "1. $r = 0.024\\text{ cm}$ has $2$ significant figures.<br>2. $A = \\pi r^2 = 3.1416 \\times (0.024)^2 = 1.80956\\times 10^{-3}\\text{ cm}^2$<br>3. Rounding to $2$ significant figures yields $1.8\\times 10^{-3}\\text{ cm}^2$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
