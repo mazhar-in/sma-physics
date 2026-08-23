@@ -1,9 +1,9 @@
 {
+  "version": 2,
   "rewrites": [
     {
-      "source": "/practice/:slug",
+      "source": "/practice/(.*)",
       "destination": "/practice.html"
     }
-  ],
-  "cleanUrls": true
+  ]
 }

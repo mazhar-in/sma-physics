@@ -7,6 +7,7 @@
   <!-- Dynamic SEO Meta Tags -->
   <title id="practice-seo-title">SMA Physics — CBT Practice Room</title>
   <meta name="description" id="practice-seo-desc" content="Solve timed NEET and JEE Main/Advanced physics practice questions with detailed LaTeX step-by-step solutions." />
+  <meta name="author" content="Syed Mazhar Ali" />
   <meta name="robots" content="index, follow" />
   
   <meta property="og:title" id="og-practice-title" content="SMA Physics — CBT Practice Room" />
@@ -36,8 +37,8 @@
         </span>
       </a>
       
-      <div class="text-center">
-        <span id="dpp-meta-title" class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md border border-indigo-100">
+      <div class="text-center px-2">
+        <span id="dpp-meta-title" class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-md border border-indigo-100 truncate max-w-[200px] sm:max-w-md inline-block align-middle">
           Loading Practice Set...
         </span>
       </div>
@@ -70,13 +71,23 @@
         </div>
       </div>
 
-      <!-- Statement + Dynamic Image -->
-      <div class="text-zinc-900 text-base md:text-lg leading-relaxed font-normal" id="question-statement"></div>
+      <!-- Question Statement + Dynamic Diagram Image -->
+      <div class="text-zinc-900 text-base md:text-lg leading-relaxed font-normal" id="question-statement">
+        <div class="animate-pulse flex space-x-4">
+          <div class="flex-1 space-y-4 py-1">
+            <div class="h-4 bg-zinc-200 rounded w-3/4"></div>
+            <div class="space-y-2">
+              <div class="h-4 bg-zinc-200 rounded"></div>
+              <div class="h-4 bg-zinc-200 rounded w-5/6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Multiple Choice Options -->
       <div class="space-y-3" id="options-container"></div>
 
-      <!-- Expandable Derivation Solution Drawer -->
+      <!-- Expandable Solution Drawer -->
       <div id="solution-drawer" class="hidden bg-zinc-50 border-t border-dashed border-zinc-200 rounded-xl p-5 space-y-3">
         <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-100 rounded">
           <span>✓</span>
@@ -85,7 +96,7 @@
         <div class="text-sm text-zinc-700 leading-relaxed space-y-2" id="solution-text"></div>
       </div>
 
-      <!-- Navigation Toolbar -->
+      <!-- Navigation Controls -->
       <div class="flex items-center justify-between pt-4 border-t border-zinc-100">
         <button id="prev-btn" onclick="navigateQuestion(-1)" class="px-4 py-2 text-xs font-semibold text-zinc-600 hover:bg-zinc-100 rounded-xl border border-zinc-200 disabled:opacity-40 disabled:pointer-events-none transition cursor-pointer">
           ← Previous
@@ -131,7 +142,7 @@
 
   </main>
 
-  <!-- ================= STATE & TOPIC MATCHING SCRIPT ================= -->
+  <!-- ================= LOGIC & RESOLVER SCRIPT ================= -->
   <script>
     function slugify(text) {
       return text
@@ -153,36 +164,44 @@
       initTimer();
 
       try {
-        // 1. Fetch manifest
+        // 1. Fetch manifest from absolute root path
         const manifestRes = await fetch('/daily-dpps.json');
+        if (!manifestRes.ok) throw new Error("Could not load /daily-dpps.json");
         const dppList = await manifestRes.json();
-        if (!dppList || dppList.length === 0) throw new Error("Manifest empty");
+        if (!dppList || dppList.length === 0) throw new Error("Manifest file is empty");
 
-        // 2. Extract slug from URL path (e.g., /practice/rotational-dynamics-pure-rolling-moment-of-inertia)
+        // 2. Extract slug accurately from /practice/slug or #slug
         const pathParts = window.location.pathname.split("/").filter(Boolean);
         const practiceIdx = pathParts.indexOf("practice");
         
         let urlSlug = "";
         if (practiceIdx !== -1 && pathParts[practiceIdx + 1]) {
-          urlSlug = pathParts[practiceIdx + 1];
+          urlSlug = decodeURIComponent(pathParts[practiceIdx + 1]).trim();
         } else if (window.location.hash) {
-          urlSlug = window.location.hash.replace("#", "").trim();
+          urlSlug = decodeURIComponent(window.location.hash.replace("#", "")).trim();
         }
 
-        // 3. Match against slugified titles in manifest
+        // 3. Match against title slug or ID
         let matchedDpp = null;
         if (urlSlug) {
-          matchedDpp = dppList.find(item => slugify(item.title) === urlSlug || item.id === urlSlug);
+          matchedDpp = dppList.find(item => {
+            const itemSlug = slugify(item.title);
+            const itemId = item.id ? slugify(item.id) : "";
+            return itemSlug === urlSlug || itemId === urlSlug;
+          });
         }
 
-        // Fallback to latest drop if not matched or accessing /practice directly
+        // Fallback to latest DPP if no match or accessing naked /practice
         if (!matchedDpp) {
           matchedDpp = dppList[0];
         }
 
-        // 4. Fetch the target DPP JSON
-        const jsonPath = matchedDpp.jsonFile || matchedDpp.file;
-        const response = await fetch(`/${jsonPath}`);
+        // 4. Resolve JSON path with leading slash
+        let rawPath = matchedDpp.jsonFile || matchedDpp.file;
+        const jsonPath = rawPath.startsWith('/') ? rawPath : `/${rawPath}`;
+
+        const response = await fetch(jsonPath);
+        if (!response.ok) throw new Error(`Could not load dataset at ${jsonPath}`);
         const data = await response.json();
 
         questions = data.questions;
@@ -204,8 +223,13 @@
         renderQuestion();
 
       } catch (err) {
-        console.error("Error matching topic DPP:", err);
-        document.getElementById("question-statement").innerText = "Could not load the practice test for this topic. Please verify the URL or manifest.";
+        console.error("Error loading DPP:", err);
+        document.getElementById("question-statement").innerHTML = `
+          <div class="text-rose-700 bg-rose-50 p-4 rounded-xl border border-rose-200">
+            <p class="font-bold text-sm">Practice sheet could not be loaded.</p>
+            <p class="text-xs text-zinc-600 mt-1">${err.message}</p>
+          </div>
+        `;
       }
     });
 
@@ -243,9 +267,10 @@
       // Question Text + Image Diagram Support
       let statementHTML = `<div>${q.statement}</div>`;
       if (q.image && q.image.trim() !== "") {
+        const imgPath = q.image.startsWith('/') ? q.image : `/${q.image}`;
         statementHTML += `
           <div class="my-4 flex justify-center">
-            <img src="/${q.image}" alt="Physics Question Diagram" class="max-h-60 max-w-full rounded-lg border border-zinc-200 bg-white p-2 shadow-xs object-contain" />
+            <img src="${imgPath}" alt="Physics Question Diagram" class="max-h-60 max-w-full rounded-lg border border-zinc-200 bg-white p-2 shadow-xs object-contain" />
           </div>
         `;
       }
