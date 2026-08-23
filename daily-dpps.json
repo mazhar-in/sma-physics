@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-006",
+    "date": "2026-08-23",
+    "jsonFile": "/dpps/dpp-006/dpp-006.json",
+    "pdfFile": "/dpps/dpp-006/SMA_DPP_006.pdf",
+    "title": "Comprehensive Practice Module: Units, Errors & Dimensional Analysis",
+    "chapter": "Units, Dimensions & Errors",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-005",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-005/dpp-005.json",
