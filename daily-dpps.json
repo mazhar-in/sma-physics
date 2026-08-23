@@ -1,4 +1,17 @@
 [
+
+  
+  {
+    "id": "dpp-43",
+    "date": "2026-08-24",
+    "jsonFile": "dpps/dpp-43/dpp-43.json",
+    "pdfFile": "dpps/dpp-43/SMA_DPP_43.pdf",
+    "title": "Rotational Motion: Centre of Mass of a Two-Particle System",
+    "chapter": "System of Particles & Rotational Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  }
+
   {
     "id": "dpp-42",
     "date": "2026-08-23",
