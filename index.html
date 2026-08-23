@@ -26,6 +26,22 @@
   <meta name="twitter:description" id="twitter-description" content="Daily concept capsules and interactive CBT practice problems for NEET and JEE aspirants." />
   <meta name="twitter:image" id="twitter-image" content="https://smaphysics.com/assets/og-banner.png" />
 
+  <!-- JSON-LD Structured Data Base -->
+  <script type="application/ld+json" id="schema-structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "SMA Physics",
+    "url": "https://smaphysics.com",
+    "description": "Daily physics concept capsules, CBT simulators, and practice sheets for NEET and JEE aspirants.",
+    "founder": {
+      "@type": "Person",
+      "name": "Syed Mazhar Ali",
+      "sameAs": "https://instagram.com/mazharin"
+    }
+  }
+  </script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -252,6 +268,8 @@
         </div>
         <div class="flex items-center gap-5 font-semibold">
           <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
+          <a href="/#archive" class="hover:text-zinc-900 dark:hover:text-white transition">Worksheets</a>
+          <a href="/practice" class="hover:text-zinc-900 dark:hover:text-white transition">Solve DPP</a>
           <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition">About</a>
           <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
         </div>
@@ -365,6 +383,7 @@
 
     function renderChapterFilterPills() {
       const container = document.getElementById("chapter-filter-container");
+      if (!container) return;
       container.innerHTML = "";
 
       const chapterMap = {};
@@ -373,7 +392,6 @@
         chapterMap[ch] = (chapterMap[ch] || 0) + 1;
       });
 
-      // "All Chapters" Pill
       const isAllActive = currentChapterFilter === 'all';
       const allBtn = document.createElement("button");
       allBtn.className = isAllActive 
@@ -397,6 +415,7 @@
 
     function renderFooterChapterDirectory() {
       const footerGrid = document.getElementById("footer-chapter-grid");
+      if (!footerGrid) return;
       footerGrid.innerHTML = "";
 
       const chapterMap = {};
@@ -425,6 +444,7 @@
       const archiveGrid = document.getElementById("archive-grid");
       const emptyState = document.getElementById("empty-state");
       const statusText = document.getElementById("filter-status-text");
+      if (!archiveGrid) return;
       archiveGrid.innerHTML = "";
 
       const filteredList = masterReleasedList.filter(item => {
@@ -509,7 +529,6 @@
         masterReleasedList = rawList.filter(item => item.date <= todayIST);
         masterReleasedList.sort((a, b) => (a.date < b.date ? 1 : -1));
 
-        // 1. Detect Routes: /chapter/:slug or /dpp/:slug
         const pathParts = window.location.pathname.split("/").filter(Boolean);
         const chapterIndex = pathParts.indexOf("chapter");
         const dppIndex = pathParts.indexOf("dpp");
@@ -523,9 +542,7 @@
           requestedDppSlug = decodeURIComponent(pathParts[dppIndex + 1]).trim();
         }
 
-        // 2. Handle /chapter/:slug View
         if (requestedChapterSlug) {
-          // Match chapter name
           const matchedItem = masterReleasedList.find(item => slugify(item.chapter) === requestedChapterSlug);
           if (matchedItem) {
             currentChapterFilter = matchedItem.chapter;
@@ -537,7 +554,6 @@
           }
         }
 
-        // 3. Select Active DPP for Hero Feature Card
         let activeDpp = null;
         if (requestedDppSlug) {
           activeDpp = rawList.find(item => slugify(item.title) === requestedDppSlug || item.id === requestedDppSlug);
@@ -564,7 +580,6 @@
         if (!todayRes.ok) throw new Error(`Could not load DPP dataset from ${jsonFilePath}`);
         const todayData = await todayRes.json();
 
-        // 4. Topic-Named PDF Download Info
         if (activeDpp.pdfFile) {
           const rawPdf = activeDpp.pdfFile.startsWith('/') ? activeDpp.pdfFile : `/${activeDpp.pdfFile}`;
           activePdfData.url = rawPdf;
@@ -574,7 +589,6 @@
           document.getElementById("download-pdf-btn").classList.add("hidden");
         }
 
-        // 5. SEO Updates
         if (!requestedChapterSlug && todayData.seo) {
           const topicCanonical = `https://smaphysics.com/dpp/${slugify(activeDpp.title)}`;
           document.title = todayData.seo.title || activeDpp.title;
@@ -588,7 +602,6 @@
           document.getElementById("twitter-description")?.setAttribute("content", todayData.seo.description);
         }
 
-        // 6. Render Concept Capsule
         if (!requestedChapterSlug) {
           document.getElementById("hero-dpp-badge").innerText = `${activeDpp.id.toUpperCase()} • ${activeDpp.date}`;
           document.getElementById("hero-main-title").innerText = todayData.meta?.title || activeDpp.title;
@@ -602,7 +615,6 @@
           document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
         }
 
-        // 7. Practice Action Buttons
         const topicSlug = slugify(activeDpp.title);
         const practiceUrl = `/practice/${topicSlug}`;
 
@@ -613,7 +625,6 @@
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
-        // 8. Render All Components
         renderChapterFilterPills();
         renderFooterChapterDirectory();
         renderArchiveGrid();

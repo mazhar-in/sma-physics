@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
-  <!-- Dynamic SEO Meta Tags -->
   <title id="practice-seo-title">SMA Physics — CBT Practice Room</title>
   <meta name="description" id="practice-seo-desc" content="Solve timed NEET and JEE Main/Advanced physics practice questions with detailed LaTeX step-by-step solutions." />
   <meta name="author" content="Syed Mazhar Ali" />
@@ -14,7 +13,7 @@
   <meta property="og:description" id="og-practice-desc" content="Timed NEET & JEE practice problems with immediate derivations." />
   <meta property="og:type" content="website" />
 
-  <!-- Tailwind CSS CDN with dark mode class configuration -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -175,19 +174,41 @@
     </div>
 
   </main>
-  <!-- ================= FOOTER ================= -->
-  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-12 py-8 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 transition-colors">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-        <p>© 2026 <strong>SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
-        <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
-        <p class="text-zinc-400">Free Open Access for JEE & NEET Aspirants</p>
+
+  <!-- ================= COMPREHENSIVE FOOTER WITH CHAPTER DIRECTORY ================= -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mt-16 pt-12 pb-8 text-zinc-600 dark:text-zinc-400 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
+      
+      <!-- Chapter Directory Grid -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3">
+          <h4 class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-zinc-900 dark:text-zinc-200">
+            Physics Chapter Archive
+          </h4>
+          <span class="text-xs text-zinc-400 dark:text-zinc-500">Click any chapter to view all its DPPs</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5" id="footer-chapter-grid">
+          <!-- Populated dynamically with direct /chapter/:slug links -->
+        </div>
       </div>
-      <div class="flex items-center gap-5">
-        <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
-        <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition">About</a>
-        <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
+
+      <!-- Bottom Credits & Links -->
+      <div class="pt-6 border-t border-zinc-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+          <p>© 2026 <strong class="text-zinc-900 dark:text-zinc-200">SMA Physics</strong>. Designed by Syed Mazhar Ali.</p>
+          <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
+          <p class="text-zinc-500">Free Open Access for JEE & NEET Aspirants</p>
+        </div>
+        <div class="flex items-center gap-5 font-semibold">
+          <a href="/" class="hover:text-zinc-900 dark:hover:text-white transition">Home</a>
+          <a href="/#archive" class="hover:text-zinc-900 dark:hover:text-white transition">Worksheets</a>
+          <a href="/practice" class="hover:text-zinc-900 dark:hover:text-white transition">Solve DPP</a>
+          <a href="/about" class="hover:text-zinc-900 dark:hover:text-white transition">About</a>
+          <a href="https://instagram.com/mazharin" target="_blank" class="hover:text-zinc-900 dark:hover:text-white transition">@mazharin</a>
+        </div>
       </div>
+
     </div>
   </footer>
 
@@ -213,7 +234,6 @@
         .replace(/^-+|-+$/g, '');
     }
 
-    // Standard Fisher-Yates in-place shuffle
     function shuffleArray(arr) {
       for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -222,25 +242,19 @@
       return arr;
     }
 
-    // Shuffles both the questions list and options inside each question
     function randomizeQuiz(rawQuestions) {
-      // 1. Shuffle question order
       const questionsList = shuffleArray([...rawQuestions]);
 
-      // 2. Shuffle options inside each question and update the correct key
       return questionsList.map((q) => {
-        // Identify the exact text of the correct answer before shuffling
         const originalCorrectOpt = q.options.find(opt => opt.key === q.correct);
         const correctText = originalCorrectOpt ? originalCorrectOpt.text : (q.options[0]?.text || "");
 
-        // Shuffle option texts
         const optionTexts = q.options.map(opt => opt.text);
         shuffleArray(optionTexts);
 
         const keys = ["A", "B", "C", "D", "E", "F"];
         let newCorrectKey = "A";
 
-        // Assign clean sequential keys (A, B, C, D) and remap correct answer
         const remappedOptions = optionTexts.map((text, idx) => {
           const key = keys[idx] || String.fromCharCode(65 + idx);
           if (text === correctText) {
@@ -254,6 +268,33 @@
           options: remappedOptions,
           correct: newCorrectKey
         };
+      });
+    }
+
+    function renderFooterChapterDirectory(dppList) {
+      const footerGrid = document.getElementById("footer-chapter-grid");
+      if (!footerGrid) return;
+      footerGrid.innerHTML = "";
+
+      const chapterMap = {};
+      dppList.forEach(item => {
+        const ch = (item.chapter || "General Physics").trim();
+        chapterMap[ch] = (chapterMap[ch] || 0) + 1;
+      });
+
+      Object.keys(chapterMap).sort().forEach(ch => {
+        const chSlug = slugify(ch);
+        const count = chapterMap[ch];
+        footerGrid.innerHTML += `
+          <a href="/chapter/${chSlug}" class="flex items-center justify-between p-2.5 rounded-xl border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-800/30 hover:border-indigo-200 dark:hover:border-indigo-800 hover:bg-indigo-50/30 dark:hover:bg-indigo-950/20 transition group">
+            <span class="text-xs sm:text-sm font-semibold text-zinc-700 dark:text-zinc-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">
+              ${ch}
+            </span>
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/60 text-zinc-600 dark:text-zinc-300 shrink-0 ml-2">
+              ${count} DPP${count > 1 ? 's' : ''}
+            </span>
+          </a>
+        `;
       });
     }
 
@@ -271,6 +312,8 @@
         if (!manifestRes.ok) throw new Error("Could not load /daily-dpps.json");
         const dppList = await manifestRes.json();
         if (!dppList || dppList.length === 0) throw new Error("Manifest file is empty");
+
+        renderFooterChapterDirectory(dppList);
 
         const pathParts = window.location.pathname.split("/").filter(Boolean);
         const practiceIdx = pathParts.indexOf("practice");
@@ -302,7 +345,6 @@
         if (!response.ok) throw new Error(`Could not load dataset at ${jsonPath}`);
         const data = await response.json();
 
-        // RANDOMIZE: Shuffles questions and internal options on every reload
         questions = randomizeQuiz(data.questions || []);
 
         if (data.meta && data.meta.title) {
