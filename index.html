@@ -101,7 +101,7 @@
         <nav class="flex items-center gap-3 sm:gap-5 text-sm sm:text-base shrink-0 font-semibold">
           <a href="#concept" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition hidden sm:inline">Concept</a>
           <a id="nav-today-dpp" href="/practice" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">Solve DPP</a>
-          <a href="#archive" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">Archive</a>
+          <a href="#archive" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition">Worksheets</a>
         </nav>
 
         <!-- Dark Mode Toggle Button -->
@@ -115,7 +115,7 @@
   </header>
 
   <!-- ================= MAIN DASHBOARD ================= -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6 md:py-12 space-y-8 md:space-y-12 flex-1 w-full min-w-0">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6 md:py-12 space-y-10 md:space-y-14 flex-1 w-full min-w-0">
 
     <!-- Header Strip -->
     <div class="pb-4 border-b border-zinc-200 dark:border-zinc-800 min-w-0">
@@ -188,13 +188,47 @@
 
     </div>
 
-    <!-- ================= PAST DPPs ARCHIVE SECTION ================= -->
-    <section id="archive" class="space-y-5 pt-4 min-w-0">
-      <div class="flex items-center justify-between">
-        <h3 class="text-lg sm:text-2xl font-bold text-zinc-950 dark:text-white">Recent SMA Practice Sheets</h3>
-        <span class="text-xs sm:text-sm font-semibold text-zinc-400 dark:text-zinc-500">All Modules</span>
+    <!-- ================= SEGREGATED WORKSHEET ARCHIVE SECTION ================= -->
+    <section id="archive" class="space-y-6 pt-4 min-w-0">
+      
+      <!-- Section Header & Exam Filter Tabs -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-black text-zinc-950 dark:text-white tracking-tight">Physics Worksheet Vault</h3>
+          <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by competitive exam target track</p>
+        </div>
+
+        <!-- Segregation Filter Bar -->
+        <div class="flex items-center gap-1.5 p-1.5 rounded-2xl bg-zinc-200/70 dark:bg-zinc-800/80 border border-zinc-300/60 dark:border-zinc-700/60 overflow-x-auto min-w-0">
+          <button onclick="setExamFilter('all')" id="tab-all" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer">
+            All Worksheets
+          </button>
+          <button onclick="setExamFilter('neet')" id="tab-neet" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
+            🩺 NEET
+          </button>
+          <button onclick="setExamFilter('jee-main')" id="tab-jee-main" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
+            🎯 JEE Main
+          </button>
+          <button onclick="setExamFilter('jee-adv')" id="tab-jee-adv" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer">
+            ⚡ JEE Adv
+          </button>
+        </div>
       </div>
+
+      <!-- Filter Stats Indicator -->
+      <div class="flex items-center justify-between text-xs sm:text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <span id="filter-status-text">Showing all physics worksheets</span>
+      </div>
+
+      <!-- Grid Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 min-w-0" id="archive-grid"></div>
+      
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden text-center py-12 px-4 rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-800">
+        <p class="text-base font-bold text-zinc-700 dark:text-zinc-300">No worksheets found for this exam filter.</p>
+        <p class="text-xs text-zinc-500 mt-1">Check back soon as new daily modules drop.</p>
+      </div>
+
     </section>
 
   </main>
@@ -209,7 +243,7 @@
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & TOPIC ENGINE ================= -->
+  <!-- ================= CONTROLLER & FILTER ENGINE ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -231,7 +265,6 @@
         .replace(/^-+|-+$/g, '');
     }
 
-    // Creates a clean, human-readable filename for downloaded PDFs
     function formatPdfFilename(title) {
       const cleanTitle = title
         .replace(/[^a-zA-Z0-9\s]/g, '')
@@ -247,10 +280,11 @@
       return istDate.toISOString().split('T')[0];
     }
 
-    // Global variable to store active PDF download details
     let activePdfData = { url: '', filename: 'SMA_Physics_Worksheet.pdf' };
+    let masterReleasedList = [];
+    let activeDppId = '';
+    let currentFilter = 'all';
 
-    // Strict topic-named file downloader
     async function triggerTopicDownload() {
       if (!activePdfData.url) return;
       const btnLabel = document.getElementById("download-pdf-label");
@@ -269,7 +303,6 @@
         document.body.removeChild(link);
         window.URL.revokeObjectURL(blobUrl);
       } catch (e) {
-        // Fallback standard download
         const link = document.createElement("a");
         link.href = activePdfData.url;
         link.download = activePdfData.filename;
@@ -280,6 +313,109 @@
       }
     }
 
+    // Exam Segregation Filter
+    function setExamFilter(filterType, updateUrl = true) {
+      currentFilter = filterType;
+
+      // Update Tab Styles
+      const tabs = ['all', 'neet', 'jee-main', 'jee-adv'];
+      tabs.forEach(t => {
+        const el = document.getElementById(`tab-${t}`);
+        if (!el) return;
+        if (t === filterType) {
+          el.className = "px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer";
+        } else {
+          el.className = "px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white cursor-pointer";
+        }
+      });
+
+      if (updateUrl && history.pushState) {
+        const newUrl = filterType === 'all' 
+          ? window.location.pathname 
+          : `${window.location.pathname}?exam=${filterType}`;
+        window.history.replaceState({ path: newUrl }, '', newUrl);
+      }
+
+      renderArchiveGrid();
+    }
+
+    function renderArchiveGrid() {
+      const archiveGrid = document.getElementById("archive-grid");
+      const emptyState = document.getElementById("empty-state");
+      const statusText = document.getElementById("filter-status-text");
+      archiveGrid.innerHTML = "";
+
+      // Match items by exam tag
+      const filteredList = masterReleasedList.filter(item => {
+        const examStr = (item.exam || "").toLowerCase();
+        if (currentFilter === 'all') return true;
+        if (currentFilter === 'neet') return examStr.includes('neet');
+        if (currentFilter === 'jee-main') return examStr.includes('jee main') || examStr.includes('jee-main') || examStr.includes('jee');
+        if (currentFilter === 'jee-adv') return examStr.includes('adv') || examStr.includes('advanced');
+        return true;
+      });
+
+      // Update Filter Status Counter
+      const filterNames = {
+        'all': 'all physics worksheets',
+        'neet': 'NEET Target worksheets',
+        'jee-main': 'JEE Main Target worksheets',
+        'jee-adv': 'JEE Advanced Target worksheets'
+      };
+      statusText.innerText = `Showing ${filteredList.length} ${filterNames[currentFilter] || 'worksheets'}`;
+
+      if (filteredList.length === 0) {
+        emptyState.classList.remove("hidden");
+        return;
+      }
+      emptyState.classList.add("hidden");
+
+      filteredList.forEach((item) => {
+        const itemSlug = slugify(item.title);
+        const isCurrentActive = item.id === activeDppId;
+        const activeBorderClass = isCurrentActive 
+          ? 'border-indigo-600 dark:border-indigo-500 ring-2 ring-indigo-600/20' 
+          : 'border-zinc-200 dark:border-zinc-800';
+
+        // Exam badge badge color
+        const examLower = (item.exam || "").toLowerCase();
+        let examBadgeColor = "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700";
+        if (examLower.includes("neet")) {
+          examBadgeColor = "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800";
+        } else if (examLower.includes("jee")) {
+          examBadgeColor = "bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border-blue-200 dark:border-blue-800";
+        }
+
+        archiveGrid.innerHTML += `
+          <div class="bg-white dark:bg-zinc-900 p-5 sm:p-6 rounded-2xl border ${activeBorderClass} hover:border-zinc-300 dark:hover:border-zinc-700 transition flex flex-col justify-between min-w-0 shadow-sm">
+            <div class="min-w-0">
+              <div class="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-2">
+                <span class="font-bold text-indigo-600 dark:text-indigo-400">${item.id.toUpperCase()}</span>
+                <span class="px-2 py-0.5 text-[11px] font-bold rounded-md border ${examBadgeColor}">
+                  ${item.exam}
+                </span>
+              </div>
+              
+              <a href="/dpp/${itemSlug}" class="block group">
+                <h4 class="font-bold text-zinc-900 dark:text-white text-base sm:text-lg break-words leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                  ${item.title}
+                </h4>
+              </a>
+              <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 truncate">${item.chapter}</p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-2 min-w-0">
+              <span class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 font-medium">${item.questionCount} Questions</span>
+              <div class="flex items-center gap-2 shrink-0">
+                <a href="/dpp/${itemSlug}" class="text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition hidden xs:inline">Concept</a>
+                <a href="/practice/${itemSlug}" class="px-3.5 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 font-bold text-xs sm:text-sm hover:bg-indigo-600 hover:text-white transition">Solve Test →</a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         const manifestRes = await fetch('/daily-dpps.json');
@@ -287,7 +423,6 @@
         const rawList = await manifestRes.json();
         if (!rawList || rawList.length === 0) return;
 
-        // 1. Check if user is viewing a dedicated topic page (e.g. /dpp/rotational-motion...)
         const pathParts = window.location.pathname.split("/").filter(Boolean);
         const dppIndex = pathParts.indexOf("dpp");
         let requestedSlug = "";
@@ -296,23 +431,21 @@
         }
 
         const todayIST = getTodayIST();
-        // Released DPPs
-        const releasedList = rawList.filter(item => item.date <= todayIST);
-        releasedList.sort((a, b) => (a.date < b.date ? 1 : -1));
+        masterReleasedList = rawList.filter(item => item.date <= todayIST);
+        masterReleasedList.sort((a, b) => (a.date < b.date ? 1 : -1));
 
         let activeDpp = null;
         if (requestedSlug) {
-          // Find matching specific topic DPP from manifest
           activeDpp = rawList.find(item => slugify(item.title) === requestedSlug || item.id === requestedSlug);
           if (activeDpp) {
             document.getElementById("page-mode-badge").classList.remove("hidden");
           }
         }
 
-        // Default to latest released DPP if on homepage or slug not found
         if (!activeDpp) {
-          activeDpp = releasedList[0] || rawList[0];
+          activeDpp = masterReleasedList[0] || rawList[0];
         }
+        activeDppId = activeDpp.id;
 
         let rawJsonPath = activeDpp.jsonFile || activeDpp.file;
         const jsonFilePath = rawJsonPath.startsWith('/') ? rawJsonPath : `/${rawJsonPath}`;
@@ -321,7 +454,7 @@
         if (!todayRes.ok) throw new Error(`Could not load DPP dataset from ${jsonFilePath}`);
         const todayData = await todayRes.json();
 
-        // 2. Set Topic-Named PDF Download Info
+        // Topic-Named PDF Download Info
         if (activeDpp.pdfFile) {
           const rawPdf = activeDpp.pdfFile.startsWith('/') ? activeDpp.pdfFile : `/${activeDpp.pdfFile}`;
           activePdfData.url = rawPdf;
@@ -331,7 +464,7 @@
           document.getElementById("download-pdf-btn").classList.add("hidden");
         }
 
-        // 3. Dynamic SEO updates for dedicated concept page
+        // SEO Updates
         const topicCanonical = `https://smaphysics.com/dpp/${slugify(activeDpp.title)}`;
         if (todayData.seo) {
           document.title = todayData.seo.title || activeDpp.title;
@@ -345,7 +478,7 @@
           document.getElementById("twitter-description")?.setAttribute("content", todayData.seo.description);
         }
 
-        // 4. Render Hero & Concept Capsule
+        // Render Hero & Concept Capsule
         document.getElementById("hero-dpp-badge").innerText = `${activeDpp.id.toUpperCase()} • ${activeDpp.date}`;
         document.getElementById("hero-main-title").innerText = todayData.meta?.title || activeDpp.title;
 
@@ -357,7 +490,7 @@
           document.getElementById("concept-trap").innerHTML = todayData.conceptCapsule.examTrap;
         }
 
-        // 5. Practice Buttons
+        // Practice Buttons
         const topicSlug = slugify(activeDpp.title);
         const practiceUrl = `/practice/${topicSlug}`;
 
@@ -368,36 +501,14 @@
         document.getElementById("solve-online-btn").href = practiceUrl;
         document.getElementById("nav-today-dpp").href = practiceUrl;
 
-        // 6. Render Archive Grid with Links to both dedicated /dpp/ concept pages and /practice/ test rooms
-        const archiveGrid = document.getElementById("archive-grid");
-        archiveGrid.innerHTML = "";
-
-        releasedList.forEach((item) => {
-          const itemSlug = slugify(item.title);
-          const isCurrentActive = item.id === activeDpp.id;
-          const activeBorderClass = isCurrentActive ? 'border-indigo-600 dark:border-indigo-500 ring-2 ring-indigo-600/20' : 'border-zinc-200 dark:border-zinc-800';
-
-          archiveGrid.innerHTML += `
-            <div class="bg-white dark:bg-zinc-900 p-5 sm:p-6 rounded-2xl border ${activeBorderClass} hover:border-zinc-300 dark:hover:border-zinc-700 transition flex flex-col justify-between min-w-0 shadow-sm">
-              <div class="min-w-0">
-                <div class="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1.5">
-                  <span class="font-bold text-indigo-600 dark:text-indigo-400">${item.id.toUpperCase()}</span>
-                  <span>${item.date}</span>
-                </div>
-                <a href="/dpp/${itemSlug}" class="block group">
-                  <h4 class="font-bold text-zinc-900 dark:text-white text-base sm:text-lg break-words leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">${item.title}</h4>
-                </a>
-                <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 truncate">${item.chapter} • ${item.exam}</p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-2 min-w-0">
-                <a href="/dpp/${itemSlug}" class="text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">📖 Read Concept</a>
-                <div class="flex items-center gap-2 shrink-0">
-                  <a href="/practice/${itemSlug}" class="px-3.5 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 font-bold text-xs sm:text-sm hover:bg-indigo-600 hover:text-white transition">Solve Test →</a>
-                </div>
-              </div>
-            </div>
-          `;
-        });
+        // Check for URL query param (e.g. ?exam=neet or ?exam=jee-main)
+        const urlParams = new URLSearchParams(window.location.search);
+        const examParam = urlParams.get('exam');
+        if (examParam && ['neet', 'jee-main', 'jee-adv'].includes(examParam)) {
+          setExamFilter(examParam, false);
+        } else {
+          renderArchiveGrid();
+        }
 
       } catch (err) {
         console.error("Failed to load topic page:", err);
