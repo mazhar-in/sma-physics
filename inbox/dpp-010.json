@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-010",
+    "title": "Third Equation of Motion: Work-Kinematics & Advanced Motion Problems",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Third Equation of Motion (v^2 = u^2 + 2as) JEE Main DPP | SMA Physics",
+    "description": "20 Challenging JEE Main MCQs covering the third kinematic equation, midpoint velocities, bullet penetration depth, and stopping distances with detailed solutions.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Third Equation of Motion, v^2 = u^2 + 2as, Midpoint Speed, Stopping Distance, Bullet Penetration, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/third-equation-of-motion-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "The Third Equation of Motion and Energy-Kinematics Equivalence",
+    "tag": "Class 11 Mechanics",
+    "summary": "Eliminating time $t$ between $v = u + at$ and $s = ut + \\frac{1}{2}at^2$ (or integrating $a = v\\frac{dv}{ds}$) yields the work-kinematics relation: $v^2 = u^2 + 2as$. This relation is essential when time is neither given nor required in the problem.",
+    "keyFormula": "$$v^2 = u^2 + 2as, \\quad v_{\\text{mid}} = \\sqrt{\\frac{u^2 + v^2}{2}}, \\quad s_{\\text{stop}} = \\frac{u^2}{2a}$$",
+    "examTrap": "For a train of length $L$ whose front and back ends pass a post with speeds $u$ and $v$ with uniform acceleration, the midpoint always crosses with the root-mean-square speed $v_{\\text{mid}} = \\sqrt{\\frac{u^2 + v^2}{2}}$, NOT the arithmetic average $\\frac{u+v}{2}$. For bullet penetration through planks, use $v^2 = u^2 - 2as$ iteratively across individual thicknesses."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A vehicle moving at speed $u$ is brought to rest under uniform braking acceleration in distance $s$. If the initial velocity is increased to $3u$, the stopping distance under the same deceleration becomes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3s$" },
+        { "key": "B", "text": "$9s$" },
+        { "key": "C", "text": "$6s$" },
+        { "key": "D", "text": "$12s$" }
+      ],
+      "correct": "B",
+      "solution": "1. Using $v^2 = u^2 - 2as$ with $v = 0$: $$s = \\frac{u^2}{2a} \\propto u^2$$<br>2. When speed is tripled ($u \\to 3u$): $$s' = \\frac{(3u)^2}{2a} = 9\\left(\\frac{u^2}{2a}\\right) = 9s$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A train moving with constant acceleration passes a signal post. Its front engine passes with speed $u$ and the rear guard's van passes with speed $v$. The speed with which the middle point of the train passes the post is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u+v}{2}$" },
+        { "key": "B", "text": "$\\sqrt{uv}$" },
+        { "key": "C", "text": "$\\sqrt{\\dfrac{u^2+v^2}{2}}$" },
+        { "key": "D", "text": "$\\dfrac{2uv}{u+v}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Over total length $L$: $v^2 = u^2 + 2aL \\implies 2aL = v^2 - u^2$<br>2. At midpoint ($s = L/2$): $$v_{\\text{mid}}^2 = u^2 + 2a\\left(\\frac{L}{2}\\right) = u^2 + \\frac{v^2 - u^2}{2} = \\frac{u^2 + v^2}{2} \\implies v_{\\text{mid}} = \\sqrt{\\frac{u^2 + v^2}{2}}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bullet fired into a wooden block loses $\\dfrac{1}{3}\\text{rd}$ of its velocity after penetrating a distance of $5\\text{ cm}$. Assuming constant retarding force, the additional distance it penetrates before coming to rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.5\\text{ cm}$" },
+        { "key": "B", "text": "$3.0\\text{ cm}$" },
+        { "key": "C", "text": "$5.0\\text{ cm}$" },
+        { "key": "D", "text": "$4.0\\text{ cm}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Velocity after $s_1 = 5\\text{ cm}$ is $v_1 = u - \\frac{u}{3} = \\frac{2u}{3}$<br>2. $\\left(\\frac{2u}{3}\\right)^2 = u^2 - 2a(5) \\implies \\frac{4}{9}u^2 = u^2 - 10a \\implies 10a = \\frac{5}{9}u^2 \\implies 2a = \\frac{u^2}{9}$<br>3. For additional distance $s_2$ to rest ($v = 0$): $$0 = \\left(\\frac{2u}{3}\\right)^2 - 2a s_2 \\implies \\frac{4}{9}u^2 = \\left(\\frac{u^2}{9}\\right) s_2 \\implies s_2 = 4.0\\text{ cm}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A stone is dropped from the top of a tower of height $h$. After falling through distance $x$, its speed is half of the speed with which it strikes the ground. The value of $x$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{h}{4}$" },
+        { "key": "B", "text": "$\\dfrac{h}{2}$" },
+        { "key": "C", "text": "$\\dfrac{h}{\\sqrt{2}}$" },
+        { "key": "D", "text": "$\\dfrac{3h}{4}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Ground strike speed: $v_g^2 = 2gh$<br>2. Speed at distance $x$: $v_x^2 = 2gx$<br>3. Given $v_x = \\frac{1}{2}v_g \\implies v_x^2 = \\frac{1}{4}v_g^2 \\implies 2gx = \\frac{1}{4}(2gh) \\implies x = \\frac{h}{4}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along the $x$-axis such that its velocity is given by $v = \\sqrt{16 - 8x}\\text{ m/s}$. The acceleration of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$-4\\text{ m/s}^2$" },
+        { "key": "C", "text": "$-8\\text{ m/s}^2$" },
+        { "key": "D", "text": "$+8\\text{ m/s}^2$" }
+      ],
+      "correct": "B",
+      "solution": "1. Squaring: $v^2 = 16 - 8x$<br>2. Differentiating with respect to $x$: $$2v\\frac{dv}{dx} = -8 \\implies a = v\\frac{dv}{dx} = -4\\text{ m/s}^2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An object accelerating uniformly from rest acquires a velocity $v$ over distance $s$. The velocity acquired over the next distance $s$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2v$" },
+        { "key": "B", "text": "$\\sqrt{3}v$" },
+        { "key": "C", "text": "$\\sqrt{2}v$" },
+        { "key": "D", "text": "$(\\sqrt{2}-1)v$" }
+      ],
+      "correct": "C",
+      "solution": "1. Over first distance $s$: $v^2 = 0 + 2as \\implies 2as = v^2$<br>2. Over total distance $2s$ starting from rest: $$(v')^2 = 0 + 2a(2s) = 2(2as) = 2v^2 \\implies v' = \\sqrt{2}v$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest with uniform acceleration. If the velocity is $v_1$ after distance $s_1$ and $v_2$ after distance $s_2$, the ratio $v_1 / v_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{s_1}{s_2}$" },
+        { "key": "B", "text": "$\\left(\\dfrac{s_1}{s_2}\\right)^2$" },
+        { "key": "C", "text": "$\\dfrac{s_2}{s_1}$" },
+        { "key": "D", "text": "$\\sqrt{\\dfrac{s_1}{s_2}}$" }
+      ],
+      "correct": "D",
+      "solution": "Using $v^2 = 2as \\implies v = \\sqrt{2as} \\propto \\sqrt{s}$. Thus, $\\frac{v_1}{v_2} = \\sqrt{\\frac{s_1}{s_2}}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moving along a line with constant deceleration travels $12\\text{ m}$ while its velocity decreases from $10\\text{ m/s}$ to $2\\text{ m/s}$. How much further will it travel before coming to rest?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.5\\text{ m}$" },
+        { "key": "B", "text": "$1.0\\text{ m}$" },
+        { "key": "C", "text": "$1.5\\text{ m}$" },
+        { "key": "D", "text": "$2.0\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $2^2 = 10^2 - 2a(12) \\implies 4 = 100 - 24a \\implies 24a = 96 \\implies 2a = 8$<br>2. For remaining distance $s'$ from $2\\text{ m/s}$ to $0$: $$0 = 2^2 - 2a s' \\implies 4 = 8 s' \\implies s' = 0.5\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body is thrown vertically upward with velocity $u$. The velocity of the body at half the maximum height is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{2}$" },
+        { "key": "B", "text": "$\\dfrac{u}{\\sqrt{2}}$" },
+        { "key": "C", "text": "$\\dfrac{\\sqrt{3}u}{2}$" },
+        { "key": "D", "text": "$\\dfrac{u}{4}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Maximum height $H = \\frac{u^2}{2g}$<br>2. At $h = H/2 = \\frac{u^2}{4g}$: $$v^2 = u^2 - 2g\\left(\\frac{u^2}{4g}\\right) = u^2 - \\frac{u^2}{2} = \\frac{u^2}{2} \\implies v = \\frac{u}{\\sqrt{2}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The reaction time of an automobile driver is $0.6\\text{ s}$. If the car can decelerate at $6\\text{ m/s}^2$ and moves at $54\\text{ km/h}$, the total distance covered from the instant the danger is spotted until the car comes to rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$18.75\\text{ m}$" },
+        { "key": "B", "text": "$24.25\\text{ m}$" },
+        { "key": "C", "text": "$27.75\\text{ m}$" },
+        { "key": "D", "text": "$32.50\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Speed $u = 54\\text{ km/h} = 15\\text{ m/s}$<br>2. Reaction distance: $s_1 = 15 \\times 0.6 = 9.0\\text{ m}$<br>3. Braking distance: $s_2 = \\frac{u^2}{2a} = \\frac{225}{2(6)} = 18.75\\text{ m}$<br>4. Total stopping distance $= 9.0 + 18.75 = 27.75\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two cars $P$ and $Q$ start from a point at the same time in a straight line. $P$ moves with uniform acceleration $a_1$ while $Q$ moves with uniform acceleration $a_2$ ($a_1 > a_2$). When car $P$ has covered distance $S$, the speed of $P$ relative to $Q$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{2(a_1 - a_2)S}$" },
+        { "key": "B", "text": "$\\sqrt{2a_1 S} - \\sqrt{2a_2 S}$" },
+        { "key": "C", "text": "$\\sqrt{2(a_1 + a_2)S}$" },
+        { "key": "D", "text": "$\\sqrt{2S}(\\sqrt{a_1} - \\sqrt{a_2})$" }
+      ],
+      "correct": "D",
+      "solution": "1. Time for $P$ to cover $S$: $t = \\sqrt{\\frac{2S}{a_1}}$<br>2. Speed of $P$: $v_P = \\sqrt{2a_1 S}$<br>3. Speed of $Q$ at time $t$: $v_Q = a_2 t = a_2 \\sqrt{\\frac{2S}{a_1}} = \\sqrt{\\frac{2a_2^2 S}{a_1}}$<br>4. $v_{\\text{rel}} = v_P - v_Q = \\sqrt{2a_1 S} - \\sqrt{\\frac{2a_2^2 S}{a_1}} = \\sqrt{2S}(\\sqrt{a_1} - \\sqrt{a_2})$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A lift ascends with constant acceleration $a$. A passenger drops a coin when the lift is at height $H$ moving upwards with speed $V$. The speed with which the coin strikes the ground floor of the building is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{V^2 + 2gH}$" },
+        { "key": "B", "text": "$\\sqrt{V^2 - 2gH}$" },
+        { "key": "C", "text": "$\\sqrt{2gH}$" },
+        { "key": "D", "text": "$\\sqrt{V^2 + 2(g+a)H}$" }
+      ],
+      "correct": "A",
+      "solution": "Relative to ground, the coin is released with upward initial velocity $u = +V$ at height $H$. Under constant gravitational acceleration $g$: $$v^2 = u^2 + 2gH = V^2 + 2gH \\implies v = \\sqrt{V^2 + 2gH}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body accelerates uniformly from rest at $2\\text{ m/s}^2$ for some distance, then immediately decelerates uniformly at $4\\text{ m/s}^2$ to rest. If the total distance travelled is $60\\text{ m}$, the maximum speed attained is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\sqrt{15}\\text{ m/s}$" },
+        { "key": "B", "text": "$4\\sqrt{10}\\text{ m/s}$" },
+        { "key": "C", "text": "$10\\text{ m/s}$" },
+        { "key": "D", "text": "$20\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Acceleration phase: $s_1 = \\frac{v_{\\max}^2}{2(2)} = \\frac{v_{\\max}^2}{4}$<br>2. Deceleration phase: $s_2 = \\frac{v_{\\max}^2}{2(4)} = \\frac{v_{\\max}^2}{8}$<br>3. $s_1 + s_2 = \\frac{3v_{\\max}^2}{8} = 60 \\implies v_{\\max}^2 = 160 \\implies v_{\\max} = \\sqrt{160} = 4\\sqrt{10}\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle travels through three consecutive displacements $s_1, s_2,$ and $s_3$ with uniform acceleration. If the velocity increases by equal amounts in each interval ($v_1 - v_0 = v_2 - v_1 = v_3 - v_2 = \\Delta v$), the relation between $s_1, s_2,$ and $s_3$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$s_2 = \\dfrac{s_1 + s_3}{2}$" },
+        { "key": "B", "text": "$s_2 = \\sqrt{s_1 s_3}$" },
+        { "key": "C", "text": "$s_3 - s_2 = s_2 - s_1$" },
+        { "key": "D", "text": "$s_1 + s_3 = 2s_2$" }
+      ],
+      "correct": "C",
+      "solution": "1. $v_1^2 - v_0^2 = 2as_1 \\implies (v_1 - v_0)(v_1 + v_0) = \\Delta v(2v_0 + \\Delta v) = 2as_1$<br>2. Similarly, $2as_2 = \\Delta v(2v_0 + 3\\Delta v)$ and $2as_3 = \\Delta v(2v_0 + 5\\Delta v)$<br>3. $s_2 - s_1 = \\frac{2(\\Delta v)^2}{2a} = s_3 - s_2$. Thus $s_3 - s_2 = s_2 - s_1$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A target consists of two parallel planks of thicknesses $x_1$ and $x_2$. A bullet enters the first plank at speed $u$, emerges with speed $v_1$, and emerges from the second plank with speed $v_2$. Assuming equal constant retarding forces, the ratio $\\dfrac{u^2 - v_1^2}{v_1^2 - v_2^2}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{x_1}{x_2}\right)^2$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{x_1}{x_2}}$" },
+        { "key": "C", "text": "$\\dfrac{x_2}{x_1}$" },
+        { "key": "D", "text": "$\\dfrac{x_1}{x_2}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Plank 1: $u^2 - v_1^2 = 2a x_1$<br>2. Plank 2: $v_1^2 - v_2^2 = 2a x_2$<br>3. Dividing gives: $$\\frac{u^2 - v_1^2}{v_1^2 - v_2^2} = \\frac{x_1}{x_2}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball is released from the top of an inclined plane of length $L$. The ratio of the time taken to travel the first half of the length to that for the second half is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{\\sqrt{2}-1}$" },
+        { "key": "B", "text": "$\\sqrt{2}-1$" },
+        { "key": "C", "text": "$\\dfrac{1}{\\sqrt{2}}$" },
+        { "key": "D", "text": "$\\sqrt{2}+1$" }
+      ],
+      "correct": "A",
+      "solution": "1. Time for first half ($L/2$): $t_1 = \\sqrt{\\frac{2(L/2)}{a}} = \\frac{T}{\\sqrt{2}}$<br>2. Time for second half: $t_2 = T - t_1 = T\\left(1 - \\frac{1}{\\sqrt{2}}\\right) = T\\left(\\frac{\\sqrt{2}-1}{\\sqrt{2}}\\right)$<br>3. Ratio: $\\frac{t_1}{t_2} = \\frac{T/\\sqrt{2}}{T(\\sqrt{2}-1)/\\sqrt{2}} = \\frac{1}{\\sqrt{2}-1}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moving with constant acceleration has velocities $u$ and $v$ at points $A$ and $B$. If $C$ is a point dividing $AB$ such that $AC : CB = 1 : 3$, the speed of the particle at $C$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{u^2+3v^2}{4}}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{3u^2+v^2}{4}}$" },
+        { "key": "C", "text": "$\\dfrac{3u+v}{4}$" },
+        { "key": "D", "text": "$\\sqrt{\\dfrac{u^2+v^2}{2}}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Total distance $AB = 4s \\implies v^2 = u^2 + 2a(4s) \\implies 2as = \\frac{v^2 - u^2}{4}$<br>2. At point $C$ ($AC = s$): $$v_C^2 = u^2 + 2as = u^2 + \\frac{v^2 - u^2}{4} = \\frac{3u^2 + v^2}{4} \\implies v_C = \\sqrt{\\frac{3u^2 + v^2}{4}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moving along the $x$-axis has acceleration $a = 2x$. If its velocity at $x = 1\\text{ m}$ is $2\\text{ m/s}$, its velocity at $x = 3\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ m/s}$" },
+        { "key": "B", "text": "$2\\sqrt{3}\\text{ m/s}$" },
+        { "key": "C", "text": "$2\\sqrt{5}\\text{ m/s}$" },
+        { "key": "D", "text": "$6\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $a = v\\frac{dv}{dx} = 2x \\implies v dv = 2x dx$<br>2. $\\left[\\frac{v^2}{2}\\right]_2^{v_f} = [x^2]_1^3 \\implies \\frac{v_f^2 - 4}{2} = 9 - 1 = 8$<br>3. $v_f^2 = 20 \\implies v_f = 2\\sqrt{5}\\text{ m/s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest and moves with uniform acceleration $a$. The displacement during the interval in which its velocity changes from $v_1$ to $v_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_2 - v_1}{a}$" },
+        { "key": "B", "text": "$\\dfrac{v_2^2 - v_1^2}{a}$" },
+        { "key": "C", "text": "$\\dfrac{(v_2 - v_1)^2}{2a}$" },
+        { "key": "D", "text": "$\\dfrac{v_2^2 - v_1^2}{2a}$" }
+      ],
+      "correct": "D",
+      "solution": "From $v_2^2 = v_1^2 + 2as \\implies s = \\frac{v_2^2 - v_1^2}{2a}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body sliding down a smooth inclined plane of inclination $\\theta$ attains a speed $v$ at the bottom. If the inclination is increased to $90^\\circ$ (vertical free fall from the same vertical height $h$), the speed at the bottom will be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Equal to $v$" },
+        { "key": "B", "text": "$v\\sin\\theta$" },
+        { "key": "C", "text": "$\\dfrac{v}{\\sin\\theta}$" },
+        { "key": "D", "text": "$v\\cos\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "For an incline of height $h$, length $L = h/\\sin\\theta$ and acceleration $a = g\\sin\\theta$.<br>$$v^2 = 2(g\\sin\\theta)(h/\\sin\\theta) = 2gh \\implies v = \\sqrt{2gh}$$ Speed depends purely on the vertical height $h$, and is independent of the angle of inclination.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

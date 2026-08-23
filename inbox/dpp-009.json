@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-009",
+    "title": "Uniformly Accelerated Motion: Derivations & Kinematic Equations",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Straight Line"
+  },
+  "seo": {
+    "title": "Uniformly Accelerated Motion & Derivations JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions on uniform acceleration, calculus derivations of kinematic equations, Galileo's odd-number law, stopping distances, and reaction times.",
+    "keywords": "JEE Main Physics, Kinematics DPP, Uniform Acceleration, Derivation of Motion Equations, Galileo Odd Number Ratio, Stopping Distance, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/uniformly-accelerated-motion-derivations",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Derivation and Foundations of Kinematic Equations",
+    "tag": "Class 11 Mechanics",
+    "summary": "When acceleration is strictly constant ($a = \\text{const}$), integration yields the standard kinematic equations: (1) $a = \\frac{dv}{dt} \\implies \\int_u^v dv = a \\int_0^t dt \\implies v = u + at$, (2) $v = \\frac{ds}{dt} \\implies \\int_0^s ds = \\int_0^t (u + at) dt \\implies s = ut + \\frac{1}{2}at^2$, (3) $a = v\\frac{dv}{ds} \\implies v^2 = u^2 + 2as$, and (4) $n^{\\text{th}}$ second displacement: $s_n = u + \\frac{a}{2}(2n - 1)$.",
+    "keyFormula": "$$v = u + at, \\quad s = ut + \\frac{1}{2}at^2, \\quad v^2 = u^2 + 2as, \\quad s_n = u + \\frac{a}{2}(2n - 1)$$",
+    "examTrap": "Remember that $s$ in $s = ut + \\frac{1}{2}at^2$ represents displacement, NOT total distance. If the particle changes direction (when $v = u + at = 0$), distance must be evaluated by summing piecewise magnitudes across turning points. Additionally, for constant acceleration, the velocity at the spatial midpoint between two points with speeds $u$ and $v$ is $v_{\\text{mid}} = \\sqrt{\\frac{u^2 + v^2}{2}}$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest with constant acceleration $a$. The ratio of distances traversed by the particle in consecutive equal time intervals $T$ ($s_1 : s_2 : s_3 : \\dots$) follows:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Natural number ratio: $1 : 2 : 3 : 4 : \\dots$" },
+        { "key": "B", "text": "Galileo's odd-number ratio: $1 : 3 : 5 : 7 : \\dots$" },
+        { "key": "C", "text": "Square ratio: $1 : 4 : 9 : 16 : \\dots$" },
+        { "key": "D", "text": "Even ratio: $2 : 4 : 6 : 8 : \\dots$" }
+      ],
+      "correct": "B",
+      "solution": "1. Distance in time $t$: $s(t) = \\frac{1}{2}at^2$<br>2. $s_1 = s(T) = \\frac{1}{2}aT^2$<br>3. $s_2 = s(2T) - s(T) = \\frac{1}{2}a(4T^2) - \\frac{1}{2}aT^2 = 3\\left(\\frac{1}{2}aT^2\\right)$<br>4. $s_3 = s(3T) - s(2T) = 5\\left(\\frac{1}{2}aT^2\\right)$<br>5. Ratio: $1 : 3 : 5 : 7 : \\dots$ (Galileo's law of odd numbers).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In calculus, the fundamental derivation of $v = u + at$ and $s = ut + \\frac{1}{2}at^2$ strictly requires which underlying physical condition?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Velocity $v = \\text{constant}$" },
+        { "key": "B", "text": "Jerk $\\frac{da}{dt} = \\text{constant} \\ne 0$" },
+        { "key": "C", "text": "Acceleration $a = \\text{constant}$" },
+        { "key": "D", "text": "Acceleration $a \\propto t$" }
+      ],
+      "correct": "C",
+      "solution": "1. $a = \\frac{dv}{dt} \\implies \\int_u^v dv = \\int_0^t a dt = a \\int_0^t dt$ (valid only when $a$ is constant pulled out of the integral) $\\implies v - u = at \\implies v = u + at$.<br>2. Then $\\int_0^s ds = \\int_0^t (u + at) dt = ut + \\frac{1}{2}at^2$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body moving with uniform acceleration covers $20\\text{ m}$ in the $2\\text{nd}$ second and $30\\text{ m}$ in the $4\\text{th}$ second of its motion. The distance covered in the $5\\text{th}$ second is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$40\\text{ m}$" },
+        { "key": "B", "text": "$45\\text{ m}$" },
+        { "key": "C", "text": "$50\\text{ m}$" },
+        { "key": "D", "text": "$35\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $s_n = u + \\frac{a}{2}(2n - 1)$<br>2. $s_2 = u + 1.5a = 20$, and $s_4 = u + 3.5a = 30$<br>3. Subtracting: $2a = 10 \\implies a = 5\\text{ m/s}^2 \\implies u = 12.5\\text{ m/s}$<br>4. For $n = 5$: $s_5 = 12.5 + \\frac{5}{2}(9) = 12.5 + 22.5 = 35\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car moving at $20\\text{ m/s}$ along a straight line can be stopped by applying brakes over a distance of $40\\text{ m}$. If the same car moves at $40\\text{ m/s}$, the minimum stopping distance under identical deceleration is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$160\\text{ m}$" },
+        { "key": "B", "text": "$80\\text{ m}$" },
+        { "key": "C", "text": "$120\\text{ m}$" },
+        { "key": "D", "text": "$200\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. From $v^2 = u^2 - 2as$ with $v = 0$: $$s = \\frac{u^2}{2a} \\propto u^2$$<br>2. Doubling speed ($40\\text{ m/s} = 2 \\times 20\\text{ m/s}$) increases stopping distance by $2^2 = 4$ times: $$s' = 4 \\times 40\\text{ m} = 160\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest and accelerates uniformly for $t$ seconds covering distance $s_1$. It then decelerates at the same constant rate to rest in time $t$ covering distance $s_2$. The relation between $s_1$ and $s_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$s_1 = 2 s_2$" },
+        { "key": "B", "text": "$s_1 = s_2$" },
+        { "key": "C", "text": "$s_2 = 2 s_1$" },
+        { "key": "D", "text": "$s_1 = 4 s_2$" }
+      ],
+      "correct": "B",
+      "solution": "1. Acceleration: $s_1 = \\frac{1}{2}at^2$, reaching velocity $v = at$.<br>2. Deceleration: $s_2 = vt - \\frac{1}{2}at^2 = (at)t - \\frac{1}{2}at^2 = \\frac{1}{2}at^2$.<br>3. Thus, $s_1 = s_2$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The displacement of a particle moving with uniform acceleration is given by $s = 3t + 4t^2\\text{ m}$. The initial velocity $u$ and acceleration $a$ of the particle are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$u = 3\\text{ m/s}, \; a = 4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$u = 6\\text{ m/s}, \; a = 8\\text{ m/s}^2$" },
+        { "key": "C", "text": "$u = 3\\text{ m/s}, \; a = 8\\text{ m/s}^2$" },
+        { "key": "D", "text": "$u = 4\\text{ m/s}, \; a = 3\\text{ m/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "Comparing $s = 3t + 4t^2$ with $s = ut + \\frac{1}{2}at^2$:<br>1. Coefficient of $t$: $u = 3\\text{ m/s}$<br>2. Coefficient of $t^2$: $\\frac{1}{2}a = 4 \\implies a = 8\\text{ m/s}^2$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A point moves with uniform acceleration. If $v_1, v_2,$ and $v_3$ are the average velocities in three successive equal time intervals $\\tau$, the ratio $\\dfrac{v_1 - v_2}{v_2 - v_3}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}$" },
+        { "key": "C", "text": "$3$" },
+        { "key": "D", "text": "$1$" }
+      ],
+      "correct": "D",
+      "solution": "1. Average velocities: $v_1 = u_0 + \\frac{1}{2}a\\tau$, $v_2 = u_0 + \\frac{3}{2}a\\tau$, $v_3 = u_0 + \\frac{5}{2}a\\tau$<br>2. Differences: $v_1 - v_2 = -a\\tau$ and $v_2 - v_3 = -a\\tau$<br>3. Ratio: $\\frac{v_1 - v_2}{v_2 - v_3} = \\frac{-a\\tau}{-a\\tau} = 1$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A train travelling at $u$ brakes with constant deceleration $a$. The velocity of the train when it has covered half of its stopping distance is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{\\sqrt{2}}$" },
+        { "key": "B", "text": "$\\dfrac{u}{2}$" },
+        { "key": "C", "text": "$\\dfrac{u}{4}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{3}u}{2}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Full stopping distance: $S = \\frac{u^2}{2a}$<br>2. At half distance $s = S/2 = \\frac{u^2}{4a}$: $$v^2 = u^2 - 2a\\left(\\frac{u^2}{4a}\\right) = u^2 - \\frac{u^2}{2} = \\frac{u^2}{2} \\implies v = \\frac{u}{\\sqrt{2}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle starts from rest with uniform acceleration $a$. If the velocity after covering distance $x$ is $v$, the distance covered when velocity becomes $2v$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2x$" },
+        { "key": "B", "text": "$4x$" },
+        { "key": "C", "text": "$8x$" },
+        { "key": "D", "text": "$16x$" }
+      ],
+      "correct": "B",
+      "solution": "From $v^2 = 2ax \\implies x = \\frac{v^2}{2a} \\propto v^2$.<br>When velocity doubles to $2v$, $x' = \\frac{(2v)^2}{2a} = 4x$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two cars $A$ and $B$ are moving in the same direction. Car $A$ is moving with constant speed $10\\text{ m/s}$, while Car $B$ starts from rest behind $A$ with constant acceleration $2\\text{ m/s}^2$. If the initial separation is $25\\text{ m}$, the time taken by Car $B$ to overtake Car $A$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ s}$" },
+        { "key": "B", "text": "$5\\text{ s}$" },
+        { "key": "C", "text": "$5(1 + \\sqrt{2})\\text{ s}$" },
+        { "key": "D", "text": "$2.5\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Relative initial velocity $u_{\\text{rel}} = u_B - u_A = -10\\text{ m/s}$<br>2. Relative acceleration $a_{\\text{rel}} = a_B - a_A = 2\\text{ m/s}^2$<br>3. Equation: $s_{\\text{rel}} = u_{\\text{rel}} t + \\frac{1}{2}a_{\\text{rel}} t^2 \\implies 25 = -10t + t^2 \\implies t^2 - 10t - 25 = 0$<br>4. $t = \\frac{10 + \\sqrt{100 + 100}}{2} = 5(1 + \\sqrt{2})\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body starting from rest moves with uniform acceleration. If it covers distances $x$ in first $2\\text{ s}$ and $y$ in next $2\\text{ s}$, then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$y = 2x$" },
+        { "key": "B", "text": "$y = 4x$" },
+        { "key": "C", "text": "$y = x$" },
+        { "key": "D", "text": "$y = 3x$" }
+      ],
+      "correct": "D",
+      "solution": "1. $x = s(2) = \\frac{1}{2}a(2)^2 = 2a$<br>2. $s(4) = \\frac{1}{2}a(4)^2 = 8a$<br>3. $y = s(4) - s(2) = 8a - 2a = 6a = 3(2a) = 3x$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body travels with uniform acceleration $a$. It passes two points $P$ and $Q$ with speeds $u$ and $v$ respectively. The speed of the body at the midpoint of $PQ$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{u^2 + v^2}{2}}$" },
+        { "key": "B", "text": "$\\dfrac{u + v}{2}$" },
+        { "key": "C", "text": "$\\sqrt{uv}$" },
+        { "key": "D", "text": "$\\dfrac{2uv}{u + v}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Let distance $PQ = 2s \\implies v^2 = u^2 + 2a(2s) \\implies 2as = \\frac{v^2 - u^2}{2}$<br>2. For midpoint speed $v_m$: $$v_m^2 = u^2 + 2as = u^2 + \\frac{v^2 - u^2}{2} = \\frac{u^2 + v^2}{2} \\implies v_m = \\sqrt{\\frac{u^2 + v^2}{2}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An object moves with uniform acceleration $a$ starting with initial velocity $u$. The displacement during the $n\\text{th}$ second ($s_n$) is derived as:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$s_n = u + \\dfrac{a}{2}(2n + 1)$" },
+        { "key": "B", "text": "$s_n = u + \\dfrac{a}{2}(2n - 1)$" },
+        { "key": "C", "text": "$s_n = u + a n$" },
+        { "key": "D", "text": "$s_n = u + a(n - 1)$" }
+      ],
+      "correct": "B",
+      "solution": "$$s_n = s(n) - s(n-1) = \\left(un + \\frac{1}{2}an^2\\right) - \\left(u(n-1) + \\frac{1}{2}a(n-1)^2\\right) = u + \\frac{a}{2}(2n - 1)$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along a straight line with uniform acceleration $a = 2\\text{ m/s}^2$ and initial velocity $u = -6\\text{ m/s}$. The distance travelled by the particle in the first $4\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ m}$" },
+        { "key": "B", "text": "$18\\text{ m}$" },
+        { "key": "C", "text": "$10\\text{ m}$" },
+        { "key": "D", "text": "$12\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Turning point: $v(t) = -6 + 2t = 0 \\implies t = 3\\text{ s}$<br>2. Position at $t = 3\\text{ s}$: $s(3) = -6(3) + \\frac{1}{2}(2)(9) = -9\\text{ m}$<br>3. Position at $t = 4\\text{ s}$: $s(4) = -6(4) + \\frac{1}{2}(2)(16) = -8\\text{ m}$<br>4. Total distance $= |s(3) - s(0)| + |s(4) - s(3)| = |-9| + |-8 - (-9)| = 9 + 1 = 10\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car accelerates from rest at rate $\\alpha$ for some time, after which it decelerates at rate $\\beta$ to come to rest. If total time elapsed is $T$, the total distance covered is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\alpha \beta T^2}{\\alpha + \\beta}$" },
+        { "key": "B", "text": "$\\dfrac{(\\alpha + \\beta)T^2}{2\\alpha \beta}$" },
+        { "key": "C", "text": "$\\dfrac{\\alpha \beta T^2}{4(\\alpha + \\beta)}$" },
+        { "key": "D", "text": "$\\dfrac{\\alpha \beta T^2}{2(\\alpha + \\beta)}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Peak velocity: $v_{\\max} = \\alpha t_1 = \\beta t_2 \\implies T = t_1 + t_2 = v_{\\max}\\left(\\frac{1}{\\alpha} + \\frac{1}{\\beta}\\right) \\implies v_{\\max} = \\frac{\\alpha \\beta T}{\\alpha + \\beta}$<br>2. Total distance: $s = \\frac{1}{2} T v_{\\max} = \\frac{\\alpha \\beta T^2}{2(\\alpha + \\beta)}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body released from rest from the top of a tower of height $H$ falls under gravity ($g = \\text{constant}$). The distance fallen in the last second of its motion is equal to the distance fallen in the first $3\\text{ seconds}$. The height $H$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$125\\text{ m}$" },
+        { "key": "B", "text": "$80\\text{ m}$" },
+        { "key": "C", "text": "$45\\text{ m}$" },
+        { "key": "D", "text": "$100\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Distance in first $3\\text{ s}$: $s_3 = \\frac{1}{2}(10)(3)^2 = 45\\text{ m}$<br>2. Distance in last second $T$: $s_T = 10(T - 0.5) = 45 \\implies T = 5\\text{ s}$<br>3. Total height: $H = \\frac{1}{2}g T^2 = \\frac{1}{2}(10)(5)^2 = 125\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The displacement $x$ of a particle moving with uniform acceleration is related to velocity $v$ as $v = \\sqrt{49 + 14x}$. The initial velocity and acceleration of the particle are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7\\text{ m/s}, \; 14\\text{ m/s}^2$" },
+        { "key": "B", "text": "$7\\text{ m/s}, \; 7\\text{ m/s}^2$" },
+        { "key": "C", "text": "$49\\text{ m/s}, \; 7\\text{ m/s}^2$" },
+        { "key": "D", "text": "$0\\text{ m/s}, \; 14\\text{ m/s}^2$" }
+      ],
+      "correct": "B",
+      "solution": "Squaring gives $v^2 = 49 + 14x$.<br>Comparing with $v^2 = u^2 + 2ax$: $u = \\sqrt{49} = 7\\text{ m/s}$ and $2a = 14 \\implies a = 7\\text{ m/s}^2$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A driver traveling at $72\\text{ km/h}$ sees an obstruction on the road and applies brakes after a reaction time of $0.5\\text{ s}$. If the brakes cause a uniform deceleration of $5\\text{ m/s}^2$, the total distance travelled before the car stops is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$40\\text{ m}$" },
+        { "key": "B", "text": "$30\\text{ m}$" },
+        { "key": "C", "text": "$50\\text{ m}$" },
+        { "key": "D", "text": "$60\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Speed $u = 72\\text{ km/h} = 20\\text{ m/s}$<br>2. Reaction distance: $s_1 = 20 \\times 0.5 = 10\\text{ m}$<br>3. Braking distance: $s_2 = \\frac{u^2}{2a} = \\frac{400}{2(5)} = 40\\text{ m}$<br>4. Total stopping distance $= 10 + 40 = 50\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bullet fired into a target loses half of its velocity after penetrating $3\\text{ cm}$. How much further will it penetrate before coming to rest, assuming uniform retardation?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.5\\text{ cm}$" },
+        { "key": "B", "text": "$2.0\\text{ cm}$" },
+        { "key": "C", "text": "$0.5\\text{ cm}$" },
+        { "key": "D", "text": "$1.0\\text{ cm}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $(u/2)^2 = u^2 - 2a(3) \\implies \\frac{u^2}{4} = u^2 - 6a \\implies 6a = \\frac{3}{4}u^2 \\implies 2a = \\frac{u^2}{4}$<br>2. For further penetration $s_2$ to rest: $0 = (u/2)^2 - 2a s_2 \\implies \\frac{u^2}{4} = \\left(\\frac{u^2}{4}\\right) s_2 \\implies s_2 = 1.0\\text{ cm}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body moves in a straight line with uniform acceleration. If it covers distances $s_1$ in time $t_1$ and $s_2$ in subsequent time $t_2$, the uniform acceleration $a$ is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2(s_2 t_1 - s_1 t_2)}{t_1 t_2 (t_1 + t_2)}$" },
+        { "key": "B", "text": "$\\dfrac{s_2 t_1 - s_1 t_2}{t_1 t_2 (t_1 + t_2)}$" },
+        { "key": "C", "text": "$\\dfrac{2(s_1 t_2 - s_2 t_1)}{t_1 t_2 (t_1 + t_2)}$" },
+        { "key": "D", "text": "$\\dfrac{s_2 - s_1}{t_1 + t_2}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\frac{s_1}{t_1} = u + \\frac{1}{2}a t_1$<br>2. $\\frac{s_1 + s_2}{t_1 + t_2} = u + \\frac{1}{2}a(t_1 + t_2)$<br>3. Subtracting: $\\frac{s_1 + s_2}{t_1 + t_2} - \\frac{s_1}{t_1} = \\frac{1}{2}a t_2 \\implies \\frac{s_2 t_1 - s_1 t_2}{t_1(t_1 + t_2)} = \\frac{1}{2}a t_2 \\implies a = \\frac{2(s_2 t_1 - s_1 t_2)}{t_1 t_2 (t_1 + t_2)}$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
