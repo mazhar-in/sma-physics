@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-001",
+    "title": "Units of Measurement, Systems of Units & Derived Units",
+    "publishDate": "2026-08-23",
+    "unit": "General Physics",
+    "chapter": "Units and Measurements"
+  },
+  "seo": {
+    "title": "Units of Measurement & Systems of Units MCQ Practice | SMA Physics",
+    "description": "JEE Main Physics Daily Practice Problem (DPP) on SI, CGS, FPS unit conversions, fundamental base quantities, and derived units. Includes complete step-by-step solutions.",
+    "keywords": "JEE Main Physics, Units and Measurements, SI Units, CGS to SI Conversion, Fundamental Base Units, Derived Units, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/units-of-measurement-systems-of-units",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Unit Conversion Between Different Physical Systems",
+    "tag": "Class 11 General Physics",
+    "summary": "A physical quantity remains invariant under changes of measurement systems: $Q = n_1 u_1 = n_2 u_2$. When transforming a dimensional quantity $[M^a L^b T^c]$ to a new system with custom base scales, the numerical value transforms inversely proportional to the ratio of base units.",
+    "keyFormula": "$$n_2 = n_1 \\left(\\frac{M_1}{M_2}\\right)^a \\left(\\frac{L_1}{L_2}\\right)^b \\left(\\frac{T_1}{T_2}\\right)^c$$",
+    "examTrap": "Supplementary units like plane angle (radian) and solid angle (steradian) have defined units in SI but are strictly dimensionless ($[M^0 L^0 T^0]$). Also remember that Coulomb is a derived unit ($A \\cdot s$), while Ampere is the fundamental SI base unit."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following sets represents quantities that are all fundamental base quantities in the International System of Units (SI)?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Length, mass, velocity, luminous intensity" },
+        { "key": "B", "text": "Mass, electric current, thermodynamic temperature, amount of substance" },
+        { "key": "C", "text": "Electric charge, time, mass, luminous intensity" },
+        { "key": "D", "text": "Length, force, time, temperature" }
+      ],
+      "correct": "B",
+      "solution": "The 7 SI fundamental base quantities are: Length (m), Mass (kg), Time (s), Electric Current (A), Thermodynamic Temperature (K), Amount of Substance (mol), and Luminous Intensity (cd).<br>Velocity, force, and electric charge ($Q=It$) are derived quantities.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the CGS system, the unit of force is the dyne. The ratio of $1\\text{ N}$ (SI unit of force) to $1\\text{ dyne}$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10^3$" },
+        { "key": "B", "text": "$10^5$" },
+        { "key": "C", "text": "$10^7$" },
+        { "key": "D", "text": "$10^{-5}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\text{Force} = \\text{Mass} \\times \\text{Acceleration}$<br>2. In SI: $1\\text{ N} = 1\\text{ kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}$<br>3. In CGS: $1\\text{ dyne} = 1\\text{ g}\\cdot\\text{cm}\\cdot\\text{s}^{-2}$<br>4. Converting SI to CGS: $$1\\text{ N} = (10^3\\text{ g}) \\times (10^2\\text{ cm}) \\times \\text{s}^{-2} = 10^5\\text{ dyne}$$ Thus, $\\frac{1\\text{ N}}{1\\text{ dyne}} = 10^5$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The FPS system of units uses Foot, Pound, and Second. Given that $1\\text{ foot} = 30.48\\text{ cm}$ and $1\\text{ pound (mass)} \\approx 453.6\\text{ g}$, the value of $1\\text{ slug}$ (the standard FPS unit of mass defined as $1\\text{ lbf}\\cdot\\text{s}^2/\\text{ft}$) in SI units ($\\text{kg}$) is approximately:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.4536\\text{ kg}$" },
+        { "key": "B", "text": "$9.81\\text{ kg}$" },
+        { "key": "C", "text": "$14.59\\text{ kg}$" },
+        { "key": "D", "text": "$32.17\\text{ kg}$" }
+      ],
+      "correct": "C",
+      "solution": "By definition in the FPS engineering gravitational/derived system, a slug is the mass that accelerates at $1\\text{ ft}\\cdot\\text{s}^{-2}$ under a force of $1\\text{ lbf}$ ($32.174\\text{ lb mass}$):<br>$$1\\text{ slug} = 32.174\\text{ lb} \\approx 32.174 \\times 0.45359\\text{ kg} \\approx 14.59\\text{ kg}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the SI system, plane angle and solid angle are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Fundamental quantities with units" },
+        { "key": "B", "text": "Derived quantities without units" },
+        { "key": "C", "text": "Supplementary/dimensionless derived quantities having units (radian and steradian)" },
+        { "key": "D", "text": "Fundamental quantities without units" }
+      ],
+      "correct": "C",
+      "solution": "Plane angle ($\\theta = l/r$, unit: radian) and solid angle ($\\Omega = A/r^2$, unit: steradian) are ratios of identical physical dimensions (length/length or area/area), making them dimensionless, yet they possess distinct supplementary units in SI.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The SI unit of surface tension is $\\text{N}\\cdot\\text{m}^{-1}$. In the CGS system, its unit is $\\text{dyne}\\cdot\\text{cm}^{-1}$. A value of $0.072\\text{ N}\\cdot\\text{m}^{-1}$ in the CGS system is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7.2\\times 10^{-4}\\text{ dyne}\\cdot\\text{cm}^{-1}$" },
+        { "key": "B", "text": "$0.72\\text{ dyne}\\cdot\\text{cm}^{-1}$" },
+        { "key": "C", "text": "$72\\text{ dyne}\\cdot\\text{cm}^{-1}$" },
+        { "key": "D", "text": "$720\\text{ dyne}\\cdot\\text{cm}^{-1}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Surface tension $T = \\frac{F}{L}$<br>2. $1\\text{ N}\\cdot\\text{m}^{-1} = \\frac{10^5\\text{ dyne}}{10^2\\text{ cm}} = 10^3\\text{ dyne}\\cdot\\text{cm}^{-1}$<br>3. Therefore: $$0.072\\text{ N}\\cdot\\text{m}^{-1} = 0.072 \\times 10^3 = 72\\text{ dyne}\\cdot\\text{cm}^{-1}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following is NOT a base unit in the SI system?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Candela (cd)" },
+        { "key": "B", "text": "Ampere (A)" },
+        { "key": "C", "text": "Coulomb (C)" },
+        { "key": "D", "text": "Mole (mol)" }
+      ],
+      "correct": "C",
+      "solution": "Coulomb (C) is a derived unit of electric charge defined as current multiplied by time ($1\\text{ C} = 1\\text{ A}\\cdot\\text{s}$). The base SI unit for electrical quantities is Ampere (A).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The universal gravitational constant $G$ in SI units is $6.67\\times 10^{-11}\\text{ N}\\cdot\\text{m}^2\\cdot\\text{kg}^{-2}$. Its numerical value in CGS units ($\\text{dyne}\\cdot\\text{cm}^2\\cdot\\text{g}^{-2}$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6.67\\times 10^{-8}$" },
+        { "key": "B", "text": "$6.67\\times 10^{-14}$" },
+        { "key": "C", "text": "$6.67\\times 10^{-5}$" },
+        { "key": "D", "text": "$6.67\\times 10^{-11}$" }
+      ],
+      "correct": "A",
+      "solution": "Dimensions of $G$ are $[M^{-1} L^3 T^{-2}]$.<br>Using unit conversion: $$n_2 = n_1 \\left(\\frac{M_1}{M_2}\\right)^{-1} \\left(\\frac{L_1}{L_2}\\right)^3 \\left(\\frac{T_1}{T_2}\\right)^{-2}$$ $$n_2 = 6.67\\times 10^{-11} \\times \\left(\\frac{1000\\text{ g}}{1\\text{ g}}\\right)^{-1} \\times \\left(\\frac{100\\text{ cm}}{1\\text{ cm}}\\right)^3 = 6.67\\times 10^{-11} \\times 10^{-3} \\times 10^6 = 6.67\\times 10^{-8}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The SI unit of dynamic viscosity $\\eta$ is $\\text{Pa}\\cdot\\text{s}$ ($\\text{kg}\\cdot\\text{m}^{-1}\\cdot\\text{s}^{-1}$), whereas its CGS unit is poise ($\\text{g}\\cdot\\text{cm}^{-1}\\cdot\\text{s}^{-1}$). $1\\text{ Pa}\\cdot\\text{s}$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.1\\text{ poise}$" },
+        { "key": "B", "text": "$1\\text{ poise}$" },
+        { "key": "C", "text": "$10\\text{ poise}$" },
+        { "key": "D", "text": "$100\\text{ poise}$" }
+      ],
+      "correct": "C",
+      "solution": "1. In SI: $1\\text{ Pa}\\cdot\\text{s} = 1\\text{ kg}\\cdot\\text{m}^{-1}\\cdot\\text{s}^{-1}$<br>2. Converting to CGS: $$1\\text{ Pa}\\cdot\\text{s} = \\frac{1000\\text{ g}}{(100\\text{ cm})\\cdot\\text{s}} = 10\\text{ g}\\cdot\\text{cm}^{-1}\\cdot\\text{s}^{-1} = 10\\text{ poise}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If a new system of units is chosen where the unit of mass is $2\\text{ kg}$, the unit of length is $5\\text{ m}$, and the unit of time is $10\\text{ s}$, then $1\\text{ Joule}$ of energy in this new system is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ new units}$" },
+        { "key": "B", "text": "$0.5\\text{ new units}$" },
+        { "key": "C", "text": "$4\\text{ new units}$" },
+        { "key": "D", "text": "$0.25\\text{ new units}$" }
+      ],
+      "correct": "A",
+      "solution": "Dimensions of Energy are $[M^1 L^2 T^{-2}]$.<br>$$n_2 = n_1 \\left(\\frac{M_1}{M_2}\\right)^1 \\left(\\frac{L_1}{L_2}\\right)^2 \\left(\\frac{T_1}{T_2}\\right)^{-2}$$ $$n_2 = 1 \\times \\left(\\frac{1\\text{ kg}}{2\\text{ kg}}\\right)^1 \\times \\left(\\frac{1\\text{ m}}{5\\text{ m}}\\right)^2 \\times \\left(\\frac{1\\text{ s}}{10\\text{ s}}\\right)^{-2} = 1 \\times \\frac{1}{2} \\times \\frac{1}{25} \\times 100 = 2\\text{ new units}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Which of the following derived units is correctly expressed purely in terms of SI fundamental units?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\text{Pascal (Pressure)} = \\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}$" },
+        { "key": "B", "text": "$\\text{Watt (Power)} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}$" },
+        { "key": "C", "text": "$\\text{Volt (Potential)} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-1}$" },
+        { "key": "D", "text": "$\\text{Tesla (Magnetic Field)} = \\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-1}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\text{Watt} = \\frac{\\text{Work}}{\\text{Time}} = \\frac{\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}}{\\text{s}} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}$ (Correct)<br>2. $\\text{Pascal} = \\frac{F}{A} = \\text{kg}\\cdot\\text{m}^{-1}\\cdot\\text{s}^{-2}$<br>3. $\\text{Volt} = \\frac{W}{Q} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{A}^{-1}$<br>4. $\\text{Tesla} = \\frac{F}{I L} = \\text{kg}\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-1}$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The density of a liquid is $13.6\\text{ g}\\cdot\\text{cm}^{-3}$ in CGS units. In a new system of units where the unit of mass is $100\\text{ g}$ and the unit of length is $10\\text{ cm}$, the numerical value of the density is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$136$" },
+        { "key": "B", "text": "$13.6$" },
+        { "key": "C", "text": "$1360$" },
+        { "key": "D", "text": "$1.36$" }
+      ],
+      "correct": "A",
+      "solution": "Dimensions of Density are $[M^1 L^{-3}]$.<br>$$n_2 = n_1 \\left(\\frac{M_1}{M_2}\\right)^1 \\left(\\frac{L_1}{L_2}\\right)^{-3}$$ $$n_2 = 13.6 \\times \\left(\\frac{1\\text{ g}}{100\\text{ g}}\\right)^1 \\times \\left(\\frac{1\\text{ cm}}{10\\text{ cm}}\\right)^{-3} = 13.6 \\times \\frac{1}{100} \\times 1000 = 136$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The heat capacity of a substance in SI units is expressed in $\\text{J}\\cdot\\text{K}^{-1}$. In terms of fundamental SI base units, it is written as:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{K}^{-1}$" },
+        { "key": "B", "text": "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}\\cdot\\text{K}^{-1}$" },
+        { "key": "C", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{K}^{-1}$" },
+        { "key": "D", "text": "$\\text{kg}\\cdot\\text{m}^{-1}\\cdot\\text{s}^{-2}\\cdot\\text{K}^{-1}$" }
+      ],
+      "correct": "A",
+      "solution": "Heat capacity $C = \\frac{Q}{\\Delta T}$.<br>Since Joule (energy) $= \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}$, dividing by temperature in Kelvin ($\\text{K}$) gives: $$[C] = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{K}^{-1}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In a system where the unit of force is $100\\text{ N}$, the unit of length is $10\\text{ m}$, and the unit of time is $100\\text{ s}$, the unit of mass in this system corresponds to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10^3\\text{ kg}$" },
+        { "key": "B", "text": "$10^4\\text{ kg}$" },
+        { "key": "C", "text": "$10^5\\text{ kg}$" },
+        { "key": "D", "text": "$10^2\\text{ kg}$" }
+      ],
+      "correct": "C",
+      "solution": "Since Force $F = M L T^{-2}$, we can isolate Mass $M$:<br>$$M = \\frac{F T^2}{L}$$ Substituting values: $$M = \\frac{100\\text{ N} \\times (100\\text{ s})^2}{10\\text{ m}} = \\frac{100 \\times 10000}{10} = 10^5\\text{ kg}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following physical quantities has a derived unit that is dimensionless in SI?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Permittivity of free space ($\\varepsilon_0$)" },
+        { "key": "B", "text": "Specific gravity (Relative density)" },
+        { "key": "C", "text": "Universal gas constant ($R$)" },
+        { "key": "D", "text": "Planck's constant ($h$)" }
+      ],
+      "correct": "B",
+      "solution": "Specific gravity is the ratio of the density of a substance to the density of pure water at $4^\\circ\\text{C}$. Being a pure ratio of two identical physical dimensions, it has no units and is dimensionless ($[M^0 L^0 T^0]$).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the CGS electrostatic unit (esu) system, the unit of electric charge is the statcoulomb. How many statcoulombs are there in $1\\text{ Coulomb}$ of charge?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\times 10^8$" },
+        { "key": "B", "text": "$3\\times 10^9$" },
+        { "key": "C", "text": "$1/(3\\times 10^9)$" },
+        { "key": "D", "text": "$9\\times 10^9$" }
+      ],
+      "correct": "B",
+      "solution": "From electrostatics conversions between SI and CGS-esu:<br>$$1\\text{ Coulomb} = 3\\times 10^9\\text{ statcoulomb (or esu of charge)}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The SI unit of electrical resistance is the Ohm ($\\Omega$). Expressed entirely in base units ($\\text{kg, m, s, A}$), $1\\ \\Omega$ is equivalent to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{A}^{-2}$" },
+        { "key": "B", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-2}$" },
+        { "key": "C", "text": "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-3}\\cdot\\text{A}^{-2}$" },
+        { "key": "D", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{A}^{-1}$" }
+      ],
+      "correct": "A",
+      "solution": "Resistance $R = \\frac{V}{I} = \\frac{\\text{Power}}{I^2} = \\frac{\\text{Work}}{\\text{Time}\\cdot I^2}$.<br>Expressing in base units: $$1\\ \\Omega = \\frac{\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}}{\\text{s}\\cdot\\text{A}^2} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{A}^{-2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The value of acceleration due to gravity is $g = 9.8\\text{ m}\\cdot\\text{s}^{-2}$. If the unit of length is chosen to be $1\\text{ km}$ and the unit of time is $1\\text{ minute}$, the numerical value of $g$ in this new system will be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$35.28$" },
+        { "key": "B", "text": "$3.528$" },
+        { "key": "C", "text": "$352.8$" },
+        { "key": "D", "text": "$0.3528$" }
+      ],
+      "correct": "A",
+      "solution": "Acceleration has dimensions $[L^1 T^{-2}]$.<br>Here $L_1 = 1\\text{ m}$, $T_1 = 1\\text{ s}$, $L_2 = 1000\\text{ m}$, $T_2 = 60\\text{ s}$.<br>$$n_2 = 9.8 \\times \\left(\\frac{1\\text{ m}}{1000\\text{ m}}\\right)^1 \\times \\left(\\frac{1\\text{ s}}{60\\text{ s}}\\right)^{-2} = 9.8 \\times \\frac{3600}{1000} = 9.8 \\times 3.6 = 35.28$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The SI unit of inductance is Henry (H). Which of the following combinations of base units correctly represents $1\\text{ H}$?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-2}$" },
+        { "key": "B", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-1}\\cdot\\text{A}^{-2}$" },
+        { "key": "C", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-1}$" },
+        { "key": "D", "text": "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-2}$" }
+      ],
+      "correct": "A",
+      "solution": "Magnetic energy stored in an inductor is $U = \\frac{1}{2} L I^2 \\implies L = \\frac{2U}{I^2}$.<br>Units of energy $= \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}$.<br>Dividing by $\\text{A}^2$: $$1\\text{ H} = \\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}\\cdot\\text{A}^{-2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The work done in moving a body is $10\\text{ J}$ in MKS/SI. If work is to be converted into CGS (erg), $10\\text{ J}$ corresponds to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10^6\\text{ erg}$" },
+        { "key": "B", "text": "$10^7\\text{ erg}$" },
+        { "key": "C", "text": "$10^8\\text{ erg}$" },
+        { "key": "D", "text": "$10^5\\text{ erg}$" }
+      ],
+      "correct": "C",
+      "solution": "1. In SI: $1\\text{ J} = 1\\text{ kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-2}$<br>2. Converting to CGS: $1\\text{ J} = 10^3\\text{ g} \\times 10^4\\text{ cm}^2 \\times \\text{s}^{-2} = 10^7\\text{ erg}$<br>3. For $10\\text{ J}$: $$10\\text{ J} = 10 \\times 10^7\\text{ erg} = 10^8\\text{ erg}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The Stefan-Boltzmann constant $\\sigma$ has the SI unit $\\text{W}\\cdot\\text{m}^{-2}\\cdot\\text{K}^{-4}$. In terms of SI base fundamental units, it is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\text{kg}\\cdot\\text{s}^{-3}\\cdot\\text{K}^{-4}$" },
+        { "key": "B", "text": "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-3}\\cdot\\text{K}^{-4}$" },
+        { "key": "C", "text": "$\\text{kg}\\cdot\\text{s}^{-2}\\cdot\\text{K}^{-4}$" },
+        { "key": "D", "text": "$\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}\\cdot\\text{K}^{-4}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Radiation energy flux $E = \\sigma T^4 \\implies \\sigma = \\frac{E}{T^4}$<br>2. $E$ is power per unit area: $\\frac{\\text{W}}{\\text{m}^2} = \\frac{\\text{kg}\\cdot\\text{m}^2\\cdot\\text{s}^{-3}}{\\text{m}^2} = \\text{kg}\\cdot\\text{s}^{-3}$<br>3. Dividing by $\\text{K}^4$: $$[\\sigma] = \\text{kg}\\cdot\\text{s}^{-3}\\cdot\\text{K}^{-4}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
