@@ -2,7 +2,7 @@
   "meta": {
     "dppId": "SMA-DPP-016",
     "title": "Relative Velocity in 2D: River-Boat & Rain-Man Problems",
-    "publishDate": "2026-08-23",
+    "publishDate": "2026-08-28",
     "unit": "Mechanics",
     "chapter": "Motion in a Plane"
   },
@@ -265,7 +265,7 @@
       "id": "q17",
       "exam": "JEE Main",
       "difficulty": "Level 2",
-      "statement": "Two particles $A$ and $B$ move with constant velocities $\\vec{v}_1$ and $\vec{v}_2$. At initial moment $t = 0$, their position vectors are $\vec{r}_1$ and $\vec{r}_2$. The condition for collision of $A$ and $B$ is:",
+      "statement": "Two particles $A$ and $B$ move with constant velocities $\\vec{v}_1$ and $\\vec{v}_2$. At initial moment $t = 0$, their position vectors are $\\vec{r}_1$ and $\\vec{r}_2$. The condition for collision of $A$ and $B$ is:",
       "image": "",
       "options": [
         { "key": "A", "text": "$\\vec{r}_1 - \\vec{r}_2 = \\vec{v}_1 - \\vec{v}_2$" },
