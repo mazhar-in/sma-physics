@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-013",
+    "date": "2026-08-25",
+    "jsonFile": "/dpps/dpp-013/dpp-013.json",
+    "pdfFile": "/dpps/dpp-013/SMA_DPP_013.pdf",
+    "title": "Motion Under Gravity: Free Fall, Vertical Projectiles & Multi-Body Collisions",
+    "chapter": "Motion in a Straight Line",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-012",
     "date": "2026-08-23",
     "jsonFile": "/dpps/dpp-012/dpp-012.json",
