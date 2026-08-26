@@ -2,7 +2,7 @@
   "meta": {
     "dppId": "SMA-DPP-015",
     "title": "Vectors Recap: Addition, Subtraction, Resolution & Direction Cosines",
-    "publishDate": "2026-08-23",
+    "publishDate": "2026-08-26",
     "unit": "Mechanics",
     "chapter": "Motion in a Plane / Mathematical Tools"
   },
@@ -124,7 +124,7 @@
         { "key": "D", "text": "$3$" }
       ],
       "correct": "D",
-      "solution": "Two non-zero unequal vectors can never cancel ($|\\vec{A}| \\ne |\\vec{B}|$). Three coplanar vectors with unequal magnitudes can satisfy the triangle rule ($\vec{A} + \\vec{B} + \\vec{C} = 0$), so the minimum number is 3.<br>Therefore, Option <strong>D</strong> is correct."
+      "solution": "Two non-zero unequal vectors can never cancel ($|\\vec{A}| \\ne |\\vec{B}|$). Three coplanar vectors with unequal magnitudes can satisfy the triangle rule ($\\vec{A} + \\vec{B} + \\vec{C} = 0$), so the minimum number is 3.<br>Therefore, Option <strong>D</strong> is correct."
     },
     {
       "id": "q08",

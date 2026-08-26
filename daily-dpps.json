@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-015",
+    "date": "2026-08-26",
+    "jsonFile": "/dpps/dpp-015/dpp-015.json",
+    "pdfFile": "/dpps/dpp-015/SMA_DPP_015.pdf",
+    "title": "Vectors Recap: Addition, Subtraction, Resolution & Direction Cosines",
+    "chapter": "Motion in a Plane / Mathematical Tools",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-014",
     "date": "2026-08-26",
     "jsonFile": "/dpps/dpp-014/dpp-014.json",

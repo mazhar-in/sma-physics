@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-026",
+    "title": "Law of Conservation of Linear Momentum: Derivation, Recoil Dynamics & Explosions",
+    "publishDate": "2026-08-24",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Conservation of Linear Momentum Derivation JEE Main Physics DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering the mathematical derivation of linear momentum conservation, recoil dynamics, explosion fragments, center of mass shift, and inelastic collisions.",
+    "keywords": "JEE Main Physics, Conservation of Momentum DPP, Momentum Derivation, Gun Recoil, Explosion Fragments, Boat and Man Problem, Variable Mass Rocket, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/conservation-of-linear-momentum-derivation",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Analytical Derivation & Applications of Linear Momentum Conservation",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Fundamental Derivation: Consider an isolated two-particle system with internal interaction forces $\\vec{F}_{12}$ and $\\vec{F}_{21}$. By Newton's second law: $\\vec{F}_{21} = \\frac{d\\vec{p}_1}{dt}$ and $\\vec{F}_{12} = \\frac{d\\vec{p}_2}{dt}$. By Newton's third law: $\\vec{F}_{12} + \\vec{F}_{21} = \\vec{0}$. Adding the two yields $\\frac{d}{dt}(\\vec{p}_1 + \\vec{p}_2) = \\vec{0} \\implies \\vec{P}_{\\text{total}} = \\text{constant}$. 2. Recoil & Explosions: When a stationary mass $M$ splits into fragments $m_1$ and $m_2$, $\\vec{p}_1 = -\\vec{p}_2$. Kinetic energies satisfy $\\frac{K_1}{K_2} = \\frac{m_2}{m_1}$. 3. Inelastic Collisions: In completely inelastic collisions, maximum fraction of initial kinetic energy lost is $\\frac{\\Delta K}{K_i} = \\frac{M}{m+M}$.",
+    "keyFormula": "$$\\frac{d\\vec{P}}{dt} = \\sum \\vec{F}_{\\text{ext}} = \\vec{0} \\implies \\vec{P} = \\text{constant}, \\quad \\frac{K_1}{K_2} = \\frac{m_2}{m_1}, \\quad \\vec{v}_{\\text{cm}} = \\frac{\\sum m_i \\vec{v}_i}{\\sum m_i} = \\text{constant}$$",
+    "examTrap": "Remember that linear momentum is a vector quantity. Even if external forces act along the vertical (e.g., gravity on a projectile), if $\\sum F_{\\text{ext}, x} = 0$, linear momentum remains strictly conserved along the horizontal $x$-direction throughout any explosion or internal breakup."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The law of conservation of linear momentum for an isolated two-body system is derived by combining:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Newton's first and third laws" },
+        { "key": "B", "text": "Newton's first and second laws" },
+        { "key": "C", "text": "Newton's second and third laws" },
+        { "key": "D", "text": "Law of conservation of energy and Newton's first law" }
+      ],
+      "correct": "C",
+      "solution": "Newton's second law provides the rate of momentum change ($\vec{F} = d\vec{p}/dt$), and Newton's third law provides the internal force cancellation ($\vec{F}_{12} + \vec{F}_{21} = \vec{0}$). Combining them proves that the total momentum of an isolated system is conserved.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A stationary nucleus of mass number $A$ decays by emitting an alpha particle ($^4\\text{He}$) with speed $v_\\alpha$. The recoil speed of the daughter nucleus is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{4 v_\\alpha}{A - 4}$" },
+        { "key": "B", "text": "$\\dfrac{4 v_\\alpha}{A}$" },
+        { "key": "C", "text": "$\\dfrac{A v_\\alpha}{A - 4}$" },
+        { "key": "D", "text": "$\\dfrac{(A - 4)v_\\alpha}{4}$" }
+      ],
+      "correct": "A",
+      "solution": "Initial momentum is zero. Daughter nucleus has mass $(A - 4)$: $$(A - 4)v_D - 4v_\\alpha = 0 \\implies v_D = \\frac{4 v_\\alpha}{A - 4}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bomb of mass $9\\text{ kg}$ initially at rest explodes into two fragments of masses $3\\text{ kg}$ and $6\\text{ kg}$. If the $3\\text{ kg}$ fragment flies off with kinetic energy $216\\text{ J}$, the total energy released in the explosion is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$216\\text{ J}$" },
+        { "key": "B", "text": "$432\\text{ J}$" },
+        { "key": "C", "text": "$648\\text{ J}$" },
+        { "key": "D", "text": "$324\\text{ J}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Equal magnitude of momentum $p_1 = p_2 = p$.<br>2. $\\frac{K_2}{K_1} = \\frac{m_1}{m_2} = \\frac{3}{6} = \\frac{1}{2} \\implies K_2 = \\frac{216}{2} = 108\\text{ J}$.<br>3. Total energy: $E = K_1 + K_2 = 216 + 108 = 324\\text{ J}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ moving with velocity $\\vec{v} = v_0\\hat{i}$ collides with a stationary particle of mass $2m$ and sticks to it. The common velocity of the composite body after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_0}{2}\\hat{i}$" },
+        { "key": "B", "text": "$\\dfrac{v_0}{3}\\hat{i}$" },
+        { "key": "C", "text": "$\\dfrac{2v_0}{3}\\hat{i}$" },
+        { "key": "D", "text": "$\\dfrac{v_0}{4}\\hat{i}$" }
+      ],
+      "correct": "B",
+      "solution": "$$m v_0\\hat{i} = (m + 2m)\\vec{v}_f \\implies \\vec{v}_f = \\frac{v_0}{3}\\hat{i}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A shell of mass $m$ is projected from the ground with speed $u$ at an angle $\theta$ to the horizontal. At the highest point of its trajectory, it explodes into two equal fragments. If one fragment retraces its path back to the launch point, the speed of the other fragment just after explosion is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3u\\cos\\theta$" },
+        { "key": "B", "text": "$2u\\cos\\theta$" },
+        { "key": "C", "text": "$u\\cos\\theta$" },
+        { "key": "D", "text": "$4u\\cos\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Horizontal momentum before explosion: $m u\\cos\\theta$. For fragment 1 to retrace, its velocity must be $-u\\cos\\theta$.<br>By momentum conservation: $$m(u\\cos\\theta) = \\frac{m}{2}(-u\\cos\\theta) + \\frac{m}{2}v_2 \\implies v_2 = 3u\\cos\\theta$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A person of mass $M = 60\\text{ kg}$ standing at one end of a stationary boat of mass $m = 140\\text{ kg}$ and length $L = 5\\text{ m}$ on calm water walks to the other end of the boat. Neglecting water resistance, the displacement of the boat relative to the water is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ m}$" },
+        { "key": "B", "text": "$3.5\\text{ m}$" },
+        { "key": "C", "text": "$1.5\\text{ m}$" },
+        { "key": "D", "text": "$2.5\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "Center of mass remains stationary: $$M(L - x) - m x = 0 \\implies x = \\frac{ML}{M + m} = \\frac{60 \\times 5}{60 + 140} = \\frac{300}{200} = 1.5\\text{ m}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stationary body explodes into three fragments of masses in the ratio $1 : 1 : 2$. The two fragments of equal mass fly off along mutually perpendicular directions with speed $30\\text{ m/s}$ each. The speed of the third heavier fragment is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30\\sqrt{2}\\text{ m/s}$" },
+        { "key": "B", "text": "$15\\sqrt{2}\\text{ m/s}$" },
+        { "key": "C", "text": "$15\\text{ m/s}$" },
+        { "key": "D", "text": "$30\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Resultant momentum of perpendicular pieces: $p_{12} = \\sqrt{(30m)^2 + (30m)^2} = 30\\sqrt{2}m$.<br>2. For the third mass $(2m)$: $(2m)v_3 = 30\\sqrt{2}m \\implies v_3 = 15\\sqrt{2}\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Under which of the following conditions is the linear momentum of a system of particles strictly conserved along the $x$-axis?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "When total mechanical energy is conserved" },
+        { "key": "B", "text": "When the net force acting on each particle is zero" },
+        { "key": "C", "text": "When internal forces between particles cancel out" },
+        { "key": "D", "text": "When the $x$-component of the net external force is zero ($\\sum F_{\\text{ext}, x} = 0$)" }
+      ],
+      "correct": "D",
+      "solution": "Since $\\frac{dP_x}{dt} = \\sum F_{\\text{ext}, x}$, linear momentum along $x$ is constant if and only if the net external force in the $x$-direction is zero.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A gun of mass $M = 4\\text{ kg}$ fires a bullet of mass $m = 50\\text{ g}$ with a velocity $v = 400\\text{ m/s}$. The ratio of the kinetic energy of the bullet to that of the gun is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$80 : 1$" },
+        { "key": "B", "text": "$1 : 80$" },
+        { "key": "C", "text": "$40 : 1$" },
+        { "key": "D", "text": "$160 : 1$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{K_{\\text{bullet}}}{K_{\\text{gun}}} = \\frac{p^2/(2m)}{p^2/(2M)} = \\frac{M}{m} = \\frac{4\\text{ kg}}{0.05\\text{ kg}} = 80$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A heavy trolley of mass $M = 100\\text{ kg}$ is moving with a constant speed $v_0 = 10\\text{ m/s}$ on frictionless rails. A boy of mass $m = 50\\text{ kg}$ runs on the trolley with a speed of $u = 3\\text{ m/s}$ relative to the trolley in the forward direction. The final speed of the trolley relative to the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10.0\\text{ m/s}$" },
+        { "key": "B", "text": "$9.0\\text{ m/s}$" },
+        { "key": "C", "text": "$8.0\\text{ m/s}$" },
+        { "key": "D", "text": "$11.0\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Initial momentum: $P_i = (100 + 50)(10) = 1500\\text{ kg}\\cdot\\text{m/s}$.<br>2. Final momentum: $100 v_T + 50(v_T + 3) = 1500 \\implies 150 v_T = 1350 \\implies v_T = 9.0\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a two-body interaction, particle 1 exerts force $\\vec{F}_{12}$ on particle 2 for time $\\Delta t$. During the derivation of momentum conservation, which statement represents the core algebraic step?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{F}_{12}\\Delta t = \\vec{0}$" },
+        { "key": "B", "text": "$\\Delta \\vec{p}_1 + \\Delta \\vec{p}_2 = \\vec{F}_{\\text{ext}}\\Delta t$" },
+        { "key": "C", "text": "$\\vec{F}_{12} = m_1 \\vec{a}_1$" },
+        { "key": "D", "text": "$\\Delta \\vec{p}_1 + \\Delta \\vec{p}_2 = (\\vec{F}_{21} + \\vec{F}_{12})\\Delta t = \\vec{0}$" }
+      ],
+      "correct": "D",
+      "solution": "Using $\\Delta \\vec{p}_1 = \\vec{F}_{21}\\Delta t$ and $\\Delta \\vec{p}_2 = \\vec{F}_{12}\\Delta t$, substituting $\\vec{F}_{12} = -\\vec{F}_{21}$ proves $\\Delta \\vec{p}_1 + \\Delta \\vec{p}_2 = \\vec{0}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A flatcar of mass $M = 200\\text{ kg}$ is at rest on a frictionless track. Two men, each of mass $m = 50\\text{ kg}$, jump off the rear end of the car with horizontal velocity $u = 4\\text{ m/s}$ relative to the car. The final speed of the flatcar if both men jump simultaneously is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.50\\text{ m/s}$" },
+        { "key": "B", "text": "$1.00\\text{ m/s}$" },
+        { "key": "C", "text": "$1.33\\text{ m/s}$" },
+        { "key": "D", "text": "$1.71\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "$$M v_c - 2m(u - v_c) = 0 \\implies 200 v_c - 100(4 - v_c) = 0 \\implies 300 v_c = 400 \\implies v_c \\approx 1.33\\text{ m/s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A rocket of mass $m$ in deep space expels a mass $\\Delta m$ with speed $u$ relative to the rocket during time $\\Delta t$. The governing differential equation of motion obtained from momentum conservation is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m\\dfrac{dv}{dt} = u\\dfrac{dm}{dt}$" },
+        { "key": "B", "text": "$m\\dfrac{dv}{dt} = -u\\dfrac{dm}{dt}$" },
+        { "key": "C", "text": "$\\dfrac{d(mv)}{dt} = 0$" },
+        { "key": "D", "text": "$v\\dfrac{dm}{dt} = -m\\dfrac{dv}{dt}$" }
+      ],
+      "correct": "B",
+      "solution": "Momentum conservation for the variable mass system yields $m dv = -u dm \\implies m\\frac{dv}{dt} = -u\\frac{dm}{dt}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball of mass $m_1 = 0.5\\text{ kg}$ moving at $6\\text{ m/s}$ collides head-on with a stationary ball of mass $m_2 = 1.0\\text{ kg}$. If the collision is perfectly elastic, the velocity of the $0.5\\text{ kg}$ ball after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-2.0\\text{ m/s}$" },
+        { "key": "B", "text": "$+2.0\\text{ m/s}$" },
+        { "key": "C", "text": "$-4.0\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$v_1 = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)u_1 = \\left(\\frac{0.5 - 1.0}{0.5 + 1.0}\\right)(6) = -2.0\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bullet of mass $m = 10\\text{ g}$ moving horizontally with velocity $v = 400\\text{ m/s}$ strikes a wooden block of mass $M = 3.99\\text{ kg}$ suspended by a light vertical string of length $L = 1\\text{ m}$ and gets embedded in it. The maximum vertical height $h$ to which the combined block-bullet system rises is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.10\\text{ m}$" },
+        { "key": "B", "text": "$0.20\\text{ m}$" },
+        { "key": "C", "text": "$0.50\\text{ m}$" },
+        { "key": "D", "text": "$0.05\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Common speed: $(0.01)(400) = (4)V_{\\text{common}} \\implies V_{\\text{common}} = 1.0\\text{ m/s}$.<br>2. Maximum height: $h = \\frac{V_{\\text{common}}^2}{2g} = \\frac{1}{20} = 0.05\\text{ m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A piece of wood of mass $M = 3\\text{ kg}$ is dropped from a tower. At $t = 2\\text{ s}$, a bullet of mass $m = 1\\text{ kg}$ fired vertically upward with initial speed $100\\text{ m/s}$ ($v_b = 80\\text{ m/s}$ at $t=2\\text{ s}$) collides and embeds in the wood. The velocity of the combined mass immediately after collision is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-5\\text{ m/s}$" },
+        { "key": "B", "text": "$+10\\text{ m/s}$" },
+        { "key": "C", "text": "$+5\\text{ m/s}$" },
+        { "key": "D", "text": "$-10\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "Velocity of wood: $v_w = -gt = -20\\text{ m/s}$.<br>Velocity of bullet: $v_b = 80\\text{ m/s}$.<br>By momentum conservation: $$3(-20) + 1(80) = (3 + 1)V_f \\implies 4 V_f = 20 \\implies V_f = +5\\text{ m/s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the net external force acting on a system of particles is zero ($\\sum \\vec{F}_{\\text{ext}} = \\vec{0}$), which of the following remains strictly constant?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Total kinetic energy of the system" },
+        { "key": "B", "text": "Velocity of the center of mass of the system" },
+        { "key": "C", "text": "Individual velocities of all constituent particles" },
+        { "key": "D", "text": "Potential energy of the system" }
+      ],
+      "correct": "B",
+      "solution": "Zero net external force guarantees zero acceleration of the center of mass, keeping $\\vec{v}_{\\text{cm}}$ strictly constant.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ collides with a stationary particle of mass $M$. For a completely inelastic collision in one dimension, the fraction of initial kinetic energy lost ($\\frac{\\Delta K}{K_i}$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m}{m + M}$" },
+        { "key": "B", "text": "$\\dfrac{M - m}{M + m}$" },
+        { "key": "C", "text": "$\\dfrac{m^2}{(m + M)^2}$" },
+        { "key": "D", "text": "$\\dfrac{M}{m + M}$" }
+      ],
+      "correct": "D",
+      "solution": "$$\\frac{\\Delta K}{K_i} = 1 - \\frac{K_f}{K_i} = 1 - \\frac{m}{m + M} = \\frac{M}{m + M}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A projectile of mass $M$ is fired from the ground with velocity $v_0$ at angle $\\alpha$. At the highest point of its flight, it splits into two fragments of masses $M/3$ and $2M/3$. If the lighter fragment falls vertically downward with zero horizontal velocity, the distance from the launch point where the heavier fragment hits the ground is: ($R$ is original range)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{5}{4}R = 1.25 R$" },
+        { "key": "B", "text": "$\\dfrac{3}{2}R = 1.50 R$" },
+        { "key": "C", "text": "$\\dfrac{4}{3}R \\approx 1.33 R$" },
+        { "key": "D", "text": "$2 R$" }
+      ],
+      "correct": "A",
+      "solution": "1. Horizontal speed of heavier fragment: $M v_x = \\frac{2M}{3}v_2 \\implies v_2 = \\frac{3}{2}v_x$.<br>2. Extra horizontal distance in remaining time $T/2$: $\\Delta x = \\left(\\frac{3}{2}v_x\\right)\\left(\\frac{T}{2}\\right) = \\frac{3}{4}R$.<br>3. Total range: $X = \\frac{R}{2} + \\frac{3}{4}R = \\frac{5}{4}R = 1.25R$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 2\\text{ kg}$ is placed on a triangular wedge of mass $M = 8\\text{ kg}$ resting on a smooth horizontal floor. The block is released from rest at height $h = 1\\text{ m}$ on the smooth incline. When the block reaches the floor, the speed of the wedge is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ m/s}$" },
+        { "key": "B", "text": "$4.0\\text{ m/s}$" },
+        { "key": "C", "text": "$1.0\\text{ m/s}$" },
+        { "key": "D", "text": "$0.5\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Horizontal momentum: $8 V_w = 2 v_{bx} \\implies v_{bx} = 4 V_w$.<br>2. Energy conservation: $mgh = \\frac{1}{2}M V_w^2 + \\frac{1}{2}m v_{bx}^2 \\implies 20 = 4 V_w^2 + 16 V_w^2 = 20 V_w^2 \\implies V_w = 1.0\\text{ m/s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    }
+  ]
+}
