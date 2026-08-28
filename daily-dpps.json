@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-018",
+    "date": "2026-08-29",
+    "jsonFile": "/dpps/dpp-018/dpp-018.json",
+    "pdfFile": "/dpps/dpp-018/SMA_DPP_018.pdf",
+    "title": "Horizontal Projectile Motion: Time of Flight, Range, Trajectory & Velocity Vectors",
+    "chapter": "Motion in a Plane",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-017",
     "date": "2026-08-28",
     "jsonFile": "/dpps/dpp-017/dpp-017.json",
