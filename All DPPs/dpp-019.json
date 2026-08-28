@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-019",
+    "title": "Oblique Projectile Motion: Maximum Height, Flight Time, Range & Trajectory",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Plane"
+  },
+  "seo": {
+    "title": "Oblique Projectile Motion JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering oblique projectile formulas, complementary angles, range-height identities, trajectory equation in terms of range, radius of curvature, and two-pole problems.",
+    "keywords": "JEE Main Physics, Oblique Projectile DPP, Time of Flight, Maximum Height, Horizontal Range, Trajectory Equation, Complementary Angles, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/oblique-projectile-motion-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Analytical Kinematics of Ground-to-Ground Oblique Projectiles",
+    "tag": "Class 11 Mechanics",
+    "summary": "For an oblique projectile launched at angle $\\theta$ with velocity $u$: (1) Time of flight: $T = \\frac{2u\\sin\\theta}{g}$. (2) Maximum height: $H = \\frac{u^2\\sin^2\\theta}{2g}$. (3) Horizontal range: $R = \\frac{u^2\\sin 2\\theta}{g} = \\frac{2u_x u_y}{g}$. (4) Trajectory in terms of range: $y = x\\tan\\theta\\left(1 - \\frac{x}{R}\\right)$. (5) Complementary angles: For angles $\\theta$ and $90^\\circ - \\theta$, ranges are identical ($R_1 = R_2 = R$), with $R = 4\\sqrt{H_1 H_2}$ and $T_1 T_2 = \\frac{2R}{g}$.",
+    "keyFormula": "$$T = \\frac{2u\\sin\\theta}{g}, \\quad H = \\frac{u^2\\sin^2\\theta}{2g}, \\quad R = \\frac{u^2\\sin 2\\theta}{g}, \\quad y = x\\tan\\theta\\left(1 - \\frac{x}{R}\\right), \\quad R = 4\\sqrt{H_1 H_2}$$",
+    "examTrap": "When a problem states that $R = nH$, remember the master relation $\\tan\\theta = \\frac{4}{n}$ (for $R = 4H \\implies \\theta = 45^\\circ$; for $R = H \\implies \\tan\\theta = 4$). At the peak, speed is non-zero ($v_{\\min} = u\\cos\\theta$), and radius of curvature is $R_c = \\frac{u^2\\cos^2\\theta}{g}$ because normal acceleration is $a_n = g$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A projectile is fired with an initial speed $u$ at an angle $\\theta$ with the horizontal. The total time of flight $T$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u\\sin\\theta}{g}$" },
+        { "key": "B", "text": "$\\dfrac{2u\\sin\\theta}{g}$" },
+        { "key": "C", "text": "$\\dfrac{u\\cos\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{2u\\tan\theta}{g}$" }
+      ],
+      "correct": "B",
+      "solution": "Setting vertical displacement $y(T) = 0$: $$(u\\sin\\theta)T - \\frac{1}{2}g T^2 = 0 \\implies T = \\frac{2u\\sin\\theta}{g}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the horizontal range of a projectile is four times its maximum height ($R = 4H$), the angle of projection $\\theta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$60^\\circ$" },
+        { "key": "C", "text": "$45^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\frac{R}{H} = \\frac{4}{\\tan\\theta}$<br>2. Given $R = 4H \\implies 4 = \\frac{4}{\\tan\\theta} \\implies \\tan\\theta = 1 \\implies \\theta = 45^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two projectiles are thrown with the same initial speed $u$ at complementary angles $\\theta$ and $(90^\\circ - \\theta)$. If $H_1$ and $H_2$ are their maximum heights and $R$ is their common range, then $R$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\sqrt{H_1 H_2}$" },
+        { "key": "B", "text": "$H_1 + H_2$" },
+        { "key": "C", "text": "$\\sqrt{H_1 H_2}$" },
+        { "key": "D", "text": "$4\\sqrt{H_1 H_2}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $H_1 = \\frac{u^2\\sin^2\\theta}{2g}$, $H_2 = \\frac{u^2\\cos^2\\theta}{2g}$<br>2. $H_1 H_2 = \\frac{(u^2\\sin 2\\theta)^2}{16g^2} = \\frac{R^2}{16} \\implies R = 4\\sqrt{H_1 H_2}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In terms of the horizontal range $R$, the standard equation of trajectory of an oblique projectile is written as:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$y = x\\tan\\theta\\left(1 - \\dfrac{x}{R}\\right)$" },
+        { "key": "B", "text": "$y = x\\cot\\theta\\left(1 - \\dfrac{x}{R}\\right)$" },
+        { "key": "C", "text": "$y = x\\tan\\theta\\left(1 + \\dfrac{x}{R}\\right)$" },
+        { "key": "D", "text": "$y = \\dfrac{x}{R}\\tan\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "$$y = x\\tan\\theta - \\frac{gx^2}{2u^2\\cos^2\\theta} = x\\tan\\theta\\left(1 - \\frac{gx}{2u^2\\sin\\theta\\cos\\theta}\\right) = x\\tan\\theta\\left(1 - \\frac{x}{R}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is projected with velocity $u$ at an angle $\\theta$ to the horizontal. The radius of curvature of its trajectory at the highest point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{g}$" },
+        { "key": "B", "text": "$\\dfrac{u^2\\cos^2\\theta}{g}$" },
+        { "key": "C", "text": "$\\dfrac{u^2\\sin^2\\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{u^2}{g\\cos\\theta}$" }
+      ],
+      "correct": "B",
+      "solution": "At the peak, velocity is horizontal ($v = u\\cos\\theta$) and acceleration perpendicular to velocity is $a_n = g$. Radius of curvature: $$R_c = \\frac{v^2}{a_n} = \\frac{u^2\\cos^2\\theta}{g}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The kinetic energy of a projectile at its highest point is found to be half of its initial kinetic energy at launch. The angle of projection is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$60^\\circ$" },
+        { "key": "C", "text": "$45^\\circ$" },
+        { "key": "D", "text": "$75^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. $K_{\\text{top}} = \\frac{1}{2}m(u\\cos\\theta)^2 = K_0\\cos^2\\theta$<br>2. $\\cos^2\\theta = \\frac{1}{2} \\implies \\cos\\theta = \\frac{1}{\\sqrt{2}} \\implies \\theta = 45^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For two projectiles launched with the same speed at complementary angles $\\theta$ and $(90^\\circ - \\theta)$, if $T_1$ and $T_2$ are their respective times of flight and $R$ is their horizontal range, then $T_1 T_2$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R}{g}$" },
+        { "key": "B", "text": "$\\dfrac{4R}{g}$" },
+        { "key": "C", "text": "$\\dfrac{R}{2g}$" },
+        { "key": "D", "text": "$\\dfrac{2R}{g}$" }
+      ],
+      "correct": "D",
+      "solution": "$$T_1 T_2 = \\left(\\frac{2u\\sin\\theta}{g}\\right)\\left(\\frac{2u\\cos\\theta}{g}\\right) = \\frac{2}{g}\\left(\\frac{u^2\\sin 2\\theta}{g}\\right) = \\frac{2R}{g}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The equation of trajectory of a projectile is given by $y = \\sqrt{3}x - 5x^2$ (where $x, y$ are in meters and $g = 10\\text{ m/s}^2$). The initial speed of projection $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\sqrt{2}\\text{ m/s}$" },
+        { "key": "B", "text": "$4\\text{ m/s}$" },
+        { "key": "C", "text": "$2\\text{ m/s}$" },
+        { "key": "D", "text": "$\\sqrt{3}\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\tan\\theta = \\sqrt{3} \\implies \\theta = 60^\\circ \\implies \\cos\\theta = 1/2$<br>2. $\\frac{g}{2u^2\\cos^2\\theta} = 5 \\implies \\frac{10}{2u^2(1/4)} = 5 \\implies \\frac{20}{u^2} = 5 \\implies u^2 = 4 \\implies u = 2\\sqrt{2}\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A projectile is launched from ground level with speed $u$ at angle $\\theta$. The angle $\\alpha$ made by the velocity vector with the horizontal at time $t$ is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\alpha = \\dfrac{u\\sin\\theta}{gt}$" },
+        { "key": "B", "text": "$\\tan\\alpha = \\tan\\theta - \\dfrac{gt}{u\\cos\\theta}$" },
+        { "key": "C", "text": "$\\tan\\alpha = \\tan\\theta + \\dfrac{gt}{u\\cos\\theta}$" },
+        { "key": "D", "text": "$\\tan\\alpha = \\dfrac{u\\cos\\theta - gt}{u\\sin\\theta}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\tan\\alpha = \\frac{v_y}{v_x} = \\frac{u\\sin\\theta - gt}{u\\cos\\theta} = \\tan\\theta - \\frac{gt}{u\\cos\\theta}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is projected from the ground with speed $u$ at an angle $\\theta$. The magnitude of change in momentum of the ball over the entire time of flight is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2mu$" },
+        { "key": "B", "text": "$2mu\\cos\\theta$" },
+        { "key": "C", "text": "$2mu\\sin\\theta$" },
+        { "key": "D", "text": "$mu\\sin\\theta$" }
+      ],
+      "correct": "C",
+      "solution": "Horizontal momentum is conserved ($\\Delta p_x = 0$). Vertical momentum changes from $+mu\\sin\\theta$ to $-mu\\sin\\theta$: $$|\\Delta\\vec{p}| = |-2mu\\sin\\theta\\hat{j}| = 2mu\\sin\\theta$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected from ground level with speed $u$ at angle $\\theta$. The average velocity of the projectile between the instant of projection and the instant it lands back on the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$u$" },
+        { "key": "B", "text": "$u\\sin\\theta$" },
+        { "key": "C", "text": "$\\dfrac{u}{2}$" },
+        { "key": "D", "text": "$u\\cos\\theta$" }
+      ],
+      "correct": "D",
+      "solution": "$$\\vec{v}_{\\text{avg}} = \\frac{\\vec{R}}{T} = \\frac{(u\\cos\\theta) T\\hat{i}}{T} = u\\cos\\theta\\hat{i}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If $R$ is the maximum horizontal range achievable for a projectile with a given launch speed, the maximum height attained during that optimal launch is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R}{4}$" },
+        { "key": "B", "text": "$\\dfrac{R}{2}$" },
+        { "key": "C", "text": "$R$" },
+        { "key": "D", "text": "$\\dfrac{R}{8}$" }
+      ],
+      "correct": "A",
+      "solution": "Maximum range occurs at $\\theta = 45^\\circ$ ($R_{\\max} = u^2/g$). At $\\theta = 45^\\circ$: $$H = \\frac{u^2\\sin^2 45^\\circ}{2g} = \\frac{u^2(1/2)}{2g} = \\frac{u^2}{4g} = \\frac{R_{\\max}}{4}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is projected with velocity $u$ at angle $\\theta$. The time $t$ after launch at which its velocity vector becomes perpendicular to the initial velocity vector $\\vec{u}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{g\\sin\\theta}$" },
+        { "key": "B", "text": "$\\dfrac{u}{g\\sin\\theta}$ (provided $\\theta > 45^\\circ$)" },
+        { "key": "C", "text": "$\\dfrac{u\\cos\\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{2u}{g\\cos\\theta}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\vec{u} \\cdot \\vec{v}(t) = 0 \\implies u^2\\cos^2\\theta + u\\sin\\theta(u\\sin\\theta - gt) = 0$<br>2. $u^2 - ugt\\sin\\theta = 0 \\implies t = \\frac{u}{g\\sin\\theta}$ (physically realisable during flight only if $t \\le T \\implies \\theta \\ge 45^\\circ$).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A projectile has a maximum height $H = 20\\text{ m}$ and range $R = 80\\text{ m}$. The initial velocity of projection is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ m/s}$" },
+        { "key": "B", "text": "$40\\text{ m/s}$" },
+        { "key": "C", "text": "$20\\sqrt{2}\\text{ m/s}$" },
+        { "key": "D", "text": "$10\\sqrt{5}\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\tan\\theta = \\frac{4H}{R} = \\frac{4(20)}{80} = 1 \\implies \\theta = 45^\\circ$<br>2. $H = \\frac{u^2\\sin^2 45^\\circ}{2g} = 20 \\implies \\frac{u^2/2}{20} = 20 \\implies u^2 = 800 \\implies u = 20\\sqrt{2}\\text{ m/s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball thrown at angle $\\theta$ passes over two vertical poles of equal height $h$ situated at distances $d_1$ and $d_2$ from the point of projection. The horizontal range $R$ of the projectile is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{d_1 d_2}$" },
+        { "key": "B", "text": "$\\dfrac{d_1 + d_2}{2}$" },
+        { "key": "C", "text": "$\\dfrac{2d_1 d_2}{d_1 + d_2}$" },
+        { "key": "D", "text": "$d_1 + d_2$" }
+      ],
+      "correct": "D",
+      "solution": "From trajectory $h = d_1\\tan\\theta(1 - d_1/R) = d_2\\tan\\theta(1 - d_2/R)$. Equating gives $d_1 - d_1^2/R = d_2 - d_2^2/R \\implies (d_1 - d_2) = \\frac{d_1^2 - d_2^2}{R} \\implies R = d_1 + d_2$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q15, the height $h$ of the two poles in terms of $d_1, d_2,$ and launch angle $\theta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{d_1 d_2 \\tan\\theta}{d_1 + d_2}$" },
+        { "key": "B", "text": "$\\dfrac{(d_1 + d_2)\\tan\theta}{d_1 d_2}$" },
+        { "key": "C", "text": "$(d_1 + d_2)\\tan\theta$" },
+        { "key": "D", "text": "$\\sqrt{d_1 d_2}\\tan\theta$" }
+      ],
+      "correct": "A",
+      "solution": "$$h = d_1\\tan\\theta\\left(1 - \\frac{d_1}{d_1 + d_2}\\right) = \\frac{d_1 d_2\\tan\\theta}{d_1 + d_2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The speed of a projectile at its highest point is $\\dfrac{\\sqrt{3}}{2}u$, where $u$ is its launch speed. The horizontal range of the projectile is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{2g}$" },
+        { "key": "B", "text": "$\\dfrac{\\sqrt{3}u^2}{2g}$" },
+        { "key": "C", "text": "$\\dfrac{u^2}{g}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{3}u^2}{g}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $u\\cos\\theta = \\frac{\\sqrt{3}}{2}u \\implies \\theta = 30^\\circ$<br>2. $R = \\frac{u^2\\sin 60^\\circ}{g} = \\frac{\\sqrt{3}u^2}{2g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body is projected at an angle $\\theta = 30^\\circ$ with kinetic energy $K$. Its potential energy at the highest point (taking launch level as $PE = 0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3K}{4}$" },
+        { "key": "B", "text": "$\\dfrac{K}{2}$" },
+        { "key": "C", "text": "$\\dfrac{K}{4}$" },
+        { "key": "D", "text": "$\\dfrac{K}{8}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $K_{\\text{top}} = K\\cos^2(30^\\circ) = \\frac{3}{4}K$<br>2. Potential energy $U = K - K_{\\text{top}} = K - \\frac{3}{4}K = \\frac{K}{4}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along a parabolic path $y = ax - bx^2$ under gravity where $x, y$ are horizontal and vertical displacements. The angle of projection $\\theta$ and initial speed $u$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\theta = b, \\; u = \\sqrt{\\dfrac{g(1+a^2)}{2b}}$" },
+        { "key": "B", "text": "$\\tan\\theta = a, \\; u = \\sqrt{\\dfrac{g}{2b}}$" },
+        { "key": "C", "text": "$\\tan\\theta = \\dfrac{a}{b}, \\; u = \\sqrt{\\dfrac{g}{2ab}}$" },
+        { "key": "D", "text": "$\\tan\\theta = a, \\; u = \\sqrt{\\dfrac{g(1+a^2)}{2b}}$" }
+      ],
+      "correct": "D",
+      "solution": "Comparing with $y = x\\tan\\theta - \\frac{g\\sec^2\\theta}{2u^2}x^2$:<br>1. $\\tan\\theta = a$<br>2. $b = \\frac{g(1+\\tan^2\\theta)}{2u^2} = \\frac{g(1+a^2)}{2u^2} \\implies u = \\sqrt{\\frac{g(1+a^2)}{2b}}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The time of flight $T$ and horizontal range $R$ of an oblique projectile are related by $g T^2 = 2R\\tan\\theta$. If the projection speed is doubled keeping $\\theta$ constant, the value of $g T^2 / R$ will:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Remain unchanged ($2\\tan\\theta$)" },
+        { "key": "B", "text": "Double" },
+        { "key": "C", "text": "Become 4 times" },
+        { "key": "D", "text": "Halve" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{gT^2}{R} = 2\\tan\\theta$$ Since $\\theta$ is unchanged, the ratio is independent of speed $u$ and remains constant.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

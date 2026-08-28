@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-046",
+    "title": "Elastic and Inelastic Collisions in Two Dimensions (Oblique Collisions)",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Power and Energy"
+  },
+  "seo": {
+    "title": "Oblique Collisions in 2D JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions on 2D oblique collisions, line of impact dynamics, restitution coefficient in vector form, angle of reflection, and kinetic energy loss.",
+    "keywords": "JEE Main Physics, Oblique Collisions DPP, 2D Collision, Line of Impact, Elastic Collision 90 Degrees, Restitution Coefficient, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/oblique-collisions-two-dimensions",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Line of Impact Dynamics & 2D Oblique Collisions",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Line of Impact (LOI): The line passing through the initial point of contact perpendicular to the tangent plane (common normal). For smooth bodies, impulse acts strictly along the LOI. 2. Perpendicular/Tangential Direction: No force acts along the common tangent, preserving the tangential velocity components: $v_{1t} = u_{1t}$ and $v_{2t} = u_{2t}$. 3. Normal Direction: Linear momentum conservation and Newton's experimental law of restitution apply along the LOI: $e = -\\frac{v_{1n} - v_{2n}}{u_{1n} - u_{2n}}$. 4. Equal Mass 90° Theorem: When a smooth spherical mass $m$ strikes an identical stationary sphere elastically ($e = 1$) obliquely, they move at $90^\\circ$ relative to each other post-collision.",
+    "keyFormula": "$$v_t = u_t, \\quad e = -\\frac{(\\vec{v}_1 - \\vec{v}_2)\\cdot\\hat{n}}{(\\vec{u}_1 - \\vec{u}_2)\\cdot\\hat{n}}, \\quad \\tan\\beta = \\frac{\\tan\\alpha}{e}, \\quad \\frac{\\Delta K}{K_i} = (1 - e^2)\\cos^2\\alpha$$",
+    "examTrap": "Do not apply the coefficient of restitution $e$ to absolute speed vectors. Restitution $e$ is defined exclusively for velocity components along the common normal (line of impact). Velocity components along the common tangent plane remain completely unaffected for smooth surfaces."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A smooth sphere of mass $m$ moving with velocity $u$ strikes a smooth stationary identical sphere of mass $m$ obliquely in an elastic collision ($e = 1$). If the collision is not head-on, the angle between their velocities after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$45^\\circ$" },
+        { "key": "B", "text": "$60^\\circ$" },
+        { "key": "C", "text": "$90^\\circ$" },
+        { "key": "D", "text": "$120^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. Linear momentum: $\\vec{u} = \\vec{v}_1 + \\vec{v}_2 \\implies u^2 = v_1^2 + v_2^2 + 2\\vec{v}_1 \\cdot \\vec{v}_2$.<br>2. Kinetic energy conservation ($e = 1$): $u^2 = v_1^2 + v_2^2$.<br>3. Comparing both yields $2\\vec{v}_1 \\cdot \\vec{v}_2 = 0 \\implies \\vec{v}_1 \\perp \\vec{v}_2 \\implies \\theta = 90^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small ball hits a smooth horizontal floor with speed $u$ at an angle of incidence $\\alpha$ with the normal to the floor. If the coefficient of restitution between the ball and floor is $e$, the angle of reflection $\\beta$ with the normal is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\beta = e\\tan\\alpha$" },
+        { "key": "B", "text": "$\\tan\\beta = \\dfrac{\\tan\\alpha}{e}$" },
+        { "key": "C", "text": "$\\sin\\beta = e\\sin\\alpha$" },
+        { "key": "D", "text": "$\\cos\\beta = e\\cos\\alpha$" }
+      ],
+      "correct": "B",
+      "solution": "Tangential component: $v_x = u_x = u\\sin\\alpha$.<br>Normal component: $v_y = e u_y = e u\\cos\\alpha$.<br>Angle of reflection with normal: $$\\tan\\beta = \\frac{v_x}{v_y} = \\frac{u\\sin\\alpha}{e u\\cos\\alpha} = \\frac{\\tan\\alpha}{e}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball strikes a smooth fixed vertical wall with speed $u = 20\\text{ m/s}$ at an angle of $30^\\circ$ with the wall. If the coefficient of restitution is $e = 0.5$, the speed of the ball immediately after rebound is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ m/s}$" },
+        { "key": "B", "text": "$10\\sqrt{3}\\text{ m/s}$" },
+        { "key": "C", "text": "$5\\sqrt{7}\\text{ m/s}$" },
+        { "key": "D", "text": "$20\\sqrt{3}\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "Angle with normal is $\\alpha = 90^\\circ - 30^\\circ = 60^\\circ$.<br>Parallel to wall: $v_\\parallel = u\\cos 60^\\circ = 20(0.5) = 10\\text{ m/s}$.<br>Normal to wall: $v_\\perp = e(u\\sin 60^\\circ) = 0.5(20\\frac{\\sqrt{3}}{2}) = 5\\sqrt{3}\\text{ m/s}$.<br>Rebound speed: $$v' = \\sqrt{10^2 + (5\\sqrt{3})^2} = \\sqrt{100 + 75} = \\sqrt{175} = 5\\sqrt{7}\\text{ m/s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A sphere $A$ of mass $m$ moving with velocity $v_0$ along the $+x$-axis strikes a stationary identical smooth sphere $B$. The line joining their centers at impact makes an angle of $30^\\circ$ with the $x$-axis. If the collision is perfectly elastic ($e = 1$), the speed of sphere $B$ after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{v_0}{2}$" },
+        { "key": "B", "text": "$\\dfrac{\\sqrt{3}}{2}v_0$" },
+        { "key": "C", "text": "$\\dfrac{v_0}{\\sqrt{3}}$" },
+        { "key": "D", "text": "$\\dfrac{3}{4}v_0$" }
+      ],
+      "correct": "B",
+      "solution": "Component of initial velocity along the line of impact: $u_{1\\parallel} = v_0\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}v_0$.<br>Since masses are identical and $e = 1$, velocities along the line of impact are exchanged: $v_{B\\parallel} = u_{1\\parallel} = \\frac{\\sqrt{3}}{2}v_0$.<br>Sphere $B$ has zero perpendicular velocity, so $v_B = \\frac{\\sqrt{3}}{2}v_0$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In an oblique collision between two smooth bodies, the impulse acting during collision:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Acts entirely along the line of common tangents" },
+        { "key": "B", "text": "Acts entirely along the line of common normal (line of impact)" },
+        { "key": "C", "text": "Acts at an angle depending on the coefficient of friction" },
+        { "key": "D", "text": "Is zero along all directions" }
+      ],
+      "correct": "B",
+      "solution": "For frictionless smooth surfaces, contact forces act normal to the contacting interface. Hence, the collision impulse acts entirely along the common normal (line of impact).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball moving with speed $v$ collides obliquely with a fixed smooth plane with coefficient of restitution $e$. The fraction of its initial kinetic energy lost in the collision is ($\theta = \\text{angle of incidence with normal}$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(1 - e^2)\\cos^2\\theta$" },
+        { "key": "B", "text": "$(1 - e^2)\\sin^2\\theta$" },
+        { "key": "C", "text": "$(1 - e^2)$" },
+        { "key": "D", "text": "$e^2\\cos^2\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Initial KE: $K_i = \\frac{1}{2}m v^2$.<br>Final velocity squared: $v_f^2 = (v\\sin\\theta)^2 + (ev\\cos\\theta)^2$.<br>KE loss: $$\\Delta K = \\frac{1}{2}m v^2\\cos^2\\theta (1 - e^2) \\implies \\frac{\\Delta K}{K_i} = (1 - e^2)\\cos^2\\theta$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two identical smooth balls $A$ and $B$ collide obliquely. Before collision, $\\vec{v}_A = 4\\hat{i} + 3\\hat{j}$ and $\\vec{v}_B = \\vec{0}$. If the line of impact is along the $x$-axis and the collision is perfectly elastic ($e = 1$), the velocity of ball $A$ after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\hat{i}$" },
+        { "key": "B", "text": "$3\\hat{j}$" },
+        { "key": "C", "text": "$4\\hat{i} - 3\\hat{j}$" },
+        { "key": "D", "text": "$-4\\hat{i} + 3\\hat{j}$" }
+      ],
+      "correct": "B",
+      "solution": "Along the line of impact ($x$-axis), identical masses in elastic collision exchange velocities: $v_{Ax} = u_{Bx} = 0$.<br>Along tangential direction ($y$-axis), velocity remains constant: $v_{Ay} = u_{Ay} = 3$.<br>Thus, $\\vec{v}_A = 3\\hat{j}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A sphere of mass $m_1$ moving with speed $u$ collides obliquely and elastically ($e = 1$) with a stationary sphere of mass $m_2$. If after collision the two spheres move in mutually perpendicular directions, then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m_1 > m_2$" },
+        { "key": "B", "text": "$m_1 < m_2$" },
+        { "key": "C", "text": "$m_1 = m_2$" },
+        { "key": "D", "text": "Any mass ratio is possible" }
+      ],
+      "correct": "C",
+      "solution": "The condition $\\vec{v}_1 \\cdot \\vec{v}_2 = 0$ in an elastic collision with a stationary target strictly requires $m_1 = m_2$. If $m_1 > m_2$, the scattering angle is acute ($< 90^\\circ$); if $m_1 < m_2$, it can be obtuse ($> 90^\\circ$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball of mass $m$ strikes a smooth horizontal surface with velocity $\\vec{v} = 10\\hat{i} - 10\\hat{j}\\text{ m/s}$ (where $\\hat{j}$ is vertically upward). If the coefficient of restitution is $e = 0.5$, the velocity of the ball after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\hat{i} + 5\\hat{j}\\text{ m/s}$" },
+        { "key": "B", "text": "$5\\hat{i} + 5\\hat{j}\\text{ m/s}$" },
+        { "key": "C", "text": "$10\\hat{i} - 5\\hat{j}\\text{ m/s}$" },
+        { "key": "D", "text": "$5\\hat{i} + 10\\hat{j}\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Along horizontal ($x$): $v_x = u_x = 10\\text{ m/s}$.<br>Along normal ($y$): $v_y = -e u_y = -0.5(-10) = +5\\text{ m/s}$.<br>Post-collision velocity: $\\vec{v}' = 10\\hat{i} + 5\\hat{j}\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A sphere of radius $R$ moving horizontally with speed $u$ strikes an identical stationary sphere with impact parameter $b = R$. The angle that the line of impact makes with the initial direction of motion is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "A",
+      "solution": "Distance between centers at contact is $2R$.<br>Let $\\theta$ be the angle between the line of impact and the initial direction: $$\\sin\\theta = \\frac{b}{2R} = \\frac{R}{2R} = \\frac{1}{2} \\implies \\theta = 30^\\circ$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball of mass $m$ collides with a smooth horizontal floor with speed $u$ at an angle of incidence $\\theta$ with the vertical. If the impulse delivered by the floor to the ball is $J$, then $J$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m u (1 + e)\\cos\\theta$" },
+        { "key": "B", "text": "$m u (1 + e)\\sin\\theta$" },
+        { "key": "C", "text": "$m u (1 - e)\\cos\\theta$" },
+        { "key": "D", "text": "$m u e\\cos\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Impulse equals normal momentum change: $$J = m(v_y - u_y) = m(e u\\cos\\theta - (-u\\cos\\theta)) = m u (1 + e)\\cos\\theta$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body $A$ of mass $m$ collides obliquely with another body $B$ of mass $M$ at rest. If the collision is completely inelastic ($e = 0$), the fraction of kinetic energy conserved along the line of impact is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m}{m+M}$" },
+        { "key": "B", "text": "$\\dfrac{M}{m+M}$" },
+        { "key": "C", "text": "$\\dfrac{m^2}{(m+M)^2}$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "A",
+      "solution": "Common velocity along LOI: $v_\\parallel = \\frac{m u_\\parallel}{m + M}$.<br>Fraction of KE conserved along LOI: $$\\frac{K_{f\\parallel}}{K_{i\\parallel}} = \\frac{\\frac{1}{2}(m+M)v_\\parallel^2}{\\frac{1}{2}m u_\\parallel^2} = \\frac{m}{m + M}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two smooth spherical balls of equal mass collide obliquely. Ball 1 moves with velocity $\\vec{u}_1 = 6\\hat{i} + 2\\hat{j}$ and ball 2 with $\\vec{u}_2 = 2\\hat{i} + 8\\hat{j}$. The line of impact is directed along the $y$-axis. If $e = 1$, the velocity of ball 1 after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6\\hat{i} + 8\\hat{j}$" },
+        { "key": "B", "text": "$2\\hat{i} + 2\\hat{j}$" },
+        { "key": "C", "text": "$6\\hat{i} - 2\\hat{j}$" },
+        { "key": "D", "text": "$2\\hat{i} + 8\\hat{j}$" }
+      ],
+      "correct": "A",
+      "solution": "Along $x$ (tangential): $v_{1x} = u_{1x} = 6$.<br>Along $y$ (LOI): for equal masses and $e = 1$, normal velocities exchange: $v_{1y} = u_{2y} = 8$.<br>So $\\vec{v}_1 = 6\\hat{i} + 8\\hat{j}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball strikes a smooth fixed floor with velocity $\\vec{v} = v_x \\hat{i} - v_y \\hat{j}$ and rebounds with $\\vec{v}' = v_x' \\hat{i} + v_y' \\hat{j}$. If the floor is smooth, which of the following is true regarding momentum components?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v_x' = v_x$ and $v_y' = e v_y$" },
+        { "key": "B", "text": "$v_x' = e v_x$ and $v_y' = v_y$" },
+        { "key": "C", "text": "$v_x' = -v_x$ and $v_y' = e v_y$" },
+        { "key": "D", "text": "$v_x' = v_x$ and $v_y' = -v_y$" }
+      ],
+      "correct": "A",
+      "solution": "On a frictionless horizontal plane, $F_x = 0 \\implies v_x' = v_x$. Along the vertical normal, restitution gives $v_y' = e v_y$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A moving sphere of mass $m$ collides obliquely with a stationary sphere of mass $2m$. The collision is perfectly elastic ($e = 1$). If the target sphere recoils at an angle of $45^\\circ$ to the initial line of motion, the speed of the incident sphere after collision is ($u = \\text{initial speed}$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{\\sqrt{3}}$" },
+        { "key": "B", "text": "$\\dfrac{u}{\\sqrt{2}}$" },
+        { "key": "C", "text": "$\\dfrac{u}{3}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{5}}{3}u$" }
+      ],
+      "correct": "D",
+      "solution": "1. LOI angle is $\\theta = 45^\\circ$. Incident velocity components: $u_\\parallel = \\frac{u}{\\sqrt{2}}$, $u_\\perp = \\frac{u}{\\sqrt{2}}$.<br>2. Along LOI ($e = 1$): $$v_{1\\parallel} = \\left(\\frac{m - 2m}{m + 2m}\\right) u_\\parallel = -\\frac{1}{3}\\left(\\frac{u}{\\sqrt{2}}\\right) = -\\frac{u}{3\\sqrt{2}}$$<br>3. Tangential component remains unchanged: $v_{1\\perp} = \\frac{u}{\\sqrt{2}}$.<br>4. Resultant speed: $$v_1 = \\sqrt{\\left(-\\frac{u}{3\\sqrt{2}}\\right)^2 + \\left(\\frac{u}{\\sqrt{2}}\\right)^2} = \\sqrt{\\frac{u^2}{18} + \\frac{9u^2}{18}} = \\frac{\\sqrt{10}}{3\\sqrt{2}}u = \\frac{\\sqrt{5}}{3}u$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle collides obliquely with a smooth fixed plane. The angle of deviation $\\delta$ (the angle through which the velocity vector turns) in terms of angle of incidence $\\alpha$ with the normal and angle of reflection $\\beta$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$180^\\circ - (\\alpha + \\beta)$" },
+        { "key": "B", "text": "$\\alpha - \\beta$" },
+        { "key": "C", "text": "$90^\\circ - (\\alpha + \\beta)$" },
+        { "key": "D", "text": "$180^\\circ - 2\\alpha$" }
+      ],
+      "correct": "A",
+      "solution": "From vector geometry of reflection, the turning angle between the forward direction of incident trajectory and the reflected ray is $\\delta = 180^\\circ - (\\alpha + \\beta)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A sphere $A$ collides obliquely with a stationary identical sphere $B$ ($e = 0.5$). If the line of impact is at $60^\\circ$ to the initial velocity $u$ of sphere $A$, the speed of sphere $B$ after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3}{8}u$" },
+        { "key": "B", "text": "$\\dfrac{3}{4}u$" },
+        { "key": "C", "text": "$\\dfrac{\\sqrt{3}}{4}u$" },
+        { "key": "D", "text": "$\\dfrac{3\\sqrt{3}}{8}u$" }
+      ],
+      "correct": "A",
+      "solution": "Along LOI, $u_{1\\parallel} = u\\cos 60^\\circ = \\frac{u}{2}$.<br>Target velocity along LOI: $$v_B = \\frac{m(1 + e)u_{1\\parallel}}{m + m} = \\frac{(1 + 0.5)(u/2)}{2} = \\frac{1.5 u}{4} = \\frac{3}{8}u$$<br>Since $B$ was at rest, its perpendicular velocity is zero, giving $v_B = \\frac{3}{8}u$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two identical balls are moving along intersecting straight paths with equal speed $u$ at an angle of $60^\\circ$ to each other. They collide and stick together ($e = 0$). The speed of the combined mass after collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\sqrt{3}}{2}u$" },
+        { "key": "B", "text": "$\\dfrac{u}{2}$" },
+        { "key": "C", "text": "$u$" },
+        { "key": "D", "text": "$\\sqrt{3}u$" }
+      ],
+      "correct": "A",
+      "solution": "Total initial momentum: $$|\\vec{P}_i| = \\sqrt{(mu)^2 + (mu)^2 + 2(mu)^2\\cos 60^\\circ} = mu\\sqrt{1 + 1 + 1} = \\sqrt{3} mu$$<br>After sticking, total mass is $2m$: $$(2m) v_f = \\sqrt{3} mu \\implies v_f = \\frac{\\sqrt{3}}{2}u$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball is projected with speed $u$ at an angle $\\theta$ to the horizontal towards a smooth vertical wall at distance $d$. If the ball strikes the wall elastically ($e = 1$) before reaching the maximum height, the total horizontal range from the projection point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Equal to the original parabolic range $R$" },
+        { "key": "B", "text": "$2d - R$" },
+        { "key": "C", "text": "$R - d$" },
+        { "key": "D", "text": "$\\dfrac{R}{2}$" }
+      ],
+      "correct": "A",
+      "solution": "Elastic collision reverses horizontal velocity ($v_x' = -v_x$) while vertical motion continues undisturbed under gravity. The unfolded horizontal distance traveled equals the unperturbed parabolic range $R$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In an oblique collision of two smooth spheres, if the common normal is along the unit vector $\\hat{n}$ and the common tangent plane is along unit vector $\\hat{t}$, the coefficient of restitution $e$ is defined as:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$e = -\\dfrac{(\\vec{v}_{1} - \\vec{v}_{2}) \\cdot \\hat{n}}{(\\vec{u}_{1} - \\vec{u}_{2}) \\cdot \\hat{n}}$" },
+        { "key": "B", "text": "$e = -\\dfrac{(\\vec{v}_{1} - \\vec{v}_{2}) \\cdot \\hat{t}}{(\\vec{u}_{1} - \\vec{u}_{2}) \\cdot \\hat{t}}$" },
+        { "key": "C", "text": "$e = \\dfrac{|\\vec{v}_{1} - \\vec{v}_{2}|}{|\\vec{u}_{1} - \\vec{u}_{2}|}$" },
+        { "key": "D", "text": "$e = -\\dfrac{\\vec{v}_1 \\cdot \\vec{v}_2}{\\vec{u}_1 \\cdot \\vec{u}_2}$" }
+      ],
+      "correct": "A",
+      "solution": "Newton's restitution formula relates the relative velocity of separation to approach along the common normal direction $\\hat{n}$: $$e = -\\frac{(\\vec{v}_1 - \\vec{v}_2) \\cdot \\hat{n}}{(\\vec{u}_1 - \\vec{u}_2) \\cdot \\hat{n}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

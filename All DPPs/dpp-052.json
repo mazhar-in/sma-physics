@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-052",
+    "title": "Angular Momentum — Definition & Relation with Torque",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "System of Particles and Rotational Motion"
+  },
+  "seo": {
+    "title": "Angular Momentum and Torque Relation JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering the vector cross-product definition of angular momentum, relation with torque, projectile angular momentum, central force conservation, Kepler's 2nd law, and rigid body rotation.",
+    "keywords": "JEE Main Physics, Angular Momentum DPP, Torque and Angular Momentum, Conservation of Angular Momentum, Central Force Torque, Kepler Second Law Areal Velocity, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/angular-momentum-definition-torque-relation",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Angular Momentum Dynamics & Torque Relation",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Definition: For a point mass, angular momentum about origin $O$ is defined as $\\vec{L} = \\vec{r} \\times \\vec{p} = m(\\vec{r} \\times \\vec{v})$. For a rigid body rotating about a fixed symmetry axis, $\\vec{L} = I\\vec{\\omega}$. 2. Torque Relation: $\\frac{d\\vec{L}}{dt} = \\vec{v} \\times \\vec{p} + \\vec{r} \\times \\frac{d\\vec{p}}{dt} = \\vec{0} + \\vec{r} \\times \\vec{F}_{\\text{ext}} = \\vec{\\tau}_{\\text{ext}}$. 3. Conservation Law: If the net external torque about a point is zero ($\\vec{\\tau}_{\\text{ext}} = \\vec{0}$), total angular momentum $\\vec{L}$ about that point is strictly conserved. 4. Central Forces: Any force directed along the radial line ($\\\\vec{F} \\parallel \\vec{r}$) produces zero torque ($\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$), ensuring angular momentum conservation and constant areal velocity $\\frac{dA}{dt} = \\frac{L}{2m}$ (Kepler's Second Law).",
+    "keyFormula": "$$\\vec{L} = \\vec{r} \\times \\vec{p}, \\quad \\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt}, \\quad \\frac{dA}{dt} = \\frac{L}{2m} = \\text{constant}, \\quad [L] = [\\text{M L}^2 \\text{T}^{-1}]$$",
+    "examTrap": "A particle moving along a straight line at constant velocity still possesses non-zero angular momentum about any origin not lying on its line of motion! The magnitude is constant and equals $L = m v r_\\perp = m v d$, where $d$ is the perpendicular distance from the origin to the line of motion."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m = 2\\text{ kg}$ is located at $\\vec{r} = (3\\hat{i} + 4\\hat{j})\\text{ m}$ and moves with a linear momentum $\\vec{p} = (2\\hat{i} - 3\\hat{j})\\text{ kg}\\cdot\\text{m/s}$. The angular momentum $\\vec{L} = \\vec{r} \\times \\vec{p}$ of the particle about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-17\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "B", "text": "$+17\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "C", "text": "$-7\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "D", "text": "$+7\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{L} = \\vec{r} \\times \\vec{p} = (3\\hat{i} + 4\\hat{j}) \\times (2\\hat{i} - 3\\hat{j}) = (3(-3) - 4(2))\\hat{k} = -17\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The fundamental dynamical equation connecting external torque $\\vec{\\tau}$ and angular momentum $\\vec{L}$ of a system of particles about an inertial point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{\\tau} = \\vec{L} \\times \\vec{v}$" },
+        { "key": "B", "text": "$\\vec{L} = \\dfrac{d\\vec{\\tau}}{dt}$" },
+        { "key": "C", "text": "$\\vec{\\tau} = \\dfrac{d\\vec{L}}{dt}$" },
+        { "key": "D", "text": "$\\vec{\\tau} = \\vec{r} \\times \\vec{L}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\frac{d\\vec{L}}{dt} = \\left(\\frac{d\\vec{r}}{dt} \\times \\vec{p}\\right) + \\left(\\vec{r} \\times \\frac{d\\vec{p}}{dt}\\right) = \\vec{0} + \\vec{r} \\times \\vec{F}_{\\text{ext}} = \\vec{\\tau}_{\\text{ext}}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is projected with an initial velocity $u$ at an angle $\\theta$ with the horizontal from the origin $(0, 0)$. The magnitude of the angular momentum of the projectile about the launch point at any time $t$ during flight is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m u g t^2 \\cos\\theta$" },
+        { "key": "B", "text": "$m u g t \\sin\\theta$" },
+        { "key": "C", "text": "$\\dfrac{1}{2} m g u t^2 \\cos\\theta$" },
+        { "key": "D", "text": "$\\dfrac{1}{2} m g u t^2 \\sin\\theta$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\vec{r}(t) = (u\\cos\\theta t)\\hat{i} + \\left(u\\sin\\theta t - \\frac{1}{2}gt^2\\right)\\hat{j}, \\quad \\vec{v}(t) = (u\\cos\\theta)\\hat{i} + (u\\sin\\theta - gt)\\hat{j}$$<br>$$\\vec{L} = m(\\vec{r} \\times \\vec{v}) = m\\left[(u\\cos\\theta t)(-gt) + \\frac{1}{2}gt^2(u\\cos\\theta)\\right]\\hat{k} = -\\left(\\frac{1}{2}mgut^2\\cos\\theta\\right)\\hat{k}$$<br>Magnitude: $\\frac{1}{2}mgut^2\\cos\\theta$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along the line $y = d$ parallel to the $x$-axis with a constant velocity $\\vec{v} = v\\hat{i}$. The magnitude of its angular momentum about the origin:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Increases linearly with time" },
+        { "key": "B", "text": "Decreases inversely with time" },
+        { "key": "C", "text": "Remains constant and equal to $m v d$" },
+        { "key": "D", "text": "Depends on the $x$-coordinate of the particle" }
+      ],
+      "correct": "C",
+      "solution": "$$\\vec{L} = (x\\hat{i} + d\\hat{j}) \\times (mv\\hat{i}) = -mvd\\hat{k}$$<br>The perpendicular distance from origin to line of motion is $d$, so magnitude $|\\vec{L}| = mvd = \\text{constant}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The angular momentum of a system of particles about a point is conserved if and only if:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The total kinetic energy of the system is constant" },
+        { "key": "B", "text": "The net external torque acting on the system about that point is zero" },
+        { "key": "C", "text": "The net external force acting on the system is zero" },
+        { "key": "D", "text": "The system is executing uniform circular motion" }
+      ],
+      "correct": "B",
+      "solution": "From $\\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt}$, when $\\vec{\\tau}_{\\text{ext}} = \\vec{0}$, $\\frac{d\\vec{L}}{dt} = \\vec{0} \\implies \\vec{L} = \\text{constant}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The angular momentum vector $\\vec{L} = \\vec{r} \\times \\vec{p}$ of a particle is given by $\\vec{L}(t) = (4t^2\\hat{i} - 2t\\hat{j} + 6\\hat{k})\\text{ J}\\cdot\\text{s}$. The net torque acting on the particle at $t = 2\\text{ s}$ about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(8\\hat{i} - 2\\hat{j})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$(16\\hat{i} + 2\\hat{j})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$(16\\hat{i} - 2\\hat{j} + 6\\hat{k})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$(16\\hat{i} - 2\\hat{j})\\text{ N}\\cdot\\text{m}$" }
+      ],
+      "correct": "D",
+      "solution": "$$\\vec{\\tau} = \\frac{d\\vec{L}}{dt} = \\frac{d}{dt}(4t^2\\hat{i} - 2t\\hat{j} + 6\\hat{k}) = 8t\\hat{i} - 2\\hat{j}$$<br>At $t = 2\\text{ s}$: $\\vec{\\tau}(2) = 8(2)\\hat{i} - 2\\hat{j} = (16\\hat{i} - 2\\hat{j})\\text{ N}\\cdot\\text{m}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is executing uniform circular motion in the $xy$-plane of radius $R$ with constant angular velocity $\\vec{\\omega} = \\omega\\hat{k}$. The angular momentum of the particle about the center of the circle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m R^2 \\omega\\hat{k}$" },
+        { "key": "B", "text": "$-m R^2 \\omega\\hat{k}$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}m R^2 \\omega\\hat{k}$" },
+        { "key": "D", "text": "$\\vec{0}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{L} = \\vec{r} \\times (m\\vec{v}) = \\vec{r} \\times [m(\\vec{\\omega} \\times \\vec{r})] = m R^2 \\omega\\hat{k}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The physical dimensions of angular momentum are identical to the dimensions of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum" },
+        { "key": "B", "text": "Torque" },
+        { "key": "C", "text": "Planck's constant ($h$)" },
+        { "key": "D", "text": "Power" }
+      ],
+      "correct": "C",
+      "solution": "$$[L] = [r][p] = [\\text{L}][\\text{M L T}^{-1}] = [\\text{M L}^2 \\text{T}^{-1}]$$<br>Planck's constant $h = E/\\nu \\implies [h] = [\\text{M L}^2 \\text{T}^{-2}]/[\\text{T}^{-1}] = [\\text{M L}^2 \\text{T}^{-1}]$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m = 1\\text{ kg}$ is dropped from rest from point $(d, 0, h)$ at $t = 0$. The magnitude of the angular momentum of the particle about the origin $(0, 0, 0)$ as a function of time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m g d t^2$" },
+        { "key": "B", "text": "$\\dfrac{1}{2} m g d t$" },
+        { "key": "C", "text": "$m g d t$" },
+        { "key": "D", "text": "$m g h t$" }
+      ],
+      "correct": "C",
+      "solution": "Speed after time $t$ is $v = gt$. Linear momentum is $p = mgt$ vertically downward along $x = d$. Lever arm is $r_\\perp = d$.<br>$$L = p \\cdot r_\\perp = (mgt)d = mgdt$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A planet of mass $m$ revolves around the Sun in an elliptical orbit. As the planet moves from aphelion (farthest distance $r_a$, speed $v_a$) to perihelion (nearest distance $r_p$, speed $v_p$), the relation between distances and speeds is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$r_a v_p = r_p v_a$" },
+        { "key": "B", "text": "$r_a^2 v_a = r_p^2 v_p$" },
+        { "key": "C", "text": "$r_a v_a^2 = r_p v_p^2$" },
+        { "key": "D", "text": "$r_a v_a = r_p v_p$" }
+      ],
+      "correct": "D",
+      "solution": "Central gravitational force produces zero torque about the Sun ($\\vec{\\tau} = \\vec{0}$), conserving angular momentum: $$L = m r_a v_a = m r_p v_p \\implies r_a v_a = r_p v_p$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A conical pendulum consists of a bob of mass $m$ rotating in a horizontal circle of radius $R$ with constant speed $v$. The magnitude of the angular momentum of the bob about the center of the circular path is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m v R$" },
+        { "key": "B", "text": "$m v \\sqrt{R^2 + h^2}$" },
+        { "key": "C", "text": "$m v h$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "A",
+      "solution": "About the center of the horizontal circular track, $\\vec{r}$ has magnitude $R$ and $\\vec{v}$ is purely tangential ($v \\perp R$): $$L = m v R$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If a central force $\\vec{F} = f(r)\\hat{r}$ acts on a particle, the torque on the particle about the center of force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Maximum" },
+        { "key": "B", "text": "Zero, hence angular momentum about the center is strictly conserved" },
+        { "key": "C", "text": "Variable and depends on $r$" },
+        { "key": "D", "text": "Proportional to $r^2$" }
+      ],
+      "correct": "B",
+      "solution": "For any central force, $\\vec{F} \\parallel \\vec{r}$, so $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$. By $\\frac{d\\vec{L}}{dt} = \\vec{\\tau} = \\vec{0}$, $\\vec{L}$ is strictly conserved.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m = 2\\text{ kg}$ moves with velocity $\\vec{v} = (3\\hat{i} + 4\\hat{j})\\text{ m/s}$ along the straight line $4x - 3y = 12$. The magnitude of angular momentum about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "B", "text": "$18\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "C", "text": "$48\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "D", "text": "$24\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" }
+      ],
+      "correct": "D",
+      "solution": "Perpendicular lever arm distance: $$r_\\perp = \\frac{|-12|}{\\sqrt{4^2 + (-3)^2}} = \\frac{12}{5} = 2.4\\text{ m}$$<br>Speed $v = \\sqrt{3^2 + 4^2} = 5\\text{ m/s}$.<br>$$L = m v r_\\perp = (2\\text{ kg})(5\\text{ m/s})(2.4\\text{ m}) = 24\\text{ kg}\\cdot\\text{m}^2\\text{/s}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Kepler's second law of planetary motion (areal velocity $\\dfrac{dA}{dt} = \\text{constant}$) is a direct consequence of the conservation of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum" },
+        { "key": "B", "text": "Kinetic energy" },
+        { "key": "C", "text": "Total mechanical energy" },
+        { "key": "D", "text": "Angular momentum" }
+      ],
+      "correct": "D",
+      "solution": "Areal velocity is given by $\\frac{dA}{dt} = \\frac{L}{2m}$. Since gravity is central ($\\vec{\\tau} = \\vec{0}$), $L = \\text{constant}$, ensuring constant areal velocity.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is projected with speed $u$ at an angle of $45^\\circ$ to the horizontal. The magnitude of the angular momentum of the particle about the point of projection when it hits the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m u^3}{\\sqrt{2}g}$" },
+        { "key": "B", "text": "$\\dfrac{m u^3}{2g}$" },
+        { "key": "C", "text": "$\\dfrac{m u^3}{g}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{2}m u^3}{g}$" }
+      ],
+      "correct": "A",
+      "solution": "Horizontal range: $R = \\frac{u^2 \\sin 90^\\circ}{g} = \\frac{u^2}{g}$. Downward landing vertical speed: $v_y = u\\sin 45^\\circ = \\frac{u}{\\sqrt{2}}$.<br>$$L = (m v_y) R = m\\left(\\frac{u}{\\sqrt{2}}\\right)\\left(\\frac{u^2}{g}\\right) = \\frac{m u^3}{\\sqrt{2}g}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The position vector of a particle is $\\vec{r} = a\\cos(\\omega t)\\hat{i} + b\\sin(\\omega t)\\hat{j}$. The torque $\\vec{\\tau}$ acting on the particle about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{0}$" },
+        { "key": "B", "text": "$-m\\omega^2(a\\hat{i} + b\\hat{j})$" },
+        { "key": "C", "text": "$m\\omega^2 a b\\hat{k}$" },
+        { "key": "D", "text": "$-m\\omega^2 a b\\hat{k}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{a} = \\frac{d^2\\vec{r}}{dt^2} = -\\omega^2\\vec{r} \\implies \\vec{F} = -m\\omega^2\\vec{r} \\implies \\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{r} \\times (-m\\omega^2\\vec{r}) = \\vec{0}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A disc of mass $M$ and radius $R$ is rotating about its fixed central axis with angular velocity $\\vec{\\omega}$. The angular momentum vector $\\vec{L}$ of the disc:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Lies in the plane of the disc" },
+        { "key": "B", "text": "Is parallel to the angular velocity vector $\\vec{\\omega}$ along the axis of rotation" },
+        { "key": "C", "text": "Is perpendicular to the axis of rotation" },
+        { "key": "D", "text": "Precesses continuously in the horizontal plane" }
+      ],
+      "correct": "B",
+      "solution": "For a symmetric body rotating about a principal axis of symmetry, $\\vec{L} = I\\vec{\\omega}$, which is directed parallel to the angular velocity vector $\\vec{\\omega}$ along the rotation axis.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in the $xy$-plane with position $\\vec{r} = (2t\\hat{i} + 3t^2\\hat{j})\text{ m}$. If the mass of the particle is $m = 1\\text{ kg}$, the angular momentum about the origin as a function of time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+6t^2\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "B", "text": "$+12t^2\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "C", "text": "$+6t^3\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" },
+        { "key": "D", "text": "$+12t\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Velocity: $\\vec{v} = 2\\hat{i} + 6t\\hat{j}\\text{ m/s}$.<br>$$\\vec{L} = m(\\vec{r} \\times \\vec{v}) = (2t\\hat{i} + 3t^2\\hat{j}) \\times (2\\hat{i} + 6t\\hat{j}) = (12t^2 - 6t^2)\\hat{k} = +6t^2\\hat{k}\\text{ kg}\\cdot\\text{m}^2\\text{/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the net external force on a system is zero ($\\sum \\vec{F}_{\\text{ext}} = \\vec{0}$), but the net external torque is non-zero ($\\sum \\vec{\\tau}_{\\text{ext}} \\ne \\vec{0}$), then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum is conserved, but angular momentum is not conserved" },
+        { "key": "B", "text": "Angular momentum is conserved, but linear momentum is not conserved" },
+        { "key": "C", "text": "Both linear and angular momentum are conserved" },
+        { "key": "D", "text": "Neither linear nor angular momentum is conserved" }
+      ],
+      "correct": "A",
+      "solution": "$$\\sum \\vec{F}_{\\text{ext}} = \\frac{d\\vec{P}}{dt} = \\vec{0} \\implies \\vec{P} = \\text{constant}$$<br>$$\\sum \\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt} \\ne \\vec{0} \\implies \\vec{L} \\ne \\text{constant}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A light rigid rod of length $L$ has two equal masses $m$ attached at its ends. It is rotating in a horizontal plane with constant angular speed $\\omega$ about a vertical axis passing through its midpoint. The total angular momentum of the system about the axis is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m L^2 \\omega$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}m L^2 \\omega$" },
+        { "key": "C", "text": "$\\dfrac{1}{4}m L^2 \\omega$" },
+        { "key": "D", "text": "$2m L^2 \\omega$" }
+      ],
+      "correct": "B",
+      "solution": "Moment of inertia: $I = m(L/2)^2 + m(L/2)^2 = \\frac{1}{2}mL^2$.<br>$$L = I\\omega = \\frac{1}{2}m L^2 \\omega$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

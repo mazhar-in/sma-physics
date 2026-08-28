@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-041",
+    "title": "Conservation of Mechanical Energy: Derivation, Curves & Key Applications",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Conservation of Mechanical Energy Derivation and Applications JEE Main DPP-041 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering conservative energy derivation, vertical circular motion slacking criteria, hemispherical dome breakaway, potential energy wells, and spring-mass recoil dynamics.",
+    "keywords": "JEE Main Physics, Conservation of Mechanical Energy DPP, Mechanical Energy Derivation, Vertical Loop Slacking, Hemispherical Dome Breakaway, Falling Chain Normal Force, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/conservation-of-mechanical-energy-derivation-applications",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Mechanical Energy Principle, Equipotential Analysis & Critical Thresholds",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Derivation of Mechanical Energy Conservation: For any isolated system where only conservative forces perform work ($W_{\\text{nc}} = 0$), the Work-Energy Theorem ($W_c = \\Delta K$) combined with the definition of potential energy ($W_c = -\\Delta U$) yields $\\Delta K = -\\Delta U \\implies \\Delta(K + U) = 0 \\implies E_{\\text{mech}} = K + U = \\text{constant}$. 2. Hemispherical Dome Breakaway: A particle sliding from rest at the top of a smooth dome of radius $R$ loses contact ($N = 0$) at height $h = \\frac{2}{3}R$ above the base. 3. Vertical Circular Motion: (a) To complete a loop on a light string, lowest speed $u \\ge \\sqrt{5gL}$. (b) String becomes slack ($T = 0$) at angle $\\theta$ to the upward vertical when $\\cos\\theta = \\frac{u^2 - 2gL}{3gL}$. 4. Falling Chain Reaction: A chain of mass $M$ and length $L$ dropped onto a floor exerts a dynamic normal force equal to three times the weight of the accumulated links ($N = \\frac{3Mgy}{L}$) due to simultaneous static weight and continuous momentum transfer.",
+    "keyFormula": "$$K_i + U_i = K_f + U_f, \\quad h_{\\text{breakaway}} = \\frac{2}{3}R, \\quad v_{\\text{loop, min}} = \\sqrt{5gR}, \\quad N_{\\text{falling chain}} = \\frac{3Mgy}{L}$$",
+    "examTrap": "When applying conservation of mechanical energy to multi-body spring systems, make sure to evaluate kinetic energy in the Center of Mass frame to quickly find maximum spring compression ($x_{\\text{max}} = v_{\\text{rel}}\\sqrt{\\frac{\\mu}{k}}$, where $\\mu = \\frac{m_1 m_2}{m_1 + m_2}$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ moves in an isolated system under a conservative force field $\\vec{F}$. If $W_c$ is the work done by the conservative force, the fundamental derivation of mechanical energy conservation combines:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$W_c = \\Delta K$ and $W_c = -\\Delta U \\implies \\Delta(K + U) = 0$" },
+        { "key": "B", "text": "$W_c = -\\Delta K$ and $W_c = \\Delta U \\implies \\Delta(K - U) = 0$" },
+        { "key": "C", "text": "$W_c = \\Delta U$ and $W_{\\text{ext}} = 0 \\implies K = U$" },
+        { "key": "D", "text": "$W_{\\text{net}} = \\Delta K$ and $W_{\\text{friction}} = 0 \\implies K + U = 0$" }
+      ],
+      "correct": "A",
+      "solution": "From the Work-Energy Theorem for conservative forces, $W_c = \\Delta K$. By the definition of potential energy, $W_c = -\\Delta U$. Equating both expressions gives $\\Delta K = -\\Delta U \\implies \\Delta(K + U) = 0$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A small body of mass $m$ slides down from the top of a smooth fixed hemispherical dome of radius $R$. The height $h$ above the horizontal base at which the body loses contact with the dome is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{3}R$" },
+        { "key": "B", "text": "$\\dfrac{2}{3}R$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}R$" },
+        { "key": "D", "text": "$\\dfrac{3}{4}R$" }
+      ],
+      "correct": "B",
+      "solution": "1. Energy conservation at angle $\\theta$ with vertical: $v^2 = 2gR(1 - \\cos\\theta)$.<br>2. Radial equation: $mg\\cos\\theta - N = \\frac{mv^2}{R} \\implies N = mg(3\\cos\\theta - 2)$.<br>3. At breakaway ($N = 0$): $\\cos\\theta = \\frac{2}{3} \\implies h = R\\cos\\theta = \\frac{2}{3}R$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bob of mass $m$ attached to a light inextensible string of length $L$ is projected horizontally at the lowest point with speed $u = \\sqrt{3gL}$. The angle $\\theta$ with the upward vertical at which the string becomes slack is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "1. Energy conservation: $v^2 = u^2 - 2gL(1 + \\cos\\theta) = 3gL - 2gL(1 + \\cos\\theta) = gL(1 - 2\\cos\\theta)$.<br>2. Tension $T = 0 \\implies \\frac{mv^2}{L} = mg\\cos\\theta \\implies v^2 = gL\\cos\\theta$.<br>3. Equating: $gL\\cos\\theta = gL(1 - 2\\cos\\theta) \\implies 3\\cos\\theta = 1 \\implies \\cos\\theta = \\frac{1}{2} \\implies \\theta = 60^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 1\\text{ kg}$ is dropped from a height $h = 45\\text{ cm}$ onto a vertical spring of stiffness $k = 1000\\text{ N/m}$. The maximum compression $x$ of the spring is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.05\\text{ m}$" },
+        { "key": "B", "text": "$0.15\\text{ m}$" },
+        { "key": "C", "text": "$0.20\\text{ m}$" },
+        { "key": "D", "text": "$0.10\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "$$mg(h + x) = \\frac{1}{2}kx^2 \\implies 1(10)(0.45 + x) = 500x^2 \\implies 500x^2 - 10x - 4.5 = 0 \\implies x = 0.10\\text{ m}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m = 2\\text{ kg}$ moves along the $x$-axis in a conservative field with potential energy $U(x) = (x^2 - 4x + 10)\\text{ J}$. If the total mechanical energy is $E = 18\\text{ J}$, the range of motion of the particle is between:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x = 0\\text{ m}$ and $x = 4\\text{ m}$" },
+        { "key": "B", "text": "$x = -1\\text{ m}$ and $x = 5\\text{ m}$" },
+        { "key": "C", "text": "$x = -2\\text{ m}$ and $x = 6\\text{ m}$" },
+        { "key": "D", "text": "$x = 1\\text{ m}$ and $x = 3\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "Turning points occur where $K = 0 \\implies U(x) = E$:<br>$$(x-2)^2 + 6 = 18 \\implies (x-2)^2 = 16 \\implies x = 2 \\pm 4 \\implies x \\in [-2\\text{ m}, 6\\text{ m}]$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A light elastic cord of unstretched length $L$ and spring constant $k$ has one end fixed at $O$. A block of mass $m$ attached to the other end is dropped from $O$. The maximum downward displacement of the block before it momentarily comes to rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$L + \\dfrac{mg}{k} + \\sqrt{\\dfrac{2mgL}{k}}$" },
+        { "key": "B", "text": "$L + \\dfrac{mg}{k} + \\sqrt{\\dfrac{m^2g^2}{k^2} + \\dfrac{2mgL}{k}}$" },
+        { "key": "C", "text": "$L + \\dfrac{2mg}{k}$" },
+        { "key": "D", "text": "$\\dfrac{mg}{k} + \\sqrt{\\dfrac{2mgL}{k}}$" }
+      ],
+      "correct": "B",
+      "solution": "Let $x$ be the stretch in the cord: $mg(L + x) = \\frac{1}{2}kx^2 \\implies kx^2 - 2mgx - 2mgL = 0$.<br>$$x = \\frac{mg}{k} + \\sqrt{\\frac{m^2g^2}{k^2} + \\frac{2mgL}{k}} \\implies y = L + x$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ released from rest slides down a smooth curved track and loops around a vertical circular loop of radius $R$. The minimum release height $h$ above the bottom of the loop to complete the loop safely is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2R$" },
+        { "key": "B", "text": "$2.5 R$" },
+        { "key": "C", "text": "$3R$" },
+        { "key": "D", "text": "$1.5 R$" }
+      ],
+      "correct": "B",
+      "solution": "$$mgh = \\frac{1}{2}m v_{\\text{bottom}}^2 = \\frac{1}{2}m(5gR) \\implies h = 2.5 R$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A chain of mass $M$ and length $L$ is held vertically with its lower end just touching the floor and released from rest. The normal force exerted by the floor on the fallen chain when a length $y$ has accumulated is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{Mgy}{L}$" },
+        { "key": "B", "text": "$\\dfrac{2Mgy}{L}$" },
+        { "key": "C", "text": "$\\dfrac{3Mgy}{L}$" },
+        { "key": "D", "text": "$\\dfrac{4Mgy}{L}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Static weight of fallen links: $W = \\frac{Mgy}{L}$.<br>2. Dynamic impact force from landing links: $F = \\left(\\frac{dm}{dt}\\right)v = \\left(\\frac{M}{L}v\\right)v = \\frac{M(2gy)}{L} = \\frac{2Mgy}{L}$.<br>3. Total normal force: $N = W + F = \\frac{3Mgy}{L}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected from the ground with speed $u$ at an angle $\theta$ to the horizontal. By conservation of mechanical energy, the speed of the particle when it reaches half of its maximum height is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$u\\sqrt{1 - \\dfrac{\\sin^2\\theta}{2}}$" },
+        { "key": "B", "text": "$u\\cos\\theta$" },
+        { "key": "C", "text": "$\\dfrac{u}{\\sqrt{2}}$" },
+        { "key": "D", "text": "$u\\sqrt{\\dfrac{1 + \\cos^2\\theta}{2}}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{1}{2}mu^2 = \\frac{1}{2}mv^2 + mg\\left(\\frac{u^2\\sin^2\\theta}{4g}\\right) \\implies v^2 = u^2\\left(1 - \\frac{\\sin^2\\theta}{2}\\right) \\implies v = u\\sqrt{1 - \\frac{\\sin^2\\theta}{2}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two blocks of masses $m_1$ and $m_2$ are connected by a spring of stiffness $k$ resting on a smooth floor. If $m_1$ is given a sudden velocity $v_0$ directed towards $m_2$, the maximum compression of the spring is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v_0\\sqrt{\\dfrac{m_1 m_2}{(m_1 + m_2)k}}$" },
+        { "key": "B", "text": "$v_0\\sqrt{\\dfrac{m_1}{k}}$" },
+        { "key": "C", "text": "$v_0\\sqrt{\\dfrac{m_1 + m_2}{k}}$" },
+        { "key": "D", "text": "$v_0\\sqrt{\\dfrac{m_1^2}{m_2 k}}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{1}{2}\\mu v_0^2 = \\frac{1}{2}k x_{\\text{max}}^2 \\implies x_{\\text{max}} = v_0\\sqrt{\\frac{\\mu}{k}} = v_0\\sqrt{\\frac{m_1 m_2}{(m_1 + m_2)k}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A simple pendulum of length $L$ and bob mass $m$ is released from rest at an angle $\theta_0 = 60^\\circ$ to the vertical. The tension in the string as the bob passes through the lowest position is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg$" },
+        { "key": "B", "text": "$2mg$" },
+        { "key": "C", "text": "$3mg$" },
+        { "key": "D", "text": "$1.5mg$" }
+      ],
+      "correct": "B",
+      "solution": "1. Speed at lowest point: $\\frac{1}{2}mv^2 = mgL(1 - \\cos 60^\\circ) = \\frac{1}{2}mgL \\implies v^2 = gL$.<br>2. Tension: $T = mg + \\frac{mv^2}{L} = mg + mg = 2mg$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in a 1D potential well given by $U(x) = \\dfrac{a}{x^2} - \\dfrac{b}{x}$ ($a, b > 0$). The escape speed of the particle from the bottom of the potential well (mass $m$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{b}{\\sqrt{2ma}}$" },
+        { "key": "B", "text": "$\\dfrac{b}{2\\sqrt{ma}}$" },
+        { "key": "C", "text": "$\\dfrac{b}{\\sqrt{ma}}$" },
+        { "key": "D", "text": "$\\dfrac{2b}{\\sqrt{ma}}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Minimum of potential well at $x_0 = \\frac{2a}{b}$: $U(x_0) = -\\frac{b^2}{4a}$.<br>2. Condition to escape ($E = 0$): $\\frac{1}{2}m v_{\\text{esc}}^2 + \\left(-\\frac{b^2}{4a}\\right) = 0 \\implies v_{\\text{esc}} = \\frac{b}{\\sqrt{2ma}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Under which of the following conditions is the total mechanical energy of a system of particles strictly conserved?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "When the net external force on the system is zero" },
+        { "key": "B", "text": "When only conservative internal/external forces do work ($W_{\\text{nc}} = 0$)" },
+        { "key": "C", "text": "When the linear momentum of the system is conserved" },
+        { "key": "D", "text": "When the internal forces between particles cancel out" }
+      ],
+      "correct": "B",
+      "solution": "Total mechanical energy ($E = K + U$) is strictly conserved if and only if non-conservative forces do zero net work ($W_{\\text{nc}} = 0$).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform solid sphere of mass $M$ and radius $R$ is released from rest from height $h$ on a smooth incline. Its speed at the bottom is $v_1$. If the incline is rough enough to allow pure rolling without slipping, its speed at the bottom is $v_2$. The ratio $v_2 / v_1$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{5}{7}}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{7}{5}}$" },
+        { "key": "C", "text": "$\\sqrt{\\dfrac{2}{5}}$" },
+        { "key": "D", "text": "$\\sqrt{\\dfrac{5}{2}}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Smooth: $v_1 = \\sqrt{2gh}$.<br>2. Pure rolling: $Mgh = \\frac{1}{2}Mv_2^2 + \\frac{1}{2}\\left(\\frac{2}{5}MR^2\\right)\\left(\\frac{v_2}{R}\\right)^2 = \\frac{7}{10}Mv_2^2 \\implies v_2 = \\sqrt{\\frac{10}{7}gh}$.<br>3. Ratio: $\\frac{v_2}{v_1} = \\sqrt{\\frac{5}{7}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m$ is pushed against a horizontal spring of stiffness $k$ resting on a smooth surface, compressing it by $x_0$. A second block of mass $2m$ is placed touching the first. When released, the speed of the separation of the blocks when the spring regains natural length (spring attached to mass $m$ only) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x_0\\sqrt{\\dfrac{k}{3m}}$" },
+        { "key": "B", "text": "$x_0\\sqrt{\\dfrac{k}{2m}}$" },
+        { "key": "C", "text": "$x_0\\sqrt{\\dfrac{2k}{3m}}$" },
+        { "key": "D", "text": "$x_0\\sqrt{\\dfrac{k}{m}}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{1}{2}k x_0^2 = \\frac{1}{2}(m + 2m)v^2 = \\frac{3}{2}m v^2 \\implies v = x_0\\sqrt{\\frac{k}{3m}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A small ring of mass $m$ slides without friction on a vertical circular hoop of radius $R$. The ring is released from rest at the top of the hoop. The normal reaction exerted by the hoop on the ring when it reaches the bottom is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3mg$" },
+        { "key": "B", "text": "$4mg$" },
+        { "key": "C", "text": "$5mg$" },
+        { "key": "D", "text": "$6mg$" }
+      ],
+      "correct": "C",
+      "solution": "1. Speed at bottom: $\\frac{1}{2}mv^2 = mg(2R) \\implies v^2 = 4gR$.<br>2. Normal reaction: $N - mg = \\frac{mv^2}{R} = 4mg \\implies N = 5mg$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m$ is moving on a frictionless horizontal table. It is attached to a light cord passing through a smooth hole in the center of the table. If the tension in the cord is increased by pulling it down slowly so that the radius of the circle decreases from $r_1$ to $r_2$, the work done by the pulling force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}m v_1^2\\left(\\dfrac{r_1^2}{r_2^2} - 1\\right)$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}m v_1^2\\left(\\dfrac{r_1}{r_2} - 1\\right)$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}m v_1^2\\left(1 - \\dfrac{r_2^2}{r_1^2}\\right)$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "A",
+      "solution": "Angular momentum conservation: $v_2 = v_1\\left(\\frac{r_1}{r_2}\\right)$.<br>Work-Energy Theorem: $W = \\Delta K = \\frac{1}{2}m v_2^2 - \\frac{1}{2}m v_1^2 = \\frac{1}{2}m v_1^2\\left(\\frac{r_1^2}{r_2^2} - 1\\right)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A small bead of mass $m$ is threaded on a smooth parabolic wire $y = k x^2$ placed in a vertical plane ($y$-axis upward). If the bead is released from rest at height $y = h$, the magnitude of the normal reaction on the bead at the lowest point ($x = 0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg(1 + 4kh)$" },
+        { "key": "B", "text": "$mg(1 + 2kh)$" },
+        { "key": "C", "text": "$2mgkh$" },
+        { "key": "D", "text": "$mg(1 - 2kh)$" }
+      ],
+      "correct": "A",
+      "solution": "1. Speed at lowest point: $v^2 = 2gh$.<br>2. Radius of curvature at $x = 0$: $R_c = \\frac{1}{y''(0)} = \\frac{1}{2k}$.<br>3. Normal force: $N - mg = \\frac{mv^2}{R_c} = \\frac{m(2gh)}{1/(2k)} = 4kmgh \\implies N = mg(1 + 4kh)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is attached to two identical springs of constant $k$ connected in parallel. If the block is displaced by $x_0$ and released, its kinetic energy at displacement $x = x_0/2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3}{4} k x_0^2$" },
+        { "key": "B", "text": "$\\dfrac{3}{8} k x_0^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{2} k x_0^2$" },
+        { "key": "D", "text": "$\\dfrac{1}{4} k x_0^2$" }
+      ],
+      "correct": "A",
+      "solution": "$$E = \\frac{1}{2}(2k)x_0^2 = k x_0^2 \\implies K = E - U = k x_0^2 - \\frac{1}{2}(2k)\\left(\\frac{x_0}{2}\\right)^2 = k x_0^2 - \\frac{1}{4}k x_0^2 = \\frac{3}{4}k x_0^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A pendulum string of length $L$ is held horizontal and released. A nail is located at a distance $d$ vertically below the suspension point. The minimum value of $d$ so that the bob can describe a complete circle around the nail is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2}{5}L$" },
+        { "key": "B", "text": "$\\dfrac{3}{5}L$" },
+        { "key": "C", "text": "$\\dfrac{4}{5}L$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}L$" }
+      ],
+      "correct": "B",
+      "solution": "Radius of new circle is $r = L - d$.<br>To complete loop around nail: $mgL \\ge \\frac{5}{2}mg r = \\frac{5}{2}mg(L - d) \\implies L \\ge \\frac{5}{2}L - \\frac{5}{2}d \\implies \\frac{5}{2}d \\ge \\frac{3}{2}L \\implies d \\ge \\frac{3}{5}L$.<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

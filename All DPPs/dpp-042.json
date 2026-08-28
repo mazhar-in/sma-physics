@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-042",
+    "title": "Conservative and Non-Conservative Forces: Distinguishing Features & Closed-Loop Work",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Conservative vs Non-Conservative Forces JEE Main Physics DPP-042 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering conservative force mathematical criteria, curl-free fields, path independence, closed-loop line integrals, non-conservative work dissipation, and exact differentials.",
+    "keywords": "JEE Main Physics, Conservative Forces DPP, Non-Conservative Forces, Curl of Force Field, Closed Loop Work, Path Independence, Friction Dissipation, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/conservative-non-conservative-forces",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Mathematical Criteria & Energetic Consequences of Force Character",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Definition of Conservative Force: A force $\\vec{F}$ is conservative if the work done in moving a particle between two points depends only on the initial and final positions, not on the path taken. Equivalently, the work done along any closed loop is zero ($\\oint \\vec{F} \\cdot d\\vec{r} = 0$), and the force is irrotational ($\\vec{\\nabla} \\times \\vec{F} = \\vec{0}$). 2. Potential Energy: A single-valued potential energy function $U(\\vec{r})$ exists if and only if the force is conservative ($\\vec{F} = -\\vec{\\nabla} U$). 3. Central Forces: Any purely central force $\\vec{F} = f(r)\\hat{r}$ is conservative. 4. Non-Conservative Forces: Forces where work depends on the path (e.g., kinetic friction, viscous drag, air resistance). They dissipate mechanical energy into heat or other internal forms ($W_{\\text{nc}} = \\Delta E_{\\text{mech}} < 0$). However, certain non-conservative forces like static friction can do positive work in accelerated reference frames.",
+    "keyFormula": "$$\\oint \\vec{F} \\cdot d\\vec{r} = 0 \\iff \\vec{\\nabla} \\times \\vec{F} = \\vec{0} \\iff \\vec{F} = -\\vec{\\nabla} U, \\quad W_{\\text{nc}} = \\Delta E_{\\text{mech}} = \\Delta(K + U)$$",
+    "examTrap": "Do not assume friction always does negative work! While *kinetic* friction between two sliding surfaces always dissipates mechanical energy and does net negative work, *static* friction does not involve sliding and can do positive, negative, or zero work depending on the chosen frame of reference (e.g., a crate accelerating forward on the flatbed of a speeding truck)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force field $\\vec{F}$ is defined to be conservative if and only if:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Work done over any closed path is zero ($\\oint \\vec{F} \\cdot d\\vec{r} = 0$)" },
+        { "key": "B", "text": "Work done between two endpoints is independent of the trajectory taken" },
+        { "key": "C", "text": "The curl of the force field is identically zero ($\\vec{\\nabla} \\times \\vec{F} = \\vec{0}$)" },
+        { "key": "D", "text": "All of the above" }
+      ],
+      "correct": "D",
+      "solution": "All three criteria are mathematically equivalent definitions of a conservative force field.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Which of the following force fields is NON-CONSERVATIVE?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{F} = (2xy\\hat{i} + x^2\\hat{j})\\text{ N}$" },
+        { "key": "B", "text": "$\\vec{F} = (y\\hat{i} + x\\hat{j})\\text{ N}$" },
+        { "key": "C", "text": "$\\vec{F} = (y\\hat{i} - x\\hat{j})\\text{ N}$" },
+        { "key": "D", "text": "$\\vec{F} = (3x^2\\hat{i} + 4y^3\\hat{j})\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "For $\\vec{F} = (y\\hat{i} - x\\hat{j})$, the curl is $\\vec{\\nabla} \\times \\vec{F} = \\left(\\frac{\\partial F_y}{\\partial x} - \\frac{\\partial F_x}{\\partial y}\\right)\\hat{k} = (-1 - 1)\\hat{k} = -2\\hat{k} \\ne \\vec{0}$. Because the curl is non-zero, this force field is non-conservative.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is dragged along a closed square path of side $a$ on a rough horizontal floor with kinetic friction coefficient $\\mu_k$. The net work done by the frictional force over the closed loop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$-4\\mu_k mg a$" },
+        { "key": "C", "text": "$+4\\mu_k mg a$" },
+        { "key": "D", "text": "$-2\\mu_k mg a$" }
+      ],
+      "correct": "B",
+      "solution": "Kinetic friction continually opposes instantaneous velocity along each side: $W_{\\text{side}} = -f_k a = -\\mu_k mg a$. For the 4 sides: $W_{\\text{total}} = -4\\mu_k mg a \\ne 0$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For which of the following forces can a meaningful, single-valued potential energy function $U(\\vec{r})$ be uniquely defined?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Dynamic viscous drag force on a sphere" },
+        { "key": "B", "text": "Kinetic friction force on a sliding block" },
+        { "key": "C", "text": "Gravitational electrostatic central force" },
+        { "key": "D", "text": "Air resistance proportional to velocity squared" }
+      ],
+      "correct": "C",
+      "solution": "A scalar potential energy function exists only for conservative force fields, such as gravitational and electrostatic central fields.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along a circular path of radius $R$ in the $xy$-plane centered at the origin under the force $\\vec{F} = c(y\\hat{i} - x\\hat{j})$, where $c$ is a constant. The work done by this force in one complete counterclockwise revolution is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$-2\\pi c R^2$" },
+        { "key": "C", "text": "$+2\\pi c R^2$" },
+        { "key": "D", "text": "$\\pi c R^2$" }
+      ],
+      "correct": "B",
+      "solution": "In polar coordinates: $x = R\\cos\\theta, y = R\\sin\\theta, dx = -R\\sin\\theta\\,d\\theta, dy = R\\cos\\theta\\,d\\theta$.<br>$$dW = c(y\\,dx - x\\,dy) = c[R\\sin\\theta(-R\\sin\\theta) - R\\cos\\theta(R\\cos\\theta)]d\\theta = -c R^2 d\\theta$$<br>$$W = \\int_0^{2\\pi} -c R^2\\,d\\theta = -2\\pi c R^2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "For a force $\\vec{F} = (ax\\hat{i} + by\\hat{j})\\text{ N}$, the work done in moving a particle from $(0, 0)$ to $(1\\text{ m}, 1\\text{ m})$ along path 1 ($y = x$) is $W_1$, and along path 2 ($y = x^2$) is $W_2$. The relation between $W_1$ and $W_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$W_1 > W_2$" },
+        { "key": "B", "text": "$W_1 < W_2$" },
+        { "key": "C", "text": "$W_1 = W_2 = \\dfrac{a + b}{2}$" },
+        { "key": "D", "text": "$W_1 = 2W_2$" }
+      ],
+      "correct": "C",
+      "solution": "$dW = ax\\,dx + by\\,dy = d\\left(\\frac{1}{2}ax^2 + \\frac{1}{2}by^2\\right)$. Since the differential is exact, the force is conservative and work is path-independent: $W_1 = W_2 = \\frac{a+b}{2}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ is taken from point $A$ to point $B$ in a conservative gravitational field along three different paths of lengths $s_1, s_2, s_3$ ($s_1 < s_2 < s_3$). If $W_1, W_2, W_3$ are the work done by gravity along these paths respectively, then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$W_1 = W_2 = W_3$" },
+        { "key": "B", "text": "$W_3 > W_2 > W_1$" },
+        { "key": "C", "text": "$W_1 > W_2 > W_3$" },
+        { "key": "D", "text": "$W_1 + W_3 = 2W_2$ only if $s_2 = (s_1 + s_3)/2$" }
+      ],
+      "correct": "A",
+      "solution": "Work done by any conservative force field depends strictly on the endpoints $A$ and $B$, completely independent of path length ($W_1 = W_2 = W_3$).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If a force $\\vec{F} = (f_x\\hat{i} + f_y\\hat{j})$ is conservative in 2D space, the partial derivatives must satisfy:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\partial f_x}{\\partial x} = \\dfrac{\\partial f_y}{\\partial y}$" },
+        { "key": "B", "text": "$\\dfrac{\\partial f_x}{\\partial y} = \\dfrac{\\partial f_y}{\\partial x}$" },
+        { "key": "C", "text": "$\\dfrac{\\partial f_x}{\\partial y} = -\\dfrac{\\partial f_y}{\\partial x}$" },
+        { "key": "D", "text": "$\\dfrac{\\partial f_x}{\\partial x} + \\dfrac{\\partial f_y}{\\partial y} = 0$" }
+      ],
+      "correct": "B",
+      "solution": "The curl-free condition $\\vec{\\nabla} \\times \\vec{F} = \\vec{0}$ in 2D is $\\frac{\\partial f_y}{\\partial x} - \\frac{\\partial f_x}{\\partial y} = 0 \\implies \\frac{\\partial f_x}{\\partial y} = \\frac{\\partial f_y}{\\partial x}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following statements is INCORRECT regarding non-conservative forces?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Work done over a closed path is always non-zero" },
+        { "key": "B", "text": "Mechanical energy is always strictly conserved in their presence" },
+        { "key": "C", "text": "They often dissipate mechanical energy into thermal energy or internal energy" },
+        { "key": "D", "text": "Work done depends on the specific path taken between two points" }
+      ],
+      "correct": "B",
+      "solution": "Mechanical energy is not conserved when non-conservative forces perform net work ($W_{\\text{nc}} = \\Delta E_{\\text{mech}} \\ne 0$). Hence statement B is incorrect.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves from point $A(1, 2)$ to point $B(3, 4)$ under a force $\\vec{F} = (2x\\hat{i} + 2y\\hat{j})\\text{ N}$. The work done by $\\vec{F}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ J}$" },
+        { "key": "B", "text": "$12\\text{ J}$" },
+        { "key": "C", "text": "$8\\text{ J}$" },
+        { "key": "D", "text": "$24\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\int_{(1,2)}^{(3,4)} (2x\\,dx + 2y\\,dy) = \\left[ x^2 + y^2 \\right]_{(1,2)}^{(3,4)} = (3^2 + 4^2) - (1^2 + 2^2) = 25 - 5 = 20\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Consider a central force $\\vec{F} = f(r)\\hat{r}$ where $r$ is the radial distance. Such a central force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Non-conservative if $f(r) \\propto 1/r^3$" },
+        { "key": "B", "text": "Always conservative for any continuous function $f(r)$" },
+        { "key": "C", "text": "Conservative only if $f(r) \\propto 1/r^2$" },
+        { "key": "D", "text": "Non-conservative because work depends on angle $\\theta$" }
+      ],
+      "correct": "B",
+      "solution": "All central forces of the form $\\vec{F} = f(r)\\hat{r}$ have zero curl ($\\vec{\\nabla} \\times (f(r)\\hat{r}) = \\vec{0}$) and are always conservative for any continuous function $f(r)$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is moved slowly along a closed loop in a vertical plane in the presence of uniform gravity and air resistance. The net work done by all forces in one complete cycle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Strictly negative" },
+        { "key": "B", "text": "Zero" },
+        { "key": "C", "text": "Strictly positive" },
+        { "key": "D", "text": "$+mgh$" }
+      ],
+      "correct": "A",
+      "solution": "Over a closed loop, the work done by conservative gravity is zero ($W_g = 0$), while air resistance continuously opposes motion, doing negative work ($W_{\\text{air}} < 0$). Thus $W_{\\text{net}} = 0 + W_{\\text{air}} < 0$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force $\\vec{F} = (ay^2\\hat{i} + 2bxy\\hat{j})\\text{ N}$ acts on a particle. For what ratio of $a/b$ is this force conservative?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a/b = 1$" },
+        { "key": "B", "text": "$a/b = 2$" },
+        { "key": "C", "text": "$a/b = 1/2$" },
+        { "key": "D", "text": "$a/b = -1$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{\\partial F_x}{\\partial y} = 2ay, \\quad \\frac{\\partial F_y}{\\partial x} = 2by \\implies 2ay = 2by \\implies a = b \\implies \\frac{a}{b} = 1$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 2\\text{ kg}$ is pulled at constant speed along a rough semi-circular path of radius $R = 2\\text{ m}$ from $(-R, 0)$ to $(+R, 0)$ ($\\mu_k = 0.5$). The work done by friction is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-20\\pi\\text{ J}$" },
+        { "key": "B", "text": "$-40\\text{ J}$" },
+        { "key": "C", "text": "Zero" },
+        { "key": "D", "text": "$+20\\pi\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "Distance traversed is $s = \\pi R = 2\\pi\\text{ m}$. Friction force is $f_k = \\mu_k mg = 0.5(2)(10) = 10\\text{ N}$.<br>$$W_f = -f_k s = -10(2\\pi) = -20\\pi\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the work done by a force field along any closed curve $C$ is $\\oint_C \\vec{F} \\cdot d\\vec{r} = 0$, by Stokes' Theorem this implies:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{\\nabla} \\cdot \\vec{F} = 0$" },
+        { "key": "B", "text": "$\\vec{\\nabla} \\times \\vec{F} = \\vec{0}$" },
+        { "key": "C", "text": "$\\vec{\\nabla}^2 \\vec{F} = \\vec{0}$" },
+        { "key": "D", "text": "$\\dfrac{\\partial \\vec{F}}{\\partial t} = \\vec{0}$" }
+      ],
+      "correct": "B",
+      "solution": "By Stokes' Theorem: $\\oint_C \\vec{F} \\cdot d\\vec{r} = \\iint_S (\\vec{\\nabla} \\times \\vec{F}) \\cdot d\\vec{A} = 0 \\iff \\vec{\\nabla} \\times \\vec{F} = \\vec{0}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in the $xy$-plane from $(0, 0)$ to $(1\\text{ m}, 1\\text{ m})$ under the force $\\vec{F} = (x^2\\hat{i} + y^2\\hat{j})\\text{ N}$. The work done is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{3}\\text{ J}$" },
+        { "key": "B", "text": "$\\dfrac{2}{3}\\text{ J}$" },
+        { "key": "C", "text": "$1\\text{ J}$" },
+        { "key": "D", "text": "$\\dfrac{4}{3}\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "$$W = \\int_0^1 x^2\\,dx + \\int_0^1 y^2\\,dy = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}\\text{ J}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An object moves under a force $\\vec{F} = (3x^2 y\\hat{i} + x^3\\hat{j})\\text{ N}$ along the parabolic path $y = x^2$ from $(0, 0)$ to $(2\\text{ m}, 4\\text{ m})$. The work done by the force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16\\text{ J}$" },
+        { "key": "B", "text": "$32\\text{ J}$" },
+        { "key": "C", "text": "$64\\text{ J}$" },
+        { "key": "D", "text": "$24\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "Notice $dW = 3x^2 y\\,dx + x^3\\,dy = d(x^3 y)$.<br>$$W = \\left[ x^3 y \\right]_{(0,0)}^{(2,4)} = (2^3 \\times 4) - 0 = 32\\text{ J}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following is an example of a non-conservative force that can do POSITIVE work on a body?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Static friction accelerating a box on a speeding truck bed" },
+        { "key": "B", "text": "Kinetic friction on a block sliding on a stationary table" },
+        { "key": "C", "text": "Air resistance on a descending skydiver" },
+        { "key": "D", "text": "Viscous drag on a settling colloid" }
+      ],
+      "correct": "A",
+      "solution": "Static friction between a crate and accelerating truck accelerates the crate forward in the direction of motion, doing positive work relative to the ground frame ($W = f_s s > 0$).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "When a non-conservative force does negative work on a system, the total mechanical energy $E = K + U$ of the system:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Increases" },
+        { "key": "B", "text": "Remains constant" },
+        { "key": "C", "text": "Decreases" },
+        { "key": "D", "text": "Oscillates sinusoidally" }
+      ],
+      "correct": "C",
+      "solution": "By the general Work-Energy principle: $W_{\\text{nc}} = \\Delta E_{\\text{mech}}$. If $W_{\\text{nc}} < 0$, the mechanical energy decreases (converted into heat, sound, or deformation).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force $\\vec{F} = (z\\hat{i} + x\\hat{j} + y\\hat{k})\\text{ N}$ acts on a particle. The curl $\\vec{\\nabla} \\times \\vec{F}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{0}$ (Conservative)" },
+        { "key": "B", "text": "$(\\hat{i} + \\hat{j} + \\hat{k})$ (Non-conservative)" },
+        { "key": "C", "text": "$(-\\hat{i} - \\hat{j} - \\hat{k})$ (Non-conservative)" },
+        { "key": "D", "text": "$(2\\hat{i} - \\hat{j})$ (Non-conservative)" }
+      ],
+      "correct": "B",
+      "solution": "$$\\vec{\\nabla} \\times \\vec{F} = \\hat{i}(1 - 0) - \\hat{j}(0 - 1) + \\hat{k}(1 - 0) = (\\hat{i} + \\hat{j} + \\hat{k}) \\ne \\vec{0}$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

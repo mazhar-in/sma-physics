@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-025",
+    "title": "Problems on Pulley Systems & Connected Masses",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Pulley Systems & Connected Masses JEE Main Physics DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering advanced movable pulleys, Atwood machines, center of mass acceleration, virtual work method, and string constraint kinematics.",
+    "keywords": "JEE Main Physics, Pulley Systems DPP, Connected Masses, Atwood Machine, Movable Pulley Constraints, Virtual Work Method, Center of Mass Acceleration, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/pulley-systems-connected-masses",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematic String Constraints & Dynamics of Pulley Systems",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. String Constraint Relations: For inextensible strings over ideal pulleys, the total length is invariant ($\\sum l_i = \\text{const}$). Differentiating yields velocity and acceleration constraints: $\\sum \\vec{T}_i \\cdot \\vec{v}_i = 0$ and $\\sum \\vec{T}_i \\cdot \\vec{a}_i = 0$ (Virtual Work Method). 2. Movable Pulley Mechanical Advantage: If a block is supported by a 2-strand movable pulley, $a_{\\text{block}} = \\frac{a_{\\text{free\\_end}}}{2}$ and effective upward tension is $2T$. 3. Center of Mass Acceleration: In a two-body Atwood machine, $a = \\frac{m_1 - m_2}{m_1 + m_2}g$, with center-of-mass downward acceleration $a_{\\text{cm}} = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)^2 g$.",
+    "keyFormula": "$$\\sum \\vec{T}_i \\cdot \\vec{a}_i = 0, \\quad a_{\\text{movable}} = \\frac{a_{\\text{table}}}{2}, \\quad a_{\\text{cm}} = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)^2 g, \\quad v_{\\text{block}} = \\frac{u}{\\cos\\theta}$$",
+    "examTrap": "When a string pulled with speed $u$ at an angle $\theta$ to the horizontal pulls a block along a floor, the block velocity is $v = \\frac{u}{\\cos\\theta}$ (NOT $u\\cos\\theta$). The physical constraint is that the rate of shortening of the string equals $u$, which gives $v\\cos\\theta = u$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a system with a movable pulley $P_1$ carrying mass $m_1 = 4\\text{ kg}$ and a fixed pulley $P_2$, a single light string connects mass $m_2 = 1\\text{ kg}$ on a smooth table to $m_1$ via $P_1$. If the table block moves with acceleration $a_2$, the acceleration $a_1$ of the hanging movable pulley block is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a_1 = 2a_2$" },
+        { "key": "B", "text": "$a_1 = \\dfrac{a_2}{2}$" },
+        { "key": "C", "text": "$a_1 = a_2$" },
+        { "key": "D", "text": "$a_1 = \\dfrac{a_2}{4}$" }
+      ],
+      "correct": "B",
+      "solution": "Length of string $l = x_2 + 2y_1 + \\text{constant}$. Differentiating twice with respect to time yields $\\ddot{x}_2 + 2\\ddot{y}_1 = 0 \\implies a_1 = \\frac{a_2}{2}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In the system of Q1, the acceleration $a_1$ of the hanging mass $m_1$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ m/s}^2$" },
+        { "key": "B", "text": "$8.0\\text{ m/s}^2$" },
+        { "key": "C", "text": "$5.0\\text{ m/s}^2$" },
+        { "key": "D", "text": "$4.0\\text{ m/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "1. For $m_2$: $T = m_2 a_2 = m_2(2a_1) = 2m_2 a_1$.<br>2. For $m_1$: $m_1 g - 2T = m_1 a_1 \\implies m_1 g - 4m_2 a_1 = m_1 a_1$.<br>3. $a_1 = \\frac{m_1 g}{m_1 + 4m_2} = \\frac{4 \\times 10}{4 + 4(1)} = \\frac{40}{8} = 5.0\\text{ m/s}^2$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In an Atwood machine with masses $m_1 = 6\\text{ kg}$ and $m_2 = 4\\text{ kg}$, the acceleration of the center of mass of the two-mass system ($a_{\\text{cm}}$) is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ m/s}^2\\text{ downward}$" },
+        { "key": "B", "text": "$0.8\\text{ m/s}^2\\text{ upward}$" },
+        { "key": "C", "text": "$0.2\\text{ m/s}^2\\text{ downward}$" },
+        { "key": "D", "text": "$0.4\\text{ m/s}^2\\text{ downward}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Individual acceleration $a = \\frac{m_1 - m_2}{m_1 + m_2}g = \\frac{2}{10}(10) = 2.0\\text{ m/s}^2$.<br>2. $a_{\\text{cm}} = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)a = \\left(\\frac{2}{10}\\right)(2.0) = 0.4\\text{ m/s}^2\\text{ (downward)}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m_1$ on a horizontal table is pulled by a string passing over a fixed pulley at height $h$. When the string makes an angle $\\theta$ with the horizontal and the free end is pulled with constant speed $u$, the speed of block $m_1$ along the table is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{\\cos\\theta}$" },
+        { "key": "B", "text": "$u\\cos\\theta$" },
+        { "key": "C", "text": "$\\dfrac{u}{\\sin\\theta}$" },
+        { "key": "D", "text": "$u\\tan\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Position constraint: $x^2 + h^2 = l^2 \\implies 2x\\frac{dx}{dt} = 2l\\frac{dl}{dt} \\implies x v = l u \\implies v = u\\frac{l}{x} = \\frac{u}{\\cos\\theta}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a modified Atwood machine, a hanging mass $m_1 = 2\\text{ kg}$ pulls two masses $m_2 = 3\\text{ kg}$ and $m_3 = 5\\text{ kg}$ tied together by a string on a frictionless table. The tension in the string between $m_2$ and $m_3$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6\\text{ N}$" },
+        { "key": "B", "text": "$10\\text{ N}$" },
+        { "key": "C", "text": "$16\\text{ N}$" },
+        { "key": "D", "text": "$4\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Acceleration $a = \\frac{m_1 g}{m_1 + m_2 + m_3} = \\frac{20}{10} = 2.0\\text{ m/s}^2$.<br>2. Tension $T_{23}$ pulls $m_3$: $T_{23} = m_3 a = 5 \\times 2.0 = 10\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A system consists of three blocks $A, B,$ and $C$ of masses $m_A = 1\\text{ kg}$, $m_B = 2\\text{ kg}$, and $m_C = 3\\text{ kg}$ connected vertically by strings in a single line. If pulled upward with an acceleration $a = 2\\text{ m/s}^2$, the tension in the string connecting $A$ and $B$ (where $A$ is the top block) is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$72\\text{ N}$" },
+        { "key": "B", "text": "$36\\text{ N}$" },
+        { "key": "C", "text": "$60\\text{ N}$" },
+        { "key": "D", "text": "$24\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "Tension $T_{AB}$ supports $(m_B + m_C) = 5\\text{ kg}$: $$T_{AB} = (m_B + m_C)(g + a) = 5(10 + 2) = 60\\text{ N}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block $A$ of mass $M$ slides on a frictionless horizontal floor. A light string attached to $A$ passes over a smooth pulley and holds a hanging block $B$ of mass $m$. The force exerted by the pulley clamp on the table corner is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$T$" },
+        { "key": "B", "text": "$2T$" },
+        { "key": "C", "text": "$\\dfrac{T}{\\sqrt{2}}$" },
+        { "key": "D", "text": "$\\sqrt{2}T$" }
+      ],
+      "correct": "D",
+      "solution": "The two string segments pull horizontally and vertically at $90^\\circ$ on the corner pulley: $$F_{\\text{pulley}} = \\sqrt{T^2 + T^2} = \\sqrt{2}T$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two masses $m_1 = 3\\text{ kg}$ and $m_2 = 1\\text{ kg}$ are connected by a light string over a smooth pulley. Mass $m_1$ is placed on a smooth incline of angle $\theta = 30^\\circ$, while $m_2$ hangs vertically. The acceleration of mass $m_1$ down the incline is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.25\\text{ m/s}^2$" },
+        { "key": "B", "text": "$2.50\\text{ m/s}^2$" },
+        { "key": "C", "text": "$0.75\\text{ m/s}^2$" },
+        { "key": "D", "text": "$3.75\\text{ m/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "1. Driving force: $F_{\\text{net}} = m_1 g\\sin 30^\\circ - m_2 g = 15 - 10 = 5\\text{ N}$.<br>2. Total mass: $M = 3 + 1 = 4\\text{ kg}$.<br>3. $a = \\frac{5}{4} = 1.25\\text{ m/s}^2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a virtual work constraint problem, if $\\sum \\vec{T}_i \\cdot \\vec{a}_i = 0$ is applied to a connected pulley system, the underlying physical assumption is that:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Pulleys are frictionless but have finite rotational inertia" },
+        { "key": "B", "text": "Strings are massless, inextensible, and pulleys are ideal" },
+        { "key": "C", "text": "The acceleration of all masses is identical" },
+        { "key": "D", "text": "Mechanical energy is dissipated as heat" }
+      ],
+      "correct": "B",
+      "solution": "The relation $\\sum \\vec{T}_i \\cdot \\vec{a}_i = 0$ is valid when internal tension does zero net work, which requires massless, inextensible strings and frictionless, massless pulleys.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is suspended by a string wrapped around two identical fixed pulleys and one movable pulley. If the free end of the string is pulled down with acceleration $a_0$, the upward acceleration of mass $m$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$a_0$" },
+        { "key": "B", "text": "$2a_0$" },
+        { "key": "C", "text": "$\\dfrac{a_0}{2}$" },
+        { "key": "D", "text": "$\\dfrac{a_0}{4}$" }
+      ],
+      "correct": "C",
+      "solution": "Since mass $m$ is supported by two strands of string from the movable pulley, $2y_m = x_0 \\implies a_m = \\frac{a_0}{2}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A monkey of mass $m = 30\\text{ kg}$ climbs up a light rope attached to a counterweight block of mass $M = 30\\text{ kg}$ over a smooth fixed pulley. If the monkey accelerates up the rope at $2\\text{ m/s}^2$ relative to the rope, the acceleration of the block $M$ relative to the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ m/s}^2\\text{ downward}$" },
+        { "key": "B", "text": "$0\\text{ m/s}^2$" },
+        { "key": "C", "text": "$2.0\\text{ m/s}^2\\text{ upward}$" },
+        { "key": "D", "text": "$1.0\\text{ m/s}^2\\text{ upward}$" }
+      ],
+      "correct": "D",
+      "solution": "1. For counterweight $M$: $T - Mg = Ma_M$.<br>2. For monkey $m$: $T - mg = m(a_{\\text{rel}} - a_M)$.<br>3. Equating tensions: $a_M + g = (a_{\\text{rel}} - a_M) + g \\implies 2a_M = 2 \\implies a_M = 1.0\\text{ m/s}^2\\text{ (upward)}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two blocks of masses $m_1 = 2\\text{ kg}$ and $m_2 = 3\\text{ kg}$ are connected by a spring of stiffness $k = 100\\text{ N/m}$ on a frictionless horizontal plane. If a constant force $F = 20\\text{ N}$ pulls $m_2$ horizontally, the maximum extension of the spring from its natural length is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.16\\text{ m}$" },
+        { "key": "B", "text": "$0.08\\text{ m}$" },
+        { "key": "C", "text": "$0.20\\text{ m}$" },
+        { "key": "D", "text": "$0.32\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$x_{\\max} = \\frac{2 m_1 F}{k(m_1 + m_2)} = \\frac{2(2)(20)}{100(2 + 3)} = \\frac{80}{500} = 0.16\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A double pulley system has a fixed pulley and a movable pulley. Mass $m_1 = 4\\text{ kg}$ hangs from the movable pulley, while mass $m_2 = 1\\text{ kg}$ hangs from the free end of the string. The tension in the string is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20.0\\text{ N}$" },
+        { "key": "B", "text": "$16.0\\text{ N}$" },
+        { "key": "C", "text": "$24.0\\text{ N}$" },
+        { "key": "D", "text": "$12.5\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Constraint: $a_2 = 2a_1$.<br>2. $m_1 g - 2T = m_1 a_1 \\implies 40 - 2T = 4a_1$.<br>3. $T - m_2 g = m_2(2a_1) \\implies a_1 = \\frac{T - 10}{2}$.<br>4. $40 - 2T = 2T - 20 \\implies 4T = 64 \\implies T = 16.0\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q13, the downward acceleration of the hanging mass $m_1$ attached to the movable pulley is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4.0\\text{ m/s}^2$" },
+        { "key": "B", "text": "$1.0\\text{ m/s}^2$" },
+        { "key": "C", "text": "$2.0\\text{ m/s}^2$" },
+        { "key": "D", "text": "$5.0\\text{ m/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "$$a_1 = \\frac{m_1 - 2m_2}{m_1 + 4m_2}g = \\frac{4 - 2(1)}{4 + 4(1)}(10) = \\frac{2}{8}(10) = 2.0\\text{ m/s}^2$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m_1 = 5\\text{ kg}$ is on a smooth horizontal table. It is connected by a string passing over a smooth pulley to a movable pulley of mass $m_p = 0$. The movable pulley supports two hanging masses $m_2 = 2\\text{ kg}$ and $m_3 = 3\\text{ kg}$. The tension in the string supporting $m_1$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$24.0\\text{ N}$" },
+        { "key": "B", "text": "$36.0\\text{ N}$" },
+        { "key": "C", "text": "$30.0\\text{ N}$" },
+        { "key": "D", "text": "$28.2\\text{ N}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Effective mass of hanging Atwood branch: $m_{\\text{eff}} = \\frac{4 m_2 m_3}{m_2 + m_3} = \\frac{4(2)(3)}{5} = 4.8\\text{ kg}$.<br>2. Tension: $T = \\frac{m_1 m_{\\text{eff}} g}{m_1 + m_{\\text{eff}}} = \\frac{5(4.8)(10)}{5 + 4.8} = \\frac{240}{9.8} \\approx 28.2\\text{ N}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $M = 10\\text{ kg}$ is resting on a frictionless horizontal plane. A light string attached to $M$ passes over a frictionless pulley and carries a block of mass $m = 2\\text{ kg}$. If the system is released from rest, the distance traveled by block $M$ in $t = 2\\text{ seconds}$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.33\\text{ m}$" },
+        { "key": "B", "text": "$1.67\\text{ m}$" },
+        { "key": "C", "text": "$6.67\\text{ m}$" },
+        { "key": "D", "text": "$5.00\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $a = \\frac{mg}{M + m} = \\frac{20}{12} = \\frac{5}{3}\\text{ m/s}^2$.<br>2. Distance in $2\\text{ s}$: $s = \\frac{1}{2}at^2 = \\frac{1}{2}\\left(\\frac{5}{3}\\right)(4) = \\frac{10}{3} \\approx 3.33\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In a system of connected masses on a smooth wedge of inclination $\theta = 45^\\circ$, mass $m_1 = 4\\text{ kg}$ on the incline is connected via a light string over the apex pulley to a hanging mass $m_2 = 4\\text{ kg}$. The tension in the connecting string is: (Take $g = 10\\text{ m/s}^2$, $\sqrt{2} \approx 1.414$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20.0\\text{ N}$" },
+        { "key": "B", "text": "$34.1\\text{ N}$" },
+        { "key": "C", "text": "$40.0\\text{ N}$" },
+        { "key": "D", "text": "$28.3\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $F_{\\text{net}} = 40 - 40\\sin 45^\\circ = 11.72\\text{ N} \\implies a = \\frac{11.72}{8} = 1.465\\text{ m/s}^2$.<br>2. Tension: $T = 4(10 - 1.465) = 4(8.535) \\approx 34.1\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Three masses $m_1 = 2\\text{ kg}$, $m_2 = 3\\text{ kg}$, and $m_3 = 5\\text{ kg}$ are connected by strings as an Atwood machine where $m_1$ and $m_2$ hang together on one side and $m_3$ hangs on the other. The tension in the string connecting $m_1$ and $m_2$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ N}$" },
+        { "key": "B", "text": "$30\\text{ N}$" },
+        { "key": "C", "text": "$20\\text{ N}$" },
+        { "key": "D", "text": "$10\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "Since $(m_1 + m_2) = m_3 = 5\\text{ kg}$, the system has zero acceleration ($a = 0$). FBD of $m_1$: $$T_{12} = m_1 g = 2 \\times 10 = 20\\text{ N}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ring of mass $m$ slides along a smooth fixed vertical rod. It is connected by a string passing over a smooth pulley at distance $d$ from the rod to a hanging mass $M$. When the string makes an angle $\theta$ with the vertical, the ring is in static equilibrium if:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sin\\theta = \\dfrac{m}{M}$" },
+        { "key": "B", "text": "$\\tan\\theta = \\dfrac{m}{M}$" },
+        { "key": "C", "text": "$\\sec\\theta = \\dfrac{m}{M}$" },
+        { "key": "D", "text": "$\\cos\\theta = \\dfrac{m}{M}$" }
+      ],
+      "correct": "D",
+      "solution": "Tension in string is $T = Mg$. Vertical equilibrium of the ring: $$T\\cos\\theta = mg \\implies (Mg)\\cos\\theta = mg \\implies \\cos\\theta = \\frac{m}{M}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $m$ and $2m$ are connected by a light string passing over a frictionless pulley. If the system is initially held at rest and then released, the velocity of the center of mass after time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{gt}{9}\\text{ downward}$" },
+        { "key": "B", "text": "$\\dfrac{gt}{3}\\text{ downward}$" },
+        { "key": "C", "text": "$\\dfrac{2gt}{3}\\text{ downward}$" },
+        { "key": "D", "text": "$\\dfrac{gt}{6}\\text{ downward}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Acceleration $a = \\frac{2m - m}{3m}g = \\frac{g}{3}$.<br>2. $a_{\\text{cm}} = \\left(\\frac{2m - m}{3m}\\right)a = \\frac{1}{3}\\left(\\frac{g}{3}\\right) = \\frac{g}{9}\\text{ (downward)}$.<br>3. Velocity $v_{\\text{cm}} = a_{\\text{cm}} t = \\frac{gt}{9}\\text{ (downward)}$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

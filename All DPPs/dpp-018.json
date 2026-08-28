@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-018",
+    "title": "Horizontal Projectile Motion: Time of Flight, Range, Trajectory & Velocity Vectors",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Plane"
+  },
+  "seo": {
+    "title": "Horizontal Projectile Motion JEE Main Physics Practice Set | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering horizontal projection from towers, trajectory parabola equation, radius of curvature, hunter-monkey theorem, and staircase stepping problems.",
+    "keywords": "JEE Main Physics, Projectile Motion DPP, Horizontal Projectile, Time of Flight, Range of Horizontal Projectile, Trajectory Equation, Radius of Curvature, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/horizontal-projectile-motion-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematics of Horizontally Projected Bodies",
+    "tag": "Class 11 Mechanics",
+    "summary": "When a projectile is launched horizontally from height $h$ with initial velocity $u$: (1) Horizontal motion is uniform: $u_x = u$, $a_x = 0$, $x(t) = ut$. (2) Vertical motion is free fall from rest: $u_y = 0$, $a_y = g$, $y(t) = \\frac{1}{2}gt^2$. (3) Time of flight depends exclusively on height: $T = \\sqrt{\\frac{2h}{g}}$. (4) Horizontal range: $R = uT = u\\sqrt{\\frac{2h}{g}}$. (5) Parabolic trajectory: $y = -\\frac{g}{2u^2}x^2$. (6) Striking speed: $v = \\sqrt{u^2 + 2gh}$.",
+    "keyFormula": "$$T = \\sqrt{\\frac{2h}{g}}, \\quad R = u\\sqrt{\\frac{2h}{g}}, \\quad y = -\\frac{g}{2u^2}x^2, \\quad v = \\sqrt{u^2 + 2gh}, \\quad R_c = \\frac{u^2}{g}$$",
+    "examTrap": "The time of flight for a horizontal projectile is entirely independent of its launch speed $u$. Two bodies projected horizontally from the same height with different horizontal velocities will hit the ground simultaneously ($T_1 = T_2$). At the moment of release, the radius of curvature is $R = \\frac{u^2}{g}$ because $a_n = g$ acts perpendicular to $\\vec{v}_0$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A projectile is launched horizontally from a height $h$ with an initial velocity $u$. The time of flight $T$ depends on:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Both $u$ and $h$" },
+        { "key": "B", "text": "Height $h$ only" },
+        { "key": "C", "text": "Velocity $u$ only" },
+        { "key": "D", "text": "Mass of the projectile" }
+      ],
+      "correct": "B",
+      "solution": "Vertical motion is free fall under gravity with zero initial vertical velocity ($u_y = 0$): $$h = \\frac{1}{2}g T^2 \\implies T = \\sqrt{\\frac{2h}{g}}$$ The time of flight $T$ is completely independent of the horizontal launch velocity $u$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An aeroplane flying horizontally at a height of $490\\text{ m}$ with a speed of $180\\text{ km/h}$ drops a food packet. The horizontal distance covered by the packet before hitting the ground is: (Take $g = 9.8\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$250\\text{ m}$" },
+        { "key": "B", "text": "$1000\\text{ m}$" },
+        { "key": "C", "text": "$500\\text{ m}$" },
+        { "key": "D", "text": "$750\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Speed $u = 180 \\times \\frac{5}{18} = 50\\text{ m/s}$.<br>2. Time of flight: $T = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(490)}{9.8}} = 10\\text{ s}$.<br>3. Horizontal range: $R = u \\times T = 50 \\times 10 = 500\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected horizontally from the top of a cliff of height $H$ with speed $u$. The equation of its trajectory taking the launch point as the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$y = \\dfrac{u^2}{2g}x^2$" },
+        { "key": "B", "text": "$y = -\\dfrac{u^2}{2g}x$" },
+        { "key": "C", "text": "$y = \\dfrac{g}{2u}x^2$" },
+        { "key": "D", "text": "$y = -\\dfrac{g}{2u^2}x^2$" }
+      ],
+      "correct": "D",
+      "solution": "1. $x = ut \\implies t = \\frac{x}{u}$<br>2. $y = -\\frac{1}{2}gt^2 = -\\frac{1}{2}g\\left(\\frac{x}{u}\\right)^2 = -\\frac{g}{2u^2}x^2$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is projected horizontally from a tower with speed $u = 20\\text{ m/s}$. The angle made by the velocity vector with the horizontal after $2\\text{ seconds}$ is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$45^\\circ$" },
+        { "key": "B", "text": "$30^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "A",
+      "solution": "1. $v_x = u = 20\\text{ m/s}$<br>2. $v_y = gt = 10(2) = 20\\text{ m/s}$<br>3. $\\tan\\theta = \\frac{v_y}{v_x} = \\frac{20}{20} = 1 \\implies \\theta = 45^\\circ$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two bodies $A$ and $B$ are projected horizontally from the top of a tower with velocities $u_1$ and $u_2$ ($u_1 > u_2$) respectively. If $T_1$ and $T_2$ are their respective times of flight, then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$T_1 > T_2$" },
+        { "key": "B", "text": "$T_1 = T_2$" },
+        { "key": "C", "text": "$T_1 < T_2$" },
+        { "key": "D", "text": "$T_1 / T_2 = u_1 / u_2$" }
+      ],
+      "correct": "B",
+      "solution": "Since both bodies are projected from the same vertical height $h$ with zero initial vertical velocity, their vertical kinematics are identical: $$T_1 = T_2 = \\sqrt{\\frac{2h}{g}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is projected horizontally with velocity $u$ from the top of a tower. The radius of curvature of its trajectory at the point of projection is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{2g}$" },
+        { "key": "B", "text": "$\\dfrac{2u^2}{g}$" },
+        { "key": "C", "text": "$\\dfrac{u^2}{g}$" },
+        { "key": "D", "text": "$\\dfrac{u^2}{4g}$" }
+      ],
+      "correct": "C",
+      "solution": "At the moment of horizontal projection: speed is $v = u$, and acceleration perpendicular to velocity is $a_n = g$. Radius of curvature: $$R = \\frac{v^2}{a_n} = \\frac{u^2}{g}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball is thrown horizontally from the top of a tower of height $80\\text{ m}$ with speed $u = 30\\text{ m/s}$. The speed with which it strikes the ground is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30\\text{ m/s}$" },
+        { "key": "B", "text": "$40\\text{ m/s}$" },
+        { "key": "C", "text": "$70\\text{ m/s}$" },
+        { "key": "D", "text": "$50\\text{ m/s}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $v_x = u = 30\\text{ m/s}$<br>2. $v_y = \\sqrt{2gh} = \\sqrt{2(10)(80)} = 40\\text{ m/s}$<br>3. Striking speed $v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{30^2 + 40^2} = 50\\text{ m/s}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A hunter aims his rifle horizontally directly at a monkey sitting on a tree branch at height $h$. The monkey drops from the branch at the exact instant the bullet leaves the muzzle. The bullet will:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Always hit the monkey regardless of the muzzle speed $u$ (provided $u$ is large enough to bridge the distance)" },
+        { "key": "B", "text": "Pass above the monkey" },
+        { "key": "C", "text": "Pass below the monkey" },
+        { "key": "D", "text": "Hit only if $u = \\sqrt{gh}$" }
+      ],
+      "correct": "A",
+      "solution": "In time $t$, the bullet drops vertically by $y_b = \\frac{1}{2}gt^2$ from the sight line, while the monkey drops by $y_m = \\frac{1}{2}gt^2$ from the branch. Both undergo identical vertical displacements at any given instant, guaranteeing that the bullet hits the monkey.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball is thrown horizontally from the top of an inclined plane of inclination $\\theta$ with speed $u$. The time of flight of the ball before hitting the incline is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u\\tan\theta}{g}$" },
+        { "key": "B", "text": "$\\dfrac{2u\\tan\theta}{g}$" },
+        { "key": "C", "text": "$\\dfrac{2u\\sin\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{2u\\cos\theta}{g}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Horizontal coordinate: $x = ut$, Vertical drop: $y = \\frac{1}{2}gt^2$.<br>2. On the incline surface: $\\tan\\theta = \\frac{y}{x} = \\frac{\\frac{1}{2}gt^2}{ut} = \\frac{gt}{2u} \\implies t = \\frac{2u\\tan\\theta}{g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q9, the distance along the incline from the launch point to where the ball lands is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2u^2\\tan\theta}{g}$" },
+        { "key": "B", "text": "$\\dfrac{2u^2\\sin\theta}{g\\cos^2\\theta}$" },
+        { "key": "C", "text": "$\\dfrac{2u^2\\tan\theta\\sec\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{u^2\\tan^2\theta}{g}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $x = ut = u\\left(\\frac{2u\\tan\\theta}{g}\\right) = \\frac{2u^2\\tan\\theta}{g}$<br>2. Slant distance along incline: $$L = \\frac{x}{\\cos\\theta} = \\frac{2u^2\\tan\\theta\\sec\\theta}{g}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A projectile fired horizontally from a height $h$ lands at a horizontal distance equal to $2h$. The launch speed $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{gh}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{gh}{2}}$" },
+        { "key": "C", "text": "$2\\sqrt{gh}$" },
+        { "key": "D", "text": "$\\sqrt{2gh}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $R = u \\sqrt{\\frac{2h}{g}} = 2h$<br>2. Squaring: $u^2\\left(\\frac{2h}{g}\\right) = 4h^2 \\implies u^2 = 2gh \\implies u = \\sqrt{2gh}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is projected horizontally from a height with speed $u$. The instant at which the tangential acceleration equals the centripetal (normal) acceleration is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t = \\dfrac{u}{g}$" },
+        { "key": "B", "text": "$t = \\dfrac{2u}{g}$" },
+        { "key": "C", "text": "$t = \\dfrac{u}{2g}$" },
+        { "key": "D", "text": "$t = \\dfrac{\\sqrt{2}u}{g}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Tangential acceleration: $a_t = g\\sin\\theta$, Normal acceleration: $a_n = g\\cos\\theta$.<br>2. $a_t = a_n \\implies \\tan\\theta = 1 \\implies \\theta = 45^\\circ$.<br>3. $\\tan\\theta = \\frac{v_y}{v_x} = \\frac{gt}{u} = 1 \\implies t = \\frac{u}{g}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two stones are projected horizontally in opposite directions from the top of a tower with velocities $u_1$ and $u_2$. The time after which their velocity vectors become mutually perpendicular is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u_1 u_2}{g}$" },
+        { "key": "B", "text": "$\\dfrac{\\sqrt{u_1 u_2}}{g}$" },
+        { "key": "C", "text": "$\\dfrac{\\sqrt{u_1^2 + u_2^2}}{g}$" },
+        { "key": "D", "text": "$\\dfrac{u_1 + u_2}{2g}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\vec{v}_1 = u_1\\hat{i} - gt\\hat{j}$, $\\vec{v}_2 = -u_2\\hat{i} - gt\\hat{j}$<br>2. $\\vec{v}_1 \\cdot \\vec{v}_2 = 0 \\implies -u_1 u_2 + g^2 t^2 = 0 \\implies t = \\frac{\\sqrt{u_1 u_2}}{g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q13, the separation between the two stones at the instant their velocity vectors are mutually perpendicular is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u_1 u_2}{g}$" },
+        { "key": "B", "text": "$\\dfrac{u_1 + u_2}{g}$" },
+        { "key": "C", "text": "$\\dfrac{(u_1 + u_2)\\sqrt{u_1 u_2}}{g}$" },
+        { "key": "D", "text": "$\\dfrac{u_1^2 + u_2^2}{g}$" }
+      ],
+      "correct": "C",
+      "solution": "Separation $x_{\\text{rel}} = (u_1 + u_2)t = \\frac{(u_1 + u_2)\\sqrt{u_1 u_2}}{g}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball rolls off the top of a staircase with horizontal velocity $u$. If the steps are of uniform height $h$ and width $b$, the ball will hit the $n\\text{th}$ step if $n$ satisfies:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$n = \\dfrac{u^2 h}{g b^2}$" },
+        { "key": "B", "text": "$n = \\dfrac{2u b}{g h^2}$" },
+        { "key": "C", "text": "$n = \\dfrac{u^2 b^2}{2gh}$" },
+        { "key": "D", "text": "$n = \\dfrac{2u^2 h}{g b^2}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Coordinates of edge of $n^{\\text{th}}$ step: $x = nb$, $y = nh$.<br>2. $nh = \\frac{1}{2}g\\left(\\frac{nb}{u}\\right)^2 = \\frac{gn^2 b^2}{2u^2} \\implies n = \\frac{2u^2 h}{gb^2}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bomber flies horizontally at speed $u$ at height $H$. A target is stationary on the ground. The angle $\\phi$ with the horizontal at which the target must be seen by the sight-line at the moment of bomb release is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}\\left(\\dfrac{\\sqrt{gH}}{\\sqrt{2}u}\\right)$" },
+        { "key": "B", "text": "$\\tan^{-1}\\left(\\dfrac{\\sqrt{2}u}{\\sqrt{gH}}\\right)$" },
+        { "key": "C", "text": "$\\tan^{-1}\\left(\\dfrac{u}{\\sqrt{2gH}}\\right)$" },
+        { "key": "D", "text": "$\\tan^{-1}\\left(\\dfrac{2u}{\\sqrt{gH}}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "1. Horizontal range: $R = u \\sqrt{\\frac{2H}{g}}$.<br>2. Sight line angle with horizontal: $$\\tan\\phi = \\frac{H}{R} = \\frac{H}{u\\sqrt{\\frac{2H}{g}}} = \\frac{\\sqrt{gH}}{\\sqrt{2}u} \\implies \\phi = \\tan^{-1}\\left(\\frac{\\sqrt{gH}}{\\sqrt{2}u}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is projected horizontally from a height $h$. The displacement of the particle when its velocity vector makes an angle of $45^\\circ$ with the horizontal has magnitude:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{g}$" },
+        { "key": "B", "text": "$\\dfrac{\\sqrt{5}u^2}{2g}$" },
+        { "key": "C", "text": "$\\dfrac{\\sqrt{3}u^2}{g}$" },
+        { "key": "D", "text": "$\\dfrac{2u^2}{g}$" }
+      ],
+      "correct": "B",
+      "solution": "1. At $45^\\circ$: $v_y = v_x = u \\implies gt = u \\implies t = u/g$.<br>2. $x = ut = u^2/g$, $y = \\frac{1}{2}gt^2 = \\frac{u^2}{2g}$.<br>3. Magnitude $r = \\sqrt{x^2 + y^2} = \\sqrt{(u^2/g)^2 + (u^2/2g)^2} = \\frac{\\sqrt{5}u^2}{2g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "From the top of a tower of height $H$, a particle is projected horizontally with speed $u$. The rate at which the distance $r$ from the projection point increases initially ($t \\to 0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0$" },
+        { "key": "B", "text": "$g$" },
+        { "key": "C", "text": "$u$" },
+        { "key": "D", "text": "$\\infty$" }
+      ],
+      "correct": "C",
+      "solution": "Distance $r(t) = \\sqrt{u^2 t^2 + \\frac{1}{4}g^2 t^4} = ut\\sqrt{1 + \\frac{g^2 t^2}{4u^2}}$. Taking the derivative $\\frac{dr}{dt}$ at $t \\to 0$ gives $u$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone is projected horizontally with velocity $u = 10\\text{ m/s}$ from a tower. At time $t = 1\\text{ s}$, the radius of curvature of the trajectory is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ m}$" },
+        { "key": "B", "text": "$10\\sqrt{2}\\text{ m}$" },
+        { "key": "C", "text": "$40\\text{ m}$" },
+        { "key": "D", "text": "$20\\sqrt{2}\\text{ m}$" }
+      ],
+      "correct": "D",
+      "solution": "1. At $t = 1\\text{ s}$: $v_x = 10\\text{ m/s}$, $v_y = 10\\text{ m/s} \\implies v = 10\\sqrt{2}\\text{ m/s}$, $\\theta = 45^\\circ$.<br>2. Normal acceleration: $a_n = g\\cos(45^\\circ) = \\frac{10}{\\sqrt{2}}\\text{ m/s}^2$.<br>3. Radius of curvature: $$R = \\frac{v^2}{a_n} = \\frac{(10\\sqrt{2})^2}{10/\\sqrt{2}} = \\frac{200}{10/\\sqrt{2}} = 20\\sqrt{2}\\text{ m}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected horizontally from the top of a tower. During its motion, the horizontal component of acceleration $a_x$ and vertical component $a_y$ are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0, \\; g\\text{ (downwards)}$" },
+        { "key": "B", "text": "$g, \\; g\\text{ (downwards)}$" },
+        { "key": "C", "text": "$0, \\; 0$" },
+        { "key": "D", "text": "$g\\cos\\theta, \\; g\\sin\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Neglecting air resistance, no horizontal force acts on the projectile ($a_x = 0$), while gravity acts purely vertically downward ($a_y = g$).<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

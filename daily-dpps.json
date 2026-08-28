@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-017",
+    "date": "2026-08-28",
+    "jsonFile": "/dpps/dpp-017/dpp-017.json",
+    "pdfFile": "/dpps/dpp-017/SMA_DPP_017.pdf",
+    "title": "Motion in a Plane: Position, Velocity & Acceleration Vectors in 2D",
+    "chapter": "Motion in a Plane",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-016",
     "date": "2026-08-28",
     "jsonFile": "/dpps/dpp-016/dpp-016.json",

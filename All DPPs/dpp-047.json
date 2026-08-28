@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-047",
+    "title": "Centre of Mass of a Two-Particle System",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "System of Particles and Rotational Motion"
+  },
+  "seo": {
+    "title": "Centre of Mass of a Two-Particle System JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions on the position, velocity, acceleration, internal force independence, and shift of centre of mass in two-particle systems.",
+    "keywords": "JEE Main Physics, Centre of Mass DPP, Two-Particle System, COM Velocity and Acceleration, Reduced Mass, Internal Forces, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/centre-of-mass-two-particle-system",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematics & Dynamics of a Two-Particle Centre of Mass",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Position of COM: $\\vec{r}_{\\text{cm}} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2}$. The centre of mass divides the line joining two particles in the inverse ratio of their masses ($m_1 r_1 = m_2 r_2$). 2. Mass Moment Theorem: The sum of mass moments about the centre of mass is identically zero ($\\sum m_i \\vec{r}'_i = \\vec{0}$). 3. Velocity & Acceleration: $\\vec{v}_{\\text{cm}} = \\frac{m_1 \\vec{v}_1 + m_2 \\vec{v}_2}{m_1 + m_2}$ and $\\vec{a}_{\\text{cm}} = \\frac{\\sum \\vec{F}_{\\text{ext}}}{m_1 + m_2}$. Internal action-reaction forces do not affect $\\vec{a}_{\\text{cm}}$. 4. Shift Property: If the COM position remains fixed, $m_1 \\Delta \\vec{r}_1 + m_2 \\Delta \\vec{r}_2 = \\vec{0}$. 5. Kinetic Energy in C-Frame: Total KE is $K = \\frac{1}{2}(m_1 + m_2)v_{\\text{cm}}^2 + \\frac{1}{2}\\mu v_{\\text{rel}}^2$, where $\\mu = \\frac{m_1 m_2}{m_1 + m_2}$ is the reduced mass.",
+    "keyFormula": "$$\\vec{r}_{\\text{cm}} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2}, \\quad \\vec{a}_{\\text{cm}} = \\frac{\\vec{F}_{\\text{ext}}}{M}, \\quad m_1 \\Delta x_1 + m_2 \\Delta x_2 = (m_1 + m_2)\\Delta x_{\\text{cm}}, \\quad \\mu = \\frac{m_1 m_2}{m_1 + m_2}$$",
+    "examTrap": "Always distinguish between external and internal forces. Internal forces (gravitational attraction between masses, electrostatic forces, spring tension) can change individual particle velocities and accelerations, but they can NEVER alter the velocity or acceleration of the centre of mass of the isolated two-particle system."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two particles of masses $m_1 = 2\\text{ kg}$ and $m_2 = 3\\text{ kg}$ are located at positions $\\vec{r}_1 = (2\\hat{i} + 4\\hat{j})\\text{ m}$ and $\\vec{r}_2 = (7\\hat{i} - \\hat{j})\\text{ m}$ respectively. The position vector of their centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(5\\hat{i} + \\hat{j})\\text{ m}$" },
+        { "key": "B", "text": "$(4\\hat{i} + 2\\hat{j})\\text{ m}$" },
+        { "key": "C", "text": "$(9\\hat{i} + 3\\hat{j})\\text{ m}$" },
+        { "key": "D", "text": "$(5\\hat{i} + 2\\hat{j})\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{r}_{\\text{cm}} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2} = \\frac{2(2\\hat{i} + 4\\hat{j}) + 3(7\\hat{i} - \\hat{j})}{2 + 3} = \\frac{25\\hat{i} + 5\\hat{j}}{5} = (5\\hat{i} + \\hat{j})\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two particles of masses $m_1$ and $m_2$ are separated by a fixed distance $d$. The distance of the centre of mass from the particle of mass $m_1$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m_1 d}{m_1 + m_2}$" },
+        { "key": "B", "text": "$\\dfrac{(m_1 + m_2)d}{m_1}$" },
+        { "key": "C", "text": "$\\dfrac{m_2 d}{m_1 + m_2}$" },
+        { "key": "D", "text": "$\\dfrac{m_2 d}{m_1}$" }
+      ],
+      "correct": "C",
+      "solution": "Placing $m_1$ at the origin ($x_1 = 0$) and $m_2$ at $x_2 = d$: $$x_{\\text{cm}} = \\frac{m_1(0) + m_2(d)}{m_1 + m_2} = \\frac{m_2 d}{m_1 + m_2}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two bodies of masses $2\\text{ kg}$ and $4\\text{ kg}$ are moving along the $x$-axis with velocities $6\\text{ m/s}$ and $-3\\text{ m/s}$ respectively. The velocity of their centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ m/s}$" },
+        { "key": "B", "text": "$-1\\text{ m/s}$" },
+        { "key": "C", "text": "$1\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}$" }
+      ],
+      "correct": "D",
+      "solution": "$$v_{\\text{cm}} = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2} = \\frac{2(6) + 4(-3)}{2 + 4} = \\frac{12 - 12}{6} = 0\\text{ m/s}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $m_1 = 3\\text{ kg}$ and $m_2 = 1\\text{ kg}$ are initially at rest at a separation of $12\\text{ m}$. They start moving towards each other under mutual gravitational attraction. The displacement of mass $m_1$ when the two particles collide is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\text{ m}$" },
+        { "key": "B", "text": "$4\\text{ m}$" },
+        { "key": "C", "text": "$9\\text{ m}$" },
+        { "key": "D", "text": "$6\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "Because no external horizontal forces act, the particles collide at their stationary centre of mass position.<br>Setting $m_1$ at $x = 0$ and $m_2$ at $x = 12\\text{ m}$: $$x_{\\text{cm}} = \\frac{3(0) + 1(12)}{3 + 1} = 3\\text{ m}$$<br>Displacement of $m_1 = 3\\text{ m} - 0\\text{ m} = 3\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a two-particle system with masses $m_1$ and $m_2$, the sum of moments of the masses about their centre of mass ($\\sum m_i \\vec{r}'_i$) is always:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Dependent on the external forces" },
+        { "key": "B", "text": "Non-zero and positive" },
+        { "key": "C", "text": "Dependent on the choice of origin" },
+        { "key": "D", "text": "Strictly equal to zero" }
+      ],
+      "correct": "D",
+      "solution": "$$\\sum m_i \\vec{r}'_i = \\sum m_i (\\vec{r}_i - \\vec{r}_{\\text{cm}}) = \\sum m_i \\vec{r}_i - \\vec{r}_{\\text{cm}} \\sum m_i = M \\vec{r}_{\\text{cm}} - M \\vec{r}_{\\text{cm}} = \\vec{0}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two masses $m_1 = 4\\text{ kg}$ and $m_2 = 6\\text{ kg}$ are separated by a distance $L$. If the mass $m_1$ is displaced towards the right by a distance of $5\\text{ cm}$, by what distance and in which direction must mass $m_2$ be shifted so that the position of the centre of mass remains unchanged?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{10}{3}\\text{ cm}$ towards left" },
+        { "key": "B", "text": "$5\\text{ cm}$ towards left" },
+        { "key": "C", "text": "$\\dfrac{10}{3}\\text{ cm}$ towards right" },
+        { "key": "D", "text": "$\\dfrac{15}{2}\\text{ cm}$ towards right" }
+      ],
+      "correct": "A",
+      "solution": "$$m_1 \\Delta x_1 + m_2 \\Delta x_2 = 0 \\implies 4(+5) + 6(\\Delta x_2) = 0 \\implies \\Delta x_2 = -\\frac{20}{6} = -\\frac{10}{3}\\text{ cm}$$<br>The negative sign indicates mass $m_2$ must shift by $\\frac{10}{3}\\text{ cm}$ towards the left.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two masses $m_1$ and $m_2$ are connected by a light spring of spring constant $k$ and placed on a smooth horizontal surface. Initially at rest, they are pulled apart and released. If at an instant the acceleration of $m_1$ is $a_1$ towards right, the acceleration of the centre of mass of the two-particle system is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m_1 a_1}{m_1 + m_2}$" },
+        { "key": "B", "text": "$0$" },
+        { "key": "C", "text": "$\\dfrac{m_2 a_1}{m_1}$" },
+        { "key": "D", "text": "$a_1$" }
+      ],
+      "correct": "B",
+      "solution": "Spring force is internal to the two-particle system. Since no external horizontal force acts: $$\\vec{a}_{\\text{cm}} = \\frac{\\sum \\vec{F}_{\\text{ext}}}{m_1 + m_2} = 0$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A system consists of two particles of masses $1\\text{ kg}$ and $2\\text{ kg}$. The first particle has an acceleration $\\vec{a}_1 = (2\\hat{i} + 3\\hat{j})\\text{ m/s}^2$ and the second particle has an acceleration $\\vec{a}_2 = (-\\hat{i} + 6\\hat{j})\\text{ m/s}^2$. The magnitude of the acceleration of the centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ m/s}^2$" },
+        { "key": "B", "text": "$\\sqrt{26}\\text{ m/s}^2$" },
+        { "key": "C", "text": "$3\\text{ m/s}^2$" },
+        { "key": "D", "text": "$4\\text{ m/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{a}_{\\text{cm}} = \\frac{1(2\\hat{i} + 3\\hat{j}) + 2(-\\hat{i} + 6\\hat{j})}{1 + 2} = \\frac{0\\hat{i} + 15\\hat{j}}{3} = 5\\hat{j}\\text{ m/s}^2 \\implies |\\vec{a}_{\\text{cm}}| = 5\\text{ m/s}^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the internal forces acting between the two particles of an isolated system are non-zero, the motion of their centre of mass:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Must be accelerated" },
+        { "key": "B", "text": "Follows a curved trajectory" },
+        { "key": "C", "text": "Is completely unaffected by internal forces" },
+        { "key": "D", "text": "Depends on the magnitude of internal forces" }
+      ],
+      "correct": "C",
+      "solution": "Internal forces occur in equal and opposite action-reaction pairs ($\\vec{F}_{12} + \\vec{F}_{21} = \\vec{0}$). Their vector sum is zero, so they have zero effect on the centre of mass motion.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $m_1 = 1\\text{ kg}$ and $m_2 = 3\\text{ kg}$ have position vectors $\\vec{r}_1(t) = (2t^2\\hat{i} + 3t\\hat{j})\\text{ m}$ and $\\vec{r}_2(t) = (t\\hat{i} + 2t^2\\hat{j})\\text{ m}$ respectively. The total external force acting on the two-particle system at any time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(2\\hat{i} + 6\\hat{j})\\text{ N}$" },
+        { "key": "B", "text": "$(4\\hat{i} + 12\\hat{j})\\text{ N}$" },
+        { "key": "C", "text": "$(4\\hat{i} + 6\\hat{j})\\text{ N}$" },
+        { "key": "D", "text": "$(8\\hat{i} + 12\\hat{j})\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\vec{a}_1 = \\frac{d^2\\vec{r}_1}{dt^2} = 4\\hat{i}\\text{ m/s}^2, \\quad \\vec{a}_2 = \\frac{d^2\\vec{r}_2}{dt^2} = 4\\hat{j}\\text{ m/s}^2$$<br>$$\\vec{F}_{\\text{ext}} = m_1 \\vec{a}_1 + m_2 \\vec{a}_2 = 1(4\\hat{i}) + 3(4\\hat{j}) = (4\\hat{i} + 12\\hat{j})\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a diatomic molecule of carbon monoxide (CO), the distance between the carbon atom ($m_{\\text{C}} = 12\\text{ u}$) and the oxygen atom ($m_{\\text{O}} = 16\\text{ u}$) is $1.12\\text{ \\AA}$. The distance of the centre of mass from the carbon atom is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.48\\text{ \\AA}$" },
+        { "key": "B", "text": "$0.56\\text{ \\AA}$" },
+        { "key": "C", "text": "$0.64\\text{ \\AA}$" },
+        { "key": "D", "text": "$0.72\\text{ \\AA}$" }
+      ],
+      "correct": "C",
+      "solution": "$$x_{\\text{cm}} = \\frac{m_{\\text{O}} d}{m_{\\text{C}} + m_{\\text{O}}} = \\frac{16 \\times 1.12}{12 + 16} = \\frac{16 \\times 1.12}{28} = 0.64\\text{ \\AA}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $m_1 = 2\\text{ kg}$ and $m_2 = 3\\text{ kg}$ are projected vertically upward with speeds $30\\text{ m/s}$ and $20\\text{ m/s}$ respectively from the ground at $t = 0$. Neglecting air resistance, the maximum vertical height reached by the centre of mass of the two particles is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$36.0\\text{ m}$" },
+        { "key": "B", "text": "$28.8\\text{ m}$" },
+        { "key": "C", "text": "$32.4\\text{ m}$" },
+        { "key": "D", "text": "$25.0\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Initial velocity of COM: $u_{\\text{cm}} = \\frac{2(30) + 3(20)}{2 + 3} = \\frac{120}{5} = 24\\text{ m/s}$.<br>2. Acceleration of COM is $a_{\\text{cm}} = -g = -10\\text{ m/s}^2$.<br>3. Maximum height: $$H_{\\text{max}} = \\frac{u_{\\text{cm}}^2}{2g} = \\frac{24^2}{20} = \\frac{576}{20} = 28.8\\text{ m}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A man of mass $50\\text{ kg}$ stands at one end of a stationary wooden plank of mass $150\\text{ kg}$ and length $4\\text{ m}$ floating on calm water. If the man walks to the other end of the plank, the displacement of the plank relative to the water is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.0\\text{ m}$" },
+        { "key": "B", "text": "$1.33\\text{ m}$" },
+        { "key": "C", "text": "$0.75\\text{ m}$" },
+        { "key": "D", "text": "$2.0\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "Since no external horizontal force acts: $$x = \\frac{m_{\\text{man}} L}{m_{\\text{man}} + m_{\\text{plank}}} = \\frac{50 \\times 4}{50 + 150} = \\frac{200}{200} = 1.0\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The kinetic energy of a two-particle system of masses $m_1$ and $m_2$ with velocities $\vec{v}_1$ and $\vec{v}_2$ can be expressed as $K = \\frac{1}{2}(m_1 + m_2)v_{\\text{cm}}^2 + K_{\\text{rel}}$. The internal kinetic energy $K_{\\text{rel}}$ relative to the centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\left(\\dfrac{m_1 m_2}{m_1 + m_2}\\right)|\\vec{v}_1 + \\vec{v}_2|^2$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}(m_1 + m_2)|\\vec{v}_1 - \\vec{v}_2|^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\left(\\dfrac{m_1 m_2}{m_1 + m_2}\\right)|\\vec{v}_1 - \\vec{v}_2|^2$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}\\sqrt{m_1 m_2}|\\vec{v}_1 - \\vec{v}_2|^2$" }
+      ],
+      "correct": "C",
+      "solution": "By König's theorem, relative kinetic energy in the C-frame is: $$K_{\\text{rel}} = \\frac{1}{2}\\mu v_{\\text{rel}}^2 = \\frac{1}{2}\\left(\\frac{m_1 m_2}{m_1 + m_2}\\right)|\\vec{v}_1 - \\vec{v}_2|^2$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two particles of masses $m_1 = 2\\text{ kg}$ and $m_2 = 4\\text{ kg}$ are moving towards each other along the $x$-axis. In the centre of mass (C-frame) reference frame, the ratio of the magnitude of linear momentum of $m_1$ to that of $m_2$ ($p_{1,\\text{cm}} : p_{2,\\text{cm}}$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 2$" },
+        { "key": "B", "text": "$2 : 1$" },
+        { "key": "C", "text": "$1 : 1$" },
+        { "key": "D", "text": "$1 : 4$" }
+      ],
+      "correct": "C",
+      "solution": "In the C-frame, total momentum is identically zero by definition: $\\vec{p}_{1,\\text{cm}} + \\vec{p}_{2,\\text{cm}} = \\vec{0} \\implies |\\vec{p}_{1,\\text{cm}}| = |\\vec{p}_{2,\\text{cm}}|$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $2\\text{ kg}$ and $3\\text{ kg}$ are located at coordinates $(1, 2)$ and $(6, 7)$ respectively. If the origin of the coordinate system is shifted to $(2, 3)$, the coordinates of their centre of mass in the new reference frame are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(2, 2)$" },
+        { "key": "B", "text": "$(4, 5)$" },
+        { "key": "C", "text": "$(3, 3)$" },
+        { "key": "D", "text": "$(1, 2)$" }
+      ],
+      "correct": "A",
+      "solution": "Original coordinates of COM: $x_{\\text{cm}} = \\frac{2(1) + 3(6)}{5} = 4$, $y_{\\text{cm}} = \\frac{2(2) + 3(7)}{5} = 5$.<br>In new frame with origin at $(2, 3)$: $x'_{\\text{cm}} = 4 - 2 = 2$, $y'_{\\text{cm}} = 5 - 3 = 2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of equal mass $m$ are projected simultaneously from the ground with the same initial speed $u$ at angles $30^\\circ$ and $60^\\circ$ with the horizontal in the same vertical plane. The trajectory traced by their centre of mass before either particle lands is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "A vertical straight line" },
+        { "key": "B", "text": "A parabola" },
+        { "key": "C", "text": "A circular arc" },
+        { "key": "D", "text": "An inclined straight line" }
+      ],
+      "correct": "B",
+      "solution": "The initial velocity of COM has non-zero components in both $x$ and $y$, while experiencing a constant downward acceleration $\\vec{a}_{\\text{cm}} = -g\\hat{j}$. The resulting path is a parabola.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two particles of masses $m_1$ and $m_2$ have initial velocities $\vec{u}_1$ and $\vec{u}_2$. A constant external force $\vec{F}$ acts on $m_1$ while no external force acts on $m_2$. The velocity of the centre of mass after time $t$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m_1 \\vec{u}_1 + m_2 \\vec{u}_2}{m_1 + m_2} + \\dfrac{\\vec{F}t}{m_1}$" },
+        { "key": "B", "text": "$\\dfrac{m_1 \\vec{u}_1 + m_2 \\vec{u}_2 + \\vec{F}t}{m_1 + m_2}$" },
+        { "key": "C", "text": "$\\dfrac{\\vec{u}_1 + \\vec{u}_2}{2} + \\dfrac{\\vec{F}t}{m_1 + m_2}$" },
+        { "key": "D", "text": "$\\dfrac{m_1 \\vec{u}_1 + m_2 \\vec{u}_2}{m_1 + m_2} + \\dfrac{\\vec{F}t}{m_2}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\vec{v}_{\\text{cm}}(t) = \\vec{v}_{\\text{cm}}(0) + \\vec{a}_{\\text{cm}}t = \\frac{m_1 \\vec{u}_1 + m_2 \\vec{u}_2}{m_1 + m_2} + \\frac{\\vec{F}}{m_1 + m_2}t = \\frac{m_1 \\vec{u}_1 + m_2 \\vec{u}_2 + \\vec{F}t}{m_1 + m_2}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A mass $m_1 = 5\\text{ kg}$ is located at $x = 0$ and another mass $m_2 = 15\\text{ kg}$ is located at $x = 20\\text{ m}$. If mass $m_1$ is moved by $4\\text{ m}$ along $+x$, the distance by which the centre of mass shifts is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.0\\text{ m}$" },
+        { "key": "B", "text": "$2.0\\text{ m}$" },
+        { "key": "C", "text": "$3.0\\text{ m}$" },
+        { "key": "D", "text": "$0.5\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\Delta x_{\\text{cm}} = \\frac{m_1 \\Delta x_1 + m_2 \\Delta x_2}{m_1 + m_2} = \\frac{5(4) + 15(0)}{5 + 15} = \\frac{20}{20} = 1.0\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two particles of masses $m$ and $2m$ are connected by a massless rigid rod of length $L$. The moment of inertia of this two-particle system about an axis passing through its centre of mass and perpendicular to the rod is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{3} m L^2$" },
+        { "key": "B", "text": "$\\dfrac{3}{2} m L^2$" },
+        { "key": "C", "text": "$\\dfrac{2}{3} m L^2$" },
+        { "key": "D", "text": "$\\dfrac{2}{9} m L^2$" }
+      ],
+      "correct": "C",
+      "solution": "Distances from COM: $r_1 = \\frac{2}{3}L$, $r_2 = \\frac{1}{3}L$.<br>$$I = m\\left(\\frac{2}{3}L\\right)^2 + 2m\\left(\\frac{1}{3}L\\right)^2 = \\frac{4}{9}mL^2 + \\frac{2}{9}mL^2 = \\frac{6}{9}mL^2 = \\frac{2}{3}mL^2$$<br>Therefore, Option <strong>C</strong> is correct."
+    }
+  ]
+}

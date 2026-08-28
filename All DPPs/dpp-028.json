@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-028",
+    "title": "Equilibrium of Concurrent Forces & Lami's Theorem",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Equilibrium of Concurrent Forces and Lami's Theorem JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions on concurrent coplanar forces, Lami's theorem, string tension geometry, sphere wall contact equilibrium, and inclined plane support forces.",
+    "keywords": "JEE Main Physics, Concurrent Forces DPP, Lami's Theorem, Static Equilibrium, String Tension, Normal Reaction Sphere, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/equilibrium-of-concurrent-forces-lamis-theorem",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Equilibrium Conditions & Lami's Theorem",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Equilibrium Condition: For a point particle acted upon by concurrent forces $\\vec{F}_1, \\vec{F}_2, \\dots, \\vec{F}_n$, the condition for translational equilibrium is $\\sum \\vec{F}_i = \\vec{0}$, which resolves into $\\sum F_x = 0$ and $\\sum F_y = 0$. 2. Triangle Law of Forces: If three concurrent coplanar forces can be represented by the sides of a closed triangle taken in order, their resultant is zero. 3. Lami's Theorem: If three coplanar, concurrent, and non-collinear forces $\\vec{P}, \\vec{Q}, \\vec{R}$ keep a body in equilibrium, then $\\frac{P}{\\sin\\alpha} = \\frac{Q}{\\sin\\beta} = \\frac{R}{\\sin\\gamma}$, where $\\alpha, \\beta, \\gamma$ are the angles opposite to forces $\\vec{P}, \\vec{Q}, \\vec{R}$ respectively.",
+    "keyFormula": "$$\\sum \\vec{F} = \\vec{0} \\iff \\sum F_x = 0, \\; \\sum F_y = 0; \\quad \\frac{F_1}{\\sin\\theta_{23}} = \\frac{F_2}{\\sin\\theta_{31}} = \\frac{F_3}{\\sin\\theta_{12}}$$",
+    "examTrap": "When applying Lami's theorem, verify that all three force vectors are either directed concurrently *away* from the point of application or all directed *towards* it. Also remember that Lami's theorem is strictly restricted to three concurrent coplanar forces; it cannot be applied directly if four or more forces act on the point."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Three concurrent coplanar forces $\\vec{F}_1, \\vec{F}_2, \\vec{F}_3$ keep a particle in static equilibrium. If the angle between $\\vec{F}_1$ and $\\vec{F}_2$ is $90^\\circ$, and the angle between $\\vec{F}_2$ and $\\vec{F}_3$ is $120^\\circ$, the ratio of the magnitudes $|\\vec{F}_1| : |\\vec{F}_2| : |\\vec{F}_3|$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : \\sqrt{3} : 2$" },
+        { "key": "B", "text": "$\\sqrt{3} : 1 : 2$" },
+        { "key": "C", "text": "$1 : 1 : \\sqrt{2}$" },
+        { "key": "D", "text": "$\\sqrt{3} : 2 : 1$" }
+      ],
+      "correct": "B",
+      "solution": "Angle between $\\vec{F}_3$ and $\\vec{F}_1$ is $\\theta_{31} = 360^\\circ - (90^\\circ + 120^\\circ) = 150^\\circ$.<br>By Lami's theorem:<br>$$\\frac{F_1}{\\sin 120^\\circ} = \\frac{F_2}{\\sin 150^\\circ} = \\frac{F_3}{\\sin 90^\\circ}$$<br>Since $\\sin 120^\\circ = \\frac{\\sqrt{3}}{2}$, $\\sin 150^\\circ = \\frac{1}{2}$, and $\\sin 90^\\circ = 1$:<br>$$F_1 : F_2 : F_3 = \\frac{\\sqrt{3}}{2} : \\frac{1}{2} : 1 = \\sqrt{3} : 1 : 2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m = 10\\text{ kg}$ is suspended by two light strings of lengths $3\\text{ m}$ and $4\\text{ m}$ attached to two points on a horizontal ceiling $5\\text{ m}$ apart. The tension in the $3\\text{ m}$ string is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60\\text{ N}$" },
+        { "key": "B", "text": "$80\\text{ N}$" },
+        { "key": "C", "text": "$100\\text{ N}$" },
+        { "key": "D", "text": "$75\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "The lengths form a right-angled triangle because $3^2 + 4^2 = 5^2$.<br>The angle between the two strings is $90^\\circ$.<br>Let $\\alpha$ be the angle made by the $3\\text{ m}$ string with the vertical. From geometry, $\\cos\\alpha = \\frac{4}{5} = 0.8$.<br>Resolving forces along the $3\\text{ m}$ string:<br>$$T_1 = mg\\cos\\alpha = (10 \\times 10) \\times 0.8 = 80\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of weight $W = 100\\text{ N}$ is suspended by a string from a rigid support. The string is pulled horizontally by a force $F$ such that it makes an angle of $30^\\circ$ with the vertical. The magnitude of the horizontal force $F$ and the tension $T$ in the string are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$F = \\dfrac{100}{\\sqrt{3}}\\text{ N}, \\quad T = \\dfrac{200}{\\sqrt{3}}\\text{ N}$" },
+        { "key": "B", "text": "$F = 100\\sqrt{3}\\text{ N}, \\quad T = 200\\text{ N}$" },
+        { "key": "C", "text": "$F = 50\\text{ N}, \\quad T = 100\\text{ N}$" },
+        { "key": "D", "text": "$F = \\dfrac{50}{\\sqrt{3}}\\text{ N}, \\quad T = \\dfrac{100}{\\sqrt{3}}\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "Resolving vertically: $T\\cos 30^\\circ = W = 100 \\implies T = \\frac{100}{\\cos 30^\\circ} = \\frac{200}{\\sqrt{3}}\\text{ N}$.<br>Resolving horizontally: $F = T\\sin 30^\\circ = \\left(\\frac{200}{\\sqrt{3}}\\right)\\left(\\frac{1}{2}\\right) = \\frac{100}{\\sqrt{3}}\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A smooth uniform sphere of weight $W$ and radius $R$ rests against a smooth vertical wall and is held by a string of length $L = R$ attached to the top of the sphere and to a point on the wall. The normal reaction exerted by the wall on the sphere is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{W}{\\sqrt{3}}$" },
+        { "key": "B", "text": "$\\dfrac{W}{2}$" },
+        { "key": "C", "text": "$W\\sqrt{3}$" },
+        { "key": "D", "text": "$\\dfrac{2W}{\\sqrt{3}}$" }
+      ],
+      "correct": "A",
+      "solution": "The distance from the wall attachment point $A$ to the sphere center $O$ is $R + L = 2R$.<br>In $\\triangle AOC$, $\\sin\\theta = \\frac{R}{2R} = \\frac{1}{2} \\implies \\theta = 30^\\circ$, where $\\theta$ is the angle the string line makes with the wall.<br>Equilibrium at sphere center $O$:<br>$$T\\cos 30^\\circ = W \\implies T = \\frac{2W}{\\sqrt{3}}$$<br>$$N = T\\sin 30^\\circ = \\left(\\frac{2W}{\\sqrt{3}}\\right)\\left(\\frac{1}{2}\\right) = \\frac{W}{\\sqrt{3}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Three concurrent forces $\\vec{F}_1 = (2\\hat{i} + 3\\hat{j})\\text{ N}$, $\\vec{F}_2 = (-4\\hat{i} + \\hat{j})\\text{ N}$, and $\\vec{F}_3$ act on a particle. If the particle is in equilibrium, the force $\\vec{F}_3$ must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(2\\hat{i} - 4\\hat{j})\\text{ N}$" },
+        { "key": "B", "text": "$(-2\\hat{i} + 4\\hat{j})\\text{ N}$" },
+        { "key": "C", "text": "$(6\\hat{i} - 2\\hat{j})\\text{ N}$" },
+        { "key": "D", "text": "$(-6\\hat{i} + 2\\hat{j})\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "For translational equilibrium: $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$.<br>$$(2\\hat{i} + 3\\hat{j}) + (-4\\hat{i} + \\hat{j}) + \\vec{F}_3 = \\vec{0} \\implies (-2\\hat{i} + 4\\hat{j}) + \\vec{F}_3 = \\vec{0} \\implies \\vec{F}_3 = (2\\hat{i} - 4\\hat{j})\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A heavy particle of mass $m$ is suspended by a string of length $l$. A horizontal force $F$ is applied to the particle such that it is held in equilibrium with the string deflected at an angle $\\theta$ to the vertical. The tension in the string is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg\\cos\\theta$" },
+        { "key": "B", "text": "$\\dfrac{mg}{\\cos\\theta}$" },
+        { "key": "C", "text": "$mg\\sin\\theta$" },
+        { "key": "D", "text": "$\\sqrt{(mg)^2 - F^2}$" }
+      ],
+      "correct": "B",
+      "solution": "Resolving along the vertical: $T\\cos\\theta = mg \\implies T = \\frac{mg}{\\cos\\theta}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following sets of three concurrent coplanar forces CANNOT produce equilibrium on a body?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\text{ N}, 4\\text{ N}, 5\\text{ N}$" },
+        { "key": "B", "text": "$2\\text{ N}, 7\\text{ N}, 10\\text{ N}$" },
+        { "key": "C", "text": "$5\\text{ N}, 5\\text{ N}, 5\\text{ N}$" },
+        { "key": "D", "text": "$10\\text{ N}, 15\\text{ N}, 20\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "For equilibrium, the vectors must satisfy the triangle inequality: $F_1 + F_2 \\ge F_3$ for the longest side.<br>For option B: $2 + 7 = 9 < 10$, so they cannot form a closed polygon/triangle.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform smooth sphere of weight $W$ is supported between two smooth inclined planes making angles $30^\\circ$ and $60^\\circ$ with the horizontal. The normal reactions $N_1$ and $N_2$ exerted by the $30^\\circ$ and $60^\\circ$ planes respectively are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$N_1 = \\dfrac{\\sqrt{3}}{2}W, \\quad N_2 = \\dfrac{1}{2}W$" },
+        { "key": "B", "text": "$N_1 = \\dfrac{1}{2}W, \\quad N_2 = \\dfrac{\\sqrt{3}}{2}W$" },
+        { "key": "C", "text": "$N_1 = W, \\quad N_2 = W$" },
+        { "key": "D", "text": "$N_1 = \\dfrac{W}{\\sqrt{3}}, \\quad N_2 = W\\sqrt{3}$" }
+      ],
+      "correct": "A",
+      "solution": "$N_1$ is inclined at $30^\\circ$ to the vertical, and $N_2$ is inclined at $60^\\circ$ to the vertical.<br>The angle between $N_1$ and $N_2$ is $90^\\circ$.<br>Resolving along $N_1$: $N_1 = W\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}W$.<br>Resolving along $N_2$: $N_2 = W\\cos 60^\\circ = \\frac{1}{2}W$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A weight $W = 60\\text{ N}$ is suspended by two strings $OA$ and $OB$ connected at point $O$. $OA$ makes an angle of $45^\\circ$ with the horizontal and $OB$ makes an angle of $45^\\circ$ with the vertical. The tension in each string is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30\\sqrt{2}\\text{ N}$" },
+        { "key": "B", "text": "$60\\sqrt{2}\\text{ N}$" },
+        { "key": "C", "text": "$30\\text{ N}$" },
+        { "key": "D", "text": "$60\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "Both strings make $45^\\circ$ with the vertical. By symmetry, $T_1 = T_2 = T$.<br>Vertical equilibrium: $2T\\cos 45^\\circ = W = 60 \\implies 2T\\left(\\frac{1}{\\sqrt{2}}\\right) = 60 \\implies T = 30\\sqrt{2}\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Three forces acting on a particle are represented in magnitude and direction by the three sides of a triangle taken in order. The resultant of these forces is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Infinity" },
+        { "key": "B", "text": "Proportional to the perimeter of the triangle" },
+        { "key": "C", "text": "Zero" },
+        { "key": "D", "text": "Double the area of the triangle" }
+      ],
+      "correct": "C",
+      "solution": "By the polygon law of vector addition, vectors forming a closed loop taken in order sum up to zero ($\\vec{A} + \\vec{B} + \\vec{C} = \\vec{0}$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A smooth ring $P$ of mass $m$ is threaded on a smooth circular wire of radius $R$ fixed in a vertical plane. A light elastic cord of natural length $R$ has one end fixed to the highest point $A$ of the wire and the other to $P$. If the ring is in equilibrium at an angle $\\theta$ from the vertical at $A$, the normal reaction of the wire on the ring:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Points radially inward" },
+        { "key": "B", "text": "Points radially outward" },
+        { "key": "C", "text": "Is zero" },
+        { "key": "D", "text": "Equals $mg$" }
+      ],
+      "correct": "A",
+      "solution": "In $\\triangle OAP$, since $OA = OP = R$, the triangle is isosceles. The tension acts along chord $AP$. Resolving forces along the tangential and normal directions to the circle confirms that the normal force exerted by the wire is directed along the radius towards the center (radially inward).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two light strings $AC$ and $BC$ are tied to a small block of mass $m = 5\\text{ kg}$ at $C$. String $AC$ makes $60^\\circ$ with the horizontal ceiling and string $BC$ makes $30^\\circ$ with the vertical wall. If the system is in equilibrium, the ratio of tension $T_{AC}$ to $T_{BC}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 1$" },
+        { "key": "B", "text": "$\\sqrt{3} : 1$" },
+        { "key": "C", "text": "$1 : \\sqrt{3}$" },
+        { "key": "D", "text": "$2 : 1$" }
+      ],
+      "correct": "B",
+      "solution": "Using Lami's theorem on the knot $C$:<br>$$\\frac{T_{AC}}{\\sin 120^\\circ} = \\frac{T_{BC}}{\\sin 150^\\circ} \\implies \\frac{T_{AC}}{T_{BC}} = \\frac{\\sin 120^\\circ}{\\sin 150^\\circ} = \\frac{\\sqrt{3}/2}{1/2} = \\sqrt{3}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A cylinder of weight $W = 200\\text{ N}$ rests in a V-shaped groove whose smooth sides make angles of $30^\\circ$ and $60^\\circ$ with the vertical. The reaction force exerted on the cylinder by the steeper side (making $30^\\circ$ with the vertical) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$100\\text{ N}$" },
+        { "key": "B", "text": "$100\\sqrt{3}\\text{ N}$" },
+        { "key": "C", "text": "$200\\text{ N}$" },
+        { "key": "D", "text": "$\\dfrac{200}{\\sqrt{3}}\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "Normal reaction $N_1$ from the $30^\\circ$ side makes an angle of $60^\\circ$ with the vertical. Normal reaction $N_2$ from the $60^\\circ$ side makes $30^\\circ$ with the vertical. Since the two sides are perpendicular ($30^\\circ + 60^\\circ = 90^\\circ$):<br>$$N_1 = W\\cos 60^\\circ = 200 \\times \\frac{1}{2} = 100\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A picture frame of mass $m$ is hung from a nail on a vertical wall by a symmetric cord of total length $L$ attached to its two top corners separated by distance $d$ ($d < L$). The tension in the cord is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{mg L}{2\\sqrt{L^2 - d^2}}$" },
+        { "key": "B", "text": "$\\dfrac{mg d}{2\\sqrt{L^2 - d^2}}$" },
+        { "key": "C", "text": "$\\dfrac{mg L}{\\sqrt{L^2 - d^2}}$" },
+        { "key": "D", "text": "$\\dfrac{mg}{2}$" }
+      ],
+      "correct": "A",
+      "solution": "Each half-cord has length $L/2$ and horizontal half-base $d/2$.<br>Let $\\theta$ be the angle each cord segment makes with the vertical:<br>$$\\sin\\theta = \\frac{d/2}{L/2} = \\frac{d}{L} \\implies \\cos\\theta = \\frac{\\sqrt{L^2 - d^2}}{L}$$<br>Vertical equilibrium: $2T\\cos\\theta = mg \\implies T = \\frac{mg}{2\\cos\\theta} = \\frac{mg L}{2\\sqrt{L^2 - d^2}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Lami's theorem, if three coplanar forces $\\vec{P}, \\vec{Q}, \\vec{R}$ maintain equilibrium and the angles opposite to them are $\\alpha, \\beta, \\gamma$ respectively, which condition is mandatory for the formula $\\dfrac{P}{\\sin\\alpha} = \\dfrac{Q}{\\sin\\beta} = \\dfrac{R}{\\sin\\gamma}$ to be valid?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The three forces must be collinear" },
+        { "key": "B", "text": "The forces must be concurrent, non-collinear, and coplanar" },
+        { "key": "C", "text": "The forces must be mutually perpendicular" },
+        { "key": "D", "text": "The angles $\\alpha, \\beta, \\gamma$ must each be obtuse" }
+      ],
+      "correct": "B",
+      "solution": "Lami's theorem is strictly valid only when three forces are coplanar, concurrent at a point, and non-collinear.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A smooth sphere of mass $M$ is placed between two smooth parallel vertical walls separated by a distance slightly greater than its diameter. A horizontal force $F$ pushes the sphere against one wall. The net vertical normal reaction from the smooth floor on the sphere is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$Mg + F$" },
+        { "key": "B", "text": "$Mg$" },
+        { "key": "C", "text": "$\\sqrt{(Mg)^2 + F^2}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "B",
+      "solution": "Because the vertical walls are frictionless, they exert only horizontal normal forces. The floor supports the total vertical weight: $\\sum F_y = 0 \\implies N_{\\text{floor}} = Mg$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m$ rests on a smooth inclined plane of inclination $\\theta$. It is held in equilibrium by a force $F$ acting horizontally. The normal reaction exerted by the incline on the block is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg\\cos\\theta$" },
+        { "key": "B", "text": "$\\dfrac{mg}{\\cos\\theta}$" },
+        { "key": "C", "text": "$mg\\sin\\theta$" },
+        { "key": "D", "text": "$mg\\tan\\theta$" }
+      ],
+      "correct": "B",
+      "solution": "Along incline: $F\\cos\\theta = mg\\sin\\theta \\implies F = mg\\tan\\theta$.<br>Perpendicular to incline: $N = mg\\cos\\theta + F\\sin\\theta = mg\\cos\\theta + mg\\frac{\\sin^2\\theta}{\\cos\\theta} = \\frac{mg(\\cos^2\\theta + \\sin^2\\theta)}{\\cos\\theta} = \\frac{mg}{\\cos\\theta}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A heavy bead of mass $m$ is threaded on a smooth vertical circular ring of radius $R$. A light inextensible string attached to the bead passes over a small smooth peg at the top of the ring and supports a hanging mass $M$. For equilibrium of the bead at an angle $\\theta$ subtended at the top peg with the vertical, the ratio $M/m$ must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\cos\\theta$" },
+        { "key": "B", "text": "$2\\sin\\theta$" },
+        { "key": "C", "text": "$\\cos\\theta$" },
+        { "key": "D", "text": "$1$" }
+      ],
+      "correct": "A",
+      "solution": "Tension in the string is $T = Mg$.<br>Geometry of the circle gives the normal reaction directed radially through the center.<br>Balancing forces along the tangential direction: $T = 2 mg\\cos\\theta \\implies Mg = 2 mg\\cos\\theta \\implies \\frac{M}{m} = 2\\cos\\theta$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Three concurrent forces $F_1, F_2, F_3$ satisfy $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$. If $|F_1| = 5\\text{ N}$ and $|F_2| = 12\\text{ N}$, and the angle between $\\vec{F}_1$ and $\\vec{F}_2$ is $90^\\circ$, then the magnitude of $\\vec{F}_3$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7\\text{ N}$" },
+        { "key": "B", "text": "$13\\text{ N}$" },
+        { "key": "C", "text": "$17\\text{ N}$" },
+        { "key": "D", "text": "$60\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\vec{F}_3 = -(\\vec{F}_1 + \\vec{F}_2) \\implies |\\vec{F}_3| = \\sqrt{F_1^2 + F_2^2} = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A small metallic sphere of mass $m = 2\\text{ kg}$ carrying charge $q$ is suspended by an insulating thread of length $l$. An external horizontal uniform electric field produces a constant electrostatic force $F_e = 20\\text{ N}$ on the sphere. At equilibrium, the angle made by the thread with the vertical is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$90^\\circ$" }
+      ],
+      "correct": "B",
+      "solution": "Equilibrium under three concurrent forces gives:<br>$$T\\sin\\theta = F_e = 20\\text{ N}$$<br>$$T\\cos\\theta = mg = 2 \\times 10 = 20\\text{ N}$$<br>$$\\tan\\theta = \\frac{20}{20} = 1 \\implies \\theta = 45^\\circ$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

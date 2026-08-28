@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-048",
+    "title": "Centre of Mass of a Rigid Body & Continuous Mass Distribution",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "System of Particles and Rotational Motion"
+  },
+  "seo": {
+    "title": "Centre of Mass of Rigid Body Continuous Distribution JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering centre of mass for non-uniform rods, semicircular wires, discs, hemispheres, solid/hollow cones, cutout problems (cavities), and composite symmetric bodies.",
+    "keywords": "JEE Main Physics, Centre of Mass Rigid Body DPP, Continuous Mass Distribution, Semicircular Disc COM, Hemisphere Cone Composite, Cavity Negative Mass Method, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/centre-of-mass-rigid-body-continuous-distribution",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Centre of Mass for Continuous Rigid Bodies",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Integral Definition: For continuous bodies, $\\vec{r}_{\\text{cm}} = \\frac{1}{M} \\int \\vec{r} \\, dm$, where $dm = \\lambda \\, dx$ (1D), $dm = \\sigma \\, dA$ (2D), or $dm = \\rho \\, dV$ (3D). 2. Standard Symmetric Geometries (from base/centre along symmetry axis): Semicircular wire: $\\frac{2R}{\\pi}$; Semicircular disc: $\\frac{4R}{3\\pi}$; Hollow hemisphere: $\\frac{R}{2}$; Solid hemisphere: $\\frac{3R}{8}$; Hollow cone: $\\frac{h}{3}$ from base ($\\frac{2}{3}h$ from apex); Solid cone: $\\frac{h}{4}$ from base ($\\frac{3}{4}h$ from apex). 3. Cavity / Negative Mass Method: $\\vec{r}_{\\text{cm}} = \\frac{M\\vec{r}_0 - m\\vec{r}_c}{M - m}$, where $M$ is the complete body mass and $m$ is the mass of the removed portion.",
+    "keyFormula": "$$x_{\\text{cm}} = \\frac{\\int x \\, dm}{\\int dm}, \\quad y_{\\text{semi-disc}} = \\frac{4R}{3\\pi}, \\quad y_{\\text{solid-hemi}} = \\frac{3R}{8}, \\quad y_{\\text{solid-cone}} = \\frac{h}{4}, \\quad \\vec{r}_{\\text{rem}} = \\frac{A_1\\vec{r}_1 - A_2\\vec{r}_2}{A_1 - A_2}$$",
+    "examTrap": "Always verify the reference origin specified in the problem! For cones, the distance is often asked from the **apex** (solid: $\\frac{3}{4}h$, hollow: $\\frac{2}{3}h$) rather than from the **base** (solid: $\\frac{1}{4}h$, hollow: $\\frac{1}{3}h$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A thin rod of length $L$ lies along the $x$-axis with one end at the origin. Its linear mass density varies as $\\lambda(x) = \\lambda_0 \\left(\\dfrac{x}{L}\\right)$. The $x$-coordinate of its centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2}{3}L$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}L$" },
+        { "key": "C", "text": "$\\dfrac{3}{4}L$" },
+        { "key": "D", "text": "$\\dfrac{1}{3}L$" }
+      ],
+      "correct": "A",
+      "solution": "$$x_{\\text{cm}} = \\frac{\\int_0^L x \\, dm}{\\int_0^L dm} = \\frac{\\int_0^L x \\left(\\frac{\\lambda_0 x}{L}\\right) dx}{\\int_0^L \\left(\\frac{\\lambda_0 x}{L}\\right) dx} = \\frac{\\int_0^L x^2 dx}{\\int_0^L x dx} = \\frac{L^3 / 3}{L^2 / 2} = \\frac{2}{3}L$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The distance of the centre of mass of a uniform semicircular thin wire of radius $R$ from its geometric centre along the axis of symmetry is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{4R}{3\\pi}$" },
+        { "key": "B", "text": "$\\dfrac{R}{\\pi}$" },
+        { "key": "C", "text": "$\\dfrac{2R}{\\pi}$" },
+        { "key": "D", "text": "$\\dfrac{3R}{8}$" }
+      ],
+      "correct": "C",
+      "solution": "Taking element $dm = \\lambda R \\, d\\theta$ with $y = R\\sin\\theta$: $$y_{\\text{cm}} = \\frac{\\int_0^\\pi (R\\sin\\theta)(\\lambda R \\, d\\theta)}{\\int_0^\\pi \\lambda R \\, d\\theta} = \\frac{R [-\\cos\\theta]_0^\\pi}{\\pi} = \\frac{2R}{\\pi}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "From a uniform circular disc of radius $R$, a circular hole of radius $R/2$ is cut out such that the hole touches the outer edge of the original disc. The distance of the centre of mass of the remaining portion from the centre of the original disc is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R}{3}$" },
+        { "key": "B", "text": "$\\dfrac{R}{4}$" },
+        { "key": "C", "text": "$\\dfrac{R}{8}$" },
+        { "key": "D", "text": "$\\dfrac{R}{6}$" }
+      ],
+      "correct": "D",
+      "solution": "Original disc has mass $M$ at origin $(0, 0)$. The removed disc has mass $m = M/4$ with centre at $x_1 = R/2$.<br>By negative mass method: $$x_{\\text{cm}} = \\frac{M(0) - (M/4)(R/2)}{M - M/4} = \\frac{-MR/8}{3M/4} = -\\frac{R}{6}$$<br>Distance from centre is $R/6$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The centre of mass of a uniform solid hemisphere of radius $R$ lies on its central axis of symmetry at a distance $y_{\\text{cm}}$ from the flat base. The value of $y_{\\text{cm}}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3R}{8}$" },
+        { "key": "B", "text": "$\\dfrac{R}{2}$" },
+        { "key": "C", "text": "$\\dfrac{4R}{3\\pi}$" },
+        { "key": "D", "text": "$\\dfrac{2R}{3\\pi}$" }
+      ],
+      "correct": "A",
+      "solution": "Integrating parallel thin disc slices of mass $dm = \\rho \\pi (R^2 - y^2)dy$: $$y_{\\text{cm}} = \\frac{\\int_0^R y \\pi (R^2 - y^2) dy}{\\int_0^R \\pi (R^2 - y^2) dy} = \\frac{R^4 / 4}{2R^3 / 3} = \\frac{3}{8}R$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform wire of total length $3L$ is bent to form an equilateral triangle. If one vertex is at the origin and one side lies along the $x$-axis from $x = 0$ to $x = L$, the $y$-coordinate of the centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{L}{2\\sqrt{3}}$" },
+        { "key": "B", "text": "$\\dfrac{\\sqrt{3}}{2}L$" },
+        { "key": "C", "text": "$\\dfrac{L}{3\\sqrt{3}}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{3}}{6}L$" }
+      ],
+      "correct": "D",
+      "solution": "The 3 sides have identical mass $m$ with COMs at: $(L/2, 0)$, $(L/4, \\frac{\\sqrt{3}}{4}L)$, and $(3L/4, \\frac{\\sqrt{3}}{4}L)$.<br>$$y_{\\text{cm}} = \\frac{m(0) + m(\\frac{\\sqrt{3}}{4}L) + m(\\frac{\\sqrt{3}}{4}L)}{3m} = \\frac{\\frac{\\sqrt{3}}{2}L}{3} = \\frac{\\sqrt{3}}{6}L$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The centre of mass of a uniform hollow hemispherical shell of radius $R$ lies at a distance from its circular base equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R}{2}$" },
+        { "key": "B", "text": "$\\dfrac{3R}{8}$" },
+        { "key": "C", "text": "$\\dfrac{2R}{\\pi}$" },
+        { "key": "D", "text": "$\\dfrac{4R}{3\\pi}$" }
+      ],
+      "correct": "A",
+      "solution": "Dividing the shell into elemental circular rings of area $dA = 2\\pi R^2 \\sin\\theta \\, d\\theta$ and height $y = R\\cos\\theta$: $$y_{\\text{cm}} = \\frac{\\int_0^{\\pi/2} (R\\cos\\theta)(2\\pi R^2 \\sin\\theta \\, d\\theta)}{2\\pi R^2} = R \\left[\\frac{\\sin^2\\theta}{2}\\right]_0^{\\pi/2} = \\frac{R}{2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A thin rod of length $L$ has non-uniform linear mass density $\\lambda(x) = \\lambda_0 \\left(1 + \\dfrac{x}{L}\\right)$ for $0 \\le x \\le L$. The $x$-coordinate of its centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{7}{12}L$" },
+        { "key": "B", "text": "$\\dfrac{5}{9}L$" },
+        { "key": "C", "text": "$\\dfrac{9}{16}L$" },
+        { "key": "D", "text": "$\\dfrac{3}{5}L$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\int_0^L dm = \\lambda_0 \\int_0^L \\left(1 + \\frac{x}{L}\\right) dx = \\frac{3}{2}\\lambda_0 L$$<br>$$\\int_0^L x \\, dm = \\lambda_0 \\int_0^L \\left(x + \\frac{x^2}{L}\\right) dx = \\frac{5}{6}\\lambda_0 L^2$$<br>$$x_{\\text{cm}} = \\frac{\\frac{5}{6}\\lambda_0 L^2}{\\frac{3}{2}\\lambda_0 L} = \\frac{5}{9}L$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The position of the centre of mass of a uniform solid right circular cone of height $h$ and base radius $R$ from its apex along the central axis of symmetry is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{h}{4}$" },
+        { "key": "B", "text": "$\\dfrac{h}{3}$" },
+        { "key": "C", "text": "$\\dfrac{3}{4}h$" },
+        { "key": "D", "text": "$\\dfrac{2}{3}h$" }
+      ],
+      "correct": "C",
+      "solution": "Taking apex as $y = 0$, radius of slice at distance $y$ is $r = \\frac{R}{h}y$: $$y_{\\text{cm}} = \\frac{\\int_0^h y(y^2 \\, dy)}{\\int_0^h y^2 \\, dy} = \\frac{h^4 / 4}{h^3 / 3} = \\frac{3}{4}h$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform square plate of side $a$ has a small square of side $a/2$ removed from one of its corners. The distance of the centre of mass of the remaining sheet from the corner opposite to the cutout corner is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{5\\sqrt{2}}{12}a$" },
+        { "key": "B", "text": "$\\dfrac{5}{12}a$" },
+        { "key": "C", "text": "$\\dfrac{7\\sqrt{2}}{12}a$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{2}}{3}a$" }
+      ],
+      "correct": "A",
+      "solution": "Original square ($M$) COM at $(a/2, a/2)$; cutout square ($M/4$) COM at $(3a/4, 3a/4)$.<br>$$x_{\\text{cm}} = \\frac{M(a/2) - (M/4)(3a/4)}{3M/4} = \\frac{5}{12}a, \\quad y_{\\text{cm}} = \\frac{5}{12}a$$<br>Distance from origin: $d = \\sqrt{x_{\\text{cm}}^2 + y_{\\text{cm}}^2} = \\frac{5\\sqrt{2}}{12}a$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The distance of the centre of mass of a uniform semicircular lamina (disc) of radius $R$ from the flat diameter is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2R}{\\pi}$" },
+        { "key": "B", "text": "$\\dfrac{4R}{3\\pi}$" },
+        { "key": "C", "text": "$\\dfrac{3R}{4\\pi}$" },
+        { "key": "D", "text": "$\\dfrac{3R}{8}$" }
+      ],
+      "correct": "B",
+      "solution": "Considering semicircular strips of radius $r$, area $dA = \\pi r \\, dr$, whose COM is at $\\frac{2r}{\\pi}$: $$y_{\\text{cm}} = \\frac{\\int_0^R (\\frac{2r}{\\pi})(\\sigma \\pi r \\, dr)}{\\int_0^R \\sigma \\pi r \\, dr} = \\frac{2(R^3/3)}{\\pi(R^2/2)} = \\frac{4R}{3\\pi}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A thin uniform wire is bent into the shape of a semicircle of radius $R$ lying in the $xy$-plane with its diameter along the $x$-axis and symmetric about the $y$-axis. The coordinates $(x_{\text{cm}}, y_{\text{cm}})$ of its centre of mass are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(0, \\dfrac{4R}{3\\pi}\\right)$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2R}{\\pi}, 0\\right)$" },
+        { "key": "C", "text": "$\\left(0, \\dfrac{2R}{\\pi}\\right)$" },
+        { "key": "D", "text": "$(0, R)$" }
+      ],
+      "correct": "C",
+      "solution": "By symmetry about the $y$-axis, $x_{\\text{cm}} = 0$. Along the $y$-axis, $y_{\\text{cm}} = \\frac{2R}{\\pi}$. Coordinates are $\\left(0, \\frac{2R}{\\pi}\\right)$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The centre of mass of a uniform hollow right circular cone (without base) of height $h$ from its apex lies at a distance:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3}{4}h$" },
+        { "key": "B", "text": "$\\dfrac{2}{3}h$" },
+        { "key": "C", "text": "$\\dfrac{1}{3}h$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}h$" }
+      ],
+      "correct": "B",
+      "solution": "For a hollow cone, $dm = \\sigma (2\\pi r) dl \\propto y \\, dy$. Taking apex at $y = 0$: $$y_{\\text{cm}} = \\frac{\\int_0^h y(y \\, dy)}{\\int_0^h y \\, dy} = \\frac{h^3 / 3}{h^2 / 2} = \\frac{2}{3}h$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform laminar sheet is in the shape of a quadrant of a circular disc of radius $R$ lying in the first quadrant ($x \\ge 0, y \\ge 0$). The coordinates $(x_{\\text{cm}}, y_{\\text{cm}})$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{4R}{3\\pi}, \\dfrac{4R}{3\\pi}\\right)$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2R}{\\pi}, \\dfrac{2R}{\\pi}\\right)$" },
+        { "key": "C", "text": "$\\left(\\dfrac{4R}{3\\pi}, 0\\right)$" },
+        { "key": "D", "text": "$\\left(\\dfrac{3R}{8}, \\dfrac{3R}{8}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "By symmetry between $x$ and $y$ across the quadrant of a disc, both coordinates equal the semicircular disc value: $x_{\\text{cm}} = y_{\\text{cm}} = \\frac{4R}{3\\pi}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A circular disc of radius $R$ has a surface mass density $\\sigma(r) = \\sigma_0 \\left(\\dfrac{r}{R}\\right)$, where $r$ is the radial distance from the centre. The distance of the centre of mass of the disc from its centre is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2}{3}R$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}R$" },
+        { "key": "C", "text": "$0$" },
+        { "key": "D", "text": "$\\dfrac{3}{4}R$" }
+      ],
+      "correct": "C",
+      "solution": "Because $\\sigma(r)$ is purely radial and isotropic with complete circular symmetry about the origin, the centre of mass remains located strictly at the geometric centre $(0, 0)$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A non-uniform circular ring of radius $R$ lies in the $xy$-plane centered at the origin. Its linear mass density is given by $\\lambda(\\theta) = \\lambda_0 \\cos^2\\theta$, where $\\theta$ is measured from the $+x$-axis. The location of its centre of mass is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{R}{2}, 0\\right)$" },
+        { "key": "B", "text": "$(0, 0)$" },
+        { "key": "C", "text": "$\\left(0, \\dfrac{2R}{\\pi}\\right)$" },
+        { "key": "D", "text": "$\\left(\\dfrac{2R}{\\pi}, 0\\right)$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\int_0^{2\\pi} \\cos\\theta (\\cos^2\\theta) d\\theta = 0, \\quad \\int_0^{2\\pi} \\sin\\theta (\\cos^2\\theta) d\\theta = 0$$<br>Hence $x_{\\text{cm}} = 0$ and $y_{\\text{cm}} = 0$, so the COM is at $(0, 0)$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A uniform solid hemisphere of radius $R$ and a uniform solid right circular cone of base radius $R$ and height $h$ are joined base-to-base made of the same material. If the centre of mass of the combined body lies at the center of the common circular base, the ratio $h/R$ must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{3}$" },
+        { "key": "B", "text": "$2$" },
+        { "key": "C", "text": "$\\sqrt{2}$" },
+        { "key": "D", "text": "$\\dfrac{\\sqrt{3}}{2}$" }
+      ],
+      "correct": "A",
+      "solution": "Taking common base at $z = 0$:<br>Hemisphere: $V_1 = \\frac{2}{3}\\pi R^3$, $z_1 = -\\frac{3}{8}R$.<br>Cone: $V_2 = \\frac{1}{3}\\pi R^2 h$, $z_2 = +\\frac{h}{4}$.<br>Setting $V_1 z_1 + V_2 z_2 = 0$: $$\\left(\\frac{2}{3}\\pi R^3\\right)\\left(-\\frac{3}{8}R\\right) + \\left(\\frac{1}{3}\\pi R^2 h\\right)\\left(\\frac{h}{4}\\right) = 0 \\implies \\frac{h^2}{12} = \\frac{R^2}{4} \\implies h = \\sqrt{3}R \\implies \\frac{h}{R} = \\sqrt{3}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following statements about the centre of mass of a continuous rigid body is INCORRECT?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The centre of mass of a body must always lie inside the physical material of the body" },
+        { "key": "B", "text": "For a body with uniform density having a plane of symmetry, the centre of mass lies on the plane of symmetry" },
+        { "key": "C", "text": "The position of the centre of mass is independent of the choice of coordinate axes" },
+        { "key": "D", "text": "In a uniform gravitational field, the centre of mass coincides with the centre of gravity" }
+      ],
+      "correct": "A",
+      "solution": "The centre of mass does not need to lie within the physical matter of the object (e.g., for a ring, hollow sphere, or hollow cone, it lies in empty space). Thus, statement A is false.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A uniform cylinder of radius $R$ and length $L$ has a hemispherical cap of radius $R$ of the same uniform density attached to one of its flat ends. If $L = R$, the distance of the centre of mass of the entire solid from the other flat base of the cylinder is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{19}{20}R$" },
+        { "key": "B", "text": "$\\dfrac{11}{12}R$" },
+        { "key": "C", "text": "$\\dfrac{17}{20}R$" },
+        { "key": "D", "text": "$\\dfrac{23}{24}R$" }
+      ],
+      "correct": "C",
+      "solution": "Base at $z = 0$. Cylinder ($V_c = \\pi R^3$, $z_c = R/2$); Hemispherical cap ($V_h = \\frac{2}{3}\\pi R^3$, $z_h = R + \\frac{3}{8}R = \\frac{11}{8}R$).<br>$$z_{\\text{cm}} = \\frac{\\pi R^3(\\frac{R}{2}) + \\frac{2}{3}\\pi R^3(\\frac{11}{8}R)}{\\pi R^3 + \\frac{2}{3}\\pi R^3} = \\frac{\\frac{1}{2} + \\frac{11}{12}}{1 + \\frac{2}{3}}R = \\frac{\\frac{17}{12}}{\\frac{5}{3}}R = \\frac{17}{20}R$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A thin rod of length $L$ has linear mass density $\\lambda(x) = a x^2$ for $0 \\le x \\le L$. The position of its centre of mass from $x = 0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2}{3}L$" },
+        { "key": "B", "text": "$\\dfrac{4}{5}L$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}L$" },
+        { "key": "D", "text": "$\\dfrac{3}{4}L$" }
+      ],
+      "correct": "D",
+      "solution": "$$x_{\\text{cm}} = \\frac{\\int_0^L x (a x^2) dx}{\\int_0^L a x^2 dx} = \\frac{\\int_0^L x^3 dx}{\\int_0^L x^2 dx} = \\frac{L^4 / 4}{L^3 / 3} = \\frac{3}{4}L$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform rectangular sheet of dimensions $2a \\times 2b$ is folded along its line of symmetry parallel to side $2b$ so that the two halves overlap. The shift in the centre of mass of the sheet is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{a}{4}$" },
+        { "key": "B", "text": "$\\dfrac{a}{2}$" },
+        { "key": "C", "text": "$a$" },
+        { "key": "D", "text": "$\\dfrac{b}{2}$" }
+      ],
+      "correct": "B",
+      "solution": "Original COM was at $(a, b)$. After folding along $x = a$, the remaining overlapping portion spans from $x = 0$ to $x = a$ with new COM at $(a/2, b)$.<br>Shift: $\\Delta x = a - a/2 = a/2$.<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

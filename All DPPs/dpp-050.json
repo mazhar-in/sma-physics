@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-050",
+    "title": "Basic Concepts of Rotational Motion: Angular Displacement, Velocity & Acceleration",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "System of Particles and Rotational Motion"
+  },
+  "seo": {
+    "title": "Rotational Kinematics Angular Velocity Acceleration JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering angular displacement, axial vectors, angular velocity, angular acceleration, gear systems, variable acceleration calculus, and linear-rotational kinematic relations.",
+    "keywords": "JEE Main Physics, Rotational Kinematics DPP, Angular Displacement, Angular Velocity, Angular Acceleration, Tangential Centripetal Acceleration, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/rotational-motion-basic-concepts",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematics of Rotational Motion",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Angular Variables: Angular displacement $\\theta$, angular velocity $\\vec{\\omega} = \\frac{d\\vec{\\theta}}{dt}$, and angular acceleration $\\vec{\\alpha} = \\frac{d\\vec{\\omega}}{dt} = \\omega\\frac{d\\omega}{d\\theta}$. 2. Vector Character: Finite angular displacements are not vectors (non-commutative under addition), whereas infinitesimal angular displacements $d\\vec{\\theta}$ and $\\vec{\\omega}$ are axial vectors directed along the axis of rotation given by the right-hand thumb rule. 3. Vector Kinematic Links: $\\vec{v} = \\vec{\\omega} \\times \\vec{r}$, $\\vec{a}_t = \\vec{\\alpha} \\times \\vec{r}$, and $\\vec{a}_r = \\vec{\\omega} \\times \\vec{v} = -\\omega^2 \\vec{r}$. Net linear acceleration is $a = \\sqrt{a_t^2 + a_r^2} = R\\sqrt{\\alpha^2 + \\omega^4}$. 4. Constant $\\alpha$ Equations: $\\omega = \\omega_0 + \\alpha t$, $\\theta = \\omega_0 t + \\frac{1}{2}\\alpha t^2$, $\\omega^2 = \\omega_0^2 + 2\\alpha\\theta$, and $\\theta_n = \\omega_0 + \\frac{\\alpha}{2}(2n - 1)$.",
+    "keyFormula": "$$\\vec{v} = \\vec{\\omega} \\times \\vec{r}, \\quad \\alpha = \\omega\\frac{d\\omega}{d\\theta}, \\quad a_{\\text{net}} = R\\sqrt{\\alpha^2 + \\omega^4}, \\quad \\theta_n = \\omega_0 + \\frac{\\alpha}{2}(2n - 1)$$",
+    "examTrap": "Remember that $\\vec{v} = \\vec{\\omega} \\times \\vec{r}$ requires the vector cross product in proper order; $\\vec{r} \\times \\vec{\\omega} = -\\vec{v}$. Also, whenever $\\alpha$ is given as a function of $\\theta$, do NOT use $\\alpha = \\frac{d\\omega}{dt}$; instead use the chain rule relation $\\alpha = \\omega\\frac{d\\omega}{d\\theta}$ to integrate directly."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The angular displacement of a rotating wheel varies with time as $\\theta(t) = 2t^3 - 6t^2 + 10\\text{ rad}$. The angular acceleration of the wheel becomes zero at time $t$ equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1\\text{ s}$" },
+        { "key": "B", "text": "$2\\text{ s}$" },
+        { "key": "C", "text": "$0.5\\text{ s}$" },
+        { "key": "D", "text": "$3\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\omega(t) = \\frac{d\\theta}{dt} = 6t^2 - 12t, \\quad \\alpha(t) = \\frac{d\\omega}{dt} = 12t - 12$$<br>Setting $\\alpha(t) = 0 \\implies 12t - 12 = 0 \\implies t = 1\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A wheel starts rotating from rest with a uniform angular acceleration of $4\\text{ rad/s}^2$. The total angle turned by the wheel in the first $5\\text{ seconds}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$25\\text{ rad}$" },
+        { "key": "B", "text": "$100\\text{ rad}$" },
+        { "key": "C", "text": "$50\\text{ rad}$" },
+        { "key": "D", "text": "$20\\text{ rad}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\theta = \\omega_0 t + \\frac{1}{2}\\alpha t^2 = 0 + \\frac{1}{2}(4)(5^2) = 2 \\times 25 = 50\\text{ rad}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following quantities in rotational kinematics is an axial vector?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Large finite angular displacement" },
+        { "key": "B", "text": "Moment of inertia" },
+        { "key": "C", "text": "Rotational kinetic energy" },
+        { "key": "D", "text": "Angular velocity" }
+      ],
+      "correct": "D",
+      "solution": "Angular velocity $\\vec{\\omega}$ is an axial vector directed along the axis of rotation via the right-hand thumb rule. Finite angular displacements do not commute under vector addition, while moment of inertia is a tensor/scalar and kinetic energy is a scalar.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A flywheel rotating at $1200\\text{ rpm}$ slows down uniformly to $600\\text{ rpm}$ in $10\\text{ seconds}$. The number of revolutions completed by the flywheel during this time interval is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$150$" },
+        { "key": "B", "text": "$200$" },
+        { "key": "C", "text": "$100$" },
+        { "key": "D", "text": "$300$" }
+      ],
+      "correct": "A",
+      "solution": "Initial frequency: $N_1 = 1200/60 = 20\\text{ rps}$; Final frequency: $N_2 = 600/60 = 10\\text{ rps}$.<br>$$n = \\left(\\frac{N_1 + N_2}{2}\\right)t = \\left(\\frac{20 + 10}{2}\\right)(10) = 15 \\times 10 = 150\\text{ revolutions}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The position vector of a particle rotating in a circle of radius $r = 2\\text{ m}$ is $\\vec{r} = (2\\hat{i})\\text{ m}$ and its angular velocity vector is $\\vec{\\omega} = (3\\hat{k})\\text{ rad/s}$. The linear velocity vector $\\vec{v} = \\vec{\\omega} \\times \\vec{r}$ of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-6\\hat{j}\\text{ m/s}$" },
+        { "key": "B", "text": "$6\\hat{j}\\text{ m/s}$" },
+        { "key": "C", "text": "$6\\hat{i}\\text{ m/s}$" },
+        { "key": "D", "text": "$6\\hat{k}\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\vec{v} = \\vec{\\omega} \\times \\vec{r} = (3\\hat{k}) \\times (2\\hat{i}) = 6(\\hat{k} \\times \\hat{i}) = 6\\hat{j}\\text{ m/s}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A rigid body rotates with an angular velocity $\\omega(t) = (4t - 3)\\text{ rad/s}$. The total angular displacement between $t = 1\\text{ s}$ and $t = 3\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ rad}$" },
+        { "key": "B", "text": "$8\\text{ rad}$" },
+        { "key": "C", "text": "$12\\text{ rad}$" },
+        { "key": "D", "text": "$6\\text{ rad}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\Delta\\theta = \\int_1^3 (4t - 3) dt = \\left[2t^2 - 3t\\right]_1^3 = (18 - 9) - (2 - 3) = 9 - (-1) = 10\\text{ rad}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For a particle executing circular motion of radius $R$ with angular speed $\\omega$ and angular acceleration $\\alpha$, the magnitude of the net linear acceleration is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$R\\sqrt{\\omega^2 + \\alpha^2}$" },
+        { "key": "B", "text": "$R\\sqrt{\\omega^4 + \\alpha^2}$" },
+        { "key": "C", "text": "$R(\\omega^2 + \\alpha)$" },
+        { "key": "D", "text": "$R\\alpha$" }
+      ],
+      "correct": "B",
+      "solution": "Radial component: $a_r = R\\omega^2$; Tangential component: $a_t = R\\alpha$.<br>$$a_{\\text{net}} = \\sqrt{a_r^2 + a_t^2} = \\sqrt{(R\\omega^2)^2 + (R\\alpha)^2} = R\\sqrt{\\omega^4 + \\alpha^2}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A motor rotates at a constant speed of $\\omega = 30\\text{ rad/s}$. When switched off, it comes to rest after completing $45\\text{ radians}$ under constant angular retardation. The magnitude of the angular retardation is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ rad/s}^2$" },
+        { "key": "B", "text": "$20\\text{ rad/s}^2$" },
+        { "key": "C", "text": "$15\\text{ rad/s}^2$" },
+        { "key": "D", "text": "$10\\text{ rad/s}^2$" }
+      ],
+      "correct": "D",
+      "solution": "$$\\omega^2 = \\omega_0^2 - 2\\alpha\\theta \\implies 0 = 30^2 - 2\\alpha(45) \\implies 90\\alpha = 900 \\implies \\alpha = 10\\text{ rad/s}^2$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves along a circle of radius $R = 0.5\\text{ m}$ such that its speed increases at a constant rate $a_t = 3\\text{ m/s}^2$. The angular acceleration $\\alpha$ of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.5\\text{ rad/s}^2$" },
+        { "key": "B", "text": "$12\\text{ rad/s}^2$" },
+        { "key": "C", "text": "$6\\text{ rad/s}^2$" },
+        { "key": "D", "text": "$0.75\\text{ rad/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "$$a_t = R\\alpha \\implies \\alpha = \\frac{a_t}{R} = \\frac{3\\text{ m/s}^2}{0.5\\text{ m}} = 6\\text{ rad/s}^2$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "If the angular acceleration of a wheel is related to its angular velocity as $\\alpha = -k\\omega$ (where $k$ is a positive constant), the angular velocity after time $t$ from initial speed $\omega_0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\omega_0 (1 - kt)$" },
+        { "key": "B", "text": "$\\omega_0 e^{-kt}$" },
+        { "key": "C", "text": "$\\dfrac{\\omega_0}{1 + kt}$" },
+        { "key": "D", "text": "$\\omega_0 e^{-k t^2 / 2}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{d\\omega}{dt} = -k\\omega \\implies \\int_{\\omega_0}^\\omega \\frac{d\\omega}{\\omega} = -k\\int_0^t dt \\implies \\ln\\left(\\frac{\\omega}{\\omega_0}\\right) = -kt \\implies \\omega(t) = \\omega_0 e^{-kt}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ceiling fan is rotating at $120\\text{ rpm}$. When the power is turned off, it completes $20\\text{ revolutions}$ before coming to a stop with uniform deceleration. The time taken to stop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ s}$" },
+        { "key": "B", "text": "$10\\text{ s}$" },
+        { "key": "C", "text": "$15\\text{ s}$" },
+        { "key": "D", "text": "$30\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\omega_0 = 120 \\times \\frac{2\\pi}{60} = 4\\pi\\text{ rad/s}, \\quad \\theta = 20 \\times 2\\pi = 40\\pi\\text{ rad}$$<br>$$\\theta = \\left(\\frac{\\omega_0 + \\omega}{2}\\right)t \\implies 40\\pi = \\left(\\frac{4\\pi + 0}{2}\\right)t = 2\\pi t \\implies t = 20\\text{ s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The angular acceleration of a body rotating about a fixed axis is $\\alpha = 3t^2\\text{ rad/s}^2$. If it starts from rest at $t = 0$, its angular displacement at $t = 2\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ rad}$" },
+        { "key": "B", "text": "$12\\text{ rad}$" },
+        { "key": "C", "text": "$4\\text{ rad}$" },
+        { "key": "D", "text": "$16\\text{ rad}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\omega(t) = \\int_0^t 3t^2 dt = t^3, \\quad \\theta(t) = \\int_0^t t^3 dt = \\frac{t^4}{4}$$<br>$$\\theta(2) = \\frac{2^4}{4} = 4\\text{ rad}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in a circle of radius $r = 1\\text{ m}$. Starting from rest, it is accelerated at a constant angular rate $\\alpha = 2\\text{ rad/s}^2$. The time at which the magnitude of radial acceleration equals the magnitude of tangential acceleration is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{\\sqrt{2}}\\text{ s}$" },
+        { "key": "B", "text": "$1\\text{ s}$" },
+        { "key": "C", "text": "$\\sqrt{2}\\text{ s}$" },
+        { "key": "D", "text": "$2\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\omega(t) = \\alpha t = 2t \\implies a_r = r\\omega^2 = 1(2t)^2 = 4t^2, \\quad a_t = r\\alpha = 1(2) = 2$$<br>$$a_r = a_t \\implies 4t^2 = 2 \\implies t = \\frac{1}{\\sqrt{2}}\\text{ s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The ratio of the angular speed of the second hand to that of the hour hand of a standard mechanical clock is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60 : 1$" },
+        { "key": "B", "text": "$120 : 1$" },
+        { "key": "C", "text": "$360 : 1$" },
+        { "key": "D", "text": "$720 : 1$" }
+      ],
+      "correct": "D",
+      "solution": "$$T_s = 60\\text{ s}, \\quad T_h = 12 \\times 3600 = 43200\\text{ s}$$<br>$$\\frac{\\omega_s}{\\omega_h} = \\frac{T_h}{T_s} = \\frac{43200}{60} = 720 : 1$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A wheel rotates with an angular speed $\\omega = (2\\theta + 5)\\text{ rad/s}$, where $\\theta$ is in radians. The angular acceleration $\\alpha$ when $\\theta = 5\\text{ rad}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$15\\text{ rad/s}^2$" },
+        { "key": "B", "text": "$60\\text{ rad/s}^2$" },
+        { "key": "C", "text": "$30\\text{ rad/s}^2$" },
+        { "key": "D", "text": "$45\\text{ rad/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\alpha = \\omega\\frac{d\\omega}{d\\theta} = (2\\theta + 5)(2)$$<br>At $\\theta = 5\\text{ rad}$: $\\alpha = (2(5) + 5)(2) = 15 \\times 2 = 30\\text{ rad/s}^2$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two gears $A$ and $B$ are in mesh. The radius of gear $A$ is $r_A = 10\\text{ cm}$ and that of gear $B$ is $r_B = 25\\text{ cm}$. If gear $A$ rotates with an angular speed of $50\\text{ rad/s}$, the angular speed of gear $B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ rad/s}$" },
+        { "key": "B", "text": "$125\\text{ rad/s}$" },
+        { "key": "C", "text": "$25\\text{ rad/s}$" },
+        { "key": "D", "text": "$10\\text{ rad/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Tangential linear speeds must match at contact: $$r_A \\omega_A = r_B \\omega_B \\implies \\omega_B = \\frac{r_A \\omega_A}{r_B} = \\frac{10 \\times 50}{25} = 20\\text{ rad/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An infinitesimal angular displacement $d\\vec{\theta}$ is treated as a true vector because:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "It has both magnitude and direction" },
+        { "key": "B", "text": "It obeys the commutative law of vector addition ($d\\vec{\theta}_1 + d\\vec{\theta}_2 = d\\vec{\theta}_2 + d\\vec{\theta}_1$)" },
+        { "key": "C", "text": "It is always perpendicular to the linear velocity" },
+        { "key": "D", "text": "Its magnitude is measured in radians" }
+      ],
+      "correct": "B",
+      "solution": "Vector quantities must obey commutative vector addition. Finite rotations do not commute ($\\theta_1 + \\theta_2 \\ne \\theta_2 + \\theta_1$), but infinitesimal angular displacements do commute ($d\\vec{\theta}_1 + dvec{\theta}_2 = d\\vec{\theta}_2 + d\\vec{\theta}_1$).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A wheel starts from rest and accelerates uniformly with $\\alpha = 4\\text{ rad/s}^2$. The angular displacement during the $3\\text{rd second}$ of its motion is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$18\\text{ rad}$" },
+        { "key": "B", "text": "$12\\text{ rad}$" },
+        { "key": "C", "text": "$10\\text{ rad}$" },
+        { "key": "D", "text": "$14\\text{ rad}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\theta_n = \\omega_0 + \\frac{1}{2}\\alpha(2n - 1) = 0 + \\frac{1}{2}(4)(2(3) - 1) = 2(5) = 10\\text{ rad}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A point $P$ on the rim of a rotating disc of radius $R = 0.2\\text{ m}$ has a linear speed of $v = 4\\text{ m/s}$ and net linear acceleration of $a = 80\\sqrt{2}\text{ m/s}^2$. The angular acceleration $\\alpha$ of the disc is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$400\\text{ rad/s}^2$" },
+        { "key": "B", "text": "$200\\text{ rad/s}^2$" },
+        { "key": "C", "text": "$800\\text{ rad/s}^2$" },
+        { "key": "D", "text": "$100\\text{ rad/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "Centripetal acceleration: $a_r = \\frac{v^2}{R} = \\frac{4^2}{0.2} = 80\\text{ m/s}^2$.<br>Total acceleration: $a^2 = a_r^2 + a_t^2 \\implies (80\\sqrt{2})^2 = 80^2 + a_t^2 \\implies a_t = 80\\text{ m/s}^2$.<br>$$\\alpha = \\frac{a_t}{R} = \\frac{80}{0.2} = 400\\text{ rad/s}^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A shaft rotating at angular speed $\\omega_0$ is subjected to a retarding angular acceleration $\\alpha = -c\\sqrt{\\omega}$. The time required for the shaft to come to complete rest is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\sqrt{\\omega_0}}{c}$" },
+        { "key": "B", "text": "$\\dfrac{2\\sqrt{\\omega_0}}{c}$" },
+        { "key": "C", "text": "$\\dfrac{2\\omega_0}{c}$" },
+        { "key": "D", "text": "$\\dfrac{\\omega_0^2}{2c}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{d\\omega}{dt} = -c\\sqrt{\\omega} \\implies \\int_{\\omega_0}^0 \\omega^{-1/2} d\\omega = -c \\int_0^t dt \\implies \\left[2\\sqrt{\\omega}\\right]_{\\omega_0}^0 = -ct \\implies t = \\frac{2\\sqrt{\\omega_0}}{c}$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

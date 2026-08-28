@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-033",
+    "title": "Vehicle on a Level Circular Road: Skidding, Toppling & Reaction Dynamics",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Vehicle on a Level Circular Road Problems JEE Main DPP-033 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering lateral skidding conditions, outer/inner wheel normal reactions, overturning/toppling thresholds, leaning cyclists, and combined tangential-centripetal acceleration on flat turns.",
+    "keywords": "JEE Main Physics, Level Road Curve DPP, Skidding vs Toppling, Inner Outer Wheel Normal Reaction, Overturning of Car, Centripetal Friction, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/vehicle-on-level-circular-road-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Lateral Equilibrium, Skidding vs. Toppling & Wheel Reactions",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Skidding Condition: On a flat horizontal curve of radius $R$, the entire centripetal force is provided by lateral static friction ($f_s = \\frac{mv^2}{R} \\le \\mu_s mg$). The maximum safe speed to avoid lateral slipping is $v_{\\text{skid}} = \\sqrt{\\mu_s R g}$. 2. Wheel Ground Reactions: For a vehicle of track width $2d$ and center of mass height $h$, weight transfer causes the outer wheels to experience greater normal force: $R_1 = \\frac{Mg}{2}\\left(1 - \\frac{v^2 h}{Rgd}\\right)$ on inner wheels and $R_2 = \\frac{Mg}{2}\\left(1 + \\frac{v^2 h}{Rgd}\\right)$ on outer wheels. 3. Overturning (Toppling) Condition: When $R_1 = 0$, the inner wheels lift off the ground at speed $v_{\\text{topple}} = \\sqrt{\\frac{Rgd}{h}}$. 4. Skidding vs. Toppling Criterion: If $\\mu_s < \\frac{d}{h}$, the vehicle skids laterally before it can topple. If $\\mu_s > \\frac{d}{h}$, the vehicle topples outwards before it skids. 5. Combined Acceleration: If the vehicle also accelerates tangentially ($a_t$), the total required acceleration is $a_{\\text{net}} = \\sqrt{a_t^2 + a_c^2} \\le \\mu_s g$.",
+    "keyFormula": "$$v_{\\text{skid}} = \\sqrt{\\mu_s R g}, \\quad v_{\\text{topple}} = \\sqrt{\\frac{Rgd}{h}}, \\quad R_{1,2} = \\frac{Mg}{2}\\left(1 \\mp \\frac{v^2 h}{Rgd}\\right), \\quad a_{\\text{net}} = \\sqrt{a_t^2 + \\left(\\frac{v^2}{R}\\right)^2} \\le \\mu_s g$$",
+    "examTrap": "When checking whether a car will skid or topple first, compare $\\mu_s$ directly with the geometric aspect ratio $\\frac{d}{h}$ (half-track width divided by center of gravity height). High-center-of-gravity vehicles (SUVs, trucks) have smaller $\\frac{d}{h}$, making them prone to dangerous roll-over toppling on dry roads."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car of mass $m = 1000\\text{ kg}$ negotiates a level circular curve of radius $R = 40\\text{ m}$ at a constant speed of $v = 10\\text{ m/s}$. The magnitude of the net frictional force exerted by the ground on the tyres is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2500\\text{ N}$" },
+        { "key": "B", "text": "$4000\\text{ N}$" },
+        { "key": "C", "text": "$1000\\text{ N}$" },
+        { "key": "D", "text": "$5000\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "On a flat circular road, static friction provides the necessary centripetal force:<br>$$f = \\frac{m v^2}{R} = \\frac{1000 \\times 10^2}{40} = \\frac{100000}{40} = 2500\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A vehicle moves along a flat horizontal road with speed $v$ along a circular arc of radius $R$. If the coefficient of static friction is $\\mu_s$, the condition to avoid lateral skidding is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v \\ge \\sqrt{\\mu_s R g}$" },
+        { "key": "B", "text": "$v \\le \\sqrt{\\mu_s R g}$" },
+        { "key": "C", "text": "$v \\le \\mu_s R g$" },
+        { "key": "D", "text": "$v \\le \\sqrt{\\dfrac{R g}{\\mu_s}}$" }
+      ],
+      "correct": "B",
+      "solution": "For no slipping: $f_c = \\frac{mv^2}{R} \\le f_s^{\\text{max}} = \\mu_s mg \\implies v \\le \\sqrt{\\mu_s R g}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car of total mass $M$ travels on a horizontal circular track of radius $R$ with speed $v$. The wheel gauge is $2d$ and the center of mass is at height $h$ above the road. The normal reaction $R_1$ on the inner wheels and $R_2$ on the outer wheels are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$R_1 = \\dfrac{Mg}{2}\\left(1 + \\dfrac{v^2 h}{R g d}\\right), \\quad R_2 = \\dfrac{Mg}{2}\\left(1 - \\dfrac{v^2 h}{R g d}\\right)$" },
+        { "key": "B", "text": "$R_1 = \\dfrac{Mg}{2}\\left(1 - \\dfrac{v^2 h}{R g d}\\right), \\quad R_2 = \\dfrac{Mg}{2}\\left(1 + \\dfrac{v^2 h}{R g d}\\right)$" },
+        { "key": "C", "text": "$R_1 = Mg\\left(1 - \\dfrac{v^2 h}{2R g d}\\right), \\quad R_2 = Mg\\left(1 + \\dfrac{v^2 h}{2R g d}\\right)$" },
+        { "key": "D", "text": "$R_1 = \\dfrac{Mg}{2}, \\quad R_2 = \\dfrac{Mg}{2}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Vertical balance: $R_1 + R_2 = Mg$.<br>2. Torque about CM: $(R_2 - R_1)d = f h = \\left(\\frac{Mv^2}{R}\\right)h \\implies R_2 - R_1 = \\frac{Mv^2 h}{Rd}$.<br>3. Solving: $R_1 = \\frac{Mg}{2}\\left(1 - \\frac{v^2 h}{Rgd}\\right)$ and $R_2 = \\frac{Mg}{2}\\left(1 + \\frac{v^2 h}{Rgd}\\right)$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 3, the vehicle will overturn (topple) outwards before it skids laterally if:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\mu_s > \\dfrac{d}{h}$" },
+        { "key": "B", "text": "$\\mu_s < \\dfrac{d}{h}$" },
+        { "key": "C", "text": "$\\mu_s > \\dfrac{h}{d}$" },
+        { "key": "D", "text": "$\\mu_s = \\dfrac{d}{2h}$" }
+      ],
+      "correct": "A",
+      "solution": "Toppling threshold speed: $v_{\\text{topple}} = \\sqrt{\\frac{Rgd}{h}}$. Skidding threshold: $v_{\\text{skid}} = \\sqrt{\\mu_s Rg}$.<br>The vehicle topples before skidding when $v_{\\text{topple}} < v_{\\text{skid}} \\implies \\sqrt{\\frac{Rgd}{h}} < \\sqrt{\\mu_s Rg} \\implies \\mu_s > \\frac{d}{h}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A truck of mass $M$ rounds an unbanked circular curve of radius $R = 80\\text{ m}$. If the track width between the wheels is $2d = 1.6\\text{ m}$ and the center of gravity is $h = 1.0\\text{ m}$ high, the maximum speed without toppling is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16.0\\text{ m/s}$" },
+        { "key": "B", "text": "$8.0\\text{ m/s}$" },
+        { "key": "C", "text": "$25.3\\text{ m/s}$" },
+        { "key": "D", "text": "$12.0\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "Half-gauge distance $d = \\frac{1.6}{2} = 0.8\\text{ m}$.<br>$$v_{\\text{topple}} = \\sqrt{\\frac{Rgd}{h}} = \\sqrt{\\frac{80 \\times 10 \\times 0.8}{1.0}} = \\sqrt{640} \\approx 25.3\\text{ m/s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small body is placed on the horizontal floor of a truck at a distance of $2\\text{ m}$ from the driver. The truck travels at $v = 12\\text{ m/s}$ on a flat circular turn of radius $R = 36\\text{ m}$. The minimum coefficient of friction between the body and the truck floor so that it does not slip is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.25$" },
+        { "key": "B", "text": "$0.50$" },
+        { "key": "C", "text": "$0.40$" },
+        { "key": "D", "text": "$0.33$" }
+      ],
+      "correct": "C",
+      "solution": "Centripetal acceleration $a_c = \\frac{v^2}{R} = \\frac{12^2}{36} = 4\\text{ m/s}^2$.<br>For no slipping: $\\mu_s g \\ge a_c \\implies \\mu_s \\ge \\frac{4}{10} = 0.40$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "When a four-wheeled car turns to the left on a flat horizontal track, which wheels experience the greatest normal ground reaction force?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Inner front wheel" },
+        { "key": "B", "text": "Outer front and outer rear wheels" },
+        { "key": "C", "text": "Inner rear wheel" },
+        { "key": "D", "text": "All four wheels experience identical normal forces" }
+      ],
+      "correct": "B",
+      "solution": "When turning left, centrifugal inertia produces a rolling moment to the right, transferring vertical normal load from the inner (left) wheels to the outer (right) wheels.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car travels at speed $v$ along a flat circular track of radius $R_1$ without slipping. If the radius of the turn is increased to $R_2 = 4R_1$ while surface conditions remain unchanged, the maximum safe speed becomes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4v$" },
+        { "key": "B", "text": "$2v$" },
+        { "key": "C", "text": "$\\sqrt{2}v$" },
+        { "key": "D", "text": "$\\dfrac{v}{2}$" }
+      ],
+      "correct": "B",
+      "solution": "Since $v_{\\text{max}} = \\sqrt{\\mu_s R g} \\propto \\sqrt{R}$, quadrupling $R$ doubles the maximum safe speed ($v_2 = 2v$).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A cyclist travelling at $v = 5\\text{ m/s}$ negotiates a flat level curve of radius $R = 2.5\\sqrt{3}\\text{ m}$. The angle $\\theta$ that the cyclist must lean with the vertical to maintain balance without slipping is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30^\\circ$" },
+        { "key": "B", "text": "$45^\\circ$" },
+        { "key": "C", "text": "$60^\\circ$" },
+        { "key": "D", "text": "$15^\\circ$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\tan\\theta = \\frac{v^2}{Rg} = \\frac{5^2}{(2.5\\sqrt{3})(10)} = \\frac{25}{25\\sqrt{3}} = \\frac{1}{\\sqrt{3}} \\implies \\theta = 30^\\circ$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A motorcyclist moving at $v = 20\\text{ m/s}$ takes a turn on a level circular road of radius $R = 40\\text{ m}$. The minimum coefficient of static friction $\\mu_s$ required between the tyres and road to prevent skidding is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.5$" },
+        { "key": "B", "text": "$0.8$" },
+        { "key": "C", "text": "$1.0$" },
+        { "key": "D", "text": "$0.4$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\mu_s \\ge \\frac{v^2}{Rg} = \\frac{20^2}{40 \\times 10} = \\frac{400}{400} = 1.0$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car rounds a level circular bend of radius $R = 100\\text{ m}$ at constant speed $v = 10\\text{ m/s}$. A plumb bob suspended by a string from the roof of the car hangs at an angle $\\phi$ to the vertical. The value of $\\tan\\phi$ is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.1$" },
+        { "key": "B", "text": "$0.2$" },
+        { "key": "C", "text": "$1.0$" },
+        { "key": "D", "text": "$0.05$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\tan\\phi = \\frac{a_c}{g} = \\frac{v^2}{Rg} = \\frac{10^2}{100 \\times 10} = 0.1$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A front-wheel-drive car rounds a level circular track at constant speed. The frictional forces on the front (driving) wheels and rear (free) wheels provide:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Only centripetal force on both pairs" },
+        { "key": "B", "text": "Driving force and centripetal force on front wheels; only centripetal force on rear wheels" },
+        { "key": "C", "text": "Retarding force on rear wheels; centripetal force on front wheels only" },
+        { "key": "D", "text": "Zero force on rear wheels" }
+      ],
+      "correct": "B",
+      "solution": "The front wheels are connected to the transmission, so they supply both the tangential forward propelling force and the lateral centripetal steering force. The rear unpowered wheels roll freely and provide only lateral static friction to accelerate centripetally.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "If a car travelling on a flat circular curve with radius $R = 25\\text{ m}$ increases its speed from rest with a constant tangential acceleration $a_t = 3\\text{ m/s}^2$, the speed at which it begins to skid ($\\mu_s = 0.5, g = 10\\text{ m/s}^2$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10.0\\text{ m/s}$" },
+        { "key": "B", "text": "$11.18\\text{ m/s}$" },
+        { "key": "C", "text": "$8.0\\text{ m/s}$" },
+        { "key": "D", "text": "$12.5\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Maximum allowable net acceleration: $a_{\\text{net}} = \\mu_s g = 0.5 \\times 10 = 5\\text{ m/s}^2$.<br>2. Centripetal acceleration limit: $a_c = \\sqrt{a_{\\text{net}}^2 - a_t^2} = \\sqrt{5^2 - 3^2} = 4\\text{ m/s}^2$.<br>3. Speed: $v = \\sqrt{a_c R} = \\sqrt{4 \\times 25} = 10.0\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car of mass $m$ rounds a level curve with radius $R$ at speed $v$. If the friction between tyres and road is $f$, the angle made by the total reaction force of the road with the vertical is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}\\left(\\dfrac{v^2}{Rg}\\right)$" },
+        { "key": "B", "text": "$\\sin^{-1}\\left(\\dfrac{v^2}{Rg}\\right)$" },
+        { "key": "C", "text": "$\\cos^{-1}\\left(\\dfrac{v^2}{Rg}\\right)$" },
+        { "key": "D", "text": "$\\tan^{-1}\\left(\\dfrac{Rg}{v^2}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "Resultant contact force combines normal force $N = mg$ and friction $f = \\frac{mv^2}{R}$.<br>$$\\tan\\theta = \\frac{f}{N} = \\frac{mv^2/R}{mg} = \\frac{v^2}{Rg} \\implies \\theta = \\tan^{-1}\\left(\\frac{v^2}{Rg}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A coin placed on a horizontal flat board at distance $r$ from an axis begins to slide when the rotational speed reaches $\\omega_1$. If the distance from the axis is doubled ($r' = 2r$), the new threshold angular speed $\\omega_2$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\omega_1}{2}$" },
+        { "key": "B", "text": "$\\dfrac{\\omega_1}{\\sqrt{2}}$" },
+        { "key": "C", "text": "$\\sqrt{2}\\omega_1$" },
+        { "key": "D", "text": "$2\\omega_1$" }
+      ],
+      "correct": "B",
+      "solution": "Threshold angular velocity: $\\omega = \\sqrt{\\frac{\\mu_s g}{r}} \\propto \\frac{1}{\\sqrt{r}}$. When $r$ is doubled, $\\omega_2 = \\frac{\\omega_1}{\\sqrt{2}}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For a car rounding a level circle, if the speed $v$ is doubled while the radius $R$ is halved, the required centripetal frictional force increases by a factor of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$4$" },
+        { "key": "C", "text": "$8$" },
+        { "key": "D", "text": "$16$" }
+      ],
+      "correct": "C",
+      "solution": "$$F_c = \\frac{mv^2}{R} \\implies F_c' = \\frac{m(2v)^2}{R/2} = \\frac{4mv^2}{R/2} = 8\\left(\\frac{mv^2}{R}\\right) = 8 F_c$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car has wheel spacing $2d = 1.4\\text{ m}$ and center of mass height $h = 0.7\\text{ m}$. The coefficient of static friction is $\\mu_s = 0.8$. As speed on an unbanked circular curve of radius $R$ increases:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The car will skid before it can topple" },
+        { "key": "B", "text": "The car will topple before it can skid" },
+        { "key": "C", "text": "The car will topple and skid simultaneously" },
+        { "key": "D", "text": "The car will slide inwards" }
+      ],
+      "correct": "A",
+      "solution": "Half-gauge: $d = 0.7\\text{ m}$, $h = 0.7\\text{ m} \\implies \\frac{d}{h} = 1.0$.<br>Since $\\mu_s = 0.8 < \\frac{d}{h} = 1.0$, the skidding threshold is reached before the toppling threshold. Hence the car skids first.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A horizontal curve has radius $R = 20\\text{ m}$. On a dry day $\\mu_s = 0.8$, and on a rainy day $\\mu_s' = 0.2$. The ratio of maximum safe speed on the dry day to the rainy day is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4 : 1$" },
+        { "key": "B", "text": "$2 : 1$" },
+        { "key": "C", "text": "$\\sqrt{2} : 1$" },
+        { "key": "D", "text": "$16 : 1$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{v_{\\text{dry}}}{v_{\\text{rainy}}} = \\sqrt{\\frac{\\mu_s}{\\mu_s'}} = \\sqrt{\\frac{0.8}{0.2}} = \\sqrt{4} = 2 : 1$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A circular disk rotates in a horizontal plane. A block of mass $m$ is tied to the center by a light string of length $r$ on the rough surface ($\\mu_s$). The tension in the string becomes non-zero only when the angular velocity $\\omega$ exceeds:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{\\mu_s g}{r}}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{g}{\\mu_s r}}$" },
+        { "key": "C", "text": "$\\dfrac{\\mu_s g}{r}$" },
+        { "key": "D", "text": "$\\sqrt{\\dfrac{2\\mu_s g}{r}}$" }
+      ],
+      "correct": "A",
+      "solution": "Static friction balances centripetal requirement until $m\\omega^2 r = \\mu_s mg$. Beyond this speed ($\\omega > \\sqrt{\\frac{\\mu_s g}{r}}$), the string becomes taut and develops tension.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A passenger in a bus turning sharply to the right on a level road feels thrown outwards towards the left. In the reference frame of the ground (inertial frame), this outward tendency is due to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Centrifugal force acting on the passenger" },
+        { "key": "B", "text": "The passenger's linear inertia maintaining straight-line motion while the bus turns" },
+        { "key": "C", "text": "Gravitational attraction from the side of the bus" },
+        { "key": "D", "text": "Ground friction acting radially outward on the passenger" }
+      ],
+      "correct": "B",
+      "solution": "In an inertial frame, the passenger attempts to continue in a straight line with uniform velocity due to inertia, while the bus accelerates and turns to the right.<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-034",
+    "title": "Vehicle on a Banked Road: Smooth & Rough Banking Dynamics",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Vehicle on a Banked Road With and Without Friction JEE Main DPP-034 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering optimum design speed, friction-assisted upper and lower safe speed limits, normal force calculation, railway track elevation (superelevation), and infinite speed threshold condition.",
+    "keywords": "JEE Main Physics, Banked Road DPP, Banking with Friction, Optimum Speed Curve, Minimum Safe Speed Banked Road, Superelevation Railway, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/vehicle-on-banked-road-problems",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Road Banking Mechanics, Friction Direction & Speed Boundaries",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Ideal Design Speed (Frictionless Banking): On a track of radius $R$ banked at angle $\theta$, the horizontal component of the normal force provides the centripetal acceleration ($N\\sin\\theta = \\frac{mv_0^2}{R}$ and $N\\cos\\theta = mg$), yielding $v_0 = \\sqrt{Rg\\tan\\theta}$ with normal reaction $N = \\frac{mg}{\\cos\\theta}$. 2. Rough Banked Road ($v > v_0$): When speed exceeds design speed, the car tends to skid uphill, so static friction $f_s$ acts downhill along the slope. The upper safe speed limit is $v_{\\text{max}} = \\sqrt{Rg\\left[\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right]}$. If $\\mu_s\\tan\\theta \\ge 1$, $v_{\\text{max}} \\to \\infty$. 3. Rough Banked Road ($v < v_0$): When speed is below design speed, the car tends to slide down the bank, so static friction acts uphill along the slope. The lower safe speed limit is $v_{\\text{min}} = \\sqrt{Rg\\left[\\frac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right]}$. If $\\mu_s \\ge \\tan\\theta$, $v_{\\text{min}} = 0$. 4. Superelevation of Railway Tracks: Outer rail elevation is given by $h \\approx d\\tan\\theta = \\frac{v^2 d}{Rg}$, where $d$ is gauge distance.",
+    "keyFormula": "$$v_0 = \\sqrt{Rg\\tan\\theta}, \\quad v_{\\text{max}} = \\sqrt{Rg\\left[\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right]}, \\quad v_{\\text{min}} = \\sqrt{Rg\\left[\\frac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right]}, \\quad h = \\frac{v^2 d}{Rg}$$",
+    "examTrap": "Remember that on a banked road, the direction of static friction depends strictly on whether the actual speed $v$ is greater or less than the ideal design speed $v_0 = \\sqrt{Rg\\tan\\theta}$. If $v = v_0$, friction is zero. If $v > v_0$, friction points DOWN the incline. If $v < v_0$, friction points UP the incline."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A circular highway curve of radius $R = 200\\text{ m}$ is banked for a design speed of $v_0 = 72\\text{ km/h}$. If the road is assumed to be completely smooth, the banking angle $\\theta$ of the curve is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}(0.1)$" },
+        { "key": "B", "text": "$\\tan^{-1}(0.2)$" },
+        { "key": "C", "text": "$\\tan^{-1}(0.4)$" },
+        { "key": "D", "text": "$\\tan^{-1}(0.5)$" }
+      ],
+      "correct": "B",
+      "solution": "Speed in SI units: $v_0 = 72 \\times \\frac{5}{18} = 20\\text{ m/s}$.<br>For smooth banking: $$\\tan\\theta = \\frac{v_0^2}{Rg} = \\frac{20^2}{200 \\times 10} = \\frac{400}{2000} = 0.2 \\implies \\theta = \\tan^{-1}(0.2)$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "On a frictionless banked circular track of radius $R$ and inclination $\\theta$, the normal reaction force exerted by the road on a car of mass $m$ travelling at the design speed $v_0 = \\sqrt{Rg\\tan\\theta}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{mg}{\\cos\\theta}$" },
+        { "key": "B", "text": "$mg\\cos\\theta$" },
+        { "key": "C", "text": "$mg\\sin\\theta$" },
+        { "key": "D", "text": "$\\dfrac{mg}{\\sin\\theta}$" }
+      ],
+      "correct": "A",
+      "solution": "Vertical equilibrium gives $N\\cos\\theta = mg \\implies N = \\frac{mg}{\\cos\\theta}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A circular road of radius $R = 40\\text{ m}$ is banked at an angle $\\theta = 45^\\circ$. If the coefficient of static friction between tyres and the road is $\\mu_s = 0.5$, the maximum speed $v_{\\text{max}}$ with which a car can round the curve without skidding up the incline is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20.0\\text{ m/s}$" },
+        { "key": "B", "text": "$34.64\\text{ m/s}$" },
+        { "key": "C", "text": "$11.55\\text{ m/s}$" },
+        { "key": "D", "text": "$28.28\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "$$v_{\\text{max}} = \\sqrt{Rg\\left[\\frac{\\tan 45^\\circ + \\mu_s}{1 - \\mu_s\\tan 45^\\circ}\\right]} = \\sqrt{400\\left[\\frac{1 + 0.5}{1 - 0.5}\\right]} = \\sqrt{400 \\times 3} = 20\\sqrt{3} \\approx 34.64\\text{ m/s}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 3, the minimum speed $v_{\\text{min}}$ below which the car tends to slide down the banked incline is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$11.55\\text{ m/s}$" },
+        { "key": "B", "text": "$8.0\\text{ m/s}$" },
+        { "key": "C", "text": "$14.14\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$v_{\\text{min}} = \\sqrt{Rg\\left[\\frac{\\tan 45^\\circ - \\mu_s}{1 + \\mu_s\\tan 45^\\circ}\\right]} = \\sqrt{400\\left[\\frac{1 - 0.5}{1 + 0.5}\\right]} = \\sqrt{\\frac{400}{3}} \\approx 11.55\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the coefficient of static friction between the road and tyres is $\\mu_s$, a parked car will remain safely at rest on a banked road without sliding down only if the banking angle $\\theta$ satisfies:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\theta \\le \\tan^{-1}(\\mu_s)$" },
+        { "key": "B", "text": "$\\theta \\ge \\tan^{-1}(\\mu_s)$" },
+        { "key": "C", "text": "$\\theta = \\sin^{-1}(\\mu_s)$" },
+        { "key": "D", "text": "$\\theta \\le \\cos^{-1}(\\mu_s)$" }
+      ],
+      "correct": "A",
+      "solution": "For a stationary vehicle ($v = 0$), static friction balances gravity along the slope if $mg\\sin\\theta \\le \\mu_s mg\\cos\\theta \\implies \\tan\\theta \\le \\mu_s \\implies \\theta \\le \\tan^{-1}(\\mu_s)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A circular road track has a radius of curvature $R$ and is banked at an angle $\\theta$. If the friction coefficient is $\\mu_s$, the expression for the maximum permissible speed $v_{\\text{max}}$ without upward slipping is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{Rg\\left[\\dfrac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right]}$" },
+        { "key": "B", "text": "$\\sqrt{Rg\\left[\\dfrac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right]}$" },
+        { "key": "C", "text": "$\\sqrt{Rg\\left[\\dfrac{1 + \\mu_s\\tan\\theta}{\\tan\\theta - \\mu_s}\\right]}$" },
+        { "key": "D", "text": "$\\sqrt{Rg(\\tan\\theta + \\mu_s)}$" }
+      ],
+      "correct": "B",
+      "solution": "At maximum speed, friction acts down the slope: $N\\sin\\theta + f_s\\cos\\theta = \\frac{mv^2}{R}$ and $N\\cos\\theta - f_s\\sin\\theta = mg$. Solving with $f_s = \\mu_s N$ gives $v_{\\text{max}} = \\sqrt{Rg\\left[\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right]}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "From Question 6, if the banking angle $\\theta$ and friction coefficient $\\mu_s$ satisfy $\\mu_s\\tan\\theta = 1$, the theoretical maximum safe speed $v_{\\text{max}}$ before the car slips up the bank becomes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "Infinitely large (the vehicle never slips upwards)" },
+        { "key": "C", "text": "$\\sqrt{Rg}$" },
+        { "key": "D", "text": "$2\\sqrt{Rg}$" }
+      ],
+      "correct": "B",
+      "solution": "When $\\mu_s\\tan\\theta = 1$, the denominator $(1 - \\mu_s\\tan\\theta) = 0$, making $v_{\\text{max}} \\to \\infty$. The normal force and friction increase proportionally with speed such that slipping up the bank never occurs at any speed.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A train rounds a horizontal circular curve of radius $R = 900\\text{ m}$ at speed $v = 30\\text{ m/s}$. The distance between the railway rails is $d = 1.5\\text{ m}$. To prevent lateral thrust on the wheel flanges, the outer rail must be elevated above the inner rail by height $h$ ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.15\\text{ m}$" },
+        { "key": "B", "text": "$0.30\\text{ m}$" },
+        { "key": "C", "text": "$0.05\\text{ m}$" },
+        { "key": "D", "text": "$0.20\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$h \\approx d\\tan\\theta = \\frac{v^2 d}{Rg} = \\frac{30^2 \\times 1.5}{900 \\times 10} = \\frac{900 \\times 1.5}{9000} = 0.15\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car travels along a banked circular track at a speed $v$ that is strictly greater than the ideal design speed $v_0 = \\sqrt{Rg\\tan\\theta}$. The direction of the frictional force exerted by the road on the tyres is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Radially outwards" },
+        { "key": "B", "text": "Downwards along the inclined surface of the road" },
+        { "key": "C", "text": "Upwards along the inclined surface of the road" },
+        { "key": "D", "text": "Purely vertically downwards" }
+      ],
+      "correct": "B",
+      "solution": "When $v > v_0$, the component of normal force $N\\sin\\theta$ alone cannot supply sufficient centripetal force. The vehicle tends to drift outwards and upwards, so static friction acts downwards along the inclined surface to assist centripetal acceleration.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A circular turn of radius $R = 50\\text{ m}$ is banked at $\\theta = 30^\\circ$. A car of mass $m = 1000\\text{ kg}$ is driven around the curve at the optimum speed ($g = 10\\text{ m/s}^2$). The magnitude of the normal force exerted on the car is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10000\\text{ N}$" },
+        { "key": "B", "text": "$11547\\text{ N}$" },
+        { "key": "C", "text": "$8660\\text{ N}$" },
+        { "key": "D", "text": "$5000\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "$$N = \\frac{mg}{\\cos 30^\\circ} = \\frac{1000 \\times 10}{\\sqrt{3}/2} = \\frac{20000}{\\sqrt{3}} \\approx 11547\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A race car travels at $v = 50\\text{ m/s}$ along a circular banked track of radius $R = 250\\text{ m}$. If the banking angle is $\\theta = 45^\\circ$, the frictional force on the car of mass $m = 1200\\text{ kg}$ is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$6000\\text{ N}$ down the incline" },
+        { "key": "C", "text": "$6000\\text{ N}$ up the incline" },
+        { "key": "D", "text": "$12000\\text{ N}$ along the track" }
+      ],
+      "correct": "A",
+      "solution": "Design speed for this banking: $v_0 = \\sqrt{Rg\\tan 45^\\circ} = \\sqrt{250 \\times 10 \\times 1} = 50\\text{ m/s}$. Since the car is travelling at exactly the design speed, no lateral slipping tendency exists, so the frictional force is zero.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A vehicle negotiates a banked curve of radius $R$ at speed $v < \\sqrt{Rg\\tan\\theta}$ with $\\mu_s > \\tan\\theta$. The magnitude of the static friction force developed is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg(\\sin\\theta - \\mu_s\\cos\\theta)$" },
+        { "key": "B", "text": "$m\\left(g\\sin\\theta - \\dfrac{v^2}{R}\\cos\\theta\\right)$" },
+        { "key": "C", "text": "$m\\left(\\dfrac{v^2}{R}\\cos\\theta - g\\sin\\theta\\right)$" },
+        { "key": "D", "text": "$\\mu_s mg\\cos\\theta$" }
+      ],
+      "correct": "B",
+      "solution": "For $v < v_0$, the car tends to slide down. Balancing forces along the incline: $mg\\sin\\theta - f = m\\left(\\frac{v^2}{R}\\right)\\cos\\theta \\implies f = m\\left(g\\sin\\theta - \\frac{v^2}{R}\\cos\\theta\\right)$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A road has a width $w = 10\\text{ m}$ and a curve of radius $R = 50\\text{ m}$. It is designed for safe travel at $v = 10\\text{ m/s}$ without friction. The height by which the outer edge of the road must be raised is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.96\\text{ m}$" },
+        { "key": "B", "text": "$2.00\\text{ m}$" },
+        { "key": "C", "text": "$1.00\\text{ m}$" },
+        { "key": "D", "text": "$0.50\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\tan\\theta = \\frac{v^2}{Rg} = \\frac{100}{500} = 0.2$.<br>2. $\\sin\\theta = \\frac{0.2}{\\sqrt{1 + 0.2^2}} = \\frac{0.2}{\\sqrt{1.04}} \\approx 0.1961$.<br>3. Height $h = w\\sin\\theta = 10 \\times 0.1961 \\approx 1.96\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "For an unbanked flat road of radius $R$ ($\\mu_s = 0.6$), the maximum safe speed is $v_1$. For a banked road of the same radius ($\\theta = 37^\\circ, \\mu_s = 0.6$), the maximum safe speed is $v_2$. The ratio $v_2 / v_1$ is ($\\sin 37^\\circ = 0.6, \\cos 37^\\circ = 0.8$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0$" },
+        { "key": "B", "text": "$1.5$" },
+        { "key": "C", "text": "$2.25$" },
+        { "key": "D", "text": "$1.25$" }
+      ],
+      "correct": "A",
+      "solution": "1. $v_1 = \\sqrt{\\mu_s Rg} = \\sqrt{0.6 Rg}$.<br>2. $\\tan 37^\\circ = 0.75 \\implies v_2 = \\sqrt{Rg\\left[\\frac{0.75 + 0.6}{1 - 0.75(0.6)}\\right]} = \\sqrt{Rg\\left[\\frac{1.35}{0.55}\\right]} = \\sqrt{2.4545 Rg}$.<br>3. Ratio: $\\frac{v_2}{v_1} = \\sqrt{\\frac{2.4545}{0.6}} = \\sqrt{4.09} \\approx 2.0$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bicyclist goes around a banked curve of radius $R = 20\\text{ m}$ at speed $v = 10\\text{ m/s}$. The road is banked at $\\theta = 15^\\circ$. To avoid side-thrust without friction, the angle $\\alpha$ the cycle frame makes with the normal to the road surface is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$15^\\circ$" },
+        { "key": "B", "text": "$30^\\circ$" },
+        { "key": "C", "text": "$11.5^\\circ$" },
+        { "key": "D", "text": "$0^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "Total angle required from vertical: $\\tan\\theta_{\\text{total}} = \\frac{v^2}{Rg} = \\frac{100}{200} = 0.5 \\implies \\theta_{\\text{total}} = 26.5^\\circ$.<br>Lean angle relative to the road normal: $\\alpha = 26.5^\\circ - 15^\\circ = 11.5^\\circ$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A curve of radius $R = 100\\text{ m}$ is banked at angle $\\theta = 30^\\circ$. If the coefficient of static friction is $\\mu_s = \\frac{1}{\\sqrt{3}}$, the minimum speed $v_{\\text{min}}$ to prevent the car from sliding down the incline is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ m/s}$" },
+        { "key": "B", "text": "$10.0\\text{ m/s}$" },
+        { "key": "C", "text": "$17.32\\text{ m/s}$" },
+        { "key": "D", "text": "$24.0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Because $\\mu_s = \\tan 30^\\circ$, we have $\\mu_s = \\tan\\theta$. The numerator $(\\tan\\theta - \\mu_s) = 0$, so $v_{\\text{min}} = 0\\text{ m/s}$. The vehicle will not slide down even if completely stopped.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "When a heavy truck and a lightweight sports car round the same smooth banked circular curve of radius $R$ and angle $\theta$ at the ideal design speed $v_0$:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The truck requires a higher speed because of its larger mass" },
+        { "key": "B", "text": "Both vehicles negotiate the curve safely at the exact same speed $v_0 = \\sqrt{Rg\\tan\\theta}$" },
+        { "key": "C", "text": "The sports car requires a lower angle of banking" },
+        { "key": "D", "text": "The truck experiences lower normal force" }
+      ],
+      "correct": "B",
+      "solution": "The ideal design speed $v_0 = \\sqrt{Rg\\tan\\theta}$ is completely independent of the mass of the vehicle.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A pendulum is suspended inside a car moving at ideal speed $v_0 = \\sqrt{Rg\\tan\\theta}$ on a frictionless banked curve of inclination $\theta$. The angle made by the pendulum string with the normal to the banked road is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\theta$" },
+        { "key": "B", "text": "$2\\theta$" },
+        { "key": "C", "text": "$0^\\circ$ (perpendicular to road surface)" },
+        { "key": "D", "text": "$90^\\circ - \\theta$" }
+      ],
+      "correct": "C",
+      "solution": "The effective gravity vector $\\vec{g}_{\\text{eff}} = \\vec{g} - \\vec{a}_c$ points at an angle $\\tan\\theta = a_c/g$ to the vertical, which is perpendicular to the banked road slope. Thus the pendulum string aligns along the normal ($0^\\circ$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A car travels on a banked circular road of radius $R = 125\\text{ m}$ and banking angle $\theta = 37^\\circ$. If $\\mu_s = 0.25$, the ratio of the maximum safe speed to the minimum safe speed $(v_{\\text{max}} / v_{\\text{min}})$ is ($\\tan 37^\\circ = 0.75$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{16}{7}} \\approx 1.51$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{8}{3}} \\approx 1.63$" },
+        { "key": "C", "text": "$2.0$" },
+        { "key": "D", "text": "$\\sqrt{3} \\approx 1.73$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{v_{\\text{max}}}{v_{\\text{min}}} = \\sqrt{\\frac{\\tan 37^\\circ + \\mu_s}{\\tan 37^\\circ - \\mu_s} \\cdot \\frac{1 + \\mu_s\\tan 37^\\circ}{1 - \\mu_s\\tan 37^\\circ}} = \\sqrt{\\frac{0.75 + 0.25}{0.75 - 0.25} \\cdot \\frac{1 + 0.25(0.75)}{1 - 0.25(0.75)}} = \\sqrt{2 \\times \\frac{1.1875}{0.8125}} \\approx 1.71 \\approx \\sqrt{\\frac{8}{3}}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An aircraft is making a horizontal turn of radius $R = 2500\\text{ m}$ at a constant speed of $v = 900\\text{ km/h}$. The correct angle of banking $\\theta$ of its wings to avoid lateral slipping is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}(1.5)$" },
+        { "key": "B", "text": "$\\tan^{-1}(2.5)$" },
+        { "key": "C", "text": "$\\tan^{-1}(0.4)$" },
+        { "key": "D", "text": "$\\tan^{-1}(1.0) = 45^\\circ$" }
+      ],
+      "correct": "B",
+      "solution": "Speed in SI units: $v = 900 \\times \\frac{5}{18} = 250\\text{ m/s}$.<br>$$\\tan\\theta = \\frac{v^2}{Rg} = \\frac{250^2}{2500 \\times 10} = \\frac{62500}{25000} = 2.5 \\implies \\theta = \\tan^{-1}(2.5)$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

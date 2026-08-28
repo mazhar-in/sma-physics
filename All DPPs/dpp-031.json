@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-031",
+    "title": "Motion on Inclined Plane with Friction: Dynamics, Variable Friction & Wedge Systems",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Motion on Inclined Plane with Friction JEE Main Physics DPP-031 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering uphill/downhill kinematics, variable friction coefficients, minimum horizontal holding forces, accelerating wedge frames, connected blocks on slopes, and work-energy on rough inclines.",
+    "keywords": "JEE Main Physics, Inclined Plane Friction DPP, Motion on Rough Slope, Ascent Descent Incline, Variable Friction on Slope, Accelerating Wedge, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/motion-on-inclined-plane-with-friction",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Kinematic & Energy Dynamics on Rough Inclined Planes",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Downward Motion: When released on an incline with $\\theta > \\tan^{-1}\\mu_k$, downhill acceleration is $a_{\\text{down}} = g(\\sin\\theta - \\mu_k\\cos\\theta)$. 2. Upward Motion: When projected uphill, gravity and friction act in the same direction downhill, producing deceleration $a_{\\text{up}} = g(\\sin\\theta + \\mu_k\\cos\\theta)$. 3. Minimum External Forces: To push a body up a rough incline with a horizontal force $F$, the threshold is $F_{\\text{up}} = mg\\left[\\frac{\\sin\\theta + \\mu_s\\cos\\theta}{\\cos\\theta - \\mu_s\\sin\\theta}\\right] = mg\\tan(\\theta + \\lambda)$, while to prevent it from sliding down, $F_{\\text{hold}} = mg\\left[\\frac{\\sin\\theta - \\mu_s\\cos\\theta}{\\cos\\theta + \\mu_s\\sin\\theta}\\right] = mg\\tan(\\theta - \\lambda)$. 4. Work Done by Friction: On any straight inclined plane of horizontal span $b$, the total work done by kinetic friction is independent of inclination angle and equals $W_f = -\\mu_k mg b$.",
+    "keyFormula": "$$a_{\\text{down}} = g(\\sin\\theta - \\mu_k\\cos\\theta), \\quad a_{\\text{up}} = g(\\sin\\theta + \\mu_k\\cos\\theta), \\quad W_f = -\\mu_k mg b, \\quad F_{\\text{horizontal}} = mg\\tan(\\theta \\pm \\lambda)$$",
+    "examTrap": "When two connected blocks slide down an incline, tension in the connecting string is non-zero ONLY if the upper block has a higher coefficient of friction than the lower block ($\\mu_{\\text{upper}} > \\mu_{\\text{lower}}$). If $\\mu_{\\text{upper}} < \\mu_{\\text{lower}}$, the upper block accelerates faster, causing the string to go slack ($T = 0$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m = 4\\text{ kg}$ is released from rest from the top of an inclined plane of length $L = 10\\text{ m}$ and inclination $\theta = 37^\\circ$. If the coefficient of kinetic friction is $\\mu_k = 0.25$, the speed of the block upon reaching the bottom is ($\\sin 37^\\circ = 0.6, \\cos 37^\\circ = 0.8, g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8.94\\text{ m/s}$" },
+        { "key": "B", "text": "$10.0\\text{ m/s}$" },
+        { "key": "C", "text": "$6.32\\text{ m/s}$" },
+        { "key": "D", "text": "$12.0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Downhill acceleration: $a = g(\\sin 37^\\circ - \\mu_k\\cos 37^\\circ) = 10(0.6 - 0.25 \\times 0.8) = 10(0.4) = 4.0\\text{ m/s}^2$.<br>2. Velocity at bottom: $v = \\sqrt{2aL} = \\sqrt{2 \\times 4.0 \\times 10} = \\sqrt{80} \\approx 8.94\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An inclined plane of inclination $\\theta$ has its upper half completely smooth and lower half rough with coefficient of kinetic friction $\\mu$. A body released from rest at the top just comes to rest at the bottom of the plane. The value of $\\mu$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\theta$" },
+        { "key": "B", "text": "$2\\tan\\theta$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\tan\\theta$" },
+        { "key": "D", "text": "$4\\tan\\theta$" }
+      ],
+      "correct": "B",
+      "solution": "Let the total length of the incline be $2s$.<br>By the Work-Energy Theorem (initial and final kinetic energy are both zero):<br>$$W_{\\text{gravity}} + W_{\\text{friction}} = 0 \\implies mg(2s)\\sin\\theta - (\\mu mg\\cos\\theta)s = 0$$<br>$$2mg s\\sin\\theta = \\mu mg s\\cos\\theta \\implies \\mu = 2\\tan\\theta$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m$ is projected up a rough inclined plane of angle $\\theta = 30^\\circ$ with initial velocity $u$. It comes to rest after travelling a distance $s$ up the incline. If $\\mu_k = \\frac{1}{2\\sqrt{3}}$, the distance $s$ travelled along the plane is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{15}$" },
+        { "key": "B", "text": "$\\dfrac{u^2}{10}$" },
+        { "key": "C", "text": "$\\dfrac{u^2}{20}$" },
+        { "key": "D", "text": "$\\dfrac{2u^2}{15}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Deceleration during ascent: $a_{\\text{up}} = g(\\sin 30^\\circ + \\mu_k\\cos 30^\\circ) = 10\\left(\\frac{1}{2} + \\frac{1}{2\\sqrt{3}}\\cdot\\frac{\\sqrt{3}}{2}\\right) = 10\\left(\\frac{3}{4}\\right) = 7.5\\text{ m/s}^2$.<br>2. Stopping distance: $s = \\frac{u^2}{2a_{\\text{up}}} = \\frac{u^2}{2(7.5)} = \\frac{u^2}{15}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 2\\text{ kg}$ is projected up a rough inclined plane of inclination $\\theta = 37^\\circ$ with speed $v_0 = 10\\text{ m/s}$. If $\\mu_k = 0.5$, the speed with which the block returns back to the point of projection is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4.47\\text{ m/s}$" },
+        { "key": "B", "text": "$5.0\\text{ m/s}$" },
+        { "key": "C", "text": "$7.07\\text{ m/s}$" },
+        { "key": "D", "text": "$2.24\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Ascent deceleration: $a_{\\text{up}} = 10(0.6 + 0.5 \\times 0.8) = 10\\text{ m/s}^2$. Distance: $s = \\frac{10^2}{2(10)} = 5\\text{ m}$.<br>2. Descent acceleration: $a_{\\text{down}} = 10(0.6 - 0.5 \\times 0.8) = 2.0\\text{ m/s}^2$.<br>3. Return velocity: $v = \\sqrt{2 a_{\\text{down}} s} = \\sqrt{2 \\times 2.0 \\times 5} = \\sqrt{20} \\approx 4.47\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The minimum force $F$ applied parallel to a rough inclined plane of angle $\\theta$ required to just pull a block of mass $m$ up the plane is $F_1$, and the minimum force required to prevent it from sliding down is $F_2$. If $\\theta > \\tan^{-1}\\mu_s$, then $(F_1 - F_2)$ is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\mu_s mg\\cos\\theta$" },
+        { "key": "B", "text": "$2mg\\sin\\theta$" },
+        { "key": "C", "text": "$\\mu_s mg\\cos\\theta$" },
+        { "key": "D", "text": "$mg(\\sin\\theta + \\mu_s\\cos\\theta)$" }
+      ],
+      "correct": "A",
+      "solution": "1. Force to pull up: $F_1 = mg\\sin\\theta + \\mu_s mg\\cos\\theta$.<br>2. Force to prevent slipping down: $F_2 = mg\\sin\\theta - \\mu_s mg\\cos\\theta$.<br>3. Difference: $F_1 - F_2 = 2\\mu_s mg\\cos\\theta$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A block of mass $m$ slides down an inclined plane of inclination $\\theta$ with variable friction coefficient given by $\\mu(x) = kx$, where $x$ is the distance travelled from the top rest position. The maximum distance $x_{\\text{max}}$ travelled by the block before it stops is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2\\tan\\theta}{k}$" },
+        { "key": "B", "text": "$\\dfrac{\\tan\\theta}{k}$" },
+        { "key": "C", "text": "$\\dfrac{\\tan\\theta}{2k}$" },
+        { "key": "D", "text": "$\\dfrac{4\\tan\\theta}{k}$" }
+      ],
+      "correct": "A",
+      "solution": "Integrating work done from $x = 0$ to $x = x_{\\text{max}}$:<br>$$\\int_0^{x_{\\text{max}}} (mg\\sin\\theta - kx mg\\cos\\theta)\\,dx = 0 \\implies x_{\\text{max}}\\sin\\theta - \\frac{1}{2}k x_{\\text{max}}^2\\cos\\theta = 0 \\implies x_{\\text{max}} = \\frac{2\\tan\\theta}{k}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 6, the position $x$ where the block achieves its maximum velocity is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\tan\\theta}{k}$" },
+        { "key": "B", "text": "$\\dfrac{2\\tan\\theta}{k}$" },
+        { "key": "C", "text": "$\\dfrac{\\tan\\theta}{2k}$" },
+        { "key": "D", "text": "$\\dfrac{\\tan\\theta}{\\sqrt{k}}$" }
+      ],
+      "correct": "A",
+      "solution": "Velocity is maximum when acceleration is zero: $mg\\sin\\theta - \\mu(x)mg\\cos\\theta = 0 \\implies kx\\cos\\theta = \\sin\\theta \\implies x = \\frac{\\tan\\theta}{k}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m = 5\\text{ kg}$ rests on a rough inclined plane of inclination $\\theta = 30^\\circ$ ($\\mu_s = 0.7$). The magnitude of the frictional force acting on the block is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$25.0\\text{ N}$" },
+        { "key": "B", "text": "$30.3\\text{ N}$" },
+        { "key": "C", "text": "$35.0\\text{ N}$" },
+        { "key": "D", "text": "$50.0\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "Angle of repose is $\\phi = \\tan^{-1}(0.7) \\approx 35^\\circ$. Since $\\theta = 30^\\circ < \\phi$, the block does not slide.<br>Self-adjusting static friction balances the downhill component of gravity: $f_s = mg\\sin 30^\\circ = 5 \\times 10 \\times 0.5 = 25.0\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is pushed up a rough inclined plane of inclination $\\theta$ by a horizontal force $F$. The normal reaction $N$ exerted by the incline on the block is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg\\cos\\theta + F\\sin\\theta$" },
+        { "key": "B", "text": "$mg\\cos\\theta - F\\sin\\theta$" },
+        { "key": "C", "text": "$mg\\cos\\theta$" },
+        { "key": "D", "text": "$(mg + F)\\cos\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "Resolving forces perpendicular to the incline: $N = mg\\cos\\theta + F\\sin\\theta$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 9, the minimum horizontal force $F$ required to just move the block of mass $m$ up the rough inclined plane ($\\mu_s$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg\\left[\\dfrac{\\sin\\theta + \\mu_s\\cos\\theta}{\\cos\\theta - \\mu_s\\sin\\theta}\\right]$" },
+        { "key": "B", "text": "$mg\\left[\\dfrac{\\sin\\theta - \\mu_s\\cos\\theta}{\\cos\\theta + \\mu_s\\sin\\theta}\\right]$" },
+        { "key": "C", "text": "$mg(\\tan\\theta + \\mu_s)$" },
+        { "key": "D", "text": "$\\dfrac{\\mu_s mg}{\\cos\\theta - \\mu_s\\sin\\theta}$" }
+      ],
+      "correct": "A",
+      "solution": "Balancing forces along the plane at impending upward motion:<br>$$F\\cos\\theta = mg\\sin\\theta + \\mu_s(mg\\cos\\theta + F\\sin\\theta)$$<br>$$F(\\cos\\theta - \\mu_s\\sin\\theta) = mg(\\sin\\theta + \\mu_s\\cos\\theta) \\implies F = mg\\left[\\frac{\\sin\\theta + \\mu_s\\cos\\theta}{\\cos\\theta - \\mu_s\\sin\\theta}\\right]$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A block is placed on a rough inclined plane whose inclination $\\theta$ can be varied. The time taken by the block to slide down a fixed length $L$ of the plane is minimum when the angle of inclination $\theta$ satisfies:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan 2\\theta = -\\dfrac{1}{\\mu_k}$" },
+        { "key": "B", "text": "$\\tan\\theta = \\mu_k$" },
+        { "key": "C", "text": "$\\tan 2\\theta = \\mu_k$" },
+        { "key": "D", "text": "$\\theta = 45^\\circ + \\dfrac{1}{2}\\tan^{-1}\\mu_k$" }
+      ],
+      "correct": "D",
+      "solution": "For a fixed vertical height $h$ ($L = h/\\sin\\theta$), time $t = \\sqrt{\\frac{2h}{g\\sin\\theta(\\sin\\theta - \\mu_k\\cos\\theta)}}$. Minimizing $t$ yields the optimal angle $\\theta = 45^\\circ + \\frac{1}{2}\\tan^{-1}\\mu_k$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m$ is released from height $h$ from rest on a rough inclined plane of angle $\theta$ and base length $b$. The work done by friction as the body reaches the bottom of the incline is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\mu_k mg b$" },
+        { "key": "B", "text": "$-\\mu_k mg h$" },
+        { "key": "C", "text": "$-\\mu_k mg \\sqrt{h^2 + b^2}$" },
+        { "key": "D", "text": "$-\\mu_k mg \\left(\\dfrac{h}{\\sin\\theta}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "$$W_f = -f_k \\cdot L = -(\\mu_k mg\\cos\\theta)\\left(\\frac{b}{\\cos\\theta}\\right) = -\\mu_k mg b$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "Two blocks of masses $m_1 = 2\\text{ kg}$ and $m_2 = 4\\text{ kg}$ connected by an inextensible light string slide down an inclined plane of angle $\\theta = 37^\\circ$. If the coefficient of friction for $m_1$ (upper block) is $\\mu_1 = 0.4$ and for $m_2$ (lower block) is $\\mu_2 = 0.2$, the tension in the string during downward motion is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.13\\text{ N}$" },
+        { "key": "B", "text": "$0\\text{ N}$" },
+        { "key": "C", "text": "$4.27\\text{ N}$" },
+        { "key": "D", "text": "$1.07\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Common acceleration: $a = \\frac{(m_1 + m_2)g\\sin 37^\\circ - (\\mu_1 m_1 + \\mu_2 m_2)g\\cos 37^\\circ}{m_1 + m_2} = \\frac{36 - 12.8}{6} = 3.867\\text{ m/s}^2$.<br>2. For $m_1$: $m_1 g\\sin 37^\\circ - \\mu_1 m_1 g\\cos 37^\\circ + T = m_1 a \\implies 12 - 6.4 + T = 2(3.867) \\implies T = 2.13\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 13, if the positions of the two blocks are reversed so that $m_2$ ($\\mu_2 = 0.2$) is above $m_1$ ($\\mu_1 = 0.4$), the tension in the connecting string becomes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0\\text{ N}$" },
+        { "key": "B", "text": "$2.13\\text{ N}$" },
+        { "key": "C", "text": "$4.27\\text{ N}$" },
+        { "key": "D", "text": "$6.40\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "When the upper block has lower friction than the lower block, it accelerates faster down the slope than the lower block, causing the string to become slack ($T = 0\\text{ N}$).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block is released from rest at the top of a rough incline ($\\mu_k = 0.25, \\theta = 45^\\circ$). If the length of the incline is $16\\text{ m}$, the time taken by the block to slide down is ($g = 9.8\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.48\\text{ s}$" },
+        { "key": "B", "text": "$3.50\\text{ s}$" },
+        { "key": "C", "text": "$1.80\\text{ s}$" },
+        { "key": "D", "text": "$4.00\\text{ s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Acceleration: $a = 9.8\\left(\\frac{1}{\\sqrt{2}} - \\frac{0.25}{\\sqrt{2}}\\right) = 5.197\\text{ m/s}^2$.<br>2. Time taken: $t = \\sqrt{\\frac{2L}{a}} = \\sqrt{\\frac{32}{5.197}} \\approx 2.48\\text{ s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ slides down a rough curved ramp of height $h$ and arrives at the bottom with speed $v = \\sqrt{gh}$. The work done by friction along the curve is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\dfrac{1}{2}mgh$" },
+        { "key": "B", "text": "$-mgh$" },
+        { "key": "C", "text": "$-\\dfrac{3}{2}mgh$" },
+        { "key": "D", "text": "$-\\dfrac{1}{4}mgh$" }
+      ],
+      "correct": "A",
+      "solution": "By Work-Energy Theorem: $W_g + W_f = \\Delta K \\implies mgh + W_f = \\frac{1}{2}m(gh) \\implies W_f = -\\frac{1}{2}mgh$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A triangular wedge of mass $M$ and inclination $\theta$ rests on a smooth horizontal floor. A block of mass $m$ is placed on its rough face ($\\mu$). The maximum horizontal acceleration $a$ of the wedge to the right so that the block does not slide up the incline is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$g\\left[\\dfrac{\\sin\\theta + \\mu\\cos\\theta}{\\cos\\theta - \\mu\\sin\\theta}\\right]$" },
+        { "key": "B", "text": "$g\\left[\\dfrac{\\sin\\theta - \\mu\\cos\\theta}{\\cos\\theta + \\mu\\sin\\theta}\\right]$" },
+        { "key": "C", "text": "$g\\tan(\\theta + \\lambda)$" },
+        { "key": "D", "text": "Both (A) and (C)" }
+      ],
+      "correct": "D",
+      "solution": "In wedge frame: $N = mg\\cos\\theta + ma\\sin\\theta$. Impending upward slide: $ma\\cos\\theta = mg\\sin\\theta + \\mu N \\implies a = g\\left[\\frac{\\sin\\theta + \\mu\\cos\\theta}{\\cos\\theta - \\mu\\sin\\theta}\\right] = g\\tan(\\theta + \\lambda)$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block is projected up an incline with speed $u$. After reaching the highest point, it slides down. If the ratio of kinetic energy at return to initial kinetic energy is $\\eta$ ($\\eta < 1$), the coefficient of kinetic friction $\\mu_k$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\theta\\left(\\dfrac{1 - \\eta}{1 + \\eta}\\right)$" },
+        { "key": "B", "text": "$\\tan\\theta\\left(\\dfrac{1 - \\sqrt{\\eta}}{1 + \\sqrt{\\eta}}\\right)$" },
+        { "key": "C", "text": "$\\tan\\theta\\left(\\dfrac{1 + \\eta}{1 - \\eta}\\right)$" },
+        { "key": "D", "text": "$\\tan\\theta(1 - \\eta)$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\eta = \\frac{K_f}{K_i} = \\frac{\\sin\\theta - \\mu_k\\cos\\theta}{\\sin\\theta + \\mu_k\\cos\\theta} = \\frac{\\tan\\theta - \\mu_k}{\\tan\\theta + \\mu_k} \\implies \\mu_k = \\tan\\theta\\left(\\frac{1 - \\eta}{1 + \\eta}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 1\\text{ kg}$ is kept on an inclined plane of inclination $\\theta = 45^\\circ$ ($\\mu_s = 0.8$). A force $F$ is applied horizontally to keep the block in equilibrium. The range of $F$ for static equilibrium is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{10}{9}\\text{ N} \\le F \\le 90\\text{ N}$" },
+        { "key": "B", "text": "$1.11\\text{ N} \\le F \\le 90\\text{ N}$" },
+        { "key": "C", "text": "$2.0\\text{ N} \\le F \\le 80\\text{ N}$" },
+        { "key": "D", "text": "Both (A) and (B) are equivalent" }
+      ],
+      "correct": "D",
+      "solution": "1. $F_{\\text{min}} = mg\\left[\\frac{\\sin 45^\\circ - 0.8\\cos 45^\\circ}{\\cos 45^\\circ + 0.8\\sin 45^\\circ}\\right] = 10\\left(\\frac{0.2}{1.8}\\right) = \\frac{10}{9} \\approx 1.11\\text{ N}$.<br>2. $F_{\\text{max}} = mg\\left[\\frac{\\sin 45^\\circ + 0.8\\cos 45^\\circ}{\\cos 45^\\circ - 0.8\\sin 45^\\circ}\\right] = 10\\left(\\frac{1.8}{0.2}\\right) = 90\\text{ N}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A wooden block of mass $m$ resting on an incline $\theta$ is connected to a hanging mass $M$ via a light string passing over a frictionless pulley at the top. The minimum mass $M$ required to just prevent the block $m$ from sliding down the incline ($\\mu_s < \\tan\\theta$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m(\\sin\\theta - \\mu_s\\cos\\theta)$" },
+        { "key": "B", "text": "$m(\\sin\\theta + \\mu_s\\cos\\theta)$" },
+        { "key": "C", "text": "$\\mu_s m\\cos\\theta$" },
+        { "key": "D", "text": "$m\\sin\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "At impending downward motion, static friction acts uphill: $T + f_s^{\\text{max}} = mg\\sin\\theta \\implies Mg + \\mu_s mg\\cos\\theta = mg\\sin\\theta \\implies M_{\\text{min}} = m(\\sin\\theta - \\mu_s\\cos\\theta)$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-029",
+    "title": "Static Friction: Concept, Laws of Friction & Angle of Friction",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Static Friction Laws and Angle of Friction JEE Main Physics DPP-029 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering self-adjusting static friction, limiting friction, angle of friction, angle of repose, minimum pulling force, contact reactions, and ladder equilibrium.",
+    "keywords": "JEE Main Physics, Static Friction DPP, Laws of Friction, Limiting Friction, Angle of Friction, Angle of Repose, Minimum Force to Move Block, Ladder Friction, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/static-friction-laws-angle-of-friction",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Laws of Static Friction, Limiting Equilibrium & Contact Angles",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Nature of Static Friction: Static friction is a self-adjusting tangential contact force that opposes the tendency of relative motion between two dry surfaces in contact. Its magnitude varies as $0 \\le f_s \\le f_s^{\\text{max}} = \\mu_s N$. 2. Laws of Limiting Friction: Limiting frictional force is directly proportional to the normal reaction $N$, depends on the nature and roughness of contact surfaces, and is independent of the apparent macroscopic contact area. 3. Angle of Friction ($\\lambda$): The angle between the resultant contact force $\\vec{R} = \\vec{N} + \\vec{f}_s^{\\text{max}}$ and the normal reaction $\\vec{N}$, giving $\\tan\\lambda = \\mu_s$. 4. Minimum Pulling Force: The minimum force required to move a block on a horizontal plane is $F_{\\text{min}} = \\frac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}$, achieved when pulled at an angle $\\theta = \\lambda = \\tan^{-1}\\mu_s$ above the horizontal.",
+    "keyFormula": "$$f_s \\le \\mu_s N, \\quad \\tan\\lambda = \\mu_s, \\quad \\tan\\phi = \\mu_s \\; (\\text{Angle of Repose}), \\quad F_{\\text{min}} = \\frac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}, \\quad R = \\sqrt{N^2 + f_s^2}$$",
+    "examTrap": "Never substitute $f_s = \\mu_s N$ by default! Static friction only equals $\\mu_s N$ at the verge of slipping (limiting state). When the applied tangential force $F_{\\text{applied}} < \\mu_s N$, the static friction is strictly equal to $F_{\\text{applied}}$, not $\\mu_s N$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m = 5\\text{ kg}$ rests on a rough horizontal surface with coefficient of static friction $\\mu_s = 0.6$. A horizontal force of $F = 15\\text{ N}$ is applied to the block. The frictional force acting on the block is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30\\text{ N}$" },
+        { "key": "B", "text": "$15\\text{ N}$" },
+        { "key": "C", "text": "$0\\text{ N}$" },
+        { "key": "D", "text": "$50\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Normal reaction: $N = mg = 5 \\times 10 = 50\\text{ N}$.<br>2. Maximum limiting static friction: $f_s^{\\text{max}} = \\mu_s N = 0.6 \\times 50 = 30\\text{ N}$.<br>3. Since applied force $F = 15\\text{ N} < f_s^{\\text{max}}$, the block does not move.<br>4. Static friction self-adjusts to balance the applied force: $f_s = 15\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The angle of static friction $\\lambda$ between two surfaces in contact is defined as the angle made by the resultant contact force with the:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Direction of impending relative motion" },
+        { "key": "B", "text": "Normal reaction in the limiting friction state" },
+        { "key": "C", "text": "Horizontal surface" },
+        { "key": "D", "text": "Applied external pulling force" }
+      ],
+      "correct": "B",
+      "solution": "The angle of friction $\\lambda$ is the angle between the resultant contact force $\\vec{R} = \\vec{N} + \\vec{f}_s^{\\text{max}}$ and the normal reaction $\\vec{N}$ in the limiting equilibrium condition: $\\tan\\lambda = \\frac{f_s^{\\text{max}}}{N} = \\mu_s$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 2\\text{ kg}$ is pressed against a rough vertical wall by a horizontal force $F$. If the coefficient of static friction between the block and the wall is $\\mu_s = 0.4$, the minimum force $F$ required to prevent the block from slipping downward is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ N}$" },
+        { "key": "B", "text": "$40\\text{ N}$" },
+        { "key": "C", "text": "$50\\text{ N}$" },
+        { "key": "D", "text": "$8\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Horizontal normal force from wall: $N = F$.<br>2. For vertical equilibrium against gravity: $f_s = mg = 2 \\times 10 = 20\\text{ N}$.<br>3. Condition for no slipping: $f_s \\le \\mu_s N \\implies mg \\le \\mu_s F \\implies F \\ge \\frac{mg}{\\mu_s} = \\frac{20}{0.4} = 50\\text{ N}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The coefficient of static friction between a block and a horizontal floor is $\\mu_s$. The minimum magnitude of force $F$ applied at an angle $\\theta$ to the horizontal required to just start moving the block of mass $m$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}$" },
+        { "key": "B", "text": "$\\dfrac{\\mu_s mg}{\\sqrt{1 - \\mu_s^2}}$" },
+        { "key": "C", "text": "$\\mu_s mg$" },
+        { "key": "D", "text": "$\\dfrac{mg}{\\sqrt{1 + \\mu_s^2}}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Vertical equilibrium: $N = mg - F\\sin\\theta$.<br>2. Horizontal threshold: $F\\cos\\theta = \\mu_s(mg - F\\sin\\theta) \\implies F = \\frac{\\mu_s mg}{\\cos\\theta + \\mu_s\\sin\\theta}$.<br>3. Denominator is maximized at value $\\sqrt{1 + \\mu_s^2}$, yielding $F_{\\text{min}} = \\frac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 4, the optimal angle $\\theta$ with the horizontal at which the pulling force $F$ has its absolute minimum magnitude is equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}(\\mu_s)$ (Angle of friction)" },
+        { "key": "B", "text": "$\\sin^{-1}(\\mu_s)$" },
+        { "key": "C", "text": "$\\cos^{-1}(\\mu_s)$" },
+        { "key": "D", "text": "$45^\\circ$" }
+      ],
+      "correct": "A",
+      "solution": "Maximizing $D(\\theta) = \\cos\\theta + \\mu_s\\sin\\theta$ gives $\\frac{dD}{d\\theta} = -\\sin\\theta + \\mu_s\\cos\\theta = 0 \\implies \\tan\\theta = \\mu_s$.<br>Thus $\\theta = \\tan^{-1}\\mu_s = \\lambda$ (the angle of friction).<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $M$ rests on a rough horizontal plane. When a horizontal force $F$ is applied such that $F < f_s^{\\text{max}}$, the total contact force $R$ exerted by the surface on the block is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$Mg$" },
+        { "key": "B", "text": "$\\sqrt{(Mg)^2 + F^2}$" },
+        { "key": "C", "text": "$\\sqrt{(Mg)^2 + (\\mu_s Mg)^2}$" },
+        { "key": "D", "text": "$Mg + F$" }
+      ],
+      "correct": "B",
+      "solution": "The total contact force $\\vec{R}$ is the vector sum of vertical normal reaction $\\vec{N}$ ($N = Mg$) and horizontal static friction $\\vec{f}_s$ ($f_s = F$). Since $\\vec{N} \\perp \\vec{f}_s$: $$R = \\sqrt{N^2 + f_s^2} = \\sqrt{(Mg)^2 + F^2}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of weight $W = 60\\text{ N}$ is placed on a horizontal table ($\\mu_s = 0.5$). A horizontal force of $20\\text{ N}$ is applied to it. The magnitude of the resultant reaction force exerted by the table on the block is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60\\text{ N}$" },
+        { "key": "B", "text": "$20\\text{ N}$" },
+        { "key": "C", "text": "$20\\sqrt{10}\\text{ N}$" },
+        { "key": "D", "text": "$30\\sqrt{5}\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Limiting friction: $f_s^{\\text{max}} = \\mu_s W = 0.5 \\times 60 = 30\\text{ N}$.<br>2. Applied force $20\\text{ N} < 30\\text{ N} \\implies f_s = 20\\text{ N}$.<br>3. Total reaction: $R = \\sqrt{W^2 + f_s^2} = \\sqrt{60^2 + 20^2} = \\sqrt{4000} = 20\\sqrt{10}\\text{ N}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Which of the following statements regarding the laws of static friction is INCORRECT?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The limiting frictional force is directly proportional to the normal reaction" },
+        { "key": "B", "text": "The limiting static friction is independent of the apparent macroscopic area of contact" },
+        { "key": "C", "text": "Static friction is a self-adjusting force in both magnitude and direction" },
+        { "key": "D", "text": "The coefficient of static friction $\\mu_s$ depends directly on the surface area in contact" }
+      ],
+      "correct": "D",
+      "solution": "According to the empirical laws of dry friction (Amontons' Laws), limiting friction and $\\mu_s$ depend on material roughness and adhesion, but are completely independent of the macroscopic area of contact.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A heavy block of mass $10\\text{ kg}$ is resting on a rough horizontal floor with $\\mu_s = 0.5$ and $\\mu_k = 0.4$. A horizontal force of $F = 40\\text{ N}$ is applied. If the applied force is then increased to $60\\text{ N}$, the frictional force acting on the block in the two respective cases is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$40\\text{ N}$ and $40\\text{ N}$" },
+        { "key": "B", "text": "$40\\text{ N}$ and $60\\text{ N}$" },
+        { "key": "C", "text": "$50\\text{ N}$ and $40\\text{ N}$" },
+        { "key": "D", "text": "$50\\text{ N}$ and $50\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $f_s^{\\text{max}} = 0.5 \\times 100 = 50\\text{ N}$, $f_k = 0.4 \\times 100 = 40\\text{ N}$.<br>2. For $F = 40\\text{ N} < 50\\text{ N}$: block is at rest, $f = F = 40\\text{ N}$.<br>3. For $F = 60\\text{ N} > 50\\text{ N}$: block accelerates, dynamic friction operates: $f = f_k = 40\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A uniform ladder of mass $m$ rests against a smooth vertical wall with its foot on a rough horizontal floor ($\\mu_s$). The minimum angle $\\theta$ that the ladder can make with the floor without slipping is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan^{-1}\\left(\\dfrac{1}{2\\mu_s}\\right)$" },
+        { "key": "B", "text": "$\\tan^{-1}\\left(\\dfrac{1}{\\mu_s}\\right)$" },
+        { "key": "C", "text": "$\\tan^{-1}(2\\mu_s)$" },
+        { "key": "D", "text": "$\\tan^{-1}(\\mu_s)$" }
+      ],
+      "correct": "A",
+      "solution": "1. Floor normal reaction: $N_1 = mg$; wall normal reaction: $N_2 = f_s$.<br>2. Torque equilibrium about the base: $N_2(L\\sin\\theta) - mg\\left(\\frac{L}{2}\\cos\\theta\\right) = 0 \\implies N_2 = f_s = \\frac{mg}{2\\tan\\theta}$.<br>3. For no slipping: $f_s \\le \\mu_s N_1 \\implies \\frac{mg}{2\\tan\\theta} \\le \\mu_s mg \\implies \\tan\\theta \\ge \\frac{1}{2\\mu_s} \\implies \\theta_{\\text{min}} = \\tan^{-1}\\left(\\frac{1}{2\\mu_s}\\right)$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 4\\text{ kg}$ is kept on a rough horizontal plane ($\\mu_s = 0.75$). A force of $F = 20\\text{ N}$ acts downward at an angle of $37^\\circ$ to the horizontal pushing the block. The frictional force developed between the block and the floor is ($\\sin 37^\\circ = 0.6, \\cos 37^\\circ = 0.8, g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16\\text{ N}$" },
+        { "key": "B", "text": "$39\\text{ N}$" },
+        { "key": "C", "text": "$28\\text{ N}$" },
+        { "key": "D", "text": "$20\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Normal force: $N = mg + F\\sin 37^\\circ = 40 + 20(0.6) = 52\\text{ N}$.<br>2. Limiting friction: $f_s^{\\text{max}} = 0.75 \\times 52 = 39\\text{ N}$.<br>3. Applied horizontal component: $F_x = F\\cos 37^\\circ = 20(0.8) = 16\\text{ N}$.<br>4. Since $F_x < f_s^{\\text{max}}$, static friction is $f_s = 16\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the angle of friction between two dry surfaces is $\\lambda = 30^\\circ$, the maximum angle of an inclined plane made with the horizontal on which a body can rest without sliding down (angle of repose $\\phi$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60^\\circ$" },
+        { "key": "B", "text": "$30^\\circ$" },
+        { "key": "C", "text": "$45^\\circ$" },
+        { "key": "D", "text": "$15^\\circ$" }
+      ],
+      "correct": "B",
+      "solution": "The angle of repose $\\phi$ on an inclined plane satisfies $\\tan\\phi = \\mu_s$. Since the angle of friction also satisfies $\\tan\\lambda = \\mu_s$, we have $\\phi = \\lambda = 30^\\circ$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 1\\text{ kg}$ is placed against the front vertical wall of a cart. The coefficient of static friction between the block and the cart wall is $\\mu_s = 0.2$. The minimum horizontal acceleration $a$ of the cart required to prevent the block from falling is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\text{ m/s}^2$" },
+        { "key": "B", "text": "$20\\text{ m/s}^2$" },
+        { "key": "C", "text": "$50\\text{ m/s}^2$" },
+        { "key": "D", "text": "$5\\text{ m/s}^2$" }
+      ],
+      "correct": "C",
+      "solution": "1. Contact normal force from cart: $N = ma$.<br>2. Vertical balance: $f_s = mg \\le \\mu_s N = \\mu_s ma$.<br>3. Minimum acceleration: $a_{\\text{min}} = \\frac{g}{\\mu_s} = \\frac{10}{0.2} = 50\\text{ m/s}^2$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 3\\text{ kg}$ is held in equilibrium on a rough horizontal plane by two perpendicular horizontal forces $F_1 = 6\\text{ N}$ and $F_2 = 8\\text{ N}$. If $\\mu_s = 0.5$, the magnitude of the static friction force acting on the block is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$15\\text{ N}$" },
+        { "key": "B", "text": "$10\\text{ N}$" },
+        { "key": "C", "text": "$14\\text{ N}$" },
+        { "key": "D", "text": "$2\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Resultant applied force: $F_{\\text{res}} = \\sqrt{6^2 + 8^2} = 10\\text{ N}$.<br>2. Limiting friction: $f_s^{\\text{max}} = \\mu_s mg = 0.5 \\times 30 = 15\\text{ N}$.<br>3. Since $F_{\\text{res}} < f_s^{\\text{max}}$, static friction balances the net external force: $f_s = 10\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two blocks of masses $m_1 = 2\\text{ kg}$ and $m_2 = 4\\text{ kg}$ are connected by a light string on a rough horizontal table with $\\mu_s = 0.3$ for both blocks. A horizontal pulling force $F = 12\\text{ N}$ is applied to $m_2$. The tension in the connecting string is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ N}$" },
+        { "key": "B", "text": "$6\\text{ N}$" },
+        { "key": "C", "text": "$0\\text{ N}$" },
+        { "key": "D", "text": "$12\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Limiting friction on $m_2$: $f_{s2}^{\\text{max}} = \\mu_s m_2 g = 0.3 \\times 4 \\times 10 = 12\\text{ N}$.<br>2. Applied force $F = 12\\text{ N}$ is entirely balanced by the friction under $m_2$ alone ($f_{s2} = 12\\text{ N}$).<br>3. No pulling tendency is transmitted to the string: $T = 0\\text{ N}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A box of mass $M$ is resting on the flatbed of a truck. The coefficient of static friction between the box and the bed is $\\mu_s = 0.4$. The maximum acceleration of the truck so that the box does not slip backwards relative to the truck is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$2.5\\text{ m/s}^2$" },
+        { "key": "C", "text": "$10\\text{ m/s}^2$" },
+        { "key": "D", "text": "$0.4\\text{ m/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "Forward accelerating force is provided by static friction: $f_s = M a \\le \\mu_s M g \\implies a_{\\text{max}} = \\mu_s g = 0.4 \\times 10 = 4\\text{ m/s}^2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An insect crawls up the inside of a rough hemispherical bowl of radius $R$. If the coefficient of static friction between the insect and the bowl is $\\mu_s = 0.75$, the maximum height $h$ to which the insect can crawl above the lowest point without slipping is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.2 R$" },
+        { "key": "B", "text": "$0.4 R$" },
+        { "key": "C", "text": "$0.6 R$" },
+        { "key": "D", "text": "$0.8 R$" }
+      ],
+      "correct": "A",
+      "solution": "1. At angle $\\alpha$ with vertical: $\\tan\\alpha \\le \\mu_s = 0.75 = \\frac{3}{4} \\implies \\cos\\alpha = \\frac{4}{5} = 0.8$.<br>2. Maximum vertical rise: $h = R(1 - \\cos\\alpha) = R(1 - 0.8) = 0.2 R$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ is placed on a rough horizontal plane ($\\mu_s$). A pulling force $P$ making an angle $\theta$ above the horizontal acts on the body. If the body is just on the verge of sliding, the normal reaction from the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg - P\\sin\\theta$" },
+        { "key": "B", "text": "$mg + P\\sin\\theta$" },
+        { "key": "C", "text": "$mg\\cos\\theta$" },
+        { "key": "D", "text": "$\\dfrac{mg}{\\cos\\theta}$" }
+      ],
+      "correct": "A",
+      "solution": "Resolving along the vertical: $N + P\\sin\\theta = mg \\implies N = mg - P\\sin\\theta$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "When a person walks forward on a horizontal ground, the direction of the static frictional force exerted by the ground on the person's foot is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "In the backward direction" },
+        { "key": "B", "text": "In the forward direction" },
+        { "key": "C", "text": "Vertically upward" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "B",
+      "solution": "The foot pushes backwards against the ground. To oppose backward slipping, static friction from the ground acts in the forward direction on the foot.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m$ is placed on an inclined plane whose inclination $\theta$ is continuously increased from $0^\\circ$. The graph showing the variation of frictional force $f$ acting on the block with angle of inclination $\theta$ until and past the angle of repose $\\phi = \\tan^{-1}\\mu_s$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Increases as $mg\\sin\\theta$ for $\\theta \\le \\phi$, then suddenly drops to $\\mu_k mg\\cos\\theta$ and decreases" },
+        { "key": "B", "text": "Constant at $\\mu_s mg$ for all $\\theta \\le \\phi$" },
+        { "key": "C", "text": "Decreases as $mg\\cos\\theta$, then increases" },
+        { "key": "D", "text": "Linearly increases throughout with slope $\\mu_s$" }
+      ],
+      "correct": "A",
+      "solution": "1. For $\\theta \\le \\phi$: block is in static equilibrium, $f_s = mg\\sin\\theta$ (rises sinusoidally with $\\theta$).<br>2. For $\\theta > \\phi$: block slides, kinetic friction $f_k = \\mu_k mg\\cos\\theta$ operates (drops and monotonically decreases with $\\cos\\theta$).<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

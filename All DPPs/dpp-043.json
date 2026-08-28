@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-043",
+    "title": "Motion in a Vertical Circle: Critical Velocities, String Slacking & Loop Completion",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Motion in a Vertical Circle Condition for Completing the Loop JEE Main DPP-043 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering vertical circular motion, critical velocities at lowest/topmost points, string slacking vs oscillation regimes, light rigid rod loop conditions, looping the loop, and aircraft dive pull-outs.",
+    "keywords": "JEE Main Physics, Vertical Circular Motion DPP, Condition for Completing Loop, String Slacking Angle, Light Rod Vertical Circle, Loop the Loop Track, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/motion-in-vertical-circle-loop-completion",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Dynamics & Energy Conservation in Vertical Circular Motion",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Flexible String / Track Constraints: To complete a vertical circle of radius $L$, the string must remain taut at the apex ($T_{\\text{top}} \\ge 0$), requiring $v_{\\text{top}} \\ge \\sqrt{gL}$ and lowest speed $u \\ge \\sqrt{5gL}$. 2. Kinematic Regimes for a String-Bob System: (a) $0 < u \\le \\sqrt{2gL}$: Oscillates in the lower hemisphere without slacking (max angle $\\le 90^\\circ$). (b) $\\sqrt{2gL} < u < \\sqrt{5gL}$: String slacks ($T = 0$) at an angle $\\theta$ to the upward vertical (where $\\cos\\theta = \\frac{u^2 - 2gL}{3gL}$) and executes parabolic projectile motion. (c) $u \\ge \\sqrt{5gL}$: Completes full vertical circle. 3. Light Rigid Rod / Constrained Bead: Because a rigid rod or wire ring can support compressive forces ($T < 0$ or normal force inwards/outwards), the speed at the top only needs to satisfy $v_{\\text{top}} \\ge 0$, yielding a minimum bottom speed of $u_{\\text{min}} = \\sqrt{4gL} = 2\\sqrt{gL}$. 4. Tension Difference: For any complete vertical circle under gravity, the difference in string tension between the lowest and highest points is invariant: $T_{\\text{bottom}} - T_{\\text{top}} = 6mg$.",
+    "keyFormula": "$$u_{\\text{min, string}} = \\sqrt{5gL}, \\quad u_{\\text{min, rod}} = \\sqrt{4gL}, \\quad v_{\\text{top, min}} = \\sqrt{gL}, \\quad T_L - T_H = 6mg, \\quad \\cos\\theta_{\\text{slack}} = \\frac{u^2 - 2gL}{3gL}$$",
+    "examTrap": "Remember that a light string slacks when $T = 0$ while velocity is still non-zero ($v^2 = gL\\cos\\theta$), after which the bob becomes a free projectile. In contrast, when $u \\le \\sqrt{2gL}$, the velocity drops to zero while tension is non-zero ($T = mg\\cos\\theta$), causing simple oscillation!"
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small bob attached to a light inextensible string of length $L$ is whirled in a vertical circle. The minimum speed $u_{\\text{min}}$ that must be imparted to the bob at the lowest point to just complete the full vertical circle without the string slacking is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{4gL}$" },
+        { "key": "B", "text": "$\\sqrt{5gL}$" },
+        { "key": "C", "text": "$\\sqrt{6gL}$" },
+        { "key": "D", "text": "$\\sqrt{3gL}$" }
+      ],
+      "correct": "B",
+      "solution": "Condition to loop the circle: $T_{\\text{top}} \\ge 0 \\implies v_{\\text{top, min}} = \\sqrt{gL}$.<br>By conservation of mechanical energy: $\\frac{1}{2}m u^2 = \\frac{1}{2}m v_{\\text{top}}^2 + mg(2L) \\implies u^2 = gL + 4gL = 5gL \\implies u_{\\text{min}} = \\sqrt{5gL}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 1, when the bob is projected with the minimum velocity to complete the loop ($u = \\sqrt{5gL}$), the speed of the bob at the topmost point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{gL}$" },
+        { "key": "B", "text": "$\\sqrt{2gL}$" },
+        { "key": "C", "text": "$\\sqrt{3gL}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "A",
+      "solution": "$$v_{\\text{top}} = \\sqrt{u^2 - 4gL} = \\sqrt{5gL - 4gL} = \\sqrt{gL}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small sphere of mass $m$ tied to a string of length $L$ is projected with speed $u = \\sqrt{5gL}$ at the lowest point. The difference between the tension in the string at the lowest point ($T_L$) and at the highest point ($T_H$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3mg$" },
+        { "key": "B", "text": "$4mg$" },
+        { "key": "C", "text": "$6mg$" },
+        { "key": "D", "text": "$5mg$" }
+      ],
+      "correct": "C",
+      "solution": "At bottom: $T_L = \\frac{m(5gL)}{L} + mg = 6mg$.<br>At top: $T_H = \\frac{m(gL)}{L} - mg = 0$.<br>Difference: $T_L - T_H = 6mg - 0 = 6mg$. (In general, for any complete vertical circle, $T_L - T_H = 6mg$ always holds).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small ball of mass $m$ is attached to the end of a light rigid rod of length $L$ pivoted at the center. The minimum horizontal speed $u$ that must be imparted to the ball at the lowest point so that it completes a full vertical circle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{5gL}$" },
+        { "key": "B", "text": "$\\sqrt{4gL}$" },
+        { "key": "C", "text": "$\\sqrt{2gL}$" },
+        { "key": "D", "text": "$\\sqrt{3gL}$" }
+      ],
+      "correct": "B",
+      "solution": "A rigid rod can support compressive thrust, so speed at the top only needs to satisfy $v_{\\text{top}} \\ge 0$.<br>$$\\frac{1}{2}m u^2 = mg(2L) \\implies u_{\\text{min}} = \\sqrt{4gL} = 2\\sqrt{gL}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ tied to a string of length $L$ is projected at the lowest point with horizontal speed $u = \\sqrt{2gL}$. The motion of the body will be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Completing a full circle" },
+        { "key": "B", "text": "Simple oscillation in the lower half with maximum angular amplitude $90^\\circ$" },
+        { "key": "C", "text": "Leaving the circular path between $\\theta = 90^\\circ$ and $180^\\circ$ and following a parabolic trajectory" },
+        { "key": "D", "text": "Coming to rest permanently at the lowest point" }
+      ],
+      "correct": "B",
+      "solution": "When $u = \\sqrt{2gL}$, maximum height reached is $h = \\frac{u^2}{2g} = L$, which corresponds to the horizontal position ($\\theta = 90^\\circ$). Velocity vanishes before tension can drop to zero, so the bob undergoes simple oscillation in the lower hemisphere.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A stone of mass $m$ is tied to a string of length $L$ and projected horizontally at the lowest point with speed $u = \\sqrt{4gL}$. The height $h$ above the lowest point at which the string becomes slack is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{4}{3}L$" },
+        { "key": "B", "text": "$\\dfrac{5}{3}L$" },
+        { "key": "C", "text": "$\\dfrac{3}{2}L$" },
+        { "key": "D", "text": "$\\dfrac{5}{4}L$" }
+      ],
+      "correct": "B",
+      "solution": "Let string slack at angle $\\alpha$ with upward vertical: $T = 0 \\implies v^2 = gL\\cos\\alpha$.<br>By energy conservation: $4gL = gL\\cos\\alpha + 2gL(1 + \\cos\\alpha) \\implies 3\\cos\\alpha = 2 \\implies \\cos\\alpha = \\frac{2}{3}$.<br>Height above bottom: $h = L(1 + \\cos\\alpha) = L\\left(1 + \\frac{2}{3}\\right) = \\frac{5}{3}L$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 6, after the string becomes slack, the subsequent motion of the stone until the string tightens again is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Free vertical fall" },
+        { "key": "B", "text": "Parabolic projectile motion under gravity" },
+        { "key": "C", "text": "Uniform circular motion of smaller radius" },
+        { "key": "D", "text": "Straight line horizontal motion" }
+      ],
+      "correct": "B",
+      "solution": "Once the string slacks ($T = 0$), the stone moves freely under gravity with an initial velocity directed obliquely upward, tracing a parabolic projectile trajectory.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is released from rest at height $h$ on a smooth track that leads into a vertical circular loop of radius $R$. If the block is to maintain continuous contact with the track throughout the loop, the minimum height $h$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2R$" },
+        { "key": "B", "text": "$3R$" },
+        { "key": "C", "text": "$2.5R$" },
+        { "key": "D", "text": "$1.5R$" }
+      ],
+      "correct": "C",
+      "solution": "$$mgh = \\frac{1}{2}m v_{\\text{bottom}}^2 = \\frac{1}{2}m(5gR) \\implies h = 2.5 R$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A motorcyclist loops the loop inside a spherical cage of radius $R = 10\\text{ m}$. The minimum speed required at the top of the loop so that the tyres remain in contact with the cage is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10.0\\text{ m/s}$" },
+        { "key": "B", "text": "$7.07\\text{ m/s}$" },
+        { "key": "C", "text": "$14.14\\text{ m/s}$" },
+        { "key": "D", "text": "$20.0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$v_{\\text{top, min}} = \\sqrt{gR} = \\sqrt{10 \\times 10} = 10.0\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A bucket filled with water is rotated in a vertical circle of radius $R = 2.5\\text{ m}$. The minimum angular velocity $\\omega_{\\text{min}}$ at the top of the circle so that water does not spill out is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1\\text{ rad/s}$" },
+        { "key": "B", "text": "$4\\text{ rad/s}$" },
+        { "key": "C", "text": "$2\\text{ rad/s}$" },
+        { "key": "D", "text": "$0.5\\text{ rad/s}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\omega_{\\text{min}} = \\sqrt{\\frac{g}{R}} = \\sqrt{\\frac{10}{2.5}} = \\sqrt{4} = 2\\text{ rad/s}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is attached to a string of length $L$ and whirled in a vertical circle. If the ratio of maximum to minimum tension in the string is $4 : 1$, the speed of the particle at the lowest point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{13}{3}gL}$" },
+        { "key": "B", "text": "$\\sqrt{\\dfrac{23}{3}gL}$" },
+        { "key": "C", "text": "$\\sqrt{7gL}$" },
+        { "key": "D", "text": "$\\sqrt{9gL}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $T_{\\text{max}} = \\frac{mu^2}{L} + mg$, $T_{\\text{min}} = \\frac{m(u^2 - 4gL)}{L} - mg = \\frac{mu^2}{L} - 5mg$.<br>2. $\\frac{u^2/L + g}{u^2/L - 5g} = 4 \\implies u^2/L + g = 4u^2/L - 20g \\implies 3u^2/L = 21g \\implies u = \\sqrt{7gL}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A bead of mass $m$ is free to slide on a smooth vertical circular wire loop of radius $R$. The minimum speed $u$ given to the bead at the lowest point so that it reaches the top of the loop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{5gR}$" },
+        { "key": "B", "text": "$\\sqrt{4gR}$" },
+        { "key": "C", "text": "$\\sqrt{2gR}$" },
+        { "key": "D", "text": "$\\sqrt{3gR}$" }
+      ],
+      "correct": "B",
+      "solution": "The wire loop constrains the bead on both sides, so speed at top only needs $v_{\\text{top}} \\ge 0$:<br>$$\\frac{1}{2}m u^2 = mg(2R) \\implies u_{\\text{min}} = \\sqrt{4gR}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ suspended from a string of length $L$ is projected horizontally from the lowest point with speed $u = \\sqrt{7gL}$. The tension in the string when it becomes horizontal is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7mg$" },
+        { "key": "B", "text": "$5mg$" },
+        { "key": "C", "text": "$3mg$" },
+        { "key": "D", "text": "$6mg$" }
+      ],
+      "correct": "B",
+      "solution": "1. Speed at horizontal: $v^2 = u^2 - 2gL = 7gL - 2gL = 5gL$.<br>2. Tension: $T = \\frac{mv^2}{L} = \\frac{m(5gL)}{L} = 5mg$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A string of length $L$ carrying a bob of mass $m$ is deflected by $90^\\circ$ from the vertical so that it is horizontal, and then released from rest. The tension in the string when the bob passes through the lowest point is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg$" },
+        { "key": "B", "text": "$2mg$" },
+        { "key": "C", "text": "$3mg$" },
+        { "key": "D", "text": "$4mg$" }
+      ],
+      "correct": "C",
+      "solution": "1. Speed at bottom: $\\frac{1}{2}mv^2 = mgL \\implies v^2 = 2gL$.<br>2. Tension: $T = mg + \\frac{mv^2}{L} = mg + 2mg = 3mg$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A pendulum bob of mass $m$ is suspended by a string of length $L$. It is given a speed $u$ at the bottom such that the string slacks at an angle $\\phi = 120^\\circ$ from the bottom upward. The speed $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{3.5gL}$" },
+        { "key": "B", "text": "$\\sqrt{2.5gL}$" },
+        { "key": "C", "text": "$\\sqrt{4.5gL}$" },
+        { "key": "D", "text": "$\\sqrt{5.0gL}$" }
+      ],
+      "correct": "A",
+      "solution": "Angle with upward vertical is $\\alpha = 180^\\circ - 120^\\circ = 60^\\circ$.<br>At slacking: $v^2 = gL\\cos 60^\\circ = 0.5gL$.<br>Energy conservation: $u^2 = v^2 + 2gL(1 + \\cos 60^\\circ) = 0.5gL + 3gL = 3.5gL \\implies u = \\sqrt{3.5gL}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A small body of mass $m$ is placed on top of a smooth sphere of radius $R$. When slightly disturbed, it slides down. The angle $\theta$ with the vertical at which the body breaks away from the surface is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\cos^{-1}\\left(\\dfrac{2}{3}\\right)$" },
+        { "key": "B", "text": "$\\cos^{-1}\\left(\\dfrac{1}{3}\\right)$" },
+        { "key": "C", "text": "$\\cos^{-1}\\left(\\dfrac{1}{2}\\right) = 60^\\circ$" },
+        { "key": "D", "text": "$\\cos^{-1}\\left(\\dfrac{3}{4}\\right)$" }
+      ],
+      "correct": "A",
+      "solution": "$$N = mg(3\\cos\\theta - 2) = 0 \\implies \\cos\\theta = \\frac{2}{3} \\implies \\theta = \\cos^{-1}\\left(\\frac{2}{3}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An aircraft is pulling out of a vertical dive along a circular arc of radius $R = 400\\text{ m}$ at a constant speed of $v = 200\\text{ m/s}$. The apparent weight of a pilot of mass $M = 70\\text{ kg}$ at the lowest point of the pull-out is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$700\\text{ N}$" },
+        { "key": "B", "text": "$7000\\text{ N}$" },
+        { "key": "C", "text": "$7700\\text{ N}$" },
+        { "key": "D", "text": "$6300\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "$$N = M\\left(g + \\frac{v^2}{R}\right) = 70\\left(10 + \\frac{200^2}{400}\right) = 70(10 + 100) = 7700\\text{ N}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body moves in a vertical circle of radius $R$ attached to a string. At any position where the string makes an angle $\theta$ with the downward vertical, the tension $T$ is related to speed $v$ by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$T = \\dfrac{mv^2}{R} + mg\\cos\\theta$" },
+        { "key": "B", "text": "$T = \\dfrac{mv^2}{R} - mg\\cos\\theta$" },
+        { "key": "C", "text": "$T = \\dfrac{mv^2}{R} + mg\\sin\\theta$" },
+        { "key": "D", "text": "$T = mg\\cos\\theta$" }
+      ],
+      "correct": "A",
+      "solution": "$$T - mg\\cos\\theta = \\frac{mv^2}{R} \\implies T = \\frac{mv^2}{R} + mg\\cos\\theta$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A mass $m$ tied to a string of length $L$ is rotated in a vertical circle. If the total energy of the system is $E = \\dfrac{5}{2}mgL$ taking potential energy zero at the lowest point, the tension at the highest point of the loop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$mg$" },
+        { "key": "C", "text": "$2mg$" },
+        { "key": "D", "text": "$3mg$" }
+      ],
+      "correct": "A",
+      "solution": "1. At top: $U = 2mgL \\implies K = E - U = \\frac{5}{2}mgL - 2mgL = \\frac{1}{2}mgL \\implies v_{\\text{top}}^2 = gL$.<br>2. Tension: $T_{\\text{top}} = \\frac{mv_{\\text{top}}^2}{L} - mg = mg - mg = 0$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A heavy ball is suspended by a light string of length $L$. The string is given an initial horizontal velocity $u = \\sqrt{6gL}$ at the lowest point. The ratio of the maximum tension to the minimum tension in the loop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7 : 1$" },
+        { "key": "B", "text": "$5 : 1$" },
+        { "key": "C", "text": "$4 : 1$" },
+        { "key": "D", "text": "$6 : 1$" }
+      ],
+      "correct": "A",
+      "solution": "1. Bottom tension: $T_L = \\frac{m(6gL)}{L} + mg = 7mg$.<br>2. Top speed: $v_H^2 = 6gL - 4gL = 2gL \\implies T_H = \\frac{m(2gL)}{L} - mg = mg$.<br>3. Ratio: $\\frac{T_L}{T_H} = \\frac{7mg}{mg} = 7 : 1$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-040",
+    "title": "Power: Definition, Average and Instantaneous Power & Constant Power Motion",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Power Average and Instantaneous Power JEE Main Physics DPP-040 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering average and instantaneous power, constant power kinematics, fluid stream pumping power, resistive aerodynamic drag, elevator motor horsepower, and machine gun power.",
+    "keywords": "JEE Main Physics, Power DPP, Instantaneous Power Dot Product, Constant Power Motion, Pumping Power, Aerodynamic Drag Power, Wind Turbine Power, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/power-definition-average-instantaneous",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Power Formulation, Scalar Product & Constant Power Kinematics",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Definition of Power: Power is the time rate at which work is done or energy is transferred. (a) Average Power: $P_{\\text{avg}} = \\frac{\\Delta W}{\\Delta t} = \\frac{\\Delta K}{\\Delta t}$. (b) Instantaneous Power: $P = \\frac{dW}{dt} = \\vec{F} \\cdot \\vec{v} = F v \\cos\\theta$. 2. Constant Power Motion: If an engine supplies constant power $P$ from rest: (a) $v(t) = \\sqrt{\\frac{2Pt}{m}} \\propto t^{1/2}$, (b) $s(t) = \\sqrt{\\frac{8P}{9m}} t^{3/2} \\propto t^{3/2}$, (c) $v(s) = \\left(\\frac{3Ps}{m}\\right)^{1/3} \\propto s^{1/3}$, and (d) $a(s) \\propto s^{-1/3}$. 3. Fluid Stream Pumping: For a nozzle ejecting fluid of density $\\rho$ through cross-section $A$ at speed $v$, the kinetic power delivered is $P = \\frac{1}{2}\\left(\\frac{dm}{dt}\\right)v^2 = \\frac{1}{2}\\rho A v^3$. Doubling the flow speed requires $8$ times the power. 4. Aerodynamic Drag: If drag resistance is $F_{\\text{drag}} = c v^2$, the power required to maintain constant speed is $P = F v = c v^3$.",
+    "keyFormula": "$$P = \\vec{F} \\cdot \\vec{v}, \\quad P_{\\text{avg}} = \\frac{W_{\\text{total}}}{\\Delta t}, \\quad v(t) = \\sqrt{\\frac{2Pt}{m}}, \\quad s(t) \\propto t^{3/2}, \\quad P_{\\text{fluid}} = \\frac{1}{2}\\rho A v^3$$",
+    "examTrap": "Do not confuse uniform acceleration with constant power! When an engine delivers *constant power*, acceleration decreases with time ($a \\propto t^{-1/2}$), meaning the vehicle accelerates fastest at low speeds and tapers off. Conversely, for *uniform acceleration* ($a = \\text{constant}$), power increases linearly with time ($P(t) = m a^2 t \\propto t$)."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ accelerates from rest under the action of an engine delivering constant power $P$. The velocity $v$ of the body as a function of time $t$ is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t$" },
+        { "key": "B", "text": "$t^{1/2}$" },
+        { "key": "C", "text": "$t^{3/2}$" },
+        { "key": "D", "text": "$t^2$" }
+      ],
+      "correct": "B",
+      "solution": "$$P = F v = m v \\frac{dv}{dt} \\implies \\int_0^v v\\,dv = \\frac{P}{m}\\int_0^t dt \\implies \\frac{v^2}{2} = \\frac{P}{m}t \\implies v = \\sqrt{\\frac{2P}{m}} t^{1/2} \\propto t^{1/2}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 1, the displacement $s$ of the body from rest as a function of time $t$ is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t^{3/2}$" },
+        { "key": "B", "text": "$t^{1/2}$" },
+        { "key": "C", "text": "$t^2$" },
+        { "key": "D", "text": "$t^{5/2}$" }
+      ],
+      "correct": "A",
+      "solution": "$$s = \\int_0^t v\\,dt = \\int_0^t \\sqrt{\\frac{2P}{m}} t^{1/2}\\,dt = \\sqrt{\\frac{2P}{m}}\\left(\\frac{t^{3/2}}{3/2}\\right) \\propto t^{3/2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An electric motor delivers $P = 2.0\\text{ kW}$ of power to lift a water tank of mass $M = 300\\text{ kg}$ to a height of $h = 20\\text{ m}$. If the efficiency of the motor is $75\\%$, the time taken to fill the tank is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$30\\text{ s}$" },
+        { "key": "B", "text": "$45\\text{ s}$" },
+        { "key": "C", "text": "$40\\text{ s}$" },
+        { "key": "D", "text": "$60\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Useful work: $W = M g h = 300 \\times 10 \\times 20 = 60000\\text{ J}$.<br>2. Output power: $P_{\\text{out}} = 0.75 \\times 2000 = 1500\\text{ W}$.<br>3. Time: $t = \\frac{60000}{1500} = 40\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A constant force $\\vec{F} = (4\\hat{i} + 3\\hat{j} - 2\\hat{k})\\text{ N}$ acts on a particle moving with an instantaneous velocity $\\vec{v} = (2\\hat{i} - 4\\hat{j} + 5\\hat{k})\\text{ m/s}$. The instantaneous power delivered by the force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-14\\text{ W}$" },
+        { "key": "B", "text": "$+14\\text{ W}$" },
+        { "key": "C", "text": "$-6\\text{ W}$" },
+        { "key": "D", "text": "$+26\\text{ W}$" }
+      ],
+      "correct": "A",
+      "solution": "$$P = \\vec{F} \\cdot \\vec{v} = (4)(2) + (3)(-4) + (-2)(5) = 8 - 12 - 10 = -14\\text{ W}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m = 2\\text{ kg}$ is projected vertically upwards with an initial speed $u = 20\\text{ m/s}$. The instantaneous power delivered by the gravitational force at time $t = 1\\text{ s}$ is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-200\\text{ W}$" },
+        { "key": "B", "text": "$+200\\text{ W}$" },
+        { "key": "C", "text": "$-400\\text{ W}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "A",
+      "solution": "1. Speed at $t = 1\\text{ s}$: $v = u - gt = 20 - 10(1) = 10\\text{ m/s}$ (upward).<br>2. Force of gravity: $F_g = mg = 20\\text{ N}$ (downward).<br>3. Power: $P = \\vec{F}_g \\cdot \\vec{v} = -(20)(10) = -200\\text{ W}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An engine pumps water continuously through a pipe of cross-sectional area $A$. If water emerges with a speed $v$, and the density of water is $\\rho$, the rate at which work is done by the engine to maintain this flow is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\rho A v^2$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}\\rho A v^3$" },
+        { "key": "C", "text": "$\\rho A v^3$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}\\rho A v^3$" }
+      ],
+      "correct": "B",
+      "solution": "Mass flowing per unit time: $\\frac{dm}{dt} = \\rho A v$.<br>$$P = \\frac{dK}{dt} = \\frac{1}{2}\\left(\\frac{dm}{dt}\\right)v^2 = \\frac{1}{2}\\rho A v^3$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "To increase the flow velocity of water in Question 6 by a factor of $2$ ($v' = 2v$), the power delivered by the engine must be increased by a factor of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$" },
+        { "key": "B", "text": "$4$" },
+        { "key": "C", "text": "$8$" },
+        { "key": "D", "text": "$16$" }
+      ],
+      "correct": "C",
+      "solution": "Since $P \\propto v^3$, doubling $v$ yields $P' = (2)^3 P = 8P$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An automobile of mass $m$ accelerates uniformly from rest to speed $v_0$ in time $t_0$. The instantaneous power delivered by the engine at time $t$ ($t \\le t_0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m v_0^2}{t_0^2} t$" },
+        { "key": "B", "text": "$\\dfrac{m v_0^2}{2t_0^2} t$" },
+        { "key": "C", "text": "$\\dfrac{m v_0^2}{t_0}$" },
+        { "key": "D", "text": "$\\dfrac{m v_0}{t_0^2} t^2$" }
+      ],
+      "correct": "A",
+      "solution": "Acceleration $a = \\frac{v_0}{t_0}$. Force $F = ma = \\frac{m v_0}{t_0}$.<br>Speed at time $t$: $v(t) = a t = \\frac{v_0}{t_0}t$.<br>$$P(t) = F v(t) = \\left(\\frac{m v_0}{t_0}\\right)\\left(\\frac{v_0}{t_0}t\\right) = \\frac{m v_0^2}{t_0^2} t$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 8, the average power delivered by the engine over the entire interval from $t = 0$ to $t = t_0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m v_0^2}{t_0}$" },
+        { "key": "B", "text": "$\\dfrac{m v_0^2}{2t_0}$" },
+        { "key": "C", "text": "$\\dfrac{m v_0^2}{4t_0}$" },
+        { "key": "D", "text": "$\\dfrac{2m v_0^2}{t_0}$" }
+      ],
+      "correct": "B",
+      "solution": "$$P_{\\text{avg}} = \\frac{W_{\\text{total}}}{t_0} = \\frac{\\frac{1}{2}m v_0^2}{t_0} = \\frac{m v_0^2}{2t_0}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car of mass $M = 1000\\text{ kg}$ climbs an incline of $1$ in $20$ ($\\sin\\theta = 0.05$) at a constant speed of $v = 15\\text{ m/s}$. If the resistance to motion due to friction is $f = 200\\text{ N}$, the power developed by the engine is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7.5\\text{ kW}$" },
+        { "key": "B", "text": "$3.0\\text{ kW}$" },
+        { "key": "C", "text": "$10.5\\text{ kW}$" },
+        { "key": "D", "text": "$15.0\\text{ kW}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Net force needed: $F = Mg\\sin\\theta + f = 1000(10)(0.05) + 200 = 500 + 200 = 700\\text{ N}$.<br>2. Power: $P = F v = 700 \\times 15 = 10500\\text{ W} = 10.5\\text{ kW}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ moves in a straight line such that its displacement $x$ depends on time $t$ as $x = \\alpha t^3 + \\beta t$. The instantaneous power delivered to the particle is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$t$" },
+        { "key": "B", "text": "$t^3$" },
+        { "key": "C", "text": "$(3\\alpha t^2 + \\beta)t$" },
+        { "key": "D", "text": "$t^2$" }
+      ],
+      "correct": "C",
+      "solution": "$v = \\frac{dx}{dt} = 3\\alpha t^2 + \\beta$. $a = \\frac{dv}{dt} = 6\\alpha t$.<br>$$P = F v = (m a)v = (6m\\alpha t)(3\\alpha t^2 + \\beta) \\propto (3\\alpha t^2 + \\beta)t$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A vehicle of mass $m$ starts from rest and moves with constant power $P$. The velocity $v$ acquired after travelling a distance $s$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{3 P s}{m}\\right)^{1/3}$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2 P s}{m}\\right)^{1/2}$" },
+        { "key": "C", "text": "$\\left(\\dfrac{P s}{m}\\right)^{1/3}$" },
+        { "key": "D", "text": "$\\left(\\dfrac{3 P s}{2m}\\right)^{1/3}$" }
+      ],
+      "correct": "A",
+      "solution": "$$P = F v = \\left(m v \\frac{dv}{ds}\\right)v = m v^2 \\frac{dv}{ds} \\implies \\int_0^v v^2\\,dv = \\frac{P}{m}\\int_0^s ds \\implies \\frac{v^3}{3} = \\frac{P s}{m} \\implies v = \\left(\\frac{3Ps}{m}\\right)^{1/3}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A particle moves along the $x$-axis from rest at $x = 0$ under a constant power source. The acceleration $a$ of the particle as a function of its displacement $x$ is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x^{-1/3}$" },
+        { "key": "B", "text": "$x^{-1/2}$" },
+        { "key": "C", "text": "$x^{-2/3}$" },
+        { "key": "D", "text": "$x^{-1}$" }
+      ],
+      "correct": "A",
+      "solution": "From $v \\propto x^{1/3}$: $a = v\\frac{dv}{dx} = (x^{1/3})\\left(\\frac{1}{3}x^{-2/3}\\right) \\propto x^{-1/3}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A crane lifts a load of mass $M = 500\\text{ kg}$ vertically upward with a constant acceleration $a = 2\\text{ m/s}^2$. The instantaneous power developed by the crane motor at $t = 3\\text{ s}$ after starting from rest is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$18\\text{ kW}$" },
+        { "key": "B", "text": "$36\\text{ kW}$" },
+        { "key": "C", "text": "$30\\text{ kW}$" },
+        { "key": "D", "text": "$15\\text{ kW}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Tension: $T = M(g + a) = 500(10 + 2) = 6000\\text{ N}$.<br>2. Speed at $t = 3\\text{ s}$: $v = at = 2 \\times 3 = 6\\text{ m/s}$.<br>3. Power: $P = T v = 6000 \\times 6 = 36000\\text{ W} = 36\\text{ kW}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An elevator cabin of mass $M = 1800\\text{ kg}$ is moving upward at a constant speed $v = 3\\text{ m/s}$ against a constant frictional resistance force $f = 4000\\text{ N}$. The minimum horsepower (hp) required from the motor is ($1\\text{ hp} = 746\\text{ W}, g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$88.5\\text{ hp}$" },
+        { "key": "B", "text": "$29.5\\text{ hp}$" },
+        { "key": "C", "text": "$59.0\\text{ hp}$" },
+        { "key": "D", "text": "$72.4\\text{ hp}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Total force: $F = Mg + f = 18000 + 4000 = 22000\\text{ N}$.<br>2. Power: $P = F v = 22000 \\times 3 = 66000\\text{ W}$.<br>3. Horsepower: $P_{\\text{hp}} = \\frac{66000}{746} \\approx 88.47\\text{ hp} \\approx 88.5\\text{ hp}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A machine gun fires $N$ bullets per second, each of mass $m$ with muzzle speed $u$. The power delivered by the gun mechanism to fire the bullets is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2} N m u^2$" },
+        { "key": "B", "text": "$N m u^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{2} N^2 m u^2$" },
+        { "key": "D", "text": "$N m u$" }
+      ],
+      "correct": "A",
+      "solution": "$$P = \\frac{\\text{Total Kinetic Energy}}{\\Delta t} = N\\left(\\frac{1}{2}m u^2\\right) = \\frac{1}{2} N m u^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The power supplied to a particle of mass $m = 2\\text{ kg}$ varies with time as $P(t) = 3t^2\\text{ W}$. If the particle was initially at rest at $t = 0$, its velocity at $t = 2\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\sqrt{2}\\text{ m/s}$" },
+        { "key": "B", "text": "$4.0\\text{ m/s}$" },
+        { "key": "C", "text": "$2.0\\text{ m/s}$" },
+        { "key": "D", "text": "$8.0\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Work done: $W = \\int_0^2 3t^2\\,dt = [t^3]_0^2 = 8\\text{ J}$.<br>2. Work-Energy Theorem: $\\frac{1}{2}(2)v^2 = 8 \\implies v^2 = 8 \\implies v = 2\\sqrt{2}\\text{ m/s}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A wind turbine with blades sweeping an area $A$ is placed in a wind stream of speed $v$. If the air density is $\\rho$, the maximum theoretical power of the incoming wind stream is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\rho A v^2$" },
+        { "key": "B", "text": "$\\rho A v^3$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\rho A v^3$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}\\rho A v^3$" }
+      ],
+      "correct": "C",
+      "solution": "$$P = \\frac{1}{2}\\left(\\frac{dm}{dt}\\right)v^2 = \\frac{1}{2}(\\rho A v)v^2 = \\frac{1}{2}\\rho A v^3$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is moving in a circle of radius $R$ with uniform speed $v$. The instantaneous power delivered by the net centripetal force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m v^3}{R}$" },
+        { "key": "B", "text": "$\\dfrac{m v^2}{R}$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\dfrac{m v^3}{R}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "D",
+      "solution": "Because centripetal force is always perpendicular to instantaneous velocity ($\\vec{F}_c \\cdot \\vec{v} = 0$), power delivered is identically zero.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A car travels with constant speed $v$ along a horizontal road where resistive aerodynamic drag is $F_{\\text{drag}} = c v^2$. The engine power output required to maintain this speed is proportional to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v^2$" },
+        { "key": "B", "text": "$v^3$" },
+        { "key": "C", "text": "$v^4$" },
+        { "key": "D", "text": "$v$" }
+      ],
+      "correct": "B",
+      "solution": "$$P = F_{\\text{engine}} v = (c v^2)v = c v^3 \\propto v^3$$<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

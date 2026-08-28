@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-022",
+    "title": "Linear Momentum, Newton's Second Law & Variable Mass Systems",
+    "publishDate": "2026-08-23",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Linear Momentum & Newton's Second Law JEE Main Physics DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering Newton's second law vector calculus, water jet thrust, conveyor belt power, rocket propulsion, recoil force, and momentum-kinetic energy relations.",
+    "keywords": "JEE Main Physics, Newton's Second Law DPP, Linear Momentum, Rocket Thrust Formula, Variable Mass System, Conveyor Belt Force, Water Jet Impact, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/linear-momentum-newtons-second-law",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Mathematical Formulation of Newton's Second Law & Variable Mass Dynamics",
+    "tag": "Class 11 Mechanics",
+    "summary": "Newton's second law asserts that the net external force equals the time rate of change of linear momentum: $\\vec{F} = \\frac{d\\vec{p}}{dt} = \\frac{d(m\\vec{v})}{dt} = m\\frac{d\\vec{v}}{dt} + \\vec{v}_{\\text{rel}}\\frac{dm}{dt}$. For constant mass systems, $\\vec{F} = m\\vec{a}$. For variable mass systems: (1) Conveyor belt / sand feeding: $F_{\\text{ext}} = v\\frac{dm}{dt}$, Power supplied $P = Fv = v^2\\frac{dm}{dt}$. (2) Rocket propulsion: $F_{\\text{thrust}} = u_{\\text{rel}}\\frac{dm}{dt}$. (3) Water jet impact: Normal force $F = \\rho A v^2$ (inelastic) or $F = 2\\rho A v^2$ (elastic reflection).",
+    "keyFormula": "$$\\vec{F} = \\frac{d\\vec{p}}{dt}, \\quad p = \\sqrt{2mK}, \\quad K = \\frac{p^2}{2m}, \\quad F_{\\text{thrust}} = u_{\\text{rel}}\\frac{dm}{dt}, \\quad F_{\\text{jet}} = \\rho A v^2$$",
+    "examTrap": "When sand drops onto a moving conveyor belt at speed $v$, the power delivered by the motor is $P = v^2\\frac{dm}{dt}$, but the rate of increase of kinetic energy of the sand is only $\\frac{1}{2}v^2\\frac{dm}{dt}$. The remaining 50% of the mechanical energy is inevitably dissipated as heat due to sliding friction before the sand reaches belt speed."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The linear momentum of a particle of mass $m = 2\\text{ kg}$ varies with time as $\\vec{p}(t) = (3t^2\\hat{i} + 4t\\hat{j})\\text{ kg}\\cdot\\text{m/s}$. The magnitude of the net force acting on the particle at $t = 2\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\text{ N}$" },
+        { "key": "B", "text": "$4\\sqrt{10}\\text{ N} \\approx 12.65\\text{ N}$" },
+        { "key": "C", "text": "$16\\text{ N}$" },
+        { "key": "D", "text": "$8\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\vec{F} = \\frac{d\\vec{p}}{dt} = 6t\\hat{i} + 4\\hat{j}\\text{ N}$.<br>2. At $t = 2\\text{ s}$: $\\vec{F}(2) = 12\\hat{i} + 4\\hat{j}\\text{ N}$.<br>3. Magnitude: $|\\vec{F}| = \\sqrt{12^2 + 4^2} = \\sqrt{160} = 4\\sqrt{10}\\text{ N} \\approx 12.65\\text{ N}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force $\\vec{F} = (6t^2\\hat{i} + 4t\\hat{j})\\text{ N}$ acts on a body of mass $3\\text{ kg}$ initially at rest at the origin. The velocity of the body at $t = 3\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(18\\hat{i} + 9\\hat{j})\\text{ m/s}$" },
+        { "key": "B", "text": "$(54\\hat{i} + 18\\hat{j})\\text{ m/s}$" },
+        { "key": "C", "text": "$(18\\hat{i} + 6\\hat{j})\\text{ m/s}$" },
+        { "key": "D", "text": "$(6\\hat{i} + 6\\hat{j})\\text{ m/s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. $\\vec{a}(t) = \\frac{\\vec{F}}{m} = 2t^2\\hat{i} + \\frac{4}{3}t\\hat{j}\\text{ m/s}^2$.<br>2. $\\vec{v}(3) = \\int_0^3 \\left(2t^2\\hat{i} + \\frac{4}{3}t\\hat{j}\\right)dt = \\left[\\frac{2}{3}t^3\\hat{i} + \\frac{2}{3}t^2\\hat{j}\\right]_0^3 = 18\\hat{i} + 6\\hat{j}\\text{ m/s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Water from a hose pipe of cross-sectional area $A = 10\\text{ cm}^2$ strikes a vertical wall normally with a speed of $v = 15\\text{ m/s}$ and falls dead down the wall without bouncing. If the density of water is $\\rho = 1000\\text{ kg/m}^3$, the force exerted by the water stream on the wall is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$150\\text{ N}$" },
+        { "key": "B", "text": "$450\\text{ N}$" },
+        { "key": "C", "text": "$300\\text{ N}$" },
+        { "key": "D", "text": "$225\\text{ N}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Mass rate: $\\frac{dm}{dt} = \\rho A v = 1000 \\times (10 \\times 10^{-4}) \\times 15 = 15\\text{ kg/s}$.<br>2. Force on wall: $F = v\\frac{dm}{dt} = 15 \\times 15 = 225\\text{ N}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the previous question, if the water stream bounces back elastically with the same speed from the wall, the force exerted on the wall would be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$450\\text{ N}$" },
+        { "key": "B", "text": "$225\\text{ N}$" },
+        { "key": "C", "text": "$900\\text{ N}$" },
+        { "key": "D", "text": "$112.5\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "For elastic reflection, momentum change doubles: $$F = 2\\rho A v^2 = 2 \\times 225 = 450\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Sand is dropped onto a conveyor belt at a constant rate of $\\dfrac{dm}{dt} = 2\\text{ kg/s}$. To keep the belt moving at a constant speed of $v = 3\\text{ m/s}$, the extra force required to drive the belt is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3\\text{ N}$" },
+        { "key": "B", "text": "$6\\text{ N}$" },
+        { "key": "C", "text": "$12\\text{ N}$" },
+        { "key": "D", "text": "$1.5\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "Thrust force required to accelerate incoming mass to belt speed $v$: $$F = v\\frac{dm}{dt} = 3 \\times 2 = 6\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q5, the extra power required to keep the conveyor belt moving at constant speed $v = 3\\text{ m/s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$9\\text{ W}$" },
+        { "key": "B", "text": "$36\\text{ W}$" },
+        { "key": "C", "text": "$18\\text{ W}$" },
+        { "key": "D", "text": "$6\\text{ W}$" }
+      ],
+      "correct": "C",
+      "solution": "Power supplied by motor: $$P = F \\times v = \\left(v\\frac{dm}{dt}\\right)v = v^2\\frac{dm}{dt} = 3^2 \\times 2 = 18\\text{ W}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A rocket of initial mass $M_0 = 1000\\text{ kg}$ ejects gas at a constant exhaust speed $u = 500\\text{ m/s}$ relative to the rocket. To give the rocket an initial upward acceleration equal to $g = 10\\text{ m/s}^2$, the rate of consumption of fuel ($\\frac{dm}{dt}$) must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ kg/s}$" },
+        { "key": "B", "text": "$10\\text{ kg/s}$" },
+        { "key": "C", "text": "$80\\text{ kg/s}$" },
+        { "key": "D", "text": "$40\\text{ kg/s}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Rocket thrust equation: $u\\frac{dm}{dt} - M_0 g = M_0 a$.<br>2. $500\\frac{dm}{dt} = 1000(10 + 10) = 20000 \\implies \\frac{dm}{dt} = 40\\text{ kg/s}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A machine gun fires $n = 360$ bullets per minute, each of mass $m = 20\\text{ g}$, with a muzzle speed of $v = 500\\text{ m/s}$. The average recoil force required to hold the gun steady in position is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$60\\text{ N}$" },
+        { "key": "B", "text": "$36\\text{ N}$" },
+        { "key": "C", "text": "$120\\text{ N}$" },
+        { "key": "D", "text": "$180\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Bullets per second $N = \\frac{360}{60} = 6\\text{ s}^{-1}$.<br>2. Average force: $F = N(mv) = 6 \\times (0.02 \\times 500) = 6 \\times 10 = 60\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ moves along the $x$-axis such that its position is given by $x(t) = a t^2 - b t^3$. The force acting on the particle is zero at time $t$ equal to:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2a}{3b}$" },
+        { "key": "B", "text": "$\\dfrac{a}{3b}$" },
+        { "key": "C", "text": "$\\dfrac{a}{b}$" },
+        { "key": "D", "text": "$\\dfrac{3a}{2b}$" }
+      ],
+      "correct": "B",
+      "solution": "1. $v(t) = 2at - 3bt^2$, $a(t) = 2a - 6bt$.<br>2. $F = ma = 0 \\implies 2a - 6bt = 0 \\implies t = \\frac{a}{3b}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two bodies $A$ and $B$ have masses $m_A = 2\\text{ kg}$ and $m_B = 8\\text{ kg}$ and possess equal kinetic energies. The ratio of their linear momenta $\\dfrac{p_A}{p_B}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 4$" },
+        { "key": "B", "text": "$4 : 1$" },
+        { "key": "C", "text": "$1 : 2$" },
+        { "key": "D", "text": "$2 : 1$" }
+      ],
+      "correct": "C",
+      "solution": "$$p = \\sqrt{2mK} \\implies \\frac{p_A}{p_B} = \\sqrt{\\frac{m_A}{m_B}} = \\sqrt{\\frac{2}{8}} = \\frac{1}{2}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $5\\text{ kg}$ starts from rest under the action of a force $\\vec{F} = (10\\hat{i} + 15\\hat{j})\\text{ N}$. The kinetic energy of the body at $t = 2\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$65\\text{ J}$" },
+        { "key": "B", "text": "$260\\text{ J}$" },
+        { "key": "C", "text": "$520\\text{ J}$" },
+        { "key": "D", "text": "$130\\text{ J}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $\\vec{a} = \\frac{\\vec{F}}{m} = 2\\hat{i} + 3\\hat{j}\\text{ m/s}^2$.<br>2. $\\vec{v}(2) = \\vec{a}t = 4\\hat{i} + 6\\hat{j}\\text{ m/s} \\implies v^2 = 4^2 + 6^2 = 52\\text{ m}^2/\\text{s}^2$.<br>3. Kinetic energy $K = \\frac{1}{2}mv^2 = \\frac{1}{2}(5)(52) = 130\\text{ J}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball of mass $m = 0.2\\text{ kg}$ moving horizontally with velocity $u = 20\\hat{i}\\text{ m/s}$ hits a smooth vertical wall and rebounds with velocity $v = -15\\hat{i}\\text{ m/s}$. If the impact lasts for $\\Delta t = 0.01\\text{ s}$, the average force exerted by the wall on the ball is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-700\\hat{i}\\text{ N}$" },
+        { "key": "B", "text": "$+700\\hat{i}\\text{ N}$" },
+        { "key": "C", "text": "$-100\\hat{i}\\text{ N}$" },
+        { "key": "D", "text": "$-350\\hat{i}\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\Delta\\vec{p} = 0.2(-15\\hat{i} - 20\\hat{i}) = -7\\hat{i}\\text{ N}\\cdot\\text{s}$.<br>2. $\\vec{F}_{\\text{avg}} = \\frac{\\Delta\\vec{p}}{\\Delta t} = \\frac{-7\\hat{i}}{0.01} = -700\\hat{i}\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The linear momentum $p$ of a body increases by $50\\%$. The percentage increase in its kinetic energy is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\%$" },
+        { "key": "B", "text": "$125\\%$" },
+        { "key": "C", "text": "$100\\%$" },
+        { "key": "D", "text": "$225\\%$" }
+      ],
+      "correct": "B",
+      "solution": "$$K' = \\frac{(1.5p)^2}{2m} = 2.25 K \\implies \\% \\text{ increase} = (2.25 - 1) \\times 100 = 125\\%$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A constant retarding force $F = 50\\text{ N}$ is applied to a body of mass $20\\text{ kg}$ moving initially with speed $15\\text{ m/s}$. The time taken by the body to come to a complete stop is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.0\\text{ s}$" },
+        { "key": "B", "text": "$4.5\\text{ s}$" },
+        { "key": "C", "text": "$6.0\\text{ s}$" },
+        { "key": "D", "text": "$7.5\\text{ s}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Deceleration $a = \\frac{F}{m} = \\frac{50}{20} = 2.5\\text{ m/s}^2$.<br>2. Time $t = \\frac{u}{a} = \\frac{15}{2.5} = 6.0\\text{ s}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ is moving in a circle of radius $R$ with constant angular velocity $\\omega$. The rate of change of linear momentum over half a revolution is directed:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Along the tangent to the path" },
+        { "key": "B", "text": "Outward from the center" },
+        { "key": "C", "text": "Zero" },
+        { "key": "D", "text": "Toward the center of the circle" }
+      ],
+      "correct": "D",
+      "solution": "By Newton's second law $\\vec{F} = \\frac{d\\vec{p}}{dt}$. In UCM, the net force is the centripetal force directed strictly toward the center.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "An open rail wagon of mass $M_0 = 1000\\text{ kg}$ is coasting freely with velocity $v_0 = 10\\text{ m/s}$ along a straight horizontal track. Rain starts falling vertically into the wagon at a constant rate $\\mu = 5\\text{ kg/s}$. Neglecting friction, the velocity of the wagon after $t = 100\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6.67\\text{ m/s}$" },
+        { "key": "B", "text": "$5.00\\text{ m/s}$" },
+        { "key": "C", "text": "$7.50\\text{ m/s}$" },
+        { "key": "D", "text": "$8.33\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "Conservation of horizontal momentum: $$M_0 v_0 = (M_0 + \\mu t)v(t) \\implies 10000 = (1000 + 500)v(t) \\implies v(t) = \\frac{20}{3} \\approx 6.67\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is subjected to a force $F(x) = -k x + \\beta x^3$. The motion of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Simple Harmonic for all displacements" },
+        { "key": "B", "text": "Non-harmonic periodic for small oscillations near origin" },
+        { "key": "C", "text": "Uniformly accelerated" },
+        { "key": "D", "text": "Purely translational with constant momentum" }
+      ],
+      "correct": "B",
+      "solution": "The cubic non-linear term $\\beta x^3$ prevents the restoring acceleration from being strictly proportional to $-x$, yielding periodic non-harmonic oscillations near the equilibrium point.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m$ is dropped from a height $h$. If air resistance exerts a retarding force proportional to speed ($F_{\\text{drag}} = kv$), the terminal velocity of the body is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{2gh}$" },
+        { "key": "B", "text": "$\\dfrac{k}{mg}$" },
+        { "key": "C", "text": "$\\dfrac{mg}{k}$" },
+        { "key": "D", "text": "$\\dfrac{m^2 g}{k}$" }
+      ],
+      "correct": "C",
+      "solution": "At terminal velocity, net acceleration is zero: $$mg - kv_t = 0 \\implies v_t = \\frac{mg}{k}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m = 1\\text{ kg}$ is moving on the $x$-axis under a conservative force. The potential energy is $U(x) = (x^2 - 4x)\\text{ J}$. The magnitude of the force on the block at $x = 5\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ N}$" },
+        { "key": "B", "text": "$4\\text{ N}$" },
+        { "key": "C", "text": "$5\\text{ N}$" },
+        { "key": "D", "text": "$6\\text{ N}$" }
+      ],
+      "correct": "D",
+      "solution": "1. $F(x) = -\\frac{dU}{dx} = -(2x - 4) = 4 - 2x$.<br>2. At $x = 5\\text{ m}$: $F(5) = 4 - 10 = -6\\text{ N} \\implies |F| = 6\\text{ N}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A stone of mass $m = 0.5\\text{ kg}$ is tied to a string of length $L = 1\\text{ m}$ and rotated in a horizontal circle at constant speed $v = 4\\text{ m/s}$ on a frictionless table. The net force acting on the stone is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ N}$ directed towards the center" },
+        { "key": "B", "text": "$8\\text{ N}$ directed tangentially" },
+        { "key": "C", "text": "Zero" },
+        { "key": "D", "text": "$16\\text{ N}$ directed radially outward" }
+      ],
+      "correct": "A",
+      "solution": "$$F_{\\text{net}} = \\frac{mv^2}{L} = \\frac{0.5 \\times 4^2}{1} = 8\\text{ N (directed towards the center)}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

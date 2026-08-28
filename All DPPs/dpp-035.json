@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-035",
+    "title": "Work Done by a Constant Force: Scalar (Dot) Product, Zero/Negative Work & Path Independence",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Work Done by a Constant Force Dot Product JEE Main Physics DPP-035 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering mathematical definition of work, dot product of vectors, work done by normal force and gravity, negative work by friction, and path independence of constant forces.",
+    "keywords": "JEE Main Physics, Work Energy Power DPP, Work by Constant Force, Dot Product of Force and Displacement, Zero Work Done, Negative Work Done, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/work-done-by-constant-force-dot-product",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Scalar Product Definition of Work & Physical Nature of Constant Force Work",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Definition of Work: For a constant force $\\vec{F}$ displacing a point of application by $\\vec{s}$, work done is the scalar dot product $W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta = F_x \\Delta x + F_y \\Delta y + F_z \\Delta z$. 2. Sign of Work: $W > 0$ when $\\theta < 90^\\circ$ (force has a component along motion), $W = 0$ when $\\theta = 90^\\circ$ (force is perpendicular to displacement, e.g., tension in a circular path, magnetic Lorentz force, normal force on a horizontal platform), and $W < 0$ when $\\theta > 90^\\circ$ (force opposes displacement, e.g., kinetic friction, gravity during ascent). 3. Constant Force Path Independence: Work done by any spatially uniform constant force depends solely on the initial and final position vectors ($\\Delta\\vec{r} = \\vec{r}_2 - \\vec{r}_1$), completely independent of the actual geometric trajectory taken. 4. Instantaneous Power: The instantaneous rate of work done is $P = \\frac{dW}{dt} = \\vec{F} \\cdot \\vec{v}$.",
+    "keyFormula": "$$W = \\vec{F} \\cdot \\Delta\\vec{r} = F_x \\Delta x + F_y \\Delta y + F_z \\Delta z, \\quad W_g = -mg\\Delta h, \\quad P = \\vec{F} \\cdot \\vec{v}$$",
+    "examTrap": "Even along non-linear curved paths (e.g., $y = x^2$), do NOT attempt complicated path integrals if the applied force $\\vec{F}$ is constant! Because $\\vec{F}$ is constant, work is simply $\\vec{F} \\cdot (\\vec{r}_f - \\vec{r}_i)$ evaluated directly between the endpoints."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A constant force $\\vec{F} = (3\\hat{i} + 4\\hat{j} - 5\\hat{k})\\text{ N}$ displaces a body from position $\\vec{r}_1 = (2\\hat{i} - \\hat{j} + 3\\hat{k})\\text{ m}$ to $\\vec{r}_2 = (5\\hat{i} + 2\\hat{j} - \\hat{k})\\text{ m}$. The work done by the force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$21\\text{ J}$" },
+        { "key": "B", "text": "$41\\text{ J}$" },
+        { "key": "C", "text": "$35\\text{ J}$" },
+        { "key": "D", "text": "$15\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Displacement: $\\Delta\\vec{r} = \\vec{r}_2 - \\vec{r}_1 = (3\\hat{i} + 3\\hat{j} - 4\\hat{k})\\text{ m}$.<br>2. Work done: $W = \\vec{F} \\cdot \\Delta\\vec{r} = (3)(3) + (4)(3) + (-5)(-4) = 9 + 12 + 20 = 41\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m = 2\\text{ kg}$ is dropped from a height of $h = 20\\text{ m}$. The work done by gravity on the body during its entire fall to the ground is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-400\\text{ J}$" },
+        { "key": "B", "text": "$+400\\text{ J}$" },
+        { "key": "C", "text": "$+200\\text{ J}$" },
+        { "key": "D", "text": "$-200\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "Gravity acts downwards and displacement is downwards ($\\theta = 0^\\circ$):<br>$$W_g = mgh = 2 \\times 10 \\times 20 = +400\\text{ J}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m = 5\\text{ kg}$ is pulled along a horizontal floor by a constant force $F = 40\\text{ N}$ acting at an angle of $60^\\circ$ above the horizontal. If the block moves a distance of $s = 6\\text{ m}$, the work done by the pulling force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$240\\text{ J}$" },
+        { "key": "B", "text": "$60\\text{ J}$" },
+        { "key": "C", "text": "$120\\text{ J}$" },
+        { "key": "D", "text": "$120\\sqrt{3}\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$W = F s \\cos 60^\\circ = 40 \\times 6 \\times 0.5 = 120\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A porter carries a heavy suitcase of mass $M = 30\\text{ kg}$ on his head and walks a horizontal distance of $s = 50\\text{ m}$ on a level railway platform at a constant speed. The work done by the normal reaction from the porter's head on the suitcase is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$15000\\text{ J}$" },
+        { "key": "B", "text": "$-15000\\text{ J}$" },
+        { "key": "C", "text": "$1500\\text{ J}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "D",
+      "solution": "The normal reaction acts vertically upwards while displacement is purely horizontal ($\\theta = 90^\\circ$):<br>$$W = N s \\cos 90^\\circ = 0\\text{ J}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m = 4\\text{ kg}$ moves along the $x$-axis from $x = 0$ to $x = 5\\text{ m}$ under the action of a constant force $\\vec{F} = (8\\hat{i} - 6\\hat{j})\\text{ N}$. The work done by this force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$40\\text{ J}$" },
+        { "key": "B", "text": "$10\\text{ J}$" },
+        { "key": "C", "text": "$50\\text{ J}$" },
+        { "key": "D", "text": "$70\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\vec{F} \\cdot \\vec{s} = (8\\hat{i} - 6\\hat{j}) \\cdot (5\\hat{i}) = (8)(5) + (-6)(0) = 40\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 2\\text{ kg}$ slides down a rough incline of angle $\\theta = 37^\\circ$ and length $L = 5\\text{ m}$ at a constant velocity ($\\mu_k = 0.75$). The work done by the frictional force during the descent is ($\\sin 37^\\circ = 0.6, \\cos 37^\\circ = 0.8, g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+60\\text{ J}$" },
+        { "key": "B", "text": "$-60\\text{ J}$" },
+        { "key": "C", "text": "$-80\\text{ J}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "B",
+      "solution": "1. Kinetic friction: $f_k = \\mu_k mg\\cos 37^\\circ = 0.75 \\times 2 \\times 10 \\times 0.8 = 12\\text{ N}$.<br>2. Work done by friction opposes displacement: $W_f = -f_k L = -12 \\times 5 = -60\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in the $xy$-plane from $(0, 0)$ to $(3\\text{ m}, 4\\text{ m})$ under the simultaneous action of two constant forces $\\vec{F}_1 = (2\\hat{i} + 5\\hat{j})\\text{ N}$ and $\\vec{F}_2 = (4\\hat{i} - 2\\hat{j})\\text{ N}$. The net work done on the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$26\\text{ J}$" },
+        { "key": "B", "text": "$30\\text{ J}$" },
+        { "key": "C", "text": "$45\\text{ J}$" },
+        { "key": "D", "text": "$38\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "Net force: $\\vec{F}_{\\text{net}} = \\vec{F}_1 + \\vec{F}_2 = (6\\hat{i} + 3\\hat{j})\\text{ N}$.<br>Net work: $W = \\vec{F}_{\\text{net}} \\cdot \\Delta\\vec{r} = (6)(3) + (3)(4) = 18 + 12 = 30\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An object of mass $m$ is tied to a string and whirled in a vertical circle of radius $R$. The work done by the tension force on the object during any quarter of a revolution is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{4}mgR$" },
+        { "key": "B", "text": "$2\\pi R T$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}mv^2$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "D",
+      "solution": "Tension is continuously perpendicular to the velocity and displacement of the bob ($\\vec{T} \\cdot d\\vec{r} = 0$). Hence, work done by string tension is zero over any portion of the path.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A constant force $\\vec{F}$ acts on a particle moving with velocity $\\vec{v}$. The work done per unit time (instantaneous power) is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{F} \\times \\vec{v}$" },
+        { "key": "B", "text": "$\\dfrac{\\vec{F}}{\\vec{v}}$" },
+        { "key": "C", "text": "$\\vec{F} \\cdot \\vec{v}$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}\\vec{F} \\cdot \\vec{v}$" }
+      ],
+      "correct": "C",
+      "solution": "$$P = \\frac{dW}{dt} = \\frac{\\vec{F} \\cdot d\\vec{r}}{dt} = \\vec{F} \\cdot \\vec{v}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m = 10\\text{ kg}$ is pulled up a smooth inclined plane of angle $\\theta = 30^\\circ$ through a distance $s = 4\\text{ m}$ along the incline by a constant force $F = 100\\text{ N}$ parallel to the incline. The work done against gravity is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$200\\text{ J}$" },
+        { "key": "B", "text": "$400\\text{ J}$" },
+        { "key": "C", "text": "$200\\sqrt{3}\\text{ J}$" },
+        { "key": "D", "text": "$100\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "Vertical height gained: $h = s\\sin 30^\\circ = 4(0.5) = 2\\text{ m}$.<br>Work done against gravity: $W = mgh = 10 \\times 10 \\times 2 = 200\\text{ J}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Under which of the following conditions is the work done by a non-zero force $\\vec{F}$ on a moving body strictly negative?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Angle between $\\vec{F}$ and displacement $\\vec{s}$ is $0^\\circ$" },
+        { "key": "B", "text": "Angle between $\\vec{F}$ and displacement $\\vec{s}$ is acute ($0^\\circ \\le \\theta < 90^\\circ$)" },
+        { "key": "C", "text": "Angle between $\\vec{F}$ and displacement $\\vec{s}$ is obtuse ($90^\\circ < \\theta \\le 180^\\circ$)" },
+        { "key": "D", "text": "Angle between $\\vec{F}$ and displacement $\\vec{s}$ is exactly $90^\\circ$" }
+      ],
+      "correct": "C",
+      "solution": "Since $W = F s \\cos\\theta$, work done is negative whenever $\\cos\\theta < 0$, which occurs for obtuse angles ($90^\\circ < \\theta \\le 180^\\circ$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A constant force $\\vec{F} = (a\\hat{i} + 3\\hat{j})\\text{ N}$ displaces a particle by $\\vec{s} = (6\\hat{i} - 4\\hat{j})\\text{ m}$. If the work done by the force is zero, the value of constant $a$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4$" },
+        { "key": "B", "text": "$2$" },
+        { "key": "C", "text": "$-2$" },
+        { "key": "D", "text": "$-4$" }
+      ],
+      "correct": "B",
+      "solution": "$$W = \\vec{F} \\cdot \\vec{s} = (a)(6) + (3)(-4) = 0 \\implies 6a = 12 \\implies a = 2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A box is pushed across a horizontal surface by a force of $50\\text{ N}$ directed at an angle of $37^\\circ$ below the horizontal. If the box is displaced by $4\\text{ m}$ horizontally, the work done by the pushing force is ($\\cos 37^\\circ = 0.8$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$120\\text{ J}$" },
+        { "key": "B", "text": "$200\\text{ J}$" },
+        { "key": "C", "text": "$160\\text{ J}$" },
+        { "key": "D", "text": "$80\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$W = F s \\cos 37^\\circ = 50 \\times 4 \\times 0.8 = 160\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A car of mass $M$ accelerates uniformly from rest to speed $V$ in time $T$ on a level straight road. The work done by the engine during the first half of the time interval ($0 \\le t \\le T/2$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{8} M V^2$" },
+        { "key": "B", "text": "$\\dfrac{1}{4} M V^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{2} M V^2$" },
+        { "key": "D", "text": "$\\dfrac{3}{8} M V^2$" }
+      ],
+      "correct": "A",
+      "solution": "Speed at $t = T/2$ is $v = \\frac{V}{2}$.<br>By Work-Energy Theorem: $$W = \\Delta K = \\frac{1}{2}M v^2 - 0 = \\frac{1}{2}M\\left(\\frac{V}{2}\\right)^2 = \\frac{1}{8} M V^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A pendulum bob of mass $m$ suspended by a light string of length $L$ is displaced through an angle $\\theta_0$ from the vertical and held. The work done by the external agent against gravity to displace it is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mg L \\sin\\theta_0$" },
+        { "key": "B", "text": "$mg L (1 - \\cos\\theta_0)$" },
+        { "key": "C", "text": "$mg L \\cos\\theta_0$" },
+        { "key": "D", "text": "$mg L (1 - \\sin\\theta_0)$" }
+      ],
+      "correct": "B",
+      "solution": "Vertical rise of the bob: $h = L - L\\cos\\theta_0 = L(1 - \\cos\\theta_0)$.<br>Work done against gravity: $W = mgh = mg L(1 - \\cos\\theta_0)$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m = 3\\text{ kg}$ is projected vertically upward with speed $u = 20\\text{ m/s}$. The work done by gravity during the time the body reaches its maximum height is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-600\\text{ J}$" },
+        { "key": "B", "text": "$+600\\text{ J}$" },
+        { "key": "C", "text": "$-300\\text{ J}$" },
+        { "key": "D", "text": "$+300\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Maximum height: $H = \\frac{u^2}{2g} = \\frac{400}{20} = 20\\text{ m}$.<br>2. Force is downward and displacement is upward ($\\theta = 180^\\circ$): $W_g = -mg H = -(3 \\times 10 \\times 20) = -600\\text{ J}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force $\\vec{F} = (2\\hat{i} - 3\\hat{j} + 4\\hat{k})\\text{ N}$ acts on a body moving with constant velocity $\\vec{v} = (3\\hat{i} + 2\\hat{j} + \\hat{k})\\text{ m/s}$. The rate of work done by the force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$16\\text{ W}$" },
+        { "key": "B", "text": "$4\\text{ W}$" },
+        { "key": "C", "text": "$10\\text{ W}$" },
+        { "key": "D", "text": "$0\\text{ W}$" }
+      ],
+      "correct": "B",
+      "solution": "$$P = \\vec{F} \\cdot \\vec{v} = (2)(3) + (-3)(2) + (4)(1) = 6 - 6 + 4 = 4\\text{ W}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A bucket filled with water of total mass $15\\text{ kg}$ is pulled up from a well of depth $20\\text{ m}$ with a uniform speed using a rope of linear mass density $\\lambda = 0.5\\text{ kg/m}$. The total work done against gravity in lifting the bucket and rope to the top is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3000\\text{ J}$" },
+        { "key": "B", "text": "$4000\\text{ J}$" },
+        { "key": "C", "text": "$3500\\text{ J}$" },
+        { "key": "D", "text": "$4500\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Work for bucket: $W_1 = M g H = 15 \\times 10 \\times 20 = 3000\\text{ J}$.<br>2. Work for rope (mass $M_r = 0.5 \\times 20 = 10\\text{ kg}$ lifted by $H/2$): $W_2 = M_r g \\frac{H}{2} = 10 \\times 10 \\times 10 = 1000\\text{ J}$.<br>3. Total work: $W = 3000 + 1000 = 4000\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A block of mass $m = 1\\text{ kg}$ is placed on the horizontal floor of an elevator ascending with an upward acceleration $a = 2\\text{ m/s}^2$. The work done by the normal reaction on the block when the elevator moves up a distance $h = 5\\text{ m}$ is ($g = 10\\text{ m/s}^2$):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ J}$" },
+        { "key": "B", "text": "$10\\text{ J}$" },
+        { "key": "C", "text": "$40\\text{ J}$" },
+        { "key": "D", "text": "$60\\text{ J}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Normal force: $N = m(g + a) = 1(10 + 2) = 12\\text{ N}$.<br>2. Work done: $W = N h = 12 \\times 5 = 60\\text{ J}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along the path $y = x^2$ from $(0, 0)$ to $(2\\text{ m}, 4\\text{ m})$ under the action of a constant force $\\vec{F} = (5\\hat{i} + 3\\hat{j})\\text{ N}$. The work done by this force along the parabolic trajectory is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$22\\text{ J}$" },
+        { "key": "B", "text": "$38\\text{ J}$" },
+        { "key": "C", "text": "$14\\text{ J}$" },
+        { "key": "D", "text": "$32\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "Because $\\vec{F}$ is constant, work done depends only on the displacement between initial and final points:<br>$$\\Delta\\vec{r} = (2\\hat{i} + 4\\hat{j})\\text{ m}$$<br>$$W = \\vec{F} \\cdot \\Delta\\vec{r} = (5)(2) + (3)(4) = 10 + 12 = 22\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

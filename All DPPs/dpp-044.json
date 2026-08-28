@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-044",
+    "title": "Elastic Collisions in One Dimension: Velocity Formulations, Energy Transfer & Successive Impacts",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Elastic Collisions in One Dimension JEE Main Physics DPP-044 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering 1D elastic collisions, post-collision velocity formulas, coefficient of restitution e=1, kinetic energy transfer fractions, moving wall impacts, and successive billiard ball collisions.",
+    "keywords": "JEE Main Physics, Elastic Collisions 1D DPP, Collision Velocity Formulas, Maximum Kinetic Energy Transfer, Moving Wall Collision, Coefficient of Restitution, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/elastic-collisions-in-one-dimension",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Conservation Laws & Kinematic Formulations in 1D Elastic Collisions",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Governing Principles: In a 1D perfectly elastic collision, both total linear momentum and total kinetic energy are conserved, giving a coefficient of restitution $e = \\frac{v_2 - v_1}{u_1 - u_2} = 1$. 2. Final Velocity Formulas: $v_1 = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)u_1 + \\left(\\frac{2m_2}{m_1 + m_2}\\right)u_2$ and $v_2 = \\left(\\frac{2m_1}{m_1 + m_2}\\right)u_1 + \\left(\\frac{m_2 - m_1}{m_1 + m_2}\\right)u_2$. 3. Special Cases: (a) $m_1 = m_2$: Bodies exchange their velocities completely ($v_1 = u_2, v_2 = u_1$). (b) Stationary Target ($u_2 = 0$): Maximum kinetic energy transfer occurs when $m_1 = m_2$, transferring $100\\%$ of energy. (c) Massive Target ($m_2 \\gg m_1, u_2 = 0$): $v_1 \\approx -u_1$ and $v_2 \\approx 0$. (d) Massive Projectile ($m_1 \\gg m_2, u_2 = 0$): $v_1 \\approx u_1$ and $v_2 \\approx 2u_1$. (e) Moving Wall ($M \\gg m$ approaching at speed $v$ towards ball at speed $u$): $v_{\\text{rebound}} = u + 2v$. 4. Maximum Deformation State: Occurs when relative velocity drops to zero ($v_{\\text{rel}} = 0$, both move at $v_{\\text{cm}}$), where stored internal deformation potential energy is $U_{\\text{max}} = \\frac{1}{2}\\left(\\frac{m_1 m_2}{m_1 + m_2}\\right)(u_1 - u_2)^2$.",
+    "keyFormula": "$$v_1 = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)u_1 + \\left(\\frac{2m_2}{m_1 + m_2}\\right)u_2, \\quad \\frac{\\Delta K_1}{K_1} = \\frac{4m_1 m_2}{(m_1 + m_2)^2}, \\quad v_{\\text{rebound, wall}} = u + 2v, \\quad e = 1$$",
+    "examTrap": "Remember that during the impact deformation, kinetic energy is NOT constant—it temporarily drops to a minimum at maximum compression (converted into elastic potential energy) before restoring back completely to its initial value after full restitution!"
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m_1$ moving with velocity $u_1$ undergoes a head-on perfectly elastic collision with a stationary particle of mass $m_2$ ($u_2 = 0$). The velocity $v_1$ of the first particle after the collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{m_1 - m_2}{m_1 + m_2}\\right)u_1$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2m_1}{m_1 + m_2}\\right)u_1$" },
+        { "key": "C", "text": "$\\left(\\dfrac{2m_2}{m_1 + m_2}\\right)u_1$" },
+        { "key": "D", "text": "$\\left(\\dfrac{m_2 - m_1}{m_1 + m_2}\\right)u_1$" }
+      ],
+      "correct": "A",
+      "solution": "From conservation of momentum and $e = 1$:<br>$$m_1 u_1 = m_1 v_1 + m_2 v_2 \\quad \\text{and} \\quad v_2 - v_1 = u_1$$<br>Substituting $v_2 = u_1 + v_1$ yields $v_1 = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)u_1$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Question 1, the velocity $v_2$ of the second target particle after the collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{m_1 - m_2}{m_1 + m_2}\\right)u_1$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2m_1}{m_1 + m_2}\\right)u_1$" },
+        { "key": "C", "text": "$\\left(\\dfrac{2m_2}{m_1 + m_2}\\right)u_1$" },
+        { "key": "D", "text": "$\\left(\\dfrac{m_1 + m_2}{2m_1}\right)u_1$" }
+      ],
+      "correct": "B",
+      "solution": "$$v_2 = u_1 + v_1 = u_1 + \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)u_1 = \\left(\\frac{2m_1}{m_1 + m_2}\\right)u_1$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two identical billiard balls $A$ and $B$ of equal mass $m$ collide head-on elastically. If $A$ was moving with velocity $+6\\text{ m/s}$ and $B$ was moving with velocity $-4\\text{ m/s}$ before the collision, their respective velocities after the collision are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+4\\text{ m/s}$ and $-6\\text{ m/s}$" },
+        { "key": "B", "text": "$-4\\text{ m/s}$ and $+6\\text{ m/s}$" },
+        { "key": "C", "text": "$+1\\text{ m/s}$ and $+1\\text{ m/s}$" },
+        { "key": "D", "text": "$0\\text{ m/s}$ and $+2\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "When two bodies of identical mass ($m_1 = m_2$) collide elastically in one dimension, they exchange their velocities completely: $v_A = u_B = -4\\text{ m/s}$ and $v_B = u_A = +6\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A moving ball of mass $m$ strikes a stationary target of mass $M$ head-on elastically. What is the mass ratio $M/m$ such that the maximum possible fraction ($100\\%$) of initial kinetic energy is transferred to the target?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$M/m = 2$" },
+        { "key": "B", "text": "$M/m = 0.5$" },
+        { "key": "C", "text": "$M/m = 1$" },
+        { "key": "D", "text": "$M/m \\to \\infty$" }
+      ],
+      "correct": "C",
+      "solution": "The fraction of kinetic energy transferred is $\\frac{4mM}{(m + M)^2}$. This attains its maximum value of $1$ when $m = M \\implies M/m = 1$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A neutron of mass $m$ moving with kinetic energy $K$ collides head-on elastically with a stationary carbon nucleus of mass $12m$. The fraction of the initial kinetic energy retained by the neutron is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{121}{169}$" },
+        { "key": "B", "text": "$\\dfrac{48}{169}$" },
+        { "key": "C", "text": "$\\dfrac{11}{13}$" },
+        { "key": "D", "text": "$\\dfrac{144}{169}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Post-collision velocity of neutron: $v_1 = \\left(\\frac{m - 12m}{m + 12m}\\right)u = -\\frac{11}{13}u$.<br>2. Energy fraction retained: $\\frac{K'}{K} = \\left(-\\frac{11}{13}\\right)^2 = \\frac{121}{169}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A heavy truck of mass $M = 2000\\text{ kg}$ moving at $v = 20\\text{ m/s}$ hits a small stationary rubber ball of mass $m = 0.1\\text{ kg}$ head-on elastically. The speed of the ball immediately after the collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$20\\text{ m/s}$" },
+        { "key": "B", "text": "$40\\text{ m/s}$" },
+        { "key": "C", "text": "$10\\text{ m/s}$" },
+        { "key": "D", "text": "$60\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "For $M \\gg m$ and $u_2 = 0$: $v_2 = \\left(\\frac{2M}{M + m}\\right)v \\approx 2v = 2(20) = 40\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A light ball of mass $m$ moving with speed $u$ hits a massive rigid wall of mass $M \\gg m$ moving towards it with speed $v$ head-on elastically. The rebound speed of the light ball relative to the ground is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$u + v$" },
+        { "key": "B", "text": "$u + 2v$" },
+        { "key": "C", "text": "$2u + v$" },
+        { "key": "D", "text": "$u - v$" }
+      ],
+      "correct": "B",
+      "solution": "Relative velocity of approach is $u_{\\text{rel}} = u - (-v) = u + v$. In an elastic collision ($e = 1$), relative velocity of separation equals approach:<br>$$v_{\\text{ball}} - v_{\\text{wall}} = u + v \\implies v_{\\text{ball}} = v + (u + v) = u + 2v$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a 1D elastic collision between two particles of masses $m_1$ and $m_2$, the coefficient of restitution $e$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$e = 0$" },
+        { "key": "B", "text": "$0 < e < 1$" },
+        { "key": "C", "text": "$e = 1$" },
+        { "key": "D", "text": "$e = \\infty$" }
+      ],
+      "correct": "C",
+      "solution": "A perfectly elastic collision is defined by $e = 1$ (velocity of separation equals velocity of approach).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Three identical spheres $A$, $B$, and $C$ of mass $m$ are placed in a line on a smooth horizontal surface. Spheres $B$ and $C$ are initially at rest and in contact with each other. Sphere $A$ strikes $B$ head-on with velocity $v$. After all possible elastic collisions cease:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$A$ and $B$ move together with speed $v/2$" },
+        { "key": "B", "text": "$A$ and $B$ come to rest, and $C$ moves with velocity $v$" },
+        { "key": "C", "text": "All three spheres move together with velocity $v/3$" },
+        { "key": "D", "text": "$A$ rebounds with $-v$, and $B, C$ move forward with $v/2$" }
+      ],
+      "correct": "B",
+      "solution": "Sphere $A$ transfers velocity $v$ to $B$ and stops. Sphere $B$ instantly transfers velocity $v$ to $C$ and stops. Final state: $A$ and $B$ are stationary, and $C$ moves with velocity $v$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m_1$ moving at speed $u_1$ collides elastically and head-on with a stationary body of mass $m_2$. The fractional loss in kinetic energy of the incident body ($\\Delta K / K_i$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{4m_1 m_2}{(m_1 + m_2)^2}$" },
+        { "key": "B", "text": "$\\dfrac{(m_1 - m_2)^2}{(m_1 + m_2)^2}$" },
+        { "key": "C", "text": "$\\dfrac{2m_1 m_2}{(m_1 + m_2)^2}$" },
+        { "key": "D", "text": "$\\dfrac{4(m_1 - m_2)^2}{(m_1 + m_2)^2}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{\\Delta K}{K_i} = 1 - \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)^2 = \\frac{4m_1 m_2}{(m_1 + m_2)^2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ moving with velocity $u$ strikes a stationary particle of mass $2m$ head-on elastically. After the collision, the ratio of the speed of mass $m$ to that of mass $2m$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 2$" },
+        { "key": "B", "text": "$2 : 1$" },
+        { "key": "C", "text": "$1 : 1$" },
+        { "key": "D", "text": "$1 : 4$" }
+      ],
+      "correct": "A",
+      "solution": "1. Speed of $m$: $|v_1| = \\left|\\frac{m - 2m}{m + 2m}\\right|u = \\frac{1}{3}u$.<br>2. Speed of $2m$: $v_2 = \\left(\\frac{2m}{m + 2m}\\right)u = \\frac{2}{3}u$.<br>3. Ratio: $\\frac{|v_1|}{v_2} = \\frac{1/3}{2/3} = 1 : 2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball of mass $m$ moving with speed $v_0$ collides elastically with a stationary spring-block system (mass $M$ attached to a spring of constant $k$). If $m = M$, the maximum compression of the spring is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v_0\\sqrt{\\dfrac{M}{k}}$" },
+        { "key": "B", "text": "$v_0\\sqrt{\\dfrac{M}{2k}}$" },
+        { "key": "C", "text": "$v_0\\sqrt{\\dfrac{2M}{k}}$" },
+        { "key": "D", "text": "$\\dfrac{v_0}{2}\\sqrt{\\dfrac{M}{k}}$" }
+      ],
+      "correct": "A",
+      "solution": "Since masses are equal ($m = M$), the incident ball stops dead, transferring its entire velocity $v_0$ to block $M$.<br>$$\\frac{1}{2}M v_0^2 = \\frac{1}{2}k x_{\\text{max}}^2 \\implies x_{\\text{max}} = v_0\\sqrt{\\frac{M}{k}}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In a one-dimensional elastic collision of two bodies, which of the following quantities is conserved during the entire deformation and restitution process at every instant?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Total kinetic energy only" },
+        { "key": "B", "text": "Total linear momentum and total mechanical energy" },
+        { "key": "C", "text": "Total kinetic energy and velocity of separation" },
+        { "key": "D", "text": "Individual momentum of each body" }
+      ],
+      "correct": "B",
+      "solution": "With no external forces, total linear momentum is conserved at all times. Total mechanical energy ($K + U_{\\text{deformation}}$) is also conserved throughout.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body $A$ of mass $M$ moving with velocity $V$ collides elastically with a stationary body $B$. If body $A$ rebounds with a velocity of $-V/3$, the mass of body $B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$M/2$" },
+        { "key": "B", "text": "$2M$" },
+        { "key": "C", "text": "$3M$" },
+        { "key": "D", "text": "$4M$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{M - M_B}{M + M_B} = -\\frac{1}{3} \\implies 3M - 3M_B = -M - M_B \\implies 4M = 2M_B \\implies M_B = 2M$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A ball $P$ of mass $m$ moving at $10\\text{ m/s}$ collides elastically with another stationary ball $Q$. After collision, $P$ continues moving in the forward direction with speed $2\\text{ m/s}$. The mass of ball $Q$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2}{3}m$" },
+        { "key": "B", "text": "$\\dfrac{3}{2}m$" },
+        { "key": "C", "text": "$4m$" },
+        { "key": "D", "text": "$0.5m$" }
+      ],
+      "correct": "A",
+      "solution": "$$v_P = \\left(\\frac{m - m_Q}{m + m_Q}\\right)(10) = 2 \\implies \\frac{m - m_Q}{m + m_Q} = \\frac{1}{5} \\implies 5m - 5m_Q = m + m_Q \\implies m_Q = \\frac{2}{3}m$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m_1$ moving with speed $u_1 = 5\\text{ m/s}$ collides head-on elastically with another particle of mass $m_2 = 3\\text{ kg}$ moving in the same direction with speed $u_2 = 2\\text{ m/s}$. If $m_1 = 1\\text{ kg}$, the velocity of $m_1$ after the collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+3.5\\text{ m/s}$" },
+        { "key": "B", "text": "$+0.5\\text{ m/s}$" },
+        { "key": "C", "text": "$-0.5\\text{ m/s}$" },
+        { "key": "D", "text": "$+2.0\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "$$v_1 = \\left(\\frac{1 - 3}{1 + 3}\\right)(5) + \\left(\\frac{2 \\times 3}{1 + 3}\\right)(2) = -2.5 + 3.0 = +0.5\\text{ m/s}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 16, the velocity of the $3\\text{ kg}$ particle after the collision is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+3.5\\text{ m/s}$" },
+        { "key": "B", "text": "$+4.0\\text{ m/s}$" },
+        { "key": "C", "text": "$+2.5\\text{ m/s}$" },
+        { "key": "D", "text": "$+1.5\\text{ m/s}$" }
+      ],
+      "correct": "A",
+      "solution": "$$v_2 = \\left(\\frac{2 \\times 1}{4}\\right)(5) + \\left(\\frac{3 - 1}{4}\\right)(2) = 2.5 + 1.0 = +3.5\\text{ m/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two masses $m$ and $M$ undergo a 1D elastic collision. At the instant of maximum deformation (maximum potential energy of deformation):",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The relative velocity between them is zero (both move at $v_{\\text{cm}}$)" },
+        { "key": "B", "text": "The total kinetic energy of the system is zero" },
+        { "key": "C", "text": "The kinetic energy equals the initial kinetic energy" },
+        { "key": "D", "text": "The acceleration of both bodies is zero" }
+      ],
+      "correct": "A",
+      "solution": "Maximum deformation occurs at closest approach, where relative velocity vanishes ($v_{\\text{rel}} = 0$) and both bodies move with common velocity $v_{\\text{cm}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 18, if mass $m$ was initially moving with velocity $u$ and $M$ was at rest, the maximum potential energy stored at the moment of maximum deformation is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\left(\\dfrac{M m}{M + m}\\right)u^2$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}m u^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\left(\\dfrac{m^2}{M + m}\\right)u^2$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}m u^2$" }
+      ],
+      "correct": "A",
+      "solution": "$$U_{\\text{max}} = K_i - K_{\\text{cm}} = \\frac{1}{2}mu^2 - \\frac{1}{2}(m + M)\\left(\\frac{mu}{m + M}\\right)^2 = \\frac{1}{2}\\left(\\frac{Mm}{m + M}\\right)u^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A ball of mass $m$ falls from height $h$ onto a smooth horizontal floor. If the collision is perfectly elastic ($e = 1$), the time period of the periodic bouncing motion is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{\\dfrac{2h}{g}}$" },
+        { "key": "B", "text": "$2\\sqrt{\\dfrac{2h}{g}}$" },
+        { "key": "C", "text": "$4\\sqrt{\\dfrac{2h}{g}}$" },
+        { "key": "D", "text": "$\\pi\\sqrt{\\dfrac{h}{g}}$" }
+      ],
+      "correct": "B",
+      "solution": "Time to fall is $t_1 = \\sqrt{\\frac{2h}{g}}$. Time to rise back is $t_2 = \\sqrt{\\frac{2h}{g}}$. Total period is $T = t_1 + t_2 = 2\\sqrt{\\frac{2h}{g}}$.<br>Therefore, Option <strong>B</strong> is correct."
+    }
+  ]
+}

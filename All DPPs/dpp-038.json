@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-038",
+    "title": "Potential Energy, Gravitational PE & Relation Between Force and PE",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Potential Energy and Force-PE Relation JEE Main Physics DPP-038 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering conservative forces, negative gradient of potential energy, stable/unstable/neutral equilibrium, Lennard-Jones potential, and gravitational potential energy.",
+    "keywords": "JEE Main Physics, Potential Energy DPP, Force and Potential Energy Gradient, Equilibrium Stability, Lennard-Jones Potential, Gravitational PE, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/potential-energy-force-relation",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Conservative Force Fields & Potential Energy Topography",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Force-PE Relationship: For any conservative force field, the force vector is the negative spatial gradient of its potential energy function: $\\vec{F} = -\\vec{\\nabla} U = -\\left(\\frac{\\partial U}{\\partial x}\\hat{i} + \\frac{\\partial U}{\\partial y}\\hat{j} + \\frac{\\partial U}{\\partial z}\\hat{k}\\right)$. 2. Equilibrium Classifications: Points where $F = -\\frac{dU}{dx} = 0$ represent equilibrium. (a) Stable Equilibrium: $\\frac{d^2 U}{dx^2} > 0$ ($U$ is at a local minimum). (b) Unstable Equilibrium: $\\frac{d^2 U}{dx^2} < 0$ ($U$ is at a local maximum). (c) Neutral Equilibrium: $\\frac{d^2 U}{dx^2} = 0$ ($U$ is constant locally). 3. Gravitational Potential Energy: Near Earth's surface, $U = mgh$ relative to a chosen datum. In celestial gravitational fields, $U(r) = -\\frac{GMm}{r}$ with $U(\\infty) = 0$. 4. Continuous Mass Potential Energy: The gravitational potential energy of a distributed body (e.g., hanging chain, vertical rod) is evaluated at its center of mass: $U = M g y_{\\text{cm}}$.",
+    "keyFormula": "$$\\vec{F} = -\\vec{\\nabla} U, \\quad F_x = -\\frac{\\partial U}{\\partial x}, \\quad U(r) = -\\frac{GMm}{r}, \\quad U_{\\text{chain}} = -\\frac{Mgy^2}{2L}, \\quad k_{\\text{eff}} = \\left.\\frac{d^2 U}{dx^2}\\right|_{x_0}$$",
+    "examTrap": "Remember that a potential energy function $U(\\vec{r})$ exists ONLY for conservative forces (where $\\vec{\\nabla} \\times \\vec{F} = \\vec{0}$). If a force has a non-zero curl (e.g., $\\vec{F} = y\\hat{i} - x\\hat{j}$), it is non-conservative and no potential energy function can be defined."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The potential energy of a particle in a one-dimensional conservative force field is given by $U(x) = (2x^3 - 9x^2 + 12x)\\text{ J}$, where $x$ is in meters. The positions of stable and unstable equilibrium are respectively:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$x = 1\\text{ m}$ and $x = 2\\text{ m}$" },
+        { "key": "B", "text": "$x = 2\\text{ m}$ and $x = 1\\text{ m}$" },
+        { "key": "C", "text": "$x = 3\\text{ m}$ and $x = 0\\text{ m}$" },
+        { "key": "D", "text": "$x = 0\\text{ m}$ and $x = 3\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Equilibrium condition: $\\frac{dU}{dx} = 6x^2 - 18x + 12 = 0 \\implies (x-1)(x-2) = 0 \\implies x = 1, 2\\text{ m}$.<br>2. Second derivative: $\\frac{d^2 U}{dx^2} = 12x - 18$.<br>- At $x = 1\\text{ m}$: $\\frac{d^2 U}{dx^2} = -6 < 0$ (Unstable equilibrium).<br>- At $x = 2\\text{ m}$: $\\frac{d^2 U}{dx^2} = +6 > 0$ (Stable equilibrium).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The potential energy function for a two-dimensional force field is $U(x, y) = (3x^2 y - 4y^3)\\text{ J}$. The force vector $\\vec{F}$ acting on a particle at the point $(1\\text{ m}, 1\\text{ m})$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(-6\\hat{i} + 9\\hat{j})\\text{ N}$" },
+        { "key": "B", "text": "$(6\\hat{i} - 9\\hat{j})\\text{ N}$" },
+        { "key": "C", "text": "$(-6\\hat{i} - 9\\hat{j})\\text{ N}$" },
+        { "key": "D", "text": "$(9\\hat{i} - 6\\hat{j})\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $F_x = -\\frac{\\partial U}{\\partial x} = -6xy$. At $(1,1)$, $F_x = -6\\text{ N}$.<br>2. $F_y = -\\frac{\\partial U}{\\partial y} = -(3x^2 - 12y^2)$. At $(1,1)$, $F_y = -(3 - 12) = +9\\text{ N}$.<br>3. Force vector: $\\vec{F} = (-6\\hat{i} + 9\\hat{j})\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform chain of mass $M$ and length $L$ is held on a smooth horizontal table such that a length $y$ hangs vertically over the edge. Taking the tabletop as the reference level ($U = 0$), the gravitational potential energy of the chain is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\dfrac{Mgy^2}{2L}$" },
+        { "key": "B", "text": "$-\\dfrac{Mgy}{L}$" },
+        { "key": "C", "text": "$+\\dfrac{Mgy^2}{2L}$" },
+        { "key": "D", "text": "$-\\dfrac{Mg(L-y)^2}{2L}$" }
+      ],
+      "correct": "A",
+      "solution": "Mass of the hanging section is $m_h = \\frac{M}{L}y$. Its center of mass is located at depth $y_{\\text{cm}} = -\\frac{y}{2}$ below the tabletop datum.<br>$$U = m_h g y_{\\text{cm}} = \\left(\\frac{M}{L}y\\right)g\\left(-\\frac{y}{2}\\right) = -\\frac{Mgy^2}{2L}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A conservative force $\\vec{F} = -\\dfrac{k}{r^2}\\hat{r}$ acts on a particle. If the potential energy is chosen to be zero at infinity ($U(\\infty) = 0$), the potential energy at distance $r$ from the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+\\dfrac{k}{r}$" },
+        { "key": "B", "text": "$-\\dfrac{k}{2r^2}$" },
+        { "key": "C", "text": "$-\\dfrac{k}{r}$" },
+        { "key": "D", "text": "$+\\dfrac{k}{2r}$" }
+      ],
+      "correct": "C",
+      "solution": "$$U(r) - U(\\infty) = -\\int_\\infty^r \\vec{F} \\cdot d\\vec{r} = -\\int_\\infty^r \\left(-\\frac{k}{r^2}\\right)dr = k\\left[ -\\frac{1}{r} \\right]_\\infty^r = -\\frac{k}{r}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A spherical solid planet of mass $M$ and radius $R$ creates a gravitational potential energy field for an external particle of mass $m$. The work done by gravity in moving the particle from $r = R$ to $r = 3R$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\dfrac{2GMm}{3R}$" },
+        { "key": "B", "text": "$+\\dfrac{2GMm}{3R}$" },
+        { "key": "C", "text": "$+\\dfrac{GMm}{3R}$" },
+        { "key": "D", "text": "$-\\dfrac{GMm}{3R}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W_g = -\\Delta U = -[U(3R) - U(R)] = -\\left[-\\frac{GMm}{3R} - \\left(-\\frac{GMm}{R}\\right)\\right] = -\\frac{2GMm}{3R}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The potential energy of a diatomic molecule as a function of the interatomic distance $r$ is given by $U(r) = \\dfrac{A}{r^{12}} - \\dfrac{B}{r^6}$ ($A, B > 0$). The equilibrium bond length $r_0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(\\dfrac{A}{B}\\right)^{1/6}$" },
+        { "key": "B", "text": "$\\left(\\dfrac{2A}{B}\\right)^{1/6}$" },
+        { "key": "C", "text": "$\\left(\\dfrac{B}{2A}\\right)^{1/6}$" },
+        { "key": "D", "text": "$\\left(\\dfrac{A}{2B}\\right)^{1/6}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{dU}{dr} = -\\frac{12A}{r^{13}} + \\frac{6B}{r^7} = 0 \\implies \\frac{12A}{r^6} = 6B \\implies r_0 = \\left(\\frac{2A}{B}\\right)^{1/6}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Question 6, the dissociation energy (binding energy) of the diatomic molecule is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{B^2}{4A}$" },
+        { "key": "B", "text": "$\\dfrac{B^2}{2A}$" },
+        { "key": "C", "text": "$\\dfrac{A^2}{4B}$" },
+        { "key": "D", "text": "$\\dfrac{B^2}{8A}$" }
+      ],
+      "correct": "A",
+      "solution": "Substitute $r_0^6 = \\frac{2A}{B}$ into $U(r)$:<br>$$U(r_0) = \\frac{A}{(2A/B)^2} - \\frac{B}{(2A/B)} = \\frac{B^2}{4A} - \\frac{B^2}{2A} = -\\frac{B^2}{4A}$$<br>Dissociation energy: $D = U(\\infty) - U(r_0) = 0 - \\left(-\\frac{B^2}{4A}\\right) = \\frac{B^2}{4A}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The relation between a conservative force $\\vec{F}$ and its potential energy $U$ in vector form is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{F} = \\vec{\\nabla} U$" },
+        { "key": "B", "text": "$\\vec{F} = -\\vec{\\nabla} U$" },
+        { "key": "C", "text": "$\\vec{F} = \\vec{\\nabla} \\times U$" },
+        { "key": "D", "text": "$U = -\\vec{\\nabla} \\cdot \\vec{F}$" }
+      ],
+      "correct": "B",
+      "solution": "A conservative force is identically the negative spatial gradient of its potential energy function: $\\vec{F} = -\\vec{\\nabla} U$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m = 1\\text{ kg}$ is constrained to move along the $x$-axis in a potential field $U(x) = (x^2 - 4x + 7)\\text{ J}$. If the total mechanical energy of the particle is $E = 12\\text{ J}$, the maximum speed of the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.0\\text{ m/s}$" },
+        { "key": "B", "text": "$4.24\\text{ m/s}$" },
+        { "key": "C", "text": "$5.0\\text{ m/s}$" },
+        { "key": "D", "text": "$2.0\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Minimum potential energy occurs at $x = 2\\text{ m}$: $U_{\\text{min}} = 2^2 - 4(2) + 7 = 3\\text{ J}$.<br>2. Maximum kinetic energy: $K_{\\text{max}} = E - U_{\\text{min}} = 12 - 3 = 9\\text{ J}$.<br>3. Speed: $\\frac{1}{2}(1)v_{\\text{max}}^2 = 9 \\implies v_{\\text{max}} = \\sqrt{18} \\approx 4.24\\text{ m/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An elastic sphere of mass $m$ is compressed between two fingers so that its potential energy increases by $\\Delta U$. If this system is placed in an elevator accelerating upward at $a$, the change in its internal elastic potential energy:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Increases by $m(g+a)h$" },
+        { "key": "B", "text": "Remains completely unchanged ($\\Delta U$)" },
+        { "key": "C", "text": "Decreases by $\\frac{1}{2}ma^2$" },
+        { "key": "D", "text": "Becomes zero" }
+      ],
+      "correct": "B",
+      "solution": "Internal elastic potential energy depends strictly on the mutual relative displacements of the constituent molecules/atoms, making it independent of overall frame acceleration.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the potential energy function of a particle is $U(x) = \\alpha x^4$ ($\\alpha > 0$), the nature of equilibrium at $x = 0$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Unstable equilibrium" },
+        { "key": "B", "text": "Neutral equilibrium" },
+        { "key": "C", "text": "Stable equilibrium" },
+        { "key": "D", "text": "Not an equilibrium point" }
+      ],
+      "correct": "C",
+      "solution": "Force $F = -\\frac{dU}{dx} = -4\\alpha x^3$. For any positive displacement ($x > 0$), $F < 0$ (directed towards $x = 0$), and for $x < 0$, $F > 0$ (directed towards $x = 0$). Since the force is restoring for all displacements, $x = 0$ is a stable equilibrium.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in a force field where $U(x, y, z) = (2x + 3y - z)\\text{ J}$. The magnitude of the force acting on the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\sqrt{14}\\text{ N}$" },
+        { "key": "B", "text": "$6\\text{ N}$" },
+        { "key": "C", "text": "$14\\text{ N}$" },
+        { "key": "D", "text": "$4\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{F} = -\\vec{\\nabla} U = -(2\\hat{i} + 3\\hat{j} - \\hat{k})\\text{ N} \\implies |\\vec{F}| = \\sqrt{2^2 + 3^2 + (-1)^2} = \\sqrt{14}\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A uniform rod of mass $M$ and length $L$ initially lying flat on the ground is tilted upright until it stands vertically. The change in gravitational potential energy of the rod is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$MgL$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}MgL$" },
+        { "key": "C", "text": "$\\dfrac{1}{3}MgL$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}MgL$" }
+      ],
+      "correct": "B",
+      "solution": "Initial height of center of mass: $y_i = 0$. Final height of center of mass: $y_f = L/2$.<br>$$\\Delta U = Mg(y_f - y_i) = \\frac{1}{2}MgL$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body moves in the $xy$-plane subject to a force $\\vec{F} = (2xy\\hat{i} + x^2\\hat{j})\\text{ N}$. The corresponding potential energy function $U(x, y)$ (taking $U(0,0)=0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+x^2 y$" },
+        { "key": "B", "text": "$-x^2 y$" },
+        { "key": "C", "text": "$-2x^2 y$" },
+        { "key": "D", "text": "$+2xy^2$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\frac{\\partial U}{\\partial x} = -2xy, \\quad \\frac{\\partial U}{\\partial y} = -x^2 \\implies dU = -d(x^2 y) \\implies U(x, y) = -x^2 y$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A particle of mass $m$ is displaced along the $x$-axis in a potential $U(x) = U_0(1 - \\cos kx)$. For very small oscillations near $x = 0$, the time period of oscillation is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2\\pi\\sqrt{\\dfrac{m}{U_0 k^2}}$" },
+        { "key": "B", "text": "$2\\pi\\sqrt{\\dfrac{m}{U_0 k}}$" },
+        { "key": "C", "text": "$2\\pi\\sqrt{\\dfrac{U_0}{m k^2}}$" },
+        { "key": "D", "text": "$\\dfrac{2\\pi}{k}\\sqrt{\\dfrac{m}{U_0}}$" }
+      ],
+      "correct": "A",
+      "solution": "Taylor series for small $x$: $U(x) \\approx U_0\\left[1 - \\left(1 - \\frac{k^2 x^2}{2}\\right)\\right] = \\frac{1}{2}(U_0 k^2)x^2$.<br>Comparing with $U = \\frac{1}{2}k_{\\text{eff}}x^2 \\implies k_{\\text{eff}} = U_0 k^2 \\implies T = 2\\pi\\sqrt{\\frac{m}{U_0 k^2}}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force field is given by $\\vec{F} = (y\\hat{i} - x\\hat{j})\\text{ N}$. Is this force conservative, and does a potential energy function exist?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Yes, conservative; $U = -xy$" },
+        { "key": "B", "text": "No, non-conservative; no scalar potential energy function exists" },
+        { "key": "C", "text": "Yes, conservative; $U = \\frac{1}{2}(x^2 + y^2)$" },
+        { "key": "D", "text": "Yes, conservative; $U = \\frac{1}{2}(y^2 - x^2)$" }
+      ],
+      "correct": "B",
+      "solution": "Curl check: $\\vec{\\nabla} \\times \\vec{F} = \\left(\\frac{\\partial F_y}{\\partial x} - \\frac{\\partial F_x}{\\partial y}\\right)\\hat{k} = (-1 - 1)\\hat{k} = -2\\hat{k} \\ne \\vec{0}$. Because the curl is non-zero, the force is non-conservative and no potential energy function exists.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m$ is raised from the surface of Earth (mass $M_E$, radius $R_E$) to an altitude $h = R_E$. The gain in gravitational potential energy is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$mgh$" },
+        { "key": "B", "text": "$\\dfrac{1}{2}mgR_E$" },
+        { "key": "C", "text": "$2mgR_E$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}mgR_E$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\Delta U = U(2R_E) - U(R_E) = -\\frac{GM_E m}{2R_E} - \\left(-\\frac{GM_E m}{R_E}\\right) = \\frac{GM_E m}{2R_E} = \\frac{1}{2}mgR_E$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The potential energy of a particle is given by $U(r) = \\alpha r^3$ ($\\alpha > 0$). The force $\\vec{F}$ acting on the particle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-3\\alpha r^2 \\hat{r}$" },
+        { "key": "B", "text": "$+3\\alpha r^2 \\hat{r}$" },
+        { "key": "C", "text": "$-\\alpha r^2 \\hat{r}$" },
+        { "key": "D", "text": "$-3\\alpha r \\hat{r}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{F} = -\\frac{dU}{dr}\\hat{r} = -\\frac{d}{dr}(\\alpha r^3)\\hat{r} = -3\\alpha r^2 \\hat{r}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The potential energy curve of a particle shows a local maximum at position $x = x_0$. If the particle is placed at $x = x_0$ with zero velocity, then:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{dU}{dx} = 0$ and $\\dfrac{d^2 U}{dx^2} > 0$ (Stable equilibrium)" },
+        { "key": "B", "text": "$\\dfrac{dU}{dx} = 0$ and $\\dfrac{d^2 U}{dx^2} < 0$ (Unstable equilibrium)" },
+        { "key": "C", "text": "$\\dfrac{dU}{dx} \\ne 0$ (Non-equilibrium)" },
+        { "key": "D", "text": "$\\dfrac{dU}{dx} = 0$ and $\\dfrac{d^2 U}{dx^2} = 0$ (Neutral equilibrium)" }
+      ],
+      "correct": "B",
+      "solution": "At a local maximum of $U(x)$: $\\frac{dU}{dx} = 0$ (zero net force, equilibrium) and $\\frac{d^2 U}{dx^2} < 0$ (maximum potential energy, unstable equilibrium).<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A heavy rope of mass $M$ and length $L$ hangs vertically from a rigid ceiling. The gravitational potential energy of the rope relative to the ceiling ($U = 0$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-\\dfrac{1}{2}MgL$" },
+        { "key": "B", "text": "$-MgL$" },
+        { "key": "C", "text": "$+\\dfrac{1}{2}MgL$" },
+        { "key": "D", "text": "$-\\dfrac{1}{3}MgL$" }
+      ],
+      "correct": "A",
+      "solution": "The center of mass of the hanging rope is at $y_{\\text{cm}} = -\\frac{L}{2}$ below the ceiling reference datum.<br>$$U = M g y_{\\text{cm}} = M g\\left(-\\frac{L}{2}\\right) = -\\frac{1}{2}MgL$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-051",
+    "title": "Moment of a Force; Torque — Definition & Calculation",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "System of Particles and Rotational Motion"
+  },
+  "seo": {
+    "title": "Moment of Force and Torque JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions on torque definition, vector cross product, lever arm calculations, couple dynamics, projectile gravity torque, rotational equilibrium, and principle of moments.",
+    "keywords": "JEE Main Physics, Torque DPP, Moment of Force, Vector Cross Product, Rotational Equilibrium, Couple Torque, Principle of Moments, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/moment-of-force-torque-calculation",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Moment of a Force (Torque) & Equilibrium",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Definition: Torque (moment of a force) about a reference point $O$ is defined as $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$, where $\\vec{r}$ is the position vector of the point of application of force relative to $O$. 2. Magnitude & Lever Arm: $|\\vec{\\tau}| = r F \\sin\\theta = F \\cdot r_\\perp = r \\cdot F_\\perp$, where $r_\\perp$ is the perpendicular distance (lever arm) from the pivot to the line of action of the force. 3. Couple: Two equal, opposite, and non-collinear parallel forces form a couple whose torque is independent of the reference origin: $\\tau = F \\cdot d_\\perp$. 4. Principle of Moments: For rotational equilibrium of a rigid body, $\\sum \\vec{\\tau}_{\\text{ext}} = \\vec{0}$ (sum of clockwise moments equals sum of counter-clockwise moments). 5. Conservation Link: $\\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt}$; if $\\vec{\\tau}_{\\text{ext}} = \\vec{0}$, angular momentum $\\vec{L}$ remains strictly conserved.",
+    "keyFormula": "$$\\vec{\\tau} = \\vec{r} \\times \\vec{F}, \\quad \\tau = F r_\\perp, \\quad \\vec{\\tau}_{\\text{net}} = \\sum \\vec{\\tau}_i = \\vec{0}, \\quad [\\tau] = [\\text{M L}^2 \\text{T}^{-2}]$$",
+    "examTrap": "Torque is always defined relative to a specific reference point or axis. The cross product order $\\vec{r} \\times \\vec{F}$ is crucial; writing $\\vec{F} \\times \\vec{r}$ yields the opposite vector direction ($-\\vec{\\tau}$). Additionally, remember that internal forces between particles in a rigid body exert zero net internal torque."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force $\\vec{F} = (2\\hat{i} - 3\\hat{j} + 4\\hat{k})\\text{ N}$ acts at a point whose position vector is $\\vec{r} = (3\\hat{i} + 2\\hat{j} + 3\\hat{k})\\text{ m}$. The torque $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$ about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$(17\\hat{i} - 6\\hat{j} - 13\\hat{k})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$(17\\hat{i} + 6\\hat{j} - 13\\hat{k})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$(-17\\hat{i} + 6\\hat{j} + 13\\hat{k})\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$(13\\hat{i} - 6\\hat{j} - 17\\hat{k})\\text{ N}\\cdot\\text{m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & 2 & 3 \\\\ 2 & -3 & 4 \\end{vmatrix} = \\hat{i}(8 - (-9)) - \\hat{j}(12 - 6) + \\hat{k}(-9 - 4) = 17\\hat{i} - 6\\hat{j} - 13\\hat{k}\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is projected with speed $u$ at an angle $\theta$ to the horizontal from the origin $(0, 0)$. The magnitude of torque of the gravitational force on the projectile about the launch point when it reaches its maximum height is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m u^2 \\sin\\theta$" },
+        { "key": "B", "text": "$\\dfrac{m u^2 \\sin 2\\theta}{4}$" },
+        { "key": "C", "text": "$\\dfrac{m u^2 \\sin 2\\theta}{2}$" },
+        { "key": "D", "text": "$\\dfrac{m u^2 \\sin^2\\theta}{2}$" }
+      ],
+      "correct": "C",
+      "solution": "At maximum height, the horizontal position is $x = \\frac{R}{2} = \\frac{u^2 \\sin 2\\theta}{2g}$.<br>The perpendicular distance from the launch point to the line of action of gravity ($F_g = mg$) is $r_\\perp = x$.<br>$$\\tau = F_g \\cdot x = (mg)\\left(\\frac{u^2 \\sin 2\\theta}{2g}\\right) = \\frac{m u^2 \\sin 2\\theta}{2}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The torque $\\vec{\\tau}$ acting on a body about a reference point $O$ is always:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Parallel to both $\\vec{r}$ and $\\vec{F}$" },
+        { "key": "B", "text": "In the plane containing $\\vec{r}$ and $\\vec{F}$" },
+        { "key": "C", "text": "Perpendicular to both $\\vec{r}$ and $\\vec{F}$" },
+        { "key": "D", "text": "In the direction of $\\vec{F}$" }
+      ],
+      "correct": "C",
+      "solution": "By the definition of the vector cross product, $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$ is perpendicular to both the position vector $\\vec{r}$ and the force vector $\\vec{F}$ ($\\vec{\\tau} \\cdot \\vec{r} = 0$, $\\vec{\\tau} \\cdot \\vec{F} = 0$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A uniform rod $AB$ of length $L = 2\\text{ m}$ is hinged at end $A$. A force $F = 50\\text{ N}$ acts at end $B$ making an angle of $30^\\circ$ with the rod. The magnitude of the torque exerted by this force about the hinge $A$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\sqrt{3}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$50\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$100\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$25\\text{ N}\\cdot\\text{m}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\tau = r F \\sin\\phi = (2\\text{ m})(50\\text{ N})\\sin 30^\\circ = 100 \\times \\frac{1}{2} = 50\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in the $xy$-plane along the straight line $y = 4\\text{ m}$ with a constant velocity $\\vec{v} = (5\\hat{i})\\text{ m/s}$. If the mass of the particle is $m = 2\\text{ kg}$ and a constant force $\\vec{F} = (6\\hat{i})\\text{ N}$ acts on it, the torque of the force about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+24\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$-24\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$-12\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "B",
+      "solution": "Position vector is $\\vec{r} = x\\hat{i} + 4\\hat{j}\\text{ m}$. Force is $\\vec{F} = 6\\hat{i}\\text{ N}$.<br>$$\\vec{\\tau} = \\vec{r} \\times \\vec{F} = (x\\hat{i} + 4\\hat{j}) \\times (6\\hat{i}) = 24(\\hat{j} \\times \\hat{i}) = -24\\hat{k}\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force $\\vec{F} = (a\\hat{i} + 3\\hat{j} + 6\\hat{k})\\text{ N}$ acts at a point $\\vec{r} = (2\\hat{i} - 6\\hat{j} - 12\\hat{k})\\text{ m}$. The value of constant $a$ for which the torque about the origin is strictly zero is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1$" },
+        { "key": "B", "text": "$-2$" },
+        { "key": "C", "text": "$2$" },
+        { "key": "D", "text": "$-1$" }
+      ],
+      "correct": "D",
+      "solution": "For $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$, the vectors $\\vec{r}$ and $\\vec{F}$ must be collinear:<br>$$\\frac{2}{a} = \\frac{-6}{3} = \\frac{-12}{6} = -2 \\implies a = -1$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two equal and opposite parallel forces of magnitude $F = 20\\text{ N}$ act on the rim of a circular steering wheel of radius $R = 0.25\\text{ m}$ to form a couple. The torque of this couple about any arbitrary point in the plane of the wheel is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$10\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$2.5\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "B",
+      "solution": "The torque of a couple is independent of the reference origin and equals the force times perpendicular separation:<br>$$\\tau = F(2R) = 20 \\times (2 \\times 0.25) = 20 \\times 0.5 = 10\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force $\\vec{F} = 4\\hat{i} + 5\\hat{j}\\text{ N}$ acts on a particle located at point $P(2, 3)\text{ m}$. The torque of this force about the point $Q(1, 1)\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$+3\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$+13\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$-3\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$-13\\hat{k}\\text{ N}\\cdot\\text{m}$" }
+      ],
+      "correct": "C",
+      "solution": "Position vector of $P$ relative to $Q$: $\\vec{r}_{P/Q} = (2 - 1)\\hat{i} + (3 - 1)\\hat{j} = \\hat{i} + 2\\hat{j}\\text{ m}$.<br>$$\\vec{\\tau} = \\vec{r}_{P/Q} \\times \\vec{F} = (\\hat{i} + 2\\hat{j}) \\times (4\\hat{i} + 5\\hat{j}) = (5 - 8)\\hat{k} = -3\\hat{k}\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform meter stick of mass $M = 0.6\\text{ kg}$ is balanced horizontally on a knife-edge placed at the $40\\text{ cm}$ mark when a mass $m$ is suspended at the $10\\text{ cm}$ mark. The value of mass $m$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.3\\text{ kg}$" },
+        { "key": "B", "text": "$0.4\\text{ kg}$" },
+        { "key": "C", "text": "$0.2\\text{ kg}$" },
+        { "key": "D", "text": "$0.15\\text{ kg}$" }
+      ],
+      "correct": "C",
+      "solution": "Meter stick weight acts at $50\\text{ cm}$ (lever arm $= 50 - 40 = 10\\text{ cm}$).<br>Suspended mass $m$ is at $10\\text{ cm}$ (lever arm $= 40 - 10 = 30\\text{ cm}$).<br>Torque equilibrium: $$m g (30) = M g (10) \\implies m = \\frac{0.6 \\times 10}{30} = 0.2\\text{ kg}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is dropped from rest from a height $h$ at horizontal distance $d$ from the origin. The magnitude of torque of the gravitational force about the origin as a function of time $t$ until it lands is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$m g d t$" },
+        { "key": "B", "text": "$\\dfrac{1}{2} m g d t^2$" },
+        { "key": "C", "text": "$m g (h - \\frac{1}{2}gt^2)$" },
+        { "key": "D", "text": "$m g d$" }
+      ],
+      "correct": "D",
+      "solution": "The vertical line of action of gravity ($F = mg$) remains at a constant perpendicular distance $d$ from the origin throughout the fall: $$\\tau = F \\cdot r_\\perp = m g d$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A solid circular disc of radius $R = 0.5\\text{ m}$ has three tangential forces acting along its rim: $F_1 = 10\\text{ N}$ (clockwise), $F_2 = 25\\text{ N}$ (counter-clockwise), and $F_3 = 5\\text{ N}$ (clockwise). The net torque acting on the disc about its central axle is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10.0\\text{ N}\\cdot\\text{m}\\text{ clockwise}$" },
+        { "key": "B", "text": "$5.0\\text{ N}\\cdot\\text{m}\\text{ counter-clockwise}$" },
+        { "key": "C", "text": "$2.5\\text{ N}\\cdot\\text{m}\\text{ counter-clockwise}$" },
+        { "key": "D", "text": "$7.5\\text{ N}\\cdot\\text{m}\\text{ clockwise}$" }
+      ],
+      "correct": "B",
+      "solution": "$$\\tau_{\\text{net}} = (F_2 - F_1 - F_3)R = (25 - 10 - 5)(0.5) = (10)(0.5) = 5.0\\text{ N}\\cdot\\text{m}\\text{ (counter-clockwise)}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The physical dimensions of torque are identical to the physical dimensions of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Power" },
+        { "key": "B", "text": "Work / Energy" },
+        { "key": "C", "text": "Angular momentum" },
+        { "key": "D", "text": "Linear momentum" }
+      ],
+      "correct": "B",
+      "solution": "$$[\\tau] = [r][F] = [\\text{L}][\\text{M L T}^{-2}] = [\\text{M L}^2 \\text{T}^{-2}]$$<br>This matches the dimensional formula for work and energy.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A rectangular plate of sides $a = 0.4\\text{ m}$ and $b = 0.3\\text{ m}$ lies in the $xy$-plane with one corner at the origin. A force $\\vec{F} = (10\\hat{i} + 20\\hat{j})\\text{ N}$ is applied at the opposite diagonal corner $(a, b)$. The torque of this force about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-5.0\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$+11.0\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$+8.0\\hat{k}\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$+5.0\\hat{k}\\text{ N}\\cdot\\text{m}$" }
+      ],
+      "correct": "D",
+      "solution": "$$\\vec{\\tau} = (0.4\\hat{i} + 0.3\\hat{j}) \\times (10\\hat{i} + 20\\hat{j}) = (0.4 \\times 20 - 0.3 \\times 10)\\hat{k} = (8 - 3)\\hat{k} = +5.0\\hat{k}\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A light horizontal rod $AB$ of length $L$ is pivoted at end $A$. Two forces $F_1$ and $F_2$ act perpendicularly to the rod at distances $L/3$ and $L$ respectively from $A$ in opposite senses. For rotational equilibrium ($\\tau_{\\text{net}} = 0$), the ratio $F_1 / F_2$ must be:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1 : 3$" },
+        { "key": "B", "text": "$2 : 3$" },
+        { "key": "C", "text": "$1 : 1$" },
+        { "key": "D", "text": "$3 : 1$" }
+      ],
+      "correct": "D",
+      "solution": "$$F_1\\left(\\frac{L}{3}\\right) - F_2(L) = 0 \\implies \\frac{F_1}{3} = F_2 \\implies \\frac{F_1}{F_2} = \\frac{3}{1}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If the net torque acting on a system of particles about a point is zero ($\\vec{\\tau}_{\\text{ext}} = \\vec{0}$), which of the following physical quantities must remain conserved about that point?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum" },
+        { "key": "B", "text": "Total mechanical energy" },
+        { "key": "C", "text": "Angular momentum" },
+        { "key": "D", "text": "Total kinetic energy" }
+      ],
+      "correct": "C",
+      "solution": "From Newton's rotational second law, $\\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt}$. When $\\vec{\\tau}_{\\text{ext}} = \\vec{0}$, total angular momentum $\\vec{L}$ is conserved.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform square lamina $ABCD$ of side length $a = 1\\text{ m}$ is acted upon by forces $10\\text{ N}, 20\\text{ N}, 30\\text{ N},$ and $40\\text{ N}$ along the sides $AB, BC, CD,$ and $DA$ respectively in cyclic order. The magnitude of the net torque about the intersection of the diagonals is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ N}\\cdot\\text{m}$" },
+        { "key": "B", "text": "$100\\text{ N}\\cdot\\text{m}$" },
+        { "key": "C", "text": "$25\\text{ N}\\cdot\\text{m}$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "A",
+      "solution": "Perpendicular lever arm distance from center to all sides is $r_\\perp = a/2 = 0.5\\text{ m}$.<br>$$\\tau_{\\text{net}} = (10 + 20 + 30 + 40)(0.5) = (100)(0.5) = 50\\text{ N}\\cdot\\text{m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A heavy door of width $W = 1.2\\text{ m}$ is pushed with a force $F = 40\\text{ N}$ applied at the outer handle perpendicular to the door surface. If the same torque is to be produced by pushing at a point $0.3\\text{ m}$ from the hinges, the required perpendicular force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$160\\text{ N}$" },
+        { "key": "B", "text": "$120\\text{ N}$" },
+        { "key": "C", "text": "$80\\text{ N}$" },
+        { "key": "D", "text": "$48\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\tau = F_1 W = 40 \\times 1.2 = 48\\text{ N}\\cdot\\text{m} \\implies F_2 = \\frac{\\tau}{d} = \\frac{48}{0.3} = 160\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force $\\vec{F} = (2\\hat{i} + 3\\hat{j})\\text{ N}$ acts along the line $3x - 2y = 6$. The perpendicular lever arm distance $r_\\perp$ of the line of action of the force from the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{6}{\\sqrt{13}}\\text{ m}$" },
+        { "key": "B", "text": "$\\dfrac{6}{5}\\text{ m}$" },
+        { "key": "C", "text": "$\\sqrt{13}\\text{ m}$" },
+        { "key": "D", "text": "$\\dfrac{3}{\\sqrt{13}}\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "$$r_\\perp = \\frac{|3(0) - 2(0) - 6|}{\\sqrt{3^2 + (-2)^2}} = \\frac{6}{\\sqrt{13}}\\text{ m}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Under which of the following conditions is the moment of a force (torque) about an axis strictly ZERO?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The line of action of the force intersects the axis of rotation" },
+        { "key": "B", "text": "The line of action of the force is parallel to the axis of rotation" },
+        { "key": "C", "text": "The magnitude of the force is zero" },
+        { "key": "D", "text": "All of the above" }
+      ],
+      "correct": "D",
+      "solution": "Torque about an axis vanishes when $F = 0$, when the force intersects the axis ($r_\\perp = 0$), or when the force is parallel to the axis.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is executing uniform circular motion of radius $R$ with constant angular speed $\omega$ in the $xy$-plane centered at the origin. The net torque acting on the particle about the origin is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{0}$" },
+        { "key": "B", "text": "$m R^2 \\omega^2\\hat{k}$" },
+        { "key": "C", "text": "$m R \\omega^2\\hat{k}$" },
+        { "key": "D", "text": "$\\dfrac{1}{2}m R^2 \\omega^2\\hat{k}$" }
+      ],
+      "correct": "A",
+      "solution": "Centripetal force is directed radially inward towards the origin ($\\vec{F}_c \\parallel -\\vec{r}$).<br>$$\\vec{\\tau} = \\vec{r} \\times \\vec{F}_c = \\vec{r} \\times (-m\\omega^2\\vec{r}) = \\vec{0}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-036",
+    "title": "Work Done by a Variable Force: Graphical & Integration Methods",
+    "publishDate": "2026-08-26",
+    "unit": "Mechanics",
+    "chapter": "Work, Energy and Power"
+  },
+  "seo": {
+    "title": "Work Done by a Variable Force Graphical and Integration Method JEE Main DPP-036 | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering 1D/2D integration of variable forces, force-displacement (F-x) graph signed area calculation, spring work, exact differentials, hanging chain lifting work, and non-conservative closed-loop work.",
+    "keywords": "JEE Main Physics, Work by Variable Force DPP, F-x Graph Area Work, Spring Potential Work, Exact Differential Work, Work Integration Method, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/work-done-by-variable-force-graphical-integration",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Calculus & Graphical Evaluation of Variable Force Work",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. 1D Integration Method: When force varies continuously with position $x$, the total work done is $W = \\int_{x_i}^{x_f} F(x)\\,dx$. 2. Multi-Dimensional Work: For a 2D/3D variable force $\\vec{F} = F_x\\hat{i} + F_y\\hat{j} + F_z\\hat{k}$, total work is $W = \\int_{x_i}^{x_f} F_x\\,dx + \\int_{y_i}^{y_f} F_y\\,dy + \\int_{z_i}^{z_f} F_z\\,dz$. If $\\vec{F}$ forms an exact differential ($dW = d(f(x,y))$), the force is conservative and work is path-independent. 3. Graphical Method ($F$-$x$ Curve): Work done equals the net signed area bounded by the $F$-$x$ curve and the displacement axis ($W = \\text{Area}_{\\text{above}} - \\text{Area}_{\\text{below}}$). 4. Spring Work: Work required to stretch an ideal spring from extension $x_1$ to $x_2$ is $W = \\int_{x_1}^{x_2} kx\\,dx = \\frac{1}{2}k(x_2^2 - x_1^2)$. 5. Hanging Chain & Liquid Columns: Work required to lift continuous distributed masses to a reference plane is evaluated by tracking the displacement of their center of mass: $W = M_{\\text{lifted}} g y_{\\text{cm}}$.",
+    "keyFormula": "$$W = \\int_{x_i}^{x_f} F(x)\\,dx = \\text{Area}(F\\text{-}x), \\quad W_{\\text{spring}} = \\frac{1}{2}k(x_2^2 - x_1^2), \\quad W = -\\Delta U = U_i - U_f, \\quad W_{\\text{chain}} = \\frac{1}{2}\\eta^2 M g L$$",
+    "examTrap": "When evaluating work from an $F$-$x$ graph, always check the sign of the force: areas where $F > 0$ contribute positive work, whereas areas below the displacement axis ($F < 0$) contribute negative work. For closed-loop non-conservative forces like $\\vec{F} = -k(y\\hat{i} - x\\hat{j})$, work over a full circle of radius $R$ is non-zero and equals $2\\pi k R^2$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A position-dependent force $F(x) = (3x^2 - 2x + 5)\\text{ N}$ acts on a particle moving along the $x$-axis. The work done by the force in displacing the particle from $x = 0$ to $x = 2\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$14\\text{ J}$" },
+        { "key": "B", "text": "$18\\text{ J}$" },
+        { "key": "C", "text": "$12\\text{ J}$" },
+        { "key": "D", "text": "$20\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\int_0^2 (3x^2 - 2x + 5)\\,dx = \\left[ x^3 - x^2 + 5x \\right]_0^2 = (8 - 4 + 10) - 0 = 14\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The force-displacement ($F$-$x$) curve for a particle consists of a straight line increasing from $F = 0$ at $x = 0$ to $F = 20\\text{ N}$ at $x = 4\\text{ m}$, and remaining constant at $20\\text{ N}$ from $x = 4\\text{ m}$ to $x = 8\\text{ m}$. The total work done from $x = 0$ to $x = 8\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$80\\text{ J}$" },
+        { "key": "B", "text": "$120\\text{ J}$" },
+        { "key": "C", "text": "$160\\text{ J}$" },
+        { "key": "D", "text": "$100\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "Work is the area under the $F$-$x$ graph:<br>$$W = \\text{Area}_{\\text{triangle}} + \\text{Area}_{\\text{rectangle}} = \\left(\\frac{1}{2} \\times 4 \\times 20\\right) + (8 - 4) \\times 20 = 40 + 80 = 120\\text{ J}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A spring of spring constant $k = 400\\text{ N/m}$ is initially stretched by $x_1 = 5\\text{ cm}$. The additional work required to stretch it further to $x_2 = 15\\text{ cm}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2.0\\text{ J}$" },
+        { "key": "B", "text": "$8.0\\text{ J}$" },
+        { "key": "C", "text": "$4.0\\text{ J}$" },
+        { "key": "D", "text": "$1.0\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$W = \\frac{1}{2}k(x_2^2 - x_1^2) = \\frac{1}{2}(400)\\left[(0.15)^2 - (0.05)^2\\right] = 200(0.0225 - 0.0025) = 200(0.02) = 4.0\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A variable force $\\vec{F} = (2x\\hat{i} + 3y^2\\hat{j})\\text{ N}$ acts on a body displacing it from position $(1\\text{ m}, 2\\text{ m})$ to $(3\\text{ m}, 4\\text{ m})$. The work done by this force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$56\\text{ J}$" },
+        { "key": "B", "text": "$60\\text{ J}$" },
+        { "key": "C", "text": "$64\\text{ J}$" },
+        { "key": "D", "text": "$48\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$W = \\int_1^3 2x\\,dx + \\int_2^4 3y^2\\,dy = \\left[ x^2 \\right]_1^3 + \\left[ y^3 \\right]_2^4 = (9 - 1) + (64 - 8) = 8 + 56 = 64\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force acting on a particle varies with position $x$ as $F(x) = F_0 \\sin\\left(\\dfrac{\\pi x}{L}\\right)$. The work done by this force in moving the particle from $x = 0$ to $x = L$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2 F_0 L}{\\pi}$" },
+        { "key": "B", "text": "Zero" },
+        { "key": "C", "text": "$\\dfrac{F_0 L}{\\pi}$" },
+        { "key": "D", "text": "$\\dfrac{F_0 L}{2\\pi}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\int_0^L F_0 \\sin\\left(\\frac{\\pi x}{L}\\right)dx = F_0 \\left[ -\\frac{L}{\\pi}\\cos\\left(\\frac{\\pi x}{L}\\right) \\right]_0^L = -\\frac{F_0 L}{\\pi}(\\cos\\pi - \\cos 0) = -\\frac{F_0 L}{\\pi}(-2) = \\frac{2 F_0 L}{\\pi}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m = 2\\text{ kg}$ is accelerated from rest along the $x$-axis such that its velocity varies with displacement as $v = 3\\sqrt{x}\\text{ m/s}$. The work done by the net force acting on the particle during its displacement from $x = 0$ to $x = 4\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$72\\text{ J}$" },
+        { "key": "B", "text": "$36\\text{ J}$" },
+        { "key": "C", "text": "$18\\text{ J}$" },
+        { "key": "D", "text": "$144\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "1. At $x = 0$, $v_i = 0$. At $x = 4\\text{ m}$, $v_f = 3\\sqrt{4} = 6\\text{ m/s}$.<br>2. By the Work-Energy Theorem: $W = \\Delta K = \\frac{1}{2}m v_f^2 - 0 = \\frac{1}{2}(2)(6^2) = 36\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In an $F$-$x$ graph, the area of the region above the displacement axis represents $+30\\text{ J}$ of work, while a triangular region below the displacement axis has a base of $4\\text{ m}$ and height $-10\\text{ N}$. The net work done during the complete process is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ J}$" },
+        { "key": "B", "text": "$10\\text{ J}$" },
+        { "key": "C", "text": "$20\\text{ J}$" },
+        { "key": "D", "text": "$-10\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Area below axis: $\\text{Area}_{\\text{below}} = \\frac{1}{2} \\times 4 \\times 10 = 20\\text{ J}$.<br>2. Net work: $W_{\\text{net}} = 30 - 20 = 10\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A non-linear elastic spring exerts a restoring force $F(x) = -(ax + bx^3)$, where $a = 100\\text{ N/m}$ and $b = 400\\text{ N/m}^3$. The work done by an external agent to compress the spring by $x = 0.1\\text{ m}$ from its natural length is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.50\\text{ J}$" },
+        { "key": "B", "text": "$0.60\\text{ J}$" },
+        { "key": "C", "text": "$0.51\\text{ J}$" },
+        { "key": "D", "text": "$0.54\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$W = \\int_0^{0.1} (100x + 400x^3)\\,dx = \\left[ 50x^2 + 100x^4 \\right]_0^{0.1} = 50(0.01) + 100(0.0001) = 0.50 + 0.01 = 0.51\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in the $xy$-plane under the force $\\vec{F} = (y\\hat{i} + x\\hat{j})\\text{ N}$. The work done in moving the particle from $(0, 0)$ to $(2\\text{ m}, 3\\text{ m})$ along any arbitrary path is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$5\\text{ J}$" },
+        { "key": "B", "text": "$12\\text{ J}$" },
+        { "key": "C", "text": "$6\\text{ J}$" },
+        { "key": "D", "text": "Zero" }
+      ],
+      "correct": "C",
+      "solution": "$$dW = y\\,dx + x\\,dy = d(xy) \\implies W = \\int_{(0,0)}^{(2,3)} d(xy) = [xy]_{(0,0)}^{(2,3)} = (2 \\times 3) - 0 = 6\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body of mass $m = 0.5\\text{ kg}$ moves along the $x$-axis subject to a force $F(x) = -kx$, where $k = 50\\text{ N/m}$. If the body is released from $x = 0.2\\text{ m}$ with zero velocity, its kinetic energy when it reaches $x = 0.1\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.25\\text{ J}$" },
+        { "key": "B", "text": "$1.00\\text{ J}$" },
+        { "key": "C", "text": "$0.75\\text{ J}$" },
+        { "key": "D", "text": "$0.50\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$K_f - 0 = \\int_{0.2}^{0.1} (-50x)\\,dx = \\left[ -25x^2 \\right]_{0.2}^{0.1} = -25(0.01 - 0.04) = -25(-0.03) = 0.75\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A force $F = \\dfrac{c}{x^2}$ (where $c = 12\\text{ N}\\cdot\\text{m}^2$) acts on a particle on the $x$-axis. The work done by this force in moving the particle from $x = 2\\text{ m}$ to $x = 6\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ J}$" },
+        { "key": "B", "text": "$6\\text{ J}$" },
+        { "key": "C", "text": "$2\\text{ J}$" },
+        { "key": "D", "text": "$8\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\int_2^6 \\frac{12}{x^2}\\,dx = \\left[ -\\frac{12}{x} \\right]_2^6 = -\\frac{12}{6} - \\left(-\\frac{12}{2}\\right) = -2 + 6 = 4\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A chain of mass $M$ and length $L$ lies on a smooth horizontal tabletop with a fraction $\\eta$ ($0 < \\eta < 1$) of its length hanging freely over the edge. The work required to pull the hanging part completely back onto the table is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\eta^2 MgL$" },
+        { "key": "B", "text": "$\\eta MgL$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}\\eta MgL$" },
+        { "key": "D", "text": "$\\eta^2 MgL$" }
+      ],
+      "correct": "A",
+      "solution": "Hanging mass: $M_h = \\eta M$. The center of mass of the hanging segment is at depth $y_{\\text{cm}} = \\frac{\\eta L}{2}$.<br>$$W = M_h g y_{\\text{cm}} = (\\eta M) g \\left(\\frac{\\eta L}{2}\\right) = \\frac{1}{2}\\eta^2 MgL$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A force $\\vec{F} = -k(y\\hat{i} - x\\hat{j})\\text{ N}$ acts on a particle. The work done by this force as the particle completes one full revolution along a circle of radius $R$ in the counterclockwise direction in the $xy$-plane is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$2\\pi k R^2$" },
+        { "key": "C", "text": "$\\pi k R^2$" },
+        { "key": "D", "text": "$-2\\pi k R^2$" }
+      ],
+      "correct": "B",
+      "solution": "In polar coordinates: $x = R\\cos\theta, y = R\\sin\theta, dx = -R\\sin\theta\\,d\\theta, dy = R\\cos\theta\\,d\\theta$.<br>$$dW = -k[y\\,dx - x\\,dy] = -k[R\\sin\theta(-R\\sin\theta\\,d\\theta) - R\\cos\theta(R\\cos\theta\\,d\\theta)] = k R^2(\\sin^2\theta + \\cos^2\theta)d\\theta = k R^2 d\\theta$$<br>$$W = \\int_0^{2\\pi} k R^2\\,d\\theta = 2\\pi k R^2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m = 1\\text{ kg}$ moves along the $x$-axis under a conservative force whose potential energy is given by $U(x) = (4x^2 - 16x + 20)\\text{ J}$. The work done by the force as the particle moves from $x = 1\\text{ m}$ to $x = 3\\text{ m}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Zero" },
+        { "key": "B", "text": "$+8\\text{ J}$" },
+        { "key": "C", "text": "$-8\\text{ J}$" },
+        { "key": "D", "text": "$+16\\text{ J}$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = -\\Delta U = U(1) - U(3) = [4(1) - 16(1) + 20] - [4(9) - 16(3) + 20] = 8 - 8 = 0\\text{ J}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The displacement $x$ of a particle of mass $m = 1\\text{ kg}$ as a function of time is given by $x = \\dfrac{1}{3}t^3$, where $x$ is in meters and $t$ is in seconds. The work done by the net force acting on the particle in the first $2\\text{ seconds}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4\\text{ J}$" },
+        { "key": "B", "text": "$8\\text{ J}$" },
+        { "key": "C", "text": "$16\\text{ J}$" },
+        { "key": "D", "text": "$32\\text{ J}$" }
+      ],
+      "correct": "B",
+      "solution": "Velocity: $v(t) = \\frac{dx}{dt} = t^2$.<br>At $t = 0$, $v(0) = 0$. At $t = 2\\text{ s}$, $v(2) = 2^2 = 4\\text{ m/s}$.<br>By Work-Energy Theorem: $W = \\frac{1}{2}m v(2)^2 - 0 = \\frac{1}{2}(1)(16) = 8\\text{ J}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A liquid of density $\\rho$ fills a cylindrical container of cross-sectional area $A$ to height $H$. The minimum work done to pump all the liquid out through a small hole at the top of the container is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}\\rho g A H^2$" },
+        { "key": "B", "text": "$\\rho g A H^2$" },
+        { "key": "C", "text": "$\\dfrac{1}{3}\\rho g A H^2$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}\\rho g A H^2$" }
+      ],
+      "correct": "A",
+      "solution": "Total liquid mass $M = \\rho A H$. Center of mass of the column is at depth $h_{\\text{cm}} = \\frac{H}{2}$ below the top rim.<br>$$W = M g h_{\\text{cm}} = (\\rho A H)g\\left(\\frac{H}{2}\\right) = \\frac{1}{2}\\rho g A H^2$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A force $F(x) = \\alpha x e^{-\\beta x^2}$ acts on a particle along the $x$-axis. The total work done by this force as the particle moves from $x = 0$ to $x \\to \\infty$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\alpha}{\\beta}$" },
+        { "key": "B", "text": "$\\dfrac{\\alpha}{2\\beta}$" },
+        { "key": "C", "text": "$\\dfrac{2\\alpha}{\\beta}$" },
+        { "key": "D", "text": "$\\dfrac{\\alpha}{4\\beta}$" }
+      ],
+      "correct": "B",
+      "solution": "Let $u = \\beta x^2 \\implies du = 2\\beta x\\,dx$.<br>$$W = \\alpha \\int_0^\\infty x e^{-\\beta x^2}\\,dx = \\frac{\\alpha}{2\\beta} \\int_0^\\infty e^{-u}\\,du = \\frac{\\alpha}{2\\beta}\\left[ -e^{-u} \\right]_0^\\infty = \\frac{\\alpha}{2\\beta}(0 - (-1)) = \\frac{\\alpha}{2\\beta}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block is connected to two identical springs in parallel, each of stiffness $k$. If an external agent stretches the combination by an extension $x$ from its natural length, the work done on the spring system is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}kx^2$" },
+        { "key": "B", "text": "$kx^2$" },
+        { "key": "C", "text": "$2kx^2$" },
+        { "key": "D", "text": "$\\dfrac{1}{4}kx^2$" }
+      ],
+      "correct": "B",
+      "solution": "Equivalent spring constant: $k_{\\text{eq}} = k + k = 2k$.<br>$$W = \\frac{1}{2}k_{\\text{eq}}x^2 = \\frac{1}{2}(2k)x^2 = kx^2$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves along the curve $y = 2x^2$ from $(0, 0)$ to $(1\\text{ m}, 2\\text{ m})$ under the action of force $\\vec{F} = (3x^2\\hat{i} + 2y\\hat{j})\\text{ N}$. The work done by the force is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$7\\text{ J}$" },
+        { "key": "B", "text": "$3\\text{ J}$" },
+        { "key": "C", "text": "$5\\text{ J}$" },
+        { "key": "D", "text": "$9\\text{ J}$" }
+      ],
+      "correct": "C",
+      "solution": "$$dW = 3x^2\\,dx + 2y\\,dy = d(x^3 + y^2) \\implies W = \\left[ x^3 + y^2 \\right]_{(0,0)}^{(1,2)} = (1^3 + 2^2) - 0 = 5\\text{ J}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An elastic rubber band of natural length $L$ requires a force $F(x) = ax + bx^2$ for an extension $x$. The work required to stretch the band by length $L$ from its relaxed state is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1}{2}aL^2 + \\dfrac{1}{3}bL^3$" },
+        { "key": "B", "text": "$aL^2 + bL^3$" },
+        { "key": "C", "text": "$\\dfrac{1}{2}aL^2 + \\dfrac{1}{2}bL^3$" },
+        { "key": "D", "text": "$\\dfrac{1}{3}aL^2 + \\dfrac{1}{4}bL^3$" }
+      ],
+      "correct": "A",
+      "solution": "$$W = \\int_0^L (ax + bx^2)\\,dx = \\left[ \\frac{1}{2}ax^2 + \\frac{1}{3}bx^3 \\right]_0^L = \\frac{1}{2}aL^2 + \\frac{1}{3}bL^3$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-053",
+    "title": "Conservation of Angular Momentum and Its Applications",
+    "publishDate": "2026-08-27",
+    "unit": "Mechanics",
+    "chapter": "Rotational Motion"
+  },
+  "seo": {
+    "title": "Conservation of Angular Momentum and Applications JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering angular momentum conservation, rotating platforms, rod collisions, planetary Keplerian orbits, coaxial disc drops, and rolling transition.",
+    "keywords": "JEE Main Physics, Angular Momentum Conservation DPP, Rotational Mechanics, Rotating Turntable, Coaxial Discs, Keplers Second Law, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://smaphysics.com/practice/conservation-of-angular-momentum-and-applications",
+    "ogImage": "https://smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Principle of Angular Momentum Conservation & Applications",
+    "tag": "Class 11 Rotational Motion",
+    "summary": "1. Fundamental Law: When net external torque acting on a system about a reference axis or point is zero ($\\sum \\vec{\\tau}_{\\text{ext}} = \\vec{0}$), total angular momentum remains strictly conserved: $\\vec{L} = \\sum I_i \\vec{\\omega}_i = \\text{constant}$. 2. Variable Geometry (Turntables/Gymnasts): As mass moves radially inward, $I$ decreases, causing $\\omega$ to increase proportionally ($I_1\\omega_1 = I_2\\omega_2$). 3. Rotational Kinetic Energy: $K_{\\text{rot}} = \\frac{L^2}{2I}$. When $I$ decreases at constant $L$, $K_{\\text{rot}}$ increases due to positive internal work done. 4. Coaxial Inelastic Disc Coupling: When a non-rotating disc $I_2$ is dropped onto rotating disc $I_1$, $\\omega_f = \\frac{I_1\\omega_1}{I_1+I_2}$ and kinetic energy loss is $\\Delta K = \\frac{I_1 I_2}{2(I_1 + I_2)}\\omega_1^2$.",
+    "keyFormula": "$$\\sum \\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt} = \\vec{0} \\implies I_i \\omega_i = I_f \\omega_f, \\quad K_{\\text{rot}} = \\frac{L^2}{2I}, \\quad \\Delta K_{\\text{loss}} = \\frac{I_1 I_2}{2(I_1 + I_2)}(\\omega_1 - \\omega_2)^2$$",
+    "examTrap": "Always define the specific point or axis about which torque is evaluated. For a rolling sphere or cylinder slipping on a rough floor, torque about the center of mass is non-zero due to friction, but torque about any point along the floor contact line is zero—allowing angular momentum conservation about that ground contact point to directly yield the final pure rolling speed."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A thin circular horizontal disc of mass $M$ and radius $R$ is rotating about its fixed central vertical axis with an angular speed $\\omega_0$[cite: 8, 10]. Two small point masses, each of mass $m$, are placed gently at opposite ends of a diameter[cite: 8, 10]. The new angular speed of the system is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{M}{M + 2m}\\omega_0$" },
+        { "key": "B", "text": "$\\dfrac{M}{M + m}\\omega_0$" },
+        { "key": "C", "text": "$\\dfrac{M + 4m}{M}\\omega_0$" },
+        { "key": "D", "text": "$\\dfrac{M}{M + 4m}\\omega_0$" }
+      ],
+      "correct": "D",
+      "solution": "Initial moment of inertia: $I_i = \\frac{1}{2} M R^2$[cite: 8, 10].<br>Placing two masses $m$ at distance $R$ from the axis gives: $$I_f = \\frac{1}{2} M R^2 + 2m R^2 = \\left(\\frac{M + 4m}{2}\\right)R^2$$[cite: 8, 10]<br>By conservation of angular momentum ($I_i \\omega_0 = I_f \\omega$):<br>$$\\left(\\frac{1}{2} M R^2\\right)\\omega_0 = \\left(\\frac{M + 4m}{2}\\right)R^2 \\omega \\implies \\omega = \\frac{M}{M + 4m}\\omega_0$$[cite: 8, 10]<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A person stands at the center of a circular platform rotating without friction about a vertical axis at $20\\text{ rpm}$ with his arms outstretched holding heavy weights[cite: 8, 10]. When he pulls his arms inward, the moment of inertia of the system decreases to $\\frac{2}{5}$ of its original value[cite: 8, 10]. The new rotational speed and the ratio of new to initial rotational kinetic energy are[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$50\\text{ rpm}, \\; 1.0$" },
+        { "key": "B", "text": "$50\\text{ rpm}, \\; 2.5$" },
+        { "key": "C", "text": "$8\\text{ rpm}, \\; 0.4$" },
+        { "key": "D", "text": "$25\\text{ rpm}, \\; 1.25$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\omega_f = \\left(\\frac{I_i}{I_f}\\right)\\omega_i = \\left(\\frac{5}{2}\\right)(20) = 50\\text{ rpm}$[cite: 8, 10].<br>2. $\\frac{K_f}{K_i} = \\frac{L^2/(2I_f)}{L^2/(2I_i)} = \\frac{I_i}{I_f} = \\frac{5}{2} = 2.5$[cite: 8, 10].<br>The kinetic energy increases because the person performs internal muscular work against centrifugal effects[cite: 8, 10].<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A horizontal turntable of mass $M$ and radius $R$ in the shape of a uniform disc rotates freely about a vertical frictionless axis through its center with angular velocity $\\omega_0$[cite: 8, 10]. A child of mass $m$ standing at the rim walks radially inward to the center[cite: 8, 10]. The angular velocity of the turntable when the child reaches the center is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\left(1 + \\dfrac{m}{M}\\right)\\omega_0$" },
+        { "key": "B", "text": "$\\left(\\dfrac{M}{M + 2m}\\right)\\omega_0$" },
+        { "key": "C", "text": "$\\left(1 + \\dfrac{2m}{M}\\right)\\omega_0$" },
+        { "key": "D", "text": "$\\left(\\dfrac{M + m}{M}\\right)\\omega_0$" }
+      ],
+      "correct": "C",
+      "solution": "Initial moment of inertia: $I_i = \\frac{1}{2} M R^2 + m R^2 = \\left(\\frac{M + 2m}{2}\\right)R^2$[cite: 8, 10].<br>Final moment of inertia when child is at center ($r = 0$): $I_f = \\frac{1}{2} M R^2$[cite: 8, 10].<br>Conservation of angular momentum:<br>$$\\left(\\frac{M + 2m}{2}\\right)R^2 \\omega_0 = \\left(\\frac{1}{2} M R^2\\right)\\omega \\implies \\omega = \\left(\\frac{M + 2m}{M}\\right)\\omega_0 = \\left(1 + \\frac{2m}{M}\\right)\\omega_0$$[cite: 8, 10]<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform thin rod of mass $M$ and length $L$ lies on a smooth horizontal table and is free to rotate about a fixed vertical frictionless axis passing through one of its ends[cite: 8, 10]. A small particle of mass $m$ moving horizontally with speed $v_0$ perpendicular to the rod strikes the free end and sticks to it[cite: 8, 10]. The angular velocity of the rod-particle system immediately after collision is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3 m v_0}{(M + 3m)L}$" },
+        { "key": "B", "text": "$\\dfrac{m v_0}{(M + m)L}$" },
+        { "key": "C", "text": "$\\dfrac{6 m v_0}{(M + 3m)L}$" },
+        { "key": "D", "text": "$\\dfrac{3 m v_0}{(M + m)L}$" }
+      ],
+      "correct": "A",
+      "solution": "Angular momentum about the fixed pivot is conserved ($L_i = m v_0 L$)[cite: 8, 10].<br>Total moment of inertia about pivot after collision:<br>$$I_{\\text{total}} = \\frac{1}{3} M L^2 + m L^2 = \\left(\\frac{M + 3m}{3}\\right)L^2$$[cite: 8, 10]<br>$$m v_0 L = \\left(\\frac{M + 3m}{3}\\right)L^2 \\omega \\implies \\omega = \\frac{3 m v_0}{(M + 3m)L}$$[cite: 8, 10]<br>Therefore, Option <strong>A</strong> is correct[cite: 8, 10]."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform rod of mass $M$ and length $L$ is at rest on a frictionless horizontal plane (no fixed pivot)[cite: 8, 10]. A particle of mass $m$ moving horizontally with velocity $v_0$ perpendicular to the rod strikes one end of the rod and rebounds elastically with speed $v_1$[cite: 8, 10]. The angular velocity $\\omega$ of the rod about its center of mass just after the impact is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3 m (v_0 + v_1)}{M L}$" },
+        { "key": "B", "text": "$\\dfrac{12 m (v_0 + v_1)}{M L}$" },
+        { "key": "C", "text": "$\\dfrac{6 m (v_0 - v_1)}{M L}$" },
+        { "key": "D", "text": "$\\dfrac{6 m (v_0 + v_1)}{M L}$" }
+      ],
+      "correct": "D",
+      "solution": "Angular momentum of the system about the CM of the rod is conserved:<br>$$m v_0 \\left(\\frac{L}{2}\\right) = -m v_1 \\left(\\frac{L}{2}\\right) + I_{\\text{cm}}\\omega$$[cite: 8, 10]<br>$$\\frac{1}{12} M L^2 \\omega = \\frac{m(v_0 + v_1)L}{2} \\implies \\omega = \\frac{6 m (v_0 + v_1)}{M L}$$[cite: 8, 10]<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A planet moves around the sun in an elliptical orbit[cite: 8, 10]. If $r_p$ and $r_a$ are the perihelion and aphelion distances and $v_p$ and $v_a$ are the corresponding orbital speeds, then by conservation of angular momentum[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v_p r_a = v_a r_p$" },
+        { "key": "B", "text": "$v_p^2 r_p = v_a^2 r_a$" },
+        { "key": "C", "text": "$v_p r_p = v_a r_a$" },
+        { "key": "D", "text": "$v_p \\sqrt{r_p} = v_a \\sqrt{r_a}$" }
+      ],
+      "correct": "C",
+      "solution": "Since the gravitational pull is a purely central force, external torque about the Sun is zero ($\\vec{\\tau} = \\vec{0}$)[cite: 8, 10]:<br>$$L = m v_p r_p = m v_a r_a \\implies v_p r_p = v_a r_a$$[cite: 8, 10]<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A disc of moment of inertia $I_1$ is rotating with constant angular velocity $\\omega_1$ about a frictionless vertical axle[cite: 8, 10]. Another non-rotating disc of moment of inertia $I_2$ is dropped coaxially onto the first disc[cite: 8, 10]. The two discs eventually rotate together with common angular speed $\\omega$[cite: 8, 10]. The loss in kinetic energy during this process is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{I_1 I_2}{2(I_1 + I_2)}\\omega_1^2$" },
+        { "key": "B", "text": "$\\dfrac{(I_1 + I_2)}{2 I_1 I_2}\\omega_1^2$" },
+        { "key": "C", "text": "$\\dfrac{I_1^2}{2(I_1 + I_2)}\\omega_1^2$" },
+        { "key": "D", "text": "$\\dfrac{I_2^2}{2(I_1 + I_2)}\\omega_1^2$" }
+      ],
+      "correct": "A",
+      "solution": "Conservation of angular momentum: $I_1 \\omega_1 = (I_1 + I_2)\\omega \\implies \\omega = \\frac{I_1 \\omega_1}{I_1 + I_2}$[cite: 8, 10].<br>Loss in kinetic energy:<br>$$\\Delta K = \\frac{1}{2} I_1 \\omega_1^2 - \\frac{1}{2}(I_1 + I_2)\\left(\\frac{I_1 \\omega_1}{I_1 + I_2}\\right)^2 = \\frac{I_1 I_2}{2(I_1 + I_2)}\\omega_1^2$$[cite: 8, 10]<br>Therefore, Option <strong>A</strong> is correct[cite: 8, 10]."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A small mass $m$ attached to a string passes through a small hole in a frictionless horizontal table[cite: 8, 10]. Initially, the mass revolves in a circle of radius $r_1$ with speed $v_1$[cite: 8, 10]. The string is slowly pulled from below so that the radius decreases to $r_2 = \\frac{r_1}{2}$[cite: 8, 10]. The new speed of the mass and the work done on the system are[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$4v_1, \\quad \\dfrac{15}{2}m v_1^2$" },
+        { "key": "B", "text": "$2v_1, \\quad \\dfrac{3}{2}m v_1^2$" },
+        { "key": "C", "text": "$2v_1, \\quad \\dfrac{1}{2}m v_1^2$" },
+        { "key": "D", "text": "$v_1, \\quad 0$" }
+      ],
+      "correct": "B",
+      "solution": "1. Tension acts radially, so torque about the hole is zero: $m v_1 r_1 = m v_2 r_2 \\implies v_2 = 2v_1$[cite: 8, 10].<br>2. Work done equals the change in kinetic energy: $$W = \\frac{1}{2} m v_2^2 - \\frac{1}{2} m v_1^2 = \\frac{1}{2} m (4v_1^2 - v_1^2) = \\frac{3}{2} m v_1^2$$[cite: 8, 10]<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A circular platform is free to rotate about a frictionless vertical axis[cite: 8, 10]. A man walks around the perimeter of the platform with a velocity $v$ relative to the platform[cite: 8, 10]. If the moment of inertia of the platform is $I$, its radius is $R$, and the mass of the man is $m$, the absolute angular velocity of the platform (starting from rest) is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m v R}{I}$" },
+        { "key": "B", "text": "$\\dfrac{m v R}{I - m R^2}$" },
+        { "key": "C", "text": "$\\dfrac{m v}{R(I + m R^2)}$" },
+        { "key": "D", "text": "$\\dfrac{m v R}{I + m R^2}$" }
+      ],
+      "correct": "D",
+      "solution": "Let the platform rotate with angular speed $\\Omega$ in the opposite direction[cite: 8, 10]. Absolute velocity of the man relative to ground is $(v - \\Omega R)$[cite: 8, 10].<br>Conserving total angular momentum from rest ($L = 0$):<br>$$I \\Omega - m (v - \\Omega R) R = 0 \\implies (I + m R^2)\\Omega = m v R \\implies \\Omega = \\frac{m v R}{I + m R^2}$$[cite: 8, 10]<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 3",
+      "statement": "A uniform solid sphere of mass $M$ and radius $R$ rotating with initial angular velocity $\\omega_0$ about a horizontal axis through its center is gently placed on a rough horizontal floor ($\\mu$)[cite: 8, 10]. It initially slips and eventually rolls without slipping[cite: 8, 10]. The angular velocity of the sphere when pure rolling sets in is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{5}{7}\\omega_0$" },
+        { "key": "B", "text": "$\\dfrac{2}{5}\\omega_0$" },
+        { "key": "C", "text": "$\\dfrac{2}{7}\\omega_0$" },
+        { "key": "D", "text": "$\\dfrac{3}{7}\\omega_0$" }
+      ],
+      "correct": "C",
+      "solution": "External torque about any point along the floor contact line is zero ($\tau = 0$)[cite: 8, 10].<br>Initial angular momentum about the contact point on ground: $$L_i = I_{\\text{cm}}\\omega_0 = \\left(\\frac{2}{5} M R^2\\right)\\omega_0$$[cite: 8, 10]<br>Final angular momentum at pure rolling: $$L_f = I_{\\text{contact}}\\omega = \\left(\\frac{2}{5} M R^2 + M R^2\\right)\\omega = \\frac{7}{5} M R^2 \\omega$$[cite: 8, 10]<br>Equating $L_i = L_f$: $$\\frac{2}{5} M R^2 \\omega_0 = \\frac{7}{5} M R^2 \\omega \\implies \\omega = \\frac{2}{7}\\omega_0$$[cite: 8, 10]<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ is projected with speed $u$ at an angle $\\theta$ with the horizontal[cite: 8, 10]. The magnitude of the angular momentum of the projectile about the point of projection when the particle reaches its maximum height is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{m u^3 \\sin^2\\theta \\cos\\theta}{2g}$" },
+        { "key": "B", "text": "$\\dfrac{m u^3 \\sin\\theta \\cos^2\\theta}{2g}$" },
+        { "key": "C", "text": "$\\dfrac{m u^3 \\sin^2\\theta \\cos\\theta}{g}$" },
+        { "key": "D", "text": "$\\dfrac{m u^3 \\cos^3\\theta}{2g}$" }
+      ],
+      "correct": "A",
+      "solution": "At maximum height, velocity is purely horizontal ($v = u\\cos\\theta$) at height $H = \\frac{u^2 \\sin^2\\theta}{2g}$[cite: 8, 10].<br>Magnitude of angular momentum about the launch origin:<br>$$L = m v H = m (u\\cos\\theta)\\left(\\frac{u^2 \\sin^2\\theta}{2g}\\right) = \\frac{m u^3 \\sin^2\\theta \\cos\\theta}{2g}$$[cite: 8, 10]<br>Therefore, Option <strong>A</strong> is correct[cite: 8, 10]."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform thin square plate of mass $M$ and side $a$ rotates in a horizontal plane with angular speed $\\omega$ about a vertical axis passing through its center[cite: 8, 10]. Four identical point masses $m$ are placed at the four vertices of the square[cite: 8, 10]. The new angular speed is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{M}{M + 6m}\\omega$" },
+        { "key": "B", "text": "$\\dfrac{M}{M + 12m}\\omega$" },
+        { "key": "C", "text": "$\\dfrac{M}{M + 3m}\\omega$" },
+        { "key": "D", "text": "$\\dfrac{M}{M + 4m}\\omega$" }
+      ],
+      "correct": "B",
+      "solution": "Plate moment of inertia: $I_{\\text{plate}} = \\frac{1}{6} M a^2$[cite: 8, 10].<br>Distance of each corner from center is $r = \\frac{a}{\\sqrt{2}} \\implies r^2 = \\frac{a^2}{2}$[cite: 8, 10].<br>Four masses contribution: $I_{\\text{masses}} = 4 m \\left(\\frac{a^2}{2}\\right) = 2 m a^2$[cite: 8, 10].<br>Conservation of angular momentum:<br>$$\\left(\\frac{1}{6} M a^2\right)\\omega = \\left(\\frac{M + 12m}{6} a^2\\right)\\omega' \\implies \\omega' = \\frac{M}{M + 12m}\\omega$$[cite: 8, 10]<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ moves in a central force field where the potential energy is $U(r) = k r^2$[cite: 8, 10]. Which of the following quantities is strictly conserved throughout its motion?[cite: 8, 10]",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Linear momentum $\\vec{p}$" },
+        { "key": "B", "text": "Kinetic energy $K$" },
+        { "key": "C", "text": "Velocity vector $\\vec{v}$" },
+        { "key": "D", "text": "Angular momentum $\\vec{L}$ about the center of force" }
+      ],
+      "correct": "D",
+      "solution": "Because the force is purely radial (central), $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$, which guarantees that $\\vec{L}$ about the origin is strictly conserved[cite: 8, 10].<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A uniform rod of mass $M$ and length $L$ is pivoted at its center so that it can rotate freely in a horizontal plane[cite: 8, 10]. Initially at rest, two small lumps of clay of mass $m$ each travelling with speed $v$ in opposite directions hit the two ends simultaneously and stick to them[cite: 8, 10]. The resulting angular speed is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{6 m v}{(M + 6m)L}$" },
+        { "key": "B", "text": "$\\dfrac{6 m v}{(M + 12m)L}$" },
+        { "key": "C", "text": "$\\dfrac{12 m v}{(M + 6m)L}$" },
+        { "key": "D", "text": "$\\dfrac{3 m v}{(M + 6m)L}$" }
+      ],
+      "correct": "C",
+      "solution": "Initial angular momentum about pivot: $L_i = 2 \\times m v \\left(\\frac{L}{2}\\right) = m v L$[cite: 8, 10].<br>Final moment of inertia: $I_f = \\frac{1}{12} M L^2 + 2m\\left(\\frac{L}{2}\\right)^2 = \\left(\\frac{M + 6m}{12}\\right)L^2$[cite: 8, 10].<br>$$m v L = \\left(\\frac{M + 6m}{12}\\right)L^2 \\omega \\implies \\omega = \\frac{12 m v}{(M + 6m)L}$$[cite: 8, 10]<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A hollow spherical shell of mass $M$ and radius $R$ is spinning with angular velocity $\\omega_0$ about a diameter[cite: 8, 10]. Suddenly, its radius shrinks uniformly to $\\frac{R}{2}$ while keeping its mass constant[cite: 8, 10]. The new rotational kinetic energy of the shell is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2$ times the initial value" },
+        { "key": "B", "text": "$8$ times the initial value" },
+        { "key": "C", "text": "Equal to the initial value" },
+        { "key": "D", "text": "$4$ times the initial value" }
+      ],
+      "correct": "D",
+      "solution": "$I_f = \\frac{2}{3} M (R/2)^2 = \\frac{I_i}{4}$[cite: 8, 10].<br>Conservation of angular momentum: $I_i \\omega_0 = \\left(\\frac{I_i}{4}\\right)\\omega_f \\implies \\omega_f = 4\\omega_0$[cite: 8, 10].<br>$$K_f = \\frac{1}{2} I_f \\omega_f^2 = \\frac{1}{2}\\left(\\frac{I_i}{4}\\right)(4\\omega_0)^2 = 4 \\left(\\frac{1}{2} I_i \\omega_0^2\\right) = 4 K_i$$[cite: 8, 10]<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A uniform disc of mass $M$ and radius $R$ is rolling without slipping on a horizontal plane with translation speed $v$[cite: 8, 10]. The angular momentum of the disc about the instantaneous point of contact with the ground is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{3}{2} M v R$" },
+        { "key": "B", "text": "$\\dfrac{1}{2} M v R$" },
+        { "key": "C", "text": "$M v R$" },
+        { "key": "D", "text": "$2 M v R$" }
+      ],
+      "correct": "A",
+      "solution": "Using parallel-axis theorem about contact point $P$:<br>$$I_P = I_{\\text{cm}} + M R^2 = \\frac{1}{2} M R^2 + M R^2 = \\frac{3}{2} M R^2$$[cite: 8, 10]<br>$$L_P = I_P \\omega = \\left(\\frac{3}{2} M R^2\\right)\\left(\\frac{v}{R}\\right) = \\frac{3}{2} M v R$$[cite: 8, 10]<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A gymnast on a high bar begins rotating with an angular velocity $\\omega_1$ while in an extended posture[cite: 8, 10]. When she tucks her body into a compact ball, her moment of inertia reduces by a factor of $3$[cite: 8, 10]. Neglecting air resistance and friction at the hands[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Angular momentum triples and kinetic energy remains constant" },
+        { "key": "B", "text": "Angular velocity triples and kinetic energy triples" },
+        { "key": "C", "text": "Angular velocity triples and kinetic energy decreases to one-third" },
+        { "key": "D", "text": "Angular velocity and kinetic energy remain constant" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\omega_2 = \\frac{I_1}{I_2}\\omega_1 = 3\\omega_1$ (triples)[cite: 8, 10].<br>2. $K_2 = \\frac{L^2}{2 I_2} = \\frac{L^2}{2(I_1/3)} = 3 K_1$ (triples)[cite: 8, 10].<br>Therefore, Option <strong>B</strong> is correct[cite: 8, 10]."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A uniform cylinder of radius $R$ is spun about its longitudinal symmetry axis to an angular speed $\\omega_0$ and then placed gently into a corner between a horizontal floor and a vertical wall with identical coefficient of friction $\\mu$[cite: 8, 10]. If the net external torque about the center of the cylinder is non-zero[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Angular momentum is conserved about the center" },
+        { "key": "B", "text": "Angular momentum is conserved about the contact point on the floor" },
+        { "key": "C", "text": "Angular momentum decreases to zero as mechanical energy dissipates as heat" },
+        { "key": "D", "text": "Angular velocity remains $\\omega_0$" }
+      ],
+      "correct": "C",
+      "solution": "Frictional torques from the wall and floor act against rotation, exerting net external retarding torque until all kinetic energy is dissipated into heat[cite: 8, 10].<br>Therefore, Option <strong>C</strong> is correct[cite: 8, 10]."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A circular hoop of mass $M$ and radius $R$ is rotating about its central vertical axis with angular speed $\\omega_0$[cite: 8, 10]. An identical stationary hoop is gently dropped coaxially onto it[cite: 8, 10]. If friction causes them to rotate together, the fraction of initial rotational kinetic energy lost is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$25\\%$" },
+        { "key": "B", "text": "$75\\%$" },
+        { "key": "C", "text": "$0\\%$" },
+        { "key": "D", "text": "$50\\%$" }
+      ],
+      "correct": "D",
+      "solution": "Conservation of angular momentum: $I \\omega_0 = (2I)\\omega_f \\implies \\omega_f = \\frac{\\omega_0}{2}$[cite: 8, 10].<br>$$K_f = \\frac{1}{2}(2I)\\left(\\frac{\\omega_0}{2}\\right)^2 = \\frac{1}{4} I \\omega_0^2 = \\frac{1}{2} K_i$$[cite: 8, 10]<br>Fraction lost is $1 - 0.5 = 50\\%$[cite: 8, 10].<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle of mass $m$ moves with constant velocity $\\vec{v} = v_0\\hat{i}$ along the straight line $y = d, z = 0$[cite: 8, 10]. The angular momentum of the particle about the origin $\\vec{L}_O$ as a function of time $t$ is[cite: 8, 10]:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Constant and equal to $+m v_0 d\\hat{k}$" },
+        { "key": "B", "text": "Decreases inversely with distance from origin" },
+        { "key": "C", "text": "Constant and equal to $-m v_0 d\\hat{k}$" },
+        { "key": "D", "text": "Increases linearly with time as $m v_0 (v_0 t)\\hat{k}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\vec{r}(t) = (v_0 t)\\hat{i} + d\\hat{j}, \\quad \\vec{p} = m v_0\\hat{i}$$[cite: 8, 10]<br>$$\\vec{L}_O = \\vec{r} \\times \\vec{p} = (d\\hat{j}) \\times (m v_0\\hat{i}) = -m v_0 d\\hat{k}$$[cite: 8, 10]<br>It remains strictly constant and independent of time[cite: 8, 10].<br>Therefore, Option <strong>C</strong> is correct."
+    }
+  ]
+}
