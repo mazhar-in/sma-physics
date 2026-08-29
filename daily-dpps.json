@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-019",
+    "date": "2026-08-30",
+    "jsonFile": "/dpps/dpp-019/dpp-019.json",
+    "pdfFile": "/dpps/dpp-019/SMA_DPP_019.pdf",
+    "title": "Oblique Projectile Motion: Maximum Height, Flight Time, Range & Trajectory",
+    "chapter": "Motion in a Plane",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-018",
     "date": "2026-08-29",
     "jsonFile": "/dpps/dpp-018/dpp-018.json",
