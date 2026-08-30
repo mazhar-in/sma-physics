@@ -37,6 +37,12 @@
     .dark .katex {
       color: #f4f4f5;
     }
+    .multiline-content p {
+      margin-bottom: 0.75rem;
+    }
+    .multiline-content p:last-child {
+      margin-bottom: 0;
+    }
   </style>
 
   <!-- Prevent Theme Flash -->
@@ -107,24 +113,24 @@
         </div>
       </div>
 
-      <!-- Question Statement + Diagram -->
-      <div class="text-zinc-900 dark:text-zinc-100 text-base sm:text-lg leading-relaxed font-normal break-words [overflow-wrap:anywhere]" id="question-statement">
+      <!-- Multiline Question Statement + Diagram -->
+      <div class="multiline-content text-zinc-900 dark:text-zinc-100 text-base sm:text-lg leading-relaxed font-normal break-words [overflow-wrap:anywhere]" id="question-statement">
         <div class="animate-pulse space-y-3 py-1">
           <div class="h-5 bg-zinc-200 dark:bg-zinc-800 rounded w-3/4"></div>
           <div class="h-5 bg-zinc-200 dark:bg-zinc-800 rounded"></div>
         </div>
       </div>
 
-      <!-- Multiple Choice Options -->
+      <!-- Multiple Choice Options (Multiline Support) -->
       <div class="space-y-3 min-w-0" id="options-container"></div>
 
-      <!-- Expandable Derivation Solution Drawer -->
+      <!-- Expandable Multiline Derivation Solution Drawer -->
       <div id="solution-drawer" class="hidden bg-zinc-50 dark:bg-zinc-800/60 border-t border-dashed border-zinc-200 dark:border-zinc-700 rounded-2xl p-5 space-y-3 min-w-0">
         <div class="inline-flex items-center gap-2 px-3 py-1 text-xs sm:text-sm font-bold bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 rounded-lg">
           <span>✓</span>
           <span>SMA Step-by-Step Derivation</span>
         </div>
-        <div class="text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-2.5 break-words [overflow-wrap:anywhere]" id="solution-text"></div>
+        <div class="multiline-content text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-2.5 break-words [overflow-wrap:anywhere]" id="solution-text"></div>
       </div>
 
       <!-- Navigation Toolbar -->
@@ -188,9 +194,7 @@
           <span class="text-xs text-zinc-400 dark:text-zinc-500">Click any chapter to view all its DPPs</span>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5" id="footer-chapter-grid">
-          <!-- Populated dynamically with direct /chapter/:slug links -->
-        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5" id="footer-chapter-grid"></div>
       </div>
 
       <!-- Bottom Credits & Links -->
@@ -212,7 +216,7 @@
     </div>
   </footer>
 
-  <!-- ================= RANDOMIZER & STATE LOGIC ================= -->
+  <!-- ================= RANDOMIZER, MULTILINE & STATE LOGIC ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -232,6 +236,25 @@
         .replace(/[^a-z0-9\s-]/g, '')
         .replace(/[\s_-]+/g, '-')
         .replace(/^-+|-+$/g, '');
+    }
+
+    // MULTILINE FORMATTER: Preserves line breaks and paragraphs cleanly
+    function formatMultilineText(rawText) {
+      if (!rawText) return "";
+      const text = rawText.toString().trim();
+      
+      if (text.includes("<p>") || text.includes("<br")) {
+        return text;
+      }
+
+      const paragraphs = text.split(/\n\s*\n/);
+      if (paragraphs.length > 1) {
+        return paragraphs
+          .map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`)
+          .join("");
+      }
+
+      return text.replace(/\n/g, '<br/>');
     }
 
     function shuffleArray(arr) {
@@ -406,7 +429,8 @@
       document.getElementById("exam-badge").innerText = q.exam;
       document.getElementById("difficulty-badge").innerText = q.difficulty;
       
-      let statementHTML = `<div class="break-words leading-relaxed">${q.statement}</div>`;
+      // Multiline Question Statement
+      let statementHTML = `<div class="multiline-content break-words leading-relaxed">${formatMultilineText(q.statement)}</div>`;
       if (q.image && q.image.trim() !== "") {
         const imgPath = q.image.startsWith('/') ? q.image : `/${q.image}`;
         statementHTML += `
@@ -425,7 +449,7 @@
 
       q.options.forEach((opt) => {
         const btn = document.createElement("button");
-        btn.className = "w-full min-h-[54px] flex items-center gap-4 p-4 sm:p-5 text-left border rounded-2xl text-base sm:text-lg transition-all cursor-pointer min-w-0 ";
+        btn.className = "w-full min-h-[54px] flex items-start gap-4 p-4 sm:p-5 text-left border rounded-2xl text-base sm:text-lg transition-all cursor-pointer min-w-0 ";
         
         if (isSubmitted) {
           btn.style.pointerEvents = "none";
@@ -446,10 +470,10 @@
         }
 
         btn.innerHTML = `
-          <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-xs sm:text-sm font-bold text-zinc-700 dark:text-zinc-300 shrink-0 border border-zinc-200 dark:border-zinc-700">
+          <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-xs sm:text-sm font-bold text-zinc-700 dark:text-zinc-300 shrink-0 border border-zinc-200 dark:border-zinc-700 mt-0.5">
             ${opt.key}
           </span>
-          <div class="flex-1 min-w-0 break-words [overflow-wrap:anywhere]">${opt.text}</div>
+          <div class="flex-1 min-w-0 multiline-content break-words [overflow-wrap:anywhere]">${formatMultilineText(opt.text)}</div>
         `;
         container.appendChild(btn);
       });
@@ -458,7 +482,7 @@
       const actionBtn = document.getElementById("action-btn");
       
       if (isSubmitted) {
-        document.getElementById("solution-text").innerHTML = q.solution;
+        document.getElementById("solution-text").innerHTML = formatMultilineText(q.solution);
         drawer.classList.remove("hidden");
         actionBtn.innerText = "Solution Displayed";
         actionBtn.disabled = true;
