@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jee-phy-44",
+    "date": "2026-08-30",
+    "examStream": "JEE Main",
+    "subject": "Physics",
+    "title": "Rotational Dynamics: Angular Momentum Conservation",
+    "chapter": "System of Particles & Rotational Motion",
+    "questionCount": 15,
+    "jsonFile": "/dpps/jee-phy-44/jee-phy-44.json",
+    "pdfFile": "/dpps/jee-phy-44/SMA_JEE_Phy_44.pdf"
+  },
+  {
+    "id": "jee-chem-44",
+    "date": "2026-08-30",
+    "examStream": "JEE Main",
+    "subject": "Chemistry",
+    "title": "Chemical Kinetics: Integrated Rate Equations",
+    "chapter": "Chemical Kinetics",
+    "questionCount": 15,
+    "jsonFile": "/dpps/jee-chem-44/jee-chem-44.json",
+    "pdfFile": "/dpps/jee-chem-44/SMA_JEE_Chem_44.pdf"
+  },
+  {
+    "id": "jee-math-44",
+    "date": "2026-08-30",
+    "examStream": "JEE Main",
+    "subject": "Mathematics",
+    "title": "Definite Integration: King's Rule & Properties",
+    "chapter": "Definite Integrals",
+    "questionCount": 15,
+    "jsonFile": "/dpps/jee-math-44/jee-math-44.json",
+    "pdfFile": "/dpps/jee-math-44/SMA_JEE_Math_44.pdf"
+  },
+  {
+    "id": "neet-phy-44",
+    "date": "2026-08-30",
+    "examStream": "NEET",
+    "subject": "Physics",
+    "title": "Work, Energy & Power: Vertical Circular Motion",
+    "chapter": "Work, Energy & Power",
+    "questionCount": 15,
+    "jsonFile": "/dpps/neet-phy-44/neet-phy-44.json",
+    "pdfFile": "/dpps/neet-phy-44/SMA_NEET_Phy_44.pdf"
+  },
+  {
+    "id": "neet-chem-44",
+    "date": "2026-08-30",
+    "examStream": "NEET",
+    "subject": "Chemistry",
+    "title": "Coordination Compounds: Crystal Field Theory",
+    "chapter": "Coordination Compounds",
+    "questionCount": 15,
+    "jsonFile": "/dpps/neet-chem-44/neet-chem-44.json",
+    "pdfFile": "/dpps/neet-chem-44/SMA_NEET_Chem_44.pdf"
+  },
+  {
+    "id": "neet-bio-44",
+    "date": "2026-08-30",
+    "examStream": "NEET",
+    "subject": "Biology",
+    "title": "Genetics: Mendelian Inheritance & Linkage",
+    "chapter": "Principles of Inheritance and Variation",
+    "questionCount": 20,
+    "jsonFile": "/dpps/neet-bio-44/neet-bio-44.json",
+    "pdfFile": "/dpps/neet-bio-44/SMA_NEET_Bio_44.pdf"
+  }
+]

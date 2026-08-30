@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>SMA Academy — Multi-Subject Daily DPP Hub (Beta)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+
+  <!-- Prevent Theme Flash -->
+  <script>
+    if (localStorage.getItem('sma-theme') === 'dark' || (!('sma-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col overflow-x-hidden transition-colors duration-200">
+
+  <!-- ================= TOP NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3">
+      
+      <a href="/beta" class="flex items-center gap-3 group shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-black text-base tracking-wider shadow-md">
+          SMA
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg sm:text-xl tracking-tight text-zinc-900 dark:text-white">SMA Academy</span>
+            <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800">BETA LAB</span>
+          </div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">JEE (PCM) & NEET (PCB) Portal</span>
+        </div>
+      </a>
+
+      <!-- Stream Switcher Buttons -->
+      <div class="flex items-center gap-2 p-1 rounded-2xl bg-zinc-200/80 dark:bg-zinc-800/80 border border-zinc-300 dark:border-zinc-700">
+        <button onclick="setExamStream('JEE Main')" id="stream-btn-jee" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer">
+          🎯 JEE Main (PCM)
+        </button>
+        <button onclick="setExamStream('NEET')" id="stream-btn-neet" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white cursor-pointer">
+          🩺 NEET (PCB)
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN BODY ================= -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-10 flex-1 w-full min-w-0">
+    
+    <!-- Hero Title -->
+    <div class="pb-4 border-b border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <div>
+        <p id="stream-badge-title" class="text-xs uppercase font-bold tracking-wider text-indigo-600 dark:text-indigo-400">Daily 3-Subject Drop</p>
+        <h1 id="stream-heading" class="text-2xl sm:text-3xl font-black text-zinc-950 dark:text-white mt-0.5">
+          Today's JEE Main Problem Sets (PCM)
+        </h1>
+      </div>
+      <span class="text-xs text-zinc-400 font-mono">Date: Today (IST)</span>
+    </div>
+
+    <!-- 3-Subject Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="daily-subject-grid">
+      <!-- Generated Dynamically for Physics, Chemistry, Math / Bio -->
+    </div>
+
+    <!-- Full Multi-Subject Archive -->
+    <section class="space-y-6 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h3 class="text-xl font-bold text-zinc-950 dark:text-white">Subject-Wise Practice Archive</h3>
+          <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter past drops by individual subject</p>
+        </div>
+
+        <div class="flex items-center gap-1.5 overflow-x-auto" id="subject-filter-pills">
+          <!-- Populated in JS based on active stream -->
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="beta-archive-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- Controller Script -->
+  <script>
+    let activeStream = "JEE Main"; // Default stream: "JEE Main" or "NEET"
+    let activeSubjectFilter = "all";
+    let allDpps = [];
+
+    const SUBJECT_COLORS = {
+      "Physics": {
+        badge: "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800",
+        btn: "bg-indigo-600 hover:bg-indigo-500",
+        accent: "border-indigo-500"
+      },
+      "Chemistry": {
+        badge: "bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300 border-amber-200 dark:border-amber-800",
+        btn: "bg-amber-600 hover:bg-amber-500",
+        accent: "border-amber-500"
+      },
+      "Mathematics": {
+        badge: "bg-rose-50 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300 border-rose-200 dark:border-rose-800",
+        btn: "bg-rose-600 hover:bg-rose-500",
+        accent: "border-rose-500"
+      },
+      "Biology": {
+        badge: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800",
+        btn: "bg-emerald-600 hover:bg-emerald-500",
+        accent: "border-emerald-500"
+      }
+    };
+
+    function slugify(text) {
+      return text.toString().toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '').replace(/[\s_-]+/g, '-');
+    }
+
+    function setExamStream(streamName) {
+      activeStream = streamName;
+      activeSubjectFilter = "all";
+
+      const jeeBtn = document.getElementById("stream-btn-jee");
+      const neetBtn = document.getElementById("stream-btn-neet");
+
+      if (streamName === "JEE Main") {
+        jeeBtn.className = "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer";
+        neetBtn.className = "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white cursor-pointer";
+        document.getElementById("stream-heading").innerText = "Today's JEE Main Problem Sets (PCM)";
+      } else {
+        neetBtn.className = "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-sm cursor-pointer";
+        jeeBtn.className = "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white cursor-pointer";
+        document.getElementById("stream-heading").innerText = "Today's NEET Problem Sets (PCB)";
+      }
+
+      renderDailySubjectCards();
+      renderSubjectFilterPills();
+      renderArchive();
+    }
+
+    function setSubjectFilter(sub) {
+      activeSubjectFilter = sub;
+      renderSubjectFilterPills();
+      renderArchive();
+    }
+
+    function renderDailySubjectCards() {
+      const grid = document.getElementById("daily-subject-grid");
+      grid.innerHTML = "";
+
+      const streamDpps = allDpps.filter(item => item.examStream === activeStream);
+      const expectedSubjects = activeStream === "JEE Main" 
+        ? ["Physics", "Chemistry", "Mathematics"]
+        : ["Physics", "Chemistry", "Biology"];
+
+      expectedSubjects.forEach(subjectName => {
+        const item = streamDpps.find(d => d.subject === subjectName);
+        const col = SUBJECT_COLORS[subjectName] || SUBJECT_COLORS["Physics"];
+
+        if (item) {
+          const itemSlug = slugify(item.title);
+          grid.innerHTML += `
+            <div class="bg-white dark:bg-zinc-900 rounded-3xl border border-zinc-200 dark:border-zinc-800 p-6 shadow-sm flex flex-col justify-between space-y-5 hover:border-zinc-300 transition">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-lg text-xs font-bold border ${col.badge}">
+                    ${subjectName}
+                  </span>
+                  <span class="text-xs font-semibold text-zinc-400">${item.questionCount} Questions</span>
+                </div>
+                <h3 class="font-bold text-lg text-zinc-950 dark:text-white leading-snug">${item.title}</h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400">📂 ${item.chapter}</p>
+              </div>
+
+              <div class="space-y-2 pt-4 border-t border-zinc-100 dark:border-zinc-800">
+                <a href="/practice/${itemSlug}" class="w-full py-2.5 rounded-xl ${col.btn} text-white font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition">
+                  <span>Solve ${subjectName} DPP</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          `;
+        }
+      });
+    }
+
+    function renderSubjectFilterPills() {
+      const container = document.getElementById("subject-filter-pills");
+      container.innerHTML = "";
+
+      const expectedSubjects = activeStream === "JEE Main" 
+        ? ["all", "Physics", "Chemistry", "Mathematics"]
+        : ["all", "Physics", "Chemistry", "Biology"];
+
+      expectedSubjects.forEach(sub => {
+        const isActive = activeSubjectFilter === sub;
+        const btn = document.createElement("button");
+        btn.innerText = sub === "all" ? "All Subjects" : sub;
+        btn.className = isActive
+          ? "px-3.5 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 cursor-pointer shadow-xs"
+          : "px-3.5 py-1.5 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 shrink-0 cursor-pointer";
+        btn.onclick = () => setSubjectFilter(sub);
+        container.appendChild(btn);
+      });
+    }
+
+    function renderArchive() {
+      const archiveGrid = document.getElementById("beta-archive-grid");
+      archiveGrid.innerHTML = "";
+
+      const filtered = allDpps.filter(item => {
+        const matchesStream = item.examStream === activeStream;
+        const matchesSubject = activeSubjectFilter === "all" || item.subject === activeSubjectFilter;
+        return matchesStream && matchesSubject;
+      });
+
+      filtered.forEach(item => {
+        const itemSlug = slugify(item.title);
+        const col = SUBJECT_COLORS[item.subject] || SUBJECT_COLORS["Physics"];
+
+        archiveGrid.innerHTML += `
+          <div class="bg-white dark:bg-zinc-900 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-2">
+                <span class="font-bold text-zinc-400">${item.id.toUpperCase()}</span>
+                <span class="px-2 py-0.5 text-[11px] font-bold rounded border ${col.badge}">${item.subject}</span>
+              </div>
+              <h4 class="font-bold text-zinc-900 dark:text-white text-base leading-snug">${item.title}</h4>
+              <p class="text-xs text-zinc-500 mt-1">${item.chapter}</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs">
+              <span class="text-zinc-500 font-medium">${item.questionCount} Questions</span>
+              <a href="/practice/${itemSlug}" class="font-bold text-indigo-600 hover:underline">Solve Online →</a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const res = await fetch('/daily-dpps-beta.json');
+        if (!res.ok) throw new Error("Could not load beta manifest");
+        allDpps = await res.json();
+        setExamStream("JEE Main");
+      } catch (e) {
+        console.error("Beta load error:", e);
+      }
+    });
+  </script>
+
+</body>
+</html>

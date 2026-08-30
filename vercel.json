@@ -2,6 +2,10 @@
   "version": 2,
   "routes": [
     {
+      "src": "/beta",
+      "dest": "/beta.html"
+    },
+    {
       "src": "/about",
       "dest": "/about.html"
     },
