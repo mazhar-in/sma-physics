@@ -40,3 +40,57 @@ The platform runs on a **zero-server, JSON-driven headless architecture**, allow
 ---
 
 ## 🛠️ Tech Stack & Architecture
+
+[ inbox/ (JSON + PDF) ] ───► [ publish.py ] ───► [ daily-dpps.json ] ───► [ Git Push ] ───► [ Vercel Edge ]
+
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend Runtime** | Vanilla JavaScript (ES6+), HTML5, Tailwind CSS |
+| **Math Engine** | KaTeX `0.16.8` (Display & Inline LaTeX Parsing) |
+| **Data Layer** | Dynamic JSON Schema Manifest (`daily-dpps.json`) |
+| **Automation** | Python 3 (`subprocess`, `shutil`, `json`), ReportLab |
+| **Hosting & CDN** | Vercel Edge Network |
+| **SEO & Discovery** | Schema.org JSON-LD, Dynamic OpenGraph, Subdomain Canonical URLs |
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── inbox/                  # Staging area for raw JSON drops & PDFs
+├── queue/                  # Scheduled future DPP drops for automated releases
+├── dpps/                   # Production-ready datasets & printable PDFs
+│   ├── dpp-42/
+│   └── dpp-43/
+│       ├── dpp-43.json     # Questions, derivations, SEO metadata & capsule
+│       └── SMA_DPP_43.pdf  # 2-Column printable PDF
+├── daily-dpps.json         # Master manifest driving the site index & routing
+├── index.html              # Homepage, Chapter Directory & Worksheet Vault
+├── practice.html           # Full-screen randomized CBT Examination Room
+├── about.html              # Platform philosophy, educator bio & methodology
+├── publish.py              # 1-Click publisher & Git automation script
+├── release_cron.py         # Headless daily scheduler engine
+└── vercel.json             # Edge rewrite routing rules (/dpp, /chapter, /practice)
+
+🚀 1-Click Publishing Workflow
+To publish a new daily problem set without editing HTML or configuring servers:
+
+Drop dpp-XX.json and optional SMA_DPP_XX.pdf into inbox/.
+
+Run the automation engine:
+
+Bash
+python publish.py
+The engine automatically creates directories, updates the manifest, executes Git commits, triggers Vercel deployments, and outputs the live link.
+
+👨‍🏫 About the Author
+Designed and Developed by Syed Mazhar Ali
+
+JEE / NEET Physics Trainer & Software Developer
+
+🌐 Live Portal: daily-practice-sheets-dpps.smaphysics.com
+
+📸 Instagram: @mazharin
+
+📄 License
+This repository and all educational question datasets are licensed under the MIT License. Free for students and educators preparing for competitive examinations.
