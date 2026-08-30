@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
+  <!-- Dynamic Subdomain SEO Meta Tags -->
   <title id="practice-seo-title">SMA Physics — CBT Practice Room</title>
   <meta name="description" id="practice-seo-desc" content="Solve timed NEET and JEE Main/Advanced physics practice questions with detailed LaTeX step-by-step solutions." />
   <meta name="author" content="Syed Mazhar Ali" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" id="practice-seo-canonical" href="https://daily-practice-sheets-dpps.smaphysics.com/practice" />
   
+  <meta property="og:site_name" content="SMA Physics DPP Portal" />
   <meta property="og:title" id="og-practice-title" content="SMA Physics — CBT Practice Room" />
   <meta property="og:description" id="og-practice-desc" content="Timed NEET & JEE practice problems with immediate derivations." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" id="og-practice-url" content="https://daily-practice-sheets-dpps.smaphysics.com/practice" />
+  <meta property="og:image" id="og-practice-image" content="https://daily-practice-sheets-dpps.smaphysics.com/assets/og-banner.png" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -218,6 +223,8 @@
 
   <!-- ================= RANDOMIZER, MULTILINE & STATE LOGIC ================= -->
   <script>
+    const SITE_BASE_URL = "https://daily-practice-sheets-dpps.smaphysics.com";
+
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
         document.documentElement.classList.remove('dark');
@@ -238,7 +245,6 @@
         .replace(/^-+|-+$/g, '');
     }
 
-    // MULTILINE FORMATTER: Preserves line breaks and paragraphs cleanly
     function formatMultilineText(rawText) {
       if (!rawText) return "";
       const text = rawText.toString().trim();
@@ -374,6 +380,12 @@
           document.getElementById("dpp-meta-title").innerText = data.meta.title;
         }
 
+        // Subdomain Dynamic SEO
+        const currentTopicSlug = slugify(matchedDpp.title);
+        const practiceCanonical = `${SITE_BASE_URL}/practice/${currentTopicSlug}`;
+        document.getElementById("practice-seo-canonical")?.setAttribute("href", practiceCanonical);
+        document.getElementById("og-practice-url")?.setAttribute("content", practiceCanonical);
+
         if (data.seo) {
           document.title = data.seo.title;
           document.getElementById("practice-seo-desc")?.setAttribute("content", data.seo.description);
@@ -429,7 +441,6 @@
       document.getElementById("exam-badge").innerText = q.exam;
       document.getElementById("difficulty-badge").innerText = q.difficulty;
       
-      // Multiline Question Statement
       let statementHTML = `<div class="multiline-content break-words leading-relaxed">${formatMultilineText(q.statement)}</div>`;
       if (q.image && q.image.trim() !== "") {
         const imgPath = q.image.startsWith('/') ? q.image : `/${q.image}`;

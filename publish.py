@@ -151,7 +151,7 @@ def publish():
     push_out = run_git_command(["push"])
     if push_out is not None:
         print("🚀 Successfully pushed to Git! Live deployment triggered.")
-        print(f"🌐 Practice URL: https://smaphysics.com/practice/{dpp_id}\n")
+        print(f"🌐 Practice URL: https://daily-practice-sheets-dpps.smaphysics.com/practice/{dpp_id}\n")
     else:
         print("⚠️ Could not push to Git automatically. You can manually run 'git push'.\n")
 
