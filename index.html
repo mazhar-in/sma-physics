@@ -191,18 +191,18 @@
 
     </div>
 
-    <!-- ================= CHAPTER-CLASSIFIED WORKSHEET VAULT ================= -->
-    <section id="archive" class="space-y-5 pt-4 min-w-0">
+    <!-- ================= CHAPTER-CLASSIFIED WORKSHEET VAULT WITH LIVE SEARCH ================= -->
+    <section id="archive" class="space-y-6 pt-4 min-w-0">
       
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
         <div>
           <h3 id="vault-title" class="text-xl sm:text-2xl font-black text-zinc-950 dark:text-white tracking-tight">Physics Worksheet Vault</h3>
-          <p id="vault-subtitle" class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by Competitive Exam & Physics Chapter</p>
+          <p id="vault-subtitle" class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Filter by Competitive Exam, Chapter, or Topic Keyword</p>
         </div>
 
         <!-- Exam Filter Tabs -->
-        <div class="flex items-center gap-1.5 p-1.5 rounded-2xl bg-zinc-200/70 dark:bg-zinc-800/80 border border-zinc-300/60 dark:border-zinc-700/60 overflow-x-auto min-w-0">
+        <div class="flex items-center gap-1.5 p-1.5 rounded-2xl bg-zinc-200/70 dark:bg-zinc-800/80 border border-zinc-300/60 dark:border-zinc-700/60 overflow-x-auto min-w-0 shrink-0">
           <button onclick="setExamFilter('all')" id="tab-all" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 bg-white dark:bg-zinc-900 text-indigo-600 dark:text-indigo-400 shadow-sm cursor-pointer">
             All Tracks
           </button>
@@ -215,9 +215,39 @@
         </div>
       </div>
 
+      <!-- LIVE SEARCH BAR -->
+      <div class="relative w-full">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-zinc-400 dark:text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+        
+        <input
+          type="text"
+          id="worksheet-search-input"
+          oninput="handleSearchInput(this.value)"
+          placeholder="Search by topic, keyword, formula, or DPP # (e.g., Pure Rolling, Centre of Mass, dpp-43)..."
+          class="w-full pl-11 pr-10 py-3.5 sm:py-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl text-sm sm:text-base text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-hidden focus:ring-2 focus:ring-indigo-600 dark:focus:ring-indigo-500 focus:border-transparent transition shadow-xs"
+        />
+
+        <button
+          id="clear-search-btn"
+          onclick="clearSearch()"
+          class="hidden absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer"
+          title="Clear search"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
       <!-- Auto-Generated Chapter Filter Bar -->
       <div class="space-y-2">
-        <p class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Chapters</p>
+        <div class="flex items-center justify-between">
+          <p class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Filter by Chapter</p>
+        </div>
         <div id="chapter-filter-container" class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
           <!-- Populated dynamically from JSON manifest -->
         </div>
@@ -232,9 +262,17 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 min-w-0" id="archive-grid"></div>
       
       <!-- Empty State -->
-      <div id="empty-state" class="hidden text-center py-12 px-4 rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-800">
-        <p class="text-base font-bold text-zinc-700 dark:text-zinc-300">No worksheets found for this chapter selection.</p>
-        <p class="text-xs text-zinc-500 mt-1">Select "All Chapters" to view available DPPs.</p>
+      <div id="empty-state" class="hidden text-center py-14 px-4 rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-800 space-y-3">
+        <div class="w-12 h-12 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 dark:text-zinc-400 flex items-center justify-center mx-auto text-xl font-bold">
+          🔍
+        </div>
+        <div>
+          <p class="text-base font-bold text-zinc-800 dark:text-zinc-200" id="empty-state-msg">No worksheets found matching your search.</p>
+          <p class="text-xs text-zinc-500 mt-1">Try searching with a different keyword or reset filters.</p>
+        </div>
+        <button onclick="resetAllFilters()" class="px-4 py-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 rounded-xl border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 transition cursor-pointer">
+          Reset All Filters
+        </button>
       </div>
 
     </section>
@@ -278,7 +316,7 @@
     </div>
   </footer>
 
-  <!-- ================= CONTROLLER & ROUTING SCRIPT ================= -->
+  <!-- ================= CONTROLLER & SEARCH ENGINE SCRIPT ================= -->
   <script>
     function toggleDarkMode() {
       if (document.documentElement.classList.contains('dark')) {
@@ -320,6 +358,39 @@
     let activeDppId = '';
     let currentExamFilter = 'all';
     let currentChapterFilter = 'all';
+    let searchQuery = '';
+    let searchDebounceTimer = null;
+
+    // Real-Time Search Handler
+    function handleSearchInput(value) {
+      searchQuery = value.trim().toLowerCase();
+      
+      const clearBtn = document.getElementById("clear-search-btn");
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove("hidden");
+      } else {
+        clearBtn.classList.add("hidden");
+      }
+
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        renderArchiveGrid();
+      }, 100);
+    }
+
+    function clearSearch() {
+      const input = document.getElementById("worksheet-search-input");
+      input.value = "";
+      searchQuery = "";
+      document.getElementById("clear-search-btn").classList.add("hidden");
+      renderArchiveGrid();
+    }
+
+    function resetAllFilters() {
+      clearSearch();
+      setExamFilter('all');
+      setChapterFilter('all', false);
+    }
 
     async function triggerTopicDownload() {
       if (!activePdfData.url) return;
@@ -443,29 +514,49 @@
     function renderArchiveGrid() {
       const archiveGrid = document.getElementById("archive-grid");
       const emptyState = document.getElementById("empty-state");
+      const emptyStateMsg = document.getElementById("empty-state-msg");
       const statusText = document.getElementById("filter-status-text");
       if (!archiveGrid) return;
       archiveGrid.innerHTML = "";
 
       const filteredList = masterReleasedList.filter(item => {
+        // 1. Exam Filter
         const examStr = (item.exam || "").toLowerCase();
         let matchesExam = true;
         if (currentExamFilter === 'neet') matchesExam = examStr.includes('neet');
         else if (currentExamFilter === 'jee-main') matchesExam = examStr.includes('jee');
 
+        // 2. Chapter Filter
         let matchesChapter = true;
         if (currentChapterFilter !== 'all') {
           matchesChapter = (item.chapter || "").trim() === currentChapterFilter;
         }
 
-        return matchesExam && matchesChapter;
+        // 3. Keyword Search Match (matches title, chapter, exam, ID)
+        let matchesSearch = true;
+        if (searchQuery.length > 0) {
+          const searchableText = `${item.title} ${item.chapter} ${item.exam} ${item.id}`.toLowerCase();
+          matchesSearch = searchableText.includes(searchQuery);
+        }
+
+        return matchesExam && matchesChapter && matchesSearch;
       });
 
-      statusText.innerText = currentChapterFilter === 'all'
-        ? `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'}`
-        : `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'} in "${currentChapterFilter}"`;
+      // Status text messaging
+      if (searchQuery.length > 0) {
+        statusText.innerText = `Found ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'} matching "${searchQuery}"`;
+      } else if (currentChapterFilter !== 'all') {
+        statusText.innerText = `Showing ${filteredList.length} worksheet${filteredList.length === 1 ? '' : 's'} in "${currentChapterFilter}"`;
+      } else {
+        statusText.innerText = `Showing all ${filteredList.length} physics worksheets`;
+      }
 
       if (filteredList.length === 0) {
+        if (searchQuery.length > 0) {
+          emptyStateMsg.innerText = `No worksheets found matching "${searchQuery}".`;
+        } else {
+          emptyStateMsg.innerText = "No worksheets found for this selection.";
+        }
         emptyState.classList.remove("hidden");
         return;
       }
