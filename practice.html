@@ -48,6 +48,19 @@
     .multiline-content p:last-child {
       margin-bottom: 0;
     }
+
+    /* Force palette to stay hidden on touchscreen tablets even in landscape */
+    @media (pointer: coarse) {
+      .desktop-palette-sidebar {
+        display: none !important;
+      }
+      .mobile-palette-toggle-btn {
+        display: flex !important;
+      }
+      .exam-main-panel {
+        grid-column: span 12 / span 12 !important;
+      }
+    }
   </style>
 
   <!-- Prevent Theme Flash -->
@@ -75,18 +88,18 @@
         </span>
       </a>
       
-      <!-- Topic Header Badge (Truncated on small screens) -->
+      <!-- Topic Header Badge -->
       <div class="min-w-0 flex-1 px-1 text-center">
         <span id="dpp-meta-title" class="text-[11px] sm:text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-2.5 py-1 rounded-lg border border-indigo-100 dark:border-indigo-900/60 truncate max-w-full inline-block align-middle">
           Loading DPP...
         </span>
       </div>
 
-      <!-- Controls: Mobile Palette Toggle, Timer, Theme -->
+      <!-- Controls: Mobile/Tablet Palette Toggle, Timer, Theme -->
       <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
         
-        <!-- Mobile Matrix Drawer Opener Button -->
-        <button onclick="toggleMobilePalette(true)" aria-label="Open Question Matrix" class="lg:hidden flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 cursor-pointer">
+        <!-- Mobile & Tablet Matrix Drawer Opener (Visible below xl and on touch devices) -->
+        <button onclick="toggleMobilePalette(true)" aria-label="Open Question Matrix" class="mobile-palette-toggle-btn xl:hidden flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 cursor-pointer">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
           <span id="mobile-q-tracker">Q 1/20</span>
         </button>
@@ -108,10 +121,10 @@
   </header>
 
   <!-- ================= MAIN EXAM ROOM CONTAINER ================= -->
-  <main class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-6 flex-1 w-full grid grid-cols-1 lg:grid-cols-12 gap-5 items-start min-w-0">
+  <main class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-6 flex-1 w-full grid grid-cols-1 xl:grid-cols-12 gap-5 items-start min-w-0">
     
-    <!-- Left Problem Panel (Full Width on Mobile/Tablet, 8 cols on Desktop) -->
-    <div class="lg:col-span-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-xs space-y-4 sm:space-y-6 min-w-0 transition-colors">
+    <!-- Left Problem Panel (Full width on phones/tablets, 8-cols on desktop screens >= 1280px) -->
+    <div class="exam-main-panel xl:col-span-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-xs space-y-4 sm:space-y-6 min-w-0 transition-colors">
       
       <!-- Meta Strip -->
       <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3 gap-2">
@@ -163,8 +176,8 @@
 
     </div>
 
-    <!-- Desktop Question Matrix (Hidden on Mobile/Tablet, visible only on lg screens) -->
-    <aside class="hidden lg:block lg:col-span-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-xs space-y-5 min-w-0 sticky top-24 transition-colors">
+    <!-- Desktop Question Matrix (Hidden on Mobile/Tablets, only visible on Desktop >= 1280px) -->
+    <aside class="desktop-palette-sidebar hidden xl:block xl:col-span-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-xs space-y-5 min-w-0 sticky top-24 transition-colors">
       <div>
         <h3 class="text-sm font-bold text-zinc-900 dark:text-white tracking-tight">Question Navigation Matrix</h3>
         <p class="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">Jump directly to any problem</p>
@@ -196,8 +209,8 @@
   </main>
 
   <!-- ================= MOBILE / TABLET SLIDE-UP PALETTE DRAWER ================= -->
-  <div id="mobile-palette-modal" class="lg:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity">
-    <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-zinc-900 rounded-t-3xl border-t border-zinc-200 dark:border-zinc-800 p-5 max-h-[80vh] flex flex-col space-y-4 shadow-xl">
+  <div id="mobile-palette-modal" class="xl:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity">
+    <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-zinc-900 rounded-t-3xl border-t border-zinc-200 dark:border-zinc-800 p-5 max-h-[85vh] flex flex-col space-y-4 shadow-xl">
       
       <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3">
         <div>
@@ -210,7 +223,7 @@
       </div>
 
       <div class="overflow-y-auto flex-1 py-1">
-        <div class="grid grid-cols-5 gap-2" id="palette-grid-mobile"></div>
+        <div class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 gap-2" id="palette-grid-mobile"></div>
       </div>
 
       <div class="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-[11px] font-medium text-zinc-500">
