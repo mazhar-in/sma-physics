@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-020",
+    "date": "2026-08-31",
+    "jsonFile": "/dpps/dpp-020/dpp-020.json",
+    "pdfFile": "/dpps/dpp-020/SMA_DPP_020.pdf",
+    "title": "Inclined Projectiles & Uniform Circular Motion: Angular Variables & Centripetal Acceleration",
+    "chapter": "Motion in a Plane",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-019",
     "date": "2026-08-30",
     "jsonFile": "/dpps/dpp-019/dpp-019.json",

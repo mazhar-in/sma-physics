@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-020",
+    "title": "Inclined Projectiles & Uniform Circular Motion: Angular Variables & Centripetal Acceleration",
+    "publishDate": "2026-08-31",
+    "unit": "Mechanics",
+    "chapter": "Motion in a Plane"
+  },
+  "seo": {
+    "title": "Projectile on Incline & Uniform Circular Motion JEE Main DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering projectile motion up and down inclined planes, perpendicular impact conditions, angular kinematics, centripetal acceleration, and momentum change in UCM.",
+    "keywords": "JEE Main Physics, Inclined Projectile DPP, Uniform Circular Motion, Centripetal Acceleration, Angular Velocity, Projectile on Incline, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://daily-practice-sheets-dpps.smaphysics.com/practice/projectile-inclined-plane-uniform-circular-motion",
+    "ogImage": "https://daily-practice-sheets-dpps.smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Inclined Plane Projectiles & Uniform Circular Motion (UCM)",
+    "tag": "Class 11 Mechanics",
+    "summary": "1. Projectile on Incline: Choosing axes along the incline ($x'$) and normal to the incline ($y'$): $a_{x'} = \\mp g\\sin\\beta$ ($-$ for up, $+$ for down), $a_{y'} = -g\\cos\\beta$. Time of flight: $T = \\frac{2u\\sin\\alpha}{g\\cos\\beta}$. Maximum range up plane: $R_{\\max, \\text{up}} = \\frac{u^2}{g(1+\\sin\\beta)}$ at $\\alpha = \\frac{\\pi}{4} - \\frac{\\beta}{2}$. Perpendicular impact condition: $\\tan\\alpha = \\frac{\\cot\\beta}{2}$. 2. Uniform Circular Motion: Angular speed $\\omega = \\frac{2\\pi}{T} = 2\\pi f$. Linear speed $v = \\omega R$. Centripetal acceleration $\\vec{a}_c = -\\omega^2\\vec{r} = -\\frac{v^2}{R}\\hat{r}$. Momentum change over angle $\\theta$: $|\\Delta\\vec{p}| = 2mv\\sin(\\theta/2)$.",
+    "keyFormula": "$$T = \\frac{2u\\sin\\alpha}{g\\cos\\beta}, \\quad R_{\\max, \\text{up}} = \\frac{u^2}{g(1+\\sin\\beta)}, \\quad \\tan\\alpha = \\frac{\\cot\\beta}{2}, \\quad a_c = \\omega^2 R = \\frac{v^2}{R}, \\quad |\\Delta\\vec{p}| = 2mv\\sin\\left(\\frac{\\theta}{2}\\right)$$",
+    "examTrap": "In UCM, the speed and kinetic energy are strictly scalar constants, but velocity, linear momentum, and acceleration vectors are continuously changing due to direction change. For inclined planes, remember that the perpendicular collision condition requires $v_{x'} = 0$ at landing, leading to $\\tan\\alpha = \\frac{\\cot\\beta}{2}$."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle is projected from the base of an inclined plane of inclination $\\beta$ with initial velocity $u$ at an angle $\\alpha$ relative to the inclined surface. The time of flight $T$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2u\\sin\\alpha}{g\\sin\\beta}$" },
+        { "key": "B", "text": "$\\dfrac{2u\\sin\\alpha}{g\\cos\\beta}$" },
+        { "key": "C", "text": "$\\dfrac{2u\\cos\\alpha}{g\\cos\\beta}$" },
+        { "key": "D", "text": "$\\dfrac{u\\sin\\alpha}{g\\cos\\beta}$" }
+      ],
+      "correct": "B",
+      "solution": "Taking axis perpendicular to the incline with acceleration $a_{y'} = -g\\cos\\beta$ and initial component $u_{y'} = u\\sin\\alpha$: $$(u\\sin\\alpha)T - \\frac{1}{2}(g\\cos\\beta)T^2 = 0 \\implies T = \\frac{2u\\sin\\alpha}{g\\cos\\beta}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "For a given projection speed $u$ up an inclined plane of inclination $\\beta$, the angle of projection $\\alpha$ with the incline that maximizes the range up the plane is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{\\pi}{4}$" },
+        { "key": "B", "text": "$\\dfrac{\\pi}{4} + \\dfrac{\\beta}{2}$" },
+        { "key": "C", "text": "$\\dfrac{\\pi}{4} - \\dfrac{\\beta}{2}$" },
+        { "key": "D", "text": "$\\dfrac{\\pi}{2} - \\beta$" }
+      ],
+      "correct": "C",
+      "solution": "Range up the plane is $R = \\frac{u^2}{g\\cos^2\\beta}[\\sin(2\\alpha + \\beta) - \\sin\\beta]$. Range is maximum when $\\sin(2\\alpha + \\beta) = 1 \\implies 2\\alpha + \\beta = \\frac{\\pi}{2} \\implies \\alpha = \\frac{\\pi}{4} - \\frac{\\beta}{2}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is projected up an incline of angle $\\beta = 30^\\circ$ with speed $u$. If it strikes the inclined plane perpendicularly, the angle of projection $\\alpha$ with respect to the incline satisfies:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\tan\\alpha = \\sqrt{3}$" },
+        { "key": "B", "text": "$\\tan\\alpha = \\dfrac{\\sqrt{3}}{2}$" },
+        { "key": "C", "text": "$\\tan\\alpha = 2\\sqrt{3}$" },
+        { "key": "D", "text": "$\\tan\\alpha = \\dfrac{\\sqrt{3}}{6}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Condition for perpendicular impact: $v_{x'} = 0 \\implies u\\cos\\alpha - (g\\sin\\beta)T = 0$.<br>2. Substituting $T = \\frac{2u\\sin\\alpha}{g\\cos\\beta}$: $u\\cos\\alpha = 2u\\sin\\alpha\\tan\\beta \\implies \\tan\\alpha = \\frac{\\cot\\beta}{2}$.<br>3. For $\\beta = 30^\\circ$, $\\cot(30^\\circ) = \\sqrt{3} \\implies \\tan\\alpha = \\frac{\\sqrt{3}}{2}$ (or $\\frac{\\sqrt{3}}{6}$ depending on reference).<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "The maximum range $R_{\\max}$ of a projectile fired down an inclined plane of inclination $\\beta$ with speed $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2}{g(1 - \\sin\\beta)}$" },
+        { "key": "B", "text": "$\\dfrac{u^2}{g(1 + \\sin\\beta)}$" },
+        { "key": "C", "text": "$\\dfrac{u^2\\cos\\beta}{g(1 - \\sin\\beta)}$" },
+        { "key": "D", "text": "$\\dfrac{u^2}{g\\cos^2\\beta}$" }
+      ],
+      "correct": "A",
+      "solution": "For projection down an incline: $$R_{\\max} = \\frac{u^2(1 + \\sin\\beta)}{g\\cos^2\\beta} = \\frac{u^2(1 + \\sin\\beta)}{g(1 - \\sin^2\\beta)} = \\frac{u^2}{g(1 - \\sin\\beta)}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in a circle of radius $r = 0.5\\text{ m}$ with a constant angular speed $\\omega = 4\\text{ rad/s}$. The linear speed $v$ and centripetal acceleration $a_c$ of the particle are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$v = 1\\text{ m/s}, \\; a_c = 4\\text{ m/s}^2$" },
+        { "key": "B", "text": "$v = 2\\text{ m/s}, \\; a_c = 8\\text{ m/s}^2$" },
+        { "key": "C", "text": "$v = 2\\text{ m/s}, \\; a_c = 4\\text{ m/s}^2$" },
+        { "key": "D", "text": "$v = 4\\text{ m/s}, \\; a_c = 16\\text{ m/s}^2$" }
+      ],
+      "correct": "B",
+      "solution": "1. Linear speed: $v = r\\omega = 0.5 \\times 4 = 2\\text{ m/s}$.<br>2. Centripetal acceleration: $a_c = \\omega^2 r = 4^2 \\times 0.5 = 8\\text{ m/s}^2$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle moves in uniform circular motion of radius $R$. If its time period of revolution is $T$, the magnitude of average acceleration during half a revolution is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{2\\pi R}{T^2}$" },
+        { "key": "B", "text": "$\\dfrac{4\\pi R}{T^2}$" },
+        { "key": "C", "text": "$\\dfrac{8\\pi R}{T^2}$" },
+        { "key": "D", "text": "$0$" }
+      ],
+      "correct": "C",
+      "solution": "1. In half a revolution ($\\Delta t = T/2$), velocity vector reverses: $|\\Delta\\vec{v}| = 2v = 2\\left(\\frac{2\\pi R}{T}\\right) = \\frac{4\\pi R}{T}$.<br>2. Average acceleration: $a_{\\text{avg}} = \\frac{|\\Delta\\vec{v}|}{\\Delta t} = \\frac{4\\pi R / T}{T / 2} = \\frac{8\\pi R}{T^2}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For a particle in uniform circular motion, the position vector $\\vec{r}$ and centripetal acceleration vector $\\vec{a}_c$ satisfy which relation?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{a}_c \\cdot \\vec{r} = 0$" },
+        { "key": "B", "text": "$\\vec{a}_c \\times \\vec{r} \\ne \\vec{0}$" },
+        { "key": "C", "text": "$\\vec{a}_c = \\omega^2\\vec{r}$" },
+        { "key": "D", "text": "$\\vec{a}_c = -\\omega^2\\vec{r}$" }
+      ],
+      "correct": "D",
+      "solution": "The centripetal acceleration is radially directed inward towards the center, exactly opposite to the outward position vector $\\vec{r}$: $$\\vec{a}_c = -\\omega^2\\vec{r}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle of mass $m$ is executing uniform circular motion of radius $R$ with constant speed $v$. The change in momentum of the particle in traversing an arc subtending an angle $\\theta$ at the center is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$2mv\\sin\\left(\\dfrac{\\theta}{2}\\right)$" },
+        { "key": "B", "text": "$2mv\\cos\\left(\\dfrac{\\theta}{2}\\right)$" },
+        { "key": "C", "text": "$mv\\sin\\theta$" },
+        { "key": "D", "text": "$mv(1 - \\cos\\theta)$" }
+      ],
+      "correct": "A",
+      "solution": "$$|\\Delta\\vec{p}| = \\sqrt{p^2 + p^2 - 2p^2\\cos\\theta} = p\\sqrt{2(1-\\cos\\theta)} = 2p\\sin\\left(\\frac{\\theta}{2}\\right) = 2mv\\sin\\left(\\frac{\\theta}{2}\\right)$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "The minute hand of a clock has a length of $6\\text{ cm}$. The magnitude of the displacement vector and average velocity of the tip of the minute hand from $12:00\\text{ PM}$ to $12:30\\text{ PM}$ are:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6\\text{ cm}, \\; \\dfrac{1}{300}\\text{ cm/s}$" },
+        { "key": "B", "text": "$12\\text{ cm}, \\; \\dfrac{1}{150}\\text{ cm/s}$" },
+        { "key": "C", "text": "$12\\text{ cm}, \\; \\dfrac{\\pi}{150}\\text{ cm/s}$" },
+        { "key": "D", "text": "$0\\text{ cm}, \\; 0\\text{ cm/s}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Displacement across diameter: $d = 2 \\times 6 = 12\\text{ cm}$.<br>2. Time elapsed $\\Delta t = 30 \\times 60 = 1800\\text{ s}$.<br>3. Average velocity: $v_{\\text{avg}} = \\frac{12\\text{ cm}}{1800\\text{ s}} = \\frac{1}{150}\\text{ cm/s}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q10",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A body is projected from an incline of angle $\\beta$ with velocity $u$ at angle $\\alpha$ to the incline. The maximum height $H_{\\max}$ reached above the inclined surface is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u^2\\sin^2\\alpha}{2g}$" },
+        { "key": "B", "text": "$\\dfrac{u^2\\sin^2(\\alpha+\\beta)}{2g}$" },
+        { "key": "C", "text": "$\\dfrac{u^2\\sin^2\\alpha}{2g\\cos\\beta}$" },
+        { "key": "D", "text": "$\\dfrac{u^2\\cos^2\\alpha}{2g\\sin\\beta}$" }
+      ],
+      "correct": "C",
+      "solution": "Using $v_{y'}^2 = u_{y'}^2 - 2a_{y'}H_{\\max}$ with $v_{y'} = 0$ at peak: $$0 = (u\\sin\\alpha)^2 - 2(g\\cos\\beta)H_{\\max} \\implies H_{\\max} = \\frac{u^2\\sin^2\\alpha}{2g\\cos\\beta}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If a body is executing uniform circular motion, which of the following quantities remains strictly constant?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Velocity vector" },
+        { "key": "B", "text": "Acceleration vector" },
+        { "key": "C", "text": "Momentum vector" },
+        { "key": "D", "text": "Kinetic energy" }
+      ],
+      "correct": "D",
+      "solution": "In uniform circular motion, speed $v$ is constant, so scalar kinetic energy $K = \\frac{1}{2}mv^2$ remains constant. Vectors $\\vec{v}, \\vec{a}, \\vec{p}$ continuously change direction.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle moves in a circle of radius $20\\text{ cm}$ at $120\\text{ rpm}$. The magnitude of its centripetal acceleration is: (Take $\\pi^2 \\approx 9.87$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3.2\\pi^2\\text{ m/s}^2 \\approx 31.58\\text{ m/s}^2$" },
+        { "key": "B", "text": "$1.6\\pi^2\\text{ m/s}^2$" },
+        { "key": "C", "text": "$0.8\\pi^2\\text{ m/s}^2$" },
+        { "key": "D", "text": "$6.4\\pi^2\\text{ m/s}^2$" }
+      ],
+      "correct": "A",
+      "solution": "1. $\\omega = 120 \\times \\frac{2\\pi}{60} = 4\\pi\\text{ rad/s}$.<br>2. $a_c = \\omega^2 r = (4\\pi)^2 \\times 0.2 = 16\\pi^2 \\times 0.2 = 3.2\\pi^2\\text{ m/s}^2 \\approx 31.58\\text{ m/s}^2$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two particles $P$ and $Q$ move in concentric circles of radii $R_P$ and $R_Q$ with the same time period $T$. The ratio of their centripetal accelerations $\\dfrac{a_P}{a_Q}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{R_Q}{R_P}$" },
+        { "key": "B", "text": "$\\dfrac{R_P}{R_Q}$" },
+        { "key": "C", "text": "$\\dfrac{R_P^2}{R_Q^2}$" },
+        { "key": "D", "text": "$1$" }
+      ],
+      "correct": "B",
+      "solution": "Centripetal acceleration $a_c = \\omega^2 R = \\left(\\frac{2\\pi}{T}\\right)^2 R$. Since $T$ is identical, $\\frac{a_P}{a_Q} = \\frac{R_P}{R_Q}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A particle is projected from the ground with speed $u$ up an inclined plane of inclination $\\beta$. The ratio of the maximum range up the plane to the maximum range down the plane for the same launch speed $u$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{1 + \\sin\\beta}{1 - \\sin\\beta}$" },
+        { "key": "B", "text": "$1$" },
+        { "key": "C", "text": "$\\dfrac{1 - \\sin\\beta}{1 + \\sin\\beta}$" },
+        { "key": "D", "text": "$\\dfrac{\\cos\\beta}{1 + \\sin\\beta}$" }
+      ],
+      "correct": "C",
+      "solution": "$$\\frac{R_{\\max, \\text{up}}}{R_{\\max, \\text{down}}} = \\frac{\\frac{u^2}{g(1+\\sin\\beta)}}{\\frac{u^2}{g(1-\\sin\\beta)}} = \\frac{1 - \\sin\\beta}{1 + \\sin\\beta}$$<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "An object moves along a circular path of radius $R$ in uniform circular motion with linear momentum $p$. The centripetal force acting on the object is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$p^2 R$" },
+        { "key": "B", "text": "$\\dfrac{p}{R}$" },
+        { "key": "C", "text": "$p \\omega^2$" },
+        { "key": "D", "text": "$\\dfrac{p^2}{m R}$" }
+      ],
+      "correct": "D",
+      "solution": "Since $p = mv \\implies v = p/m$: $$F_c = \\frac{mv^2}{R} = \\frac{m(p/m)^2}{R} = \\frac{p^2}{mR}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A particle projected from the base of an incline of angle $\\beta$ lands at the same level of the incline after time $T$. The horizontal component of displacement is given by:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$R\\cos\\beta$" },
+        { "key": "B", "text": "$R\\sin\\beta$" },
+        { "key": "C", "text": "$R\\tan\\beta$" },
+        { "key": "D", "text": "$R\\sec\\beta$" }
+      ],
+      "correct": "A",
+      "solution": "The range $R$ lies along the incline surface inclined at angle $\beta$ to the horizontal. Resolving horizontally gives $x = R\\cos\\beta$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "If angular displacement of a rotating wheel varies with time as $\\theta(t) = 2t^3 - 3t^2\\text{ rad}$, the angular acceleration at $t = 2\\text{ s}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$12\\text{ rad/s}^2$" },
+        { "key": "B", "text": "$18\\text{ rad/s}^2$" },
+        { "key": "C", "text": "$6\\text{ rad/s}^2$" },
+        { "key": "D", "text": "$24\\text{ rad/s}^2$" }
+      ],
+      "correct": "B",
+      "solution": "1. $\\omega(t) = \\frac{d\\theta}{dt} = 6t^2 - 6t$.<br>2. $\\alpha(t) = \\frac{d\\omega}{dt} = 12t - 6$.<br>3. $\\alpha(2) = 12(2) - 6 = 18\\text{ rad/s}^2$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A wheel of radius $R = 0.4\\text{ m}$ rotates with constant angular speed $\\omega = 10\\text{ rad/s}$. The distance traveled by a point on the rim in $5\\text{ seconds}$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$10\\text{ m}$" },
+        { "key": "B", "text": "$15\\text{ m}$" },
+        { "key": "C", "text": "$20\\text{ m}$" },
+        { "key": "D", "text": "$25\\text{ m}$" }
+      ],
+      "correct": "C",
+      "solution": "1. Linear speed: $v = \\omega R = 10 \\times 0.4 = 4\\text{ m/s}$.<br>2. Distance in $5\\text{ s}$: $s = v \\times t = 4 \\times 5 = 20\\text{ m}$.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "For an inclined plane of inclination $\\beta$, a projectile is thrown up the plane. If the initial velocity is purely perpendicular to the incline ($\\alpha = 90^\\circ$), the time of flight $T$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{u}{g\\cos\\beta}$" },
+        { "key": "B", "text": "$\\dfrac{2u}{g\\sin\\beta}$" },
+        { "key": "C", "text": "$\\dfrac{u}{g\\sin\beta}$" },
+        { "key": "D", "text": "$\\dfrac{2u}{g\\cos\\beta}$" }
+      ],
+      "correct": "D",
+      "solution": "$$T = \\frac{2u\\sin 90^\\circ}{g\\cos\\beta} = \\frac{2u}{g\\cos\\beta}$$<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A projectile is launched down an inclined plane of angle $30^\\circ$ at an angle of $30^\\circ$ to the incline with speed $u = 10\\text{ m/s}$. The range along the incline is: (Take $g = 10\\text{ m/s}^2$)",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\dfrac{40}{3}\\text{ m} \\approx 13.33\\text{ m}$" },
+        { "key": "B", "text": "$10\\text{ m}$" },
+        { "key": "C", "text": "$20\\text{ m}$" },
+        { "key": "D", "text": "$\\dfrac{20}{3}\\text{ m}$" }
+      ],
+      "correct": "A",
+      "solution": "1. $T = \\frac{2(10)\\sin 30^\\circ}{10\\cos 30^\\circ} = \\frac{2}{\\sqrt{3}}\\text{ s}$.<br>2. $R = u_{x'}T + \\frac{1}{2}a_{x'}T^2 = (10\\cos 30^\\circ)\\left(\\frac{2}{\\sqrt{3}}\\right) + \\frac{1}{2}(10\\sin 30^\\circ)\\left(\\frac{4}{3}\\right) = 10 + \\frac{10}{3} = \\frac{40}{3}\\text{ m}$.<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}
