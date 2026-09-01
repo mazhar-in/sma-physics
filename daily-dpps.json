@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-021",
+    "date": "2026-09-01",
+    "jsonFile": "/dpps/dpp-021/dpp-021.json",
+    "pdfFile": "/dpps/dpp-021/SMA_DPP_021.pdf",
+    "title": "Force and Inertia: Newton's First Law of Motion & Inertial Reference Frames",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-020",
     "date": "2026-08-31",
     "jsonFile": "/dpps/dpp-020/dpp-020.json",
