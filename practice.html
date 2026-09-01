@@ -142,7 +142,7 @@
         </div>
       </div>
 
-      <!-- Question Statement + Diagram (Bigger font on mobile: text-base sm:text-lg md:text-xl) -->
+      <!-- Question Statement + Diagram -->
       <div class="multiline-content text-zinc-900 dark:text-zinc-100 text-base sm:text-lg md:text-xl leading-relaxed font-normal break-words [overflow-wrap:anywhere]" id="question-statement">
         <div class="animate-pulse space-y-2.5 py-1">
           <div class="h-5 bg-zinc-200 dark:bg-zinc-800 rounded w-3/4"></div>
@@ -150,10 +150,10 @@
         </div>
       </div>
 
-      <!-- Multiple Choice Options (Bigger font: text-base sm:text-lg) -->
+      <!-- Multiple Choice Options -->
       <div class="space-y-3 min-w-0" id="options-container"></div>
 
-      <!-- Expandable Solution Drawer (Bigger font: text-base sm:text-lg) -->
+      <!-- Expandable Solution Drawer -->
       <div id="solution-drawer" class="hidden bg-zinc-50 dark:bg-zinc-800/60 border-t border-dashed border-zinc-200 dark:border-zinc-700 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 min-w-0">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 text-xs sm:text-sm font-bold bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-900/60 rounded-md">
           <span>✓</span>
@@ -177,7 +177,7 @@
 
     </div>
 
-    <!-- Desktop Question Matrix -->
+    <!-- Desktop Question Matrix (Hidden below xl screens and on touchscreens) -->
     <aside class="desktop-palette-sidebar hidden xl:block xl:col-span-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-xs space-y-5 min-w-0 sticky top-24 transition-colors">
       <div>
         <h3 class="text-sm font-bold text-zinc-900 dark:text-white tracking-tight">Question Navigation Matrix</h3>
@@ -271,7 +271,7 @@
     </div>
   </footer>
 
-  <!-- ================= LOGIC, DYNAMIC REGEX & RANDOMIZER ENGINE ================= -->
+  <!-- ================= LOGIC, SANITIZER & RANDOMIZER ENGINE ================= -->
   <script>
     const SITE_BASE_URL = "https://daily-practice-sheets-dpps.smaphysics.com";
 
@@ -314,25 +314,23 @@
       return text.replace(/\n/g, '<br/>');
     }
 
-    function updateSolutionLetter(solutionText, oldKey, newKey) {
-      if (!solutionText || !oldKey || !newKey || oldKey === newKey) return solutionText;
+    // Comprehensive sanitizer: strips baked-in "Option X is correct", "Hence (D)", etc.
+    function sanitizeSolutionText(text) {
+      if (!text) return "";
+      let cleaned = text.toString();
 
-      const patterns = [
-        new RegExp(`(correct\\s+option\\s*(?:is|:)?\\s*\\(?\\\\?textbf\\{?)(${oldKey})(\\}?\\)?)`, "gi"),
-        new RegExp(`(option\\s*)(${oldKey})(\\s*is\\s+correct)`, "gi"),
-        new RegExp(`(hence,?\\s*(?:correct)?\\s*(?:option)?\\s*\\(?\\\\?textbf\\{?)(${oldKey})(\\}?\\)?)`, "gi"),
-        new RegExp(`(answer\\s*(?:is|:)?\\s*\\(?\\\\?textbf\\{?)(${oldKey})(\\}?\\)?)`, "gi"),
-        new RegExp(`(\\(\\s*)(${oldKey})(\\s*\\)\\s*(?:is\\s+correct)?)`, "gi")
+      const purgePatterns = [
+        /(?:therefore|hence|thus|so|clearly|accordingly),?\s*(?:the\s*)?(?:correct\s*)?(?:option|choice|answer)\s*(?:is|:)?\s*[\(\[\{]?\\?(?:textbf\{)?([A-D])\}?[\)\]\}]?\s*(?:is\s*(?:the\s*)?(?:correct|right|true)(?:\s*answer)?)?\.?/gi,
+        /(?:correct\s*)?(?:option|choice|answer)\s*[\(\[\{]?\\?(?:textbf\{)?([A-D])\}?[\)\]\}]?\s*(?:is|:)?\s*(?:correct|right|true|the\s*answer)?\.?/gi,
+        /(?:ans|answer)\s*[:\-]\s*[\(\[\{]?\\?(?:textbf\{)?([A-D])\}?[\)\]\}]?\.?/gi,
+        /\\textbf\{[\(\[]?[A-D][\)\]]?\}\s*(?:is\s*correct)?\.?/gi
       ];
 
-      let updatedText = solutionText;
-      patterns.forEach(regex => {
-        updatedText = updatedText.replace(regex, (match, prefix, letter, suffix) => {
-          return `${prefix}${newKey}${suffix || ''}`;
-        });
+      purgePatterns.forEach(pattern => {
+        cleaned = cleaned.replace(pattern, "").trim();
       });
 
-      return updatedText;
+      return cleaned.replace(/\s*\.\s*$/, "").trim();
     }
 
     function shuffleArray(arr) {
@@ -543,7 +541,7 @@
       document.getElementById("exam-badge").innerText = q.exam;
       document.getElementById("difficulty-badge").innerText = q.difficulty;
       
-      // Question Statement (Mobile text-base sm:text-lg md:text-xl)
+      // Question Statement
       let statementHTML = `<div class="multiline-content break-words leading-relaxed">${formatMultilineText(q.statement)}</div>`;
       if (q.image && q.image.trim() !== "") {
         const imgPath = q.image.startsWith('/') ? q.image : `/${q.image}`;
@@ -596,8 +594,19 @@
       const actionBtn = document.getElementById("action-btn");
       
       if (isSubmitted) {
-        const dynamicSolution = updateSolutionLetter(q.solution, q.originalKey, q.correct);
-        document.getElementById("solution-text").innerHTML = formatMultilineText(dynamicSolution);
+        // Strip hardcoded statements and show clean dynamic badge
+        const cleanDerivation = sanitizeSolutionText(q.solution);
+        
+        document.getElementById("solution-text").innerHTML = `
+          <div class="mb-3 p-3 rounded-xl bg-emerald-50/90 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 flex items-center justify-between">
+            <span class="text-sm sm:text-base font-extrabold text-emerald-800 dark:text-emerald-300">
+              ✓ Correct Answer: Option (${q.correct})
+            </span>
+          </div>
+          <div class="multiline-content">
+            ${formatMultilineText(cleanDerivation)}
+          </div>
+        `;
         drawer.classList.remove("hidden");
         actionBtn.innerText = "Solution Displayed";
         actionBtn.disabled = true;
