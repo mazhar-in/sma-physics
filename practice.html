@@ -98,7 +98,7 @@
       <!-- Controls: Mobile/Tablet Palette Toggle, Timer, Theme -->
       <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
         
-        <!-- Mobile & Tablet Matrix Drawer Opener (Visible below xl and on touch devices) -->
+        <!-- Mobile & Tablet Matrix Drawer Opener -->
         <button onclick="toggleMobilePalette(true)" aria-label="Open Question Matrix" class="mobile-palette-toggle-btn xl:hidden flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 cursor-pointer">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
           <span id="mobile-q-tracker">Q 1/20</span>
@@ -123,7 +123,7 @@
   <!-- ================= MAIN EXAM ROOM CONTAINER ================= -->
   <main class="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-6 flex-1 w-full grid grid-cols-1 xl:grid-cols-12 gap-5 items-start min-w-0">
     
-    <!-- Left Problem Panel (Full width on phones/tablets, 8-cols on desktop screens >= 1280px) -->
+    <!-- Left Problem Panel -->
     <div class="exam-main-panel xl:col-span-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-xs space-y-4 sm:space-y-6 min-w-0 transition-colors">
       
       <!-- Meta Strip -->
@@ -176,7 +176,7 @@
 
     </div>
 
-    <!-- Desktop Question Matrix (Hidden on Mobile/Tablets, only visible on Desktop >= 1280px) -->
+    <!-- Desktop Question Matrix -->
     <aside class="desktop-palette-sidebar hidden xl:block xl:col-span-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-xs space-y-5 min-w-0 sticky top-24 transition-colors">
       <div>
         <h3 class="text-sm font-bold text-zinc-900 dark:text-white tracking-tight">Question Navigation Matrix</h3>
@@ -278,33 +278,48 @@
       return text.replace(/\n/g, '<br/>');
     }
 
+    // Clones array so original data is never mutated
     function shuffleArray(arr) {
-      for (let i = arr.length - 1; i > 0; i--) {
+      const cloned = [...arr];
+      for (let i = cloned.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+        [cloned[i], cloned[j]] = [cloned[j], cloned[i]];
       }
-      return arr;
+      return cloned;
     }
 
+    // Immune to LaTeX, spaces, duplicates, and case-sensitivity
     function randomizeQuiz(rawQuestions) {
-      const questionsList = shuffleArray([...rawQuestions]);
+      const shuffledQuestions = shuffleArray(rawQuestions);
 
-      return questionsList.map((q) => {
-        const originalCorrectOpt = q.options.find(opt => opt.key === q.correct);
-        const correctText = originalCorrectOpt ? originalCorrectOpt.text : (q.options[0]?.text || "");
+      return shuffledQuestions.map((q) => {
+        const rawTargetKey = (q.correct || "").toString().trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
 
-        const optionTexts = q.options.map(opt => opt.text);
-        shuffleArray(optionTexts);
+        // Tag each option object with an immutable `isCorrect` flag
+        const taggedOptions = (q.options || []).map((opt, idx) => {
+          const optKeyClean = (opt.key || String.fromCharCode(65 + idx)).toString().trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+          const isCorrect = (optKeyClean === rawTargetKey) || (String(idx + 1) === rawTargetKey);
+          return {
+            text: opt.text,
+            isCorrect: isCorrect
+          };
+        });
 
-        const keys = ["A", "B", "C", "D", "E", "F"];
+        // Shuffle the option objects
+        const shuffledOptionObjects = shuffleArray(taggedOptions);
+
+        // Assign clean sequential keys and find the new correct key
         let newCorrectKey = "A";
-
-        const remappedOptions = optionTexts.map((text, idx) => {
-          const key = keys[idx] || String.fromCharCode(65 + idx);
-          if (text === correctText) {
-            newCorrectKey = key;
+        const remappedOptions = shuffledOptionObjects.map((opt, idx) => {
+          const newKey = String.fromCharCode(65 + idx);
+          if (opt.isCorrect) {
+            newCorrectKey = newKey;
           }
-          return { key: key, text: text };
+          return {
+            key: newKey,
+            text: opt.text,
+            isCorrect: opt.isCorrect
+          };
         });
 
         return {
@@ -360,6 +375,7 @@
         if (!response.ok) throw new Error(`Could not load dataset at ${jsonPath}`);
         const data = await response.json();
 
+        // Randomize questions & options with boolean-tracked keys
         questions = randomizeQuiz(data.questions || []);
 
         if (data.meta && data.meta.title) {
