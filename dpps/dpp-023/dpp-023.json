@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "dppId": "SMA-DPP-023",
+    "title": "Newton's Third Law of Motion: Action-Reaction Pairs, Contact Forces & Momentum Conservation",
+    "publishDate": "2026-09-03",
+    "unit": "Mechanics",
+    "chapter": "Laws of Motion"
+  },
+  "seo": {
+    "title": "Newton's Third Law & Action-Reaction Pairs JEE Main Physics DPP | SMA Physics",
+    "description": "20 High-yield JEE Main MCQ practice questions covering Newton's third law of motion, action-reaction pairs vs equilibrium pairs, contact normal forces, recoil kinematics, and rocket thrust.",
+    "keywords": "JEE Main Physics, Laws of Motion DPP, Newton's Third Law, Action Reaction Pairs, Normal Reaction Forces, Recoil Velocity, Contact Forces, Syed Mazhar Ali, SMA Physics",
+    "canonicalUrl": "https://daily-practice-sheets-dpps.smaphysics.com/practice/newtons-third-law-action-reaction-pairs",
+    "ogImage": "https://daily-practice-sheets-dpps.smaphysics.com/assets/og-banner.png"
+  },
+  "conceptCapsule": {
+    "title": "Universal Characteristics of Action-Reaction Pairs (Newton's Third Law)",
+    "tag": "Class 11 Mechanics",
+    "summary": "Newton's Third Law asserts: 'To every action, there is always an equal and opposite reaction' ($\\vec{F}_{AB} = -\\vec{F}_{BA}$). Core Properties: (1) Forces always occur in pairs—a single isolated force is physically impossible. (2) Action and reaction forces act simultaneously on two different interacting bodies, so they never cancel each other out to produce equilibrium on a single body. (3) They are of identical physical nature (e.g., gravitational pairs with gravitational, normal with normal). (4) Law of conservation of linear momentum is a direct consequence of Newton's third law for an isolated system ($d\\vec{P}/dt = \\sum \\vec{F}_{\\text{ext}} = \\vec{0}$).",
+    "keyFormula": "$$\\vec{F}_{12} = -\\vec{F}_{21}, \\quad \\vec{F}_{12} + \\vec{F}_{21} = \\vec{0}, \\quad M V_{\\text{recoil}} + m v = 0, \\quad N = m(g \\pm a)$$",
+    "examTrap": "Never confuse an equilibrium pair with an action-reaction pair. Normal force $\\vec{N}$ and gravity $m\\vec{g}$ on a book resting on a table act on the SAME body and cancel out to yield $\\vec{a}=\\vec{0}$ (Newton's 1st law). The true third-law reaction to the Earth's gravitational pull on the book is the book's upward gravitational pull on the Earth."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Action and reaction forces referred to in Newton's third law of motion:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Act on the same body in opposite directions" },
+        { "key": "B", "text": "Act on two different interacting bodies simultaneously" },
+        { "key": "C", "text": "Must be equal in magnitude but need not be collinear" },
+        { "key": "D", "text": "Act with a finite time delay between action and reaction" }
+      ],
+      "correct": "B",
+      "solution": "Newton's third law explicitly states that forces always occur in matched pairs acting simultaneously on two distinct interacting bodies ($\\vec{F}_{AB} = -\\vec{F}_{BA}$). Because they act on different bodies, they never cancel each other out.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q02",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A horse pulls a cart along a flat road. The force that primarily accelerates the combined horse-cart system forward is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The force exerted by the horse on the cart" },
+        { "key": "B", "text": "The force exerted by the cart on the horse" },
+        { "key": "C", "text": "The horizontal friction force exerted by the ground on the horse's hooves" },
+        { "key": "D", "text": "The internal muscular tension of the horse" }
+      ],
+      "correct": "C",
+      "solution": "The horse pushes backward against the ground with its hooves. By Newton's third law, the ground exerts an equal and opposite forward reaction force (static friction) on the horse, accelerating the entire system forward.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q03",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A book of mass $m$ rests quietly on a horizontal table. The reaction force to the gravitational force exerted by Earth on the book is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The normal contact force exerted by the table on the book" },
+        { "key": "B", "text": "The normal contact force exerted by the book on the table" },
+        { "key": "C", "text": "The gravitational pull of the table on the book" },
+        { "key": "D", "text": "The gravitational force exerted by the book on the Earth" }
+      ],
+      "correct": "D",
+      "solution": "Action and reaction must be of the same physical nature and act between the same two interacting bodies. Earth exerts a downward gravitational pull on the book; the paired reaction is the upward gravitational pull exerted by the book on the Earth.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q04",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "Two blocks of masses $m_1 = 4\\text{ kg}$ and $m_2 = 2\\text{ kg}$ are in contact on a frictionless horizontal floor. A horizontal pushing force $F = 18\\text{ N}$ is applied to $m_1$ towards $m_2$. The magnitude of the contact force between the two blocks is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6\\text{ N}$" },
+        { "key": "B", "text": "$12\\text{ N}$" },
+        { "key": "C", "text": "$18\\text{ N}$" },
+        { "key": "D", "text": "$9\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "1. Common acceleration $a = \\frac{F}{m_1 + m_2} = \\frac{18}{4 + 2} = 3\\text{ m/s}^2$.<br>2. Contact force $N$ accelerates block $m_2$: $N = m_2 a = 2 \\times 3 = 6\\text{ N}$.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q05",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In the previous question, if the same force $F = 18\\text{ N}$ is applied to $m_2$ pushing it towards $m_1$, the magnitude of the contact force between the blocks becomes:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$6\\text{ N}$" },
+        { "key": "B", "text": "$12\\text{ N}$" },
+        { "key": "C", "text": "$18\\text{ N}$" },
+        { "key": "D", "text": "$9\\text{ N}$" }
+      ],
+      "correct": "B",
+      "solution": "Acceleration remains $a = 3\\text{ m/s}^2$. The contact force $N'$ now accelerates block $m_1$: $$N' = m_1 a = 4 \\times 3 = 12\\text{ N}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q06",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A man of mass $M = 60\\text{ kg}$ stands on a spring scale inside an elevator. If the elevator cable snaps and it falls freely under gravity ($g = 10\\text{ m/s}^2$), the normal contact force exerted by the scale on the man is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$600\\text{ N}$" },
+        { "key": "B", "text": "$1200\\text{ N}$" },
+        { "key": "C", "text": "$0\\text{ N}$" },
+        { "key": "D", "text": "$300\\text{ N}$" }
+      ],
+      "correct": "C",
+      "solution": "During free fall ($a = g$ downwards): $$Mg - N = M(g) \\implies N = 0\\text{ N}$$ The scale indicates zero (apparent weightlessness).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q07",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A rocket operates in the vacuum of outer space where there is no surrounding atmosphere. The rocket is propelled forward because:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Exhaust gases push against the surrounding cosmic dust" },
+        { "key": "B", "text": "The atmosphere pulls the rocket from ahead" },
+        { "key": "C", "text": "Gravity is absent in space" },
+        { "key": "D", "text": "The ejected exhaust gases exert an equal and opposite forward reaction force on the rocket" }
+      ],
+      "correct": "D",
+      "solution": "By Newton's third law, the backward momentum imparted to the ejected high-speed exhaust gases generates an equal and opposite forward reaction force (thrust) directly on the rocket structure.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q08",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A body of mass $m_1$ exerts a force $\\vec{F}_{12}$ on another body of mass $m_2$. If $\\vec{F}_{21}$ is the force exerted by $m_2$ on $m_1$, which of the following is strictly true under all circumstances?",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$\\vec{F}_{12} + \\vec{F}_{21} = \\vec{0}$" },
+        { "key": "B", "text": "$|\\vec{F}_{12}| > |\\vec{F}_{21}|$ if $m_1 > m_2$" },
+        { "key": "C", "text": "$\\vec{F}_{12} \\cdot \\vec{F}_{21} > 0$" },
+        { "key": "D", "text": "$\\vec{F}_{12}$ and $\\vec{F}_{21}$ cancel each other and produce zero acceleration" }
+      ],
+      "correct": "A",
+      "solution": "Newton's third law is universal: $\\vec{F}_{12} = -\\vec{F}_{21} \\implies \\vec{F}_{12} + \\vec{F}_{21} = \\vec{0}$, regardless of the relative masses or motion states.<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q09",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A cannon of mass $M = 500\\text{ kg}$ fires a cannonball of mass $m = 5\\text{ kg}$ horizontally with a muzzle speed of $v = 100\\text{ m/s}$. The recoil velocity of the cannon is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$-10\\text{ m/s}$" },
+        { "key": "B", "text": "$-1.0\\text{ m/s}$" },
+        { "key": "C", "text": "$-0.1\\text{ m/s}$" },
+        { "key": "D", "text": "$-5.0\\text{ m/s}$" }
+      ],
+      "correct": "B",
+      "solution": "By conservation of linear momentum: $$M V_{\\text{recoil}} + mv = 0 \\implies 500 V_{\\text{recoil}} + 5(100) = 0 \\implies V_{\\text{recoil}} = -1.0\\text{ m/s}$$<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q09_2",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A swimmer pushes water backwards with his hands and feet to move forward in a pool. The forward force that accelerates the swimmer is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The muscular force exerted by the swimmer on the water" },
+        { "key": "B", "text": "The buoyant force of water" },
+        { "key": "C", "text": "The reaction force exerted by the water on the swimmer" },
+        { "key": "D", "text": "The gravitational force on the swimmer" }
+      ],
+      "correct": "C",
+      "solution": "The swimmer applies a backward force on the water. By Newton's third law, the water exerts an equal and opposite forward reaction force on the swimmer.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q11",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Three identical blocks $A, B,$ and $C$, each of mass $m = 2\\text{ kg}$, are connected by light strings and pulled along a frictionless horizontal table with a force $F = 12\\text{ N}$ applied to block $C$. The tension $T_1$ in the string connecting $A$ and $B$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ N}$" },
+        { "key": "B", "text": "$6\\text{ N}$" },
+        { "key": "C", "text": "$12\\text{ N}$" },
+        { "key": "D", "text": "$4\\text{ N}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Acceleration $a = \\frac{F}{3m} = \\frac{12}{6} = 2\\text{ m/s}^2$.<br>2. String $T_1$ accelerates only block $A$: $T_1 = m_A a = 2 \\times 2 = 4\\text{ N}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q12",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "In Q11, the tension $T_2$ in the string connecting block $B$ and block $C$ is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$8\\text{ N}$" },
+        { "key": "B", "text": "$4\\text{ N}$" },
+        { "key": "C", "text": "$6\\text{ N}$" },
+        { "key": "D", "text": "$10\\text{ N}$" }
+      ],
+      "correct": "A",
+      "solution": "Tension $T_2$ accelerates blocks $A$ and $B$: $$T_2 = (m_A + m_B)a = (2 + 2) \\times 2 = 8\\text{ N}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q13",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A person of mass $M = 50\\text{ kg}$ stands on a frictionless ice surface and throws a stone of mass $m = 0.5\\text{ kg}$ horizontally with speed $v = 20\\text{ m/s}$. The distance moved by the person in $5\\text{ seconds}$ after throwing the stone is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$0.5\\text{ m}$" },
+        { "key": "B", "text": "$1.0\\text{ m}$" },
+        { "key": "C", "text": "$2.0\\text{ m}$" },
+        { "key": "D", "text": "$0.2\\text{ m}$" }
+      ],
+      "correct": "B",
+      "solution": "1. Recoil velocity: $v_{\\text{person}} = -\\frac{mv}{M} = -\\frac{0.5 \\times 20}{50} = -0.2\\text{ m/s}$.<br>2. Distance covered in $5\\text{ s}$: $s = |v_{\\text{person}}| \\times t = 0.2 \\times 5 = 1.0\\text{ m}$.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q14",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "When a heavy truck collides head-on with a small compact car:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The truck exerts a greater magnitude of force on the car than the car exerts on the truck" },
+        { "key": "B", "text": "The car exerts a greater magnitude of force on the truck" },
+        { "key": "C", "text": "Both vehicles exert equal and opposite forces of identical magnitude on each other" },
+        { "key": "D", "text": "The force depends on which vehicle was moving faster" }
+      ],
+      "correct": "C",
+      "solution": "By Newton's third law, the force exerted by the truck on the car is strictly equal and opposite to that exerted by the car on the truck. The car experiences greater deformation and acceleration due to its smaller mass ($a = F/m$).<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q15",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A block of mass $m$ is suspended by a light vertical rope. The action force is the downward pull of Earth on the block ($mg$). The reaction to the tension force exerted by the rope on the block is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "The tension force exerted by the ceiling on the rope" },
+        { "key": "B", "text": "The gravitational pull of the block on the Earth" },
+        { "key": "C", "text": "The normal force on the ceiling" },
+        { "key": "D", "text": "The downward force exerted by the block on the rope" }
+      ],
+      "correct": "D",
+      "solution": "The contact tension force acts upward on the block from the rope. Its third-law reaction is the downward force exerted by the block on the rope.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q16",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "A helicopter of mass $M = 2000\\text{ kg}$ hovers stationary in air. It pushes down air at speed $v = 20\\text{ m/s}$. Taking $g = 10\\text{ m/s}^2$, the mass of air pushed down per second ($\\frac{dm}{dt}$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1000\\text{ kg/s}$" },
+        { "key": "B", "text": "$500\\text{ kg/s}$" },
+        { "key": "C", "text": "$2000\\text{ kg/s}$" },
+        { "key": "D", "text": "$100\\text{ kg/s}$" }
+      ],
+      "correct": "A",
+      "solution": "For hovering equilibrium: $$F_{\\text{thrust}} = Mg \\implies v\\frac{dm}{dt} = 2000 \\times 10 = 20000 \\implies \\frac{dm}{dt} = 1000\\text{ kg/s}$$<br>Therefore, Option <strong>A</strong> is correct."
+    },
+    {
+      "id": "q17",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A person jumps off a small boat onto the shore of a lake. As he steps forward, the boat moves backwards into the water. This observation is a direct consequence of:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Inertia of rest of the water" },
+        { "key": "B", "text": "Newton's third law (Action-reaction pair between foot and boat)" },
+        { "key": "C", "text": "Atmospheric pressure gradient" },
+        { "key": "D", "text": "Buoyancy force variation" }
+      ],
+      "correct": "B",
+      "solution": "To move forward, the person pushes backward against the boat. By Newton's third law, the boat pushes forward on the person while recoiling backward into the water.<br>Therefore, Option <strong>B</strong> is correct."
+    },
+    {
+      "id": "q18",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "A massive block of mass $m_1$ rests on top of another block of mass $m_2$ which rests on a table. The normal contact force exerted by block $m_2$ on block $m_1$ and the normal force exerted by block $m_1$ on block $m_2$:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "Form an equilibrium pair on $m_1$" },
+        { "key": "B", "text": "Are unequal if the system accelerates upward" },
+        { "key": "C", "text": "Form a valid Newton's third law action-reaction pair" },
+        { "key": "D", "text": "Are both equal to $(m_1 + m_2)g$" }
+      ],
+      "correct": "C",
+      "solution": "The normal force of $m_2$ on $m_1$ and $m_1$ on $m_2$ are contact forces between the same interface, equal in magnitude and opposite in direction on two distinct bodies, forming a true action-reaction pair.<br>Therefore, Option <strong>C</strong> is correct."
+    },
+    {
+      "id": "q19",
+      "exam": "JEE Main",
+      "difficulty": "Level 2",
+      "statement": "Two skaters $A$ and $B$ of masses $40\\text{ kg}$ and $60\\text{ kg}$ face each other on frictionless ice. Skater $A$ pushes skater $B$ with a constant force of $120\\text{ N}$ for $0.5\\text{ s}$. The speed acquired by skater $A$ after the push is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$1.0\\text{ m/s}$" },
+        { "key": "B", "text": "$2.0\\text{ m/s}$" },
+        { "key": "C", "text": "$0.5\\text{ m/s}$" },
+        { "key": "D", "text": "$1.5\\text{ m/s}$" }
+      ],
+      "correct": "D",
+      "solution": "1. Force on $A$ by $B$ is also $F = 120\\text{ N}$.<br>2. Acceleration of $A$: $a_A = \\frac{120}{40} = 3\\text{ m/s}^2$.<br>3. Speed $v_A = a_A t = 3 \\times 0.5 = 1.5\\text{ m/s}$.<br>Therefore, Option <strong>D</strong> is correct."
+    },
+    {
+      "id": "q20",
+      "exam": "JEE Main",
+      "difficulty": "Level 1",
+      "statement": "In Q19, the ratio of the magnitude of acceleration of skater $A$ to that of skater $B$ during the push ($\\frac{a_A}{a_B}$) is:",
+      "image": "",
+      "options": [
+        { "key": "A", "text": "$3 : 2$" },
+        { "key": "B", "text": "$2 : 3$" },
+        { "key": "C", "text": "$1 : 1$" },
+        { "key": "D", "text": "$9 : 4$" }
+      ],
+      "correct": "A",
+      "solution": "$$\\frac{a_A}{a_B} = \\frac{F/m_A}{F/m_B} = \\frac{m_B}{m_A} = \\frac{60}{40} = \\frac{3}{2}$$<br>Therefore, Option <strong>A</strong> is correct."
+    }
+  ]
+}

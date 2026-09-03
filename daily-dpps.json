@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-023",
+    "date": "2026-09-03",
+    "jsonFile": "/dpps/dpp-023/dpp-023.json",
+    "pdfFile": "/dpps/dpp-023/SMA_DPP_023.pdf",
+    "title": "Newton's Third Law of Motion: Action-Reaction Pairs, Contact Forces & Momentum Conservation",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-022",
     "date": "2026-09-02",
     "jsonFile": "/dpps/dpp-022/dpp-022.json",
