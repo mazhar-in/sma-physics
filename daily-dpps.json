@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-025",
+    "date": "2026-09-05",
+    "jsonFile": "/dpps/dpp-025/dpp-025.json",
+    "pdfFile": "/dpps/dpp-025/SMA_DPP_025.pdf",
+    "title": "Problems on Pulley Systems & Connected Masses",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-024",
     "date": "2026-09-04",
     "jsonFile": "/dpps/dpp-024/dpp-024.json",
