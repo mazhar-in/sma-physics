@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-026",
+    "date": "2026-09-06",
+    "jsonFile": "/dpps/dpp-026/dpp-026.json",
+    "pdfFile": "/dpps/dpp-026/SMA_DPP_026.pdf",
+    "title": "Law of Conservation of Linear Momentum: Derivation, Recoil Dynamics & Explosions",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-025",
     "date": "2026-09-05",
     "jsonFile": "/dpps/dpp-025/dpp-025.json",
