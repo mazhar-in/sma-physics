@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-027",
+    "date": "2026-09-07",
+    "jsonFile": "/dpps/dpp-027/dpp-027.json",
+    "pdfFile": "/dpps/dpp-027/SMA_DPP_027.pdf",
+    "title": "Applications of Conservation of Momentum: Recoil of Gun, Variable Mass & Rocket Propulsion",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-026",
     "date": "2026-09-06",
     "jsonFile": "/dpps/dpp-026/dpp-026.json",
