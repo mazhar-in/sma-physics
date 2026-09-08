@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-028",
+    "date": "2026-09-08",
+    "jsonFile": "/dpps/dpp-028/dpp-028.json",
+    "pdfFile": "/dpps/dpp-028/SMA_DPP_028.pdf",
+    "title": "Equilibrium of Concurrent Forces & Lami's Theorem",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-027",
     "date": "2026-09-07",
     "jsonFile": "/dpps/dpp-027/dpp-027.json",
