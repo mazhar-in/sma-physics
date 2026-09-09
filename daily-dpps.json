@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-029",
+    "date": "2026-09-09",
+    "jsonFile": "/dpps/dpp-029/dpp-029.json",
+    "pdfFile": "/dpps/dpp-029/SMA_DPP_029.pdf",
+    "title": "Static Friction: Concept, Laws of Friction & Angle of Friction",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-028",
     "date": "2026-09-08",
     "jsonFile": "/dpps/dpp-028/dpp-028.json",
