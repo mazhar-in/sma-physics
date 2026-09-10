@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-030",
+    "date": "2026-09-10",
+    "jsonFile": "/dpps/dpp-030/dpp-030.json",
+    "pdfFile": "/dpps/dpp-030/SMA_DPP_030.pdf",
+    "title": "Kinetic Friction, Rolling Friction & Two-Block Friction Problems",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-029",
     "date": "2026-09-09",
     "jsonFile": "/dpps/dpp-029/dpp-029.json",
