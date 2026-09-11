@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-031",
+    "date": "2026-09-11",
+    "jsonFile": "/dpps/dpp-031/dpp-031.json",
+    "pdfFile": "/dpps/dpp-031/SMA_DPP_031.pdf",
+    "title": "Motion on Inclined Plane with Friction: Dynamics, Variable Friction & Wedge Systems",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-030",
     "date": "2026-09-10",
     "jsonFile": "/dpps/dpp-030/dpp-030.json",
