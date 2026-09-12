@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-032",
+    "date": "2026-09-12",
+    "jsonFile": "/dpps/dpp-032/dpp-032.json",
+    "pdfFile": "/dpps/dpp-032/SMA_DPP_032.pdf",
+    "title": "Dynamics of Uniform Circular Motion: Centripetal Force, Banking of Tracks & Applications",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-031",
     "date": "2026-09-11",
     "jsonFile": "/dpps/dpp-031/dpp-031.json",
