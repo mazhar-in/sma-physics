@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-033",
+    "date": "2026-09-13",
+    "jsonFile": "/dpps/dpp-033/dpp-033.json",
+    "pdfFile": "/dpps/dpp-033/SMA_DPP_033.pdf",
+    "title": "Vehicle on a Level Circular Road: Skidding, Toppling & Reaction Dynamics",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-032",
     "date": "2026-09-12",
     "jsonFile": "/dpps/dpp-032/dpp-032.json",
