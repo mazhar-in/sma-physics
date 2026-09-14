@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-034",
+    "date": "2026-09-14",
+    "jsonFile": "/dpps/dpp-034/dpp-034.json",
+    "pdfFile": "/dpps/dpp-034/SMA_DPP_034.pdf",
+    "title": "Vehicle on a Banked Road: Smooth & Rough Banking Dynamics",
+    "chapter": "Laws of Motion",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-033",
     "date": "2026-09-13",
     "jsonFile": "/dpps/dpp-033/dpp-033.json",
