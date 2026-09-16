@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-036",
+    "date": "2026-09-16",
+    "jsonFile": "/dpps/dpp-036/dpp-036.json",
+    "pdfFile": "/dpps/dpp-036/SMA_DPP_036.pdf",
+    "title": "Work Done by a Variable Force: Graphical & Integration Methods",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-035",
     "date": "2026-09-15",
     "jsonFile": "/dpps/dpp-035/dpp-035.json",
