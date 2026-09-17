@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-037",
+    "date": "2026-08-26",
+    "jsonFile": "/dpps/dpp-037/dpp-037.json",
+    "pdfFile": "/dpps/dpp-037/SMA_DPP_037.pdf",
+    "title": "Kinetic Energy, Work-Energy Theorem & Practical Applications",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-036",
     "date": "2026-09-16",
     "jsonFile": "/dpps/dpp-036/dpp-036.json",
