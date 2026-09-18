@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-038",
+    "date": "2026-09-18",
+    "jsonFile": "/dpps/dpp-038/dpp-038.json",
+    "pdfFile": "/dpps/dpp-038/SMA_DPP_038.pdf",
+    "title": "Potential Energy, Gravitational PE & Relation Between Force and PE",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-037",
     "date": "2026-08-26",
     "jsonFile": "/dpps/dpp-037/dpp-037.json",
