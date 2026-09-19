@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-039",
+    "date": "2026-09-19",
+    "jsonFile": "/dpps/dpp-039/dpp-039.json",
+    "pdfFile": "/dpps/dpp-039/SMA_DPP_039.pdf",
+    "title": "Potential Energy of a Spring, Spring Force & Equivalent Spring Systems",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-038",
     "date": "2026-09-18",
     "jsonFile": "/dpps/dpp-038/dpp-038.json",
