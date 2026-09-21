@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-041",
+    "date": "2026-09-21",
+    "jsonFile": "/dpps/dpp-041/dpp-041.json",
+    "pdfFile": "/dpps/dpp-041/SMA_DPP_041.pdf",
+    "title": "Conservation of Mechanical Energy: Derivation, Curves & Key Applications",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-040",
     "date": "2026-09-20",
     "jsonFile": "/dpps/dpp-040/dpp-040.json",
