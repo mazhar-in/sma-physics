@@ -1,5 +1,15 @@
 [
   {
+    "id": "dpp-042",
+    "date": "2026-09-22",
+    "jsonFile": "/dpps/dpp-042/dpp-042.json",
+    "pdfFile": "/dpps/dpp-042/SMA_DPP_042.pdf",
+    "title": "Conservative and Non-Conservative Forces: Distinguishing Features & Closed-Loop Work",
+    "chapter": "Work, Energy and Power",
+    "exam": "JEE Main",
+    "questionCount": 20
+  },
+  {
     "id": "dpp-041",
     "date": "2026-09-21",
     "jsonFile": "/dpps/dpp-041/dpp-041.json",
